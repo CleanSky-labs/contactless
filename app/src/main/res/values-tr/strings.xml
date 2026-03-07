@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Temassız</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Öde</string>
+    <string name="nav_collect">Al</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_history">Geçmiş</string>
+    <string name="nav_refund">İade</string>
+    <string name="nav_balance">Bakiye</string>
+    <string name="nav_back">Geri</string>
+
+    <!-- Common actions -->
+    <string name="back">Geri</string>
+    <string name="save">Kaydet</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Cüzdan yok</string>
+    <string name="pay_no_wallet_desc">Ödeme yapmak için\nAyarlar\'da cüzdan kurun</string>
+    <string name="pay_ready">Ödemeye hazır</string>
+    <string name="pay_ready_desc">Telefonunuzu satıcının\ncihazına yaklaştırın</string>
+    <string name="pay_request_title">Ödeme talebi</string>
+    <string name="pay_network">Ağ: %s</string>
+    <string name="pay_expired">Talep süresi doldu</string>
+    <string name="pay_cancel">İptal</string>
+    <string name="pay_confirm">Öde</string>
+    <string name="pay_new">Yeni ödeme</string>
+    <string name="pay_signing">İşlem imzalanıyor…</string>
+    <string name="pay_tx_signed">İşlem imzalandı</string>
+    <string name="pay_tx_signed_desc">Göndermek için telefonunuzu\nsatıcıya yaklaştırın</string>
+    <string name="pay_authenticating">Kimlik doğrulanıyor…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Cüzdan yok</string>
+    <string name="collect_no_wallet_desc">Ödeme almak için\nAyarlar\'da cüzdan kurun</string>
+    <string name="collect_amount">Alınacak tutar</string>
+    <string name="collect_button">Al</string>
+    <string name="collect_waiting">Ödeme bekleniyor</string>
+    <string name="collect_waiting_desc">Müşteriden telefonunu\nyaklaştırmasını isteyin</string>
+    <string name="collect_new">Yeni tahsilat</string>
+    <string name="collect_processing">Ödeme işleniyor…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Çalışma modu</string>
+    <string name="settings_mode_pay">Öde</string>
+    <string name="settings_mode_pay_desc">Ödeme yap</string>
+    <string name="settings_mode_collect">Al</string>
+    <string name="settings_mode_collect_desc">Ödeme al</string>
+    <string name="settings_wallet">Cüzdan</string>
+    <string name="settings_wallet_address">Adres</string>
+    <string name="settings_wallet_none">Cüzdan yapılandırılmamış</string>
+    <string name="settings_wallet_create">Oluştur</string>
+    <string name="settings_wallet_import">İçe aktar</string>
+    <string name="settings_network">Blockchain ağı</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">İşlem yürütme</string>
+    <string name="settings_exec_direct">Doğrudan</string>
+    <string name="settings_exec_direct_desc">Gas\'ı siz ödersiniz</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Relayer üzerinden sponsorlu gas</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster ile ERC-4337</string>
+    <string name="settings_api_key">API anahtarı</string>
+    <string name="settings_save">Kaydet ve geri dön</string>
+    <string name="settings_not_available">Bu ağda mevcut değil</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_system">Sistem varsayılanı</string>
+    <string name="collect_select_currency">Para birimi seç</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Güvenlik</string>
+    <string name="security_encryption">Anahtar şifreleme</string>
+    <string name="security_encryption_desc">Android Keystore ile AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Donanım güvenlik modülü aktif</string>
+    <string name="security_strongbox_unavailable">Bu cihazda mevcut değil</string>
+    <string name="security_biometric">Biyometrik kimlik doğrulama</string>
+    <string name="security_biometric_required">Ödemeler için gerekli</string>
+    <string name="security_biometric_disabled">Devre dışı</string>
+    <string name="security_biometric_unavailable">Mevcut değil</string>
+    <string name="security_export">Özel anahtarı dışa aktar</string>
+    <string name="security_export_desc">Anahtarınızı güvenle saklayın</string>
+    <string name="security_delete">Cüzdanı sil</string>
+    <string name="security_delete_desc">Tüm verileri kalıcı olarak sil</string>
+    <string name="security_delete_title">Cüzdanı sil</string>
+    <string name="security_delete_warning">Bu işlem GERİ ALINAMAZ.</string>
+    <string name="security_delete_warning2">Özel anahtar yedeğiniz yoksa tüm varlıklara erişiminizi kaybedersiniz.</string>
+    <string name="security_delete_warning3">Devam etmeden önce anahtarı dışa aktardığınızdan emin olun.</string>
+    <string name="security_delete_confirm">Sil</string>
+    <string name="security_status_active">Aktif</string>
+    <string name="security_status_warning">Uyarı</string>
+    <string name="security_status_na">Geçerli değil</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Cüzdan içe aktar</string>
+    <string name="import_private_key">Özel anahtar</string>
+    <string name="import_seed_phrase">Tohum kelimeler</string>
+    <string name="import_prompt">Özel anahtarınızı girin:</string>
+    <string name="import_prompt_seed">Tohum kelimelerinizi girin (12–24 kelime):</string>
+    <string name="import_seed_hint">kelime1 kelime2 kelime3 …</string>
+    <string name="import_button">İçe aktar</string>
+    <string name="import_error_invalid">Geçersiz özel anahtar</string>
+    <string name="import_error_invalid_seed">Geçersiz tohum kelimeler</string>
+    <string name="import_error_encryption">Şifreleme hatası</string>
+    <string name="export_title">Özel anahtar</string>
+    <string name="export_warning">Bu anahtarı ASLA paylaşmayın. Sahip olan herkes varlıklarınız üzerinde tam kontrole sahiptir.</string>
+    <string name="export_understood">Anladım</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Özet</string>
+    <string name="history_received">Alınan</string>
+    <string name="history_sent">Gönderilen</string>
+    <string name="history_refunded">İade edilen</string>
+    <string name="history_empty">İşlem yok</string>
+    <string name="history_empty_desc">%s üzerindeki işlemler\nburada görünecek</string>
+    <string name="history_payment_received">Ödeme alındı</string>
+    <string name="history_payment_sent">Ödeme gönderildi</string>
+    <string name="history_refund_sent">İade</string>
+    <string name="history_refund_received">İade alındı</string>
+    <string name="history_status_pending">Beklemede</string>
+    <string name="history_status_confirmed">Onaylandı</string>
+    <string name="history_status_failed">Başarısız</string>
+    <string name="history_status_refunded">İade edildi</string>
+    <string name="history_status_partial">Kısmi</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Orijinal işlem</string>
+    <string name="refund_amount">Tutar</string>
+    <string name="refund_already">Zaten iade edildi</string>
+    <string name="refund_available">Mevcut</string>
+    <string name="refund_recipient">Alıcı</string>
+    <string name="refund_date">Tarih</string>
+    <string name="refund_type">İade türü</string>
+    <string name="refund_full">Tam</string>
+    <string name="refund_partial">Kısmi</string>
+    <string name="refund_partial_desc">Tutarı belirtin</string>
+    <string name="refund_amount_label">İade tutarı (%s)</string>
+    <string name="refund_max">Maksimum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Bu işlem için gas\'ı siz ödeyeceksiniz</string>
+    <string name="refund_button">İade et %1$s %2$s</string>
+    <string name="refund_processing">İade işleniyor…</string>
+    <string name="refund_success">İade başarılı</string>
+    <string name="refund_done">Tamamlandı</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token\'larınız</string>
+    <string name="balance_manage">Yönet</string>
+    <string name="balance_refresh">Yenile</string>
+    <string name="balance_loading">Bakiyeler yükleniyor…</string>
+    <string name="balance_empty">Token yok</string>
+    <string name="balance_no_wallet_desc">Bakiyelerinizi görmek için\nAyarlar\'da cüzdan kurun</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">İzin Verilen Token\'lar</string>
+    <string name="settings_add_token">Token Ekle</string>
+    <string name="add_token_prompt">Token sözleşme adresini girin:</string>
+    <string name="add_token_validating">Token doğrulanıyor…</string>
+    <string name="add_token_button">Ekle</string>
+    <string name="delete">Sil</string>
+
+    <!-- Common -->
+    <string name="cancel">İptal</string>
+    <string name="close">Kapat</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="error">Hata</string>
+    <string name="copy">Kopyala</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Cüzdan yapılandırılmamış</string>
+    <string name="error_device_security">Cihaz güvenlik hatası</string>
+    <string name="error_auth">Kimlik doğrulama hatası</string>
+    <string name="error_unknown">Bilinmeyen hata</string>
+    <string name="error_keystore_unavailable">Keystore kullanılamıyor - bazı özellikler çalışmayacak</string>
+    <string name="error_encryption_restart">Şifreleme hatası - uygulamayı yeniden başlatın</string>
+    <string name="error_auth_cancelled">Kimlik doğrulama iptal edildi</string>
+    <string name="error_invalid_address">Geçersiz adres</string>
+    <string name="error_invalid_address_format">Geçersiz adres formatı</string>
+    <string name="error_token_already_added">Token zaten eklenmiş</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Gönderildi! Tx: %s…</string>
+    <string name="token_native">Yerel</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Bakiyeniz</string>
+    <string name="pay_insufficient_balance">Yetersiz bakiye</string>
+    <string name="pay_need_more">%1$s %2$s daha gerekli</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Hoş Geldiniz</string>
+    <string name="welcome_sovereignty">Anahtarlarınız.\nVarlıklarınız.\nEgemenliğiniz.</string>
+    <string name="welcome_desc">Varlıklarınız bu uygulamada SAKLANMAZ. Özel anahtarlarınızla kontrol edilen blockchain\'de bulunurlar.\n\nBu uygulama yalnızca anahtarlarınızı güvenli bir şekilde saklar. Varlıklarınıza erişemeyiz.\n\nNot: Bazı token\'lar (USDC, USDT) ihraççıları tarafından dondurulabilir. Maksimum egemenlik için yerel ETH veya merkeziyetsiz token\'lar kullanın.</string>
+    <string name="welcome_warning_title">Anahtarlarınız = Varlıklarınız</string>
+    <string name="welcome_warning_desc">Özel anahtarlarınızı kaybederseniz veya biriyle paylaşırsanız, varlıklarınız üzerindeki kontrolü kalıcı olarak kaybedersiniz.\n\nKurtarma seçeneği yoktur. Hiçbir destek ekibi size yardımcı olamaz. Bu, gerçek mülkiyetin doğasıdır.\n\nHer zaman anahtarlarınızın güvenli bir yedeğini saklayın.</string>
+    <string name="welcome_opensource">Açık kaynak yazılım. Güvenmeyin, doğrulayın.</string>
+    <string name="welcome_start">Anladım, başlayalım</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Satıcı Kimliği</string>
+    <string name="settings_merchant_name">İşletme Adı</string>
+    <string name="settings_merchant_name_hint">Kahve Dükkanım</string>
+    <string name="settings_merchant_domain">Alan Adı / ENS</string>
+    <string name="settings_merchant_domain_hint">kahvem.eth veya kahvem.com</string>
+    <string name="settings_merchant_identity_desc">Ödeme sırasında müşterilere gösterilir</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Gizlilik Modu</string>
+    <string name="settings_stealth_desc">Tek kullanımlık adreslere ödeme alın (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Etkin</string>
+    <string name="settings_stealth_info">Her ödeme, yalnızca sizin harcayabileceğiniz benzersiz bir adrese gider. Gözlemciler ödemeleri işletmenizle ilişkilendiremez.</string>
+    <string name="stealth_address_label">Stealth Modu Aktif</string>
+    <string name="stealth_payment_note">Ödeme özel bir adrese gönderilecek</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Alıcı adresi</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Özel Cüzdan</string>
+    <string name="stealth_wallet_addresses">%d stealth adresinde</string>
+    <string name="stealth_wallet_privacy_title">Fonlarınız özel</string>
+    <string name="stealth_wallet_privacy_desc">Bu bakiye genel cüzdanınızla bağlantılı değil. Doğrudan tedarikçilere, borsalara veya herhangi bir yere harcayın - işletme kimliğiniz gizli kalır.</string>
+    <string name="stealth_wallet_send">Gönder</string>
+    <string name="stealth_wallet_send_title">Özel Cüzdandan Gönder</string>
+    <string name="stealth_wallet_available">Kullanılabilir: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Tutar</string>
+    <string name="nav_stealth_wallet">Özel Cüzdan</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Birden fazla adres</string>
+    <string name="stealth_wallet_gas_desc">Fonlarınız %d adrese dağılmış durumda. Büyük miktarlar harcamak birden fazla işlem gerektirebilir, gas maliyetlerini artırır.</string>
+    <string name="stealth_wallet_consolidate">Ana cüzdana birleştir</string>
+    <string name="stealth_wallet_consolidate_title">Fonları birleştir?</string>
+    <string name="stealth_wallet_consolidate_warning">Bu, özel cüzdanınızdaki tüm fonları ana cüzdan adresinize aktaracak.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">UYARI: Bu gizliliği bozar. Ana cüzdanınız tüm alınan ödemelerle ilişkilendirilecek.</string>
+    <string name="stealth_wallet_consolidate_benefit">Avantaj: Gelecekteki harcamalar yalnızca bir işlem gerektirecek (daha düşük gas maliyetleri).</string>
+    <string name="stealth_wallet_consolidate_confirm">Birleştir</string>
+    <string name="stealth_wallet_consolidate_success">Fonlar ana cüzdana birleştirildi</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Ödeyen Gizliliği</string>
+    <string name="settings_payer_privacy_desc">Geçici hesaplardan ödeme yapın (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Her ödeme benzersiz bir hesap kullanır. Ana cüzdan adresiniz zincir üzerinde görünmez.</string>
+    <string name="settings_payer_privacy_requires_api">Mainnet için API anahtarı gerekli</string>
+    <string name="settings_payer_privacy_public_bundler">Testnet\'lerde ücretsiz (genel bundler)</string>
+    <string name="payer_privacy_note">Cüzdan adresiniz gizlenecek</string>
+    <string name="payer_privacy_processing">Özel ödeme işleniyor…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adres Defteri</string>
+    <string name="address_book_add">Kişi Ekle</string>
+    <string name="address_book_edit">Kişiyi Düzenle</string>
+    <string name="address_book_search">Kişilerde ara…</string>
+    <string name="address_book_empty">Henüz kişi yok</string>
+    <string name="address_book_empty_hint">Kiminle ödeme yaptığınızı veya aldığınızı\nkolayca tanımlamak için adres ekleyin</string>
+    <string name="address_book_no_results">Kişi bulunamadı</string>
+    <string name="address_book_address">Cüzdan Adresi</string>
+    <string name="address_book_name">İsim</string>
+    <string name="address_book_name_hint">örn. Kahve Dükkanı, Ahmet Yılmaz</string>
+    <string name="address_book_note">Not (isteğe bağlı)</string>
+    <string name="address_book_note_hint">örn. Tedarikçi, Arkadaş</string>
+    <string name="address_book_delete_title">Kişi silinsin mi?</string>
+    <string name="address_book_delete_message">%s adres defterinden kaldırılsın mı?</string>
+    <string name="address_book_saved">Kişi kaydedildi</string>
+    <string name="address_book_unknown">Bilinmiyor</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Basit Mod</string>
+    <string name="settings_simple_mode_desc">Kullanımı kolay, temel seçenekler</string>
+    <string name="settings_advanced_mode">Gelişmiş Mod</string>
+    <string name="settings_advanced_mode_desc">İleri düzey kullanıcılar için kripto seçenekleri</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kişi Paylaş</string>
+    <string name="share_contact_title">Adresinizi Paylaşın</string>
+    <string name="share_contact_ready">Paylaşmaya hazır</string>
+    <string name="share_contact_ready_desc">Telefonunuzu başka bir\nCleanSky cihazına yaklaştırın</string>
+    <string name="share_contact_received">Kişi alındı!</string>
+    <string name="share_contact_received_name">%s bağlanmak istiyor</string>
+    <string name="share_contact_save">Kişilere kaydet</string>
+    <string name="share_contact_your_name">Adınız (isteğe bağlı)</string>
+    <string name="share_contact_your_name_hint">Başkalarının sizi göreceği isim</string>
+    <string name="share_contact_mutual">Kişi değişimi</string>
+    <string name="share_contact_mutual_desc">Her iki cihaz aynı anda adres paylaşır</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Gönder</string>
+    <string name="send_title">Kişiye Gönder</string>
+    <string name="send_select_contact">Alıcı seç</string>
+    <string name="send_no_contacts">Henüz kişi yok</string>
+    <string name="send_no_contacts_hint">NFC veya manuel olarak kişi ekleyin\nonlara ödeme göndermek için</string>
+    <string name="send_amount">Tutar</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kime: %s</string>
+    <string name="send_confirm">%1$s %2$s Gönder</string>
+    <string name="send_processing">Gönderiliyor…</string>
+    <string name="send_success">Başarıyla gönderildi!</string>
+    <string name="send_success_desc">%3$s\'e %1$s %2$s gönderildi</string>
+    <string name="send_error">Gönderme başarısız</string>
+    <string name="send_enter_amount">Bir tutar girin</string>
+    <string name="send_new">Yeni transfer</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Tümü</string>
+    <string name="history_filter_received">Alınan</string>
+    <string name="history_filter_sent">Gönderilen</string>
+    <string name="history_filter_contact">Kişi</string>
+    <string name="history_filter_by_contact">Kişiye göre filtrele</string>
+    <string name="history_show_all">Tümünü göster</string>
+    <string name="history_no_results">Filtreyle eşleşen işlem yok</string>
+    <string name="history_add_contact">Kişilere ekle</string>
+    <string name="history_edit_contact">Kişiyi düzenle</string>
+    <string name="history_from">Kimden</string>
+    <string name="history_to">Kime</string>
+    <string name="history_date">Tarih</string>
+    <string name="history_tx_hash">İşlem</string>
+    <string name="history_refund">İade</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Tutar çok küçük</string>
+    <string name="scam_amount_large_warning">Yüksek tutar</string>
+    <string name="scam_amount_large_desc">%1$s %2$s göndermek üzeresiniz.\nLütfen bunun doğru olduğunu onaylayın.</string>
+    <string name="scam_confirm_large">Büyük transferi onayla</string>
+    <string name="scam_dust_attack_warning">Şüpheli istek</string>
+    <string name="scam_dust_attack_desc">Bu çok küçük bir tutar (%1$s %2$s). Dust saldırıları cüzdanları izlemek için küçük ödemeler kullanır. Beklenmedikse reddedin.</string>
+    <string name="scam_receive_large_warning">Yüksek ödeme talebi</string>
+    <string name="scam_receive_large_desc">Bu talep %1$s %2$s için. Ödemeden önce tutarın doğru olduğunu doğrulayın.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Yalnızca alma</string>
+    <string name="settings_mode_receive_only">Al</string>
+    <string name="settings_mode_receive_only_desc">Özel anahtar yok</string>
+    <string name="settings_receive_only">Yalnızca alma yapılandırması</string>
+    <string name="settings_escrow_address">Escrow Adresi</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow yapılandırılmadı</string>
+    <string name="receive_only_no_escrow_desc">Ayarlarda escrow adresi ve API key yapılandırın</string>
+    <string name="receive_only_security_notice">Bu cihazda özel anahtar yok. Çalınsa bile güvenli.</string>
+    <string name="receive_only_api_key_required">Relayer yürütmesi için API key gerekli</string>
+</resources>

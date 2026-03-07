@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky بدون تلامس</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">دفع</string>
+    <string name="nav_collect">استلام</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_history">السجل</string>
+    <string name="nav_refund">استرداد</string>
+    <string name="nav_balance">الرصيد</string>
+    <string name="nav_back">رجوع</string>
+
+    <!-- Common actions -->
+    <string name="back">رجوع</string>
+    <string name="save">حفظ</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">لا توجد محفظة</string>
+    <string name="pay_no_wallet_desc">قم بإعداد محفظتك في الإعدادات\nلإجراء المدفوعات</string>
+    <string name="pay_ready">جاهز للدفع</string>
+    <string name="pay_ready_desc">قرّب هاتفك من\nجهاز التاجر</string>
+    <string name="pay_request_title">طلب دفع</string>
+    <string name="pay_network">الشبكة: %s</string>
+    <string name="pay_expired">انتهت صلاحية الطلب</string>
+    <string name="pay_cancel">إلغاء</string>
+    <string name="pay_confirm">دفع</string>
+    <string name="pay_new">دفعة جديدة</string>
+    <string name="pay_signing">جارٍ توقيع المعاملة…</string>
+    <string name="pay_tx_signed">تم توقيع المعاملة</string>
+    <string name="pay_tx_signed_desc">قرّب هاتفك من\nالتاجر للإرسال</string>
+    <string name="pay_authenticating">جارٍ المصادقة…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">لا توجد محفظة</string>
+    <string name="collect_no_wallet_desc">قم بإعداد محفظتك في الإعدادات\nلاستلام المدفوعات</string>
+    <string name="collect_amount">المبلغ المراد تحصيله</string>
+    <string name="collect_button">تحصيل</string>
+    <string name="collect_waiting">في انتظار الدفع</string>
+    <string name="collect_waiting_desc">اطلب من العميل\nتقريب هاتفه</string>
+    <string name="collect_new">تحصيل جديد</string>
+    <string name="collect_processing">جارٍ معالجة الدفع…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">وضع التشغيل</string>
+    <string name="settings_mode_pay">دفع</string>
+    <string name="settings_mode_pay_desc">إجراء مدفوعات</string>
+    <string name="settings_mode_collect">استلام</string>
+    <string name="settings_mode_collect_desc">استلام مدفوعات</string>
+    <string name="settings_wallet">المحفظة</string>
+    <string name="settings_wallet_address">العنوان</string>
+    <string name="settings_wallet_none">لم يتم تكوين محفظة</string>
+    <string name="settings_wallet_create">إنشاء</string>
+    <string name="settings_wallet_import">استيراد</string>
+    <string name="settings_network">شبكة البلوكتشين</string>
+    <string name="settings_chain_id">معرف السلسلة: %d</string>
+    <string name="settings_execution">تنفيذ المعاملات</string>
+    <string name="settings_exec_direct">مباشر</string>
+    <string name="settings_exec_direct_desc">أنت تدفع رسوم الغاز</string>
+    <string name="settings_exec_relayer">المرحّل (Gelato)</string>
+    <string name="settings_exec_relayer_desc">غاز مدعوم عبر المرحّل</string>
+    <string name="settings_exec_aa">تجريد الحساب</string>
+    <string name="settings_exec_aa_desc">ERC-4337 مع Paymaster</string>
+    <string name="settings_api_key">مفتاح API</string>
+    <string name="settings_save">حفظ والعودة</string>
+    <string name="settings_not_available">غير متوفر على هذه الشبكة</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_system">الإعداد الافتراضي للنظام</string>
+    <string name="collect_select_currency">اختر العملة</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">الأمان</string>
+    <string name="security_encryption">تشفير المفتاح</string>
+    <string name="security_encryption_desc">AES-256-GCM مع Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">وحدة أمان الأجهزة نشطة</string>
+    <string name="security_strongbox_unavailable">غير متوفر على هذا الجهاز</string>
+    <string name="security_biometric">المصادقة البيومترية</string>
+    <string name="security_biometric_required">مطلوبة للمدفوعات</string>
+    <string name="security_biometric_disabled">معطلة</string>
+    <string name="security_biometric_unavailable">غير متوفرة</string>
+    <string name="security_export">تصدير المفتاح الخاص</string>
+    <string name="security_export_desc">احفظ مفتاحك بأمان</string>
+    <string name="security_delete">حذف المحفظة</string>
+    <string name="security_delete_desc">حذف جميع البيانات نهائياً</string>
+    <string name="security_delete_title">حذف المحفظة</string>
+    <string name="security_delete_warning">هذا الإجراء لا رجعة فيه.</string>
+    <string name="security_delete_warning2">ستفقد الوصول إلى جميع الأموال إذا لم يكن لديك نسخة احتياطية من مفتاحك الخاص.</string>
+    <string name="security_delete_warning3">تأكد من تصدير مفتاحك قبل المتابعة.</string>
+    <string name="security_delete_confirm">حذف</string>
+    <string name="security_status_active">نشط</string>
+    <string name="security_status_warning">تحذير</string>
+    <string name="security_status_na">غير متاح</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">استيراد المحفظة</string>
+    <string name="import_private_key">المفتاح الخاص</string>
+    <string name="import_seed_phrase">عبارة الاسترداد</string>
+    <string name="import_prompt">أدخل مفتاحك الخاص:</string>
+    <string name="import_prompt_seed">أدخل عبارة الاسترداد (12–24 كلمة):</string>
+    <string name="import_seed_hint">كلمة1 كلمة2 كلمة3 …</string>
+    <string name="import_button">استيراد</string>
+    <string name="import_error_invalid">مفتاح خاص غير صالح</string>
+    <string name="import_error_invalid_seed">عبارة استرداد غير صالحة</string>
+    <string name="import_error_encryption">خطأ في التشفير</string>
+    <string name="export_title">المفتاح الخاص</string>
+    <string name="export_warning">لا تشارك هذا المفتاح مع أي شخص أبداً. من يملكه يتحكم كلياً في أموالك.</string>
+    <string name="export_understood">فهمت</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">الملخص</string>
+    <string name="history_received">المستلم</string>
+    <string name="history_sent">المرسل</string>
+    <string name="history_refunded">المسترد</string>
+    <string name="history_empty">لا توجد معاملات</string>
+    <string name="history_empty_desc">المعاملات على %s\nستظهر هنا</string>
+    <string name="history_payment_received">دفعة مستلمة</string>
+    <string name="history_payment_sent">دفعة مرسلة</string>
+    <string name="history_refund_sent">استرداد</string>
+    <string name="history_refund_received">استرداد مستلم</string>
+    <string name="history_status_pending">قيد الانتظار</string>
+    <string name="history_status_confirmed">مؤكد</string>
+    <string name="history_status_failed">فشل</string>
+    <string name="history_status_refunded">مسترد</string>
+    <string name="history_status_partial">جزئي</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">المعاملة الأصلية</string>
+    <string name="refund_amount">المبلغ</string>
+    <string name="refund_already">تم استرداده</string>
+    <string name="refund_available">متاح</string>
+    <string name="refund_recipient">المستلم</string>
+    <string name="refund_date">التاريخ</string>
+    <string name="refund_type">نوع الاسترداد</string>
+    <string name="refund_full">كامل</string>
+    <string name="refund_partial">جزئي</string>
+    <string name="refund_partial_desc">حدد المبلغ</string>
+    <string name="refund_amount_label">مبلغ الاسترداد (%s)</string>
+    <string name="refund_max">الحد الأقصى: %1$s %2$s</string>
+    <string name="refund_gas_notice">ستدفع رسوم الغاز لهذه المعاملة</string>
+    <string name="refund_button">استرداد %1$s %2$s</string>
+    <string name="refund_processing">جارٍ معالجة الاسترداد…</string>
+    <string name="refund_success">استرداد ناجح</string>
+    <string name="refund_done">تم</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">رموزك</string>
+    <string name="balance_manage">إدارة</string>
+    <string name="balance_refresh">تحديث</string>
+    <string name="balance_loading">جارٍ تحميل الأرصدة…</string>
+    <string name="balance_empty">لا توجد رموز</string>
+    <string name="balance_no_wallet_desc">قم بإعداد محفظتك في الإعدادات\nلعرض أرصدتك</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">الرموز المسموحة</string>
+    <string name="settings_add_token">إضافة رمز</string>
+    <string name="add_token_prompt">أدخل عنوان عقد الرمز:</string>
+    <string name="add_token_validating">جارٍ التحقق من الرمز…</string>
+    <string name="add_token_button">إضافة</string>
+    <string name="delete">حذف</string>
+
+    <!-- Common -->
+    <string name="cancel">إلغاء</string>
+    <string name="close">إغلاق</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="error">خطأ</string>
+    <string name="copy">نسخ</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">لم يتم تكوين المحفظة</string>
+    <string name="error_device_security">خطأ في أمان الجهاز</string>
+    <string name="error_auth">خطأ في المصادقة</string>
+    <string name="error_unknown">خطأ غير معروف</string>
+    <string name="error_keystore_unavailable">Keystore غير متاح - بعض الوظائف لن تعمل</string>
+    <string name="error_encryption_restart">خطأ في التشفير - أعد تشغيل التطبيق</string>
+    <string name="error_auth_cancelled">تم إلغاء المصادقة</string>
+    <string name="error_invalid_address">عنوان غير صالح</string>
+    <string name="error_invalid_address_format">صيغة العنوان غير صالحة</string>
+    <string name="error_token_already_added">الرمز مضاف مسبقاً</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">تم الإرسال! المعاملة: %s…</string>
+    <string name="token_native">أصلي</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">رصيدك</string>
+    <string name="pay_insufficient_balance">رصيد غير كافٍ</string>
+    <string name="pay_need_more">تحتاج %1$s إضافية من %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">مرحباً</string>
+    <string name="welcome_sovereignty">مفاتيحك.\nأموالك.\nسيادتك.</string>
+    <string name="welcome_desc">أموالك ليست مخزنة في هذا التطبيق. إنها موجودة على البلوكتشين، يتحكم فيها مفاتيحك الخاصة.\n\nهذا التطبيق يخزن فقط مفاتيحك بأمان. لا يمكننا الوصول إلى أموالك.\n\nملاحظة: بعض الرموز (USDC، USDT) يمكن تجميدها من قبل جهات الإصدار. للحصول على أقصى سيادة، استخدم ETH الأصلي أو الرموز اللامركزية.</string>
+    <string name="welcome_warning_title">مفاتيحك = أموالك</string>
+    <string name="welcome_warning_desc">إذا فقدت مفاتيحك الخاصة أو شاركتها مع شخص ما، ستفقد السيطرة على أموالك بشكل دائم.\n\nلا يوجد خيار استرداد. لا يوجد فريق دعم يمكنه مساعدتك. هذه هي طبيعة الملكية الحقيقية.\n\nاحتفظ دائماً بنسخة احتياطية آمنة من مفاتيحك.</string>
+    <string name="welcome_opensource">برنامج مفتوح المصدر. تحقق، لا تثق.</string>
+    <string name="welcome_start">فهمت، لنبدأ</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">هوية التاجر</string>
+    <string name="settings_merchant_name">اسم النشاط التجاري</string>
+    <string name="settings_merchant_name_hint">مقهاي</string>
+    <string name="settings_merchant_domain">النطاق / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth أو mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">يظهر للعملاء أثناء الدفع</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">وضع الخصوصية</string>
+    <string name="settings_stealth_desc">استلم المدفوعات على عناوين للاستخدام مرة واحدة (EIP-5564)</string>
+    <string name="settings_stealth_enabled">مفعّل</string>
+    <string name="settings_stealth_info">كل دفعة تذهب إلى عنوان فريد يمكنك أنت فقط الإنفاق منه. لا يمكن للمراقبين ربط المدفوعات بنشاطك التجاري.</string>
+    <string name="stealth_address_label">وضع Stealth نشط</string>
+    <string name="stealth_payment_note">سيتم إرسال الدفعة إلى عنوان خاص</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">عنوان المستلم</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">المحفظة الخاصة</string>
+    <string name="stealth_wallet_addresses">عبر %d عنوان stealth</string>
+    <string name="stealth_wallet_privacy_title">أموالك خاصة</string>
+    <string name="stealth_wallet_privacy_desc">هذا الرصيد غير مرتبط بمحفظتك العامة. أنفق مباشرة للموردين أو البورصات أو أي مكان - هوية نشاطك التجاري تبقى مخفية.</string>
+    <string name="stealth_wallet_send">إرسال</string>
+    <string name="stealth_wallet_send_title">إرسال من المحفظة الخاصة</string>
+    <string name="stealth_wallet_available">متاح: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">المبلغ</string>
+    <string name="nav_stealth_wallet">المحفظة الخاصة</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">عناوين متعددة</string>
+    <string name="stealth_wallet_gas_desc">أموالك موزعة على %d عنوان. إنفاق مبالغ كبيرة قد يتطلب معاملات متعددة، مما يزيد تكاليف الغاز.</string>
+    <string name="stealth_wallet_consolidate">دمج في المحفظة الرئيسية</string>
+    <string name="stealth_wallet_consolidate_title">دمج الأموال؟</string>
+    <string name="stealth_wallet_consolidate_warning">سيتم نقل جميع الأموال من محفظتك الخاصة إلى عنوان محفظتك الرئيسية.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">تحذير: هذا يكسر الخصوصية. ستكون محفظتك الرئيسية مرتبطة بجميع المدفوعات المستلمة.</string>
+    <string name="stealth_wallet_consolidate_benefit">الفائدة: الإنفاق المستقبلي سيتطلب معاملة واحدة فقط (تكاليف غاز أقل).</string>
+    <string name="stealth_wallet_consolidate_confirm">دمج</string>
+    <string name="stealth_wallet_consolidate_success">تم دمج الأموال في المحفظة الرئيسية</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">خصوصية الدافع</string>
+    <string name="settings_payer_privacy_desc">ادفع من حسابات مؤقتة (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">كل دفعة تستخدم حساباً فريداً. عنوان محفظتك الرئيسية غير مرئي على السلسلة.</string>
+    <string name="settings_payer_privacy_requires_api">مفتاح API مطلوب للشبكة الرئيسية</string>
+    <string name="settings_payer_privacy_public_bundler">مجاني على شبكات الاختبار (مجمّع عام)</string>
+    <string name="payer_privacy_note">سيتم إخفاء عنوان محفظتك</string>
+    <string name="payer_privacy_processing">جارٍ معالجة الدفع الخاص…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">دفتر العناوين</string>
+    <string name="address_book_add">إضافة جهة اتصال</string>
+    <string name="address_book_edit">تعديل جهة الاتصال</string>
+    <string name="address_book_search">البحث في جهات الاتصال…</string>
+    <string name="address_book_empty">لا توجد جهات اتصال بعد</string>
+    <string name="address_book_empty_hint">أضف عناوين لتحديد بسهولة\nمن تدفع له أو تستلم منه</string>
+    <string name="address_book_no_results">لم يتم العثور على جهات اتصال</string>
+    <string name="address_book_address">عنوان المحفظة</string>
+    <string name="address_book_name">الاسم</string>
+    <string name="address_book_name_hint">مثال: المقهى، أحمد محمد</string>
+    <string name="address_book_note">ملاحظة (اختياري)</string>
+    <string name="address_book_note_hint">مثال: مورد، صديق</string>
+    <string name="address_book_delete_title">حذف جهة الاتصال؟</string>
+    <string name="address_book_delete_message">إزالة %s من دفتر العناوين؟</string>
+    <string name="address_book_saved">تم حفظ جهة الاتصال</string>
+    <string name="address_book_unknown">غير معروف</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">الوضع البسيط</string>
+    <string name="settings_simple_mode_desc">سهل الاستخدام، خيارات أساسية</string>
+    <string name="settings_advanced_mode">الوضع المتقدم</string>
+    <string name="settings_advanced_mode_desc">خيارات التشفير للمستخدمين المتقدمين</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">مشاركة جهة الاتصال</string>
+    <string name="share_contact_title">شارك عنوانك</string>
+    <string name="share_contact_ready">جاهز للمشاركة</string>
+    <string name="share_contact_ready_desc">قرّب هاتفك من\nجهاز CleanSky آخر</string>
+    <string name="share_contact_received">تم استلام جهة الاتصال!</string>
+    <string name="share_contact_received_name">%s يريد الاتصال</string>
+    <string name="share_contact_save">حفظ في جهات الاتصال</string>
+    <string name="share_contact_your_name">اسمك (اختياري)</string>
+    <string name="share_contact_your_name_hint">كيف سيراك الآخرون</string>
+    <string name="share_contact_mutual">تبادل جهات الاتصال</string>
+    <string name="share_contact_mutual_desc">كلا الجهازين يشاركان العناوين في نفس الوقت</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">إرسال</string>
+    <string name="send_title">إرسال إلى جهة اتصال</string>
+    <string name="send_select_contact">اختر المستلم</string>
+    <string name="send_no_contacts">لا توجد جهات اتصال بعد</string>
+    <string name="send_no_contacts_hint">أضف جهات اتصال عبر NFC أو يدوياً\nلإرسال المدفوعات إليهم</string>
+    <string name="send_amount">المبلغ</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">إلى: %s</string>
+    <string name="send_confirm">إرسال %1$s %2$s</string>
+    <string name="send_processing">جارٍ الإرسال…</string>
+    <string name="send_success">تم الإرسال بنجاح!</string>
+    <string name="send_success_desc">تم إرسال %1$s %2$s إلى %3$s</string>
+    <string name="send_error">فشل الإرسال</string>
+    <string name="send_enter_amount">أدخل مبلغاً</string>
+    <string name="send_new">تحويل جديد</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">الكل</string>
+    <string name="history_filter_received">المستلم</string>
+    <string name="history_filter_sent">المرسل</string>
+    <string name="history_filter_contact">جهة الاتصال</string>
+    <string name="history_filter_by_contact">تصفية حسب جهة الاتصال</string>
+    <string name="history_show_all">عرض الكل</string>
+    <string name="history_no_results">لا توجد معاملات تطابق الفلتر</string>
+    <string name="history_add_contact">إضافة إلى جهات الاتصال</string>
+    <string name="history_edit_contact">تعديل جهة الاتصال</string>
+    <string name="history_from">من</string>
+    <string name="history_to">إلى</string>
+    <string name="history_date">التاريخ</string>
+    <string name="history_tx_hash">المعاملة</string>
+    <string name="history_refund">استرداد</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">المبلغ صغير جداً</string>
+    <string name="scam_amount_large_warning">مبلغ كبير</string>
+    <string name="scam_amount_large_desc">أنت على وشك إرسال %1$s %2$s.\nيرجى التأكد من صحة ذلك.</string>
+    <string name="scam_confirm_large">تأكيد التحويل الكبير</string>
+    <string name="scam_dust_attack_warning">طلب مشبوه</string>
+    <string name="scam_dust_attack_desc">هذا مبلغ صغير جداً (%1$s %2$s). تستخدم هجمات الغبار مدفوعات صغيرة لتتبع المحافظ. ارفض إذا كان غير متوقع.</string>
+    <string name="scam_receive_large_warning">طلب دفع كبير</string>
+    <string name="scam_receive_large_desc">هذا الطلب بقيمة %1$s %2$s. تحقق من صحة المبلغ قبل الدفع.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">استلام فقط</string>
+    <string name="settings_mode_receive_only">استلام</string>
+    <string name="settings_mode_receive_only_desc">بدون مفتاح خاص</string>
+    <string name="settings_receive_only">إعدادات الاستلام فقط</string>
+    <string name="settings_escrow_address">عنوان Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">لم يتم تكوين Escrow</string>
+    <string name="receive_only_no_escrow_desc">قم بتكوين عنوان escrow و API key في الإعدادات</string>
+    <string name="receive_only_security_notice">لا يوجد مفتاح خاص على هذا الجهاز. آمن في حالة السرقة.</string>
+    <string name="receive_only_api_key_required">مطلوب API key لتنفيذ الـ relayer</string>
+</resources>

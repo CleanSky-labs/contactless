@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Contactloos</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Betalen</string>
+    <string name="nav_collect">Ontvangen</string>
+    <string name="nav_settings">Instellingen</string>
+    <string name="nav_history">Geschiedenis</string>
+    <string name="nav_refund">Terugbetaling</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Terug</string>
+
+    <!-- Common actions -->
+    <string name="back">Terug</string>
+    <string name="save">Opslaan</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Geen Wallet</string>
+    <string name="pay_no_wallet_desc">Stel uw wallet in bij Instellingen\nom betalingen te doen</string>
+    <string name="pay_ready">Klaar om te betalen</string>
+    <string name="pay_ready_desc">Houd uw telefoon bij\nhet apparaat van de handelaar</string>
+    <string name="pay_request_title">Betalingsverzoek</string>
+    <string name="pay_network">Netwerk: %s</string>
+    <string name="pay_expired">Verzoek verlopen</string>
+    <string name="pay_cancel">Annuleren</string>
+    <string name="pay_confirm">Betalen</string>
+    <string name="pay_new">Nieuwe betaling</string>
+    <string name="pay_signing">Transactie ondertekenen…</string>
+    <string name="pay_tx_signed">Transactie ondertekend</string>
+    <string name="pay_tx_signed_desc">Houd uw telefoon bij\nde handelaar om te verzenden</string>
+    <string name="pay_authenticating">Authenticeren…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Geen Wallet</string>
+    <string name="collect_no_wallet_desc">Stel uw wallet in bij Instellingen\nom betalingen te ontvangen</string>
+    <string name="collect_amount">Te ontvangen bedrag</string>
+    <string name="collect_button">Ontvangen</string>
+    <string name="collect_waiting">Wachten op betaling</string>
+    <string name="collect_waiting_desc">Vraag de klant om\nzijn telefoon dichtbij te houden</string>
+    <string name="collect_new">Nieuwe ontvangst</string>
+    <string name="collect_processing">Betaling verwerken…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Bedieningsmodus</string>
+    <string name="settings_mode_pay">Betalen</string>
+    <string name="settings_mode_pay_desc">Betalingen doen</string>
+    <string name="settings_mode_collect">Ontvangen</string>
+    <string name="settings_mode_collect_desc">Betalingen ontvangen</string>
+    <string name="settings_wallet">Wallet</string>
+    <string name="settings_wallet_address">Adres</string>
+    <string name="settings_wallet_none">Geen wallet geconfigureerd</string>
+    <string name="settings_wallet_create">Aanmaken</string>
+    <string name="settings_wallet_import">Importeren</string>
+    <string name="settings_network">Blockchain-netwerk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Transactie-uitvoering</string>
+    <string name="settings_exec_direct">Direct</string>
+    <string name="settings_exec_direct_desc">U betaalt de gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gesponsorde gas via relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 met Paymaster</string>
+    <string name="settings_api_key">API-sleutel</string>
+    <string name="settings_save">Opslaan en terug</string>
+    <string name="settings_not_available">Niet beschikbaar op dit netwerk</string>
+    <string name="settings_language">Taal</string>
+    <string name="settings_language_system">Systeemstandaard</string>
+    <string name="collect_select_currency">Valuta selecteren</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Beveiliging</string>
+    <string name="security_encryption">Sleutelversleuteling</string>
+    <string name="security_encryption_desc">AES-256-GCM met Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardware beveiligingsmodule actief</string>
+    <string name="security_strongbox_unavailable">Niet beschikbaar op dit apparaat</string>
+    <string name="security_biometric">Biometrische authenticatie</string>
+    <string name="security_biometric_required">Vereist voor betalingen</string>
+    <string name="security_biometric_disabled">Uitgeschakeld</string>
+    <string name="security_biometric_unavailable">Niet beschikbaar</string>
+    <string name="security_export">Privésleutel exporteren</string>
+    <string name="security_export_desc">Bewaar uw sleutel veilig</string>
+    <string name="security_delete">Wallet verwijderen</string>
+    <string name="security_delete_desc">Alle gegevens permanent verwijderen</string>
+    <string name="security_delete_title">Wallet verwijderen</string>
+    <string name="security_delete_warning">Deze actie is ONOMKEERBAAR.</string>
+    <string name="security_delete_warning2">U verliest toegang tot alle tegoeden als u geen back-up van uw privésleutel heeft.</string>
+    <string name="security_delete_warning3">Zorg ervoor dat u uw sleutel heeft geëxporteerd voordat u doorgaat.</string>
+    <string name="security_delete_confirm">Verwijderen</string>
+    <string name="security_status_active">Actief</string>
+    <string name="security_status_warning">Waarschuwing</string>
+    <string name="security_status_na">N.v.t.</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Wallet importeren</string>
+    <string name="import_private_key">Privésleutel</string>
+    <string name="import_seed_phrase">Herstelzin</string>
+    <string name="import_prompt">Voer uw privésleutel in:</string>
+    <string name="import_prompt_seed">Voer uw herstelzin in (12–24 woorden):</string>
+    <string name="import_seed_hint">woord1 woord2 woord3 …</string>
+    <string name="import_button">Importeren</string>
+    <string name="import_error_invalid">Ongeldige privésleutel</string>
+    <string name="import_error_invalid_seed">Ongeldige herstelzin</string>
+    <string name="import_error_encryption">Versleutelingsfout</string>
+    <string name="export_title">Privésleutel</string>
+    <string name="export_warning">Deel deze sleutel NOOIT met iemand. Wie hem bezit, heeft volledige controle over uw tegoeden.</string>
+    <string name="export_understood">Begrepen</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Samenvatting</string>
+    <string name="history_received">Ontvangen</string>
+    <string name="history_sent">Verzonden</string>
+    <string name="history_refunded">Terugbetaald</string>
+    <string name="history_empty">Geen transacties</string>
+    <string name="history_empty_desc">Transacties op %s\nverschijnen hier</string>
+    <string name="history_payment_received">Betaling ontvangen</string>
+    <string name="history_payment_sent">Betaling verzonden</string>
+    <string name="history_refund_sent">Terugbetaling</string>
+    <string name="history_refund_received">Terugbetaling ontvangen</string>
+    <string name="history_status_pending">In behandeling</string>
+    <string name="history_status_confirmed">Bevestigd</string>
+    <string name="history_status_failed">Mislukt</string>
+    <string name="history_status_refunded">Terugbetaald</string>
+    <string name="history_status_partial">Gedeeltelijk</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Oorspronkelijke transactie</string>
+    <string name="refund_amount">Bedrag</string>
+    <string name="refund_already">Reeds terugbetaald</string>
+    <string name="refund_available">Beschikbaar</string>
+    <string name="refund_recipient">Ontvanger</string>
+    <string name="refund_date">Datum</string>
+    <string name="refund_type">Type terugbetaling</string>
+    <string name="refund_full">Volledig</string>
+    <string name="refund_partial">Gedeeltelijk</string>
+    <string name="refund_partial_desc">Bedrag specificeren</string>
+    <string name="refund_amount_label">Terug te betalen bedrag (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">U betaalt de gas voor deze transactie</string>
+    <string name="refund_button">%1$s %2$s terugbetalen</string>
+    <string name="refund_processing">Terugbetaling verwerken…</string>
+    <string name="refund_success">Terugbetaling geslaagd</string>
+    <string name="refund_done">Klaar</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Uw Tokens</string>
+    <string name="balance_manage">Beheren</string>
+    <string name="balance_refresh">Vernieuwen</string>
+    <string name="balance_loading">Saldi laden…</string>
+    <string name="balance_empty">Geen tokens</string>
+    <string name="balance_no_wallet_desc">Stel uw wallet in bij Instellingen\nom uw saldi te bekijken</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Toegestane Tokens</string>
+    <string name="settings_add_token">Token Toevoegen</string>
+    <string name="add_token_prompt">Voer het token contractadres in:</string>
+    <string name="add_token_validating">Token valideren…</string>
+    <string name="add_token_button">Toevoegen</string>
+    <string name="delete">Verwijderen</string>
+
+    <!-- Common -->
+    <string name="cancel">Annuleren</string>
+    <string name="close">Sluiten</string>
+    <string name="retry">Opnieuw proberen</string>
+    <string name="error">Fout</string>
+    <string name="copy">Kopiëren</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Wallet niet geconfigureerd</string>
+    <string name="error_device_security">Apparaatbeveiligingsfout</string>
+    <string name="error_auth">Authenticatiefout</string>
+    <string name="error_unknown">Onbekende fout</string>
+    <string name="error_keystore_unavailable">Keystore niet beschikbaar - sommige functies werken niet</string>
+    <string name="error_encryption_restart">Versleutelingsfout - herstart de app</string>
+    <string name="error_auth_cancelled">Authenticatie geannuleerd</string>
+    <string name="error_invalid_address">Ongeldig adres</string>
+    <string name="error_invalid_address_format">Ongeldig adresformaat</string>
+    <string name="error_token_already_added">Token al toegevoegd</string>
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Verzonden! Tx: %s…</string>
+    <string name="token_native">Natief</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Uw saldo</string>
+    <string name="pay_insufficient_balance">Onvoldoende saldo</string>
+    <string name="pay_need_more">U heeft %1$s meer %2$s nodig</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Welkom</string>
+    <string name="welcome_sovereignty">Uw sleutels.\nUw tegoeden.\nUw soevereiniteit.</string>
+    <string name="welcome_desc">Uw tegoeden worden NIET opgeslagen in deze app. Ze bestaan op de blockchain, beheerd door uw privésleutels.\n\nDeze app slaat alleen uw sleutels veilig op. Wij hebben geen toegang tot uw tegoeden.\n\nOpmerking: Sommige tokens (USDC, USDT) kunnen worden bevroren door hun uitgevers. Voor maximale soevereiniteit, gebruik native ETH of gedecentraliseerde tokens.</string>
+    <string name="welcome_warning_title">Uw sleutels = Uw tegoeden</string>
+    <string name="welcome_warning_desc">Als u uw privésleutels verliest of met iemand deelt, verliest u permanent de controle over uw tegoeden.\n\nEr is geen hersteloptie. Geen supportteam kan u helpen. Dit is de aard van echt eigendom.\n\nBewaar altijd een veilige back-up van uw sleutels.</string>
+    <string name="welcome_opensource">Open source software. Verifieer, vertrouw niet.</string>
+    <string name="welcome_start">Ik begrijp het, laten we beginnen</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Handelaarsidentiteit</string>
+    <string name="settings_merchant_name">Bedrijfsnaam</string>
+    <string name="settings_merchant_name_hint">Mijn Koffiebar</string>
+    <string name="settings_merchant_domain">Domein / ENS</string>
+    <string name="settings_merchant_domain_hint">mijnkoffie.eth of mijnkoffie.com</string>
+    <string name="settings_merchant_identity_desc">Getoond aan klanten tijdens betaling</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privacymodus</string>
+    <string name="settings_stealth_desc">Ontvang betalingen op eenmalige adressen (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Ingeschakeld</string>
+    <string name="settings_stealth_info">Elke betaling gaat naar een uniek adres dat alleen u kunt uitgeven. Waarnemers kunnen betalingen niet koppelen aan uw bedrijf.</string>
+    <string name="stealth_address_label">Stealth-modus actief</string>
+    <string name="stealth_payment_note">Betaling wordt naar een privéadres gestuurd</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Ontvangersadres</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privé Wallet</string>
+    <string name="stealth_wallet_addresses">over %d stealth-adressen</string>
+    <string name="stealth_wallet_privacy_title">Uw tegoeden zijn privé</string>
+    <string name="stealth_wallet_privacy_desc">Dit saldo is niet gekoppeld aan uw publieke wallet. Geef direct uit bij leveranciers, exchanges of waar dan ook - uw bedrijfsidentiteit blijft verborgen.</string>
+    <string name="stealth_wallet_send">Versturen</string>
+    <string name="stealth_wallet_send_title">Versturen vanaf privé wallet</string>
+    <string name="stealth_wallet_available">Beschikbaar: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Bedrag</string>
+    <string name="nav_stealth_wallet">Privé Wallet</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Meerdere adressen</string>
+    <string name="stealth_wallet_gas_desc">Uw tegoeden zijn verspreid over %d adressen. Grote bedragen uitgeven kan meerdere transacties vereisen, wat de gaskosten verhoogt.</string>
+    <string name="stealth_wallet_consolidate">Consolideren naar hoofdwallet</string>
+    <string name="stealth_wallet_consolidate_title">Tegoeden consolideren?</string>
+    <string name="stealth_wallet_consolidate_warning">Dit zal alle tegoeden van uw privé wallet overmaken naar uw hoofdwallet-adres.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">WAARSCHUWING: Dit breekt de privacy. Uw hoofdwallet wordt gekoppeld aan alle ontvangen betalingen.</string>
+    <string name="stealth_wallet_consolidate_benefit">Voordeel: Toekomstig uitgeven vereist slechts één transactie (lagere gaskosten).</string>
+    <string name="stealth_wallet_consolidate_confirm">Consolideren</string>
+    <string name="stealth_wallet_consolidate_success">Tegoeden geconsolideerd naar hoofdwallet</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Betalerprivacy</string>
+    <string name="settings_payer_privacy_desc">Betaal vanaf tijdelijke accounts (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Elke betaling gebruikt een uniek account. Uw hoofdwallet-adres is niet zichtbaar on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">API-sleutel vereist voor mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Gratis op testnets (publieke bundler)</string>
+    <string name="payer_privacy_note">Uw wallet-adres wordt verborgen</string>
+    <string name="payer_privacy_processing">Privébetaling verwerken…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adresboek</string>
+    <string name="address_book_add">Contact toevoegen</string>
+    <string name="address_book_edit">Contact bewerken</string>
+    <string name="address_book_search">Contacten zoeken…</string>
+    <string name="address_book_empty">Nog geen contacten</string>
+    <string name="address_book_empty_hint">Voeg adressen toe om gemakkelijk te identificeren\naan wie u betaalt of van wie u ontvangt</string>
+    <string name="address_book_no_results">Geen contacten gevonden</string>
+    <string name="address_book_address">Wallet-adres</string>
+    <string name="address_book_name">Naam</string>
+    <string name="address_book_name_hint">bijv. Koffiebar, Jan Jansen</string>
+    <string name="address_book_note">Notitie (optioneel)</string>
+    <string name="address_book_note_hint">bijv. Leverancier, Vriend</string>
+    <string name="address_book_delete_title">Contact verwijderen?</string>
+    <string name="address_book_delete_message">%s uit uw adresboek verwijderen?</string>
+    <string name="address_book_saved">Contact opgeslagen</string>
+    <string name="address_book_unknown">Onbekend</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Eenvoudige Modus</string>
+    <string name="settings_simple_mode_desc">Gebruiksvriendelijk, basisopties</string>
+    <string name="settings_advanced_mode">Geavanceerde Modus</string>
+    <string name="settings_advanced_mode_desc">Crypto-opties voor ervaren gebruikers</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Contact delen</string>
+    <string name="share_contact_title">Uw adres delen</string>
+    <string name="share_contact_ready">Klaar om te delen</string>
+    <string name="share_contact_ready_desc">Houd uw telefoon bij\neen ander CleanSky-apparaat</string>
+    <string name="share_contact_received">Contact ontvangen!</string>
+    <string name="share_contact_received_name">%s wil verbinden</string>
+    <string name="share_contact_save">Opslaan in contacten</string>
+    <string name="share_contact_your_name">Uw naam (optioneel)</string>
+    <string name="share_contact_your_name_hint">Zo zullen anderen u zien</string>
+    <string name="share_contact_mutual">Contacten uitwisselen</string>
+    <string name="share_contact_mutual_desc">Beide apparaten delen adressen tegelijk</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Versturen</string>
+    <string name="send_title">Naar contact versturen</string>
+    <string name="send_select_contact">Ontvanger selecteren</string>
+    <string name="send_no_contacts">Nog geen contacten</string>
+    <string name="send_no_contacts_hint">Voeg contacten toe via NFC of handmatig\nom hen betalingen te sturen</string>
+    <string name="send_amount">Bedrag</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Aan: %s</string>
+    <string name="send_confirm">%1$s %2$s versturen</string>
+    <string name="send_processing">Versturen…</string>
+    <string name="send_success">Succesvol verstuurd!</string>
+    <string name="send_success_desc">%1$s %2$s verstuurd naar %3$s</string>
+    <string name="send_error">Versturen mislukt</string>
+    <string name="send_enter_amount">Voer een bedrag in</string>
+    <string name="send_new">Nieuwe overboeking</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Alle</string>
+    <string name="history_filter_received">Ontvangen</string>
+    <string name="history_filter_sent">Verzonden</string>
+    <string name="history_filter_contact">Contact</string>
+    <string name="history_filter_by_contact">Filteren op contact</string>
+    <string name="history_show_all">Alles tonen</string>
+    <string name="history_no_results">Geen transacties komen overeen met het filter</string>
+    <string name="history_add_contact">Toevoegen aan contacten</string>
+    <string name="history_edit_contact">Contact bewerken</string>
+    <string name="history_from">Van</string>
+    <string name="history_to">Aan</string>
+    <string name="history_date">Datum</string>
+    <string name="history_tx_hash">Transactie</string>
+    <string name="history_refund">Terugbetaling</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Bedrag te klein</string>
+    <string name="scam_amount_large_warning">Groot bedrag</string>
+    <string name="scam_amount_large_desc">U staat op het punt %1$s %2$s te versturen.\nBevestig alstublieft dat dit correct is.</string>
+    <string name="scam_confirm_large">Grote overboeking bevestigen</string>
+    <string name="scam_dust_attack_warning">Verdacht verzoek</string>
+    <string name="scam_dust_attack_desc">Dit is een zeer klein bedrag (%1$s %2$s). Dust-aanvallen gebruiken kleine betalingen om wallets te volgen. Weiger als onverwacht.</string>
+    <string name="scam_receive_large_warning">Groot betalingsverzoek</string>
+    <string name="scam_receive_large_desc">Dit verzoek is voor %1$s %2$s. Controleer of dit het juiste bedrag is voordat u betaalt.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Alleen Ontvangen</string>
+    <string name="settings_mode_receive_only">Ontvangen</string>
+    <string name="settings_mode_receive_only_desc">Geen privésleutel</string>
+    <string name="settings_receive_only">Alleen-ontvangen configuratie</string>
+    <string name="settings_escrow_address">Escrow-adres</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Geen Escrow geconfigureerd</string>
+    <string name="receive_only_no_escrow_desc">Configureer escrow-adres en API key in Instellingen</string>
+    <string name="receive_only_security_notice">Geen privésleutel op dit apparaat. Veilig bij diefstal.</string>
+    <string name="receive_only_api_key_required">API key vereist voor relayer-uitvoering</string>
+</resources>

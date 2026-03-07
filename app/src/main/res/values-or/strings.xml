@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">ପେମେଣ୍ଟ</string>
+    <string name="nav_collect">ସଂଗ୍ରହ</string>
+    <string name="nav_settings">ସେଟିଂସ</string>
+    <string name="nav_history">ଇତିହାସ</string>
+    <string name="nav_refund">ଫେରସ୍ତ</string>
+    <string name="nav_balance">ବ୍ୟାଲାନ୍ସ</string>
+    <string name="nav_back">ପଛକୁ</string>
+
+    <!-- Common actions -->
+    <string name="back">ପଛକୁ</string>
+    <string name="save">ସେଭ କରନ୍ତୁ</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">କୌଣସି ୱାଲେଟ ନାହିଁ</string>
+    <string name="pay_no_wallet_desc">ପେମେଣ୍ଟ କରିବା ପାଇଁ ସେଟିଂସରେ\nଆପଣଙ୍କ ୱାଲେଟ ସେଟଅପ କରନ୍ତୁ</string>
+    <string name="pay_ready">ପେମେଣ୍ଟ ପାଇଁ ପ୍ରସ୍ତୁତ</string>
+    <string name="pay_ready_desc">ଆପଣଙ୍କ ଫୋନକୁ ବ୍ୟାପାରୀଙ୍କ\nଡିଭାଇସ ନିକଟକୁ ଆଣନ୍ତୁ</string>
+    <string name="pay_request_title">ପେମେଣ୍ଟ ଅନୁରୋଧ</string>
+    <string name="pay_network">ନେଟୱାର୍କ: %s</string>
+    <string name="pay_expired">ଅନୁରୋଧ ସମାପ୍ତ ହୋଇଗଲା</string>
+    <string name="pay_cancel">ବାତିଲ</string>
+    <string name="pay_confirm">ପେମେଣ୍ଟ କରନ୍ତୁ</string>
+    <string name="pay_new">ନୂଆ ପେମେଣ୍ଟ</string>
+    <string name="pay_signing">ଟ୍ରାନ୍ସାକ୍ସନ ସାଇନ କରୁଛି…</string>
+    <string name="pay_tx_signed">ଟ୍ରାନ୍ସାକ୍ସନ ସାଇନ ହୋଇଗଲା</string>
+    <string name="pay_tx_signed_desc">ପଠାଇବା ପାଇଁ ଆପଣଙ୍କ ଫୋନକୁ\nବ୍ୟାପାରୀଙ୍କ ନିକଟକୁ ଆଣନ୍ତୁ</string>
+    <string name="pay_authenticating">ପ୍ରମାଣୀକରଣ ହେଉଛି…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">କୌଣସି ୱାଲେଟ ନାହିଁ</string>
+    <string name="collect_no_wallet_desc">ପେମେଣ୍ଟ ଗ୍ରହଣ କରିବା ପାଇଁ ସେଟିଂସରେ\nଆପଣଙ୍କ ୱାଲେଟ ସେଟଅପ କରନ୍ତୁ</string>
+    <string name="collect_amount">ସଂଗ୍ରହ କରିବାକୁ ରାଶି</string>
+    <string name="collect_button">ସଂଗ୍ରହ କରନ୍ତୁ</string>
+    <string name="collect_waiting">ପେମେଣ୍ଟ ପାଇଁ ଅପେକ୍ଷା</string>
+    <string name="collect_waiting_desc">ଗ୍ରାହକଙ୍କୁ ସେମାନଙ୍କ ଫୋନ\nନିକଟକୁ ଆଣିବାକୁ କୁହନ୍ତୁ</string>
+    <string name="collect_new">ନୂଆ ସଂଗ୍ରହ</string>
+    <string name="collect_processing">ପେମେଣ୍ଟ ପ୍ରକ୍ରିୟା ହେଉଛି…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">ଅପରେସନ ମୋଡ</string>
+    <string name="settings_mode_pay">ପେମେଣ୍ଟ</string>
+    <string name="settings_mode_pay_desc">ପେମେଣ୍ଟ କରନ୍ତୁ</string>
+    <string name="settings_mode_collect">ସଂଗ୍ରହ</string>
+    <string name="settings_mode_collect_desc">ପେମେଣ୍ଟ ଗ୍ରହଣ କରନ୍ତୁ</string>
+    <string name="settings_wallet">ୱାଲେଟ</string>
+    <string name="settings_wallet_address">ଠିକଣା</string>
+    <string name="settings_wallet_none">କୌଣସି ୱାଲେଟ କନଫିଗର ହୋଇନାହିଁ</string>
+    <string name="settings_wallet_create">ତିଆରି କରନ୍ତୁ</string>
+    <string name="settings_wallet_import">ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="settings_network">ବ୍ଲକଚେନ ନେଟୱାର୍କ</string>
+    <string name="settings_chain_id">ଚେନ ID: %d</string>
+    <string name="settings_execution">ଟ୍ରାନ୍ସାକ୍ସନ ଏକ୍ସିକ୍ୟୁସନ</string>
+    <string name="settings_exec_direct">ପ୍ରତ୍ୟକ୍ଷ</string>
+    <string name="settings_exec_direct_desc">ଆପଣ ଗ୍ୟାସ ଦେବେ</string>
+    <string name="settings_exec_relayer">ରିଲେୟର (Gelato)</string>
+    <string name="settings_exec_relayer_desc">ରିଲେୟର ମାଧ୍ୟମରେ ସ୍ପନ୍ସର୍ଡ ଗ୍ୟାସ</string>
+    <string name="settings_exec_aa">ଆକାଉଣ୍ଟ ଆବ୍ସଟ୍ରାକ୍ସନ</string>
+    <string name="settings_exec_aa_desc">ପେମାଷ୍ଟର ସହିତ ERC-4337</string>
+    <string name="settings_api_key">API କି</string>
+    <string name="settings_save">ସେଭ କରି ଫେରନ୍ତୁ</string>
+    <string name="settings_not_available">ଏହି ନେଟୱାର୍କରେ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="settings_language">ଭାଷା</string>
+    <string name="settings_language_system">ସିଷ୍ଟମ ଡିଫଲ୍ଟ</string>
+    <string name="collect_select_currency">ମୁଦ୍ରା ବାଛନ୍ତୁ</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">ସୁରକ୍ଷା</string>
+    <string name="security_encryption">କି ଏନକ୍ରିପ୍ସନ</string>
+    <string name="security_encryption_desc">Android Keystore ସହିତ AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">ହାର୍ଡୱେର ସୁରକ୍ଷା ମଡ୍ୟୁଲ ସକ୍ରିୟ</string>
+    <string name="security_strongbox_unavailable">ଏହି ଡିଭାଇସରେ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="security_biometric">ବାୟୋମେଟ୍ରିକ ପ୍ରମାଣୀକରଣ</string>
+    <string name="security_biometric_required">ପେମେଣ୍ଟ ପାଇଁ ଆବଶ୍ୟକ</string>
+    <string name="security_biometric_disabled">ନିଷ୍କ୍ରିୟ</string>
+    <string name="security_biometric_unavailable">ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="security_export">ପ୍ରାଇଭେଟ କି ରପ୍ତାନୀ କରନ୍ତୁ</string>
+    <string name="security_export_desc">ଆପଣଙ୍କ କି ସୁରକ୍ଷିତ ଭାବେ ସେଭ କରନ୍ତୁ</string>
+    <string name="security_delete">ୱାଲେଟ ଡିଲିଟ କରନ୍ତୁ</string>
+    <string name="security_delete_desc">ସମସ୍ତ ଡାଟା ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ କରନ୍ତୁ</string>
+    <string name="security_delete_title">ୱାଲେଟ ଡିଲିଟ କରନ୍ତୁ</string>
+    <string name="security_delete_warning">ଏହି କାର୍ଯ୍ୟ ଅପରିବର୍ତ୍ତନୀୟ।</string>
+    <string name="security_delete_warning2">ଯଦି ଆପଣଙ୍କ ପାଖରେ ଆପଣଙ୍କ ପ୍ରାଇଭେଟ କି ର ବ୍ୟାକଅପ ନାହିଁ ତେବେ ଆପଣ ସମସ୍ତ ଫଣ୍ଡକୁ ଆକ୍ସେସ ହରାଇବେ।</string>
+    <string name="security_delete_warning3">ଜାରି ରଖିବା ପୂର୍ବରୁ ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣ ଆପଣଙ୍କ କି ରପ୍ତାନୀ କରିଛନ୍ତି।</string>
+    <string name="security_delete_confirm">ଡିଲିଟ</string>
+    <string name="security_status_active">ସକ୍ରିୟ</string>
+    <string name="security_status_warning">ଚେତାବନୀ</string>
+    <string name="security_status_na">ଉପଲବ୍ଧ ନାହିଁ</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">ୱାଲେଟ ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="import_private_key">ପ୍ରାଇଭେଟ କି</string>
+    <string name="import_seed_phrase">ସିଡ ଫ୍ରେଜ</string>
+    <string name="import_prompt">ଆପଣଙ୍କ ପ୍ରାଇଭେଟ କି ପ୍ରବେଶ କରନ୍ତୁ:</string>
+    <string name="import_prompt_seed">ଆପଣଙ୍କ ସିଡ ଫ୍ରେଜ ପ୍ରବେଶ କରନ୍ତୁ (12–24 ଶବ୍ଦ):</string>
+    <string name="import_seed_hint">word1 word2 word3 …</string>
+    <string name="import_button">ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="import_error_invalid">ଅବୈଧ ପ୍ରାଇଭେଟ କି</string>
+    <string name="import_error_invalid_seed">ଅବୈଧ ସିଡ ଫ୍ରେଜ</string>
+    <string name="import_error_encryption">ଏନକ୍ରିପ୍ସନ ତ୍ରୁଟି</string>
+    <string name="export_title">ପ୍ରାଇଭେଟ କି</string>
+    <string name="export_warning">ଏହି କି କେବେ କାହାରି ସହିତ ସେୟାର କରନ୍ତୁ ନାହିଁ। ଯାହା ପାଖରେ ଏହା ଅଛି ତାର ଆପଣଙ୍କ ଫଣ୍ଡ ଉପରେ ସମ୍ପୂର୍ଣ୍ଣ ନିୟନ୍ତ୍ରଣ ଅଛି।</string>
+    <string name="export_understood">ବୁଝିଲି</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">ସାରାଂଶ</string>
+    <string name="history_received">ପ୍ରାପ୍ତ</string>
+    <string name="history_sent">ପଠାଯାଇଛି</string>
+    <string name="history_refunded">ଫେରସ୍ତ ହୋଇଛି</string>
+    <string name="history_empty">କୌଣସି ଟ୍ରାନ୍ସାକ୍ସନ ନାହିଁ</string>
+    <string name="history_empty_desc">%s ରେ ଟ୍ରାନ୍ସାକ୍ସନ\nଏଠାରେ ଦେଖାଯିବ</string>
+    <string name="history_payment_received">ପେମେଣ୍ଟ ପ୍ରାପ୍ତ</string>
+    <string name="history_payment_sent">ପେମେଣ୍ଟ ପଠାଯାଇଛି</string>
+    <string name="history_refund_sent">ଫେରସ୍ତ</string>
+    <string name="history_refund_received">ଫେରସ୍ତ ପ୍ରାପ୍ତ</string>
+    <string name="history_status_pending">ଅପେକ୍ଷାରତ</string>
+    <string name="history_status_confirmed">ନିଶ୍ଚିତ</string>
+    <string name="history_status_failed">ବିଫଳ</string>
+    <string name="history_status_refunded">ଫେରସ୍ତ ହୋଇଛି</string>
+    <string name="history_status_partial">ଆଂଶିକ</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">ମୂଳ ଟ୍ରାନ୍ସାକ୍ସନ</string>
+    <string name="refund_amount">ରାଶି</string>
+    <string name="refund_already">ପୂର୍ବରୁ ଫେରସ୍ତ ହୋଇଛି</string>
+    <string name="refund_available">ଉପଲବ୍ଧ</string>
+    <string name="refund_recipient">ପ୍ରାପ୍ତକର୍ତ୍ତା</string>
+    <string name="refund_date">ତାରିଖ</string>
+    <string name="refund_type">ଫେରସ୍ତ ପ୍ରକାର</string>
+    <string name="refund_full">ସମ୍ପୂର୍ଣ୍ଣ</string>
+    <string name="refund_partial">ଆଂଶିକ</string>
+    <string name="refund_partial_desc">ରାଶି ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତୁ</string>
+    <string name="refund_amount_label">ଫେରସ୍ତ କରିବାକୁ ରାଶି (%s)</string>
+    <string name="refund_max">ସର୍ବାଧିକ: %1$s %2$s</string>
+    <string name="refund_gas_notice">ଏହି ଟ୍ରାନ୍ସାକ୍ସନ ପାଇଁ ଆପଣ ଗ୍ୟାସ ଦେବେ</string>
+    <string name="refund_button">%1$s %2$s ଫେରସ୍ତ କରନ୍ତୁ</string>
+    <string name="refund_processing">ଫେରସ୍ତ ପ୍ରକ୍ରିୟା ହେଉଛି…</string>
+    <string name="refund_success">ଫେରସ୍ତ ସଫଳ</string>
+    <string name="refund_done">ସମାପ୍ତ</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">ଆପଣଙ୍କ ଟୋକେନ</string>
+    <string name="balance_manage">ପରିଚାଳନା</string>
+    <string name="balance_refresh">ରିଫ୍ରେସ</string>
+    <string name="balance_loading">ବ୍ୟାଲାନ୍ସ ଲୋଡ ହେଉଛି…</string>
+    <string name="balance_empty">କୌଣସି ଟୋକେନ ନାହିଁ</string>
+    <string name="balance_no_wallet_desc">ଆପଣଙ୍କ ବ୍ୟାଲାନ୍ସ ଦେଖିବା ପାଇଁ ସେଟିଂସରେ\nଆପଣଙ୍କ ୱାଲେଟ ସେଟଅପ କରନ୍ତୁ</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">ଅନୁମୋଦିତ ଟୋକେନ</string>
+    <string name="settings_add_token">ଟୋକେନ ଯୋଡନ୍ତୁ</string>
+    <string name="add_token_prompt">ଟୋକେନ କଣ୍ଟ୍ରାକ୍ଟ ଠିକଣା ପ୍ରବେଶ କରନ୍ତୁ:</string>
+    <string name="add_token_validating">ଟୋକେନ ଯାଞ୍ଚ ହେଉଛି…</string>
+    <string name="add_token_button">ଯୋଡନ୍ତୁ</string>
+    <string name="delete">ଡିଲିଟ</string>
+
+    <!-- Common -->
+    <string name="cancel">ବାତିଲ</string>
+    <string name="close">ବନ୍ଦ</string>
+    <string name="retry">ପୁନଃଚେଷ୍ଟା</string>
+    <string name="error">ତ୍ରୁଟି</string>
+    <string name="copy">କପି</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">ୱାଲେଟ କନଫିଗର ହୋଇନାହିଁ</string>
+    <string name="error_device_security">ଡିଭାଇସ ସୁରକ୍ଷା ତ୍ରୁଟି</string>
+    <string name="error_auth">ପ୍ରମାଣୀକରଣ ତ୍ରୁଟି</string>
+    <string name="error_unknown">ଅଜଣା ତ୍ରୁଟି</string>
+    <string name="error_keystore_unavailable">Keystore ଉପଲବ୍ଧ ନାହିଁ - କିଛି ଫଙ୍କସନ କାମ କରିବ ନାହିଁ</string>
+    <string name="error_encryption_restart">ଏନକ୍ରିପ୍ସନ ତ୍ରୁଟି - ଆପ ପୁନଃଆରମ୍ଭ କରନ୍ତୁ</string>
+    <string name="error_auth_cancelled">ପ୍ରମାଣୀକରଣ ବାତିଲ</string>
+    <string name="error_invalid_address">ଅବୈଧ ଠିକଣା</string>
+    <string name="error_invalid_address_format">ଅବୈଧ ଠିକଣା ଫର୍ମାଟ</string>
+    <string name="error_token_already_added">ଟୋକେନ ପୂର୍ବରୁ ଯୋଡାଯାଇଛି</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">ପଠାଯାଇଛି! Tx: %s…</string>
+    <string name="token_native">ନେଟିଭ</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">ଆପଣଙ୍କ ବ୍ୟାଲାନ୍ସ</string>
+    <string name="pay_insufficient_balance">ଅପର୍ଯ୍ୟାପ୍ତ ବ୍ୟାଲାନ୍ସ</string>
+    <string name="pay_need_more">ଆପଣଙ୍କୁ ଆଉ %1$s %2$s ଆବଶ୍ୟକ</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">ସ୍ୱାଗତ</string>
+    <string name="welcome_sovereignty">ଆପଣଙ୍କ କି।\nଆପଣଙ୍କ ଫଣ୍ଡ।\nଆପଣଙ୍କ ସ୍ୱାଧୀନତା।</string>
+    <string name="welcome_desc">ଆପଣଙ୍କ ଫଣ୍ଡ ଏହି ଆପରେ ଷ୍ଟୋର ହୋଇନାହିଁ। ସେଗୁଡିକ ବ୍ଲକଚେନରେ ଅଛି, ଆପଣଙ୍କ ପ୍ରାଇଭେଟ କି ଦ୍ୱାରା ନିୟନ୍ତ୍ରିତ।\n\nଏହି ଆପ କେବଳ ଆପଣଙ୍କ କି ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରେ। ଆମେ ଆପଣଙ୍କ ଫଣ୍ଡ ଆକ୍ସେସ କରିପାରିବୁ ନାହିଁ।\n\nଧ୍ୟାନ ଦିଅନ୍ତୁ: କିଛି ଟୋକେନ (USDC, USDT) ସେମାନଙ୍କ ଇସୁଅର ଦ୍ୱାରା ଫ୍ରିଜ କରାଯାଇପାରେ। ସର୍ବାଧିକ ସ୍ୱାଧୀନତା ପାଇଁ, ନେଟିଭ ETH କିମ୍ବା ବିକେନ୍ଦ୍ରୀକୃତ ଟୋକେନ ବ୍ୟବହାର କରନ୍ତୁ।</string>
+    <string name="welcome_warning_title">ଆପଣଙ୍କ କି = ଆପଣଙ୍କ ଫଣ୍ଡ</string>
+    <string name="welcome_warning_desc">ଯଦି ଆପଣ ଆପଣଙ୍କ ପ୍ରାଇଭେଟ କି ହରାନ୍ତି କିମ୍ବା କାହାରି ସହିତ ସେୟାର କରନ୍ତି, ଆପଣ ସ୍ଥାୟୀ ଭାବେ ଆପଣଙ୍କ ଫଣ୍ଡର ନିୟନ୍ତ୍ରଣ ହରାନ୍ତି।\n\nକୌଣସି ପୁନରୁଦ୍ଧାର ବିକଳ୍ପ ନାହିଁ। କୌଣସି ସପୋର୍ଟ ଟିମ ଆପଣଙ୍କୁ ସାହାଯ୍ୟ କରିପାରିବ ନାହିଁ। ଏହା ପ୍ରକୃତ ମାଲିକାନାର ସ୍ୱଭାବ।\n\nସର୍ବଦା ଆପଣଙ୍କ କି ର ଏକ ସୁରକ୍ଷିତ ବ୍ୟାକଅପ ରଖନ୍ତୁ।</string>
+    <string name="welcome_opensource">ଓପନ ସୋର୍ସ ସଫ୍ଟୱେୟାର। ଯାଞ୍ଚ କରନ୍ତୁ, ବିଶ୍ୱାସ କରନ୍ତୁ ନାହିଁ।</string>
+    <string name="welcome_start">ମୁଁ ବୁଝିଲି, ଆରମ୍ଭ କରିବା</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">ବ୍ୟାପାରୀ ପରିଚୟ</string>
+    <string name="settings_merchant_name">ବ୍ୟବସାୟ ନାମ</string>
+    <string name="settings_merchant_name_hint">ମୋ କଫି ଶପ</string>
+    <string name="settings_merchant_domain">ଡୋମେନ / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth କିମ୍ବା mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">ପେମେଣ୍ଟ ସମୟରେ ଗ୍ରାହକଙ୍କୁ ଦେଖାଯାଏ</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">ଗୋପନୀୟତା ମୋଡ</string>
+    <string name="settings_stealth_desc">ଏକକାଳୀନ ଠିକଣାକୁ ପେମେଣ୍ଟ ଗ୍ରହଣ କରନ୍ତୁ (EIP-5564)</string>
+    <string name="settings_stealth_enabled">ସକ୍ରିୟ</string>
+    <string name="settings_stealth_info">ପ୍ରତ୍ୟେକ ପେମେଣ୍ଟ ଏକ ଅନନ୍ୟ ଠିକଣାକୁ ଯାଏ ଯାହା କେବଳ ଆପଣ ଖର୍ଚ୍ଚ କରିପାରିବେ। ଦର୍ଶକମାନେ ଆପଣଙ୍କ ବ୍ୟବସାୟ ସହିତ ପେମେଣ୍ଟ ଲିଙ୍କ କରିପାରିବେ ନାହିଁ।</string>
+    <string name="stealth_address_label">ଷ୍ଟେଲଥ ମୋଡ ସକ୍ରିୟ</string>
+    <string name="stealth_payment_note">ପେମେଣ୍ଟ ଏକ ଗୋପନ ଠିକଣାକୁ ପଠାଯିବ</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">ପ୍ରାପ୍ତକର୍ତ୍ତା ଠିକଣା</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">ଗୋପନ ୱାଲେଟ</string>
+    <string name="stealth_wallet_addresses">%d ଷ୍ଟେଲଥ ଠିକଣାରେ</string>
+    <string name="stealth_wallet_privacy_title">ଆପଣଙ୍କ ଫଣ୍ଡ ଗୋପନ</string>
+    <string name="stealth_wallet_privacy_desc">ଏହି ବ୍ୟାଲାନ୍ସ ଆପଣଙ୍କ ସାର୍ବଜନୀନ ୱାଲେଟ ସହିତ ଲିଙ୍କ ନୁହେଁ। ଯୋଗାଣକାରୀ, ଏକ୍ସଚେଞ୍ଜ, କିମ୍ବା ଯେକୌଣସି ସ୍ଥାନକୁ ସିଧାସଳଖ ଖର୍ଚ୍ଚ କରନ୍ତୁ - ଆପଣଙ୍କ ବ୍ୟବସାୟ ପରିଚୟ ଲୁକ୍କାୟିତ ରହେ।</string>
+    <string name="stealth_wallet_send">ପଠାନ୍ତୁ</string>
+    <string name="stealth_wallet_send_title">ଗୋପନ ୱାଲେଟରୁ ପଠାନ୍ତୁ</string>
+    <string name="stealth_wallet_available">ଉପଲବ୍ଧ: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">ରାଶି</string>
+    <string name="nav_stealth_wallet">ଗୋପନ ୱାଲେଟ</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">ଏକାଧିକ ଠିକଣା</string>
+    <string name="stealth_wallet_gas_desc">ଆପଣଙ୍କ ଫଣ୍ଡ %d ଠିକଣାରେ ବିସ୍ତାରିତ। ବଡ ରାଶି ଖର୍ଚ୍ଚ କରିବା ଏକାଧିକ ଟ୍ରାନ୍ସାକ୍ସନ ଆବଶ୍ୟକ କରିପାରେ, ଗ୍ୟାସ ଖର୍ଚ୍ଚ ବଢାଇ।</string>
+    <string name="stealth_wallet_consolidate">ମୁଖ୍ୟ ୱାଲେଟକୁ ଏକତ୍ର କରନ୍ତୁ</string>
+    <string name="stealth_wallet_consolidate_title">ଫଣ୍ଡ ଏକତ୍ର କରିବେ?</string>
+    <string name="stealth_wallet_consolidate_warning">ଏହା ଆପଣଙ୍କ ଗୋପନ ୱାଲେଟରୁ ସମସ୍ତ ଫଣ୍ଡ ଆପଣଙ୍କ ମୁଖ୍ୟ ୱାଲେଟ ଠିକଣାକୁ ସ୍ଥାନାନ୍ତର କରିବ।</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ଚେତାବନୀ: ଏହା ଗୋପନୀୟତା ଭଙ୍ଗ କରେ। ଆପଣଙ୍କ ମୁଖ୍ୟ ୱାଲେଟ ସମସ୍ତ ପ୍ରାପ୍ତ ପେମେଣ୍ଟ ସହିତ ଲିଙ୍କ ହେବ।</string>
+    <string name="stealth_wallet_consolidate_benefit">ଲାଭ: ଭବିଷ୍ୟତ ଖର୍ଚ୍ଚ କେବଳ ଏକ ଟ୍ରାନ୍ସାକ୍ସନ ଆବଶ୍ୟକ କରିବ (କମ ଗ୍ୟାସ ଖର୍ଚ୍ଚ)।</string>
+    <string name="stealth_wallet_consolidate_confirm">ଏକତ୍ର କରନ୍ତୁ</string>
+    <string name="stealth_wallet_consolidate_success">ଫଣ୍ଡ ମୁଖ୍ୟ ୱାଲେଟରେ ଏକତ୍ର ହୋଇଛି</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ପେୟର ଗୋପନୀୟତା</string>
+    <string name="settings_payer_privacy_desc">ଏଫେମେରାଲ ଆକାଉଣ୍ଟରୁ ପେମେଣ୍ଟ କରନ୍ତୁ (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">ପ୍ରତ୍ୟେକ ପେମେଣ୍ଟ ଏକ ଅନନ୍ୟ ଆକାଉଣ୍ଟ ବ୍ୟବହାର କରେ। ଆପଣଙ୍କ ମୁଖ୍ୟ ୱାଲେଟ ଠିକଣା ଅନ-ଚେନରେ ଦୃଶ୍ୟମାନ ନୁହେଁ।</string>
+    <string name="settings_payer_privacy_requires_api">ମେଇନନେଟ ପାଇଁ API କି ଆବଶ୍ୟକ</string>
+    <string name="settings_payer_privacy_public_bundler">ଟେଷ୍ଟନେଟରେ ମାଗଣା (ପବ୍ଲିକ ବଣ୍ଡଲର)</string>
+    <string name="payer_privacy_note">ଆପଣଙ୍କ ୱାଲେଟ ଠିକଣା ଲୁକ୍କାୟିତ ରହିବ</string>
+    <string name="payer_privacy_processing">ଗୋପନ ପେମେଣ୍ଟ ପ୍ରକ୍ରିୟା ହେଉଛି…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">ଠିକଣା ବହି</string>
+    <string name="address_book_add">ଯୋଗାଯୋଗ ଯୋଡନ୍ତୁ</string>
+    <string name="address_book_edit">ଯୋଗାଯୋଗ ସମ୍ପାଦନା</string>
+    <string name="address_book_search">ଯୋଗାଯୋଗ ଖୋଜନ୍ତୁ…</string>
+    <string name="address_book_empty">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଯୋଗାଯୋଗ ନାହିଁ</string>
+    <string name="address_book_empty_hint">ଆପଣ କାହାକୁ ପେମେଣ୍ଟ କରୁଛନ୍ତି କିମ୍ବା\nପାଉଛନ୍ତି ସହଜରେ ଚିହ୍ନିବା ପାଇଁ ଠିକଣା ଯୋଡନ୍ତୁ</string>
+    <string name="address_book_no_results">କୌଣସି ଯୋଗାଯୋଗ ମିଳିଲା ନାହିଁ</string>
+    <string name="address_book_address">ୱାଲେଟ ଠିକଣା</string>
+    <string name="address_book_name">ନାମ</string>
+    <string name="address_book_name_hint">ଯଥା କଫି ଶପ, ଜନ ଡୋ</string>
+    <string name="address_book_note">ନୋଟ (ଐଚ୍ଛିକ)</string>
+    <string name="address_book_note_hint">ଯଥା ଯୋଗାଣକାରୀ, ବନ୍ଧୁ</string>
+    <string name="address_book_delete_title">ଯୋଗାଯୋଗ ଡିଲିଟ କରିବେ?</string>
+    <string name="address_book_delete_message">%s କୁ ଆପଣଙ୍କ ଠିକଣା ବହିରୁ ହଟାଇବେ?</string>
+    <string name="address_book_saved">ଯୋଗାଯୋଗ ସେଭ ହୋଇଛି</string>
+    <string name="address_book_unknown">ଅଜ୍ଞାତ</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">ସରଳ ମୋଡ</string>
+    <string name="settings_simple_mode_desc">ବ୍ୟବହାର ସହଜ, ମୌଳିକ ବିକଳ୍ପ</string>
+    <string name="settings_advanced_mode">ଉନ୍ନତ ମୋଡ</string>
+    <string name="settings_advanced_mode_desc">ପାୱାର ୟୁଜର୍ସ ପାଇଁ କ୍ରିପ୍ଟୋ ବିକଳ୍ପ</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">ଯୋଗାଯୋଗ ସେୟାର କରନ୍ତୁ</string>
+    <string name="share_contact_title">ଆପଣଙ୍କ ଠିକଣା ସେୟାର କରନ୍ତୁ</string>
+    <string name="share_contact_ready">ସେୟାର ପାଇଁ ପ୍ରସ୍ତୁତ</string>
+    <string name="share_contact_ready_desc">ଆପଣଙ୍କ ଫୋନକୁ ଅନ୍ୟ\nCleanSky ଡିଭାଇସ ନିକଟକୁ ଆଣନ୍ତୁ</string>
+    <string name="share_contact_received">ଯୋଗାଯୋଗ ମିଳିଲା!</string>
+    <string name="share_contact_received_name">%s ସଂଯୋଗ କରିବାକୁ ଚାହୁଁଛନ୍ତି</string>
+    <string name="share_contact_save">ଯୋଗାଯୋଗରେ ସେଭ କରନ୍ତୁ</string>
+    <string name="share_contact_your_name">ଆପଣଙ୍କ ନାମ (ଐଚ୍ଛିକ)</string>
+    <string name="share_contact_your_name_hint">ଅନ୍ୟମାନେ ଆପଣଙ୍କୁ କିପରି ଦେଖିବେ</string>
+    <string name="share_contact_mutual">ଯୋଗାଯୋଗ ବିନିମୟ</string>
+    <string name="share_contact_mutual_desc">ଉଭୟ ଡିଭାଇସ ଏକ ସମୟରେ ଠିକଣା ସେୟାର କରନ୍ତି</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ପଠାନ୍ତୁ</string>
+    <string name="send_title">ଯୋଗାଯୋଗକୁ ପଠାନ୍ତୁ</string>
+    <string name="send_select_contact">ପ୍ରାପ୍ତକର୍ତ୍ତା ବାଛନ୍ତୁ</string>
+    <string name="send_no_contacts">ଏପର୍ଯ୍ୟନ୍ତ ଯୋଗାଯୋଗ ନାହିଁ</string>
+    <string name="send_no_contacts_hint">NFC ମାଧ୍ୟମରେ କିମ୍ବା ମାନୁଆଲି ଯୋଗାଯୋଗ\nଯୋଡି ସେମାନଙ୍କୁ ପେମେଣ୍ଟ ପଠାନ୍ତୁ</string>
+    <string name="send_amount">ରାଶି</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">କୁ: %s</string>
+    <string name="send_confirm">ପଠାନ୍ତୁ %1$s %2$s</string>
+    <string name="send_processing">ପଠାଉଛି…</string>
+    <string name="send_success">ସଫଳ ଭାବେ ପଠାଗଲା!</string>
+    <string name="send_success_desc">%1$s %2$s %3$s କୁ ପଠାଗଲା</string>
+    <string name="send_error">ପଠାଇବାରେ ବିଫଳ</string>
+    <string name="send_enter_amount">ଏକ ରାଶି ଦିଅନ୍ତୁ</string>
+    <string name="send_new">ନୂଆ ଟ୍ରାନ୍ସଫର</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">ସମସ୍ତ</string>
+    <string name="history_filter_received">ପ୍ରାପ୍ତ</string>
+    <string name="history_filter_sent">ପଠାଯାଇଛି</string>
+    <string name="history_filter_contact">ଯୋଗାଯୋଗ</string>
+    <string name="history_filter_by_contact">ଯୋଗାଯୋଗ ଅନୁସାରେ ଫିଲ୍ଟର</string>
+    <string name="history_show_all">ସମସ୍ତ ଦେଖାନ୍ତୁ</string>
+    <string name="history_no_results">ଫିଲ୍ଟର ସହିତ କୌଣସି ଟ୍ରାନ୍ସାକ୍ସନ ମେଳ ଖାଉନାହିଁ</string>
+    <string name="history_add_contact">ଯୋଗାଯୋଗରେ ଯୋଡନ୍ତୁ</string>
+    <string name="history_edit_contact">ଯୋଗାଯୋଗ ସମ୍ପାଦନା</string>
+    <string name="history_from">ଠାରୁ</string>
+    <string name="history_to">କୁ</string>
+    <string name="history_date">ତାରିଖ</string>
+    <string name="history_tx_hash">ଟ୍ରାନ୍ସାକ୍ସନ</string>
+    <string name="history_refund">ଫେରସ୍ତ</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">ରାଶି ବହୁତ କମ୍</string>
+    <string name="scam_amount_large_warning">ବଡ ରାଶି</string>
+    <string name="scam_amount_large_desc">ଆପଣ %1$s %2$s ପଠାଇବାକୁ ଯାଉଛନ୍ତି।\nଦୟାକରି ଏହା ସଠିକ ଅଛି ବୋଲି ନିଶ୍ଚିତ କରନ୍ତୁ।</string>
+    <string name="scam_confirm_large">ବଡ ଟ୍ରାନ୍ସଫର ନିଶ୍ଚିତ କରନ୍ତୁ</string>
+    <string name="scam_dust_attack_warning">ସନ୍ଦେହଜନକ ଅନୁରୋଧ</string>
+    <string name="scam_dust_attack_desc">ଏହା ଏକ ଅତି କ୍ଷୁଦ୍ର ରାଶି (%1$s %2$s)। ଡଷ୍ଟ ଆକ୍ରମଣ ୱାଲେଟ ଟ୍ରାକ କରିବାକୁ ଛୋଟ ପେମେଣ୍ଟ ବ୍ୟବହାର କରେ। ଅପ୍ରତ୍ୟାଶିତ ହେଲେ ପ୍ରତ୍ୟାଖ୍ୟାନ କରନ୍ତୁ।</string>
+    <string name="scam_receive_large_warning">ବଡ ପେମେଣ୍ଟ ଅନୁରୋଧ</string>
+    <string name="scam_receive_large_desc">ଏହି ଅନୁରୋଧ %1$s %2$s ପାଇଁ। ପେମେଣ୍ଟ କରିବା ପୂର୍ବରୁ ଏହା ସଠିକ ରାଶି କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ।</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">କେବଳ ଗ୍ରହଣ</string>
+    <string name="settings_mode_receive_only">ଗ୍ରହଣ</string>
+    <string name="settings_mode_receive_only_desc">ବ୍ୟକ୍ତିଗତ ଚାବି ନାହିଁ</string>
+    <string name="settings_receive_only">କେବଳ-ଗ୍ରହଣ ବିନ୍ୟାସ</string>
+    <string name="settings_escrow_address">Escrow ଠିକଣା</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow ବିନ୍ୟାସ ହୋଇନାହିଁ</string>
+    <string name="receive_only_no_escrow_desc">ସେଟିଂସରେ escrow ଠିକଣା ଏବଂ API key ବିନ୍ୟାସ କରନ୍ତୁ</string>
+    <string name="receive_only_security_notice">ଏହି ଉପକରଣରେ ବ୍ୟକ୍ତିଗତ ଚାବି ନାହିଁ। ଚୋରି ହେଲେ ମଧ୍ୟ ସୁରକ୍ଷିତ।</string>
+    <string name="receive_only_api_key_required">Relayer କାର୍ଯ୍ୟକାରିତା ପାଇଁ API key ଆବଶ୍ୟକ</string>
+</resources>

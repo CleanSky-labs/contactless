@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Kontaktløs</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Betal</string>
+    <string name="nav_collect">Modtag</string>
+    <string name="nav_settings">Indstillinger</string>
+    <string name="nav_history">Historik</string>
+    <string name="nav_refund">Refusion</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Tilbage</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ingen tegnebog</string>
+    <string name="pay_no_wallet_desc">Konfigurer din tegnebog i Indstillinger\nfor at foretage betalinger</string>
+    <string name="pay_ready">Klar til betaling</string>
+    <string name="pay_ready_desc">Hold din telefon tæt på\nforhandlerens enhed</string>
+    <string name="pay_request_title">Betalingsanmodning</string>
+    <string name="pay_network">Netværk: %s</string>
+    <string name="pay_expired">Anmodning udløbet</string>
+    <string name="pay_cancel">Annuller</string>
+    <string name="pay_confirm">Betal</string>
+    <string name="pay_new">Ny betaling</string>
+    <string name="pay_signing">Signerer transaktion…</string>
+    <string name="pay_tx_signed">Transaktion signeret</string>
+    <string name="pay_tx_signed_desc">Hold din telefon tæt på\nforhandleren for at sende</string>
+    <string name="pay_authenticating">Godkender…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ingen tegnebog</string>
+    <string name="collect_no_wallet_desc">Konfigurer din tegnebog i Indstillinger\nfor at modtage betalinger</string>
+    <string name="collect_amount">Beløb at modtage</string>
+    <string name="collect_button">Modtag</string>
+    <string name="collect_waiting">Venter på betaling</string>
+    <string name="collect_waiting_desc">Bed kunden om at\nholde telefonen tæt</string>
+    <string name="collect_new">Ny modtagelse</string>
+    <string name="collect_processing">Behandler betaling…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Driftstilstand</string>
+    <string name="settings_mode_pay">Betal</string>
+    <string name="settings_mode_pay_desc">Foretag betalinger</string>
+    <string name="settings_mode_collect">Modtag</string>
+    <string name="settings_mode_collect_desc">Modtag betalinger</string>
+    <string name="settings_wallet">Tegnebog</string>
+    <string name="settings_wallet_address">Adresse</string>
+    <string name="settings_wallet_none">Ingen tegnebog konfigureret</string>
+    <string name="settings_wallet_create">Opret</string>
+    <string name="settings_wallet_import">Importer</string>
+    <string name="settings_network">Blockchain-netværk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Transaktionsudførelse</string>
+    <string name="settings_exec_direct">Direkte</string>
+    <string name="settings_exec_direct_desc">Du betaler gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsoreret gas via relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 med Paymaster</string>
+    <string name="settings_api_key">API-nøgle</string>
+    <string name="settings_save">Gem og gå tilbage</string>
+    <string name="settings_not_available">Ikke tilgængelig på dette netværk</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Sikkerhed</string>
+    <string name="security_encryption">Nøglekryptering</string>
+    <string name="security_encryption_desc">AES-256-GCM med Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardware sikkerhedsmodul aktiv</string>
+    <string name="security_strongbox_unavailable">Ikke tilgængelig på denne enhed</string>
+    <string name="security_biometric">Biometrisk godkendelse</string>
+    <string name="security_biometric_required">Påkrævet til betalinger</string>
+    <string name="security_biometric_disabled">Deaktiveret</string>
+    <string name="security_biometric_unavailable">Ikke tilgængelig</string>
+    <string name="security_export">Eksporter privat nøgle</string>
+    <string name="security_export_desc">Gem din nøgle sikkert</string>
+    <string name="security_delete">Slet tegnebog</string>
+    <string name="security_delete_desc">Slet alle data permanent</string>
+    <string name="security_delete_title">Slet tegnebog</string>
+    <string name="security_delete_warning">Denne handling er UIGENKALDELIG.</string>
+    <string name="security_delete_warning2">Du mister adgang til alle midler, hvis du ikke har en sikkerhedskopi af din private nøgle.</string>
+    <string name="security_delete_warning3">Sørg for at have eksporteret din nøgle, før du fortsætter.</string>
+    <string name="security_delete_confirm">Slet</string>
+    <string name="security_status_active">Aktiv</string>
+    <string name="security_status_warning">Advarsel</string>
+    <string name="security_status_na">Ikke relevant</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importer tegnebog</string>
+    <string name="import_prompt">Indtast din private nøgle:</string>
+    <string name="import_button">Importer</string>
+    <string name="import_error_invalid">Ugyldig privat nøgle</string>
+    <string name="import_error_encryption">Krypteringsfejl</string>
+    <string name="export_title">Privat nøgle</string>
+    <string name="export_warning">Del ALDRIG denne nøgle. Den, der ejer den, har fuld kontrol over dine midler.</string>
+    <string name="export_understood">Forstået</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Oversigt</string>
+    <string name="history_received">Modtaget</string>
+    <string name="history_refunded">Refunderet</string>
+    <string name="history_empty">Ingen transaktioner</string>
+    <string name="history_empty_desc">Transaktioner på %s\nvises her</string>
+    <string name="history_payment_received">Betaling modtaget</string>
+    <string name="history_payment_sent">Betaling sendt</string>
+    <string name="history_refund_sent">Refusion</string>
+    <string name="history_refund_received">Refusion modtaget</string>
+    <string name="history_status_pending">Afventer</string>
+    <string name="history_status_confirmed">Bekræftet</string>
+    <string name="history_status_failed">Fejlede</string>
+    <string name="history_status_refunded">Refunderet</string>
+    <string name="history_status_partial">Delvis</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Original transaktion</string>
+    <string name="refund_amount">Beløb</string>
+    <string name="refund_already">Allerede refunderet</string>
+    <string name="refund_available">Tilgængelig</string>
+    <string name="refund_recipient">Modtager</string>
+    <string name="refund_date">Dato</string>
+    <string name="refund_type">Refusionstype</string>
+    <string name="refund_full">Fuld</string>
+    <string name="refund_partial">Delvis</string>
+    <string name="refund_partial_desc">Angiv beløb</string>
+    <string name="refund_amount_label">Beløb at refundere (%s)</string>
+    <string name="refund_max">Maksimum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Du betaler gas for denne transaktion</string>
+    <string name="refund_button">Refunder %1$s %2$s</string>
+    <string name="refund_processing">Behandler refusion…</string>
+    <string name="refund_success">Refusion lykkedes</string>
+    <string name="refund_done">Færdig</string>
+
+    <!-- Common -->
+    <string name="cancel">Annuller</string>
+    <string name="close">Luk</string>
+    <string name="retry">Prøv igen</string>
+    <string name="error">Fejl</string>
+    <string name="copy">Kopier</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Tegnebog ikke konfigureret</string>
+    <string name="error_device_security">Enhedssikkerhedsfejl</string>
+    <string name="error_auth">Godkendelsesfejl</string>
+    <string name="error_unknown">Ukendt fejl</string>
+    <string name="error_keystore_unavailable">Keystore utilgængeligt - nogle funktioner virker ikke</string>
+    <string name="error_encryption_restart">Krypteringsfejl - genstart appen</string>
+    <string name="error_auth_cancelled">Godkendelse annulleret</string>
+    <string name="error_invalid_address">Ugyldig adresse</string>
+    <string name="error_invalid_address_format">Ugyldigt adresseformat</string>
+    <string name="error_token_already_added">Token allerede tilføjet</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Sendt! Tx: %s…</string>
+    <string name="token_native">Nativ</string>
+
+    <!-- Common actions -->
+    <string name="back">Tilbage</string>
+    <string name="save">Gem</string>
+
+    <!-- Collect Screen extras -->
+    <string name="collect_select_currency">Vælg valuta</string>
+
+    <!-- Settings Language -->
+    <string name="settings_language">Sprog</string>
+    <string name="settings_language_system">Systemstandard</string>
+
+    <!-- Import extras -->
+    <string name="import_private_key">Privat nøgle</string>
+    <string name="import_seed_phrase">Gendannelsesfrase</string>
+    <string name="import_prompt_seed">Indtast din gendannelsesfrase (12–24 ord):</string>
+    <string name="import_seed_hint">ord1 ord2 ord3 …</string>
+    <string name="import_error_invalid_seed">Ugyldig gendannelsesfrase</string>
+
+    <!-- History extras -->
+    <string name="history_sent">Sendt</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Din saldo</string>
+    <string name="pay_insufficient_balance">Utilstrækkelig saldo</string>
+    <string name="pay_need_more">Du mangler %1$s %2$s mere</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Dine tokens</string>
+    <string name="balance_manage">Administrer</string>
+    <string name="balance_refresh">Opdater</string>
+    <string name="balance_loading">Indlæser saldi…</string>
+    <string name="balance_empty">Ingen tokens</string>
+    <string name="balance_no_wallet_desc">Konfigurer din tegnebog i Indstillinger\nfor at se dine saldi</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tilladte tokens</string>
+    <string name="settings_add_token">Tilføj token</string>
+    <string name="add_token_prompt">Indtast token-kontraktadresse:</string>
+    <string name="add_token_validating">Validerer token…</string>
+    <string name="add_token_button">Tilføj</string>
+    <string name="delete">Slet</string>
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Velkommen</string>
+    <string name="welcome_sovereignty">Dine nøgler.\nDine midler.\nDin suverænitet.</string>
+    <string name="welcome_desc">Dine midler opbevares IKKE i denne app. De eksisterer på blockchainen, kontrolleret af dine private nøgler.\n\nDenne app opbevarer kun dine nøgler sikkert. Vi kan ikke få adgang til dine midler.\n\nBemærk: Nogle tokens (USDC, USDT) kan fryses af udstederne. For maksimal suverænitet, brug ETH eller decentraliserede tokens.</string>
+    <string name="welcome_warning_title">Dine nøgler = Dine midler</string>
+    <string name="welcome_warning_desc">Hvis du mister dine private nøgler eller deler dem med nogen, mister du permanent kontrollen over dine midler.\n\nDer er ingen genoprettelsesmulighed. Intet supportteam kan hjælpe dig. Dette er ægte ejerskabs natur.\n\nHav altid en sikker sikkerhedskopi af dine nøgler.</string>
+    <string name="welcome_opensource">Open source software. Verificer, stol ikke blindt.</string>
+    <string name="welcome_start">Jeg forstår, lad os starte</string>
+
+    <!-- Merchant Identity -->
+    <string name="settings_merchant_identity">Forhandleridentitet</string>
+    <string name="settings_merchant_name">Virksomhedsnavn</string>
+    <string name="settings_merchant_name_hint">Min café</string>
+    <string name="settings_merchant_domain">Domæne / ENS</string>
+    <string name="settings_merchant_domain_hint">mincafe.eth eller mincafe.dk</string>
+    <string name="settings_merchant_identity_desc">Vises til kunder under betaling</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privatlivstilstand</string>
+    <string name="settings_stealth_desc">Modtag betalinger til engangsadresser (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Aktiveret</string>
+    <string name="settings_stealth_info">Hver betaling går til en unik adresse, som kun du kan bruge. Observatører kan ikke koble betalinger til din virksomhed.</string>
+    <string name="stealth_address_label">Stealth-tilstand aktiv</string>
+    <string name="stealth_payment_note">Betalingen sendes til en privat adresse</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Modtageradresse</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privat tegnebog</string>
+    <string name="stealth_wallet_addresses">på tværs af %d stealth-adresser</string>
+    <string name="stealth_wallet_privacy_title">Dine midler er private</string>
+    <string name="stealth_wallet_privacy_desc">Denne saldo er ikke forbundet med din offentlige tegnebog. Brug direkte til leverandører, børser eller hvor som helst - din virksomhedsidentitet forbliver skjult.</string>
+    <string name="stealth_wallet_send">Send</string>
+    <string name="stealth_wallet_send_title">Send fra privat tegnebog</string>
+    <string name="stealth_wallet_available">Tilgængeligt: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Beløb</string>
+    <string name="nav_stealth_wallet">Privat tegnebog</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Flere adresser</string>
+    <string name="stealth_wallet_gas_desc">Dine midler er spredt på %d adresser. Store beløb kan kræve flere transaktioner, hvilket øger gasomkostningerne.</string>
+    <string name="stealth_wallet_consolidate">Konsolider til hovedtegnebog</string>
+    <string name="stealth_wallet_consolidate_title">Konsolider midler?</string>
+    <string name="stealth_wallet_consolidate_warning">Dette overfører alle midler fra din private tegnebog til din hovedtegnebogsadresse.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ADVARSEL: Dette bryder privatlivet. Din hovedtegnebog vil blive forbundet med alle modtagne betalinger.</string>
+    <string name="stealth_wallet_consolidate_benefit">Fordel: Fremtidige udgifter kræver kun én transaktion (lavere gasomkostninger).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolider</string>
+    <string name="stealth_wallet_consolidate_success">Midler konsolideret til hovedtegnebog</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Betalerprivatliv</string>
+    <string name="settings_payer_privacy_desc">Betal fra midlertidige konti (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Hver betaling bruger en unik konto. Din hovedtegnebogsadresse er ikke synlig on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">API-nøgle påkrævet til mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Gratis på testnets (offentlig bundler)</string>
+    <string name="payer_privacy_note">Din tegnebogsadresse vil være skjult</string>
+    <string name="payer_privacy_processing">Behandler privat betaling…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adressebog</string>
+    <string name="address_book_add">Tilføj kontakt</string>
+    <string name="address_book_edit">Rediger kontakt</string>
+    <string name="address_book_search">Søg kontakter…</string>
+    <string name="address_book_empty">Ingen kontakter endnu</string>
+    <string name="address_book_empty_hint">Tilføj adresser for nemt at identificere\nhvem du betaler eller modtager fra</string>
+    <string name="address_book_no_results">Ingen kontakter fundet</string>
+    <string name="address_book_address">Tegnebogsadresse</string>
+    <string name="address_book_name">Navn</string>
+    <string name="address_book_name_hint">f.eks. Café, Jens Jensen</string>
+    <string name="address_book_note">Note (valgfri)</string>
+    <string name="address_book_note_hint">f.eks. Leverandør, Ven</string>
+    <string name="address_book_delete_title">Slet kontakt?</string>
+    <string name="address_book_delete_message">Fjern %s fra din adressebog?</string>
+    <string name="address_book_saved">Kontakt gemt</string>
+    <string name="address_book_unknown">Ukendt</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Enkel tilstand</string>
+    <string name="settings_simple_mode_desc">Let at bruge, grundlæggende muligheder</string>
+    <string name="settings_advanced_mode">Avanceret tilstand</string>
+    <string name="settings_advanced_mode_desc">Kryptomuligheder for erfarne brugere</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Del kontakt</string>
+    <string name="share_contact_title">Del din adresse</string>
+    <string name="share_contact_ready">Klar til at dele</string>
+    <string name="share_contact_ready_desc">Hold din telefon tæt på\nen anden CleanSky-enhed</string>
+    <string name="share_contact_received">Kontakt modtaget!</string>
+    <string name="share_contact_received_name">%s vil forbinde</string>
+    <string name="share_contact_save">Gem i kontakter</string>
+    <string name="share_contact_your_name">Dit navn (valgfrit)</string>
+    <string name="share_contact_your_name_hint">Sådan vil andre se dig</string>
+    <string name="share_contact_mutual">Udveksle kontakter</string>
+    <string name="share_contact_mutual_desc">Begge enheder deler adresser samtidigt</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Send</string>
+    <string name="send_title">Send til kontakt</string>
+    <string name="send_select_contact">Vælg modtager</string>
+    <string name="send_no_contacts">Ingen kontakter endnu</string>
+    <string name="send_no_contacts_hint">Tilføj kontakter via NFC eller manuelt\nfor at sende dem betalinger</string>
+    <string name="send_amount">Beløb</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Til: %s</string>
+    <string name="send_confirm">Send %1$s %2$s</string>
+    <string name="send_processing">Sender…</string>
+    <string name="send_success">Sendt!</string>
+    <string name="send_success_desc">%1$s %2$s sendt til %3$s</string>
+    <string name="send_error">Kunne ikke sende</string>
+    <string name="send_enter_amount">Indtast et beløb</string>
+    <string name="send_new">Ny overførsel</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Alle</string>
+    <string name="history_filter_received">Modtaget</string>
+    <string name="history_filter_sent">Sendt</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Filtrer efter kontakt</string>
+    <string name="history_show_all">Vis alle</string>
+    <string name="history_no_results">Ingen transaktioner matcher filtret</string>
+    <string name="history_add_contact">Tilføj til kontakter</string>
+    <string name="history_edit_contact">Rediger kontakt</string>
+    <string name="history_from">Fra</string>
+    <string name="history_to">Til</string>
+    <string name="history_date">Dato</string>
+    <string name="history_tx_hash">Transaktion</string>
+    <string name="history_refund">Refunder</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Beløb for lille</string>
+    <string name="scam_amount_large_warning">Stort beløb</string>
+    <string name="scam_amount_large_desc">Du er ved at sende %1$s %2$s.\nBekræft venligst at dette er korrekt.</string>
+    <string name="scam_confirm_large">Bekræft stor overførsel</string>
+    <string name="scam_dust_attack_warning">Mistænkelig anmodning</string>
+    <string name="scam_dust_attack_desc">Dette er et meget lille beløb (%1$s %2$s). Dust-angreb bruger små betalinger til at spore tegnebøger. Afvis hvis uventet.</string>
+    <string name="scam_receive_large_warning">Stor betalingsanmodning</string>
+    <string name="scam_receive_large_desc">Denne anmodning er på %1$s %2$s. Verificer at dette er det korrekte beløb før betaling.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Kun modtagelse</string>
+    <string name="settings_mode_receive_only">Modtag</string>
+    <string name="settings_mode_receive_only_desc">Ingen privat nøgle</string>
+    <string name="settings_receive_only">Kun-modtagelse konfiguration</string>
+    <string name="settings_escrow_address">Escrow-adresse</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Ingen Escrow konfigureret</string>
+    <string name="receive_only_no_escrow_desc">Konfigurer escrow-adresse og API key i Indstillinger</string>
+    <string name="receive_only_security_notice">Ingen privat nøgle på denne enhed. Sikker ved tyveri.</string>
+    <string name="receive_only_api_key_required">API key kræves til relayer-udførelse</string>
+</resources>

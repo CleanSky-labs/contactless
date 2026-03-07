@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Kontaktsiz</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">To\'lov</string>
+    <string name="nav_collect">Qabul qilish</string>
+    <string name="nav_settings">Sozlamalar</string>
+    <string name="nav_history">Tarix</string>
+    <string name="nav_refund">Qaytarish</string>
+    <string name="nav_balance">Balans</string>
+    <string name="nav_back">Orqaga</string>
+
+    <!-- Common actions -->
+    <string name="back">Orqaga</string>
+    <string name="save">Saqlash</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Hamyon yo\'q</string>
+    <string name="pay_no_wallet_desc">To\'lov qilish uchun\nSozlamalarda hamyonni sozlang</string>
+    <string name="pay_ready">To\'lovga tayyor</string>
+    <string name="pay_ready_desc">Telefoningizni sotuvchi\nqurilmasiga yaqinlashtiring</string>
+    <string name="pay_request_title">To\'lov so\'rovi</string>
+    <string name="pay_network">Tarmoq: %s</string>
+    <string name="pay_expired">So\'rov muddati tugadi</string>
+    <string name="pay_cancel">Bekor qilish</string>
+    <string name="pay_confirm">To\'lash</string>
+    <string name="pay_new">Yangi to\'lov</string>
+    <string name="pay_signing">Tranzaksiya imzolanmoqda…</string>
+    <string name="pay_tx_signed">Tranzaksiya imzolandi</string>
+    <string name="pay_tx_signed_desc">Yuborish uchun telefoningizni\nsotuvchiga yaqinlashtiring</string>
+    <string name="pay_authenticating">Autentifikatsiya…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Hamyon yo\'q</string>
+    <string name="collect_no_wallet_desc">To\'lov qabul qilish uchun\nSozlamalarda hamyonni sozlang</string>
+    <string name="collect_amount">Qabul qilinadigan summa</string>
+    <string name="collect_button">Qabul qilish</string>
+    <string name="collect_waiting">To\'lov kutilmoqda</string>
+    <string name="collect_waiting_desc">Mijozdan telefonini\nyaqinlashtirishni so\'rang</string>
+    <string name="collect_new">Yangi qabul</string>
+    <string name="collect_processing">To\'lov qayta ishlanmoqda…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Ish rejimi</string>
+    <string name="settings_mode_pay">To\'lov</string>
+    <string name="settings_mode_pay_desc">To\'lovlarni amalga oshirish</string>
+    <string name="settings_mode_collect">Qabul qilish</string>
+    <string name="settings_mode_collect_desc">To\'lovlarni qabul qilish</string>
+    <string name="settings_wallet">Hamyon</string>
+    <string name="settings_wallet_address">Manzil</string>
+    <string name="settings_wallet_none">Hamyon sozlanmagan</string>
+    <string name="settings_wallet_create">Yaratish</string>
+    <string name="settings_wallet_import">Import</string>
+    <string name="settings_network">Blockchain tarmog\'i</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Tranzaksiya bajarish</string>
+    <string name="settings_exec_direct">To\'g\'ridan-to\'g\'ri</string>
+    <string name="settings_exec_direct_desc">Siz gaz uchun to\'laysiz</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Relayer orqali homiylik qilingan gaz</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster bilan ERC-4337</string>
+    <string name="settings_api_key">API kaliti</string>
+    <string name="settings_save">Saqlash va qaytish</string>
+    <string name="settings_not_available">Bu tarmoqda mavjud emas</string>
+    <string name="settings_language">Til</string>
+    <string name="settings_language_system">Tizim standart</string>
+    <string name="collect_select_currency">Valyutani tanlang</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Xavfsizlik</string>
+    <string name="security_encryption">Kalitlarni shifrlash</string>
+    <string name="security_encryption_desc">Android Keystore bilan AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Apparat xavfsizlik moduli faol</string>
+    <string name="security_strongbox_unavailable">Bu qurilmada mavjud emas</string>
+    <string name="security_biometric">Biometrik autentifikatsiya</string>
+    <string name="security_biometric_required">To\'lovlar uchun talab qilinadi</string>
+    <string name="security_biometric_disabled">O\'chirilgan</string>
+    <string name="security_biometric_unavailable">Mavjud emas</string>
+    <string name="security_export">Shaxsiy kalitni eksport qilish</string>
+    <string name="security_export_desc">Kalitingizni xavfsiz saqlang</string>
+    <string name="security_delete">Hamyonni o\'chirish</string>
+    <string name="security_delete_desc">Barcha ma\'lumotlarni doimiy o\'chirish</string>
+    <string name="security_delete_title">Hamyonni o\'chirish</string>
+    <string name="security_delete_warning">Bu amal QAYTARIB BO\'LMAYDI.</string>
+    <string name="security_delete_warning2">Shaxsiy kalit zaxirasi bo\'lmasa, barcha aktivlarga kirishni yo\'qotasiz.</string>
+    <string name="security_delete_warning3">Davom etishdan oldin kalitni eksport qilganingizga ishonch hosil qiling.</string>
+    <string name="security_delete_confirm">O\'chirish</string>
+    <string name="security_status_active">Faol</string>
+    <string name="security_status_warning">Ogohlantirish</string>
+    <string name="security_status_na">Tegishli emas</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Hamyonni import qilish</string>
+    <string name="import_private_key">Shaxsiy kalit</string>
+    <string name="import_seed_phrase">Seed iborasi</string>
+    <string name="import_prompt">Shaxsiy kalitingizni kiriting:</string>
+    <string name="import_prompt_seed">Seed iborangizni kiriting (12–24 so\'z):</string>
+    <string name="import_seed_hint">so\'z1 so\'z2 so\'z3 …</string>
+    <string name="import_button">Import</string>
+    <string name="import_error_invalid">Noto\'g\'ri shaxsiy kalit</string>
+    <string name="import_error_invalid_seed">Noto\'g\'ri seed iborasi</string>
+    <string name="import_error_encryption">Shifrlash xatosi</string>
+    <string name="export_title">Shaxsiy kalit</string>
+    <string name="export_warning">Bu kalitni HECH QACHON ulashmang. Uni egalagan har qanday kishi aktivlaringiz ustidan to\'liq nazoratga ega.</string>
+    <string name="export_understood">Tushundim</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Xulosa</string>
+    <string name="history_received">Qabul qilindi</string>
+    <string name="history_sent">Yuborildi</string>
+    <string name="history_refunded">Qaytarildi</string>
+    <string name="history_empty">Tranzaksiyalar yo\'q</string>
+    <string name="history_empty_desc">%s dagi tranzaksiyalar\nbu yerda ko\'rinadi</string>
+    <string name="history_payment_received">To\'lov qabul qilindi</string>
+    <string name="history_payment_sent">To\'lov yuborildi</string>
+    <string name="history_refund_sent">Qaytarish</string>
+    <string name="history_refund_received">Qaytarish qabul qilindi</string>
+    <string name="history_status_pending">Kutilmoqda</string>
+    <string name="history_status_confirmed">Tasdiqlangan</string>
+    <string name="history_status_failed">Muvaffaqiyatsiz</string>
+    <string name="history_status_refunded">Qaytarildi</string>
+    <string name="history_status_partial">Qisman</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Asl tranzaksiya</string>
+    <string name="refund_amount">Summa</string>
+    <string name="refund_already">Allaqachon qaytarilgan</string>
+    <string name="refund_available">Mavjud</string>
+    <string name="refund_recipient">Qabul qiluvchi</string>
+    <string name="refund_date">Sana</string>
+    <string name="refund_type">Qaytarish turi</string>
+    <string name="refund_full">To\'liq</string>
+    <string name="refund_partial">Qisman</string>
+    <string name="refund_partial_desc">Summani ko\'rsating</string>
+    <string name="refund_amount_label">Qaytarish summasi (%s)</string>
+    <string name="refund_max">Maksimum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Bu tranzaksiya uchun gaz to\'laysiz</string>
+    <string name="refund_button">Qaytarish %1$s %2$s</string>
+    <string name="refund_processing">Qaytarish qayta ishlanmoqda…</string>
+    <string name="refund_success">Qaytarish muvaffaqiyatli</string>
+    <string name="refund_done">Tayyor</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Sizning tokenlaringiz</string>
+    <string name="balance_manage">Boshqarish</string>
+    <string name="balance_refresh">Yangilash</string>
+    <string name="balance_loading">Balanslar yuklanmoqda…</string>
+    <string name="balance_empty">Tokenlar yo\'q</string>
+    <string name="balance_no_wallet_desc">Balanslarni ko\'rish uchun Sozlamalarda\nhamyonni sozlang</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Ruxsat etilgan tokenlar</string>
+    <string name="settings_add_token">Token qo\'shish</string>
+    <string name="add_token_prompt">Token shartnoma manzilini kiriting:</string>
+    <string name="add_token_validating">Token tekshirilmoqda…</string>
+    <string name="add_token_button">Qo\'shish</string>
+    <string name="delete">O\'chirish</string>
+
+    <!-- Common -->
+    <string name="cancel">Bekor qilish</string>
+    <string name="close">Yopish</string>
+    <string name="retry">Qayta urinish</string>
+    <string name="error">Xato</string>
+    <string name="copy">Nusxa olish</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Hamyon sozlanmagan</string>
+    <string name="error_device_security">Qurilma xavfsizlik xatosi</string>
+    <string name="error_auth">Autentifikatsiya xatosi</string>
+    <string name="error_unknown">Noma\'lum xato</string>
+    <string name="error_keystore_unavailable">Keystore mavjud emas - ba\'zi funksiyalar ishlamaydi</string>
+    <string name="error_encryption_restart">Encryption error - restart the app</string>
+    <string name="error_auth_cancelled">Authentication cancelled</string>
+    <string name="error_invalid_address">Invalid address</string>
+    <string name="error_invalid_address_format">Invalid address format</string>
+    <string name="error_token_already_added">Token already added</string>
+    <string name="stealth_spend_sent_tx">Sent! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Sizning balansingiz</string>
+    <string name="pay_insufficient_balance">Balans yetarli emas</string>
+    <string name="pay_need_more">Sizga yana %1$s %2$s kerak</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Xush kelibsiz</string>
+    <string name="welcome_sovereignty">Sizning kalitlaringiz.\nSizning aktivlaringiz.\nSizning mustaqilligingiz.</string>
+    <string name="welcome_desc">Sizning aktivlaringiz ushbu ilovada saqlanmaydi. Ular blockchainda, sizning shaxsiy kalitlaringiz tomonidan boshqariladi.\n\nBu ilova faqat kalitlaringizni xavfsiz saqlaydi. Biz sizning aktivlaringizga kira olmaymiz.\n\nEslatma: Ba\'zi tokenlar (USDC, USDT) ularni chiqaruvchilar tomonidan muzlatilishi mumkin. Maksimal mustaqillik uchun native ETH yoki markazlashmagan tokenlardan foydalaning.</string>
+    <string name="welcome_warning_title">Sizning kalitlaringiz = Sizning aktivlaringiz</string>
+    <string name="welcome_warning_desc">Agar siz shaxsiy kalitlaringizni yo\'qotsangiz yoki kimgadir ulashsangiz, aktivlaringiz ustidan nazoratni abadiy yo\'qotasiz.\n\nTiklash imkoniyati yo\'q. Hech qanday qo\'llab-quvvatlash jamoasi yordam bera olmaydi. Bu haqiqiy egalik tabiatidir.\n\nDoimo kalitlaringizning xavfsiz zaxirasini saqlang.</string>
+    <string name="welcome_opensource">Ochiq kodli dasturiy ta\'minot. Ishonmang, tekshiring.</string>
+    <string name="welcome_start">Tushundim, boshlaylik</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Sotuvchi identifikatsiyasi</string>
+    <string name="settings_merchant_name">Biznes nomi</string>
+    <string name="settings_merchant_name_hint">Mening qahvaxonam</string>
+    <string name="settings_merchant_domain">Domen / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth yoki mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">To\'lov paytida mijozlarga ko\'rsatiladi</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Maxfiylik rejimi</string>
+    <string name="settings_stealth_desc">Bir martalik manzillarga to\'lovlarni qabul qiling (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Yoqilgan</string>
+    <string name="settings_stealth_info">Har bir to\'lov faqat siz sarflashingiz mumkin bo\'lgan noyob manzilga boradi. Kuzatuvchilar to\'lovlarni sizning biznesingizga bog\'lay olmaydi.</string>
+    <string name="stealth_address_label">Stealth rejimi faol</string>
+    <string name="stealth_payment_note">To\'lov maxfiy manzilga yuboriladi</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Qabul qiluvchi manzil</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Maxfiy hamyon</string>
+    <string name="stealth_wallet_addresses">%d stealth manzilda</string>
+    <string name="stealth_wallet_privacy_title">Aktivlaringiz maxfiy</string>
+    <string name="stealth_wallet_privacy_desc">Bu balans sizning ommaviy hamyoningizga bog\'lanmagan. Ta\'minotchilarga, birjalarga yoki istalgan joyga to\'g\'ridan-to\'g\'ri yuboring - biznes identifikatsiyangiz yashirin qoladi.</string>
+    <string name="stealth_wallet_send">Yuborish</string>
+    <string name="stealth_wallet_send_title">Maxfiy hamyondan yuborish</string>
+    <string name="stealth_wallet_available">Mavjud: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Summa</string>
+    <string name="nav_stealth_wallet">Maxfiy hamyon</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Ko\'p manzillar</string>
+    <string name="stealth_wallet_gas_desc">Aktivlaringiz %d manzilda tarqalgan. Katta summalarni sarflash bir nechta tranzaksiya talab qilishi mumkin, bu gaz xarajatlarini oshiradi.</string>
+    <string name="stealth_wallet_consolidate">Asosiy hamyonga birlashtirish</string>
+    <string name="stealth_wallet_consolidate_title">Aktivlarni birlashtirasizmi?</string>
+    <string name="stealth_wallet_consolidate_warning">Bu maxfiy hamyoningizdan barcha aktivlarni asosiy hamyon manzilingizga o\'tkazadi.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">OGOHLANTIRISH: Bu maxfiylikni buzadi. Asosiy hamyoningiz barcha qabul qilingan to\'lovlarga bog\'lanadi.</string>
+    <string name="stealth_wallet_consolidate_benefit">Foyda: Kelajakda sarflash faqat bitta tranzaksiya talab qiladi (kam gaz xarajatlari).</string>
+    <string name="stealth_wallet_consolidate_confirm">Birlashtirish</string>
+    <string name="stealth_wallet_consolidate_success">Aktivlar asosiy hamyonga birlashtirildi</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">To\'lovchi maxfiyligi</string>
+    <string name="settings_payer_privacy_desc">Vaqtinchalik hisoblardan to\'lang (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Har bir to\'lov noyob hisob ishlatadi. Asosiy hamyon manzilingiz zanjirda ko\'rinmaydi.</string>
+    <string name="settings_payer_privacy_requires_api">Mainnet uchun API kaliti kerak</string>
+    <string name="settings_payer_privacy_public_bundler">Testnetlarda bepul (ommaviy bundler)</string>
+    <string name="payer_privacy_note">Hamyon manzilingiz yashiriladi</string>
+    <string name="payer_privacy_processing">Maxfiy to\'lov qayta ishlanmoqda…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Manzil kitobi</string>
+    <string name="address_book_add">Kontakt qo\'shish</string>
+    <string name="address_book_edit">Kontaktni tahrirlash</string>
+    <string name="address_book_search">Kontaktlarni qidirish…</string>
+    <string name="address_book_empty">Hali kontaktlar yo\'q</string>
+    <string name="address_book_empty_hint">Kimga to\'laganingizni yoki kimdan\nolganingizni oson aniqlash uchun manzillar qo\'shing</string>
+    <string name="address_book_no_results">Kontaktlar topilmadi</string>
+    <string name="address_book_address">Hamyon manzili</string>
+    <string name="address_book_name">Ism</string>
+    <string name="address_book_name_hint">masalan, Qahvaxona, John Doe</string>
+    <string name="address_book_note">Izoh (ixtiyoriy)</string>
+    <string name="address_book_note_hint">masalan, Ta\'minotchi, Do\'st</string>
+    <string name="address_book_delete_title">Kontaktni o\'chirasizmi?</string>
+    <string name="address_book_delete_message">%sni manzil kitobingizdan olib tashlaysizmi?</string>
+    <string name="address_book_saved">Kontakt saqlandi</string>
+    <string name="address_book_unknown">Noma\'lum</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Oddiy rejim</string>
+    <string name="settings_simple_mode_desc">Ishlatish oson, asosiy variantlar</string>
+    <string name="settings_advanced_mode">Kengaytirilgan rejim</string>
+    <string name="settings_advanced_mode_desc">Tajribali foydalanuvchilar uchun kripto variantlari</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kontaktni ulashish</string>
+    <string name="share_contact_title">Manzilingizni ulashing</string>
+    <string name="share_contact_ready">Ulashishga tayyor</string>
+    <string name="share_contact_ready_desc">Telefoningizni boshqa\nCleanSky qurilmasiga yaqinlashtiring</string>
+    <string name="share_contact_received">Kontakt qabul qilindi!</string>
+    <string name="share_contact_received_name">%s bog\'lanmoqchi</string>
+    <string name="share_contact_save">Kontaktlarga saqlash</string>
+    <string name="share_contact_your_name">Ismingiz (ixtiyoriy)</string>
+    <string name="share_contact_your_name_hint">Boshqalar sizni qanday ko\'radi</string>
+    <string name="share_contact_mutual">Kontaktlarni almashtirish</string>
+    <string name="share_contact_mutual_desc">Ikkala qurilma bir vaqtda manzillarni ulashadi</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Yuborish</string>
+    <string name="send_title">Kontaktga yuborish</string>
+    <string name="send_select_contact">Qabul qiluvchini tanlang</string>
+    <string name="send_no_contacts">Hali kontaktlar yo\'q</string>
+    <string name="send_no_contacts_hint">To\'lov yuborish uchun NFC orqali yoki\nqo\'lda kontaktlar qo\'shing</string>
+    <string name="send_amount">Summa</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kimga: %s</string>
+    <string name="send_confirm">Yuborish %1$s %2$s</string>
+    <string name="send_processing">Yuborilmoqda…</string>
+    <string name="send_success">Muvaffaqiyatli yuborildi!</string>
+    <string name="send_success_desc">%1$s %2$s %3$s ga yuborildi</string>
+    <string name="send_error">Yuborib bo\'lmadi</string>
+    <string name="send_enter_amount">Summani kiriting</string>
+    <string name="send_new">Yangi o\'tkazma</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Hammasi</string>
+    <string name="history_filter_received">Qabul qilingan</string>
+    <string name="history_filter_sent">Yuborilgan</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Kontakt bo\'yicha filtrlash</string>
+    <string name="history_show_all">Hammasini ko\'rsatish</string>
+    <string name="history_no_results">Filtrga mos tranzaksiya yo\'q</string>
+    <string name="history_add_contact">Kontaktlarga qo\'shish</string>
+    <string name="history_edit_contact">Kontaktni tahrirlash</string>
+    <string name="history_from">Kimdan</string>
+    <string name="history_to">Kimga</string>
+    <string name="history_date">Sana</string>
+    <string name="history_tx_hash">Tranzaksiya</string>
+    <string name="history_refund">Qaytarish</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Summa juda kichik</string>
+    <string name="scam_amount_large_warning">Katta summa</string>
+    <string name="scam_amount_large_desc">Siz %1$s %2$s yubormoqchisiz.\nIltimos, to\'g\'riligini tasdiqlang.</string>
+    <string name="scam_confirm_large">Katta o\'tkazmani tasdiqlang</string>
+    <string name="scam_dust_attack_warning">Shubhali so\'rov</string>
+    <string name="scam_dust_attack_desc">Bu juda kichik summa (%1$s %2$s). Dust hujumlari hamyonlarni kuzatish uchun mayda to\'lovlardan foydalanadi. Kutilmagan bo\'lsa, rad eting.</string>
+    <string name="scam_receive_large_warning">Katta to\'lov so\'rovi</string>
+    <string name="scam_receive_large_desc">Bu so\'rov %1$s %2$s uchun. To\'lashdan oldin summa to\'g\'riligini tekshiring.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Faqat qabul qilish</string>
+    <string name="settings_mode_receive_only">Qabul qilish</string>
+    <string name="settings_mode_receive_only_desc">Shaxsiy kalit yo\'q</string>
+    <string name="settings_receive_only">Faqat qabul qilish sozlamalari</string>
+    <string name="settings_escrow_address">Escrow manzili</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow sozlanmagan</string>
+    <string name="receive_only_no_escrow_desc">Sozlamalarda escrow manzili va API key ni sozlang</string>
+    <string name="receive_only_security_notice">Bu qurilmada shaxsiy kalit yo\'q. O\'g\'irlansa ham xavfsiz.</string>
+    <string name="receive_only_api_key_required">Relayer bajarishi uchun API key talab qilinadi</string>
+</resources>

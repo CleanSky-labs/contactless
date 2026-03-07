@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Tua</string>
+    <string name="nav_collect">Gye</string>
+    <string name="nav_settings">Nhyehyɛe</string>
+    <string name="nav_history">Abakɔsɛm</string>
+    <string name="nav_refund">San Ka</string>
+    <string name="nav_balance">Sika a Eka</string>
+    <string name="nav_back">San Kɔ</string>
+
+    <!-- Common actions -->
+    <string name="back">San Kɔ</string>
+    <string name="save">Sie</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Wallet Biara Nni Hɔ</string>
+    <string name="pay_no_wallet_desc">Hyehyɛ wo wallet wɔ Nhyehyɛe mu\nna tua ka</string>
+    <string name="pay_ready">Wasiesie atua</string>
+    <string name="pay_ready_desc">Fa wo fon bɛn\nadwumayɛfo no mfidie</string>
+    <string name="pay_request_title">Akatua Abisade</string>
+    <string name="pay_network">Nɛtwɔk: %s</string>
+    <string name="pay_expired">Abisade no atwam</string>
+    <string name="pay_cancel">Gyae</string>
+    <string name="pay_confirm">Tua</string>
+    <string name="pay_new">Akatua foforo</string>
+    <string name="pay_signing">Rekyerɛw akatua no ase…</string>
+    <string name="pay_tx_signed">Wɔakyerɛw akatua no ase</string>
+    <string name="pay_tx_signed_desc">Fa wo fon bɛn\nadwumayɛfo no na mena</string>
+    <string name="pay_authenticating">Rehwɛ sɛ wone wo…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Wallet Biara Nni Hɔ</string>
+    <string name="collect_no_wallet_desc">Hyehyɛ wo wallet wɔ Nhyehyɛe mu\nna gye akatua</string>
+    <string name="collect_amount">Sika a wopɛ sɛ wogye</string>
+    <string name="collect_button">Gye</string>
+    <string name="collect_waiting">Retwɛn akatua</string>
+    <string name="collect_waiting_desc">Ka kyerɛ ɔdetɔfo no sɛ\nɔmfa ne fon mmɛn</string>
+    <string name="collect_new">Sika a wogye foforo</string>
+    <string name="collect_processing">Reyɛ akatua no…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Dwumadie kwan</string>
+    <string name="settings_mode_pay">Tua</string>
+    <string name="settings_mode_pay_desc">Tua akatua</string>
+    <string name="settings_mode_collect">Gye</string>
+    <string name="settings_mode_collect_desc">Gye akatua</string>
+    <string name="settings_wallet">Wallet</string>
+    <string name="settings_wallet_address">Adrɛs</string>
+    <string name="settings_wallet_none">Wɔnhyehyɛɛ wallet</string>
+    <string name="settings_wallet_create">Yɛ</string>
+    <string name="settings_wallet_import">Fa Ba</string>
+    <string name="settings_network">Blockchain nɛtwɔk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Akatua yɛ</string>
+    <string name="settings_exec_direct">Taafre</string>
+    <string name="settings_exec_direct_desc">Wo na wotua gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas a wɔboa via relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 ne Paymaster</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_save">Sie na san kɔ</string>
+    <string name="settings_not_available">Enni hɔ wɔ saa nɛtwɔk yi so</string>
+    <string name="settings_language">Kasa</string>
+    <string name="settings_language_system">System default</string>
+    <string name="collect_select_currency">Yi sika</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Ahobammɔ</string>
+    <string name="security_encryption">Key encryption</string>
+    <string name="security_encryption_desc">AES-256-GCM ne Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardware ahobammɔ module reyɛ adwuma</string>
+    <string name="security_strongbox_unavailable">Enni hɔ wɔ saa mfidie yi so</string>
+    <string name="security_biometric">Biometric nhunumu</string>
+    <string name="security_biometric_required">Ehia ma akatua</string>
+    <string name="security_biometric_disabled">Wɔadum</string>
+    <string name="security_biometric_unavailable">Enni hɔ</string>
+    <string name="security_export">Yi private key</string>
+    <string name="security_export_desc">Sie wo key wɔ baabi a eye</string>
+    <string name="security_delete">Popa wallet</string>
+    <string name="security_delete_desc">Popa data nyinaa koraa</string>
+    <string name="security_delete_title">Popa wallet</string>
+    <string name="security_delete_warning">Saa nnwuma yi ENTUMI NSA MU.</string>
+    <string name="security_delete_warning2">Wo sika nyinaa bɛyera sɛ wonni wo private key backup a.</string>
+    <string name="security_delete_warning3">Hwɛ sɛ woayi wo key ansa na woakɔ so.</string>
+    <string name="security_delete_confirm">Popa</string>
+    <string name="security_status_active">Reyɛ Adwuma</string>
+    <string name="security_status_warning">Kɔkɔbɔ</string>
+    <string name="security_status_na">N/A</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Fa wallet ba</string>
+    <string name="import_private_key">Private Key</string>
+    <string name="import_seed_phrase">Seed Phrase</string>
+    <string name="import_prompt">Hyɛ wo private key:</string>
+    <string name="import_prompt_seed">Hyɛ wo seed phrase (nsɛm 12–24):</string>
+    <string name="import_seed_hint">asɛm1 asɛm2 asɛm3 …</string>
+    <string name="import_button">Fa Ba</string>
+    <string name="import_error_invalid">Private key no nye</string>
+    <string name="import_error_invalid_seed">Seed phrase no nye</string>
+    <string name="import_error_encryption">Encryption mfomso</string>
+    <string name="export_title">Private Key</string>
+    <string name="export_warning">NSE saa key yi nkyerɛ obiara da. Obiara a ɔwɔ bi no bɛtumi akontrol wo sika nyinaa.</string>
+    <string name="export_understood">Mate ase</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Nsɛm Tiawa</string>
+    <string name="history_received">Gyei</string>
+    <string name="history_sent">Menae</string>
+    <string name="history_refunded">San Tuai</string>
+    <string name="history_empty">Akatua biara nni hɔ</string>
+    <string name="history_empty_desc">Akatua wɔ %s so\nbɛda ha</string>
+    <string name="history_payment_received">Wogye akatua</string>
+    <string name="history_payment_sent">Wɔmena akatua</string>
+    <string name="history_refund_sent">San Ka</string>
+    <string name="history_refund_received">Wogye nea wɔsan tuaa</string>
+    <string name="history_status_pending">Retwɛn</string>
+    <string name="history_status_confirmed">Wɔasi so dua</string>
+    <string name="history_status_failed">Annkɔ yie</string>
+    <string name="history_status_refunded">Wɔsan tuai</string>
+    <string name="history_status_partial">Fa bi</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Akatua a edi kan</string>
+    <string name="refund_amount">Sika</string>
+    <string name="refund_already">Wɔasan atua dedaw</string>
+    <string name="refund_available">Ɛwɔ hɔ</string>
+    <string name="refund_recipient">Nea ogye</string>
+    <string name="refund_date">Da</string>
+    <string name="refund_type">San ka kwan</string>
+    <string name="refund_full">Ne Nyinaa</string>
+    <string name="refund_partial">Fa bi</string>
+    <string name="refund_partial_desc">Kyerɛ sika dodow</string>
+    <string name="refund_amount_label">Sika a wosan bɛtua (%s)</string>
+    <string name="refund_max">Kɛse a ɛwɔ hɔ: %1$s %2$s</string>
+    <string name="refund_gas_notice">Wo na wobɛtua gas ma saa akatua yi</string>
+    <string name="refund_button">San tua %1$s %2$s</string>
+    <string name="refund_processing">Reyɛ nea wɔsan bɛtua…</string>
+    <string name="refund_success">Wɔasan atua no yie</string>
+    <string name="refund_done">Wie</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Wo Tokens</string>
+    <string name="balance_manage">Hwɛ So</string>
+    <string name="balance_refresh">Foforo</string>
+    <string name="balance_loading">Rehwɛ sika a wowɔ…</string>
+    <string name="balance_empty">Token biara nni hɔ</string>
+    <string name="balance_no_wallet_desc">Hyehyɛ wo wallet wɔ Nhyehyɛe mu\nna hwɛ wo sika</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tokens a Wɔpene So</string>
+    <string name="settings_add_token">Fa Token Ka Ho</string>
+    <string name="add_token_prompt">Hyɛ token contract adrɛs:</string>
+    <string name="add_token_validating">Rehwɛ token no…</string>
+    <string name="add_token_button">Fa Ka Ho</string>
+    <string name="delete">Popa</string>
+
+    <!-- Common -->
+    <string name="cancel">Gyae</string>
+    <string name="close">To mu</string>
+    <string name="retry">San bɔ mmɔden</string>
+    <string name="error">Mfomso</string>
+    <string name="copy">Fa bi</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Wɔnhyehyɛɛ wallet</string>
+    <string name="error_device_security">Mfidie ahobammɔ mfomso</string>
+    <string name="error_auth">Nhunumu mfomso</string>
+    <string name="error_unknown">Mfomso a yennim</string>
+    <string name="error_keystore_unavailable">Keystore nni hɔ - dwumadie bi renyɛ adwuma</string>
+    <string name="error_encryption_restart">Encryption mfomso - san bue app no</string>
+    <string name="error_auth_cancelled">Wɔagyae nhunumu</string>
+    <string name="error_invalid_address">Adrɛs no nye</string>
+    <string name="error_invalid_address_format">Adrɛs format no nye</string>
+    <string name="error_token_already_added">Wɔde token no ato mu dedaw</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Amena! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Wo sika</string>
+    <string name="pay_insufficient_balance">Wo sika nsɔ</string>
+    <string name="pay_need_more">Wohia %1$s bio %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Akwaaba</string>
+    <string name="welcome_sovereignty">Wo keys.\nWo sika.\nWo tumi.</string>
+    <string name="welcome_desc">Wo sika NTENA saa app yi mu. Ɛwɔ blockchain so, wo private keys na ɛkontrol.\n\nSaa app yi sie wo keys wɔ baabi a eye. Yentumi nkɔ wo sika ho.\n\nHwɛ: Tokens bi (USDC, USDT) wɔn a wɔyɛɛ no tumi bata. Sɛ wopɛ tumi a ɛboro so a, fa native ETH anaasɛ tokens a wɔnte hɔ wɔ centralized kwan so.</string>
+    <string name="welcome_warning_title">Wo keys = Wo sika</string>
+    <string name="welcome_warning_desc">Sɛ wohwere wo private keys anaasɛ woma obi bi a, wohwere wo sika nyinaa daa.\n\nƐkwan biara nni hɔ a wɔbɛfa so agye. Obiara nni hɔ a ɔbɛtumi aboa wo. Saa na nneɛma a wo dea tete te.\n\nHwɛ sɛ wuwie backup pa ma wo keys.</string>
+    <string name="welcome_opensource">Open source software. Hwɛ mu, nngye nni.</string>
+    <string name="welcome_start">Mate ase, ma yɛnhyɛ ase</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Adwumayɛfo Hunuhu</string>
+    <string name="settings_merchant_name">Adwuma Din</string>
+    <string name="settings_merchant_name_hint">Me Kɔfi Sotɔ</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mekɔfi.eth anaasɛ mekɔfi.com</string>
+    <string name="settings_merchant_identity_desc">Wɔkyerɛ adetɔfo bere a woretua</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Kokoam Mode</string>
+    <string name="settings_stealth_desc">Gye akatua wɔ adrɛs a wɔde bɛyɛ adwuma mprɛ koro (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Wɔabue</string>
+    <string name="settings_stealth_info">Akatua biara kɔ adrɛs soronko a wo nko ara na wobɛtumi de ayɛ adwuma. Nnipa a wɔrehwɛ ntumi nkyekyem akatua no ankɔ wo adwuma ho.</string>
+    <string name="stealth_address_label">Stealth Mode Reyɛ Adwuma</string>
+    <string name="stealth_payment_note">Wɔbɛmena akatua akɔ adrɛs a ɛyɛ kokoam</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Nea ogye adrɛs</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Kokoam Wallet</string>
+    <string name="stealth_wallet_addresses">wɔ stealth adrɛs %d mu</string>
+    <string name="stealth_wallet_privacy_title">Wo sika yɛ kokoam</string>
+    <string name="stealth_wallet_privacy_desc">Saa sika yi nne wo wallet a ɛda adi no. Sɔre taafre kɔ nea wodetɔ ade hɔ, exchanges, anaasɛ baabiara - wo adwuma hunuhu yɛ kokoam.</string>
+    <string name="stealth_wallet_send">Mena</string>
+    <string name="stealth_wallet_send_title">Mena Firi Kokoam Wallet</string>
+    <string name="stealth_wallet_available">Ɛwɔ Hɔ: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Sika</string>
+    <string name="nav_stealth_wallet">Kokoam Wallet</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Adrɛs pii</string>
+    <string name="stealth_wallet_gas_desc">Wo sika asa wɔ adrɛs %d mu. Sɛ wosɔre sika bebree a, ɛbɛtumi ahia akatua pii, na gas cost bɛkɔ soro.</string>
+    <string name="stealth_wallet_consolidate">Boaboa ano kɔ wallet kɛse mu</string>
+    <string name="stealth_wallet_consolidate_title">Boaboa sika ano?</string>
+    <string name="stealth_wallet_consolidate_warning">Eyi bɛfa sika nyinaa afiri wo kokoam wallet akɔ wo wallet kɛse adrɛs.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">KƆKƆBƆ: Eyi bɛsɛe wo kokoam. Wo wallet kɛse bɛkyekyem ankɔ akatua a wogye nyinaa ho.</string>
+    <string name="stealth_wallet_consolidate_benefit">Mfaso: Sɔre a ɛreba bɛhia akatua baako pɛ (gas cost bɛtew).</string>
+    <string name="stealth_wallet_consolidate_confirm">Boaboa Ano</string>
+    <string name="stealth_wallet_consolidate_success">Wɔaboaboa sika ano akɔ wallet kɛse mu</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Otuafo Kokoam</string>
+    <string name="settings_payer_privacy_desc">Tua firi accounts a ɛnyɛ daa (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Akatua biara de account soronko yɛ adwuma. Wo wallet kɛse adrɛs no nda adi wɔ chain so.</string>
+    <string name="settings_payer_privacy_requires_api">API key hia ma mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Ɛyɛ kwa wɔ testnets so (public bundler)</string>
+    <string name="payer_privacy_note">Wo wallet adrɛs bɛyɛ kokoam</string>
+    <string name="payer_privacy_processing">Reyɛ kokoam akatua…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adrɛs Nhoma</string>
+    <string name="address_book_add">Fa Ɔdɔfo Ka Ho</string>
+    <string name="address_book_edit">Sesa Ɔdɔfo</string>
+    <string name="address_book_search">Hwehwɛ nnipa…</string>
+    <string name="address_book_empty">Ɔdɔfo biara nni hɔ</string>
+    <string name="address_book_empty_hint">Fa adrɛs ka ho na woahu ntɛmtɛm\nnea wotua ka kyerɛ anaasɛ nea wogye ne nkyɛn</string>
+    <string name="address_book_no_results">Wɔanhunu ɔdɔfo biara</string>
+    <string name="address_book_address">Wallet Adrɛs</string>
+    <string name="address_book_name">Din</string>
+    <string name="address_book_name_hint">s.n. Kɔfi Sotɔ, Kofi Mensah</string>
+    <string name="address_book_note">Nsɛm (ɛnyɛ dɛ ehia)</string>
+    <string name="address_book_note_hint">s.n. Nea wodetɔ ade hɔ, Adamfo</string>
+    <string name="address_book_delete_title">Popa ɔdɔfo?</string>
+    <string name="address_book_delete_message">Yi %s firi wo adrɛs nhoma mu?</string>
+    <string name="address_book_saved">Wɔasie ɔdɔfo</string>
+    <string name="address_book_unknown">Yennim</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mmerɛw Mode</string>
+    <string name="settings_simple_mode_desc">Ɛnyɛ den sɛ wode bɛyɛ adwuma, nhyehyɛe a ɛyɛ mmerɛw</string>
+    <string name="settings_advanced_mode">Advanced Mode</string>
+    <string name="settings_advanced_mode_desc">Crypto nhyehyɛe ma wɔn a wɔtumi</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kyɛ Ɔdɔfo</string>
+    <string name="share_contact_title">Kyɛ Wo Adrɛs</string>
+    <string name="share_contact_ready">Wasiesie akyɛ</string>
+    <string name="share_contact_ready_desc">Fa wo fon bɛn\nCleanSky mfidie foforo</string>
+    <string name="share_contact_received">Wogye ɔdɔfo!</string>
+    <string name="share_contact_received_name">%s pɛ sɛ ɔde ne ho bɔ wo</string>
+    <string name="share_contact_save">Sie wɔ nnipa mu</string>
+    <string name="share_contact_your_name">Wo din (ɛnyɛ dɛ ehia)</string>
+    <string name="share_contact_your_name_hint">Sɛnea afoforo behu wo</string>
+    <string name="share_contact_mutual">Sesane nnipa</string>
+    <string name="share_contact_mutual_desc">Mfidie mmienu nyinaa kyɛ adrɛs bere koro mu</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Mena</string>
+    <string name="send_title">Mena Kɔ Ɔdɔfo</string>
+    <string name="send_select_contact">Yi nea ogye</string>
+    <string name="send_no_contacts">Ɔdɔfo biara nni hɔ</string>
+    <string name="send_no_contacts_hint">Fa nnipa ka ho wɔ NFC so anaasɛ\nde wo nsa na mena akatua</string>
+    <string name="send_amount">Sika</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kɔ: %s</string>
+    <string name="send_confirm">Mena %1$s %2$s</string>
+    <string name="send_processing">Remena…</string>
+    <string name="send_success">Wɔamena no yie!</string>
+    <string name="send_success_desc">%1$s %2$s amena akɔ %3$s</string>
+    <string name="send_error">Mena annkɔ yie</string>
+    <string name="send_enter_amount">Hyɛ sika</string>
+    <string name="send_new">Mena foforo</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Ne Nyinaa</string>
+    <string name="history_filter_received">Gyei</string>
+    <string name="history_filter_sent">Menae</string>
+    <string name="history_filter_contact">Ɔdɔfo</string>
+    <string name="history_filter_by_contact">Fa ɔdɔfo hwɛ</string>
+    <string name="history_show_all">Kyerɛ ne nyinaa</string>
+    <string name="history_no_results">Akatua biara nne filter no</string>
+    <string name="history_add_contact">Fa ka nnipa ho</string>
+    <string name="history_edit_contact">Sesa ɔdɔfo</string>
+    <string name="history_from">Firi</string>
+    <string name="history_to">Kɔ</string>
+    <string name="history_date">Da</string>
+    <string name="history_tx_hash">Akatua</string>
+    <string name="history_refund">San Ka</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Sika no sua dodo</string>
+    <string name="scam_amount_large_warning">Sika bebree</string>
+    <string name="scam_amount_large_desc">Woremena %1$s %2$s.\nMesrɛ wo, hwɛ sɛ eyi yɛ nokware.</string>
+    <string name="scam_confirm_large">Si mena kɛse so dua</string>
+    <string name="scam_dust_attack_warning">Abisade a ɛyɛ nwonwa</string>
+    <string name="scam_dust_attack_desc">Eyinom yɛ sika ketewa pa ara (%1$s %2$s). Mfuturo toa to ahwɛ wallets akyi fa akatua nketewa. Po so sɛ woanhwɛ kwan.</string>
+    <string name="scam_receive_large_warning">Akatua kɛse abisade</string>
+    <string name="scam_receive_large_desc">Saa abisade yi yɛ %1$s %2$s. Hwɛ sɛ sika no yɛ nokware ansa na woatua.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Gye nkoa</string>
+    <string name="settings_mode_receive_only">Gye</string>
+    <string name="settings_mode_receive_only_desc">Safe kɔkɔ biara nni hɔ</string>
+    <string name="settings_receive_only">Gye-nkoa nhyehyɛe</string>
+    <string name="settings_escrow_address">Escrow adirɛse</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Wɔnhyehyɛe Escrow</string>
+    <string name="receive_only_no_escrow_desc">Hyehyɛ escrow adirɛse ne API key wɔ Nhyehyɛe mu</string>
+    <string name="receive_only_security_notice">Safe kɔkɔ biara nni saa mfidie yi so. Ɛyɛ ahobammɔ sɛ wɔbɔ korɔn a.</string>
+    <string name="receive_only_api_key_required">API key hia ma relayer yɛ adwuma</string>
+</resources>

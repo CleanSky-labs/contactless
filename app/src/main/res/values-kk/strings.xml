@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Төлеу</string>
+    <string name="nav_collect">Қабылдау</string>
+    <string name="nav_settings">Параметрлер</string>
+    <string name="nav_history">Тарих</string>
+    <string name="nav_refund">Қайтару</string>
+    <string name="nav_balance">Баланс</string>
+    <string name="nav_back">Артқа</string>
+
+    <!-- Common actions -->
+    <string name="back">Артқа</string>
+    <string name="save">Сақтау</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Әмиян жоқ</string>
+    <string name="pay_no_wallet_desc">Төлем жасау үшін Параметрлерде\nәмияныңызды орнатыңыз</string>
+    <string name="pay_ready">Төлеуге дайын</string>
+    <string name="pay_ready_desc">Телефоныңызды сатушының\nқұрылғысына жақындатыңыз</string>
+    <string name="pay_request_title">Төлем сұрауы</string>
+    <string name="pay_network">Желі: %s</string>
+    <string name="pay_expired">Сұраудың мерзімі өтті</string>
+    <string name="pay_cancel">Бас тарту</string>
+    <string name="pay_confirm">Төлеу</string>
+    <string name="pay_new">Жаңа төлем</string>
+    <string name="pay_signing">Транзакция қол қойылуда…</string>
+    <string name="pay_tx_signed">Транзакцияға қол қойылды</string>
+    <string name="pay_tx_signed_desc">Жіберу үшін телефоныңызды\nсатушыға жақындатыңыз</string>
+    <string name="pay_authenticating">Аутентификация…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Әмиян жоқ</string>
+    <string name="collect_no_wallet_desc">Төлемдерді қабылдау үшін\nПараметрлерде әмияныңызды орнатыңыз</string>
+    <string name="collect_amount">Қабылданатын сома</string>
+    <string name="collect_button">Қабылдау</string>
+    <string name="collect_waiting">Төлемді күтуде</string>
+    <string name="collect_waiting_desc">Сатып алушыдан телефонын\nжақындатуын сұраңыз</string>
+    <string name="collect_new">Жаңа қабылдау</string>
+    <string name="collect_processing">Төлем өңделуде…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Жұмыс режимі</string>
+    <string name="settings_mode_pay">Төлеу</string>
+    <string name="settings_mode_pay_desc">Төлемдер жасау</string>
+    <string name="settings_mode_collect">Қабылдау</string>
+    <string name="settings_mode_collect_desc">Төлемдерді қабылдау</string>
+    <string name="settings_wallet">Әмиян</string>
+    <string name="settings_wallet_address">Мекенжай</string>
+    <string name="settings_wallet_none">Әмиян конфигурацияланбаған</string>
+    <string name="settings_wallet_create">Жасау</string>
+    <string name="settings_wallet_import">Импорттау</string>
+    <string name="settings_network">Блокчейн желісі</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Транзакция орындалуы</string>
+    <string name="settings_exec_direct">Тікелей</string>
+    <string name="settings_exec_direct_desc">Газды сіз төлейсіз</string>
+    <string name="settings_exec_relayer">Релейер (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Релейер арқылы демеушілік газ</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster-мен ERC-4337</string>
+    <string name="settings_api_key">API кілті</string>
+    <string name="settings_save">Сақтау және қайту</string>
+    <string name="settings_not_available">Бұл желіде қолжетімді емес</string>
+    <string name="settings_language">Тіл</string>
+    <string name="settings_language_system">Жүйе әдепкісі</string>
+    <string name="collect_select_currency">Валютаны таңдау</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Қауіпсіздік</string>
+    <string name="security_encryption">Кілтті шифрлау</string>
+    <string name="security_encryption_desc">Android Keystore-мен AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Аппараттық қауіпсіздік модулі белсенді</string>
+    <string name="security_strongbox_unavailable">Бұл құрылғыда қолжетімді емес</string>
+    <string name="security_biometric">Биометриялық аутентификация</string>
+    <string name="security_biometric_required">Төлемдер үшін қажет</string>
+    <string name="security_biometric_disabled">Өшірілген</string>
+    <string name="security_biometric_unavailable">Қолжетімді емес</string>
+    <string name="security_export">Жеке кілтті экспорттау</string>
+    <string name="security_export_desc">Кілтіңізді қауіпсіз сақтаңыз</string>
+    <string name="security_delete">Әмиянды жою</string>
+    <string name="security_delete_desc">Барлық деректерді біржола жою</string>
+    <string name="security_delete_title">Әмиянды жою</string>
+    <string name="security_delete_warning">Бұл әрекет ҚАЙТАРЫЛМАЙДЫ.</string>
+    <string name="security_delete_warning2">Жеке кілтіңіздің сақтық көшірмесі болмаса, барлық қаражатыңызға қол жеткізуді жоғалтасыз.</string>
+    <string name="security_delete_warning3">Жалғастырмас бұрын кілтіңізді экспорттағаныңызға көз жеткізіңіз.</string>
+    <string name="security_delete_confirm">Жою</string>
+    <string name="security_status_active">Белсенді</string>
+    <string name="security_status_warning">Ескерту</string>
+    <string name="security_status_na">Жоқ</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Әмиянды импорттау</string>
+    <string name="import_private_key">Жеке кілт</string>
+    <string name="import_seed_phrase">Сид фраза</string>
+    <string name="import_prompt">Жеке кілтіңізді енгізіңіз:</string>
+    <string name="import_prompt_seed">Сид фразаңызды енгізіңіз (12–24 сөз):</string>
+    <string name="import_seed_hint">сөз1 сөз2 сөз3 …</string>
+    <string name="import_button">Импорттау</string>
+    <string name="import_error_invalid">Жарамсыз жеке кілт</string>
+    <string name="import_error_invalid_seed">Жарамсыз сид фраза</string>
+    <string name="import_error_encryption">Шифрлау қатесі</string>
+    <string name="export_title">Жеке кілт</string>
+    <string name="export_warning">Бұл кілтті ЕШКІМГЕ бермеңіз. Оны кім алса, сіздің қаражатыңызды толық бақылайды.</string>
+    <string name="export_understood">Түсіндім</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Жиынтық</string>
+    <string name="history_received">Қабылданды</string>
+    <string name="history_sent">Жіберілді</string>
+    <string name="history_refunded">Қайтарылды</string>
+    <string name="history_empty">Транзакциялар жоқ</string>
+    <string name="history_empty_desc">%s желісіндегі транзакциялар\nмұнда көрсетіледі</string>
+    <string name="history_payment_received">Төлем қабылданды</string>
+    <string name="history_payment_sent">Төлем жіберілді</string>
+    <string name="history_refund_sent">Қайтару</string>
+    <string name="history_refund_received">Қайтару қабылданды</string>
+    <string name="history_status_pending">Күтілуде</string>
+    <string name="history_status_confirmed">Расталды</string>
+    <string name="history_status_failed">Сәтсіз</string>
+    <string name="history_status_refunded">Қайтарылды</string>
+    <string name="history_status_partial">Ішінара</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Бастапқы транзакция</string>
+    <string name="refund_amount">Сома</string>
+    <string name="refund_already">Қайтарылған</string>
+    <string name="refund_available">Қолжетімді</string>
+    <string name="refund_recipient">Алушы</string>
+    <string name="refund_date">Күні</string>
+    <string name="refund_type">Қайтару түрі</string>
+    <string name="refund_full">Толық</string>
+    <string name="refund_partial">Ішінара</string>
+    <string name="refund_partial_desc">Соманы көрсетіңіз</string>
+    <string name="refund_amount_label">Қайтарылатын сома (%s)</string>
+    <string name="refund_max">Максимум: %1$s %2$s</string>
+    <string name="refund_gas_notice">Бұл транзакция үшін газды сіз төлейсіз</string>
+    <string name="refund_button">%1$s %2$s қайтару</string>
+    <string name="refund_processing">Қайтару өңделуде…</string>
+    <string name="refund_success">Қайтару сәтті аяқталды</string>
+    <string name="refund_done">Дайын</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Сіздің токендеріңіз</string>
+    <string name="balance_manage">Басқару</string>
+    <string name="balance_refresh">Жаңарту</string>
+    <string name="balance_loading">Балансты жүктеу…</string>
+    <string name="balance_empty">Токендер жоқ</string>
+    <string name="balance_no_wallet_desc">Балансыңызды көру үшін\nПараметрлерде әмияныңызды орнатыңыз</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Рұқсат етілген токендер</string>
+    <string name="settings_add_token">Токен қосу</string>
+    <string name="add_token_prompt">Токен келісімшарт мекенжайын енгізіңіз:</string>
+    <string name="add_token_validating">Токен тексерілуде…</string>
+    <string name="add_token_button">Қосу</string>
+    <string name="delete">Жою</string>
+
+    <!-- Common -->
+    <string name="cancel">Бас тарту</string>
+    <string name="close">Жабу</string>
+    <string name="retry">Қайталау</string>
+    <string name="error">Қате</string>
+    <string name="copy">Көшіру</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Әмиян конфигурацияланбаған</string>
+    <string name="error_device_security">Құрылғы қауіпсіздігі қатесі</string>
+    <string name="error_auth">Аутентификация қатесі</string>
+    <string name="error_unknown">Белгісіз қате</string>
+    <string name="error_keystore_unavailable">Keystore қолжетімді емес - кейбір функциялар жұмыс істемейді</string>
+    <string name="error_encryption_restart">Шифрлау қатесі - қосымшаны қайта іске қосыңыз</string>
+    <string name="error_auth_cancelled">Аутентификация тоқтатылды</string>
+    <string name="error_invalid_address">Жарамсыз мекенжай</string>
+    <string name="error_invalid_address_format">Жарамсыз мекенжай форматы</string>
+    <string name="error_token_already_added">Токен қосылған</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Жіберілді! Tx: %s…</string>
+    <string name="token_native">Негізгі</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Сіздің балансыңыз</string>
+    <string name="pay_insufficient_balance">Баланс жеткіліксіз</string>
+    <string name="pay_need_more">Сізге тағы %1$s %2$s қажет</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Қош келдіңіз</string>
+    <string name="welcome_sovereignty">Сіздің кілттеріңіз.\nСіздің қаражатыңыз.\nСіздің егемендігіңіз.</string>
+    <string name="welcome_desc">Сіздің қаражатыңыз бұл қосымшада САҚТАЛМАЙДЫ. Олар блокчейнде бар, сіздің жеке кілттеріңізбен басқарылады.\n\nБұл қосымша тек сіздің кілттеріңізді қауіпсіз сақтайды. Біз сіздің қаражатыңызға қол жеткізе алмаймыз.\n\nЕскертпе: Кейбір токендерді (USDC, USDT) олардың эмитенттері тоқтата алады. Максималды егемендік үшін негізгі ETH немесе орталықсыздандырылған токендерді пайдаланыңыз.</string>
+    <string name="welcome_warning_title">Сіздің кілттеріңіз = Сіздің қаражатыңыз</string>
+    <string name="welcome_warning_desc">Жеке кілттеріңізді жоғалтсаңыз немесе біреумен бөліссеңіз, қаражатыңызды бақылауды мәңгілікке жоғалтасыз.\n\nҚалпына келтіру мүмкіндігі жоқ. Ешбір қолдау тобы сізге көмектесе алмайды. Бұл шынайы меншіктің табиғаты.\n\nКілттеріңіздің қауіпсіз сақтық көшірмесін әрқашан сақтаңыз.</string>
+    <string name="welcome_opensource">Ашық бастапқы код бағдарламасы. Сенбеңіз, тексеріңіз.</string>
+    <string name="welcome_start">Түсіндім, бастайық</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Сатушы сәйкестігі</string>
+    <string name="settings_merchant_name">Бизнес атауы</string>
+    <string name="settings_merchant_name_hint">Менің кофеханам</string>
+    <string name="settings_merchant_domain">Домен / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth немесе mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Төлем кезінде клиенттерге көрсетіледі</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Құпиялылық режимі</string>
+    <string name="settings_stealth_desc">Бір реттік мекенжайларға төлемдер қабылдау (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Қосулы</string>
+    <string name="settings_stealth_info">Әрбір төлем тек сіз жұмсай алатын бірегей мекенжайға келеді. Бақылаушылар төлемдерді сіздің бизнесіңізбен байланыстыра алмайды.</string>
+    <string name="stealth_address_label">Жасырын режим белсенді</string>
+    <string name="stealth_payment_note">Төлем жеке мекенжайға жіберіледі</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Алушы мекенжайы</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Жеке әмиян</string>
+    <string name="stealth_wallet_addresses">%d жасырын мекенжай бойынша</string>
+    <string name="stealth_wallet_privacy_title">Сіздің қаражатыңыз құпия</string>
+    <string name="stealth_wallet_privacy_desc">Бұл баланс сіздің жалпы әмияныңызбен байланысты емес. Жеткізушілерге, биржаларға немесе кез келген жерге тікелей жіберіңіз - сіздің бизнес сәйкестігіңіз жасырын болып қалады.</string>
+    <string name="stealth_wallet_send">Жіберу</string>
+    <string name="stealth_wallet_send_title">Жеке әмияннан жіберу</string>
+    <string name="stealth_wallet_available">Қолжетімді: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Сома</string>
+    <string name="nav_stealth_wallet">Жеке әмиян</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Көптеген мекенжайлар</string>
+    <string name="stealth_wallet_gas_desc">Сіздің қаражатыңыз %d мекенжайға таратылған. Үлкен сомаларды жұмсау бірнеше транзакцияны қажет етуі мүмкін, бұл газ шығындарын арттырады.</string>
+    <string name="stealth_wallet_consolidate">Негізгі әмиянға біріктіру</string>
+    <string name="stealth_wallet_consolidate_title">Қаражатты біріктіру керек пе?</string>
+    <string name="stealth_wallet_consolidate_warning">Бұл сіздің жеке әмияныңыздағы барлық қаражатты негізгі әмиян мекенжайына аударады.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ЕСКЕРТУ: Бұл құпиялылықты бұзады. Сіздің негізгі әмияныңыз барлық қабылданған төлемдермен байланыстырылады.</string>
+    <string name="stealth_wallet_consolidate_benefit">Пайдасы: Болашақ жұмсаулар тек бір транзакцияны қажет етеді (төмен газ шығындары).</string>
+    <string name="stealth_wallet_consolidate_confirm">Біріктіру</string>
+    <string name="stealth_wallet_consolidate_success">Қаражат негізгі әмиянға біріктірілді</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Төлеуші құпиялылығы</string>
+    <string name="settings_payer_privacy_desc">Уақытша аккаунттардан төлеу (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Әрбір төлем бірегей аккаунтты пайдаланады. Сіздің негізгі әмиян мекенжайыңыз блокчейнде көрінбейді.</string>
+    <string name="settings_payer_privacy_requires_api">Негізгі желі үшін API кілті қажет</string>
+    <string name="settings_payer_privacy_public_bundler">Тест желілерінде тегін (жалпы бандлер)</string>
+    <string name="payer_privacy_note">Сіздің әмиян мекенжайыңыз жасырылады</string>
+    <string name="payer_privacy_processing">Құпия төлем өңделуде…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Мекенжай кітапшасы</string>
+    <string name="address_book_add">Контакт қосу</string>
+    <string name="address_book_edit">Контактіні өңдеу</string>
+    <string name="address_book_search">Контактілерді іздеу…</string>
+    <string name="address_book_empty">Әзірше контактілер жоқ</string>
+    <string name="address_book_empty_hint">Кімге төлейтініңізді немесе кімнен алатыныңызды\nоңай анықтау үшін мекенжайларды қосыңыз</string>
+    <string name="address_book_no_results">Контактілер табылмады</string>
+    <string name="address_book_address">Әмиян мекенжайы</string>
+    <string name="address_book_name">Атау</string>
+    <string name="address_book_name_hint">мыс. Кофехана, Асан Қайрат</string>
+    <string name="address_book_note">Ескертпе (міндетті емес)</string>
+    <string name="address_book_note_hint">мыс. Жеткізуші, Дос</string>
+    <string name="address_book_delete_title">Контактіні жою керек пе?</string>
+    <string name="address_book_delete_message">%s мекенжай кітапшасынан жою керек пе?</string>
+    <string name="address_book_saved">Контакт сақталды</string>
+    <string name="address_book_unknown">Белгісіз</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Қарапайым режим</string>
+    <string name="settings_simple_mode_desc">Қолдануға оңай, негізгі опциялар</string>
+    <string name="settings_advanced_mode">Кеңейтілген режим</string>
+    <string name="settings_advanced_mode_desc">Тәжірибелі пайдаланушылар үшін крипто опциялары</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Контактпен бөлісу</string>
+    <string name="share_contact_title">Мекенжайыңызбен бөлісу</string>
+    <string name="share_contact_ready">Бөлісуге дайын</string>
+    <string name="share_contact_ready_desc">Телефоныңызды басқа\nCleanSky құрылғысына жақындатыңыз</string>
+    <string name="share_contact_received">Контакт қабылданды!</string>
+    <string name="share_contact_received_name">%s қосылғысы келеді</string>
+    <string name="share_contact_save">Контактілерге сақтау</string>
+    <string name="share_contact_your_name">Сіздің атыңыз (міндетті емес)</string>
+    <string name="share_contact_your_name_hint">Басқалар сізді қалай көреді</string>
+    <string name="share_contact_mutual">Контактілермен алмасу</string>
+    <string name="share_contact_mutual_desc">Екі құрылғы да бір уақытта мекенжайлармен бөліседі</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Жіберу</string>
+    <string name="send_title">Контактіге жіберу</string>
+    <string name="send_select_contact">Алушыны таңдау</string>
+    <string name="send_no_contacts">Әзірше контактілер жоқ</string>
+    <string name="send_no_contacts_hint">Оларға төлемдер жіберу үшін\nNFC арқылы немесе қолмен контактілер қосыңыз</string>
+    <string name="send_amount">Сома</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Кімге: %s</string>
+    <string name="send_confirm">%1$s %2$s жіберу</string>
+    <string name="send_processing">Жіберілуде…</string>
+    <string name="send_success">Сәтті жіберілді!</string>
+    <string name="send_success_desc">%1$s %2$s %3$s адресіне жіберілді</string>
+    <string name="send_error">Жіберу сәтсіз аяқталды</string>
+    <string name="send_enter_amount">Соманы енгізіңіз</string>
+    <string name="send_new">Жаңа аударым</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Барлығы</string>
+    <string name="history_filter_received">Қабылданған</string>
+    <string name="history_filter_sent">Жіберілген</string>
+    <string name="history_filter_contact">Контакт</string>
+    <string name="history_filter_by_contact">Контакт бойынша сүзу</string>
+    <string name="history_show_all">Барлығын көрсету</string>
+    <string name="history_no_results">Сүзгіге сәйкес транзакциялар жоқ</string>
+    <string name="history_add_contact">Контактілерге қосу</string>
+    <string name="history_edit_contact">Контактіні өңдеу</string>
+    <string name="history_from">Кімнен</string>
+    <string name="history_to">Кімге</string>
+    <string name="history_date">Күні</string>
+    <string name="history_tx_hash">Транзакция</string>
+    <string name="history_refund">Қайтару</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Сома тым аз</string>
+    <string name="scam_amount_large_warning">Үлкен сома</string>
+    <string name="scam_amount_large_desc">Сіз %1$s %2$s жіберуге дайынсыз.\nМұның дұрыс екенін растаңыз.</string>
+    <string name="scam_confirm_large">Үлкен аударымды растаңыз</string>
+    <string name="scam_dust_attack_warning">Күдікті сұрау</string>
+    <string name="scam_dust_attack_desc">Бұл өте аз сома (%1$s %2$s). Шаң шабуылдары әмияндарды қадағалау үшін кішкентай төлемдерді пайдаланады. Күтпеген болса, бас тартыңыз.</string>
+    <string name="scam_receive_large_warning">Үлкен төлем сұрауы</string>
+    <string name="scam_receive_large_desc">Бұл сұрау %1$s %2$s үшін. Төлемес бұрын дұрыс сома екенін тексеріңіз.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Тек қабылдау</string>
+    <string name="settings_mode_receive_only">Қабылдау</string>
+    <string name="settings_mode_receive_only_desc">Жеке кілт жоқ</string>
+    <string name="settings_receive_only">Тек қабылдау конфигурациясы</string>
+    <string name="settings_escrow_address">Escrow мекенжайы</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow конфигурацияланбаған</string>
+    <string name="receive_only_no_escrow_desc">Баптауларда escrow мекенжайы мен API key конфигурациялаңыз</string>
+    <string name="receive_only_security_notice">Бұл құрылғыда жеке кілт жоқ. Ұрланған жағдайда қауіпсіз.</string>
+    <string name="receive_only_api_key_required">Relayer орындау үшін API key қажет</string>
+</resources>

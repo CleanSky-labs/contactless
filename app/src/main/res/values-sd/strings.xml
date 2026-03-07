@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">ادا ڪريو</string>
+    <string name="nav_collect">وصول ڪريو</string>
+    <string name="nav_settings">سيٽنگون</string>
+    <string name="nav_history">تاريخ</string>
+    <string name="nav_refund">واپسي</string>
+    <string name="nav_balance">بيلنس</string>
+    <string name="nav_back">واپس</string>
+
+    <!-- Common actions -->
+    <string name="back">واپس</string>
+    <string name="save">محفوظ ڪريو</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">ڪو والٽ ناهي</string>
+    <string name="pay_no_wallet_desc">ادائگي ڪرڻ لاءِ سيٽنگون ۾\nپنهنجو والٽ سيٽ اپ ڪريو</string>
+    <string name="pay_ready">ادا ڪرڻ لاءِ تيار</string>
+    <string name="pay_ready_desc">پنهنجو فون دڪاندار جي\nڊوائيس جي ويجهو آڻيو</string>
+    <string name="pay_request_title">ادائگي جي درخواست</string>
+    <string name="pay_network">نيٽورڪ: %s</string>
+    <string name="pay_expired">درخواست ختم ٿي وئي</string>
+    <string name="pay_cancel">منسوخ ڪريو</string>
+    <string name="pay_confirm">ادا ڪريو</string>
+    <string name="pay_new">نئين ادائگي</string>
+    <string name="pay_signing">ٽرانزيڪشن تي دستخط ڪري رهيو آهي…</string>
+    <string name="pay_tx_signed">ٽرانزيڪشن تي دستخط ٿي ويو</string>
+    <string name="pay_tx_signed_desc">موڪلڻ لاءِ پنهنجو فون\nدڪاندار جي ويجهو آڻيو</string>
+    <string name="pay_authenticating">تصديق ڪري رهيو آهي…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">ڪو والٽ ناهي</string>
+    <string name="collect_no_wallet_desc">ادائگيون حاصل ڪرڻ لاءِ سيٽنگون ۾\nپنهنجو والٽ سيٽ اپ ڪريو</string>
+    <string name="collect_amount">وصول ڪرڻ جي رقم</string>
+    <string name="collect_button">وصول ڪريو</string>
+    <string name="collect_waiting">ادائگي جو انتظار</string>
+    <string name="collect_waiting_desc">گراهڪ کي پنهنجو\nفون ويجهو آڻڻ لاءِ چئو</string>
+    <string name="collect_new">نئين وصولي</string>
+    <string name="collect_processing">ادائگي پروسيس ڪري رهيو آهي…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">آپريشن موڊ</string>
+    <string name="settings_mode_pay">ادا ڪريو</string>
+    <string name="settings_mode_pay_desc">ادائگيون ڪريو</string>
+    <string name="settings_mode_collect">وصول ڪريو</string>
+    <string name="settings_mode_collect_desc">ادائگيون حاصل ڪريو</string>
+    <string name="settings_wallet">والٽ</string>
+    <string name="settings_wallet_address">پتو</string>
+    <string name="settings_wallet_none">ڪو والٽ ترتيب ڏنل ناهي</string>
+    <string name="settings_wallet_create">ٺاهيو</string>
+    <string name="settings_wallet_import">درآمد ڪريو</string>
+    <string name="settings_network">بلاڪچين نيٽورڪ</string>
+    <string name="settings_chain_id">چين ID: %d</string>
+    <string name="settings_execution">ٽرانزيڪشن عمل</string>
+    <string name="settings_exec_direct">سڌو</string>
+    <string name="settings_exec_direct_desc">توهان گيس ادا ڪندا</string>
+    <string name="settings_exec_relayer">ريليئر (Gelato)</string>
+    <string name="settings_exec_relayer_desc">ريليئر ذريعي اسپانسرڊ گيس</string>
+    <string name="settings_exec_aa">اڪائونٽ ايبسٽريڪشن</string>
+    <string name="settings_exec_aa_desc">پيماسٽر سان ERC-4337</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_save">محفوظ ڪريو ۽ واپس وڃو</string>
+    <string name="settings_not_available">هن نيٽورڪ تي دستياب ناهي</string>
+    <string name="settings_language">ٻولي</string>
+    <string name="settings_language_system">سسٽم ڊفالٽ</string>
+    <string name="collect_select_currency">ڪرنسي چونڊيو</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">سيڪيورٽي</string>
+    <string name="security_encryption">ڪي انڪرپشن</string>
+    <string name="security_encryption_desc">Android Keystore سان AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">هارڊويئر سيڪيورٽي ماڊيول فعال</string>
+    <string name="security_strongbox_unavailable">هن ڊوائيس تي دستياب ناهي</string>
+    <string name="security_biometric">بايوميٽرڪ تصديق</string>
+    <string name="security_biometric_required">ادائگين لاءِ گهربل</string>
+    <string name="security_biometric_disabled">غير فعال</string>
+    <string name="security_biometric_unavailable">دستياب ناهي</string>
+    <string name="security_export">پرائيويٽ ڪي ايڪسپورٽ ڪريو</string>
+    <string name="security_export_desc">پنهنجي ڪي کي محفوظ طريقي سان بچايو</string>
+    <string name="security_delete">والٽ ڊليٽ ڪريو</string>
+    <string name="security_delete_desc">سڀ ڊيٽا مستقل طور تي ڊليٽ ڪريو</string>
+    <string name="security_delete_title">والٽ ڊليٽ ڪريو</string>
+    <string name="security_delete_warning">هي عمل واپس نه ٿو ٿي سگهي.</string>
+    <string name="security_delete_warning2">جيڪڏهن توهان وٽ پنهنجي پرائيويٽ ڪي جو بيڪ اپ نه آهي ته توهان سڀني فنڊز تائين رسائي وڃائي ڇڏيندؤ.</string>
+    <string name="security_delete_warning3">جاري رکڻ کان اڳ پڪ ڪريو ته توهان پنهنجي ڪي ايڪسپورٽ ڪري ڇڏي آهي.</string>
+    <string name="security_delete_confirm">ڊليٽ ڪريو</string>
+    <string name="security_status_active">فعال</string>
+    <string name="security_status_warning">ڊيڄاريندڙ</string>
+    <string name="security_status_na">N/A</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">والٽ درآمد ڪريو</string>
+    <string name="import_private_key">پرائيويٽ ڪي</string>
+    <string name="import_seed_phrase">سيڊ فريز</string>
+    <string name="import_prompt">پنهنجي پرائيويٽ ڪي داخل ڪريو:</string>
+    <string name="import_prompt_seed">پنهنجو سيڊ فريز داخل ڪريو (12–24 لفظ):</string>
+    <string name="import_seed_hint">لفظ1 لفظ2 لفظ3 …</string>
+    <string name="import_button">درآمد ڪريو</string>
+    <string name="import_error_invalid">غلط پرائيويٽ ڪي</string>
+    <string name="import_error_invalid_seed">غلط سيڊ فريز</string>
+    <string name="import_error_encryption">انڪرپشن غلطي</string>
+    <string name="export_title">پرائيويٽ ڪي</string>
+    <string name="export_warning">هي ڪي ڪڏهن به ڪنهن سان نه شيئر ڪريو. جنهن وٽ اها آهي ان وٽ توهان جي فنڊز تي مڪمل ڪنٽرول آهي.</string>
+    <string name="export_understood">سمجهي ويو</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">خلاصو</string>
+    <string name="history_received">حاصل ڪيل</string>
+    <string name="history_sent">موڪليل</string>
+    <string name="history_refunded">واپس ڪيل</string>
+    <string name="history_empty">ڪا ٽرانزيڪشن ناهي</string>
+    <string name="history_empty_desc">%s تي ٽرانزيڪشنون\nهتي ظاهر ٿينديون</string>
+    <string name="history_payment_received">ادائگي حاصل ٿي</string>
+    <string name="history_payment_sent">ادائگي موڪلي وئي</string>
+    <string name="history_refund_sent">واپسي</string>
+    <string name="history_refund_received">واپسي حاصل ٿي</string>
+    <string name="history_status_pending">زير التواء</string>
+    <string name="history_status_confirmed">تصديق ٿيل</string>
+    <string name="history_status_failed">ناڪام</string>
+    <string name="history_status_refunded">واپس ڪيل</string>
+    <string name="history_status_partial">جزوي</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">اصل ٽرانزيڪشن</string>
+    <string name="refund_amount">رقم</string>
+    <string name="refund_already">اڳ ۾ ئي واپس ڪيل</string>
+    <string name="refund_available">دستياب</string>
+    <string name="refund_recipient">وصول ڪندڙ</string>
+    <string name="refund_date">تاريخ</string>
+    <string name="refund_type">واپسي جو قسم</string>
+    <string name="refund_full">مڪمل</string>
+    <string name="refund_partial">جزوي</string>
+    <string name="refund_partial_desc">رقم بيان ڪريو</string>
+    <string name="refund_amount_label">واپس ڪرڻ جي رقم (%s)</string>
+    <string name="refund_max">وڌ ۾ وڌ: %1$s %2$s</string>
+    <string name="refund_gas_notice">توهان هن ٽرانزيڪشن لاءِ گيس ادا ڪندؤ</string>
+    <string name="refund_button">واپس ڪريو %1$s %2$s</string>
+    <string name="refund_processing">واپسي پروسيس ڪري رهيو آهي…</string>
+    <string name="refund_success">واپسي ڪامياب</string>
+    <string name="refund_done">مڪمل</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">توهان جا ٽوڪن</string>
+    <string name="balance_manage">منظم ڪريو</string>
+    <string name="balance_refresh">ريفريش ڪريو</string>
+    <string name="balance_loading">بيلنس لوڊ ڪري رهيو آهي…</string>
+    <string name="balance_empty">ڪي ٽوڪن ناهن</string>
+    <string name="balance_no_wallet_desc">پنهنجا بيلنس ڏسڻ لاءِ سيٽنگون ۾\nپنهنجو والٽ سيٽ اپ ڪريو</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">اجازت ڏنل ٽوڪن</string>
+    <string name="settings_add_token">ٽوڪن شامل ڪريو</string>
+    <string name="add_token_prompt">ٽوڪن ڪانٽريڪٽ ايڊريس داخل ڪريو:</string>
+    <string name="add_token_validating">ٽوڪن جي تصديق ڪري رهيو آهي…</string>
+    <string name="add_token_button">شامل ڪريو</string>
+    <string name="delete">ڊليٽ ڪريو</string>
+
+    <!-- Common -->
+    <string name="cancel">منسوخ ڪريو</string>
+    <string name="close">بند ڪريو</string>
+    <string name="retry">ٻيهر ڪوشش ڪريو</string>
+    <string name="error">غلطي</string>
+    <string name="copy">نقل ڪريو</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">والٽ ترتيب ڏنل ناهي</string>
+    <string name="error_device_security">ڊوائيس سيڪيورٽي غلطي</string>
+    <string name="error_auth">تصديق جي غلطي</string>
+    <string name="error_unknown">اڻڄاتل غلطي</string>
+    <string name="error_keystore_unavailable">Keystore دستياب ناهي - ڪجهه فنڪشن ڪم نه ڪندا</string>
+    <string name="error_encryption_restart">انڪرپشن غلطي - ايپ ٻيهر شروع ڪريو</string>
+    <string name="error_auth_cancelled">تصديق منسوخ ٿي وئي</string>
+    <string name="error_invalid_address">غلط پتو</string>
+    <string name="error_invalid_address_format">غلط پتي جو فارميٽ</string>
+    <string name="error_token_already_added">ٽوڪن اڳ ۾ ئي شامل ڪيل آهي</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">موڪليو ويو! Tx: %s…</string>
+    <string name="token_native">مقامي</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">توهان جو بيلنس</string>
+    <string name="pay_insufficient_balance">ناکافي بيلنس</string>
+    <string name="pay_need_more">توهان کي %1$s وڌيڪ %2$s گهرجي</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">ڀليڪار</string>
+    <string name="welcome_sovereignty">توهان جون ڪيز.\nتوهان جا فنڊز.\nتوهان جي خودمختياري.</string>
+    <string name="welcome_desc">توهان جا فنڊز هن ايپ ۾ محفوظ نه آهن. اهي بلاڪچين تي موجود آهن، توهان جي پرائيويٽ ڪيز جي ڪنٽرول هيٺ.\n\nهي ايپ صرف توهان جي ڪيز محفوظ طريقي سان محفوظ ڪري ٿي. اسان توهان جي فنڊز تائين رسائي نه ٿا ڪري سگهون.\n\nنوٽ: ڪجهه ٽوڪن (USDC, USDT) انهن جي جاري ڪندڙن پاران منجمد ٿي سگهن ٿا. وڌ ۾ وڌ خودمختياري لاءِ، مقامي ETH يا ڊيسينٽرلائزڊ ٽوڪن استعمال ڪريو.</string>
+    <string name="welcome_warning_title">توهان جون ڪيز = توهان جا فنڊز</string>
+    <string name="welcome_warning_desc">جيڪڏهن توهان پنهنجي پرائيويٽ ڪيز گم ڪيو يا ڪنهن سان شيئر ڪيو، توهان هميشه لاءِ پنهنجي فنڊز جو ڪنٽرول وڃائي ڇڏيندؤ.\n\nبحالي جو ڪو آپشن ناهي. ڪا سپورٽ ٽيم توهان جي مدد نه ڪري سگهي. هي سچي ملڪيت جي فطرت آهي.\n\nهميشه پنهنجي ڪيز جو محفوظ بيڪ اپ رکو.</string>
+    <string name="welcome_opensource">اوپن سورس سافٽويئر. تصديق ڪريو، يقين نه ڪريو.</string>
+    <string name="welcome_start">مان سمجهان ٿو، شروع ڪريون</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">واپاري جي سڃاڻپ</string>
+    <string name="settings_merchant_name">ڪاروبار جو نالو</string>
+    <string name="settings_merchant_name_hint">منهنجي ڪافي شاپ</string>
+    <string name="settings_merchant_domain">ڊومين / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth يا mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">ادائگي دوران گراهڪن کي ڏيکاريو ويو</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">پرائيويسي موڊ</string>
+    <string name="settings_stealth_desc">هڪ وقتي پتي تي ادائگيون حاصل ڪريو (EIP-5564)</string>
+    <string name="settings_stealth_enabled">فعال</string>
+    <string name="settings_stealth_info">هر ادائگي هڪ منفرد پتي تي وڃي ٿي جتان صرف توهان خرچ ڪري سگهو ٿا. مشاهدو ڪندڙ ادائگين کي توهان جي ڪاروبار سان ڳنڍي نه سگهندا.</string>
+    <string name="stealth_address_label">اسٽيلٿ موڊ فعال</string>
+    <string name="stealth_payment_note">ادائگي هڪ پرائيويٽ پتي تي موڪلي ويندي</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">وصول ڪندڙ جو پتو</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">پرائيويٽ والٽ</string>
+    <string name="stealth_wallet_addresses">%d اسٽيلٿ پتن ۾</string>
+    <string name="stealth_wallet_privacy_title">توهان جا فنڊز پرائيويٽ آهن</string>
+    <string name="stealth_wallet_privacy_desc">هي بيلنس توهان جي پبلڪ والٽ سان ڳنڍيل ناهي. سڌو سپلائرز، ايڪسچينجز، يا ڪٿي به موڪليو - توهان جي ڪاروباري سڃاڻپ لڪيل رهي ٿي.</string>
+    <string name="stealth_wallet_send">موڪليو</string>
+    <string name="stealth_wallet_send_title">پرائيويٽ والٽ مان موڪليو</string>
+    <string name="stealth_wallet_available">دستياب: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">رقم</string>
+    <string name="nav_stealth_wallet">پرائيويٽ والٽ</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">ڪيترائي پتا</string>
+    <string name="stealth_wallet_gas_desc">توهان جا فنڊز %d پتن ۾ پکڙيل آهن. وڏي رقم خرچ ڪرڻ لاءِ ڪيتريون ٽرانزيڪشنون گهرجن، جيڪو گيس جي قيمت وڌائي ٿو.</string>
+    <string name="stealth_wallet_consolidate">مکيه والٽ ۾ گڏ ڪريو</string>
+    <string name="stealth_wallet_consolidate_title">فنڊز گڏ ڪريو؟</string>
+    <string name="stealth_wallet_consolidate_warning">اهو توهان جي پرائيويٽ والٽ مان سڀ فنڊز توهان جي مکيه والٽ پتي ڏانهن منتقل ڪندو.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ڊيڄاريندڙ: اهو پرائيويسي ختم ڪري ٿو. توهان جو مکيه والٽ سڀني حاصل ڪيل ادائگين سان ڳنڍجي ويندو.</string>
+    <string name="stealth_wallet_consolidate_benefit">فائدو: مستقبل جي خرچ لاءِ صرف هڪ ٽرانزيڪشن گهرجي (گهٽ گيس قيمت).</string>
+    <string name="stealth_wallet_consolidate_confirm">گڏ ڪريو</string>
+    <string name="stealth_wallet_consolidate_success">فنڊز مکيه والٽ ۾ گڏ ڪيا ويا</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ادا ڪندڙ جي پرائيويسي</string>
+    <string name="settings_payer_privacy_desc">عارضي اڪائونٽس مان ادا ڪريو (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">هر ادائگي هڪ منفرد اڪائونٽ استعمال ڪري ٿي. توهان جو مکيه والٽ پتو آن-چين نظر نه اچي ٿو.</string>
+    <string name="settings_payer_privacy_requires_api">ميننيٽ لاءِ API key گهربل</string>
+    <string name="settings_payer_privacy_public_bundler">ٽيسٽ نيٽس تي مفت (پبلڪ بنڊلر)</string>
+    <string name="payer_privacy_note">توهان جو والٽ پتو لڪايو ويندو</string>
+    <string name="payer_privacy_processing">پرائيويٽ ادائگي پروسيس ڪري رهيو آهي…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">ايڊريس بڪ</string>
+    <string name="address_book_add">رابطو شامل ڪريو</string>
+    <string name="address_book_edit">رابطو ايڊٽ ڪريو</string>
+    <string name="address_book_search">رابطا ڳوليو…</string>
+    <string name="address_book_empty">اڃا ڪو رابطو ناهي</string>
+    <string name="address_book_empty_hint">آساني سان سڃاڻڻ لاءِ پتا شامل ڪريو\nته توهان ڪنهن کي ادا ڪيو يا ڪنهن کان حاصل ڪيو</string>
+    <string name="address_book_no_results">ڪو رابطو نه مليو</string>
+    <string name="address_book_address">والٽ پتو</string>
+    <string name="address_book_name">نالو</string>
+    <string name="address_book_name_hint">مثال: ڪافي شاپ، احمد علي</string>
+    <string name="address_book_note">نوٽ (اختياري)</string>
+    <string name="address_book_note_hint">مثال: سپلائر، دوست</string>
+    <string name="address_book_delete_title">رابطو ڊليٽ ڪريو؟</string>
+    <string name="address_book_delete_message">%s کي پنهنجي ايڊريس بڪ مان هٽايو؟</string>
+    <string name="address_book_saved">رابطو محفوظ ٿيو</string>
+    <string name="address_book_unknown">اڻڄاتل</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">سادو موڊ</string>
+    <string name="settings_simple_mode_desc">استعمال ۾ آسان، بنيادي آپشنز</string>
+    <string name="settings_advanced_mode">ايڊوانسڊ موڊ</string>
+    <string name="settings_advanced_mode_desc">پاور يوزرز لاءِ ڪرپٽو آپشنز</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">رابطو شيئر ڪريو</string>
+    <string name="share_contact_title">پنهنجو پتو شيئر ڪريو</string>
+    <string name="share_contact_ready">شيئر ڪرڻ لاءِ تيار</string>
+    <string name="share_contact_ready_desc">پنهنجو فون ٻئي\nCleanSky ڊوائيس جي ويجهو آڻيو</string>
+    <string name="share_contact_received">رابطو مليو!</string>
+    <string name="share_contact_received_name">%s ڳنڍڻ چاهي ٿو</string>
+    <string name="share_contact_save">رابطن ۾ محفوظ ڪريو</string>
+    <string name="share_contact_your_name">توهان جو نالو (اختياري)</string>
+    <string name="share_contact_your_name_hint">ٻيا توهان کي ڪيئن ڏسندا</string>
+    <string name="share_contact_mutual">رابطا مٽايو</string>
+    <string name="share_contact_mutual_desc">ٻئي ڊوائيس هڪ وقت ۾ پتا شيئر ڪن</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">موڪليو</string>
+    <string name="send_title">رابطي کي موڪليو</string>
+    <string name="send_select_contact">وصول ڪندڙ چونڊيو</string>
+    <string name="send_no_contacts">اڃا ڪو رابطو ناهي</string>
+    <string name="send_no_contacts_hint">NFC يا دستي طور رابطا شامل ڪريو\nانهن کي ادائگيون موڪلڻ لاءِ</string>
+    <string name="send_amount">رقم</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">ڏانهن: %s</string>
+    <string name="send_confirm">موڪليو %1$s %2$s</string>
+    <string name="send_processing">موڪلي رهيو آهي…</string>
+    <string name="send_success">ڪاميابي سان موڪليو ويو!</string>
+    <string name="send_success_desc">%1$s %2$s موڪليو ويو %3$s کي</string>
+    <string name="send_error">موڪلڻ ناڪام ٿيو</string>
+    <string name="send_enter_amount">رقم داخل ڪريو</string>
+    <string name="send_new">نئين ٽرانسفر</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">سڀ</string>
+    <string name="history_filter_received">حاصل ڪيل</string>
+    <string name="history_filter_sent">موڪليل</string>
+    <string name="history_filter_contact">رابطو</string>
+    <string name="history_filter_by_contact">رابطي سان فلٽر ڪريو</string>
+    <string name="history_show_all">سڀ ڏيکاريو</string>
+    <string name="history_no_results">ڪا ٽرانزيڪشن فلٽر سان نه ٿي ملي</string>
+    <string name="history_add_contact">رابطن ۾ شامل ڪريو</string>
+    <string name="history_edit_contact">رابطو ايڊٽ ڪريو</string>
+    <string name="history_from">کان</string>
+    <string name="history_to">ڏانهن</string>
+    <string name="history_date">تاريخ</string>
+    <string name="history_tx_hash">ٽرانزيڪشن</string>
+    <string name="history_refund">واپسي</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">رقم تمام گهٽ</string>
+    <string name="scam_amount_large_warning">وڏي رقم</string>
+    <string name="scam_amount_large_desc">توهان %1$s %2$s موڪلڻ وارا آهيو.\nمهرباني ڪري تصديق ڪريو ته اهو صحيح آهي.</string>
+    <string name="scam_confirm_large">وڏي منتقلي جي تصديق ڪريو</string>
+    <string name="scam_dust_attack_warning">مشڪوڪ درخواست</string>
+    <string name="scam_dust_attack_desc">هي تمام گهٽ رقم آهي (%1$s %2$s). ڌول حملا ننڍين ادائگين ذريعي والٽ کي ٽريڪ ڪن ٿا. انڪار ڪريو جيڪڏهن غير متوقع هجي.</string>
+    <string name="scam_receive_large_warning">وڏي ادائگي جي درخواست</string>
+    <string name="scam_receive_large_desc">هي درخواست %1$s %2$s لاءِ آهي. ادا ڪرڻ کان اڳ تصديق ڪريو ته رقم صحيح آهي.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">صرف وصول</string>
+    <string name="settings_mode_receive_only">وصول</string>
+    <string name="settings_mode_receive_only_desc">ڪا نجي چاٻي ناهي</string>
+    <string name="settings_receive_only">صرف-وصول ترتيب</string>
+    <string name="settings_escrow_address">Escrow پتو</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow ترتيب نه ڏنو ويو</string>
+    <string name="receive_only_no_escrow_desc">سيٽنگز ۾ escrow پتو ۽ API key ترتيب ڏيو</string>
+    <string name="receive_only_security_notice">هن ڊوائيس تي ڪا نجي چاٻي ناهي. چوري ٿيڻ تي محفوظ.</string>
+    <string name="receive_only_api_key_required">Relayer عمل لاءِ API key گهربل آهي</string>
+</resources>

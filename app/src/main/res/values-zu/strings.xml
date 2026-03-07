@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Khokha</string>
+    <string name="nav_collect">Qoqa</string>
+    <string name="nav_settings">Izilungiselelo</string>
+    <string name="nav_history">Umlando</string>
+    <string name="nav_refund">Buyisela Imali</string>
+    <string name="nav_balance">Ibhalansi</string>
+    <string name="nav_back">Emuva</string>
+
+    <!-- Common actions -->
+    <string name="back">Emuva</string>
+    <string name="save">Londoloza</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ayikho Isikhwama</string>
+    <string name="pay_no_wallet_desc">Hlela isikhwama sakho kuZilungiselelo\nukuze wenze izinkokhelo</string>
+    <string name="pay_ready">Kulungele ukukhokha</string>
+    <string name="pay_ready_desc">Sondeza ifoni yakho\neduzane nedivayisi yomthengisi</string>
+    <string name="pay_request_title">Isicelo Sokukhokha</string>
+    <string name="pay_network">Inethiwekhi: %s</string>
+    <string name="pay_expired">Isicelo siphelelwe yisikhathi</string>
+    <string name="pay_cancel">Khansela</string>
+    <string name="pay_confirm">Khokha</string>
+    <string name="pay_new">Inkokhelo entsha</string>
+    <string name="pay_signing">Kusayinwa umsebenzi…</string>
+    <string name="pay_tx_signed">Umsebenzi usayiniwe</string>
+    <string name="pay_tx_signed_desc">Sondeza ifoni yakho\nkumthengisi ukuthumela</string>
+    <string name="pay_authenticating">Kuqinisekiswa…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ayikho Isikhwama</string>
+    <string name="collect_no_wallet_desc">Hlela isikhwama sakho kuZilungiselelo\nukuze wamukele izinkokhelo</string>
+    <string name="collect_amount">Inani eliqoqwayo</string>
+    <string name="collect_button">Qoqa</string>
+    <string name="collect_waiting">Kulindwe inkokhelo</string>
+    <string name="collect_waiting_desc">Cela ikhasimende\nusondeze ifoni yabo</string>
+    <string name="collect_new">Ukuqoqa okusha</string>
+    <string name="collect_processing">Iyacutshungulwa inkokhelo…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Imodi yokusebenza</string>
+    <string name="settings_mode_pay">Khokha</string>
+    <string name="settings_mode_pay_desc">Yenza izinkokhelo</string>
+    <string name="settings_mode_collect">Qoqa</string>
+    <string name="settings_mode_collect_desc">Yamukela izinkokhelo</string>
+    <string name="settings_wallet">Isikhwama</string>
+    <string name="settings_wallet_address">Ikheli</string>
+    <string name="settings_wallet_none">Asikho isikhwama esihleliwe</string>
+    <string name="settings_wallet_create">Dala</string>
+    <string name="settings_wallet_import">Ngenisa</string>
+    <string name="settings_network">Inethiwekhi ye-blockchain</string>
+    <string name="settings_chain_id">I-Chain ID: %d</string>
+    <string name="settings_execution">Ukwenziwa komsebenzi</string>
+    <string name="settings_exec_direct">Ngokuqondile</string>
+    <string name="settings_exec_direct_desc">Ukhokha igesi</string>
+    <string name="settings_exec_relayer">I-Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Igesi exhaswe nge-relayer</string>
+    <string name="settings_exec_aa">I-Account Abstraction</string>
+    <string name="settings_exec_aa_desc">I-ERC-4337 ne-Paymaster</string>
+    <string name="settings_api_key">Ukhiye we-API</string>
+    <string name="settings_save">Londoloza ubuyele</string>
+    <string name="settings_not_available">Ayitholakali kule nethiwekhi</string>
+    <string name="settings_language">Ulimi</string>
+    <string name="settings_language_system">Okuzenzakalelayo kwesistimu</string>
+    <string name="collect_select_currency">Khetha imali</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Ukuphepha</string>
+    <string name="security_encryption">Ukubethela kokhiye</string>
+    <string name="security_encryption_desc">I-AES-256-GCM ne-Android Keystore</string>
+    <string name="security_strongbox">I-StrongBox (HSM)</string>
+    <string name="security_strongbox_active">I-hardware security module iyasebenza</string>
+    <string name="security_strongbox_unavailable">Ayitholakali kule divayisi</string>
+    <string name="security_biometric">Ukuqinisekisa nge-biometric</string>
+    <string name="security_biometric_required">Kuyadingeka ekukhokheni</string>
+    <string name="security_biometric_disabled">Kuvaliwe</string>
+    <string name="security_biometric_unavailable">Akutholakali</string>
+    <string name="security_export">Khiphela ukhiye wangasese</string>
+    <string name="security_export_desc">Londoloza ukhiye wakho ngokuphepha</string>
+    <string name="security_delete">Susa isikhwama</string>
+    <string name="security_delete_desc">Susa yonke idatha unomphela</string>
+    <string name="security_delete_title">Susa isikhwama</string>
+    <string name="security_delete_warning">Lesi senzo ASIBUYISELEKI.</string>
+    <string name="security_delete_warning2">Uzolahlekelwa ukufinyelela kuzo zonke izimali uma ungenayo ibhekhi yohleko lokhiye wakho wangasese.</string>
+    <string name="security_delete_warning3">Qinisekisa ukuthi ukhiphe ukhiye wakho ngaphambi kokuqhubeka.</string>
+    <string name="security_delete_confirm">Susa</string>
+    <string name="security_status_active">Iyasebenza</string>
+    <string name="security_status_warning">Isexwayiso</string>
+    <string name="security_status_na">Ayitholakali</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Ngenisa isikhwama</string>
+    <string name="import_private_key">Ukhiye Wangasese</string>
+    <string name="import_seed_phrase">Umusho Wembewu</string>
+    <string name="import_prompt">Faka ukhiye wakho wangasese:</string>
+    <string name="import_prompt_seed">Faka umusho wakho wembewu (amagama angu-12–24):</string>
+    <string name="import_seed_hint">igama1 igama2 igama3 …</string>
+    <string name="import_button">Ngenisa</string>
+    <string name="import_error_invalid">Ukhiye wangasese ongavumelekile</string>
+    <string name="import_error_invalid_seed">Umusho wembewu ongavumelekile</string>
+    <string name="import_error_encryption">Iphutha lokubethela</string>
+    <string name="export_title">Ukhiye Wangasese</string>
+    <string name="export_warning">UNGAWABELANI NOMA NOBANI lo khiye. Noma ubani onawo ulawula imali yakho ngokuphelele.</string>
+    <string name="export_understood">Ngiyaqonda</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Isifinyezo</string>
+    <string name="history_received">Okwamukelwe</string>
+    <string name="history_sent">Okuthunyelwe</string>
+    <string name="history_refunded">Okubuyiselwe</string>
+    <string name="history_empty">Azikho izinkokhelo</string>
+    <string name="history_empty_desc">Izinkokhelo ku-%s\nzizovela lapha</string>
+    <string name="history_payment_received">Inkokhelo yamukelwe</string>
+    <string name="history_payment_sent">Inkokhelo ithunyelwe</string>
+    <string name="history_refund_sent">Ukubuyiselwa</string>
+    <string name="history_refund_received">Ukubuyiselwa kwamukelwe</string>
+    <string name="history_status_pending">Kusalindile</string>
+    <string name="history_status_confirmed">Kuqinisekisiwe</string>
+    <string name="history_status_failed">Kwehlulekile</string>
+    <string name="history_status_refunded">Kubuyiselwe</string>
+    <string name="history_status_partial">Okungaphelele</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Umsebenzi woqobo</string>
+    <string name="refund_amount">Inani</string>
+    <string name="refund_already">Sekubuyiselwe kakade</string>
+    <string name="refund_available">Okutholakalayo</string>
+    <string name="refund_recipient">Umamukeli</string>
+    <string name="refund_date">Usuku</string>
+    <string name="refund_type">Uhlobo lokubuyisela</string>
+    <string name="refund_full">Okugcwele</string>
+    <string name="refund_partial">Okungaphelele</string>
+    <string name="refund_partial_desc">Cacisa inani</string>
+    <string name="refund_amount_label">Inani elizobuyiselwa (%s)</string>
+    <string name="refund_max">Okuphezulu: %1$s %2$s</string>
+    <string name="refund_gas_notice">Uzokhokhela igesi yalo msebenzi</string>
+    <string name="refund_button">Buyisela %1$s %2$s</string>
+    <string name="refund_processing">Kucutshungulwa ukubuyiselwa…</string>
+    <string name="refund_success">Ukubuyiselwa kuphumelele</string>
+    <string name="refund_done">Kwenziwe</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Amathokheni Akho</string>
+    <string name="balance_manage">Phatha</string>
+    <string name="balance_refresh">Vuselela</string>
+    <string name="balance_loading">Kulayishwa amabhalansi…</string>
+    <string name="balance_empty">Awekho amathokheni</string>
+    <string name="balance_no_wallet_desc">Hlela isikhwama sakho kuZilungiselelo\nukuze ubone amabhalansi akho</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Amathokheni Avumelekile</string>
+    <string name="settings_add_token">Engeza Ithokheni</string>
+    <string name="add_token_prompt">Faka ikheli lekhontrakthi yethokheni:</string>
+    <string name="add_token_validating">Kuqinisekiswa ithokheni…</string>
+    <string name="add_token_button">Engeza</string>
+    <string name="delete">Susa</string>
+
+    <!-- Common -->
+    <string name="cancel">Khansela</string>
+    <string name="close">Vala</string>
+    <string name="retry">Zama futhi</string>
+    <string name="error">Iphutha</string>
+    <string name="copy">Kopisha</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Isikhwama asihleliwe</string>
+    <string name="error_device_security">Iphutha lokuphepha kwedivayisi</string>
+    <string name="error_auth">Iphutha lokuqinisekisa</string>
+    <string name="error_unknown">Iphutha elingaziwa</string>
+    <string name="error_keystore_unavailable">I-Keystore ayitholakali - ezinye izinto ngeke zisebenze</string>
+    <string name="error_encryption_restart">Iphutha lokubethela - qala kabusha uhlelo lokusebenza</string>
+    <string name="error_auth_cancelled">Ukuqinisekisa kukhanseliwe</string>
+    <string name="error_invalid_address">Ikheli elingavumelekile</string>
+    <string name="error_invalid_address_format">Ifomethi yekheli engavumelekile</string>
+    <string name="error_token_already_added">Ithokheni seyengezwe kakade</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Kuthunyelwe! Tx: %s…</string>
+    <string name="token_native">Eyemvelo</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ibhalansi yakho</string>
+    <string name="pay_insufficient_balance">Ibhalansi enganele</string>
+    <string name="pay_need_more">Udinga %1$s engeziwe %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Siyakwamukela</string>
+    <string name="welcome_sovereignty">Okhiye bakho.\nImali yakho.\nUbukhosi bakho.</string>
+    <string name="welcome_desc">Imali yakho AYIGCINWA kule app. Ikhona ku-blockchain, ilawulwa ngokhiye bakho abangasese.\n\nLe app igcina kuphela okhiye bakho ngokuphepha. Asikwazi ukufinyelela imali yakho.\n\nQaphela: Amanye amathokheni (USDC, USDT) angamishwa ngabakhiphi bawo. Ukuze uthole ubukhosi obuphelele, sebenzisa i-ETH yemvelo noma amathokheni angenamnikazi.</string>
+    <string name="welcome_warning_title">Okhiye bakho = Imali yakho</string>
+    <string name="welcome_warning_desc">Uma ulahlekelwa yizikhiye zakho eziyimfihlo noma uzabelane nazo nothile, ulahlekelwa ukulawula imali yakho unomphela.\n\nAyikho indlela yokubuyisa. Ayikho ithimba losizo elingakusiza. Lena yimvelo yobunikazi bangempela.\n\nHlala unebhekhi ephephile yokhiye bakho.</string>
+    <string name="welcome_opensource">Isoftware yomthombo ovulekile. Qinisekisa, ungathembi.</string>
+    <string name="welcome_start">Ngiyaqonda, masiqale</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Ubunikazi Bomthengisi</string>
+    <string name="settings_merchant_name">Igama Lebhizinisi</string>
+    <string name="settings_merchant_name_hint">Isitolo Sami Sekhofi</string>
+    <string name="settings_merchant_domain">I-Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth noma mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Kuboniswa kumakhasimende ngesikhathi sokukhokha</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Imodi Yobumfihlo</string>
+    <string name="settings_stealth_desc">Yamukela izinkokhelo emakhelini esikhashana (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Ivuliwe</string>
+    <string name="settings_stealth_info">Inkokhelo ngayinye iya ekhelini elikhethekile okuwena kuphela ongasebenzisa kulo. Ababukeli abakwazi ukuxhumanisa izinkokhelo nebhizinisi lakho.</string>
+    <string name="stealth_address_label">Imodi Yobumfihlo Iyasebenza</string>
+    <string name="stealth_payment_note">Inkokhelo izothunyelwa ekhelini eliyimfihlo</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Ikheli lomamukeli</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Isikhwama Esiyimfihlo</string>
+    <string name="stealth_wallet_addresses">kumakheli afihliwe angu-%d</string>
+    <string name="stealth_wallet_privacy_title">Imali yakho iyimfihlo</string>
+    <string name="stealth_wallet_privacy_desc">Le bhalansi ayixhunywe nesikhwama sakho somphakathi. Sebenzisa ngqo kubahlinzeki, izindawo zokushintshanisa, noma noma kuphi - ubunikazi bebhizinisi lakho bufihlakele.</string>
+    <string name="stealth_wallet_send">Thumela</string>
+    <string name="stealth_wallet_send_title">Thumela Kusuka Esikhwameni Esiyimfihlo</string>
+    <string name="stealth_wallet_available">Okutholakalayo: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Inani</string>
+    <string name="nav_stealth_wallet">Isikhwama Esiyimfihlo</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Amakheli amaningi</string>
+    <string name="stealth_wallet_gas_desc">Imali yakho isatshalaliswe emakhelini angu-%d. Ukusebenzisa izinani ezinkulu kungadinga imisebenzi eminingi, okwandisa izindleko zegesi.</string>
+    <string name="stealth_wallet_consolidate">Hlanganisa esikhwameni esiyinhloko</string>
+    <string name="stealth_wallet_consolidate_title">Hlanganisa imali?</string>
+    <string name="stealth_wallet_consolidate_warning">Lokhu kuzodlulisela yonke imali kusuka esikhwameni sakho esiyimfihlo iye ekhelini lesikhwama sakho esiyinhloko.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ISEXWAYISO: Lokhu kuphula ubumfihlo. Isikhwama sakho esiyinhloko sizoxhunywa nazo zonke izinkokhelo ezamukelwe.</string>
+    <string name="stealth_wallet_consolidate_benefit">Inzuzo: Ukusebenzisa kwangesikhathi esizayo kuzodinga umsebenzi owodwa kuphela (izindleko zegesi ezincane).</string>
+    <string name="stealth_wallet_consolidate_confirm">Hlanganisa</string>
+    <string name="stealth_wallet_consolidate_success">Imali ihlanganiswe esikhwameni esiyinhloko</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Ubumfihlo Bomkhokheli</string>
+    <string name="settings_payer_privacy_desc">Khokha kusuka kuma-akhawunti esikhashana (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Inkokhelo ngayinye isebenzisa i-akhawunti ekhethekile. Ikheli lesikhwama sakho esiyinhloko alibonakali ku-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Ukhiye we-API uyadingeka ku-mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Mahhala ku-testnets (i-bundler yomphakathi)</string>
+    <string name="payer_privacy_note">Ikheli lesikhwama sakho lizofihlakalela</string>
+    <string name="payer_privacy_processing">Kucutshungulwa inkokhelo eyimfihlo…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Incwadi Yamakheli</string>
+    <string name="address_book_add">Engeza Oxhumana Naye</string>
+    <string name="address_book_edit">Hlela Oxhumana Naye</string>
+    <string name="address_book_search">Sesha abaxhumana nabo…</string>
+    <string name="address_book_empty">Abakho abaxhumana nabo okwamanje</string>
+    <string name="address_book_empty_hint">Engeza amakheli ukuze ubaquphule kalula\nabanikela kubo noma wamukela kubo</string>
+    <string name="address_book_no_results">Abatholakalanga abaxhumana nabo</string>
+    <string name="address_book_address">Ikheli Lesikhwama</string>
+    <string name="address_book_name">Igama</string>
+    <string name="address_book_name_hint">isb. Isitolo Sekhofi, uJohn Doe</string>
+    <string name="address_book_note">Incazelo (uma ikhona)</string>
+    <string name="address_book_note_hint">isb. Umhlinzeki, Umngani</string>
+    <string name="address_book_delete_title">Susa oxhumana naye?</string>
+    <string name="address_book_delete_message">Susa u-%s encwadini yakho yamakheli?</string>
+    <string name="address_book_saved">Oxhumana naye ulondoloziwe</string>
+    <string name="address_book_unknown">Akaziwa</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Imodi Elula</string>
+    <string name="settings_simple_mode_desc">Kulula ukusebenzisa, izinketho eziyisisekelo</string>
+    <string name="settings_advanced_mode">Imodi Ethuthukile</string>
+    <string name="settings_advanced_mode_desc">Izinketho ze-crypto zabasebenzisi abanekhono</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Yabelana Ngoxhumana Naye</string>
+    <string name="share_contact_title">Yabelana Ngekheli Lakho</string>
+    <string name="share_contact_ready">Kulungele ukwabelana</string>
+    <string name="share_contact_ready_desc">Sondeza ifoni yakho\nkwenye idivayisi enye ye-CleanSky</string>
+    <string name="share_contact_received">Oxhumana naye utholakele!</string>
+    <string name="share_contact_received_name">%s ufuna ukuxhumana</string>
+    <string name="share_contact_save">Londoloza kubaxhumana nabo</string>
+    <string name="share_contact_your_name">Igama lakho (uma likhona)</string>
+    <string name="share_contact_your_name_hint">Indlela abanye abazokubona ngayo</string>
+    <string name="share_contact_mutual">Shintshana ngabaxhumana nabo</string>
+    <string name="share_contact_mutual_desc">Amadivayisi omabili abelana ngamakheli ngesikhathi esisodwa</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Thumela</string>
+    <string name="send_title">Thumela Koxhumana Naye</string>
+    <string name="send_select_contact">Khetha umamukeli</string>
+    <string name="send_no_contacts">Abakho abaxhumana nabo okwamanje</string>
+    <string name="send_no_contacts_hint">Engeza abaxhumana nabo nge-NFC noma\nngezandla ukuthumela izinkokhelo</string>
+    <string name="send_amount">Inani</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kuya: %s</string>
+    <string name="send_confirm">Thumela %1$s %2$s</string>
+    <string name="send_processing">Kuthunywa…</string>
+    <string name="send_success">Kuthunyelwe ngempumelelo!</string>
+    <string name="send_success_desc">%1$s %2$s ithunyelwe ku-%3$s</string>
+    <string name="send_error">Ukuthumela kwehlulekile</string>
+    <string name="send_enter_amount">Faka inani</string>
+    <string name="send_new">Ukudluliswa okusha</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Konke</string>
+    <string name="history_filter_received">Okwamukelwe</string>
+    <string name="history_filter_sent">Okuthunyelwe</string>
+    <string name="history_filter_contact">Oxhumana Naye</string>
+    <string name="history_filter_by_contact">Hlunga ngoxhumana naye</string>
+    <string name="history_show_all">Bonisa konke</string>
+    <string name="history_no_results">Azikho izinkokhelo ezihambisana nesihluzi</string>
+    <string name="history_add_contact">Engeza kubaxhumana nabo</string>
+    <string name="history_edit_contact">Hlela oxhumana naye</string>
+    <string name="history_from">Kusuka</string>
+    <string name="history_to">Kuya</string>
+    <string name="history_date">Usuku</string>
+    <string name="history_tx_hash">Umsebenzi</string>
+    <string name="history_refund">Buyisela Imali</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Inani lincane kakhulu</string>
+    <string name="scam_amount_large_warning">Inani elikhulu</string>
+    <string name="scam_amount_large_desc">Uzothumela u-%1$s %2$s.\nSicela uqinisekise ukuthi lokhu kulungile.</string>
+    <string name="scam_confirm_large">Qinisekisa ukudluliswa okukhulu</string>
+    <string name="scam_dust_attack_warning">Isicelo esolisayo</string>
+    <string name="scam_dust_attack_desc">Leli inani elincane kakhulu (%1$s %2$s). Izinhlaselo zothuli zisebenzisa izinkokhelo ezincane ukuze zilandelele izimali. Yenqaba uma kungalindelekile.</string>
+    <string name="scam_receive_large_warning">Isicelo senkokhelo enkulu</string>
+    <string name="scam_receive_large_desc">Lesi sicelo singu-%1$s %2$s. Qinisekisa ukuthi inani lichanekile ngaphambi kokukhokhela.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Ukwamukela kuphela</string>
+    <string name="settings_mode_receive_only">Yamukela</string>
+    <string name="settings_mode_receive_only_desc">Ayikho ukhiye oyimfihlo</string>
+    <string name="settings_receive_only">Ukusetha kokwamukela kuphela</string>
+    <string name="settings_escrow_address">Ikheli le-Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">I-Escrow ayisethiwe</string>
+    <string name="receive_only_no_escrow_desc">Setha ikheli le-escrow ne-API key kumaSethingi</string>
+    <string name="receive_only_security_notice">Awukho ukhiye oyimfihlo kule divayisi. Kuphephile uma yebiwa.</string>
+    <string name="receive_only_api_key_required">I-API key iyadingeka ukuze kusebenze i-relayer</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Theme -->
+    <style name="Theme.CleanSky.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0085FF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenIconBackgroundColor">#0085FF</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Theme.CleanSky.Main</item>
+    </style>
+
+    <!-- Main App Theme -->
+    <style name="Theme.CleanSky.Main" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+</resources>

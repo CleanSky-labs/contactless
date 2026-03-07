@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Плати</string>
+    <string name="nav_collect">Наплати</string>
+    <string name="nav_settings">Подешавања</string>
+    <string name="nav_history">Историја</string>
+    <string name="nav_refund">Поврат</string>
+    <string name="nav_balance">Стање</string>
+    <string name="nav_back">Назад</string>
+
+    <!-- Common actions -->
+    <string name="back">Назад</string>
+    <string name="save">Сачувај</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Нема новчаника</string>
+    <string name="pay_no_wallet_desc">Подесите новчаник у Подешавањима\nда бисте вршили плаћања</string>
+    <string name="pay_ready">Спремно за плаћање</string>
+    <string name="pay_ready_desc">Приближите телефон\nуређају трговца</string>
+    <string name="pay_request_title">Захтев за плаћање</string>
+    <string name="pay_network">Мрежа: %s</string>
+    <string name="pay_expired">Захтев је истекао</string>
+    <string name="pay_cancel">Откажи</string>
+    <string name="pay_confirm">Плати</string>
+    <string name="pay_new">Ново плаћање</string>
+    <string name="pay_signing">Потписивање трансакције…</string>
+    <string name="pay_tx_signed">Трансакција потписана</string>
+    <string name="pay_tx_signed_desc">Приближите телефон\nтрговцу да пошаљете</string>
+    <string name="pay_authenticating">Аутентификација…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Нема новчаника</string>
+    <string name="collect_no_wallet_desc">Подесите новчаник у Подешавањима\nда бисте примали плаћања</string>
+    <string name="collect_amount">Износ за наплату</string>
+    <string name="collect_button">Наплати</string>
+    <string name="collect_waiting">Чекање плаћања</string>
+    <string name="collect_waiting_desc">Замолите купца да\nприближи свој телефон</string>
+    <string name="collect_new">Нова наплата</string>
+    <string name="collect_processing">Обрада плаћања…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Режим рада</string>
+    <string name="settings_mode_pay">Плаћање</string>
+    <string name="settings_mode_pay_desc">Врши плаћања</string>
+    <string name="settings_mode_collect">Наплата</string>
+    <string name="settings_mode_collect_desc">Прими плаћања</string>
+    <string name="settings_wallet">Новчаник</string>
+    <string name="settings_wallet_address">Адреса</string>
+    <string name="settings_wallet_none">Новчаник није подешен</string>
+    <string name="settings_wallet_create">Креирај</string>
+    <string name="settings_wallet_import">Увези</string>
+    <string name="settings_network">Блокчејн мрежа</string>
+    <string name="settings_chain_id">ID ланца: %d</string>
+    <string name="settings_execution">Извршење трансакција</string>
+    <string name="settings_exec_direct">Директно</string>
+    <string name="settings_exec_direct_desc">Ви плаћате гас</string>
+    <string name="settings_exec_relayer">Релејер (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Спонзорисани гас преко релејера</string>
+    <string name="settings_exec_aa">Апстракција налога</string>
+    <string name="settings_exec_aa_desc">ERC-4337 са Paymaster-ом</string>
+    <string name="settings_api_key">API кључ</string>
+    <string name="settings_save">Сачувај и врати се</string>
+    <string name="settings_not_available">Није доступно на овој мрежи</string>
+    <string name="settings_language">Језик</string>
+    <string name="settings_language_system">Подразумевани системски</string>
+    <string name="collect_select_currency">Изабери валуту</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Безбедност</string>
+    <string name="security_encryption">Шифровање кључева</string>
+    <string name="security_encryption_desc">AES-256-GCM са Android Keystore-ом</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Хардверски безбедносни модул активан</string>
+    <string name="security_strongbox_unavailable">Није доступно на овом уређају</string>
+    <string name="security_biometric">Биометријска аутентификација</string>
+    <string name="security_biometric_required">Обавезна за плаћања</string>
+    <string name="security_biometric_disabled">Искључена</string>
+    <string name="security_biometric_unavailable">Није доступна</string>
+    <string name="security_export">Извези приватни кључ</string>
+    <string name="security_export_desc">Сачувајте кључ на сигурном месту</string>
+    <string name="security_delete">Обриши новчаник</string>
+    <string name="security_delete_desc">Трајно обриши све податке</string>
+    <string name="security_delete_title">Обриши новчаник</string>
+    <string name="security_delete_warning">Ова радња је НЕПОВРАТНА.</string>
+    <string name="security_delete_warning2">Изгубићете приступ свим средствима ако немате резервну копију приватног кључа.</string>
+    <string name="security_delete_warning3">Уверите се да сте извезли кључ пре него што наставите.</string>
+    <string name="security_delete_confirm">Обриши</string>
+    <string name="security_status_active">Активно</string>
+    <string name="security_status_warning">Упозорење</string>
+    <string name="security_status_na">Н/Д</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Увези новчаник</string>
+    <string name="import_private_key">Приватни кључ</string>
+    <string name="import_seed_phrase">Фраза за опоравак</string>
+    <string name="import_prompt">Унесите приватни кључ:</string>
+    <string name="import_prompt_seed">Унесите фразу за опоравак (12–24 речи):</string>
+    <string name="import_seed_hint">реч1 реч2 реч3 …</string>
+    <string name="import_button">Увези</string>
+    <string name="import_error_invalid">Неважећи приватни кључ</string>
+    <string name="import_error_invalid_seed">Неважећа фраза за опоравак</string>
+    <string name="import_error_encryption">Грешка при шифровању</string>
+    <string name="export_title">Приватни кључ</string>
+    <string name="export_warning">НИКАДА не делите овај кључ ни са ким. Ко год га има, има потпуну контролу над вашим средствима.</string>
+    <string name="export_understood">Разумем</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Преглед</string>
+    <string name="history_received">Примљено</string>
+    <string name="history_sent">Послато</string>
+    <string name="history_refunded">Враћено</string>
+    <string name="history_empty">Нема трансакција</string>
+    <string name="history_empty_desc">Трансакције на %s\nће се појавити овде</string>
+    <string name="history_payment_received">Плаћање примљено</string>
+    <string name="history_payment_sent">Плаћање послато</string>
+    <string name="history_refund_sent">Поврат</string>
+    <string name="history_refund_received">Поврат примљен</string>
+    <string name="history_status_pending">На чекању</string>
+    <string name="history_status_confirmed">Потврђено</string>
+    <string name="history_status_failed">Неуспешно</string>
+    <string name="history_status_refunded">Враћено</string>
+    <string name="history_status_partial">Делимично</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Оригинална трансакција</string>
+    <string name="refund_amount">Износ</string>
+    <string name="refund_already">Већ враћено</string>
+    <string name="refund_available">Доступно</string>
+    <string name="refund_recipient">Прималац</string>
+    <string name="refund_date">Датум</string>
+    <string name="refund_type">Тип поврата</string>
+    <string name="refund_full">Потпуни</string>
+    <string name="refund_partial">Делимични</string>
+    <string name="refund_partial_desc">Наведите износ</string>
+    <string name="refund_amount_label">Износ за поврат (%s)</string>
+    <string name="refund_max">Максимум: %1$s %2$s</string>
+    <string name="refund_gas_notice">Ви ћете платити гас за ову трансакцију</string>
+    <string name="refund_button">Врати %1$s %2$s</string>
+    <string name="refund_processing">Обрада поврата…</string>
+    <string name="refund_success">Поврат успешан</string>
+    <string name="refund_done">Готово</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Ваши токени</string>
+    <string name="balance_manage">Управљај</string>
+    <string name="balance_refresh">Освежи</string>
+    <string name="balance_loading">Учитавање стања…</string>
+    <string name="balance_empty">Нема токена</string>
+    <string name="balance_no_wallet_desc">Подесите новчаник у Подешавањима\nда бисте видели стање</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Дозвољени токени</string>
+    <string name="settings_add_token">Додај токен</string>
+    <string name="add_token_prompt">Унесите адресу уговора токена:</string>
+    <string name="add_token_validating">Провера токена…</string>
+    <string name="add_token_button">Додај</string>
+    <string name="delete">Обриши</string>
+
+    <!-- Common -->
+    <string name="cancel">Откажи</string>
+    <string name="close">Затвори</string>
+    <string name="retry">Покушај поново</string>
+    <string name="error">Грешка</string>
+    <string name="copy">Копирај</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Новчаник није подешен</string>
+    <string name="error_device_security">Грешка безбедности уређаја</string>
+    <string name="error_auth">Грешка аутентификације</string>
+    <string name="error_unknown">Непозната грешка</string>
+    <string name="error_keystore_unavailable">Keystore није доступан - неке функције неће радити</string>
+    <string name="error_encryption_restart">Грешка шифровања - рестартујте апликацију</string>
+    <string name="error_auth_cancelled">Аутентификација отказана</string>
+    <string name="error_invalid_address">Неважећа адреса</string>
+    <string name="error_invalid_address_format">Неважећи формат адресе</string>
+    <string name="error_token_already_added">Токен је већ додат</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Послато! Tx: %s…</string>
+    <string name="token_native">Нативни</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ваше стање</string>
+    <string name="pay_insufficient_balance">Недовољно средстава</string>
+    <string name="pay_need_more">Потребно вам је још %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Добродошли</string>
+    <string name="welcome_sovereignty">Ваши кључеви.\nВаша средства.\nВаш суверенитет.</string>
+    <string name="welcome_desc">Ваша средства НИСУ ускладиштена у овој апликацији. Она постоје на блокчејну, контролисана вашим приватним кључевима.\n\nОва апликација само безбедно чува ваше кључеве. Ми не можемо приступити вашим средствима.\n\nНапомена: Неки токени (USDC, USDT) могу бити замрзнути од стране издавача. За максималну сувереност, користите нативни ETH или децентрализоване токене.</string>
+    <string name="welcome_warning_title">Ваши кључеви = Ваша средства</string>
+    <string name="welcome_warning_desc">Ако изгубите приватне кључеве или их поделите са неким, трајно губите контролу над средствима.\n\nНема опције за опоравак. Ниједан тим подршке вам не може помоћи. То је природа истинског власништва.\n\nУвек чувајте сигурну резервну копију кључева.</string>
+    <string name="welcome_opensource">Софтвер отвореног кода. Проверите, не верујте.</string>
+    <string name="welcome_start">Разумем, хајде да почнемо</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Идентитет трговца</string>
+    <string name="settings_merchant_name">Назив фирме</string>
+    <string name="settings_merchant_name_hint">Моја кафетерија</string>
+    <string name="settings_merchant_domain">Домен / ENS</string>
+    <string name="settings_merchant_domain_hint">mojakafeterija.eth или mojakafeterija.com</string>
+    <string name="settings_merchant_identity_desc">Приказује се купцима током плаћања</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Режим приватности</string>
+    <string name="settings_stealth_desc">Примајте плаћања на једнократне адресе (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Укључено</string>
+    <string name="settings_stealth_info">Свако плаћање иде на јединствену адресу са које само ви можете трошити. Посматрачи не могу повезати плаћања са вашим послом.</string>
+    <string name="stealth_address_label">Stealth режим активан</string>
+    <string name="stealth_payment_note">Плаћање ће бити послато на приватну адресу</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Адреса примаоца</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Приватни новчаник</string>
+    <string name="stealth_wallet_addresses">на %d stealth адреса</string>
+    <string name="stealth_wallet_privacy_title">Ваша средства су приватна</string>
+    <string name="stealth_wallet_privacy_desc">Ово стање није повезано са вашим јавним новчаником. Трошите директно код добављача, мењачница или било где - ваш пословни идентитет остаје скривен.</string>
+    <string name="stealth_wallet_send">Пошаљи</string>
+    <string name="stealth_wallet_send_title">Пошаљи из приватног новчаника</string>
+    <string name="stealth_wallet_available">Доступно: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Износ</string>
+    <string name="nav_stealth_wallet">Приватни новчаник</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Више адреса</string>
+    <string name="stealth_wallet_gas_desc">Ваша средства су распоређена на %d адреса. Трошење великих износа може захтевати више трансакција, што повећава трошкове гаса.</string>
+    <string name="stealth_wallet_consolidate">Консолидуј у главни новчаник</string>
+    <string name="stealth_wallet_consolidate_title">Консолидовати средства?</string>
+    <string name="stealth_wallet_consolidate_warning">Ово ће пренети сва средства из вашег приватног новчаника на адресу главног новчаника.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">УПОЗОРЕЊЕ: Ово нарушава приватност. Ваш главни новчаник биће повезан са свим примљеним плаћањима.</string>
+    <string name="stealth_wallet_consolidate_benefit">Предност: Будућа трошења захтеваће само једну трансакцију (нижи трошкови гаса).</string>
+    <string name="stealth_wallet_consolidate_confirm">Консолидуј</string>
+    <string name="stealth_wallet_consolidate_success">Средства консолидована у главни новчаник</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Приватност платиоца</string>
+    <string name="settings_payer_privacy_desc">Плаћајте са ефемерних налога (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Свако плаћање користи јединствени налог. Адреса вашег главног новчаника није видљива на ланцу.</string>
+    <string name="settings_payer_privacy_requires_api">API кључ обавезан за mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Бесплатно на testnet-овима (јавни bundler)</string>
+    <string name="payer_privacy_note">Адреса вашег новчаника биће скривена</string>
+    <string name="payer_privacy_processing">Обрада приватног плаћања…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Именик</string>
+    <string name="address_book_add">Додај контакт</string>
+    <string name="address_book_edit">Измени контакт</string>
+    <string name="address_book_search">Претражи контакте…</string>
+    <string name="address_book_empty">Још нема контаката</string>
+    <string name="address_book_empty_hint">Додајте адресе да лако идентификујете\nкоме плаћате или од кога примате</string>
+    <string name="address_book_no_results">Нема пронађених контаката</string>
+    <string name="address_book_address">Адреса новчаника</string>
+    <string name="address_book_name">Име</string>
+    <string name="address_book_name_hint">нпр. Кафетерија, Петар Петровић</string>
+    <string name="address_book_note">Напомена (опционо)</string>
+    <string name="address_book_note_hint">нпр. Добављач, Пријатељ</string>
+    <string name="address_book_delete_title">Обрисати контакт?</string>
+    <string name="address_book_delete_message">Уклонити %s из именика?</string>
+    <string name="address_book_saved">Контакт сачуван</string>
+    <string name="address_book_unknown">Непознато</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Једноставан режим</string>
+    <string name="settings_simple_mode_desc">Лако за коришћење, основне опције</string>
+    <string name="settings_advanced_mode">Напредни режим</string>
+    <string name="settings_advanced_mode_desc">Крипто опције за напредне кориснике</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Подели контакт</string>
+    <string name="share_contact_title">Подели своју адресу</string>
+    <string name="share_contact_ready">Спремно за дељење</string>
+    <string name="share_contact_ready_desc">Приближите телефон\nдругом CleanSky уређају</string>
+    <string name="share_contact_received">Контакт примљен!</string>
+    <string name="share_contact_received_name">%s жели да се повеже</string>
+    <string name="share_contact_save">Сачувај у контакте</string>
+    <string name="share_contact_your_name">Ваше име (опционо)</string>
+    <string name="share_contact_your_name_hint">Како ће вас други видети</string>
+    <string name="share_contact_mutual">Размени контакте</string>
+    <string name="share_contact_mutual_desc">Оба уређаја деле адресе истовремено</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Пошаљи</string>
+    <string name="send_title">Пошаљи контакту</string>
+    <string name="send_select_contact">Изаберите примаоца</string>
+    <string name="send_no_contacts">Још нема контаката</string>
+    <string name="send_no_contacts_hint">Додајте контакте преко NFC или ручно\nда бисте им слали плаћања</string>
+    <string name="send_amount">Износ</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">За: %s</string>
+    <string name="send_confirm">Пошаљи %1$s %2$s</string>
+    <string name="send_processing">Слање…</string>
+    <string name="send_success">Успешно послато!</string>
+    <string name="send_success_desc">%1$s %2$s послато примаоцу %3$s</string>
+    <string name="send_error">Слање није успело</string>
+    <string name="send_enter_amount">Унесите износ</string>
+    <string name="send_new">Нови трансфер</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Све</string>
+    <string name="history_filter_received">Примљено</string>
+    <string name="history_filter_sent">Послато</string>
+    <string name="history_filter_contact">Контакт</string>
+    <string name="history_filter_by_contact">Филтрирај по контакту</string>
+    <string name="history_show_all">Прикажи све</string>
+    <string name="history_no_results">Нема трансакција које одговарају филтеру</string>
+    <string name="history_add_contact">Додај у контакте</string>
+    <string name="history_edit_contact">Измени контакт</string>
+    <string name="history_from">Од</string>
+    <string name="history_to">За</string>
+    <string name="history_date">Датум</string>
+    <string name="history_tx_hash">Трансакција</string>
+    <string name="history_refund">Поврат</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Износ је премали</string>
+    <string name="scam_amount_large_warning">Велики износ</string>
+    <string name="scam_amount_large_desc">Управо ћете послати %1$s %2$s.\nМолимо потврдите да је ово тачно.</string>
+    <string name="scam_confirm_large">Потврдите велики трансфер</string>
+    <string name="scam_dust_attack_warning">Сумњив захтев</string>
+    <string name="scam_dust_attack_desc">Ово је веома мали износ (%1$s %2$s). Напади прашином користе ситна плаћања за праћење новчаника. Одбијте ако је неочекивано.</string>
+    <string name="scam_receive_large_warning">Захтев за велико плаћање</string>
+    <string name="scam_receive_large_desc">Овај захтев је за %1$s %2$s. Проверите да ли је ово тачан износ пре плаћања.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Само пријем</string>
+    <string name="settings_mode_receive_only">Пријем</string>
+    <string name="settings_mode_receive_only_desc">Без приватног кључа</string>
+    <string name="settings_receive_only">Подешавање само за пријем</string>
+    <string name="settings_escrow_address">Escrow адреса</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow није подешен</string>
+    <string name="receive_only_no_escrow_desc">Подесите escrow адресу и API key у Подешавањима</string>
+    <string name="receive_only_security_notice">Нема приватног кључа на овом уређају. Безбедно у случају крађе.</string>
+    <string name="receive_only_api_key_required">API key потребан за извршење преко relayer-а</string>
+</resources>

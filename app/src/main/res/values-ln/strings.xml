@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Futa</string>
+    <string name="nav_collect">Zwa</string>
+    <string name="nav_settings">Mipenzeli</string>
+    <string name="nav_history">Lisolo</string>
+    <string name="nav_refund">Zongisa</string>
+    <string name="nav_balance">Ndelo</string>
+    <string name="nav_back">Zonga</string>
+
+    <!-- Common actions -->
+    <string name="back">Zonga</string>
+    <string name="save">Bómba</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Pɔrtɔfɔyɔ ezali te</string>
+    <string name="pay_no_wallet_desc">Bɔngisa pɔrtɔfɔyɔ na yo na Mipenzeli\nmpo ofuta</string>
+    <string name="pay_ready">Esili kobongisama mpo na kofuta</string>
+    <string name="pay_ready_desc">Pusá telefone na yo penepene\nna aparɛyi ya motɛki</string>
+    <string name="pay_request_title">Esɛngi ya kofuta</string>
+    <string name="pay_network">Réseau: %s</string>
+    <string name="pay_expired">Esɛngi esili ngonga</string>
+    <string name="pay_cancel">Koboya</string>
+    <string name="pay_confirm">Futa</string>
+    <string name="pay_new">Lifuti ya sika</string>
+    <string name="pay_signing">Kosaina transaksio…</string>
+    <string name="pay_tx_signed">Transaksio esainami</string>
+    <string name="pay_tx_signed_desc">Pusá telefone na yo penepene\nna motɛki mpo otinda</string>
+    <string name="pay_authenticating">Kondimisa…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Pɔrtɔfɔyɔ ezali te</string>
+    <string name="collect_no_wallet_desc">Bɔngisa pɔrtɔfɔyɔ na yo na Mipenzeli\nmpo ozwa mafuta</string>
+    <string name="collect_amount">Montanti ya kozwa</string>
+    <string name="collect_button">Zwa</string>
+    <string name="collect_waiting">Kozela lifuti</string>
+    <string name="collect_waiting_desc">Senga mosombi\napusá telefone na ye penepene</string>
+    <string name="collect_new">Kozwa ya sika</string>
+    <string name="collect_processing">Kosala lifuti…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Lolenge ya mosala</string>
+    <string name="settings_mode_pay">Futa</string>
+    <string name="settings_mode_pay_desc">Sala mafuti</string>
+    <string name="settings_mode_collect">Zwa</string>
+    <string name="settings_mode_collect_desc">Zwa mafuti</string>
+    <string name="settings_wallet">Pɔrtɔfɔyɔ</string>
+    <string name="settings_wallet_address">Adrɛsi</string>
+    <string name="settings_wallet_none">Pɔrtɔfɔyɔ ebongisami te</string>
+    <string name="settings_wallet_create">Kelá</string>
+    <string name="settings_wallet_import">Kokɔtisa</string>
+    <string name="settings_network">Réseau ya blockchain</string>
+    <string name="settings_chain_id">ID ya chaîne: %d</string>
+    <string name="settings_execution">Kosala transaksio</string>
+    <string name="settings_exec_direct">Mbala moko</string>
+    <string name="settings_exec_direct_desc">Ofuti gas yo moko</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas efutami na nzela ya relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 na Paymaster</string>
+    <string name="settings_api_key">Fungola ya API</string>
+    <string name="settings_save">Bómba mpe zonga</string>
+    <string name="settings_not_available">Ezali te na réseau oyo</string>
+    <string name="settings_language">Monɔkɔ</string>
+    <string name="settings_language_system">Ya système</string>
+    <string name="collect_select_currency">Poná mbongo</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Kobatela</string>
+    <string name="security_encryption">Bobateli ya fungola</string>
+    <string name="security_encryption_desc">AES-256-GCM na Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Module ya kobatela ya hardware esali</string>
+    <string name="security_strongbox_unavailable">Ezali te na aparɛyi oyo</string>
+    <string name="security_biometric">Kondimisa na nzoto</string>
+    <string name="security_biometric_required">Esɛngami mpo na mafuti</string>
+    <string name="security_biometric_disabled">Elongolami</string>
+    <string name="security_biometric_unavailable">Ezali te</string>
+    <string name="security_export">Kobimisa fungola ya secrɛ</string>
+    <string name="security_export_desc">Bómba fungola na yo na kobatela</string>
+    <string name="security_delete">Kolimwisa pɔrtɔfɔyɔ</string>
+    <string name="security_delete_desc">Kolimwisa makambo nyonso mpo na libela</string>
+    <string name="security_delete_title">Kolimwisa pɔrtɔfɔyɔ</string>
+    <string name="security_delete_warning">Lisaleli oyo EKOKI KOZONGISAMA TE.</string>
+    <string name="security_delete_warning2">Okobungisa nzela ya kokɔta na mbongo nyonso soki ozali na bakopi ya fungola na yo ya secrɛ te.</string>
+    <string name="security_delete_warning3">Salá ete obimisi fungola na yo liboso ya kokoba.</string>
+    <string name="security_delete_confirm">Limwisa</string>
+    <string name="security_status_active">Esali</string>
+    <string name="security_status_warning">Kokebisa</string>
+    <string name="security_status_na">Ezali te</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Kokɔtisa pɔrtɔfɔyɔ</string>
+    <string name="import_private_key">Fungola ya secrɛ</string>
+    <string name="import_seed_phrase">Maloba ya kobota</string>
+    <string name="import_prompt">Kotá fungola na yo ya secrɛ:</string>
+    <string name="import_prompt_seed">Kotá maloba na yo ya kobota (12–24 maloba):</string>
+    <string name="import_seed_hint">liloba1 liloba2 liloba3 …</string>
+    <string name="import_button">Kokɔtisa</string>
+    <string name="import_error_invalid">Fungola ya secrɛ ezali malamu te</string>
+    <string name="import_error_invalid_seed">Maloba ya kobota ezali malamu te</string>
+    <string name="import_error_encryption">Libunga ya kobatela</string>
+    <string name="export_title">Fungola ya secrɛ</string>
+    <string name="export_warning">KOPESA NANU MOTO fungola oyo TE. Moto nyonso oyo azali na yango azali na bokonzi mobimba ya mbongo na yo.</string>
+    <string name="export_understood">Nayebi</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Bokuse</string>
+    <string name="history_received">Eywami</string>
+    <string name="history_sent">Etindami</string>
+    <string name="history_refunded">Ezongisami</string>
+    <string name="history_empty">Transaksio ezali te</string>
+    <string name="history_empty_desc">Transaksio ya %s\nekobimela awa</string>
+    <string name="history_payment_received">Lifuti eywami</string>
+    <string name="history_payment_sent">Lifuti etindami</string>
+    <string name="history_refund_sent">Bozongisi</string>
+    <string name="history_refund_received">Bozongisi eywami</string>
+    <string name="history_status_pending">Ezali kozela</string>
+    <string name="history_status_confirmed">Endimisami</string>
+    <string name="history_status_failed">Elongaki te</string>
+    <string name="history_status_refunded">Ezongisami</string>
+    <string name="history_status_partial">Ndambo</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Transaksio ya ebandeli</string>
+    <string name="refund_amount">Montanti</string>
+    <string name="refund_already">Ezongisami kala</string>
+    <string name="refund_available">Ezali</string>
+    <string name="refund_recipient">Mozwi</string>
+    <string name="refund_date">Mokolo</string>
+    <string name="refund_type">Ndenge ya kozongisa</string>
+    <string name="refund_full">Mobimba</string>
+    <string name="refund_partial">Ndambo</string>
+    <string name="refund_partial_desc">Lakisá montanti</string>
+    <string name="refund_amount_label">Montanti ya kozongisa (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Okofuta gas mpo na transaksio oyo</string>
+    <string name="refund_button">Zongisa %1$s %2$s</string>
+    <string name="refund_processing">Kosala bozongisi…</string>
+    <string name="refund_success">Bozongisi elongaki</string>
+    <string name="refund_done">Esili</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Tokens na yo</string>
+    <string name="balance_manage">Bɔngisa</string>
+    <string name="balance_refresh">Sɛkɛlisa</string>
+    <string name="balance_loading">Kotala ndelo…</string>
+    <string name="balance_empty">Tokens ezali te</string>
+    <string name="balance_no_wallet_desc">Bɔngisa pɔrtɔfɔyɔ na yo na Mipenzeli\nmpo otala ndelo na yo</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tokens endimami</string>
+    <string name="settings_add_token">Bakisa Token</string>
+    <string name="add_token_prompt">Kotá adrɛsi ya kontrat ya token:</string>
+    <string name="add_token_validating">Kotala token…</string>
+    <string name="add_token_button">Bakisa</string>
+    <string name="delete">Limwisa</string>
+
+    <!-- Common -->
+    <string name="cancel">Koboya</string>
+    <string name="close">Kanga</string>
+    <string name="retry">Meka lisusu</string>
+    <string name="error">Libunga</string>
+    <string name="copy">Kopia</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Pɔrtɔfɔyɔ ebongisami te</string>
+    <string name="error_device_security">Libunga ya kobatela aparɛyi</string>
+    <string name="error_auth">Libunga ya kondimisa</string>
+    <string name="error_unknown">Libunga eyebani te</string>
+    <string name="error_keystore_unavailable">Keystore ezali te - misala mosusu ekosala te</string>
+    <string name="error_encryption_restart">Libunga ya bobateli - banda lisusu aplikasio</string>
+    <string name="error_auth_cancelled">Kondimisa elongolami</string>
+    <string name="error_invalid_address">Adrɛsi ezali malamu te</string>
+    <string name="error_invalid_address_format">Forma ya adrɛsi ezali malamu te</string>
+    <string name="error_token_already_added">Token ebakisami kala</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Etindami! Tx: %s…</string>
+    <string name="token_native">Ya mbotama</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ndelo na yo</string>
+    <string name="pay_insufficient_balance">Ndelo ekoki te</string>
+    <string name="pay_need_more">Osengeli na %1$s lisusu %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Boyei malamu</string>
+    <string name="welcome_sovereignty">Fungola na yo.\nMbongo na yo.\nBonsomi na yo.</string>
+    <string name="welcome_desc">Mbongo na yo ebombami te na aplikasio oyo. Ezali na blockchain, na se ya bokonzi ya fungola na yo ya secrɛ.\n\nAplikasio oyo ebombi kaka fungola na yo na kobatela. Tokoki te kosimba mbongo na yo.\n\nYeba: Tokens mosusu (USDC, USDT) ekoki kokangama na bakabisi na bango. Mpo na bonsomi mobimba, salelá ETH ya mbotama to tokens oyo ekangami na moto moko te.</string>
+    <string name="welcome_warning_title">Fungola na yo = Mbongo na yo</string>
+    <string name="welcome_warning_desc">Soki obungisi fungola na yo ya secrɛ to opesi yango na moto mosusu, obungisi bokonzi ya mbongo na yo mpo na libela.\n\nNzela ya kozongisa ezali te. Ekipi ya lisungi ekoki kosalisa yo te. Oyo ezali ndenge ya bozwi ya solo.\n\nBómba ntango nyonso bakopi ya fungola na yo na kobatela.</string>
+    <string name="welcome_opensource">Logiciel ya source ouverte. Talá, kondima kaka te.</string>
+    <string name="welcome_start">Nayebi, tóbanda</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Boyebi ya motɛki</string>
+    <string name="settings_merchant_name">Nkómbo ya mombongo</string>
+    <string name="settings_merchant_name_hint">Ndako na ngai ya kafé</string>
+    <string name="settings_merchant_domain">Domaine / ENS</string>
+    <string name="settings_merchant_domain_hint">kafenangai.eth to kafenangai.com</string>
+    <string name="settings_merchant_identity_desc">Emonanaka na basombi ntango ya kofuta</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Mode ya kobombana</string>
+    <string name="settings_stealth_desc">Zwa mafuti na adrɛsi ya mbala moko (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Esali</string>
+    <string name="settings_stealth_info">Lifuti moko na moko ekei na adrɛsi ya ndenge na yango oyo kaka yo okoki kosalela. Bato oyo batalelaka bakoki kokangisa mafuti na mombongo na yo te.</string>
+    <string name="stealth_address_label">Mode ya kobombana esali</string>
+    <string name="stealth_payment_note">Lifuti ekotindama na adrɛsi ya secrɛ</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adrɛsi ya mozwi</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Pɔrtɔfɔyɔ ya secrɛ</string>
+    <string name="stealth_wallet_addresses">na adrɛsi %d ya kobombana</string>
+    <string name="stealth_wallet_privacy_title">Mbongo na yo ezali ya secrɛ</string>
+    <string name="stealth_wallet_privacy_desc">Ndelo oyo ekangisami na pɔrtɔfɔyɔ na yo ya polele te. Salelá mbala moko na bafurniseur, échanges, to esika nyonso - boyebi ya mombongo na yo ebombami.</string>
+    <string name="stealth_wallet_send">Tindá</string>
+    <string name="stealth_wallet_send_title">Tindá na pɔrtɔfɔyɔ ya secrɛ</string>
+    <string name="stealth_wallet_available">Ezali: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Montanti</string>
+    <string name="nav_stealth_wallet">Pɔrtɔfɔyɔ ya secrɛ</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Adrɛsi mingi</string>
+    <string name="stealth_wallet_gas_desc">Mbongo na yo epanzani na adrɛsi %d. Kosalela montanti minene ekoki kosɛnga transaksio mingi, kobakisa ntalo ya gas.</string>
+    <string name="stealth_wallet_consolidate">Sangisa na pɔrtɔfɔyɔ ya monene</string>
+    <string name="stealth_wallet_consolidate_title">Kosangisa mbongo?</string>
+    <string name="stealth_wallet_consolidate_warning">Oyo ekotinda mbongo nyonso na pɔrtɔfɔyɔ na yo ya secrɛ na adrɛsi ya pɔrtɔfɔyɔ na yo ya monene.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">KOKEBISA: Oyo ebukisi secrɛ. Pɔrtɔfɔyɔ na yo ya monene ekokangisama na mafuti nyonso oyo eywamaki.</string>
+    <string name="stealth_wallet_consolidate_benefit">Litomba: Kosalela ya lobi ekosɛnga kaka transaksio moko (ntalo ya gas ezali moke).</string>
+    <string name="stealth_wallet_consolidate_confirm">Sangisa</string>
+    <string name="stealth_wallet_consolidate_success">Mbongo esangisami na pɔrtɔfɔyɔ ya monene</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Secrɛ ya mofuti</string>
+    <string name="settings_payer_privacy_desc">Futá na compte ya ntango moke (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Lifuti moko na moko esaleli compte ya ndenge na yango. Adrɛsi ya pɔrtɔfɔyɔ na yo ya monene emonanaka te na chaîne.</string>
+    <string name="settings_payer_privacy_requires_api">Fungola ya API esɛngami mpo na mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Ofele na testnets (bundler ya polele)</string>
+    <string name="payer_privacy_note">Adrɛsi ya pɔrtɔfɔyɔ na yo ekobombama</string>
+    <string name="payer_privacy_processing">Kosala lifuti ya secrɛ…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Buku ya adrɛsi</string>
+    <string name="address_book_add">Bakisa kontakt</string>
+    <string name="address_book_edit">Bóngola kontakt</string>
+    <string name="address_book_search">Lukisa bankontakt…</string>
+    <string name="address_book_empty">Bankontakt ezali te</string>
+    <string name="address_book_empty_hint">Bakisá adrɛsi mpo oyeba pete\nnani ofuti to ozwi na ye</string>
+    <string name="address_book_no_results">Bankontakt emonani te</string>
+    <string name="address_book_address">Adrɛsi ya pɔrtɔfɔyɔ</string>
+    <string name="address_book_name">Nkómbo</string>
+    <string name="address_book_name_hint">ndakisa Ndako ya kafé, Jean Dupont</string>
+    <string name="address_book_note">Likomi (esɛngami te)</string>
+    <string name="address_book_note_hint">ndakisa Mofurniseur, Moninga</string>
+    <string name="address_book_delete_title">Kolimwisa kontakt?</string>
+    <string name="address_book_delete_message">Kolongola %s na buku na yo ya adrɛsi?</string>
+    <string name="address_book_saved">Kontakt ebombami</string>
+    <string name="address_book_unknown">Eyebani te</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mode ya pete</string>
+    <string name="settings_simple_mode_desc">Pete mpo na kosalela, mipenzeli ya yambo</string>
+    <string name="settings_advanced_mode">Mode ya bakambi</string>
+    <string name="settings_advanced_mode_desc">Mipenzeli ya crypto mpo na bato oyo bayebi mingi</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kabola Kontakt</string>
+    <string name="share_contact_title">Kabola Adrɛsi Na Yo</string>
+    <string name="share_contact_ready">Esili kobongisama mpo na kokabola</string>
+    <string name="share_contact_ready_desc">Pusá telefone na yo penepene\nna aparɛyi mosusu ya CleanSky</string>
+    <string name="share_contact_received">Kontakt eywami!</string>
+    <string name="share_contact_received_name">%s alingi kokangana</string>
+    <string name="share_contact_save">Bómba na bankontakt</string>
+    <string name="share_contact_your_name">Nkómbo na yo (esɛngami te)</string>
+    <string name="share_contact_your_name_hint">Ndenge bato mosusu bakomona yo</string>
+    <string name="share_contact_mutual">Pɛsana bankontakt</string>
+    <string name="share_contact_mutual_desc">Aparɛyi nyonso mibale ekabolaka adrɛsi na mbala moko</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Tindá</string>
+    <string name="send_title">Tindá na Kontakt</string>
+    <string name="send_select_contact">Poná mozwi</string>
+    <string name="send_no_contacts">Bankontakt ezali te</string>
+    <string name="send_no_contacts_hint">Bakisá bankontakt na NFC to\nna maboko mpo otinda mafuti</string>
+    <string name="send_amount">Montanti</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Epai ya: %s</string>
+    <string name="send_confirm">Tindá %1$s %2$s</string>
+    <string name="send_processing">Kotinda…</string>
+    <string name="send_success">Etindami malamu!</string>
+    <string name="send_success_desc">%1$s %2$s etindami epai ya %3$s</string>
+    <string name="send_error">Kotinda elongaki te</string>
+    <string name="send_enter_amount">Kotá montanti</string>
+    <string name="send_new">Botindeli ya sika</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Nyonso</string>
+    <string name="history_filter_received">Eywami</string>
+    <string name="history_filter_sent">Etindami</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Pɔnzá na kontakt</string>
+    <string name="history_show_all">Lakisá nyonso</string>
+    <string name="history_no_results">Transaksio moko te ekokani na filtre</string>
+    <string name="history_add_contact">Bakisá na bankontakt</string>
+    <string name="history_edit_contact">Bóngola kontakt</string>
+    <string name="history_from">Na</string>
+    <string name="history_to">Epai ya</string>
+    <string name="history_date">Mokolo</string>
+    <string name="history_tx_hash">Transaksio</string>
+    <string name="history_refund">Bozongisi</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Montanti moke mingi</string>
+    <string name="scam_amount_large_warning">Montanti monene</string>
+    <string name="scam_amount_large_desc">Okotinda %1$s %2$s.\nTondimi soki oyo ezali solo.</string>
+    <string name="scam_confirm_large">Ndimisa botindeli monene</string>
+    <string name="scam_dust_attack_warning">Esɛngi ya ntembe</string>
+    <string name="scam_dust_attack_desc">Oyo ezali montanti ya moke mingi (%1$s %2$s). Baataki ya putulu basaleli mafuti ya moke mpo na kolanda mapɔrtɔfɔyɔ. Boboya soki ezali ya ntembe.</string>
+    <string name="scam_receive_large_warning">Esɛngi ya lifuti monene</string>
+    <string name="scam_receive_large_desc">Esɛngi oyo ezali mpo na %1$s %2$s. Talá soki montanti ezali malamu liboso ofuta.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Kozwa kaka</string>
+    <string name="settings_mode_receive_only">Kozwa</string>
+    <string name="settings_mode_receive_only_desc">Fungola ya sekele te</string>
+    <string name="settings_receive_only">Bosaleli ya kozwa kaka</string>
+    <string name="settings_escrow_address">Adresse ya Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow esalemi te</string>
+    <string name="receive_only_no_escrow_desc">Salela adresse ya escrow mpe API key na Bosaleli</string>
+    <string name="receive_only_security_notice">Fungola ya sekele ezali te na aparey oyo. Ezali na sekele soki bayibi yango.</string>
+    <string name="receive_only_api_key_required">API key esengeli mpo na kosalisa relayer</string>
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Maras Taɓawa</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Biya</string>
+    <string name="nav_collect">Karɓa</string>
+    <string name="nav_settings">Saituna</string>
+    <string name="nav_history">Tarihi</string>
+    <string name="nav_refund">Mayarwa</string>
+    <string name="nav_balance">Ma\'auni</string>
+    <string name="nav_back">Koma</string>
+
+    <!-- Common actions -->
+    <string name="back">Koma</string>
+    <string name="save">Ajiye</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Babu jakar kuɗi</string>
+    <string name="pay_no_wallet_desc">Saita jakar kuɗi a Saituna\ndon yin biyan kuɗi</string>
+    <string name="pay_ready">Shirye don biya</string>
+    <string name="pay_ready_desc">Kusantar da wayarka\nda na\'urar mai sayarwa</string>
+    <string name="pay_request_title">Buƙatar biya</string>
+    <string name="pay_network">Hanyar sadarwa: %s</string>
+    <string name="pay_expired">Buƙatar ta ƙare</string>
+    <string name="pay_cancel">Soke</string>
+    <string name="pay_confirm">Biya</string>
+    <string name="pay_new">Sabon biya</string>
+    <string name="pay_signing">Ana sa hannu kan ciniki…</string>
+    <string name="pay_tx_signed">An sa hannu kan ciniki</string>
+    <string name="pay_tx_signed_desc">Kusantar da wayarka\nda mai sayarwa don aika</string>
+    <string name="pay_authenticating">Ana tabbatarwa…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Babu jakar kuɗi</string>
+    <string name="collect_no_wallet_desc">Saita jakar kuɗi a Saituna\ndon karɓar kuɗi</string>
+    <string name="collect_amount">Adadin da za a karɓa</string>
+    <string name="collect_button">Karɓa</string>
+    <string name="collect_waiting">Ana jiran biya</string>
+    <string name="collect_waiting_desc">Roƙi abokin ciniki\nya kusantar da wayarsa</string>
+    <string name="collect_new">Sabon karɓa</string>
+    <string name="collect_processing">Ana aiwatar da biya…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Yanayin aiki</string>
+    <string name="settings_mode_pay">Biya</string>
+    <string name="settings_mode_pay_desc">Yi biyan kuɗi</string>
+    <string name="settings_mode_collect">Karɓa</string>
+    <string name="settings_mode_collect_desc">Karɓi kuɗi</string>
+    <string name="settings_wallet">Jakar kuɗi</string>
+    <string name="settings_wallet_address">Adireshi</string>
+    <string name="settings_wallet_none">Ba a saita jakar kuɗi ba</string>
+    <string name="settings_wallet_create">Ƙirƙira</string>
+    <string name="settings_wallet_import">Shigo</string>
+    <string name="settings_network">Hanyar blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Aiwatar da ciniki</string>
+    <string name="settings_exec_direct">Kai tsaye</string>
+    <string name="settings_exec_direct_desc">Kai ne za ka biya gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas da aka tallafa ta relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 tare da Paymaster</string>
+    <string name="settings_api_key">Maɓallin API</string>
+    <string name="settings_save">Ajiye ka koma</string>
+    <string name="settings_not_available">Ba ya samuwa a wannan hanyar</string>
+    <string name="settings_language">Harshe</string>
+    <string name="settings_language_system">Tsohuwar na\'ura</string>
+    <string name="collect_select_currency">Zaɓi kuɗi</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Tsaro</string>
+    <string name="security_encryption">Ɓoye maɓallai</string>
+    <string name="security_encryption_desc">AES-256-GCM tare da Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Tsarin tsaro na kayan aiki yana aiki</string>
+    <string name="security_strongbox_unavailable">Ba ya samuwa a wannan na\'urar</string>
+    <string name="security_biometric">Tabbatarwar biometric</string>
+    <string name="security_biometric_required">Ana buƙata don biya</string>
+    <string name="security_biometric_disabled">An kashe</string>
+    <string name="security_biometric_unavailable">Ba ya samuwa</string>
+    <string name="security_export">Fitar da maɓallin sirri</string>
+    <string name="security_export_desc">Ajiye maɓallinka lafiya</string>
+    <string name="security_delete">Share jakar kuɗi</string>
+    <string name="security_delete_desc">Share duk bayanan har abada</string>
+    <string name="security_delete_title">Share jakar kuɗi</string>
+    <string name="security_delete_warning">Wannan aikin BA ZA A IYA KOMAWA BA.</string>
+    <string name="security_delete_warning2">Za ka rasa damar samun duk kadarorinka idan ba ka da kwafin maɓallin sirri.</string>
+    <string name="security_delete_warning3">Tabbatar kun fitar da maɓallin kafin ci gaba.</string>
+    <string name="security_delete_confirm">Share</string>
+    <string name="security_status_active">Yana aiki</string>
+    <string name="security_status_warning">Gargaɗi</string>
+    <string name="security_status_na">Ba ya shafi</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Shigo da jakar kuɗi</string>
+    <string name="import_private_key">Maɓallin sirri</string>
+    <string name="import_seed_phrase">Jimlar iri</string>
+    <string name="import_prompt">Shigar da maɓallin sirri:</string>
+    <string name="import_prompt_seed">Shigar da jimlar iri (kalmomi 12–24):</string>
+    <string name="import_seed_hint">kalma1 kalma2 kalma3 …</string>
+    <string name="import_button">Shigo</string>
+    <string name="import_error_invalid">Maɓallin sirri mara inganci</string>
+    <string name="import_error_invalid_seed">Jimlar iri mara inganci</string>
+    <string name="import_error_encryption">Kuskuren ɓoyewa</string>
+    <string name="export_title">Maɓallin sirri</string>
+    <string name="export_warning">KAR KA TAƁA raba wannan maɓallin. Duk wanda yake da shi yana da cikakken iko akan kadarorinka.</string>
+    <string name="export_understood">Na gane</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Taƙaitawa</string>
+    <string name="history_received">An karɓa</string>
+    <string name="history_sent">An aika</string>
+    <string name="history_refunded">An mayar</string>
+    <string name="history_empty">Babu cinikin</string>
+    <string name="history_empty_desc">Cinikayyen %s\nza su bayyana a nan</string>
+    <string name="history_payment_received">An karɓi kuɗi</string>
+    <string name="history_payment_sent">An aika kuɗi</string>
+    <string name="history_refund_sent">Mayarwa</string>
+    <string name="history_refund_received">An karɓi mayarwa</string>
+    <string name="history_status_pending">Ana jira</string>
+    <string name="history_status_confirmed">An tabbatar</string>
+    <string name="history_status_failed">Ya gaza</string>
+    <string name="history_status_refunded">An mayar</string>
+    <string name="history_status_partial">Wani ɓangare</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Asalin ciniki</string>
+    <string name="refund_amount">Adadi</string>
+    <string name="refund_already">An riga an mayar</string>
+    <string name="refund_available">Akwai</string>
+    <string name="refund_recipient">Mai karɓa</string>
+    <string name="refund_date">Kwanan wata</string>
+    <string name="refund_type">Nau\'in mayarwa</string>
+    <string name="refund_full">Cikakke</string>
+    <string name="refund_partial">Wani ɓangare</string>
+    <string name="refund_partial_desc">Faɗi adadi</string>
+    <string name="refund_amount_label">Adadin mayarwa (%s)</string>
+    <string name="refund_max">Mafi girma: %1$s %2$s</string>
+    <string name="refund_gas_notice">Za ka biya gas don wannan ciniki</string>
+    <string name="refund_button">Mayar %1$s %2$s</string>
+    <string name="refund_processing">Ana aiwatar da mayarwa…</string>
+    <string name="refund_success">Mayarwa ta yi nasara</string>
+    <string name="refund_done">An gama</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token ɗinka</string>
+    <string name="balance_manage">Gudanarwa</string>
+    <string name="balance_refresh">Sabunta</string>
+    <string name="balance_loading">Ana loda ma\'auni…</string>
+    <string name="balance_empty">Babu token</string>
+    <string name="balance_no_wallet_desc">Saita jakar kuɗi a Saituna\ndon ganin ma\'auninka</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token da aka yarda</string>
+    <string name="settings_add_token">Ƙara token</string>
+    <string name="add_token_prompt">Shigar da adireshin kwangilar token:</string>
+    <string name="add_token_validating">Ana tabbatar da token…</string>
+    <string name="add_token_button">Ƙara</string>
+    <string name="delete">Share</string>
+
+    <!-- Common -->
+    <string name="cancel">Soke</string>
+    <string name="close">Rufe</string>
+    <string name="retry">Sake gwadawa</string>
+    <string name="error">Kuskure</string>
+    <string name="copy">Kwafi</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Ba a saita jakar kuɗi ba</string>
+    <string name="error_device_security">Kuskuren tsaron na\'ura</string>
+    <string name="error_auth">Kuskuren tabbatarwa</string>
+    <string name="error_unknown">Kuskuren da ba a sani ba</string>
+    <string name="error_keystore_unavailable">Ma\'ajin maɓallai ba ya samuwa - wasu ayyuka ba za su yi aiki ba</string>
+    <string name="error_encryption_restart">Kuskuren ɓoyewa - sake kunna app</string>
+    <string name="error_auth_cancelled">An soke tabbatarwa</string>
+    <string name="error_invalid_address">Adireshi mara inganci</string>
+    <string name="error_invalid_address_format">Tsarin adireshi mara inganci</string>
+    <string name="error_token_already_added">An riga an ƙara token</string>
+    <string name="stealth_spend_sent_tx">An aika! Tx: %s…</string>
+    <string name="token_native">Na asali</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ma\'auninka</string>
+    <string name="pay_insufficient_balance">Ma\'auni bai isa ba</string>
+    <string name="pay_need_more">Kana buƙatar ƙarin %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Barka da zuwa</string>
+    <string name="welcome_sovereignty">Maɓallanku.\nKuɗaɗenku.\nIkon mallakarku.</string>
+    <string name="welcome_desc">Ba a adana kuɗaɗenka a wannan app ɗin ba. Suna kan blockchain, ƙarƙashin ikon maɓallanka masu zaman kansu.\n\nWannan app ɗin yana adana maɓallanka cikin tsaro kawai. Ba za mu iya samun kuɗaɗenka ba.\n\nLura: Wasu token (USDC, USDT) masu bayarwa na iya daskarewa. Don mafi girman ikon mallaka, yi amfani da ETH na asali ko token marasa iko.</string>
+    <string name="welcome_warning_title">Maɓallanka = Kuɗaɗenka</string>
+    <string name="welcome_warning_desc">Idan ka rasa maɓallanka masu zaman kansu ko ka raba su da wani, za ka rasa ikon kuɗaɗenka har abada.\n\nBabu zaɓin dawowa. Babu ƙungiyar taimako da za su iya taimaka maka. Wannan shine yanayin mallaka na gaskiya.\n\nKullum ajiye kwafin tsaro na maɓallanka.</string>
+    <string name="welcome_opensource">Software mai buɗewa. Tabbatar, kar ka amince kawai.</string>
+    <string name="welcome_start">Na fahimta, mu fara</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Asalin mai sayarwa</string>
+    <string name="settings_merchant_name">Sunan kasuwanci</string>
+    <string name="settings_merchant_name_hint">Shagona na Kofi</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ko mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Ana nuna wa abokan ciniki yayin biya</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Yanayin sirri</string>
+    <string name="settings_stealth_desc">Karɓi kuɗi zuwa adireshi na lokaci ɗaya (EIP-5564)</string>
+    <string name="settings_stealth_enabled">An kunna</string>
+    <string name="settings_stealth_info">Kowace biya tana zuwa adireshi na musamman da kai kaɗai za ka iya kashewa. Masu kallo ba za su iya haɗa biya da kasuwancinka ba.</string>
+    <string name="stealth_address_label">Yanayin sirri yana aiki</string>
+    <string name="stealth_payment_note">Za a aika biya zuwa adireshi mai zaman kansa</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adireshin mai karɓa</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Jakar kuɗi mai zaman kansa</string>
+    <string name="stealth_wallet_addresses">a cikin adireshi %d na sirri</string>
+    <string name="stealth_wallet_privacy_title">Kuɗaɗenka masu zaman kansu ne</string>
+    <string name="stealth_wallet_privacy_desc">Wannan ma\'auni ba ya da alaƙa da jakar kuɗinka ta jama\'a. Kashe kai tsaye zuwa masu bayarwa, musayar kuɗi, ko ko\'ina - asalin kasuwancinka ya ɓuya.</string>
+    <string name="stealth_wallet_send">Aika</string>
+    <string name="stealth_wallet_send_title">Aika daga Jakar Kuɗi Mai Zaman Kansa</string>
+    <string name="stealth_wallet_available">Akwai: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Adadi</string>
+    <string name="nav_stealth_wallet">Jakar Kuɗi Mai Zaman Kansa</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Adireshi da yawa</string>
+    <string name="stealth_wallet_gas_desc">Kuɗaɗenka sun warwatse a cikin adireshi %d. Kashewa da yawa na iya buƙatar cinikayye da yawa, wanda zai ƙara farashin gas.</string>
+    <string name="stealth_wallet_consolidate">Haɗa zuwa jakar kuɗi ta asali</string>
+    <string name="stealth_wallet_consolidate_title">Haɗa kuɗi?</string>
+    <string name="stealth_wallet_consolidate_warning">Wannan zai canja duk kuɗaɗe daga jakar kuɗinka mai zaman kansa zuwa adireshin jakar kuɗinka ta asali.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">GARGAƊI: Wannan zai karya sirri. Jakar kuɗinka ta asali za ta kasance da alaƙa da duk biya da aka karɓa.</string>
+    <string name="stealth_wallet_consolidate_benefit">Amfani: Kashewa na gaba zai buƙaci ciniki ɗaya kawai (ƙananan farashin gas).</string>
+    <string name="stealth_wallet_consolidate_confirm">Haɗa</string>
+    <string name="stealth_wallet_consolidate_success">An haɗa kuɗaɗe zuwa jakar kuɗi ta asali</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Sirrin mai biya</string>
+    <string name="settings_payer_privacy_desc">Biya daga asusu na ɗan lokaci (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Kowace biya tana amfani da asusu na musamman. Adireshin jakar kuɗinka ta asali ba za a gan shi a kan sarkar ba.</string>
+    <string name="settings_payer_privacy_requires_api">Ana buƙatar maɓallin API don babban hanya</string>
+    <string name="settings_payer_privacy_public_bundler">Kyauta akan hanyoyin gwaji (bundler na jama\'a)</string>
+    <string name="payer_privacy_note">Adireshin jakar kuɗinka zai ɓuya</string>
+    <string name="payer_privacy_processing">Ana aiwatar da biya mai zaman kansa…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Littafin adireshi</string>
+    <string name="address_book_add">Ƙara lamba</string>
+    <string name="address_book_edit">Gyara lamba</string>
+    <string name="address_book_search">Nema lamba…</string>
+    <string name="address_book_empty">Babu lambobi har yanzu</string>
+    <string name="address_book_empty_hint">Ƙara adireshi don sauƙin gano\nwanda kake biyan ko karɓa daga gare su</string>
+    <string name="address_book_no_results">Ba a sami lambobi ba</string>
+    <string name="address_book_address">Adireshin jakar kuɗi</string>
+    <string name="address_book_name">Suna</string>
+    <string name="address_book_name_hint">misali Shagon Kofi, John Doe</string>
+    <string name="address_book_note">Bayani (zaɓi)</string>
+    <string name="address_book_note_hint">misali Mai bayarwa, Aboki</string>
+    <string name="address_book_delete_title">Share lamba?</string>
+    <string name="address_book_delete_message">Cire %s daga littafin adireshin ka?</string>
+    <string name="address_book_saved">An ajiye lamba</string>
+    <string name="address_book_unknown">Ba a sani ba</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Yanayi mai sauƙi</string>
+    <string name="settings_simple_mode_desc">Sauƙi don amfani, zaɓuɓɓuka na asali</string>
+    <string name="settings_advanced_mode">Yanayi mai zurfi</string>
+    <string name="settings_advanced_mode_desc">Zaɓuɓɓukan crypto don ƙwararru</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Raba Lamba</string>
+    <string name="share_contact_title">Raba Adireshin Ka</string>
+    <string name="share_contact_ready">Shirye don rabawa</string>
+    <string name="share_contact_ready_desc">Kusantar da wayarka zuwa\nwata na\'urar CleanSky</string>
+    <string name="share_contact_received">An karɓi lamba!</string>
+    <string name="share_contact_received_name">%s yana so ya haɗa</string>
+    <string name="share_contact_save">Ajiye zuwa lambobi</string>
+    <string name="share_contact_your_name">Sunanka (zaɓi)</string>
+    <string name="share_contact_your_name_hint">Yadda wasu za su gan ka</string>
+    <string name="share_contact_mutual">Musayar lambobi</string>
+    <string name="share_contact_mutual_desc">Na\'urori biyu suna raba adireshi a lokaci guda</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Aika</string>
+    <string name="send_title">Aika zuwa Lamba</string>
+    <string name="send_select_contact">Zaɓi mai karɓa</string>
+    <string name="send_no_contacts">Babu lambobi har yanzu</string>
+    <string name="send_no_contacts_hint">Ƙara lambobi ta NFC ko da hannu\ndon aika musu kuɗi</string>
+    <string name="send_amount">Adadi</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Zuwa: %s</string>
+    <string name="send_confirm">Aika %1$s %2$s</string>
+    <string name="send_processing">Ana aika…</string>
+    <string name="send_success">An aika da nasara!</string>
+    <string name="send_success_desc">%1$s %2$s an aika zuwa %3$s</string>
+    <string name="send_error">Aika ya gaza</string>
+    <string name="send_enter_amount">Shigar da adadi</string>
+    <string name="send_new">Sabon canja wuri</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Duka</string>
+    <string name="history_filter_received">An karɓa</string>
+    <string name="history_filter_sent">An aika</string>
+    <string name="history_filter_contact">Lamba</string>
+    <string name="history_filter_by_contact">Tace ta lamba</string>
+    <string name="history_show_all">Nuna duka</string>
+    <string name="history_no_results">Babu cinikayyen da suka dace da tacewa</string>
+    <string name="history_add_contact">Ƙara zuwa lambobi</string>
+    <string name="history_edit_contact">Gyara lamba</string>
+    <string name="history_from">Daga</string>
+    <string name="history_to">Zuwa</string>
+    <string name="history_date">Kwanan wata</string>
+    <string name="history_tx_hash">Ciniki</string>
+    <string name="history_refund">Mayarwa</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Adadi ya yi ƙanƙanta sosai</string>
+    <string name="scam_amount_large_warning">Babban adadi</string>
+    <string name="scam_amount_large_desc">Kuna shirin aika %1$s %2$s.\nDa fatan za a tabbatar da wannan daidai ne.</string>
+    <string name="scam_confirm_large">Tabbatar da babban canja wuri</string>
+    <string name="scam_dust_attack_warning">Buƙata mai ban shakka</string>
+    <string name="scam_dust_attack_desc">Wannan adadi ne mai ƙanƙanta sosai (%1$s %2$s). Hare-haren ƙura suna amfani da ƙananan biya don bin diddigin jakar kuɗi. Ki amincewa idan ba a zata ba.</string>
+    <string name="scam_receive_large_warning">Babbar buƙatar biya</string>
+    <string name="scam_receive_large_desc">Wannan buƙatar ita ce %1$s %2$s. Tabbatar da wannan adadin daidai ne kafin biya.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Karɓa kawai</string>
+    <string name="settings_mode_receive_only">Karɓa</string>
+    <string name="settings_mode_receive_only_desc">Babu maɓallin sirri</string>
+    <string name="settings_receive_only">Saitunan karɓa kawai</string>
+    <string name="settings_escrow_address">Adireshin Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Ba a saita Escrow ba</string>
+    <string name="receive_only_no_escrow_desc">Saita adireshin escrow da API key a Saituna</string>
+    <string name="receive_only_security_notice">Babu maɓallin sirri a wannan na\'ura. Amintacce idan aka sace shi.</string>
+    <string name="receive_only_api_key_required">Ana buƙatar API key don aiwatar da relayer</string>
+</resources>

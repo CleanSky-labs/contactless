@@ -1,0 +1,107 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+}
+
+android {
+    namespace "io.cleansky.contactless"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "io.cleansky.contactless"
+        minSdk 26
+        targetSdk 34
+        versionCode 5
+        versionName "0.5"
+
+        // Required for web3j
+        multiDexEnabled true
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.5.14"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        // Enable core library desugaring for Java 8+ APIs
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    packagingOptions {
+        resources {
+            excludes += [
+                "META-INF/DEPENDENCIES",
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/NOTICE",
+                "META-INF/NOTICE.txt",
+                "META-INF/INDEX.LIST",
+                "META-INF/*.SF",
+                "META-INF/*.DSA",
+                "META-INF/*.RSA"
+            ]
+        }
+    }
+
+    lint {
+        // Dependency upgrades beyond these pins require AGP/compileSdk migration.
+        disable 'GradleDependency'
+    }
+}
+
+dependencies {
+    // Core library desugaring
+    coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:2.0.4"
+
+    implementation "androidx.core:core-ktx:1.13.1"
+    implementation "androidx.activity:activity-compose:1.9.0"
+    implementation "androidx.compose.ui:ui:1.6.8"
+    implementation "androidx.compose.material:material:1.6.8"
+    implementation "androidx.compose.material:material-icons-extended:1.6.8"
+    implementation "androidx.compose.ui:ui-tooling-preview:1.6.8"
+    debugImplementation "androidx.compose.ui:ui-tooling:1.6.8"
+
+    // Web3 for signing and transactions (Android-compatible version)
+    implementation("org.web3j:core:4.9.8") {
+        exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+    }
+    implementation "org.bouncycastle:bcprov-jdk18on:1.77"
+
+    // JSON (legacy support)
+    implementation "com.google.code.gson:gson:2.10.1"
+
+    // CBOR encoding (deterministic, spec v0.2)
+    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.15.3"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.15.3"
+
+    // DataStore for preferences
+    implementation "androidx.datastore:datastore-preferences:1.1.1"
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.8.3"
+
+    // Biometric authentication
+    implementation "androidx.biometric:biometric:1.1.0"
+
+    // Security / EncryptedSharedPreferences
+    implementation "androidx.security:security-crypto:1.1.0-alpha06"
+
+    // MultiDex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    // Splash Screen
+    implementation "androidx.core:core-splashscreen:1.0.1"
+
+    // Unit Testing
+    testImplementation "junit:junit:4.13.2"
+}

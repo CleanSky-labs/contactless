@@ -1,0 +1,14 @@
+.git
+.gitignore
+build-output
+*.apk
+*.aab
+local.properties
+.idea
+*.iml
+app/build
+build
+.gradle
+**/.gradle
+*.md
+LICENSE

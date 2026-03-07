@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky ያለንክኪ</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">ክፈል</string>
+    <string name="nav_collect">ተቀበል</string>
+    <string name="nav_settings">ቅንብሮች</string>
+    <string name="nav_history">ታሪክ</string>
+    <string name="nav_refund">ተመላሽ</string>
+    <string name="nav_balance">ሂሳብ</string>
+    <string name="nav_back">ተመለስ</string>
+
+    <!-- Common actions -->
+    <string name="back">ተመለስ</string>
+    <string name="save">አስቀምጥ</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">ዋሌት የለም</string>
+    <string name="pay_no_wallet_desc">ክፍያ ለመፈጸም\nበቅንብሮች ውስጥ ዋሌት ያዘጋጁ</string>
+    <string name="pay_ready">ለመክፈል ዝግጁ</string>
+    <string name="pay_ready_desc">ስልክዎን ወደ ነጋዴው\nመሳሪያ ያቅርቡ</string>
+    <string name="pay_request_title">የክፍያ ጥያቄ</string>
+    <string name="pay_network">አውታር: %s</string>
+    <string name="pay_expired">ጥያቄው ጊዜው አልፏል</string>
+    <string name="pay_cancel">ሰርዝ</string>
+    <string name="pay_confirm">ክፈል</string>
+    <string name="pay_new">አዲስ ክፍያ</string>
+    <string name="pay_signing">ግብይት በመፈረም ላይ…</string>
+    <string name="pay_tx_signed">ግብይት ተፈርሟል</string>
+    <string name="pay_tx_signed_desc">ለመላክ ስልክዎን\nወደ ነጋዴው ያቅርቡ</string>
+    <string name="pay_authenticating">በማረጋገጥ ላይ…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">ዋሌት የለም</string>
+    <string name="collect_no_wallet_desc">ክፍያ ለመቀበል\nበቅንብሮች ውስጥ ዋሌት ያዘጋጁ</string>
+    <string name="collect_amount">የሚቀበሉት መጠን</string>
+    <string name="collect_button">ተቀበል</string>
+    <string name="collect_waiting">ክፍያ በመጠበቅ ላይ</string>
+    <string name="collect_waiting_desc">ደንበኛው ስልኩን\nእንዲያቀርብ ይጠይቁ</string>
+    <string name="collect_new">አዲስ ደረሰኝ</string>
+    <string name="collect_processing">ክፍያ በማስኬድ ላይ…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">የስራ ሁነታ</string>
+    <string name="settings_mode_pay">ክፈል</string>
+    <string name="settings_mode_pay_desc">ክፍያ ፈጽም</string>
+    <string name="settings_mode_collect">ተቀበል</string>
+    <string name="settings_mode_collect_desc">ክፍያ ተቀበል</string>
+    <string name="settings_wallet">ዋሌት</string>
+    <string name="settings_wallet_address">አድራሻ</string>
+    <string name="settings_wallet_none">ዋሌት አልተዋቀረም</string>
+    <string name="settings_wallet_create">ፍጠር</string>
+    <string name="settings_wallet_import">አስገባ</string>
+    <string name="settings_network">ብሎክቼይን አውታር</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">ግብይት ማስፈጸም</string>
+    <string name="settings_exec_direct">ቀጥተኛ</string>
+    <string name="settings_exec_direct_desc">እርስዎ ጋስ ይከፍላሉ</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">በrelayer በኩል የተደገፈ ጋስ</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ከPaymaster ጋር ERC-4337</string>
+    <string name="settings_api_key">API ቁልፍ</string>
+    <string name="settings_save">አስቀምጥ እና ተመለስ</string>
+    <string name="settings_not_available">በዚህ አውታር ላይ አይገኝም</string>
+    <string name="settings_language">ቋንቋ</string>
+    <string name="settings_language_system">የስርዓት ነባሪ</string>
+    <string name="collect_select_currency">ገንዘብ ምረጥ</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">ደህንነት</string>
+    <string name="security_encryption">ቁልፍ ምስጠራ</string>
+    <string name="security_encryption_desc">ከAndroid Keystore ጋር AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">የሃርድዌር ደህንነት ሞጁል ንቁ ነው</string>
+    <string name="security_strongbox_unavailable">በዚህ መሳሪያ ላይ አይገኝም</string>
+    <string name="security_biometric">ባዮሜትሪክ ማረጋገጫ</string>
+    <string name="security_biometric_required">ለክፍያዎች ያስፈልጋል</string>
+    <string name="security_biometric_disabled">ተሰናክሏል</string>
+    <string name="security_biometric_unavailable">አይገኝም</string>
+    <string name="security_export">የግል ቁልፍ ወደ ውጭ ላክ</string>
+    <string name="security_export_desc">ቁልፍዎን በደህንነት ያስቀምጡ</string>
+    <string name="security_delete">ዋሌት ሰርዝ</string>
+    <string name="security_delete_desc">ሁሉንም መረጃ በቋሚነት ሰርዝ</string>
+    <string name="security_delete_title">ዋሌት ሰርዝ</string>
+    <string name="security_delete_warning">ይህ ተግባር ሊቀለበስ አይችልም።</string>
+    <string name="security_delete_warning2">የግል ቁልፍ ምትኬ ከሌለዎት ሁሉንም ንብረቶች መድረስ ያጣሉ።</string>
+    <string name="security_delete_warning3">ከመቀጠልዎ በፊት ቁልፉን እንደላኩት ያረጋግጡ።</string>
+    <string name="security_delete_confirm">ሰርዝ</string>
+    <string name="security_status_active">ንቁ</string>
+    <string name="security_status_warning">ማስጠንቀቂያ</string>
+    <string name="security_status_na">ተፈጻሚ አይደለም</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">ዋሌት አስገባ</string>
+    <string name="import_private_key">የግል ቁልፍ</string>
+    <string name="import_seed_phrase">የዘር ሐረግ</string>
+    <string name="import_prompt">የግል ቁልፍዎን ያስገቡ:</string>
+    <string name="import_prompt_seed">የዘር ሐረግዎን ያስገቡ (12–24 ቃላት):</string>
+    <string name="import_seed_hint">ቃል1 ቃል2 ቃል3 …</string>
+    <string name="import_button">አስገባ</string>
+    <string name="import_error_invalid">ልክ ያልሆነ የግል ቁልፍ</string>
+    <string name="import_error_invalid_seed">ልክ ያልሆነ የዘር ሐረግ</string>
+    <string name="import_error_encryption">የምስጠራ ስህተት</string>
+    <string name="export_title">የግል ቁልፍ</string>
+    <string name="export_warning">ይህን ቁልፍ በጭራሽ አያጋሩ። ያለው ማንኛውም ሰው በንብረትዎ ላይ ሙሉ ቁጥጥር አለው።</string>
+    <string name="export_understood">ገባኝ</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">ማጠቃለያ</string>
+    <string name="history_received">ተቀብሏል</string>
+    <string name="history_sent">ተልኳል</string>
+    <string name="history_refunded">ተመልሷል</string>
+    <string name="history_empty">ግብይቶች የሉም</string>
+    <string name="history_empty_desc">በ%s ላይ ያሉ ግብይቶች\nእዚህ ይታያሉ</string>
+    <string name="history_payment_received">ክፍያ ተቀብሏል</string>
+    <string name="history_payment_sent">ክፍያ ተልኳል</string>
+    <string name="history_refund_sent">ተመላሽ</string>
+    <string name="history_refund_received">ተመላሽ ተቀብሏል</string>
+    <string name="history_status_pending">በመጠበቅ ላይ</string>
+    <string name="history_status_confirmed">ተረጋግጧል</string>
+    <string name="history_status_failed">አልተሳካም</string>
+    <string name="history_status_refunded">ተመልሷል</string>
+    <string name="history_status_partial">ከፊል</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">ዋናው ግብይት</string>
+    <string name="refund_amount">መጠን</string>
+    <string name="refund_already">አስቀድሞ ተመልሷል</string>
+    <string name="refund_available">ይገኛል</string>
+    <string name="refund_recipient">ተቀባይ</string>
+    <string name="refund_date">ቀን</string>
+    <string name="refund_type">የተመላሽ አይነት</string>
+    <string name="refund_full">ሙሉ</string>
+    <string name="refund_partial">ከፊል</string>
+    <string name="refund_partial_desc">መጠኑን ይግለጹ</string>
+    <string name="refund_amount_label">የተመላሽ መጠን (%s)</string>
+    <string name="refund_max">ከፍተኛ: %1$s %2$s</string>
+    <string name="refund_gas_notice">ለዚህ ግብይት ጋስ ይከፍላሉ</string>
+    <string name="refund_button">መልስ %1$s %2$s</string>
+    <string name="refund_processing">ተመላሽ በማስኬድ ላይ…</string>
+    <string name="refund_success">ተመላሽ ተሳክቷል</string>
+    <string name="refund_done">ተጠናቅቋል</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">ቶከኖችዎ</string>
+    <string name="balance_manage">አስተዳድር</string>
+    <string name="balance_refresh">አድስ</string>
+    <string name="balance_loading">ሂሳቦችን በመጫን ላይ…</string>
+    <string name="balance_empty">ቶከኖች የሉም</string>
+    <string name="balance_no_wallet_desc">ሂሳቦችዎን ለማየት\nበቅንብሮች ውስጥ ዋሌት ያዘጋጁ</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">የተፈቀዱ ቶከኖች</string>
+    <string name="settings_add_token">ቶከን ጨምር</string>
+    <string name="add_token_prompt">የቶከን ኮንትራት አድራሻ ያስገቡ:</string>
+    <string name="add_token_validating">ቶከን በማረጋገጥ ላይ…</string>
+    <string name="add_token_button">ጨምር</string>
+    <string name="delete">ሰርዝ</string>
+
+    <!-- Common -->
+    <string name="cancel">ሰርዝ</string>
+    <string name="close">ዝጋ</string>
+    <string name="retry">እንደገና ሞክር</string>
+    <string name="error">ስህተት</string>
+    <string name="copy">ቅዳ</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">ዋሌት አልተዋቀረም</string>
+    <string name="error_device_security">የመሳሪያ ደህንነት ስህተት</string>
+    <string name="error_auth">የማረጋገጫ ስህተት</string>
+    <string name="error_unknown">ያልታወቀ ስህተት</string>
+    <string name="error_keystore_unavailable">ቁልፍ ማከማቻ አይገኝም - አንዳንድ ተግባራት አይሰሩም</string>
+    <string name="error_encryption_restart">የምስጠራ ስህተት - መተግበሪያውን እንደገና ያስጀምሩ</string>
+    <string name="error_auth_cancelled">ማረጋገጫ ተሰርዟል</string>
+    <string name="error_invalid_address">ልክ ያልሆነ አድራሻ</string>
+    <string name="error_invalid_address_format">ልክ ያልሆነ የአድራሻ ቅርጸት</string>
+    <string name="error_token_already_added">ቶከን አስቀድሞ ተጨምሯል</string>
+    <string name="stealth_spend_sent_tx">ተልኳል! Tx: %s…</string>
+    <string name="token_native">ተፈጥሯዊ</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">ሂሳብዎ</string>
+    <string name="pay_insufficient_balance">በቂ ያልሆነ ሂሳብ</string>
+    <string name="pay_need_more">%1$s ተጨማሪ %2$s ያስፈልግዎታል</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">እንኳን ደህና መጡ</string>
+    <string name="welcome_sovereignty">የእርስዎ ቁልፎች።\nየእርስዎ ገንዘብ።\nየእርስዎ ሉዓላዊነት።</string>
+    <string name="welcome_desc">ገንዘብዎ በዚህ መተግበሪያ ውስጥ አይከማችም። በብሎክቼይን ላይ ይኖራሉ፣ በግል ቁልፎችዎ ቁጥጥር ስር።\n\nይህ መተግበሪያ ቁልፎችዎን በደህንነት ያከማቻል። ገንዘብዎን ማግኘት አንችልም።\n\nማስታወሻ: አንዳንድ ቶከኖች (USDC፣ USDT) በአውጪዎቻቸው ሊታገዱ ይችላሉ። ለከፍተኛ ሉዓላዊነት፣ ተፈጥሯዊ ETH ወይም ያልተማከሉ ቶከኖችን ይጠቀሙ።</string>
+    <string name="welcome_warning_title">ቁልፎችዎ = ገንዘብዎ</string>
+    <string name="welcome_warning_desc">የግል ቁልፎችዎን ካጡ ወይም ከሰው ጋር ካጋሩ፣ በገንዘብዎ ላይ ያለዎትን ቁጥጥር ዘላቂ ያጣሉ።\n\nየማገገሚያ አማራጭ የለም። የድጋፍ ቡድን ሊረዳዎ አይችልም። ይህ የእውነተኛ ባለቤትነት ባህሪ ነው።\n\nሁልጊዜ ደህንነቱ የተጠበቀ የቁልፎችዎ ምትኬ ያስቀምጡ።</string>
+    <string name="welcome_opensource">ክፍት ምንጭ ሶፍትዌር። ያረጋግጡ፣ አይመኑ።</string>
+    <string name="welcome_start">ገብቶኛል፣ እንጀምር</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">የነጋዴ መታወቂያ</string>
+    <string name="settings_merchant_name">የንግድ ስም</string>
+    <string name="settings_merchant_name_hint">የእኔ ቡና ሱቅ</string>
+    <string name="settings_merchant_domain">ዶሜይን / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ወይም mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">በክፍያ ወቅት ለደንበኞች ይታያል</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">የግላዊነት ሁነታ</string>
+    <string name="settings_stealth_desc">ክፍያዎችን ወደ የአንድ ጊዜ አድራሻዎች ይቀበሉ (EIP-5564)</string>
+    <string name="settings_stealth_enabled">ነቅቷል</string>
+    <string name="settings_stealth_info">እያንዳንዱ ክፍያ እርስዎ ብቻ ሊያወጡት ወደሚችሉት ልዩ አድራሻ ይሄዳል። ተመልካቾች ክፍያዎችን ከንግድዎ ጋር ማገናኘት አይችሉም።</string>
+    <string name="stealth_address_label">የስውር ሁነታ ንቁ</string>
+    <string name="stealth_payment_note">ክፍያ ወደ ግላዊ አድራሻ ይላካል</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">የተቀባይ አድራሻ</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">ግላዊ ዋሌት</string>
+    <string name="stealth_wallet_addresses">በ%d ስውር አድራሻዎች ውስጥ</string>
+    <string name="stealth_wallet_privacy_title">ገንዘብዎ ግላዊ ነው</string>
+    <string name="stealth_wallet_privacy_desc">ይህ ሂሳብ ከይፋ ዋሌትዎ ጋር አልተገናኘም። በቀጥታ ወደ አቅራቢዎች፣ ልውውጦች ወይም የትም ያውጡ - የንግድ ማንነትዎ ተደብቆ ይቆያል።</string>
+    <string name="stealth_wallet_send">ላክ</string>
+    <string name="stealth_wallet_send_title">ከግላዊ ዋሌት ላክ</string>
+    <string name="stealth_wallet_available">ይገኛል: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">መጠን</string>
+    <string name="nav_stealth_wallet">ግላዊ ዋሌት</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">በርካታ አድራሻዎች</string>
+    <string name="stealth_wallet_gas_desc">ገንዘብዎ በ%d አድራሻዎች ላይ ተሰራጭቷል። ትልቅ መጠን ማውጣት ብዙ ግብይቶችን ሊፈልግ ይችላል፣ ይህም የጋስ ወጪዎችን ይጨምራል።</string>
+    <string name="stealth_wallet_consolidate">ወደ ዋና ዋሌት አጠቃልል</string>
+    <string name="stealth_wallet_consolidate_title">ገንዘብ አጠቃልል?</string>
+    <string name="stealth_wallet_consolidate_warning">ይህ ሁሉንም ገንዘብ ከግላዊ ዋሌትዎ ወደ ዋና ዋሌት አድራሻዎ ያስተላልፋል።</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ማስጠንቀቂያ: ይህ ግላዊነትን ይሰብራል። ዋናው ዋሌትዎ ከተቀበሉት ሁሉም ክፍያዎች ጋር ይገናኛል።</string>
+    <string name="stealth_wallet_consolidate_benefit">ጥቅም: የወደፊት ወጪዎች አንድ ግብይት ብቻ ይፈልጋሉ (ዝቅተኛ የጋስ ወጪዎች)።</string>
+    <string name="stealth_wallet_consolidate_confirm">አጠቃልል</string>
+    <string name="stealth_wallet_consolidate_success">ገንዘብ ወደ ዋና ዋሌት ተጠቃልሏል</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">የከፋይ ግላዊነት</string>
+    <string name="settings_payer_privacy_desc">ከጊዜያዊ መለያዎች ክፈል (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">እያንዳንዱ ክፍያ ልዩ መለያ ይጠቀማል። የዋናው ዋሌት አድራሻዎ በሰንሰለት ላይ አይታይም።</string>
+    <string name="settings_payer_privacy_requires_api">ለዋናው አውታር API ቁልፍ ያስፈልጋል</string>
+    <string name="settings_payer_privacy_public_bundler">በሙከራ አውታሮች ላይ ነጻ (የህዝብ bundler)</string>
+    <string name="payer_privacy_note">የዋሌት አድራሻዎ ይደበቃል</string>
+    <string name="payer_privacy_processing">ግላዊ ክፍያ በማስኬድ ላይ…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">የአድራሻ መጽሐፍ</string>
+    <string name="address_book_add">እውቂያ ጨምር</string>
+    <string name="address_book_edit">እውቂያ አርትዕ</string>
+    <string name="address_book_search">እውቂያዎችን ፈልግ…</string>
+    <string name="address_book_empty">እስካሁን እውቂያዎች የሉም</string>
+    <string name="address_book_empty_hint">ማን እንደሚከፍሉ ወይም ከማን እንደሚቀበሉ\nበቀላሉ ለማወቅ አድራሻዎችን ያክሉ</string>
+    <string name="address_book_no_results">እውቂያዎች አልተገኙም</string>
+    <string name="address_book_address">የዋሌት አድራሻ</string>
+    <string name="address_book_name">ስም</string>
+    <string name="address_book_name_hint">ለምሳሌ ቡና ሱቅ፣ ጆን ዶ</string>
+    <string name="address_book_note">ማስታወሻ (አማራጭ)</string>
+    <string name="address_book_note_hint">ለምሳሌ አቅራቢ፣ ጓደኛ</string>
+    <string name="address_book_delete_title">እውቂያ ይሰረዝ?</string>
+    <string name="address_book_delete_message">%s ከአድራሻ መጽሐፍዎ ይሰረዝ?</string>
+    <string name="address_book_saved">እውቂያ ተቀምጧል</string>
+    <string name="address_book_unknown">ያልታወቀ</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">ቀላል ሁነታ</string>
+    <string name="settings_simple_mode_desc">ለመጠቀም ቀላል፣ መሰረታዊ አማራጮች</string>
+    <string name="settings_advanced_mode">የላቀ ሁነታ</string>
+    <string name="settings_advanced_mode_desc">ለኃይለኛ ተጠቃሚዎች የክሪፕቶ አማራጮች</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">እውቂያ አጋራ</string>
+    <string name="share_contact_title">አድራሻዎን ያጋሩ</string>
+    <string name="share_contact_ready">ለማጋራት ዝግጁ</string>
+    <string name="share_contact_ready_desc">ስልክዎን ወደ ሌላ\nCleanSky መሳሪያ ያቅርቡ</string>
+    <string name="share_contact_received">እውቂያ ተቀብሏል!</string>
+    <string name="share_contact_received_name">%s መገናኘት ይፈልጋል</string>
+    <string name="share_contact_save">ወደ እውቂያዎች አስቀምጥ</string>
+    <string name="share_contact_your_name">ስምዎ (አማራጭ)</string>
+    <string name="share_contact_your_name_hint">ሌሎች እርስዎን እንዴት ያዩዎታል</string>
+    <string name="share_contact_mutual">እውቂያዎችን ተለዋወጡ</string>
+    <string name="share_contact_mutual_desc">ሁለቱም መሳሪያዎች በአንድ ጊዜ አድራሻዎችን ያጋራሉ</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ላክ</string>
+    <string name="send_title">ወደ እውቂያ ላክ</string>
+    <string name="send_select_contact">ተቀባይ ይምረጡ</string>
+    <string name="send_no_contacts">እስካሁን እውቂያዎች የሉም</string>
+    <string name="send_no_contacts_hint">በNFC ወይም በእጅ እውቂያዎችን ያክሉ\nክፍያዎችን ለመላክ</string>
+    <string name="send_amount">መጠን</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">ወደ: %s</string>
+    <string name="send_confirm">ላክ %1$s %2$s</string>
+    <string name="send_processing">በመላክ ላይ…</string>
+    <string name="send_success">በተሳካ ሁኔታ ተልኳል!</string>
+    <string name="send_success_desc">%1$s %2$s ወደ %3$s ተልኳል</string>
+    <string name="send_error">መላክ አልተሳካም</string>
+    <string name="send_enter_amount">መጠን ያስገቡ</string>
+    <string name="send_new">አዲስ ዝውውር</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">ሁሉም</string>
+    <string name="history_filter_received">ተቀብሏል</string>
+    <string name="history_filter_sent">ተልኳል</string>
+    <string name="history_filter_contact">እውቂያ</string>
+    <string name="history_filter_by_contact">በእውቂያ አጣራ</string>
+    <string name="history_show_all">ሁሉንም አሳይ</string>
+    <string name="history_no_results">ከማጣሪያው ጋር የሚዛመዱ ግብይቶች የሉም</string>
+    <string name="history_add_contact">ወደ እውቂያዎች ጨምር</string>
+    <string name="history_edit_contact">እውቂያ አርትዕ</string>
+    <string name="history_from">ከ</string>
+    <string name="history_to">ወደ</string>
+    <string name="history_date">ቀን</string>
+    <string name="history_tx_hash">ግብይት</string>
+    <string name="history_refund">ተመላሽ</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">መጠኑ በጣም ትንሽ ነው</string>
+    <string name="scam_amount_large_warning">ትልቅ መጠን</string>
+    <string name="scam_amount_large_desc">%1$s %2$s ለመላክ እየተዘጋጁ ነው።\nእባክዎ ይህ ትክክል መሆኑን ያረጋግጡ።</string>
+    <string name="scam_confirm_large">ትልቅ ዝውውር አረጋግጥ</string>
+    <string name="scam_dust_attack_warning">አጠራጣሪ ጥያቄ</string>
+    <string name="scam_dust_attack_desc">ይህ በጣም ትንሽ መጠን ነው (%1$s %2$s)። የአቧራ ጥቃቶች ዋሌቶችን ለመከታተል ትናንሽ ክፍያዎችን ይጠቀማሉ። ያልተጠበቀ ከሆነ ይከልክሉ።</string>
+    <string name="scam_receive_large_warning">ትልቅ የክፍያ ጥያቄ</string>
+    <string name="scam_receive_large_desc">ይህ ጥያቄ ለ%1$s %2$s ነው። ከመክፈልዎ በፊት ይህ ትክክለኛው መጠን መሆኑን ያረጋግጡ።</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">መቀበል ብቻ</string>
+    <string name="settings_mode_receive_only">ተቀበል</string>
+    <string name="settings_mode_receive_only_desc">የግል ቁልፍ የለም</string>
+    <string name="settings_receive_only">የመቀበል ብቻ ውቅር</string>
+    <string name="settings_escrow_address">የ Escrow አድራሻ</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow አልተዋቀረም</string>
+    <string name="receive_only_no_escrow_desc">በቅንብሮች ውስጥ የ escrow አድራሻ እና API key ያዋቅሩ</string>
+    <string name="receive_only_security_notice">በዚህ መሳሪያ ላይ የግል ቁልፍ የለም። ቢሰረቅ ደህና ነው።</string>
+    <string name="receive_only_api_key_required">ለ relayer ማስፈጸም API key ያስፈልጋል</string>
+</resources>

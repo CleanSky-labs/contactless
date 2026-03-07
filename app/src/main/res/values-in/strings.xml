@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Nirkontak</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Bayar</string>
+    <string name="nav_collect">Terima</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="nav_history">Riwayat</string>
+    <string name="nav_refund">Pengembalian</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Kembali</string>
+
+    <!-- Common actions -->
+    <string name="back">Kembali</string>
+    <string name="save">Simpan</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Tidak ada dompet</string>
+    <string name="pay_no_wallet_desc">Siapkan dompet di Pengaturan\nuntuk melakukan pembayaran</string>
+    <string name="pay_ready">Siap membayar</string>
+    <string name="pay_ready_desc">Dekatkan ponsel ke\nperangkat pedagang</string>
+    <string name="pay_request_title">Permintaan pembayaran</string>
+    <string name="pay_network">Jaringan: %s</string>
+    <string name="pay_expired">Permintaan kedaluwarsa</string>
+    <string name="pay_cancel">Batal</string>
+    <string name="pay_confirm">Bayar</string>
+    <string name="pay_new">Pembayaran baru</string>
+    <string name="pay_signing">Menandatangani transaksi…</string>
+    <string name="pay_tx_signed">Transaksi ditandatangani</string>
+    <string name="pay_tx_signed_desc">Dekatkan ponsel ke\npedagang untuk mengirim</string>
+    <string name="pay_authenticating">Mengautentikasi…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Tidak ada dompet</string>
+    <string name="collect_no_wallet_desc">Siapkan dompet di Pengaturan\nuntuk menerima pembayaran</string>
+    <string name="collect_amount">Jumlah yang diterima</string>
+    <string name="collect_button">Terima</string>
+    <string name="collect_waiting">Menunggu pembayaran</string>
+    <string name="collect_waiting_desc">Minta pelanggan untuk\nmendekatkan ponsel</string>
+    <string name="collect_new">Penerimaan baru</string>
+    <string name="collect_processing">Memproses pembayaran…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Mode operasi</string>
+    <string name="settings_mode_pay">Bayar</string>
+    <string name="settings_mode_pay_desc">Lakukan pembayaran</string>
+    <string name="settings_mode_collect">Terima</string>
+    <string name="settings_mode_collect_desc">Terima pembayaran</string>
+    <string name="settings_wallet">Dompet</string>
+    <string name="settings_wallet_address">Alamat</string>
+    <string name="settings_wallet_none">Dompet belum dikonfigurasi</string>
+    <string name="settings_wallet_create">Buat</string>
+    <string name="settings_wallet_import">Impor</string>
+    <string name="settings_network">Jaringan blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Eksekusi transaksi</string>
+    <string name="settings_exec_direct">Langsung</string>
+    <string name="settings_exec_direct_desc">Anda membayar gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas disponsori melalui relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 dengan Paymaster</string>
+    <string name="settings_api_key">Kunci API</string>
+    <string name="settings_save">Simpan dan kembali</string>
+    <string name="settings_not_available">Tidak tersedia di jaringan ini</string>
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_language_system">Default sistem</string>
+    <string name="collect_select_currency">Pilih mata uang</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Keamanan</string>
+    <string name="security_encryption">Enkripsi kunci</string>
+    <string name="security_encryption_desc">AES-256-GCM dengan Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Modul keamanan perangkat keras aktif</string>
+    <string name="security_strongbox_unavailable">Tidak tersedia di perangkat ini</string>
+    <string name="security_biometric">Autentikasi biometrik</string>
+    <string name="security_biometric_required">Diperlukan untuk pembayaran</string>
+    <string name="security_biometric_disabled">Dinonaktifkan</string>
+    <string name="security_biometric_unavailable">Tidak tersedia</string>
+    <string name="security_export">Ekspor kunci privat</string>
+    <string name="security_export_desc">Simpan kunci Anda dengan aman</string>
+    <string name="security_delete">Hapus dompet</string>
+    <string name="security_delete_desc">Hapus semua data secara permanen</string>
+    <string name="security_delete_title">Hapus dompet</string>
+    <string name="security_delete_warning">Tindakan ini TIDAK DAPAT DIBATALKAN.</string>
+    <string name="security_delete_warning2">Anda akan kehilangan akses ke semua aset jika tidak memiliki cadangan kunci privat.</string>
+    <string name="security_delete_warning3">Pastikan Anda telah mengekspor kunci sebelum melanjutkan.</string>
+    <string name="security_delete_confirm">Hapus</string>
+    <string name="security_status_active">Aktif</string>
+    <string name="security_status_warning">Peringatan</string>
+    <string name="security_status_na">Tidak berlaku</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Impor dompet</string>
+    <string name="import_private_key">Kunci privat</string>
+    <string name="import_seed_phrase">Seed Phrase</string>
+    <string name="import_prompt">Masukkan kunci privat Anda:</string>
+    <string name="import_prompt_seed">Masukkan seed phrase Anda (12–24 kata):</string>
+    <string name="import_seed_hint">kata1 kata2 kata3 …</string>
+    <string name="import_button">Impor</string>
+    <string name="import_error_invalid">Kunci privat tidak valid</string>
+    <string name="import_error_invalid_seed">Seed phrase tidak valid</string>
+    <string name="import_error_encryption">Kesalahan enkripsi</string>
+    <string name="export_title">Kunci privat</string>
+    <string name="export_warning">JANGAN PERNAH membagikan kunci ini. Siapa pun yang memilikinya memiliki kontrol penuh atas aset Anda.</string>
+    <string name="export_understood">Saya mengerti</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Ringkasan</string>
+    <string name="history_received">Diterima</string>
+    <string name="history_sent">Terkirim</string>
+    <string name="history_refunded">Dikembalikan</string>
+    <string name="history_empty">Tidak ada transaksi</string>
+    <string name="history_empty_desc">Transaksi di %s\nakan muncul di sini</string>
+    <string name="history_payment_received">Pembayaran diterima</string>
+    <string name="history_payment_sent">Pembayaran terkirim</string>
+    <string name="history_refund_sent">Pengembalian</string>
+    <string name="history_refund_received">Pengembalian diterima</string>
+    <string name="history_status_pending">Tertunda</string>
+    <string name="history_status_confirmed">Dikonfirmasi</string>
+    <string name="history_status_failed">Gagal</string>
+    <string name="history_status_refunded">Dikembalikan</string>
+    <string name="history_status_partial">Sebagian</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Transaksi asli</string>
+    <string name="refund_amount">Jumlah</string>
+    <string name="refund_already">Sudah dikembalikan</string>
+    <string name="refund_available">Tersedia</string>
+    <string name="refund_recipient">Penerima</string>
+    <string name="refund_date">Tanggal</string>
+    <string name="refund_type">Jenis pengembalian</string>
+    <string name="refund_full">Penuh</string>
+    <string name="refund_partial">Sebagian</string>
+    <string name="refund_partial_desc">Tentukan jumlah</string>
+    <string name="refund_amount_label">Jumlah pengembalian (%s)</string>
+    <string name="refund_max">Maksimum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Anda akan membayar gas untuk transaksi ini</string>
+    <string name="refund_button">Kembalikan %1$s %2$s</string>
+    <string name="refund_processing">Memproses pengembalian…</string>
+    <string name="refund_success">Pengembalian berhasil</string>
+    <string name="refund_done">Selesai</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token Anda</string>
+    <string name="balance_manage">Kelola</string>
+    <string name="balance_refresh">Segarkan</string>
+    <string name="balance_loading">Memuat saldo…</string>
+    <string name="balance_empty">Tidak ada token</string>
+    <string name="balance_no_wallet_desc">Siapkan dompet di Pengaturan\nuntuk melihat saldo Anda</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token yang Diizinkan</string>
+    <string name="settings_add_token">Tambah Token</string>
+    <string name="add_token_prompt">Masukkan alamat kontrak token:</string>
+    <string name="add_token_validating">Memvalidasi token…</string>
+    <string name="add_token_button">Tambah</string>
+    <string name="delete">Hapus</string>
+
+    <!-- Common -->
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="retry">Coba lagi</string>
+    <string name="error">Kesalahan</string>
+    <string name="copy">Salin</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Dompet belum dikonfigurasi</string>
+    <string name="error_device_security">Kesalahan keamanan perangkat</string>
+    <string name="error_auth">Kesalahan autentikasi</string>
+    <string name="error_unknown">Kesalahan tidak diketahui</string>
+    <string name="error_keystore_unavailable">Keystore tidak tersedia - beberapa fungsi tidak akan berfungsi</string>
+    <string name="error_encryption_restart">Kesalahan enkripsi - mulai ulang aplikasi</string>
+    <string name="error_auth_cancelled">Autentikasi dibatalkan</string>
+    <string name="error_invalid_address">Alamat tidak valid</string>
+    <string name="error_invalid_address_format">Format alamat tidak valid</string>
+    <string name="error_token_already_added">Token sudah ditambahkan</string>
+    <string name="stealth_spend_sent_tx">Terkirim! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Saldo Anda</string>
+    <string name="pay_insufficient_balance">Saldo tidak mencukupi</string>
+    <string name="pay_need_more">Anda membutuhkan %1$s %2$s lagi</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Selamat Datang</string>
+    <string name="welcome_sovereignty">Kunci Anda.\nAset Anda.\nKedaulatan Anda.</string>
+    <string name="welcome_desc">Aset Anda TIDAK disimpan di aplikasi ini. Mereka ada di blockchain, dikendalikan oleh kunci privat Anda.\n\nAplikasi ini hanya menyimpan kunci Anda dengan aman. Kami tidak dapat mengakses aset Anda.\n\nCatatan: Beberapa token (USDC, USDT) dapat dibekukan oleh penerbitnya. Untuk kedaulatan maksimum, gunakan ETH native atau token terdesentralisasi.</string>
+    <string name="welcome_warning_title">Kunci Anda = Aset Anda</string>
+    <string name="welcome_warning_desc">Jika Anda kehilangan kunci privat atau membagikannya kepada seseorang, Anda kehilangan kontrol atas aset Anda secara permanen.\n\nTidak ada opsi pemulihan. Tidak ada tim dukungan yang dapat membantu Anda. Ini adalah sifat kepemilikan sejati.\n\nSelalu simpan cadangan kunci Anda dengan aman.</string>
+    <string name="welcome_opensource">Perangkat lunak sumber terbuka. Verifikasi, jangan percaya.</string>
+    <string name="welcome_start">Saya mengerti, mari mulai</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Identitas Pedagang</string>
+    <string name="settings_merchant_name">Nama Bisnis</string>
+    <string name="settings_merchant_name_hint">Kedai Kopi Saya</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth atau mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Ditampilkan kepada pelanggan saat pembayaran</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Mode Privasi</string>
+    <string name="settings_stealth_desc">Terima pembayaran ke alamat sekali pakai (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Diaktifkan</string>
+    <string name="settings_stealth_info">Setiap pembayaran masuk ke alamat unik yang hanya dapat Anda belanjakan. Pengamat tidak dapat menghubungkan pembayaran ke bisnis Anda.</string>
+    <string name="stealth_address_label">Mode Stealth Aktif</string>
+    <string name="stealth_payment_note">Pembayaran akan dikirim ke alamat privat</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Alamat penerima</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Dompet Privat</string>
+    <string name="stealth_wallet_addresses">di %d alamat stealth</string>
+    <string name="stealth_wallet_privacy_title">Aset Anda bersifat privat</string>
+    <string name="stealth_wallet_privacy_desc">Saldo ini tidak terhubung ke dompet publik Anda. Belanjakan langsung ke pemasok, bursa, atau di mana saja - identitas bisnis Anda tetap tersembunyi.</string>
+    <string name="stealth_wallet_send">Kirim</string>
+    <string name="stealth_wallet_send_title">Kirim dari Dompet Privat</string>
+    <string name="stealth_wallet_available">Tersedia: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Jumlah</string>
+    <string name="nav_stealth_wallet">Dompet Privat</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Banyak alamat</string>
+    <string name="stealth_wallet_gas_desc">Aset Anda tersebar di %d alamat. Membelanjakan jumlah besar mungkin memerlukan beberapa transaksi, meningkatkan biaya gas.</string>
+    <string name="stealth_wallet_consolidate">Konsolidasi ke dompet utama</string>
+    <string name="stealth_wallet_consolidate_title">Konsolidasi dana?</string>
+    <string name="stealth_wallet_consolidate_warning">Ini akan mentransfer semua dana dari dompet privat Anda ke alamat dompet utama.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">PERINGATAN: Ini merusak privasi. Dompet utama Anda akan terhubung ke semua pembayaran yang diterima.</string>
+    <string name="stealth_wallet_consolidate_benefit">Manfaat: Pembelanjaan di masa depan hanya memerlukan satu transaksi (biaya gas lebih rendah).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolidasi</string>
+    <string name="stealth_wallet_consolidate_success">Dana dikonsolidasi ke dompet utama</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Privasi Pembayar</string>
+    <string name="settings_payer_privacy_desc">Bayar dari akun sementara (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Setiap pembayaran menggunakan akun unik. Alamat dompet utama Anda tidak terlihat di chain.</string>
+    <string name="settings_payer_privacy_requires_api">Kunci API diperlukan untuk mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Gratis di testnets (bundler publik)</string>
+    <string name="payer_privacy_note">Alamat dompet Anda akan disembunyikan</string>
+    <string name="payer_privacy_processing">Memproses pembayaran privat…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Buku Alamat</string>
+    <string name="address_book_add">Tambah Kontak</string>
+    <string name="address_book_edit">Edit Kontak</string>
+    <string name="address_book_search">Cari kontak…</string>
+    <string name="address_book_empty">Belum ada kontak</string>
+    <string name="address_book_empty_hint">Tambahkan alamat untuk dengan mudah mengidentifikasi\nsiapa yang Anda bayar atau terima dari</string>
+    <string name="address_book_no_results">Tidak ada kontak ditemukan</string>
+    <string name="address_book_address">Alamat Dompet</string>
+    <string name="address_book_name">Nama</string>
+    <string name="address_book_name_hint">mis. Kedai Kopi, John Doe</string>
+    <string name="address_book_note">Catatan (opsional)</string>
+    <string name="address_book_note_hint">mis. Pemasok, Teman</string>
+    <string name="address_book_delete_title">Hapus kontak?</string>
+    <string name="address_book_delete_message">Hapus %s dari buku alamat Anda?</string>
+    <string name="address_book_saved">Kontak disimpan</string>
+    <string name="address_book_unknown">Tidak dikenal</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mode Sederhana</string>
+    <string name="settings_simple_mode_desc">Mudah digunakan, opsi dasar</string>
+    <string name="settings_advanced_mode">Mode Lanjutan</string>
+    <string name="settings_advanced_mode_desc">Opsi crypto untuk pengguna tingkat lanjut</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Bagikan Kontak</string>
+    <string name="share_contact_title">Bagikan Alamat Anda</string>
+    <string name="share_contact_ready">Siap berbagi</string>
+    <string name="share_contact_ready_desc">Dekatkan ponsel Anda ke\nperangkat CleanSky lainnya</string>
+    <string name="share_contact_received">Kontak diterima!</string>
+    <string name="share_contact_received_name">%s ingin terhubung</string>
+    <string name="share_contact_save">Simpan ke kontak</string>
+    <string name="share_contact_your_name">Nama Anda (opsional)</string>
+    <string name="share_contact_your_name_hint">Bagaimana orang lain melihat Anda</string>
+    <string name="share_contact_mutual">Tukar kontak</string>
+    <string name="share_contact_mutual_desc">Kedua perangkat berbagi alamat secara bersamaan</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Kirim</string>
+    <string name="send_title">Kirim ke Kontak</string>
+    <string name="send_select_contact">Pilih penerima</string>
+    <string name="send_no_contacts">Belum ada kontak</string>
+    <string name="send_no_contacts_hint">Tambahkan kontak via NFC atau manual\nuntuk mengirim pembayaran kepada mereka</string>
+    <string name="send_amount">Jumlah</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Ke: %s</string>
+    <string name="send_confirm">Kirim %1$s %2$s</string>
+    <string name="send_processing">Mengirim…</string>
+    <string name="send_success">Berhasil terkirim!</string>
+    <string name="send_success_desc">%1$s %2$s terkirim ke %3$s</string>
+    <string name="send_error">Gagal mengirim</string>
+    <string name="send_enter_amount">Masukkan jumlah</string>
+    <string name="send_new">Transfer baru</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Semua</string>
+    <string name="history_filter_received">Diterima</string>
+    <string name="history_filter_sent">Terkirim</string>
+    <string name="history_filter_contact">Kontak</string>
+    <string name="history_filter_by_contact">Filter berdasarkan kontak</string>
+    <string name="history_show_all">Tampilkan semua</string>
+    <string name="history_no_results">Tidak ada transaksi yang cocok dengan filter</string>
+    <string name="history_add_contact">Tambahkan ke kontak</string>
+    <string name="history_edit_contact">Edit kontak</string>
+    <string name="history_from">Dari</string>
+    <string name="history_to">Ke</string>
+    <string name="history_date">Tanggal</string>
+    <string name="history_tx_hash">Transaksi</string>
+    <string name="history_refund">Pengembalian</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Jumlah terlalu kecil</string>
+    <string name="scam_amount_large_warning">Jumlah besar</string>
+    <string name="scam_amount_large_desc">Anda akan mengirim %1$s %2$s.\nMohon konfirmasi ini benar.</string>
+    <string name="scam_confirm_large">Konfirmasi transfer besar</string>
+    <string name="scam_dust_attack_warning">Permintaan mencurigakan</string>
+    <string name="scam_dust_attack_desc">Ini adalah jumlah yang sangat kecil (%1$s %2$s). Serangan dust menggunakan pembayaran kecil untuk melacak dompet. Tolak jika tidak diharapkan.</string>
+    <string name="scam_receive_large_warning">Permintaan pembayaran besar</string>
+    <string name="scam_receive_large_desc">Permintaan ini untuk %1$s %2$s. Verifikasi ini adalah jumlah yang benar sebelum membayar.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Hanya terima</string>
+    <string name="settings_mode_receive_only">Terima</string>
+    <string name="settings_mode_receive_only_desc">Tanpa kunci privat</string>
+    <string name="settings_receive_only">Konfigurasi hanya terima</string>
+    <string name="settings_escrow_address">Alamat Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow belum dikonfigurasi</string>
+    <string name="receive_only_no_escrow_desc">Konfigurasi alamat escrow dan API key di Pengaturan</string>
+    <string name="receive_only_security_notice">Tidak ada kunci privat di perangkat ini. Aman jika dicuri.</string>
+    <string name="receive_only_api_key_required">API key diperlukan untuk eksekusi relayer</string>
+</resources>

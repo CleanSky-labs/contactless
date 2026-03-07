@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Bila Kugusa</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Lipa</string>
+    <string name="nav_collect">Pokea</string>
+    <string name="nav_settings">Mipangilio</string>
+    <string name="nav_history">Historia</string>
+    <string name="nav_refund">Rudisha</string>
+    <string name="nav_balance">Salio</string>
+    <string name="nav_back">Rudi</string>
+
+    <!-- Common actions -->
+    <string name="back">Rudi</string>
+    <string name="save">Hifadhi</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Hakuna pochi</string>
+    <string name="pay_no_wallet_desc">Weka pochi katika Mipangilio\nili kufanya malipo</string>
+    <string name="pay_ready">Tayari kulipa</string>
+    <string name="pay_ready_desc">Weka simu karibu na\nkifaa cha muuzaji</string>
+    <string name="pay_request_title">Ombi la malipo</string>
+    <string name="pay_network">Mtandao: %s</string>
+    <string name="pay_expired">Ombi limeisha muda</string>
+    <string name="pay_cancel">Ghairi</string>
+    <string name="pay_confirm">Lipa</string>
+    <string name="pay_new">Malipo mapya</string>
+    <string name="pay_signing">Inasaini muamala…</string>
+    <string name="pay_tx_signed">Muamala umesainiwa</string>
+    <string name="pay_tx_signed_desc">Weka simu karibu na\nmuuzaji kutuma</string>
+    <string name="pay_authenticating">Inathibitisha…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Hakuna pochi</string>
+    <string name="collect_no_wallet_desc">Weka pochi katika Mipangilio\nili kupokea malipo</string>
+    <string name="collect_amount">Kiasi cha kupokea</string>
+    <string name="collect_button">Pokea</string>
+    <string name="collect_waiting">Inasubiri malipo</string>
+    <string name="collect_waiting_desc">Mwombe mteja\naweke simu karibu</string>
+    <string name="collect_new">Mapokezi mapya</string>
+    <string name="collect_processing">Inachakata malipo…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Hali ya uendeshaji</string>
+    <string name="settings_mode_pay">Lipa</string>
+    <string name="settings_mode_pay_desc">Fanya malipo</string>
+    <string name="settings_mode_collect">Pokea</string>
+    <string name="settings_mode_collect_desc">Pokea malipo</string>
+    <string name="settings_wallet">Pochi</string>
+    <string name="settings_wallet_address">Anwani</string>
+    <string name="settings_wallet_none">Pochi haijawekwa</string>
+    <string name="settings_wallet_create">Unda</string>
+    <string name="settings_wallet_import">Ingiza</string>
+    <string name="settings_network">Mtandao wa blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Utekelezaji wa muamala</string>
+    <string name="settings_exec_direct">Moja kwa moja</string>
+    <string name="settings_exec_direct_desc">Wewe unalipa gesi</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gesi iliyofadhiliwa kupitia relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 na Paymaster</string>
+    <string name="settings_api_key">Ufunguo wa API</string>
+    <string name="settings_save">Hifadhi na urudi</string>
+    <string name="settings_not_available">Haipatikani kwenye mtandao huu</string>
+    <string name="settings_language">Lugha</string>
+    <string name="settings_language_system">Chaguo-msingi la mfumo</string>
+    <string name="collect_select_currency">Chagua sarafu</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Usalama</string>
+    <string name="security_encryption">Usimbaji fiche wa funguo</string>
+    <string name="security_encryption_desc">AES-256-GCM na Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Moduli ya usalama wa vifaa inafanya kazi</string>
+    <string name="security_strongbox_unavailable">Haipatikani kwenye kifaa hiki</string>
+    <string name="security_biometric">Uthibitishaji wa kibayometriki</string>
+    <string name="security_biometric_required">Inahitajika kwa malipo</string>
+    <string name="security_biometric_disabled">Imezimwa</string>
+    <string name="security_biometric_unavailable">Haipatikani</string>
+    <string name="security_export">Hamisha ufunguo wa siri</string>
+    <string name="security_export_desc">Hifadhi ufunguo wako kwa usalama</string>
+    <string name="security_delete">Futa pochi</string>
+    <string name="security_delete_desc">Futa data yote kabisa</string>
+    <string name="security_delete_title">Futa pochi</string>
+    <string name="security_delete_warning">Kitendo hiki HAKIWEZI KURUDISHWA.</string>
+    <string name="security_delete_warning2">Utapoteza ufikiaji wa mali zote ikiwa huna nakala ya ufunguo wa siri.</string>
+    <string name="security_delete_warning3">Hakikisha umehamisha ufunguo kabla ya kuendelea.</string>
+    <string name="security_delete_confirm">Futa</string>
+    <string name="security_status_active">Inafanya kazi</string>
+    <string name="security_status_warning">Onyo</string>
+    <string name="security_status_na">Haihusiki</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Ingiza pochi</string>
+    <string name="import_private_key">Ufunguo wa Siri</string>
+    <string name="import_seed_phrase">Maneno ya Mbegu</string>
+    <string name="import_prompt">Ingiza ufunguo wako wa siri:</string>
+    <string name="import_prompt_seed">Ingiza maneno yako ya mbegu (12–24):</string>
+    <string name="import_seed_hint">neno1 neno2 neno3 …</string>
+    <string name="import_button">Ingiza</string>
+    <string name="import_error_invalid">Ufunguo wa siri si sahihi</string>
+    <string name="import_error_invalid_seed">Maneno ya mbegu si sahihi</string>
+    <string name="import_error_encryption">Hitilafu ya usimbaji fiche</string>
+    <string name="export_title">Ufunguo wa siri</string>
+    <string name="export_warning">USISHIRIKI ufunguo huu kamwe. Mtu yeyote anayeumiliki ana udhibiti kamili wa mali zako.</string>
+    <string name="export_understood">Nimeelewa</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Muhtasari</string>
+    <string name="history_received">Imepokelewa</string>
+    <string name="history_sent">Imetumwa</string>
+    <string name="history_refunded">Imerudishwa</string>
+    <string name="history_empty">Hakuna miamala</string>
+    <string name="history_empty_desc">Miamala kwenye %s\nitaonekana hapa</string>
+    <string name="history_payment_received">Malipo yamepokelewa</string>
+    <string name="history_payment_sent">Malipo yametumwa</string>
+    <string name="history_refund_sent">Urudishaji</string>
+    <string name="history_refund_received">Urudishaji umepokelewa</string>
+    <string name="history_status_pending">Inasubiri</string>
+    <string name="history_status_confirmed">Imethibitishwa</string>
+    <string name="history_status_failed">Imeshindwa</string>
+    <string name="history_status_refunded">Imerudishwa</string>
+    <string name="history_status_partial">Sehemu</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Muamala wa awali</string>
+    <string name="refund_amount">Kiasi</string>
+    <string name="refund_already">Tayari imerudishwa</string>
+    <string name="refund_available">Inapatikana</string>
+    <string name="refund_recipient">Mpokeaji</string>
+    <string name="refund_date">Tarehe</string>
+    <string name="refund_type">Aina ya urudishaji</string>
+    <string name="refund_full">Kamili</string>
+    <string name="refund_partial">Sehemu</string>
+    <string name="refund_partial_desc">Eleza kiasi</string>
+    <string name="refund_amount_label">Kiasi cha kurudisha (%s)</string>
+    <string name="refund_max">Upeo: %1$s %2$s</string>
+    <string name="refund_gas_notice">Utalipa gesi kwa muamala huu</string>
+    <string name="refund_button">Rudisha %1$s %2$s</string>
+    <string name="refund_processing">Inachakata urudishaji…</string>
+    <string name="refund_success">Urudishaji umefanikiwa</string>
+    <string name="refund_done">Imekamilika</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Tokeni Zako</string>
+    <string name="balance_manage">Simamia</string>
+    <string name="balance_refresh">Sasisha</string>
+    <string name="balance_loading">Inapakia salio…</string>
+    <string name="balance_empty">Hakuna tokeni</string>
+    <string name="balance_no_wallet_desc">Weka pochi katika Mipangilio\nili kuona salio lako</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tokeni Zinazoruhusiwa</string>
+    <string name="settings_add_token">Ongeza Tokeni</string>
+    <string name="add_token_prompt">Ingiza anwani ya mkataba wa tokeni:</string>
+    <string name="add_token_validating">Inathibitisha tokeni…</string>
+    <string name="add_token_button">Ongeza</string>
+    <string name="delete">Futa</string>
+
+    <!-- Common -->
+    <string name="cancel">Ghairi</string>
+    <string name="close">Funga</string>
+    <string name="retry">Jaribu tena</string>
+    <string name="error">Hitilafu</string>
+    <string name="copy">Nakili</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Pochi haijawekwa</string>
+    <string name="error_device_security">Hitilafu ya usalama wa kifaa</string>
+    <string name="error_auth">Hitilafu ya uthibitishaji</string>
+    <string name="error_unknown">Hitilafu isiyojulikana</string>
+    <string name="error_keystore_unavailable">Keystore haipatikani - baadhi ya kazi hazitafanya kazi</string>
+    <string name="error_encryption_restart">Hitilafu ya usimbaji fiche - anzisha upya programu</string>
+    <string name="error_auth_cancelled">Uthibitishaji umeghairiwa</string>
+    <string name="error_invalid_address">Anwani batili</string>
+    <string name="error_invalid_address_format">Muundo wa anwani batili</string>
+    <string name="error_token_already_added">Tokeni tayari imeongezwa</string>
+    <string name="stealth_spend_sent_tx">Imetumwa! Tx: %s…</string>
+    <string name="token_native">Asili</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Salio lako</string>
+    <string name="pay_insufficient_balance">Salio halitoshi</string>
+    <string name="pay_need_more">Unahitaji %1$s zaidi ya %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Karibu</string>
+    <string name="welcome_sovereignty">Funguo zako.\nPesa zako.\nUhuru wako.</string>
+    <string name="welcome_desc">Pesa zako HAZIHIFADHIWI katika programu hii. Zipo kwenye blockchain, zikidhibitiwa na funguo zako za siri.\n\nProgramu hii inahifadhi funguo zako kwa usalama tu. Hatuwezi kufikia pesa zako.\n\nKumbuka: Baadhi ya tokeni (USDC, USDT) zinaweza kugandishwa na watoa huduma wao. Kwa uhuru wa juu, tumia ETH asili au tokeni zilizogatuliwa.</string>
+    <string name="welcome_warning_title">Funguo zako = Pesa zako</string>
+    <string name="welcome_warning_desc">Ukipoteza funguo zako za siri au kuzishiriki na mtu mwingine, utapoteza udhibiti wa pesa zako milele.\n\nHakuna njia ya kupata tena. Hakuna timu ya msaada inayoweza kukusaidia. Hii ndiyo asili ya umiliki wa kweli.\n\nDaima hifadhi nakala salama ya funguo zako.</string>
+    <string name="welcome_opensource">Programu ya chanzo wazi. Thibitisha, usitegemee.</string>
+    <string name="welcome_start">Nimeelewa, tuanze</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Utambulisho wa Muuzaji</string>
+    <string name="settings_merchant_name">Jina la Biashara</string>
+    <string name="settings_merchant_name_hint">Duka Langu la Kahawa</string>
+    <string name="settings_merchant_domain">Kikoa / ENS</string>
+    <string name="settings_merchant_domain_hint">dukakahawa.eth au dukakahawa.com</string>
+    <string name="settings_merchant_identity_desc">Inaonyeshwa kwa wateja wakati wa malipo</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Hali ya Faragha</string>
+    <string name="settings_stealth_desc">Pokea malipo kwa anwani za wakati mmoja (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Imewashwa</string>
+    <string name="settings_stealth_info">Kila malipo huenda kwa anwani ya kipekee ambayo wewe peke yako unaweza kutumia. Waangalizi hawawezi kuunganisha malipo na biashara yako.</string>
+    <string name="stealth_address_label">Hali ya Stealth Inafanya Kazi</string>
+    <string name="stealth_payment_note">Malipo yatatumwa kwa anwani ya faragha</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Anwani ya mpokeaji</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Pochi ya Faragha</string>
+    <string name="stealth_wallet_addresses">katika anwani %d za stealth</string>
+    <string name="stealth_wallet_privacy_title">Pesa zako ni za faragha</string>
+    <string name="stealth_wallet_privacy_desc">Salio hili halijaungana na pochi yako ya umma. Tumia moja kwa moja kwa wasambazaji, kubadilishana, au popote - utambulisho wako wa biashara unabaki umefichwa.</string>
+    <string name="stealth_wallet_send">Tuma</string>
+    <string name="stealth_wallet_send_title">Tuma kutoka Pochi ya Faragha</string>
+    <string name="stealth_wallet_available">Inapatikana: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Kiasi</string>
+    <string name="nav_stealth_wallet">Pochi ya Faragha</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Anwani nyingi</string>
+    <string name="stealth_wallet_gas_desc">Pesa zako zimeenea katika anwani %d. Kutumia kiasi kikubwa kunaweza kuhitaji miamala mingi, kuongeza gharama za gesi.</string>
+    <string name="stealth_wallet_consolidate">Unganisha kwa pochi kuu</string>
+    <string name="stealth_wallet_consolidate_title">Unganisha pesa?</string>
+    <string name="stealth_wallet_consolidate_warning">Hii itahamisha pesa zote kutoka pochi yako ya faragha hadi anwani ya pochi yako kuu.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ONYO: Hii inavunja faragha. Pochi yako kuu itaungana na malipo yote yaliyopokelewa.</string>
+    <string name="stealth_wallet_consolidate_benefit">Faida: Matumizi ya baadaye yatahitaji muamala mmoja tu (gharama za gesi za chini).</string>
+    <string name="stealth_wallet_consolidate_confirm">Unganisha</string>
+    <string name="stealth_wallet_consolidate_success">Pesa zimeunganishwa kwa pochi kuu</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Faragha ya Mlipaji</string>
+    <string name="settings_payer_privacy_desc">Lipa kutoka akaunti za muda (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Kila malipo hutumia akaunti ya kipekee. Anwani ya pochi yako kuu haionekani kwenye mnyororo.</string>
+    <string name="settings_payer_privacy_requires_api">Ufunguo wa API unahitajika kwa mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Bure kwenye testnet (bundler ya umma)</string>
+    <string name="payer_privacy_note">Anwani ya pochi yako itafichwa</string>
+    <string name="payer_privacy_processing">Inachakata malipo ya faragha…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Kitabu cha Anwani</string>
+    <string name="address_book_add">Ongeza Mwasiliani</string>
+    <string name="address_book_edit">Hariri Mwasiliani</string>
+    <string name="address_book_search">Tafuta wawasiliani…</string>
+    <string name="address_book_empty">Hakuna wawasiliani bado</string>
+    <string name="address_book_empty_hint">Ongeza anwani ili kutambua kwa urahisi\nnani unamlipa au unapokea kutoka</string>
+    <string name="address_book_no_results">Hakuna wawasiliani waliopatikana</string>
+    <string name="address_book_address">Anwani ya Pochi</string>
+    <string name="address_book_name">Jina</string>
+    <string name="address_book_name_hint">mf. Duka la Kahawa, Juma</string>
+    <string name="address_book_note">Kumbuka (hiari)</string>
+    <string name="address_book_note_hint">mf. Msambazaji, Rafiki</string>
+    <string name="address_book_delete_title">Futa mwasiliani?</string>
+    <string name="address_book_delete_message">Ondoa %s kutoka kitabu chako cha anwani?</string>
+    <string name="address_book_saved">Mwasiliani amehifadhiwa</string>
+    <string name="address_book_unknown">Haijulikani</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Hali Rahisi</string>
+    <string name="settings_simple_mode_desc">Rahisi kutumia, chaguzi za msingi</string>
+    <string name="settings_advanced_mode">Hali ya Juu</string>
+    <string name="settings_advanced_mode_desc">Chaguzi za crypto kwa watumiaji wataalam</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Shiriki Mwasiliani</string>
+    <string name="share_contact_title">Shiriki Anwani Yako</string>
+    <string name="share_contact_ready">Tayari kushiriki</string>
+    <string name="share_contact_ready_desc">Weka simu yako karibu na\nkifaa kingine cha CleanSky</string>
+    <string name="share_contact_received">Mwasiliani amepokelewa!</string>
+    <string name="share_contact_received_name">%s anataka kuungana</string>
+    <string name="share_contact_save">Hifadhi kwa wawasiliani</string>
+    <string name="share_contact_your_name">Jina lako (hiari)</string>
+    <string name="share_contact_your_name_hint">Jinsi wengine watakuona</string>
+    <string name="share_contact_mutual">Badilishana wawasiliani</string>
+    <string name="share_contact_mutual_desc">Vifaa vyote viwili vinashiriki anwani kwa wakati mmoja</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Tuma</string>
+    <string name="send_title">Tuma kwa Mwasiliani</string>
+    <string name="send_select_contact">Chagua mpokeaji</string>
+    <string name="send_no_contacts">Hakuna wawasiliani bado</string>
+    <string name="send_no_contacts_hint">Ongeza wawasiliani kupitia NFC au mwenyewe\nili kuwatumia malipo</string>
+    <string name="send_amount">Kiasi</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kwa: %s</string>
+    <string name="send_confirm">Tuma %1$s %2$s</string>
+    <string name="send_processing">Inatuma…</string>
+    <string name="send_success">Imetumwa kikamilifu!</string>
+    <string name="send_success_desc">%1$s %2$s imetumwa kwa %3$s</string>
+    <string name="send_error">Imeshindwa kutuma</string>
+    <string name="send_enter_amount">Ingiza kiasi</string>
+    <string name="send_new">Uhamishaji mpya</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Zote</string>
+    <string name="history_filter_received">Zilizopokelewa</string>
+    <string name="history_filter_sent">Zilizotumwa</string>
+    <string name="history_filter_contact">Mwasiliani</string>
+    <string name="history_filter_by_contact">Chuja kwa mwasiliani</string>
+    <string name="history_show_all">Onyesha zote</string>
+    <string name="history_no_results">Hakuna miamala inayolingana na kichujio</string>
+    <string name="history_add_contact">Ongeza kwa wawasiliani</string>
+    <string name="history_edit_contact">Hariri mwasiliani</string>
+    <string name="history_from">Kutoka</string>
+    <string name="history_to">Kwenda</string>
+    <string name="history_date">Tarehe</string>
+    <string name="history_tx_hash">Muamala</string>
+    <string name="history_refund">Urudishaji</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Kiasi ni kidogo sana</string>
+    <string name="scam_amount_large_warning">Kiasi kikubwa</string>
+    <string name="scam_amount_large_desc">Unakaribia kutuma %1$s %2$s.\nTafadhali thibitisha hii ni sahihi.</string>
+    <string name="scam_confirm_large">Thibitisha uhamishaji mkubwa</string>
+    <string name="scam_dust_attack_warning">Ombi la mashaka</string>
+    <string name="scam_dust_attack_desc">Hii ni kiasi kidogo sana (%1$s %2$s). Mashambulizi ya vumbi hutumia malipo madogo kufuatilia pochi. Kataa ikiwa haukutarajia.</string>
+    <string name="scam_receive_large_warning">Ombi kubwa la malipo</string>
+    <string name="scam_receive_large_desc">Ombi hili ni la %1$s %2$s. Hakikisha hii ni kiasi sahihi kabla ya kulipa.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Pokea tu</string>
+    <string name="settings_mode_receive_only">Pokea</string>
+    <string name="settings_mode_receive_only_desc">Hakuna ufunguo wa faragha</string>
+    <string name="settings_receive_only">Usanidi wa kupokea tu</string>
+    <string name="settings_escrow_address">Anwani ya Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow haijasanidiwa</string>
+    <string name="receive_only_no_escrow_desc">Sanidi anwani ya escrow na API key katika Mipangilio</string>
+    <string name="receive_only_security_notice">Hakuna ufunguo wa faragha kwenye kifaa hiki. Salama ukiibiwa.</string>
+    <string name="receive_only_api_key_required">API key inahitajika kwa utekelezaji wa relayer</string>
+</resources>

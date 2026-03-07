@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Lähimaksu</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Maksa</string>
+    <string name="nav_collect">Vastaanota</string>
+    <string name="nav_settings">Asetukset</string>
+    <string name="nav_history">Historia</string>
+    <string name="nav_refund">Palautus</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Takaisin</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ei lompakkoa</string>
+    <string name="pay_no_wallet_desc">Määritä lompakkosi Asetuksissa\nmaksujen tekemiseksi</string>
+    <string name="pay_ready">Valmis maksuun</string>
+    <string name="pay_ready_desc">Pidä puhelimesi lähellä\nkauppiaan laitetta</string>
+    <string name="pay_request_title">Maksupyyntö</string>
+    <string name="pay_network">Verkko: %s</string>
+    <string name="pay_expired">Pyyntö vanhentunut</string>
+    <string name="pay_cancel">Peruuta</string>
+    <string name="pay_confirm">Maksa</string>
+    <string name="pay_new">Uusi maksu</string>
+    <string name="pay_signing">Allekirjoitetaan tapahtumaa…</string>
+    <string name="pay_tx_signed">Tapahtuma allekirjoitettu</string>
+    <string name="pay_tx_signed_desc">Pidä puhelimesi lähellä\nkauppiasta lähettääksesi</string>
+    <string name="pay_authenticating">Todennetaan…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ei lompakkoa</string>
+    <string name="collect_no_wallet_desc">Määritä lompakkosi Asetuksissa\nmaksujen vastaanottamiseksi</string>
+    <string name="collect_amount">Vastaanotettava summa</string>
+    <string name="collect_button">Vastaanota</string>
+    <string name="collect_waiting">Odotetaan maksua</string>
+    <string name="collect_waiting_desc">Pyydä asiakasta\npitämään puhelin lähellä</string>
+    <string name="collect_new">Uusi vastaanotto</string>
+    <string name="collect_processing">Käsitellään maksua…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Käyttötila</string>
+    <string name="settings_mode_pay">Maksa</string>
+    <string name="settings_mode_pay_desc">Tee maksuja</string>
+    <string name="settings_mode_collect">Vastaanota</string>
+    <string name="settings_mode_collect_desc">Vastaanota maksuja</string>
+    <string name="settings_wallet">Lompakko</string>
+    <string name="settings_wallet_address">Osoite</string>
+    <string name="settings_wallet_none">Lompakkoa ei ole määritetty</string>
+    <string name="settings_wallet_create">Luo</string>
+    <string name="settings_wallet_import">Tuo</string>
+    <string name="settings_network">Lohkoketjuverkko</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Tapahtuman suoritus</string>
+    <string name="settings_exec_direct">Suora</string>
+    <string name="settings_exec_direct_desc">Maksat kaasun itse</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsoroitu kaasu relayerin kautta</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymasterilla</string>
+    <string name="settings_api_key">API-avain</string>
+    <string name="settings_save">Tallenna ja palaa</string>
+    <string name="settings_not_available">Ei saatavilla tässä verkossa</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Turvallisuus</string>
+    <string name="security_encryption">Avainten salaus</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystorella</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Laitteistoturvamoduuli aktiivinen</string>
+    <string name="security_strongbox_unavailable">Ei saatavilla tällä laitteella</string>
+    <string name="security_biometric">Biometrinen todennus</string>
+    <string name="security_biometric_required">Vaaditaan maksuihin</string>
+    <string name="security_biometric_disabled">Poistettu käytöstä</string>
+    <string name="security_biometric_unavailable">Ei saatavilla</string>
+    <string name="security_export">Vie yksityinen avain</string>
+    <string name="security_export_desc">Tallenna avaimesi turvallisesti</string>
+    <string name="security_delete">Poista lompakko</string>
+    <string name="security_delete_desc">Poista kaikki tiedot pysyvästi</string>
+    <string name="security_delete_title">Poista lompakko</string>
+    <string name="security_delete_warning">Tämä toiminto on PERUUTTAMATON.</string>
+    <string name="security_delete_warning2">Menetät pääsyn kaikkiin varoihin, jos sinulla ei ole varmuuskopiota yksityisestä avaimestasi.</string>
+    <string name="security_delete_warning3">Varmista, että olet vienyt avaimesi ennen jatkamista.</string>
+    <string name="security_delete_confirm">Poista</string>
+    <string name="security_status_active">Aktiivinen</string>
+    <string name="security_status_warning">Varoitus</string>
+    <string name="security_status_na">Ei sovellettavissa</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Tuo lompakko</string>
+    <string name="import_prompt">Syötä yksityinen avaimesi:</string>
+    <string name="import_button">Tuo</string>
+    <string name="import_error_invalid">Virheellinen yksityinen avain</string>
+    <string name="import_error_encryption">Salausvirhe</string>
+    <string name="export_title">Yksityinen avain</string>
+    <string name="export_warning">ÄLÄ KOSKAAN jaa tätä avainta. Kuka tahansa, joka omistaa sen, hallitsee täysin varojasi.</string>
+    <string name="export_understood">Ymmärretty</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Yhteenveto</string>
+    <string name="history_received">Vastaanotettu</string>
+    <string name="history_refunded">Palautettu</string>
+    <string name="history_empty">Ei tapahtumia</string>
+    <string name="history_empty_desc">Tapahtumat %s:ssa\nnäkyvät täällä</string>
+    <string name="history_payment_received">Maksu vastaanotettu</string>
+    <string name="history_payment_sent">Maksu lähetetty</string>
+    <string name="history_refund_sent">Palautus</string>
+    <string name="history_refund_received">Palautus vastaanotettu</string>
+    <string name="history_status_pending">Odottaa</string>
+    <string name="history_status_confirmed">Vahvistettu</string>
+    <string name="history_status_failed">Epäonnistui</string>
+    <string name="history_status_refunded">Palautettu</string>
+    <string name="history_status_partial">Osittainen</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Alkuperäinen tapahtuma</string>
+    <string name="refund_amount">Summa</string>
+    <string name="refund_already">Jo palautettu</string>
+    <string name="refund_available">Saatavilla</string>
+    <string name="refund_recipient">Vastaanottaja</string>
+    <string name="refund_date">Päivämäärä</string>
+    <string name="refund_type">Palautuksen tyyppi</string>
+    <string name="refund_full">Täysi</string>
+    <string name="refund_partial">Osittainen</string>
+    <string name="refund_partial_desc">Määritä summa</string>
+    <string name="refund_amount_label">Palautettava summa (%s)</string>
+    <string name="refund_max">Maksimi: %1$s %2$s</string>
+    <string name="refund_gas_notice">Maksat kaasun tästä tapahtumasta</string>
+    <string name="refund_button">Palauta %1$s %2$s</string>
+    <string name="refund_processing">Käsitellään palautusta…</string>
+    <string name="refund_success">Palautus onnistui</string>
+    <string name="refund_done">Valmis</string>
+
+    <!-- Common -->
+    <string name="cancel">Peruuta</string>
+    <string name="close">Sulje</string>
+    <string name="retry">Yritä uudelleen</string>
+    <string name="error">Virhe</string>
+    <string name="copy">Kopioi</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Lompakkoa ei ole määritetty</string>
+    <string name="error_device_security">Laitteen turvallisuusvirhe</string>
+    <string name="error_auth">Todennusvirhe</string>
+    <string name="error_unknown">Tuntematon virhe</string>
+    <string name="error_keystore_unavailable">Keystore ei käytettävissä - jotkut toiminnot eivät toimi</string>
+    <string name="error_encryption_restart">Salausvirhe - käynnistä sovellus uudelleen</string>
+    <string name="error_auth_cancelled">Todennus peruutettu</string>
+    <string name="error_invalid_address">Virheellinen osoite</string>
+    <string name="error_invalid_address_format">Virheellinen osoitemuoto</string>
+    <string name="error_token_already_added">Token on jo lisätty</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Lähetetty! Tx: %s…</string>
+    <string name="token_native">Natiivi</string>
+
+    <!-- Common actions -->
+    <string name="back">Takaisin</string>
+    <string name="save">Tallenna</string>
+
+    <!-- Collect Screen extras -->
+    <string name="collect_select_currency">Valitse valuutta</string>
+
+    <!-- Settings Language -->
+    <string name="settings_language">Kieli</string>
+    <string name="settings_language_system">Järjestelmän oletus</string>
+
+    <!-- Import extras -->
+    <string name="import_private_key">Yksityinen avain</string>
+    <string name="import_seed_phrase">Palautuslause</string>
+    <string name="import_prompt_seed">Syötä palautuslauseesi (12–24 sanaa):</string>
+    <string name="import_seed_hint">sana1 sana2 sana3 …</string>
+    <string name="import_error_invalid_seed">Virheellinen palautuslause</string>
+
+    <!-- History extras -->
+    <string name="history_sent">Lähetetty</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Saldosi</string>
+    <string name="pay_insufficient_balance">Riittämätön saldo</string>
+    <string name="pay_need_more">Tarvitset %1$s %2$s lisää</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Tokenisi</string>
+    <string name="balance_manage">Hallitse</string>
+    <string name="balance_refresh">Päivitä</string>
+    <string name="balance_loading">Ladataan saldoja…</string>
+    <string name="balance_empty">Ei tokeneita</string>
+    <string name="balance_no_wallet_desc">Määritä lompakkosi Asetuksissa\nnähdäksesi saldosi</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Sallitut tokenit</string>
+    <string name="settings_add_token">Lisää token</string>
+    <string name="add_token_prompt">Syötä token-sopimuksen osoite:</string>
+    <string name="add_token_validating">Validoidaan tokenia…</string>
+    <string name="add_token_button">Lisää</string>
+    <string name="delete">Poista</string>
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Tervetuloa</string>
+    <string name="welcome_sovereignty">Sinun avaimesi.\nSinun varasi.\nSinun suvereniteetisi.</string>
+    <string name="welcome_desc">Varojasi EI säilytetä tässä sovelluksessa. Ne ovat lohkoketjussa, hallinnassasi yksityisten avaintesi kautta.\n\nTämä sovellus tallentaa vain avaimesi turvallisesti. Emme voi käyttää varojasi.\n\nHuom: Jotkut tokenit (USDC, USDT) voidaan jäädyttää liikkeeseenlaskijoiden toimesta. Maksimaalista suvereniteettia varten käytä ETH:ta tai hajautettuja tokeneita.</string>
+    <string name="welcome_warning_title">Avaimesi = Varasi</string>
+    <string name="welcome_warning_desc">Jos menetät yksityiset avaimesi tai jaat ne jonkun kanssa, menetät pysyvästi varojesi hallinnan.\n\nPalautusvaihtoehtoa ei ole. Mikään tukitiimi ei voi auttaa. Tämä on aidon omistajuuden luonne.\n\nPidä aina turvallinen varmuuskopio avaimistasi.</string>
+    <string name="welcome_opensource">Avoimen lähdekoodin ohjelmisto. Varmista, älä luota sokeasti.</string>
+    <string name="welcome_start">Ymmärrän, aloitetaan</string>
+
+    <!-- Merchant Identity -->
+    <string name="settings_merchant_identity">Kauppiaan identiteetti</string>
+    <string name="settings_merchant_name">Yrityksen nimi</string>
+    <string name="settings_merchant_name_hint">Kahvilani</string>
+    <string name="settings_merchant_domain">Verkkotunnus / ENS</string>
+    <string name="settings_merchant_domain_hint">kahvilani.eth tai kahvilani.fi</string>
+    <string name="settings_merchant_identity_desc">Näytetään asiakkaille maksun aikana</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Yksityisyystila</string>
+    <string name="settings_stealth_desc">Vastaanota maksuja kertakäyttöosoitteisiin (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Käytössä</string>
+    <string name="settings_stealth_info">Jokainen maksu menee yksilölliseen osoitteeseen, josta vain sinä voit käyttää. Tarkkailijat eivät voi yhdistää maksuja yritykseesi.</string>
+    <string name="stealth_address_label">Stealth-tila aktiivinen</string>
+    <string name="stealth_payment_note">Maksu lähetetään yksityiseen osoitteeseen</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Vastaanottajan osoite</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Yksityinen lompakko</string>
+    <string name="stealth_wallet_addresses">%d stealth-osoitteen yli</string>
+    <string name="stealth_wallet_privacy_title">Varasi ovat yksityisiä</string>
+    <string name="stealth_wallet_privacy_desc">Tämä saldo ei ole yhdistetty julkiseen lompakkoosi. Käytä suoraan toimittajille, pörsseille tai minne tahansa - yritysidentiteettisi pysyy piilossa.</string>
+    <string name="stealth_wallet_send">Lähetä</string>
+    <string name="stealth_wallet_send_title">Lähetä yksityisestä lompakosta</string>
+    <string name="stealth_wallet_available">Saatavilla: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Summa</string>
+    <string name="nav_stealth_wallet">Yksityinen lompakko</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Useita osoitteita</string>
+    <string name="stealth_wallet_gas_desc">Varasi ovat hajautettuna %d osoitteeseen. Suurten summien käyttö voi vaatia useita tapahtumia, mikä lisää kaasukustannuksia.</string>
+    <string name="stealth_wallet_consolidate">Yhdistä päälompakkoon</string>
+    <string name="stealth_wallet_consolidate_title">Yhdistetäänkö varat?</string>
+    <string name="stealth_wallet_consolidate_warning">Tämä siirtää kaikki varat yksityisestä lompakostasi päälompakko-osoitteeseesi.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">VAROITUS: Tämä rikkoo yksityisyyden. Päälompakkosi yhdistetään kaikkiin vastaanotettuihin maksuihin.</string>
+    <string name="stealth_wallet_consolidate_benefit">Etu: Tulevat käytöt vaativat vain yhden tapahtuman (alemmat kaasukustannukset).</string>
+    <string name="stealth_wallet_consolidate_confirm">Yhdistä</string>
+    <string name="stealth_wallet_consolidate_success">Varat yhdistetty päälompakkoon</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Maksajan yksityisyys</string>
+    <string name="settings_payer_privacy_desc">Maksa väliaikaisilta tileiltä (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Jokainen maksu käyttää yksilöllistä tiliä. Päälompakko-osoitteesi ei näy ketjussa.</string>
+    <string name="settings_payer_privacy_requires_api">API-avain vaaditaan mainnetille</string>
+    <string name="settings_payer_privacy_public_bundler">Ilmainen testnetissä (julkinen bundler)</string>
+    <string name="payer_privacy_note">Lompakko-osoitteesi piilotetaan</string>
+    <string name="payer_privacy_processing">Käsitellään yksityistä maksua…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Osoitekirja</string>
+    <string name="address_book_add">Lisää yhteystieto</string>
+    <string name="address_book_edit">Muokkaa yhteystietoa</string>
+    <string name="address_book_search">Hae yhteystietoja…</string>
+    <string name="address_book_empty">Ei yhteystietoja vielä</string>
+    <string name="address_book_empty_hint">Lisää osoitteita tunnistaaksesi helposti\nkenelle maksat tai keneltä vastaanotat</string>
+    <string name="address_book_no_results">Yhteystietoja ei löytynyt</string>
+    <string name="address_book_address">Lompakko-osoite</string>
+    <string name="address_book_name">Nimi</string>
+    <string name="address_book_name_hint">esim. Kahvila, Matti Meikäläinen</string>
+    <string name="address_book_note">Muistiinpano (valinnainen)</string>
+    <string name="address_book_note_hint">esim. Toimittaja, Ystävä</string>
+    <string name="address_book_delete_title">Poistetaanko yhteystieto?</string>
+    <string name="address_book_delete_message">Poistetaanko %s osoitekirjastasi?</string>
+    <string name="address_book_saved">Yhteystieto tallennettu</string>
+    <string name="address_book_unknown">Tuntematon</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Yksinkertainen tila</string>
+    <string name="settings_simple_mode_desc">Helppokäyttöinen, perusasetukset</string>
+    <string name="settings_advanced_mode">Edistynyt tila</string>
+    <string name="settings_advanced_mode_desc">Kryptoasetukset edistyneille käyttäjille</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Jaa yhteystieto</string>
+    <string name="share_contact_title">Jaa osoitteesi</string>
+    <string name="share_contact_ready">Valmis jakamaan</string>
+    <string name="share_contact_ready_desc">Pidä puhelimesi lähellä\ntoista CleanSky-laitetta</string>
+    <string name="share_contact_received">Yhteystieto vastaanotettu!</string>
+    <string name="share_contact_received_name">%s haluaa yhdistää</string>
+    <string name="share_contact_save">Tallenna yhteystietoihin</string>
+    <string name="share_contact_your_name">Nimesi (valinnainen)</string>
+    <string name="share_contact_your_name_hint">Miten muut näkevät sinut</string>
+    <string name="share_contact_mutual">Vaihda yhteystietoja</string>
+    <string name="share_contact_mutual_desc">Molemmat laitteet jakavat osoitteet samanaikaisesti</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Lähetä</string>
+    <string name="send_title">Lähetä yhteystiedolle</string>
+    <string name="send_select_contact">Valitse vastaanottaja</string>
+    <string name="send_no_contacts">Ei yhteystietoja vielä</string>
+    <string name="send_no_contacts_hint">Lisää yhteystietoja NFC:llä tai manuaalisesti\nlähettääksesi heille maksuja</string>
+    <string name="send_amount">Summa</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Vastaanottaja: %s</string>
+    <string name="send_confirm">Lähetä %1$s %2$s</string>
+    <string name="send_processing">Lähetetään…</string>
+    <string name="send_success">Lähetys onnistui!</string>
+    <string name="send_success_desc">%1$s %2$s lähetetty henkilölle %3$s</string>
+    <string name="send_error">Lähetys epäonnistui</string>
+    <string name="send_enter_amount">Syötä summa</string>
+    <string name="send_new">Uusi siirto</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Kaikki</string>
+    <string name="history_filter_received">Vastaanotettu</string>
+    <string name="history_filter_sent">Lähetetty</string>
+    <string name="history_filter_contact">Yhteystieto</string>
+    <string name="history_filter_by_contact">Suodata yhteystiedon mukaan</string>
+    <string name="history_show_all">Näytä kaikki</string>
+    <string name="history_no_results">Yksikään tapahtuma ei vastaa suodatinta</string>
+    <string name="history_add_contact">Lisää yhteystietoihin</string>
+    <string name="history_edit_contact">Muokkaa yhteystietoa</string>
+    <string name="history_from">Lähettäjä</string>
+    <string name="history_to">Vastaanottaja</string>
+    <string name="history_date">Päivämäärä</string>
+    <string name="history_tx_hash">Tapahtuma</string>
+    <string name="history_refund">Palauta</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Summa liian pieni</string>
+    <string name="scam_amount_large_warning">Suuri summa</string>
+    <string name="scam_amount_large_desc">Olet lähettämässä %1$s %2$s.\nVahvista, että summa on oikein.</string>
+    <string name="scam_confirm_large">Vahvista suuri siirto</string>
+    <string name="scam_dust_attack_warning">Epäilyttävä pyyntö</string>
+    <string name="scam_dust_attack_desc">Tämä on hyvin pieni summa (%1$s %2$s). Dust-hyökkäykset käyttävät pieniä maksuja lompakoiden seuraamiseen. Hylkää jos odottamaton.</string>
+    <string name="scam_receive_large_warning">Suuri maksupyyntö</string>
+    <string name="scam_receive_large_desc">Tämä pyyntö on %1$s %2$s. Varmista, että summa on oikein ennen maksamista.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Vain vastaanotto</string>
+    <string name="settings_mode_receive_only">Vastaanota</string>
+    <string name="settings_mode_receive_only_desc">Ei yksityistä avainta</string>
+    <string name="settings_receive_only">Vain vastaanotto -asetukset</string>
+    <string name="settings_escrow_address">Escrow-osoite</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow ei ole määritetty</string>
+    <string name="receive_only_no_escrow_desc">Määritä escrow-osoite ja API key Asetuksissa</string>
+    <string name="receive_only_security_notice">Ei yksityistä avainta tällä laitteella. Turvallinen varkaustapauksessa.</string>
+    <string name="receive_only_api_key_required">API key vaaditaan relayer-suoritukseen</string>
+</resources>

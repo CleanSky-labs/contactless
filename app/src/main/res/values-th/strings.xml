@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky ไร้สัมผัส</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">จ่าย</string>
+    <string name="nav_collect">รับ</string>
+    <string name="nav_settings">ตั้งค่า</string>
+    <string name="nav_history">ประวัติ</string>
+    <string name="nav_refund">คืนเงิน</string>
+    <string name="nav_balance">ยอดคงเหลือ</string>
+    <string name="nav_back">กลับ</string>
+
+    <!-- Common actions -->
+    <string name="back">กลับ</string>
+    <string name="save">บันทึก</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">ไม่มีกระเป๋าเงิน</string>
+    <string name="pay_no_wallet_desc">ตั้งค่ากระเป๋าเงินในการตั้งค่า\nเพื่อทำการชำระเงิน</string>
+    <string name="pay_ready">พร้อมจ่าย</string>
+    <string name="pay_ready_desc">แตะโทรศัพท์ใกล้\nอุปกรณ์ของผู้ขาย</string>
+    <string name="pay_request_title">คำขอชำระเงิน</string>
+    <string name="pay_network">เครือข่าย: %s</string>
+    <string name="pay_expired">คำขอหมดอายุ</string>
+    <string name="pay_cancel">ยกเลิก</string>
+    <string name="pay_confirm">จ่าย</string>
+    <string name="pay_new">การชำระเงินใหม่</string>
+    <string name="pay_signing">กำลังลงนามธุรกรรม…</string>
+    <string name="pay_tx_signed">ลงนามธุรกรรมแล้ว</string>
+    <string name="pay_tx_signed_desc">แตะโทรศัพท์ใกล้\nผู้ขายเพื่อส่ง</string>
+    <string name="pay_authenticating">กำลังยืนยันตัวตน…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">ไม่มีกระเป๋าเงิน</string>
+    <string name="collect_no_wallet_desc">ตั้งค่ากระเป๋าเงินในการตั้งค่า\nเพื่อรับการชำระเงิน</string>
+    <string name="collect_amount">จำนวนที่จะรับ</string>
+    <string name="collect_button">รับ</string>
+    <string name="collect_waiting">รอการชำระเงิน</string>
+    <string name="collect_waiting_desc">ขอให้ลูกค้า\nแตะโทรศัพท์ใกล้ๆ</string>
+    <string name="collect_new">การรับใหม่</string>
+    <string name="collect_processing">กำลังประมวลผลการชำระเงิน…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">โหมดการทำงาน</string>
+    <string name="settings_mode_pay">จ่าย</string>
+    <string name="settings_mode_pay_desc">ทำการชำระเงิน</string>
+    <string name="settings_mode_collect">รับ</string>
+    <string name="settings_mode_collect_desc">รับการชำระเงิน</string>
+    <string name="settings_wallet">กระเป๋าเงิน</string>
+    <string name="settings_wallet_address">ที่อยู่</string>
+    <string name="settings_wallet_none">ยังไม่ได้ตั้งค่ากระเป๋าเงิน</string>
+    <string name="settings_wallet_create">สร้าง</string>
+    <string name="settings_wallet_import">นำเข้า</string>
+    <string name="settings_network">เครือข่ายบล็อกเชน</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">การดำเนินการธุรกรรม</string>
+    <string name="settings_exec_direct">โดยตรง</string>
+    <string name="settings_exec_direct_desc">คุณจ่ายค่าแก๊ส</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">แก๊สสนับสนุนผ่าน relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 กับ Paymaster</string>
+    <string name="settings_api_key">คีย์ API</string>
+    <string name="settings_save">บันทึกและกลับ</string>
+    <string name="settings_not_available">ไม่พร้อมใช้งานบนเครือข่ายนี้</string>
+    <string name="settings_language">ภาษา</string>
+    <string name="settings_language_system">ค่าเริ่มต้นของระบบ</string>
+    <string name="collect_select_currency">เลือกสกุลเงิน</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">ความปลอดภัย</string>
+    <string name="security_encryption">การเข้ารหัสคีย์</string>
+    <string name="security_encryption_desc">AES-256-GCM กับ Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">โมดูลความปลอดภัยฮาร์ดแวร์ทำงานอยู่</string>
+    <string name="security_strongbox_unavailable">ไม่พร้อมใช้งานบนอุปกรณ์นี้</string>
+    <string name="security_biometric">การยืนยันตัวตนไบโอเมตริก</string>
+    <string name="security_biometric_required">จำเป็นสำหรับการชำระเงิน</string>
+    <string name="security_biometric_disabled">ปิดใช้งาน</string>
+    <string name="security_biometric_unavailable">ไม่พร้อมใช้งาน</string>
+    <string name="security_export">ส่งออกคีย์ส่วนตัว</string>
+    <string name="security_export_desc">เก็บคีย์ของคุณอย่างปลอดภัย</string>
+    <string name="security_delete">ลบกระเป๋าเงิน</string>
+    <string name="security_delete_desc">ลบข้อมูลทั้งหมดอย่างถาวร</string>
+    <string name="security_delete_title">ลบกระเป๋าเงิน</string>
+    <string name="security_delete_warning">การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="security_delete_warning2">คุณจะสูญเสียการเข้าถึงทรัพย์สินทั้งหมดหากไม่มีการสำรองคีย์ส่วนตัว</string>
+    <string name="security_delete_warning3">ตรวจสอบให้แน่ใจว่าคุณได้ส่งออกคีย์ก่อนดำเนินการต่อ</string>
+    <string name="security_delete_confirm">ลบ</string>
+    <string name="security_status_active">ใช้งานอยู่</string>
+    <string name="security_status_warning">คำเตือน</string>
+    <string name="security_status_na">ไม่เกี่ยวข้อง</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">นำเข้ากระเป๋าเงิน</string>
+    <string name="import_private_key">คีย์ส่วนตัว</string>
+    <string name="import_seed_phrase">Seed Phrase</string>
+    <string name="import_prompt">ป้อนคีย์ส่วนตัวของคุณ:</string>
+    <string name="import_prompt_seed">ป้อน seed phrase ของคุณ (12–24 คำ):</string>
+    <string name="import_seed_hint">คำ1 คำ2 คำ3 …</string>
+    <string name="import_button">นำเข้า</string>
+    <string name="import_error_invalid">คีย์ส่วนตัวไม่ถูกต้อง</string>
+    <string name="import_error_invalid_seed">Seed phrase ไม่ถูกต้อง</string>
+    <string name="import_error_encryption">ข้อผิดพลาดการเข้ารหัส</string>
+    <string name="export_title">คีย์ส่วนตัว</string>
+    <string name="export_warning">ห้ามแชร์คีย์นี้ ใครก็ตามที่มีคีย์นี้จะควบคุมทรัพย์สินของคุณได้ทั้งหมด</string>
+    <string name="export_understood">เข้าใจแล้ว</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">สรุป</string>
+    <string name="history_received">รับแล้ว</string>
+    <string name="history_sent">ส่งแล้ว</string>
+    <string name="history_refunded">คืนเงินแล้ว</string>
+    <string name="history_empty">ไม่มีธุรกรรม</string>
+    <string name="history_empty_desc">ธุรกรรมบน %s\nจะแสดงที่นี่</string>
+    <string name="history_payment_received">รับการชำระเงินแล้ว</string>
+    <string name="history_payment_sent">ส่งการชำระเงินแล้ว</string>
+    <string name="history_refund_sent">คืนเงิน</string>
+    <string name="history_refund_received">รับเงินคืนแล้ว</string>
+    <string name="history_status_pending">รอดำเนินการ</string>
+    <string name="history_status_confirmed">ยืนยันแล้ว</string>
+    <string name="history_status_failed">ล้มเหลว</string>
+    <string name="history_status_refunded">คืนเงินแล้ว</string>
+    <string name="history_status_partial">บางส่วน</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">ธุรกรรมเดิม</string>
+    <string name="refund_amount">จำนวน</string>
+    <string name="refund_already">คืนเงินแล้ว</string>
+    <string name="refund_available">มีอยู่</string>
+    <string name="refund_recipient">ผู้รับ</string>
+    <string name="refund_date">วันที่</string>
+    <string name="refund_type">ประเภทการคืนเงิน</string>
+    <string name="refund_full">เต็มจำนวน</string>
+    <string name="refund_partial">บางส่วน</string>
+    <string name="refund_partial_desc">ระบุจำนวน</string>
+    <string name="refund_amount_label">จำนวนคืน (%s)</string>
+    <string name="refund_max">สูงสุด: %1$s %2$s</string>
+    <string name="refund_gas_notice">คุณจะจ่ายค่าแก๊สสำหรับธุรกรรมนี้</string>
+    <string name="refund_button">คืนเงิน %1$s %2$s</string>
+    <string name="refund_processing">กำลังประมวลผลการคืนเงิน…</string>
+    <string name="refund_success">คืนเงินสำเร็จ</string>
+    <string name="refund_done">เสร็จสิ้น</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">โทเค็นของคุณ</string>
+    <string name="balance_manage">จัดการ</string>
+    <string name="balance_refresh">รีเฟรช</string>
+    <string name="balance_loading">กำลังโหลดยอดคงเหลือ…</string>
+    <string name="balance_empty">ไม่มีโทเค็น</string>
+    <string name="balance_no_wallet_desc">ตั้งค่ากระเป๋าเงินในการตั้งค่า\nเพื่อดูยอดคงเหลือของคุณ</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">โทเค็นที่อนุญาต</string>
+    <string name="settings_add_token">เพิ่มโทเค็น</string>
+    <string name="add_token_prompt">ป้อนที่อยู่สัญญาโทเค็น:</string>
+    <string name="add_token_validating">กำลังตรวจสอบโทเค็น…</string>
+    <string name="add_token_button">เพิ่ม</string>
+    <string name="delete">ลบ</string>
+
+    <!-- Common -->
+    <string name="cancel">ยกเลิก</string>
+    <string name="close">ปิด</string>
+    <string name="retry">ลองอีกครั้ง</string>
+    <string name="error">ข้อผิดพลาด</string>
+    <string name="copy">คัดลอก</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">ยังไม่ได้ตั้งค่ากระเป๋าเงิน</string>
+    <string name="error_device_security">ข้อผิดพลาดความปลอดภัยอุปกรณ์</string>
+    <string name="error_auth">ข้อผิดพลาดการยืนยันตัวตน</string>
+    <string name="error_unknown">ข้อผิดพลาดที่ไม่รู้จัก</string>
+    <string name="error_keystore_unavailable">Keystore ไม่พร้อมใช้งาน - บางฟังก์ชันจะไม่ทำงาน</string>
+    <string name="error_encryption_restart">ข้อผิดพลาดการเข้ารหัส - รีสตาร์ทแอป</string>
+    <string name="error_auth_cancelled">ยกเลิกการยืนยันตัวตน</string>
+    <string name="error_invalid_address">ที่อยู่ไม่ถูกต้อง</string>
+    <string name="error_invalid_address_format">รูปแบบที่อยู่ไม่ถูกต้อง</string>
+    <string name="error_token_already_added">เพิ่มโทเค็นแล้ว</string>
+    <string name="stealth_spend_sent_tx">ส่งแล้ว! Tx: %s…</string>
+    <string name="token_native">ดั้งเดิม</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">ยอดคงเหลือของคุณ</string>
+    <string name="pay_insufficient_balance">ยอดคงเหลือไม่เพียงพอ</string>
+    <string name="pay_need_more">คุณต้องการ %1$s %2$s เพิ่มเติม</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">ยินดีต้อนรับ</string>
+    <string name="welcome_sovereignty">คีย์ของคุณ\nทรัพย์สินของคุณ\nอำนาจอธิปไตยของคุณ</string>
+    <string name="welcome_desc">ทรัพย์สินของคุณไม่ได้ถูกเก็บในแอปนี้ มันอยู่บนบล็อกเชน ควบคุมโดยคีย์ส่วนตัวของคุณ\n\nแอปนี้เก็บเฉพาะคีย์ของคุณอย่างปลอดภัย เราไม่สามารถเข้าถึงทรัพย์สินของคุณได้\n\nหมายเหตุ: โทเค็นบางตัว (USDC, USDT) สามารถถูกอายัดโดยผู้ออกได้ สำหรับอำนาจอธิปไตยสูงสุด ใช้ ETH ดั้งเดิมหรือโทเค็นกระจายศูนย์</string>
+    <string name="welcome_warning_title">คีย์ของคุณ = ทรัพย์สินของคุณ</string>
+    <string name="welcome_warning_desc">หากคุณทำคีย์ส่วนตัวหายหรือแชร์กับใคร คุณจะสูญเสียการควบคุมทรัพย์สินของคุณอย่างถาวร\n\nไม่มีตัวเลือกการกู้คืน ไม่มีทีมสนับสนุนที่สามารถช่วยคุณได้ นี่คือธรรมชาติของการเป็นเจ้าของที่แท้จริง\n\nเก็บสำรองคีย์ของคุณอย่างปลอดภัยเสมอ</string>
+    <string name="welcome_opensource">ซอฟต์แวร์โอเพนซอร์ส ตรวจสอบ อย่าเชื่อ</string>
+    <string name="welcome_start">เข้าใจแล้ว เริ่มกันเลย</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">ข้อมูลผู้ขาย</string>
+    <string name="settings_merchant_name">ชื่อธุรกิจ</string>
+    <string name="settings_merchant_name_hint">ร้านกาแฟของฉัน</string>
+    <string name="settings_merchant_domain">โดเมน / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth หรือ mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">แสดงต่อลูกค้าระหว่างการชำระเงิน</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">โหมดความเป็นส่วนตัว</string>
+    <string name="settings_stealth_desc">รับการชำระเงินไปยังที่อยู่ใช้ครั้งเดียว (EIP-5564)</string>
+    <string name="settings_stealth_enabled">เปิดใช้งาน</string>
+    <string name="settings_stealth_info">การชำระเงินแต่ละครั้งไปยังที่อยู่เฉพาะที่เฉพาะคุณเท่านั้นที่สามารถใช้จ่ายได้ ผู้สังเกตไม่สามารถเชื่อมโยงการชำระเงินกับธุรกิจของคุณได้</string>
+    <string name="stealth_address_label">โหมด Stealth ทำงานอยู่</string>
+    <string name="stealth_payment_note">การชำระเงินจะถูกส่งไปยังที่อยู่ส่วนตัว</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">ที่อยู่ผู้รับ</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">กระเป๋าเงินส่วนตัว</string>
+    <string name="stealth_wallet_addresses">ใน %d ที่อยู่ stealth</string>
+    <string name="stealth_wallet_privacy_title">ทรัพย์สินของคุณเป็นส่วนตัว</string>
+    <string name="stealth_wallet_privacy_desc">ยอดคงเหลือนี้ไม่เชื่อมโยงกับกระเป๋าเงินสาธารณะของคุณ ใช้จ่ายโดยตรงกับซัพพลายเออร์ เอ็กซ์เชนจ์ หรือที่ใดก็ได้ - ตัวตนธุรกิจของคุณยังคงซ่อนอยู่</string>
+    <string name="stealth_wallet_send">ส่ง</string>
+    <string name="stealth_wallet_send_title">ส่งจากกระเป๋าเงินส่วนตัว</string>
+    <string name="stealth_wallet_available">มี: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">จำนวน</string>
+    <string name="nav_stealth_wallet">กระเป๋าเงินส่วนตัว</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">หลายที่อยู่</string>
+    <string name="stealth_wallet_gas_desc">ทรัพย์สินของคุณกระจายอยู่ใน %d ที่อยู่ การใช้จ่ายจำนวนมากอาจต้องใช้หลายธุรกรรม ซึ่งเพิ่มค่าแก๊ส</string>
+    <string name="stealth_wallet_consolidate">รวมไปยังกระเป๋าเงินหลัก</string>
+    <string name="stealth_wallet_consolidate_title">รวมเงิน?</string>
+    <string name="stealth_wallet_consolidate_warning">นี่จะโอนเงินทั้งหมดจากกระเป๋าเงินส่วนตัวของคุณไปยังที่อยู่กระเป๋าเงินหลัก</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">คำเตือน: นี่จะทำลายความเป็นส่วนตัว กระเป๋าเงินหลักของคุณจะถูกเชื่อมโยงกับการชำระเงินที่ได้รับทั้งหมด</string>
+    <string name="stealth_wallet_consolidate_benefit">ประโยชน์: การใช้จ่ายในอนาคตจะต้องใช้เพียงธุรกรรมเดียว (ค่าแก๊สต่ำลง)</string>
+    <string name="stealth_wallet_consolidate_confirm">รวม</string>
+    <string name="stealth_wallet_consolidate_success">รวมเงินไปยังกระเป๋าเงินหลักแล้ว</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ความเป็นส่วนตัวของผู้จ่าย</string>
+    <string name="settings_payer_privacy_desc">ชำระเงินจากบัญชีชั่วคราว (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">การชำระเงินแต่ละครั้งใช้บัญชีเฉพาะ ที่อยู่กระเป๋าเงินหลักของคุณไม่ปรากฏบนเชน</string>
+    <string name="settings_payer_privacy_requires_api">ต้องใช้คีย์ API สำหรับ mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">ฟรีบน testnets (bundler สาธารณะ)</string>
+    <string name="payer_privacy_note">ที่อยู่กระเป๋าเงินของคุณจะถูกซ่อน</string>
+    <string name="payer_privacy_processing">กำลังประมวลผลการชำระเงินส่วนตัว…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">สมุดที่อยู่</string>
+    <string name="address_book_add">เพิ่มผู้ติดต่อ</string>
+    <string name="address_book_edit">แก้ไขผู้ติดต่อ</string>
+    <string name="address_book_search">ค้นหาผู้ติดต่อ…</string>
+    <string name="address_book_empty">ยังไม่มีผู้ติดต่อ</string>
+    <string name="address_book_empty_hint">เพิ่มที่อยู่เพื่อระบุตัวตน\nผู้ที่คุณจ่ายหรือรับได้อย่างง่ายดาย</string>
+    <string name="address_book_no_results">ไม่พบผู้ติดต่อ</string>
+    <string name="address_book_address">ที่อยู่กระเป๋าเงิน</string>
+    <string name="address_book_name">ชื่อ</string>
+    <string name="address_book_name_hint">เช่น ร้านกาแฟ, สมชาย</string>
+    <string name="address_book_note">หมายเหตุ (ไม่บังคับ)</string>
+    <string name="address_book_note_hint">เช่น ซัพพลายเออร์, เพื่อน</string>
+    <string name="address_book_delete_title">ลบผู้ติดต่อ?</string>
+    <string name="address_book_delete_message">ลบ %s ออกจากสมุดที่อยู่ของคุณ?</string>
+    <string name="address_book_saved">บันทึกผู้ติดต่อแล้ว</string>
+    <string name="address_book_unknown">ไม่ทราบ</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">โหมดง่าย</string>
+    <string name="settings_simple_mode_desc">ใช้งานง่าย ตัวเลือกพื้นฐาน</string>
+    <string name="settings_advanced_mode">โหมดขั้นสูง</string>
+    <string name="settings_advanced_mode_desc">ตัวเลือกคริปโตสำหรับผู้ใช้ขั้นสูง</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">แชร์ผู้ติดต่อ</string>
+    <string name="share_contact_title">แชร์ที่อยู่ของคุณ</string>
+    <string name="share_contact_ready">พร้อมแชร์</string>
+    <string name="share_contact_ready_desc">นำโทรศัพท์ของคุณเข้าใกล้\nอุปกรณ์ CleanSky อื่น</string>
+    <string name="share_contact_received">ได้รับผู้ติดต่อแล้ว!</string>
+    <string name="share_contact_received_name">%s ต้องการเชื่อมต่อ</string>
+    <string name="share_contact_save">บันทึกไปยังผู้ติดต่อ</string>
+    <string name="share_contact_your_name">ชื่อของคุณ (ไม่บังคับ)</string>
+    <string name="share_contact_your_name_hint">ผู้อื่นจะเห็นคุณอย่างไร</string>
+    <string name="share_contact_mutual">แลกเปลี่ยนผู้ติดต่อ</string>
+    <string name="share_contact_mutual_desc">ทั้งสองอุปกรณ์แชร์ที่อยู่พร้อมกัน</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ส่ง</string>
+    <string name="send_title">ส่งไปยังผู้ติดต่อ</string>
+    <string name="send_select_contact">เลือกผู้รับ</string>
+    <string name="send_no_contacts">ยังไม่มีผู้ติดต่อ</string>
+    <string name="send_no_contacts_hint">เพิ่มผู้ติดต่อผ่าน NFC หรือด้วยตนเอง\nเพื่อส่งการชำระเงินให้พวกเขา</string>
+    <string name="send_amount">จำนวน</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">ถึง: %s</string>
+    <string name="send_confirm">ส่ง %1$s %2$s</string>
+    <string name="send_processing">กำลังส่ง…</string>
+    <string name="send_success">ส่งสำเร็จ!</string>
+    <string name="send_success_desc">ส่ง %1$s %2$s ไปยัง %3$s แล้ว</string>
+    <string name="send_error">ส่งไม่สำเร็จ</string>
+    <string name="send_enter_amount">ป้อนจำนวน</string>
+    <string name="send_new">การโอนใหม่</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">ทั้งหมด</string>
+    <string name="history_filter_received">รับแล้ว</string>
+    <string name="history_filter_sent">ส่งแล้ว</string>
+    <string name="history_filter_contact">ผู้ติดต่อ</string>
+    <string name="history_filter_by_contact">กรองตามผู้ติดต่อ</string>
+    <string name="history_show_all">แสดงทั้งหมด</string>
+    <string name="history_no_results">ไม่มีธุรกรรมที่ตรงกับตัวกรอง</string>
+    <string name="history_add_contact">เพิ่มไปยังผู้ติดต่อ</string>
+    <string name="history_edit_contact">แก้ไขผู้ติดต่อ</string>
+    <string name="history_from">จาก</string>
+    <string name="history_to">ถึง</string>
+    <string name="history_date">วันที่</string>
+    <string name="history_tx_hash">ธุรกรรม</string>
+    <string name="history_refund">คืนเงิน</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">จำนวนน้อยเกินไป</string>
+    <string name="scam_amount_large_warning">จำนวนมาก</string>
+    <string name="scam_amount_large_desc">คุณกำลังจะส่ง %1$s %2$s\nกรุณายืนยันว่าถูกต้อง</string>
+    <string name="scam_confirm_large">ยืนยันการโอนจำนวนมาก</string>
+    <string name="scam_dust_attack_warning">คำขอที่น่าสงสัย</string>
+    <string name="scam_dust_attack_desc">นี่เป็นจำนวนที่น้อยมาก (%1$s %2$s) การโจมตีด้วยฝุ่นใช้การชำระเงินเล็กน้อยเพื่อติดตามกระเป๋าเงิน ปฏิเสธหากไม่คาดคิด</string>
+    <string name="scam_receive_large_warning">คำขอชำระเงินจำนวนมาก</string>
+    <string name="scam_receive_large_desc">คำขอนี้สำหรับ %1$s %2$s ตรวจสอบว่านี่คือจำนวนที่ถูกต้องก่อนชำระเงิน</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">รับเท่านั้น</string>
+    <string name="settings_mode_receive_only">รับ</string>
+    <string name="settings_mode_receive_only_desc">ไม่มีคีย์ส่วนตัว</string>
+    <string name="settings_receive_only">การตั้งค่ารับเท่านั้น</string>
+    <string name="settings_escrow_address">ที่อยู่ Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">ยังไม่ได้ตั้งค่า Escrow</string>
+    <string name="receive_only_no_escrow_desc">ตั้งค่าที่อยู่ escrow และ API key ในการตั้งค่า</string>
+    <string name="receive_only_security_notice">ไม่มีคีย์ส่วนตัวในอุปกรณ์นี้ ปลอดภัยแม้ถูกขโมย</string>
+    <string name="receive_only_api_key_required">ต้องใช้ API key สำหรับการทำงานผ่าน relayer</string>
+</resources>

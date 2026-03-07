@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Không tiếp xúc</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Thanh toán</string>
+    <string name="nav_collect">Nhận</string>
+    <string name="nav_settings">Cài đặt</string>
+    <string name="nav_history">Lịch sử</string>
+    <string name="nav_refund">Hoàn tiền</string>
+    <string name="nav_balance">Số dư</string>
+    <string name="nav_back">Quay lại</string>
+
+    <!-- Common actions -->
+    <string name="back">Quay lại</string>
+    <string name="save">Lưu</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Không có ví</string>
+    <string name="pay_no_wallet_desc">Thiết lập ví trong Cài đặt\nđể thực hiện thanh toán</string>
+    <string name="pay_ready">Sẵn sàng thanh toán</string>
+    <string name="pay_ready_desc">Đưa điện thoại lại gần\nthiết bị của người bán</string>
+    <string name="pay_request_title">Yêu cầu thanh toán</string>
+    <string name="pay_network">Mạng: %s</string>
+    <string name="pay_expired">Yêu cầu đã hết hạn</string>
+    <string name="pay_cancel">Hủy</string>
+    <string name="pay_confirm">Thanh toán</string>
+    <string name="pay_new">Thanh toán mới</string>
+    <string name="pay_signing">Đang ký giao dịch…</string>
+    <string name="pay_tx_signed">Giao dịch đã được ký</string>
+    <string name="pay_tx_signed_desc">Đưa điện thoại lại gần\nngười bán để gửi</string>
+    <string name="pay_authenticating">Đang xác thực…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Không có ví</string>
+    <string name="collect_no_wallet_desc">Thiết lập ví trong Cài đặt\nđể nhận thanh toán</string>
+    <string name="collect_amount">Số tiền nhận</string>
+    <string name="collect_button">Nhận</string>
+    <string name="collect_waiting">Đang chờ thanh toán</string>
+    <string name="collect_waiting_desc">Yêu cầu khách hàng\nđưa điện thoại lại gần</string>
+    <string name="collect_new">Nhận mới</string>
+    <string name="collect_processing">Đang xử lý thanh toán…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Chế độ hoạt động</string>
+    <string name="settings_mode_pay">Thanh toán</string>
+    <string name="settings_mode_pay_desc">Thực hiện thanh toán</string>
+    <string name="settings_mode_collect">Nhận</string>
+    <string name="settings_mode_collect_desc">Nhận thanh toán</string>
+    <string name="settings_wallet">Ví</string>
+    <string name="settings_wallet_address">Địa chỉ</string>
+    <string name="settings_wallet_none">Chưa cấu hình ví</string>
+    <string name="settings_wallet_create">Tạo</string>
+    <string name="settings_wallet_import">Nhập</string>
+    <string name="settings_network">Mạng blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Thực thi giao dịch</string>
+    <string name="settings_exec_direct">Trực tiếp</string>
+    <string name="settings_exec_direct_desc">Bạn trả phí gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas được tài trợ qua relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 với Paymaster</string>
+    <string name="settings_api_key">Khóa API</string>
+    <string name="settings_save">Lưu và quay lại</string>
+    <string name="settings_not_available">Không khả dụng trên mạng này</string>
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_language_system">Mặc định hệ thống</string>
+    <string name="collect_select_currency">Chọn tiền tệ</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Bảo mật</string>
+    <string name="security_encryption">Mã hóa khóa</string>
+    <string name="security_encryption_desc">AES-256-GCM với Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Mô-đun bảo mật phần cứng đang hoạt động</string>
+    <string name="security_strongbox_unavailable">Không khả dụng trên thiết bị này</string>
+    <string name="security_biometric">Xác thực sinh trắc học</string>
+    <string name="security_biometric_required">Bắt buộc cho thanh toán</string>
+    <string name="security_biometric_disabled">Đã tắt</string>
+    <string name="security_biometric_unavailable">Không khả dụng</string>
+    <string name="security_export">Xuất khóa riêng</string>
+    <string name="security_export_desc">Lưu trữ khóa của bạn một cách an toàn</string>
+    <string name="security_delete">Xóa ví</string>
+    <string name="security_delete_desc">Xóa vĩnh viễn tất cả dữ liệu</string>
+    <string name="security_delete_title">Xóa ví</string>
+    <string name="security_delete_warning">Hành động này KHÔNG THỂ HOÀN TÁC.</string>
+    <string name="security_delete_warning2">Bạn sẽ mất quyền truy cập vào tất cả tài sản nếu không có bản sao lưu khóa riêng.</string>
+    <string name="security_delete_warning3">Đảm bảo bạn đã xuất khóa trước khi tiếp tục.</string>
+    <string name="security_delete_confirm">Xóa</string>
+    <string name="security_status_active">Đang hoạt động</string>
+    <string name="security_status_warning">Cảnh báo</string>
+    <string name="security_status_na">Không áp dụng</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Nhập ví</string>
+    <string name="import_private_key">Khóa riêng</string>
+    <string name="import_seed_phrase">Cụm từ hạt giống</string>
+    <string name="import_prompt">Nhập khóa riêng của bạn:</string>
+    <string name="import_prompt_seed">Nhập cụm từ hạt giống của bạn (12–24 từ):</string>
+    <string name="import_seed_hint">từ1 từ2 từ3 …</string>
+    <string name="import_button">Nhập</string>
+    <string name="import_error_invalid">Khóa riêng không hợp lệ</string>
+    <string name="import_error_invalid_seed">Cụm từ hạt giống không hợp lệ</string>
+    <string name="import_error_encryption">Lỗi mã hóa</string>
+    <string name="export_title">Khóa riêng</string>
+    <string name="export_warning">KHÔNG BAO GIỜ chia sẻ khóa này. Bất kỳ ai sở hữu nó đều có toàn quyền kiểm soát tài sản của bạn.</string>
+    <string name="export_understood">Tôi hiểu</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Tóm tắt</string>
+    <string name="history_received">Đã nhận</string>
+    <string name="history_sent">Đã gửi</string>
+    <string name="history_refunded">Đã hoàn</string>
+    <string name="history_empty">Không có giao dịch</string>
+    <string name="history_empty_desc">Giao dịch trên %s\nsẽ xuất hiện ở đây</string>
+    <string name="history_payment_received">Đã nhận thanh toán</string>
+    <string name="history_payment_sent">Đã gửi thanh toán</string>
+    <string name="history_refund_sent">Hoàn tiền</string>
+    <string name="history_refund_received">Đã nhận hoàn tiền</string>
+    <string name="history_status_pending">Đang chờ</string>
+    <string name="history_status_confirmed">Đã xác nhận</string>
+    <string name="history_status_failed">Thất bại</string>
+    <string name="history_status_refunded">Đã hoàn</string>
+    <string name="history_status_partial">Một phần</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Giao dịch gốc</string>
+    <string name="refund_amount">Số tiền</string>
+    <string name="refund_already">Đã hoàn</string>
+    <string name="refund_available">Khả dụng</string>
+    <string name="refund_recipient">Người nhận</string>
+    <string name="refund_date">Ngày</string>
+    <string name="refund_type">Loại hoàn tiền</string>
+    <string name="refund_full">Toàn bộ</string>
+    <string name="refund_partial">Một phần</string>
+    <string name="refund_partial_desc">Chỉ định số tiền</string>
+    <string name="refund_amount_label">Số tiền hoàn (%s)</string>
+    <string name="refund_max">Tối đa: %1$s %2$s</string>
+    <string name="refund_gas_notice">Bạn sẽ trả phí gas cho giao dịch này</string>
+    <string name="refund_button">Hoàn %1$s %2$s</string>
+    <string name="refund_processing">Đang xử lý hoàn tiền…</string>
+    <string name="refund_success">Hoàn tiền thành công</string>
+    <string name="refund_done">Hoàn tất</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token của bạn</string>
+    <string name="balance_manage">Quản lý</string>
+    <string name="balance_refresh">Làm mới</string>
+    <string name="balance_loading">Đang tải số dư…</string>
+    <string name="balance_empty">Không có token</string>
+    <string name="balance_no_wallet_desc">Thiết lập ví trong Cài đặt\nđể xem số dư của bạn</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token được phép</string>
+    <string name="settings_add_token">Thêm Token</string>
+    <string name="add_token_prompt">Nhập địa chỉ hợp đồng token:</string>
+    <string name="add_token_validating">Đang xác thực token…</string>
+    <string name="add_token_button">Thêm</string>
+    <string name="delete">Xóa</string>
+
+    <!-- Common -->
+    <string name="cancel">Hủy</string>
+    <string name="close">Đóng</string>
+    <string name="retry">Thử lại</string>
+    <string name="error">Lỗi</string>
+    <string name="copy">Sao chép</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Chưa cấu hình ví</string>
+    <string name="error_device_security">Lỗi bảo mật thiết bị</string>
+    <string name="error_auth">Lỗi xác thực</string>
+    <string name="error_unknown">Lỗi không xác định</string>
+    <string name="error_keystore_unavailable">Keystore không khả dụng - một số chức năng sẽ không hoạt động</string>
+    <string name="error_encryption_restart">Lỗi mã hóa - khởi động lại ứng dụng</string>
+    <string name="error_auth_cancelled">Xác thực đã bị hủy</string>
+    <string name="error_invalid_address">Địa chỉ không hợp lệ</string>
+    <string name="error_invalid_address_format">Định dạng địa chỉ không hợp lệ</string>
+    <string name="error_token_already_added">Token đã được thêm</string>
+    <string name="stealth_spend_sent_tx">Đã gửi! Tx: %s…</string>
+    <string name="token_native">Gốc</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Số dư của bạn</string>
+    <string name="pay_insufficient_balance">Số dư không đủ</string>
+    <string name="pay_need_more">Bạn cần thêm %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Chào mừng</string>
+    <string name="welcome_sovereignty">Khóa của bạn.\nTài sản của bạn.\nChủ quyền của bạn.</string>
+    <string name="welcome_desc">Tài sản của bạn KHÔNG được lưu trữ trong ứng dụng này. Chúng tồn tại trên blockchain, được kiểm soát bởi khóa riêng của bạn.\n\nỨng dụng này chỉ lưu trữ khóa của bạn một cách an toàn. Chúng tôi không thể truy cập tài sản của bạn.\n\nLưu ý: Một số token (USDC, USDT) có thể bị đóng băng bởi nhà phát hành. Để có chủ quyền tối đa, hãy sử dụng ETH gốc hoặc các token phi tập trung.</string>
+    <string name="welcome_warning_title">Khóa của bạn = Tài sản của bạn</string>
+    <string name="welcome_warning_desc">Nếu bạn mất khóa riêng hoặc chia sẻ với ai đó, bạn sẽ mất quyền kiểm soát tài sản của mình vĩnh viễn.\n\nKhông có tùy chọn khôi phục. Không có đội ngũ hỗ trợ nào có thể giúp bạn. Đây là bản chất của quyền sở hữu thực sự.\n\nLuôn giữ bản sao lưu an toàn cho khóa của bạn.</string>
+    <string name="welcome_opensource">Phần mềm mã nguồn mở. Xác minh, đừng tin.</string>
+    <string name="welcome_start">Tôi hiểu, bắt đầu thôi</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Danh tính người bán</string>
+    <string name="settings_merchant_name">Tên doanh nghiệp</string>
+    <string name="settings_merchant_name_hint">Quán cà phê của tôi</string>
+    <string name="settings_merchant_domain">Tên miền / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth hoặc mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Hiển thị cho khách hàng trong quá trình thanh toán</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Chế độ riêng tư</string>
+    <string name="settings_stealth_desc">Nhận thanh toán đến địa chỉ dùng một lần (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Đã bật</string>
+    <string name="settings_stealth_info">Mỗi khoản thanh toán đến một địa chỉ duy nhất mà chỉ bạn có thể chi tiêu. Người quan sát không thể liên kết các khoản thanh toán với doanh nghiệp của bạn.</string>
+    <string name="stealth_address_label">Chế độ Stealth đang hoạt động</string>
+    <string name="stealth_payment_note">Thanh toán sẽ được gửi đến địa chỉ riêng tư</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Địa chỉ người nhận</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Ví riêng tư</string>
+    <string name="stealth_wallet_addresses">trên %d địa chỉ stealth</string>
+    <string name="stealth_wallet_privacy_title">Tài sản của bạn là riêng tư</string>
+    <string name="stealth_wallet_privacy_desc">Số dư này không liên kết với ví công khai của bạn. Chi tiêu trực tiếp cho nhà cung cấp, sàn giao dịch, hoặc bất cứ đâu - danh tính doanh nghiệp của bạn được giữ kín.</string>
+    <string name="stealth_wallet_send">Gửi</string>
+    <string name="stealth_wallet_send_title">Gửi từ Ví riêng tư</string>
+    <string name="stealth_wallet_available">Khả dụng: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Số tiền</string>
+    <string name="nav_stealth_wallet">Ví riêng tư</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Nhiều địa chỉ</string>
+    <string name="stealth_wallet_gas_desc">Tài sản của bạn nằm rải rác trên %d địa chỉ. Chi tiêu số lượng lớn có thể cần nhiều giao dịch, làm tăng chi phí gas.</string>
+    <string name="stealth_wallet_consolidate">Hợp nhất vào ví chính</string>
+    <string name="stealth_wallet_consolidate_title">Hợp nhất tiền?</string>
+    <string name="stealth_wallet_consolidate_warning">Điều này sẽ chuyển tất cả tiền từ ví riêng tư của bạn đến địa chỉ ví chính.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">CẢNH BÁO: Điều này phá vỡ quyền riêng tư. Ví chính của bạn sẽ được liên kết với tất cả các khoản thanh toán đã nhận.</string>
+    <string name="stealth_wallet_consolidate_benefit">Lợi ích: Chi tiêu trong tương lai chỉ cần một giao dịch (chi phí gas thấp hơn).</string>
+    <string name="stealth_wallet_consolidate_confirm">Hợp nhất</string>
+    <string name="stealth_wallet_consolidate_success">Đã hợp nhất tiền vào ví chính</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Quyền riêng tư người thanh toán</string>
+    <string name="settings_payer_privacy_desc">Thanh toán từ tài khoản tạm thời (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Mỗi khoản thanh toán sử dụng một tài khoản duy nhất. Địa chỉ ví chính của bạn không hiển thị trên chuỗi.</string>
+    <string name="settings_payer_privacy_requires_api">Cần khóa API cho mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Miễn phí trên testnets (bundler công cộng)</string>
+    <string name="payer_privacy_note">Địa chỉ ví của bạn sẽ được ẩn</string>
+    <string name="payer_privacy_processing">Đang xử lý thanh toán riêng tư…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Sổ địa chỉ</string>
+    <string name="address_book_add">Thêm liên hệ</string>
+    <string name="address_book_edit">Sửa liên hệ</string>
+    <string name="address_book_search">Tìm liên hệ…</string>
+    <string name="address_book_empty">Chưa có liên hệ</string>
+    <string name="address_book_empty_hint">Thêm địa chỉ để dễ dàng nhận diện\nngười bạn thanh toán hoặc nhận từ</string>
+    <string name="address_book_no_results">Không tìm thấy liên hệ</string>
+    <string name="address_book_address">Địa chỉ ví</string>
+    <string name="address_book_name">Tên</string>
+    <string name="address_book_name_hint">vd. Quán cà phê, Nguyễn Văn A</string>
+    <string name="address_book_note">Ghi chú (tùy chọn)</string>
+    <string name="address_book_note_hint">vd. Nhà cung cấp, Bạn bè</string>
+    <string name="address_book_delete_title">Xóa liên hệ?</string>
+    <string name="address_book_delete_message">Xóa %s khỏi sổ địa chỉ của bạn?</string>
+    <string name="address_book_saved">Đã lưu liên hệ</string>
+    <string name="address_book_unknown">Không xác định</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Chế độ đơn giản</string>
+    <string name="settings_simple_mode_desc">Dễ sử dụng, tùy chọn cơ bản</string>
+    <string name="settings_advanced_mode">Chế độ nâng cao</string>
+    <string name="settings_advanced_mode_desc">Tùy chọn crypto cho người dùng nâng cao</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Chia sẻ liên hệ</string>
+    <string name="share_contact_title">Chia sẻ địa chỉ của bạn</string>
+    <string name="share_contact_ready">Sẵn sàng chia sẻ</string>
+    <string name="share_contact_ready_desc">Đưa điện thoại lại gần\nthiết bị CleanSky khác</string>
+    <string name="share_contact_received">Đã nhận liên hệ!</string>
+    <string name="share_contact_received_name">%s muốn kết nối</string>
+    <string name="share_contact_save">Lưu vào danh bạ</string>
+    <string name="share_contact_your_name">Tên của bạn (tùy chọn)</string>
+    <string name="share_contact_your_name_hint">Người khác sẽ thấy bạn như thế nào</string>
+    <string name="share_contact_mutual">Trao đổi liên hệ</string>
+    <string name="share_contact_mutual_desc">Cả hai thiết bị chia sẻ địa chỉ cùng lúc</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Gửi</string>
+    <string name="send_title">Gửi đến liên hệ</string>
+    <string name="send_select_contact">Chọn người nhận</string>
+    <string name="send_no_contacts">Chưa có liên hệ</string>
+    <string name="send_no_contacts_hint">Thêm liên hệ qua NFC hoặc thủ công\nđể gửi thanh toán cho họ</string>
+    <string name="send_amount">Số tiền</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Đến: %s</string>
+    <string name="send_confirm">Gửi %1$s %2$s</string>
+    <string name="send_processing">Đang gửi…</string>
+    <string name="send_success">Gửi thành công!</string>
+    <string name="send_success_desc">Đã gửi %1$s %2$s đến %3$s</string>
+    <string name="send_error">Gửi thất bại</string>
+    <string name="send_enter_amount">Nhập số tiền</string>
+    <string name="send_new">Chuyển tiền mới</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Tất cả</string>
+    <string name="history_filter_received">Đã nhận</string>
+    <string name="history_filter_sent">Đã gửi</string>
+    <string name="history_filter_contact">Liên hệ</string>
+    <string name="history_filter_by_contact">Lọc theo liên hệ</string>
+    <string name="history_show_all">Hiện tất cả</string>
+    <string name="history_no_results">Không có giao dịch phù hợp với bộ lọc</string>
+    <string name="history_add_contact">Thêm vào danh bạ</string>
+    <string name="history_edit_contact">Sửa liên hệ</string>
+    <string name="history_from">Từ</string>
+    <string name="history_to">Đến</string>
+    <string name="history_date">Ngày</string>
+    <string name="history_tx_hash">Giao dịch</string>
+    <string name="history_refund">Hoàn tiền</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Số tiền quá nhỏ</string>
+    <string name="scam_amount_large_warning">Số tiền lớn</string>
+    <string name="scam_amount_large_desc">Bạn sắp gửi %1$s %2$s.\nVui lòng xác nhận đây là số tiền chính xác.</string>
+    <string name="scam_confirm_large">Xác nhận chuyển khoản lớn</string>
+    <string name="scam_dust_attack_warning">Yêu cầu đáng ngờ</string>
+    <string name="scam_dust_attack_desc">Đây là số tiền rất nhỏ (%1$s %2$s). Tấn công dust sử dụng các khoản thanh toán nhỏ để theo dõi ví. Từ chối nếu không mong đợi.</string>
+    <string name="scam_receive_large_warning">Yêu cầu thanh toán lớn</string>
+    <string name="scam_receive_large_desc">Yêu cầu này là %1$s %2$s. Xác minh đây là số tiền chính xác trước khi thanh toán.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Chỉ nhận</string>
+    <string name="settings_mode_receive_only">Nhận</string>
+    <string name="settings_mode_receive_only_desc">Không có khóa riêng</string>
+    <string name="settings_receive_only">Cấu hình chỉ nhận</string>
+    <string name="settings_escrow_address">Địa chỉ Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Chưa cấu hình Escrow</string>
+    <string name="receive_only_no_escrow_desc">Cấu hình địa chỉ escrow và API key trong Cài đặt</string>
+    <string name="receive_only_security_notice">Không có khóa riêng trên thiết bị này. An toàn nếu bị đánh cắp.</string>
+    <string name="receive_only_api_key_required">Cần API key để thực thi qua relayer</string>
+</resources>

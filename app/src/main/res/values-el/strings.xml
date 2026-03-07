@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Ανέπαφα</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Πληρωμή</string>
+    <string name="nav_collect">Είσπραξη</string>
+    <string name="nav_settings">Ρυθμίσεις</string>
+    <string name="nav_history">Ιστορικό</string>
+    <string name="nav_refund">Επιστροφή</string>
+    <string name="nav_balance">Υπόλοιπο</string>
+    <string name="nav_back">Πίσω</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Χωρίς πορτοφόλι</string>
+    <string name="pay_no_wallet_desc">Ρυθμίστε το πορτοφόλι σας στις Ρυθμίσεις\nγια να πραγματοποιήσετε πληρωμές</string>
+    <string name="pay_ready">Έτοιμο για πληρωμή</string>
+    <string name="pay_ready_desc">Πλησιάστε το τηλέφωνό σας στη\nσυσκευή του εμπόρου</string>
+    <string name="pay_request_title">Αίτημα πληρωμής</string>
+    <string name="pay_network">Δίκτυο: %s</string>
+    <string name="pay_expired">Το αίτημα έληξε</string>
+    <string name="pay_cancel">Ακύρωση</string>
+    <string name="pay_confirm">Πληρωμή</string>
+    <string name="pay_new">Νέα πληρωμή</string>
+    <string name="pay_signing">Υπογραφή συναλλαγής…</string>
+    <string name="pay_tx_signed">Συναλλαγή υπογράφηκε</string>
+    <string name="pay_tx_signed_desc">Πλησιάστε το τηλέφωνό σας στον\nέμπορο για αποστολή</string>
+    <string name="pay_authenticating">Πιστοποίηση…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Χωρίς πορτοφόλι</string>
+    <string name="collect_no_wallet_desc">Ρυθμίστε το πορτοφόλι σας στις Ρυθμίσεις\nγια να λαμβάνετε πληρωμές</string>
+    <string name="collect_amount">Ποσό προς είσπραξη</string>
+    <string name="collect_button">Είσπραξη</string>
+    <string name="collect_waiting">Αναμονή πληρωμής</string>
+    <string name="collect_waiting_desc">Ζητήστε από τον πελάτη να\nπλησιάσει το τηλέφωνό του</string>
+    <string name="collect_new">Νέα είσπραξη</string>
+    <string name="collect_processing">Επεξεργασία πληρωμής…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Λειτουργία</string>
+    <string name="settings_mode_pay">Πληρωμή</string>
+    <string name="settings_mode_pay_desc">Πραγματοποίηση πληρωμών</string>
+    <string name="settings_mode_collect">Είσπραξη</string>
+    <string name="settings_mode_collect_desc">Λήψη πληρωμών</string>
+    <string name="settings_wallet">Πορτοφόλι</string>
+    <string name="settings_wallet_address">Διεύθυνση</string>
+    <string name="settings_wallet_none">Δεν έχει ρυθμιστεί πορτοφόλι</string>
+    <string name="settings_wallet_create">Δημιουργία</string>
+    <string name="settings_wallet_import">Εισαγωγή</string>
+    <string name="settings_network">Δίκτυο blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Εκτέλεση συναλλαγών</string>
+    <string name="settings_exec_direct">Άμεση</string>
+    <string name="settings_exec_direct_desc">Εσείς πληρώνετε το gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Χορηγούμενο gas μέσω relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 με Paymaster</string>
+    <string name="settings_api_key">Κλειδί API</string>
+    <string name="settings_save">Αποθήκευση και επιστροφή</string>
+    <string name="settings_not_available">Μη διαθέσιμο σε αυτό το δίκτυο</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Ασφάλεια</string>
+    <string name="security_encryption">Κρυπτογράφηση κλειδιών</string>
+    <string name="security_encryption_desc">AES-256-GCM με Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Ενεργή μονάδα ασφάλειας υλικού</string>
+    <string name="security_strongbox_unavailable">Μη διαθέσιμο σε αυτή τη συσκευή</string>
+    <string name="security_biometric">Βιομετρική πιστοποίηση</string>
+    <string name="security_biometric_required">Απαιτείται για πληρωμές</string>
+    <string name="security_biometric_disabled">Απενεργοποιημένη</string>
+    <string name="security_biometric_unavailable">Μη διαθέσιμη</string>
+    <string name="security_export">Εξαγωγή ιδιωτικού κλειδιού</string>
+    <string name="security_export_desc">Αποθηκεύστε το κλειδί σας με ασφάλεια</string>
+    <string name="security_delete">Διαγραφή πορτοφολιού</string>
+    <string name="security_delete_desc">Μόνιμη διαγραφή όλων των δεδομένων</string>
+    <string name="security_delete_title">Διαγραφή πορτοφολιού</string>
+    <string name="security_delete_warning">Αυτή η ενέργεια είναι ΜΗ ΑΝΑΣΤΡΕΨΙΜΗ.</string>
+    <string name="security_delete_warning2">Θα χάσετε πρόσβαση σε όλα τα κεφάλαια αν δεν έχετε αντίγραφο ασφαλείας του ιδιωτικού κλειδιού.</string>
+    <string name="security_delete_warning3">Βεβαιωθείτε ότι έχετε εξάγει το κλειδί σας πριν συνεχίσετε.</string>
+    <string name="security_delete_confirm">Διαγραφή</string>
+    <string name="security_status_active">Ενεργό</string>
+    <string name="security_status_warning">Προειδοποίηση</string>
+    <string name="security_status_na">Δ/Ι</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Εισαγωγή πορτοφολιού</string>
+    <string name="import_prompt">Εισάγετε το ιδιωτικό σας κλειδί:</string>
+    <string name="import_button">Εισαγωγή</string>
+    <string name="import_error_invalid">Μη έγκυρο ιδιωτικό κλειδί</string>
+    <string name="import_error_encryption">Σφάλμα κρυπτογράφησης</string>
+    <string name="export_title">Ιδιωτικό κλειδί</string>
+    <string name="export_warning">ΠΟΤΕ μην μοιραστείτε αυτό το κλειδί. Όποιος το κατέχει έχει πλήρη έλεγχο των κεφαλαίων σας.</string>
+    <string name="export_understood">Κατανοητό</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Σύνοψη</string>
+    <string name="history_received">Ελήφθη</string>
+    <string name="history_refunded">Επεστράφη</string>
+    <string name="history_empty">Χωρίς συναλλαγές</string>
+    <string name="history_empty_desc">Οι συναλλαγές στο %s\nθα εμφανιστούν εδώ</string>
+    <string name="history_payment_received">Πληρωμή ελήφθη</string>
+    <string name="history_payment_sent">Πληρωμή εστάλη</string>
+    <string name="history_refund_sent">Επιστροφή</string>
+    <string name="history_refund_received">Επιστροφή ελήφθη</string>
+    <string name="history_status_pending">Σε εκκρεμότητα</string>
+    <string name="history_status_confirmed">Επιβεβαιώθηκε</string>
+    <string name="history_status_failed">Απέτυχε</string>
+    <string name="history_status_refunded">Επεστράφη</string>
+    <string name="history_status_partial">Μερική</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Αρχική συναλλαγή</string>
+    <string name="refund_amount">Ποσό</string>
+    <string name="refund_already">Ήδη επεστράφη</string>
+    <string name="refund_available">Διαθέσιμο</string>
+    <string name="refund_recipient">Παραλήπτης</string>
+    <string name="refund_date">Ημερομηνία</string>
+    <string name="refund_type">Τύπος επιστροφής</string>
+    <string name="refund_full">Πλήρης</string>
+    <string name="refund_partial">Μερική</string>
+    <string name="refund_partial_desc">Καθορίστε ποσό</string>
+    <string name="refund_amount_label">Ποσό επιστροφής (%s)</string>
+    <string name="refund_max">Μέγιστο: %1$s %2$s</string>
+    <string name="refund_gas_notice">Θα πληρώσετε το gas για αυτή τη συναλλαγή</string>
+    <string name="refund_button">Επιστροφή %1$s %2$s</string>
+    <string name="refund_processing">Επεξεργασία επιστροφής…</string>
+    <string name="refund_success">Επιτυχής επιστροφή</string>
+    <string name="refund_done">Ολοκληρώθηκε</string>
+
+    <!-- Common -->
+    <string name="cancel">Ακύρωση</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="retry">Επανάληψη</string>
+    <string name="error">Σφάλμα</string>
+    <string name="copy">Αντιγραφή</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Πορτοφόλι μη ρυθμισμένο</string>
+    <string name="error_device_security">Σφάλμα ασφάλειας συσκευής</string>
+    <string name="error_auth">Σφάλμα πιστοποίησης</string>
+    <string name="error_unknown">Άγνωστο σφάλμα</string>
+    <string name="error_keystore_unavailable">Keystore μη διαθέσιμο - ορισμένες λειτουργίες δεν θα λειτουργήσουν</string>
+    <string name="error_encryption_restart">Σφάλμα κρυπτογράφησης - επανεκκινήστε την εφαρμογή</string>
+    <string name="error_auth_cancelled">Η πιστοποίηση ακυρώθηκε</string>
+    <string name="error_invalid_address">Μη έγκυρη διεύθυνση</string>
+    <string name="error_invalid_address_format">Μη έγκυρη μορφή διεύθυνσης</string>
+    <string name="error_token_already_added">Το token έχει ήδη προστεθεί</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Στάλθηκε! Tx: %s…</string>
+    <string name="token_native">Εγγενές</string>
+
+    <!-- Common actions -->
+    <string name="back">Πίσω</string>
+    <string name="save">Αποθήκευση</string>
+
+    <!-- Collect Screen extras -->
+    <string name="collect_select_currency">Επιλογή νομίσματος</string>
+
+    <!-- Settings Language -->
+    <string name="settings_language">Γλώσσα</string>
+    <string name="settings_language_system">Προεπιλογή συστήματος</string>
+
+    <!-- Import extras -->
+    <string name="import_private_key">Ιδιωτικό κλειδί</string>
+    <string name="import_seed_phrase">Φράση ανάκτησης</string>
+    <string name="import_prompt_seed">Εισάγετε τη φράση ανάκτησης (12–24 λέξεις):</string>
+    <string name="import_seed_hint">λέξη1 λέξη2 λέξη3 …</string>
+    <string name="import_error_invalid_seed">Μη έγκυρη φράση ανάκτησης</string>
+
+    <!-- History extras -->
+    <string name="history_sent">Απεστάλη</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Το υπόλοιπό σας</string>
+    <string name="pay_insufficient_balance">Ανεπαρκές υπόλοιπο</string>
+    <string name="pay_need_more">Χρειάζεστε %1$s %2$s ακόμα</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Τα token σας</string>
+    <string name="balance_manage">Διαχείριση</string>
+    <string name="balance_refresh">Ανανέωση</string>
+    <string name="balance_loading">Φόρτωση υπολοίπων…</string>
+    <string name="balance_empty">Δεν υπάρχουν token</string>
+    <string name="balance_no_wallet_desc">Ρυθμίστε το πορτοφόλι σας στις Ρυθμίσεις\nγια να δείτε τα υπόλοιπά σας</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Επιτρεπόμενα token</string>
+    <string name="settings_add_token">Προσθήκη token</string>
+    <string name="add_token_prompt">Εισάγετε τη διεύθυνση συμβολαίου token:</string>
+    <string name="add_token_validating">Επικύρωση token…</string>
+    <string name="add_token_button">Προσθήκη</string>
+    <string name="delete">Διαγραφή</string>
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Καλώς ήρθατε</string>
+    <string name="welcome_sovereignty">Τα κλειδιά σας.\nΤα κεφάλαιά σας.\nΗ κυριαρχία σας.</string>
+    <string name="welcome_desc">Τα κεφάλαιά σας ΔΕΝ αποθηκεύονται σε αυτή την εφαρμογή. Υπάρχουν στο blockchain, ελεγχόμενα από τα ιδιωτικά σας κλειδιά.\n\nΑυτή η εφαρμογή αποθηκεύει μόνο τα κλειδιά σας με ασφάλεια. Δεν μπορούμε να έχουμε πρόσβαση στα κεφάλαιά σας.\n\nΣημείωση: Ορισμένα token (USDC, USDT) μπορούν να παγώσουν από τους εκδότες τους. Για μέγιστη κυριαρχία, χρησιμοποιήστε ETH ή αποκεντρωμένα token.</string>
+    <string name="welcome_warning_title">Τα κλειδιά σας = Τα κεφάλαιά σας</string>
+    <string name="welcome_warning_desc">Αν χάσετε τα ιδιωτικά κλειδιά σας ή τα μοιραστείτε με κάποιον, χάνετε μόνιμα τον έλεγχο των κεφαλαίων σας.\n\nΔεν υπάρχει επιλογή ανάκτησης. Καμία ομάδα υποστήριξης δεν μπορεί να βοηθήσει. Αυτή είναι η φύση της πραγματικής ιδιοκτησίας.\n\nΔιατηρείτε πάντα ασφαλές αντίγραφο ασφαλείας των κλειδιών σας.</string>
+    <string name="welcome_opensource">Λογισμικό ανοιχτού κώδικα. Επαληθεύστε, μην εμπιστεύεστε τυφλά.</string>
+    <string name="welcome_start">Καταλαβαίνω, ας ξεκινήσουμε</string>
+
+    <!-- Merchant Identity -->
+    <string name="settings_merchant_identity">Ταυτότητα εμπόρου</string>
+    <string name="settings_merchant_name">Επωνυμία επιχείρησης</string>
+    <string name="settings_merchant_name_hint">Το καφέ μου</string>
+    <string name="settings_merchant_domain">Τομέας / ENS</string>
+    <string name="settings_merchant_domain_hint">mycafe.eth ή mycafe.gr</string>
+    <string name="settings_merchant_identity_desc">Εμφανίζεται στους πελάτες κατά την πληρωμή</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Λειτουργία ιδιωτικότητας</string>
+    <string name="settings_stealth_desc">Λάβετε πληρωμές σε διευθύνσεις μίας χρήσης (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Ενεργοποιημένο</string>
+    <string name="settings_stealth_info">Κάθε πληρωμή πηγαίνει σε μια μοναδική διεύθυνση από την οποία μόνο εσείς μπορείτε να ξοδέψετε. Οι παρατηρητές δεν μπορούν να συνδέσουν πληρωμές με την επιχείρησή σας.</string>
+    <string name="stealth_address_label">Λειτουργία stealth ενεργή</string>
+    <string name="stealth_payment_note">Η πληρωμή θα σταλεί σε ιδιωτική διεύθυνση</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Διεύθυνση παραλήπτη</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Ιδιωτικό πορτοφόλι</string>
+    <string name="stealth_wallet_addresses">σε %d διευθύνσεις stealth</string>
+    <string name="stealth_wallet_privacy_title">Τα κεφάλαιά σας είναι ιδιωτικά</string>
+    <string name="stealth_wallet_privacy_desc">Αυτό το υπόλοιπο δεν συνδέεται με το δημόσιο πορτοφόλι σας. Ξοδέψτε απευθείας σε προμηθευτές, ανταλλακτήρια ή οπουδήποτε - η επιχειρηματική σας ταυτότητα παραμένει κρυφή.</string>
+    <string name="stealth_wallet_send">Αποστολή</string>
+    <string name="stealth_wallet_send_title">Αποστολή από ιδιωτικό πορτοφόλι</string>
+    <string name="stealth_wallet_available">Διαθέσιμο: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Ποσό</string>
+    <string name="nav_stealth_wallet">Ιδιωτικό πορτοφόλι</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Πολλαπλές διευθύνσεις</string>
+    <string name="stealth_wallet_gas_desc">Τα κεφάλαιά σας είναι κατανεμημένα σε %d διευθύνσεις. Μεγάλα ποσά μπορεί να απαιτούν πολλαπλές συναλλαγές, αυξάνοντας το κόστος gas.</string>
+    <string name="stealth_wallet_consolidate">Ενοποίηση στο κύριο πορτοφόλι</string>
+    <string name="stealth_wallet_consolidate_title">Ενοποίηση κεφαλαίων;</string>
+    <string name="stealth_wallet_consolidate_warning">Αυτό θα μεταφέρει όλα τα κεφάλαια από το ιδιωτικό πορτοφόλι σας στη διεύθυνση του κύριου πορτοφολιού.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Αυτό παραβιάζει την ιδιωτικότητα. Το κύριο πορτοφόλι σας θα συνδεθεί με όλες τις ληφθείσες πληρωμές.</string>
+    <string name="stealth_wallet_consolidate_benefit">Όφελος: Μελλοντικές δαπάνες θα απαιτούν μόνο μία συναλλαγή (χαμηλότερο κόστος gas).</string>
+    <string name="stealth_wallet_consolidate_confirm">Ενοποίηση</string>
+    <string name="stealth_wallet_consolidate_success">Κεφάλαια ενοποιήθηκαν στο κύριο πορτοφόλι</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Ιδιωτικότητα πληρωτή</string>
+    <string name="settings_payer_privacy_desc">Πληρωμή από εφήμερους λογαριασμούς (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Κάθε πληρωμή χρησιμοποιεί έναν μοναδικό λογαριασμό. Η διεύθυνση του κύριου πορτοφολιού σας δεν είναι ορατή on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Απαιτείται κλειδί API για mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Δωρεάν στα testnets (δημόσιος bundler)</string>
+    <string name="payer_privacy_note">Η διεύθυνση πορτοφολιού σας θα είναι κρυφή</string>
+    <string name="payer_privacy_processing">Επεξεργασία ιδιωτικής πληρωμής…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Βιβλίο διευθύνσεων</string>
+    <string name="address_book_add">Προσθήκη επαφής</string>
+    <string name="address_book_edit">Επεξεργασία επαφής</string>
+    <string name="address_book_search">Αναζήτηση επαφών…</string>
+    <string name="address_book_empty">Δεν υπάρχουν επαφές ακόμα</string>
+    <string name="address_book_empty_hint">Προσθέστε διευθύνσεις για εύκολη αναγνώριση\nσε ποιον πληρώνετε ή από ποιον λαμβάνετε</string>
+    <string name="address_book_no_results">Δεν βρέθηκαν επαφές</string>
+    <string name="address_book_address">Διεύθυνση πορτοφολιού</string>
+    <string name="address_book_name">Όνομα</string>
+    <string name="address_book_name_hint">π.χ. Καφετέρια, Γιάννης Παπαδόπουλος</string>
+    <string name="address_book_note">Σημείωση (προαιρετική)</string>
+    <string name="address_book_note_hint">π.χ. Προμηθευτής, Φίλος</string>
+    <string name="address_book_delete_title">Διαγραφή επαφής;</string>
+    <string name="address_book_delete_message">Αφαίρεση %s από το βιβλίο διευθύνσεων;</string>
+    <string name="address_book_saved">Η επαφή αποθηκεύτηκε</string>
+    <string name="address_book_unknown">Άγνωστο</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Απλή λειτουργία</string>
+    <string name="settings_simple_mode_desc">Εύκολο στη χρήση, βασικές επιλογές</string>
+    <string name="settings_advanced_mode">Προηγμένη λειτουργία</string>
+    <string name="settings_advanced_mode_desc">Επιλογές crypto για προχωρημένους χρήστες</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Κοινοποίηση επαφής</string>
+    <string name="share_contact_title">Κοινοποίηση διεύθυνσης</string>
+    <string name="share_contact_ready">Έτοιμο για κοινοποίηση</string>
+    <string name="share_contact_ready_desc">Πλησιάστε το τηλέφωνό σας σε\nάλλη συσκευή CleanSky</string>
+    <string name="share_contact_received">Επαφή ελήφθη!</string>
+    <string name="share_contact_received_name">Ο/Η %s θέλει να συνδεθεί</string>
+    <string name="share_contact_save">Αποθήκευση στις επαφές</string>
+    <string name="share_contact_your_name">Το όνομά σας (προαιρετικό)</string>
+    <string name="share_contact_your_name_hint">Πώς θα σας βλέπουν οι άλλοι</string>
+    <string name="share_contact_mutual">Ανταλλαγή επαφών</string>
+    <string name="share_contact_mutual_desc">Και οι δύο συσκευές μοιράζονται διευθύνσεις ταυτόχρονα</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Αποστολή</string>
+    <string name="send_title">Αποστολή σε επαφή</string>
+    <string name="send_select_contact">Επιλογή παραλήπτη</string>
+    <string name="send_no_contacts">Δεν υπάρχουν επαφές</string>
+    <string name="send_no_contacts_hint">Προσθέστε επαφές μέσω NFC ή χειροκίνητα\nγια να τους στείλετε πληρωμές</string>
+    <string name="send_amount">Ποσό</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Προς: %s</string>
+    <string name="send_confirm">Αποστολή %1$s %2$s</string>
+    <string name="send_processing">Αποστολή…</string>
+    <string name="send_success">Επιτυχής αποστολή!</string>
+    <string name="send_success_desc">%1$s %2$s στάλθηκαν σε %3$s</string>
+    <string name="send_error">Αποτυχία αποστολής</string>
+    <string name="send_enter_amount">Εισάγετε ποσό</string>
+    <string name="send_new">Νέα μεταφορά</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Όλα</string>
+    <string name="history_filter_received">Ελήφθησαν</string>
+    <string name="history_filter_sent">Στάλθηκαν</string>
+    <string name="history_filter_contact">Επαφή</string>
+    <string name="history_filter_by_contact">Φιλτράρισμα κατά επαφή</string>
+    <string name="history_show_all">Εμφάνιση όλων</string>
+    <string name="history_no_results">Καμία συναλλαγή δεν ταιριάζει με το φίλτρο</string>
+    <string name="history_add_contact">Προσθήκη στις επαφές</string>
+    <string name="history_edit_contact">Επεξεργασία επαφής</string>
+    <string name="history_from">Από</string>
+    <string name="history_to">Προς</string>
+    <string name="history_date">Ημερομηνία</string>
+    <string name="history_tx_hash">Συναλλαγή</string>
+    <string name="history_refund">Επιστροφή</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Το ποσό είναι πολύ μικρό</string>
+    <string name="scam_amount_large_warning">Μεγάλο ποσό</string>
+    <string name="scam_amount_large_desc">Πρόκειται να στείλετε %1$s %2$s.\nΠαρακαλώ επιβεβαιώστε ότι είναι σωστό.</string>
+    <string name="scam_confirm_large">Επιβεβαίωση μεγάλης μεταφοράς</string>
+    <string name="scam_dust_attack_warning">Ύποπτο αίτημα</string>
+    <string name="scam_dust_attack_desc">Αυτό είναι πολύ μικρό ποσό (%1$s %2$s). Οι επιθέσεις dust χρησιμοποιούν μικροσκοπικές πληρωμές για παρακολούθηση πορτοφολιών. Απορρίψτε αν είναι απροσδόκητο.</string>
+    <string name="scam_receive_large_warning">Μεγάλο αίτημα πληρωμής</string>
+    <string name="scam_receive_large_desc">Αυτό το αίτημα είναι για %1$s %2$s. Επαληθεύστε ότι είναι το σωστό ποσό πριν πληρώσετε.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Μόνο λήψη</string>
+    <string name="settings_mode_receive_only">Λήψη</string>
+    <string name="settings_mode_receive_only_desc">Χωρίς ιδιωτικό κλειδί</string>
+    <string name="settings_receive_only">Ρύθμιση μόνο λήψης</string>
+    <string name="settings_escrow_address">Διεύθυνση Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Δεν έχει ρυθμιστεί Escrow</string>
+    <string name="receive_only_no_escrow_desc">Ρυθμίστε τη διεύθυνση escrow και το API key στις Ρυθμίσεις</string>
+    <string name="receive_only_security_notice">Κανένα ιδιωτικό κλειδί σε αυτή τη συσκευή. Ασφαλές σε περίπτωση κλοπής.</string>
+    <string name="receive_only_api_key_required">Απαιτείται API key για εκτέλεση μέσω relayer</string>
+</resources>

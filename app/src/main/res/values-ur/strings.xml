@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky بغیر رابطہ</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">ادائیگی</string>
+    <string name="nav_collect">وصول</string>
+    <string name="nav_settings">ترتیبات</string>
+    <string name="nav_history">تاریخ</string>
+    <string name="nav_refund">واپسی</string>
+    <string name="nav_balance">بیلنس</string>
+    <string name="nav_back">واپس</string>
+
+    <!-- Common actions -->
+    <string name="back">واپس</string>
+    <string name="save">محفوظ کریں</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">کوئی والیٹ نہیں</string>
+    <string name="pay_no_wallet_desc">ادائیگی کرنے کے لیے\nترتیبات میں والیٹ سیٹ کریں</string>
+    <string name="pay_ready">ادائیگی کے لیے تیار</string>
+    <string name="pay_ready_desc">اپنا فون تاجر کے\nآلے کے قریب رکھیں</string>
+    <string name="pay_request_title">ادائیگی کی درخواست</string>
+    <string name="pay_network">نیٹ ورک: %s</string>
+    <string name="pay_expired">درخواست ختم ہو گئی</string>
+    <string name="pay_cancel">منسوخ</string>
+    <string name="pay_confirm">ادائیگی کریں</string>
+    <string name="pay_new">نئی ادائیگی</string>
+    <string name="pay_signing">لین دین پر دستخط ہو رہے ہیں…</string>
+    <string name="pay_tx_signed">لین دین پر دستخط ہو گئے</string>
+    <string name="pay_tx_signed_desc">بھیجنے کے لیے فون\nتاجر کے قریب رکھیں</string>
+    <string name="pay_authenticating">تصدیق ہو رہی ہے…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">کوئی والیٹ نہیں</string>
+    <string name="collect_no_wallet_desc">ادائیگیاں وصول کرنے کے لیے\nترتیبات میں والیٹ سیٹ کریں</string>
+    <string name="collect_amount">وصول کی جانے والی رقم</string>
+    <string name="collect_button">وصول کریں</string>
+    <string name="collect_waiting">ادائیگی کا انتظار</string>
+    <string name="collect_waiting_desc">گاہک سے کہیں کہ\nفون قریب لائے</string>
+    <string name="collect_new">نئی وصولی</string>
+    <string name="collect_processing">ادائیگی پراسیس ہو رہی ہے…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">آپریشن موڈ</string>
+    <string name="settings_mode_pay">ادائیگی</string>
+    <string name="settings_mode_pay_desc">ادائیگیاں کریں</string>
+    <string name="settings_mode_collect">وصول</string>
+    <string name="settings_mode_collect_desc">ادائیگیاں وصول کریں</string>
+    <string name="settings_wallet">والیٹ</string>
+    <string name="settings_wallet_address">پتہ</string>
+    <string name="settings_wallet_none">والیٹ کنفیگر نہیں ہے</string>
+    <string name="settings_wallet_create">بنائیں</string>
+    <string name="settings_wallet_import">درآمد کریں</string>
+    <string name="settings_network">بلاکچین نیٹ ورک</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">لین دین کا نفاذ</string>
+    <string name="settings_exec_direct">براہ راست</string>
+    <string name="settings_exec_direct_desc">آپ گیس ادا کریں گے</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">ریلیئر کے ذریعے سپانسرڈ گیس</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster کے ساتھ ERC-4337</string>
+    <string name="settings_api_key">API کلید</string>
+    <string name="settings_save">محفوظ کریں اور واپس جائیں</string>
+    <string name="settings_not_available">اس نیٹ ورک پر دستیاب نہیں</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_system">سسٹم ڈیفالٹ</string>
+    <string name="collect_select_currency">کرنسی منتخب کریں</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">سیکیورٹی</string>
+    <string name="security_encryption">کلیدوں کی خفیہ کاری</string>
+    <string name="security_encryption_desc">Android Keystore کے ساتھ AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">ہارڈویئر سیکیورٹی ماڈیول فعال</string>
+    <string name="security_strongbox_unavailable">اس آلے پر دستیاب نہیں</string>
+    <string name="security_biometric">بائیو میٹرک تصدیق</string>
+    <string name="security_biometric_required">ادائیگیوں کے لیے ضروری</string>
+    <string name="security_biometric_disabled">غیر فعال</string>
+    <string name="security_biometric_unavailable">دستیاب نہیں</string>
+    <string name="security_export">نجی کلید برآمد کریں</string>
+    <string name="security_export_desc">اپنی کلید محفوظ طریقے سے رکھیں</string>
+    <string name="security_delete">والیٹ حذف کریں</string>
+    <string name="security_delete_desc">تمام ڈیٹا مستقل طور پر حذف کریں</string>
+    <string name="security_delete_title">والیٹ حذف کریں</string>
+    <string name="security_delete_warning">یہ عمل واپس نہیں ہو سکتا۔</string>
+    <string name="security_delete_warning2">اگر آپ کے پاس نجی کلید کا بیک اپ نہیں ہے تو آپ تمام اثاثوں تک رسائی کھو دیں گے۔</string>
+    <string name="security_delete_warning3">جاری رکھنے سے پہلے یقینی بنائیں کہ آپ نے کلید برآمد کر لی ہے۔</string>
+    <string name="security_delete_confirm">حذف کریں</string>
+    <string name="security_status_active">فعال</string>
+    <string name="security_status_warning">انتباہ</string>
+    <string name="security_status_na">لاگو نہیں</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">والیٹ درآمد کریں</string>
+    <string name="import_private_key">نجی کلید</string>
+    <string name="import_seed_phrase">سیڈ فریز</string>
+    <string name="import_prompt">اپنی نجی کلید درج کریں:</string>
+    <string name="import_prompt_seed">اپنا سیڈ فریز درج کریں (12–24 الفاظ):</string>
+    <string name="import_seed_hint">لفظ1 لفظ2 لفظ3 …</string>
+    <string name="import_button">درآمد کریں</string>
+    <string name="import_error_invalid">غلط نجی کلید</string>
+    <string name="import_error_invalid_seed">غلط سیڈ فریز</string>
+    <string name="import_error_encryption">خفیہ کاری کی خرابی</string>
+    <string name="export_title">نجی کلید</string>
+    <string name="export_warning">یہ کلید کبھی شیئر نہ کریں۔ جس کے پاس یہ ہے اسے آپ کے اثاثوں پر مکمل کنٹرول ہے۔</string>
+    <string name="export_understood">سمجھ گیا</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">خلاصہ</string>
+    <string name="history_received">موصول</string>
+    <string name="history_sent">بھیجا گیا</string>
+    <string name="history_refunded">واپس</string>
+    <string name="history_empty">کوئی لین دین نہیں</string>
+    <string name="history_empty_desc">%s پر لین دین\nیہاں دکھائے جائیں گے</string>
+    <string name="history_payment_received">ادائیگی موصول ہوئی</string>
+    <string name="history_payment_sent">ادائیگی بھیجی گئی</string>
+    <string name="history_refund_sent">واپسی</string>
+    <string name="history_refund_received">واپسی موصول ہوئی</string>
+    <string name="history_status_pending">زیر التوا</string>
+    <string name="history_status_confirmed">تصدیق شدہ</string>
+    <string name="history_status_failed">ناکام</string>
+    <string name="history_status_refunded">واپس</string>
+    <string name="history_status_partial">جزوی</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">اصل لین دین</string>
+    <string name="refund_amount">رقم</string>
+    <string name="refund_already">پہلے سے واپس</string>
+    <string name="refund_available">دستیاب</string>
+    <string name="refund_recipient">وصول کنندہ</string>
+    <string name="refund_date">تاریخ</string>
+    <string name="refund_type">واپسی کی قسم</string>
+    <string name="refund_full">مکمل</string>
+    <string name="refund_partial">جزوی</string>
+    <string name="refund_partial_desc">رقم بتائیں</string>
+    <string name="refund_amount_label">واپسی کی رقم (%s)</string>
+    <string name="refund_max">زیادہ سے زیادہ: %1$s %2$s</string>
+    <string name="refund_gas_notice">آپ اس لین دین کے لیے گیس ادا کریں گے</string>
+    <string name="refund_button">واپس کریں %1$s %2$s</string>
+    <string name="refund_processing">واپسی پراسیس ہو رہی ہے…</string>
+    <string name="refund_success">واپسی کامیاب</string>
+    <string name="refund_done">مکمل</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">آپ کے ٹوکن</string>
+    <string name="balance_manage">منظم کریں</string>
+    <string name="balance_refresh">ریفریش</string>
+    <string name="balance_loading">بیلنس لوڈ ہو رہے ہیں…</string>
+    <string name="balance_empty">کوئی ٹوکن نہیں</string>
+    <string name="balance_no_wallet_desc">اپنے بیلنس دیکھنے کے لیے\nترتیبات میں والیٹ سیٹ کریں</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">اجازت یافتہ ٹوکن</string>
+    <string name="settings_add_token">ٹوکن شامل کریں</string>
+    <string name="add_token_prompt">ٹوکن کنٹریکٹ ایڈریس درج کریں:</string>
+    <string name="add_token_validating">ٹوکن کی تصدیق ہو رہی ہے…</string>
+    <string name="add_token_button">شامل کریں</string>
+    <string name="delete">حذف کریں</string>
+
+    <!-- Common -->
+    <string name="cancel">منسوخ</string>
+    <string name="close">بند کریں</string>
+    <string name="retry">دوبارہ کوشش کریں</string>
+    <string name="error">خرابی</string>
+    <string name="copy">کاپی</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">والیٹ کنفیگر نہیں ہے</string>
+    <string name="error_device_security">آلے کی سیکیورٹی خرابی</string>
+    <string name="error_auth">تصدیق کی خرابی</string>
+    <string name="error_unknown">نامعلوم خرابی</string>
+    <string name="error_keystore_unavailable">کیسٹور دستیاب نہیں - کچھ فنکشنز کام نہیں کریں گے</string>
+    <string name="error_encryption_restart">خفیہ کاری کی خرابی - ایپ دوبارہ شروع کریں</string>
+    <string name="error_auth_cancelled">تصدیق منسوخ کر دی گئی</string>
+    <string name="error_invalid_address">غلط پتہ</string>
+    <string name="error_invalid_address_format">پتے کا غلط فارمیٹ</string>
+    <string name="error_token_already_added">ٹوکن پہلے سے شامل ہے</string>
+    <string name="stealth_spend_sent_tx">بھیج دیا گیا! Tx: %s…</string>
+    <string name="token_native">مقامی</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">آپ کا بیلنس</string>
+    <string name="pay_insufficient_balance">ناکافی بیلنس</string>
+    <string name="pay_need_more">آپ کو %1$s مزید %2$s چاہیے</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">خوش آمدید</string>
+    <string name="welcome_sovereignty">آپ کی کلیدیں۔\nآپ کے فنڈز۔\nآپ کی خود مختاری۔</string>
+    <string name="welcome_desc">آپ کے فنڈز اس ایپ میں محفوظ نہیں ہیں۔ یہ بلاکچین پر موجود ہیں، آپ کی نجی کلیدوں کے کنٹرول میں۔\n\nیہ ایپ صرف آپ کی کلیدیں محفوظ طریقے سے رکھتی ہے۔ ہم آپ کے فنڈز تک رسائی نہیں کر سکتے۔\n\nنوٹ: کچھ ٹوکن (USDC, USDT) ان کے جاری کنندگان منجمد کر سکتے ہیں۔ زیادہ سے زیادہ خود مختاری کے لیے، مقامی ETH یا وکندریقرت ٹوکن استعمال کریں۔</string>
+    <string name="welcome_warning_title">آپ کی کلیدیں = آپ کے فنڈز</string>
+    <string name="welcome_warning_desc">اگر آپ اپنی نجی کلیدیں کھو دیتے ہیں یا کسی کے ساتھ شیئر کرتے ہیں، تو آپ اپنے فنڈز کا کنٹرول مستقل طور پر کھو دیں گے۔\n\nبازیافت کا کوئی آپشن نہیں۔ کوئی سپورٹ ٹیم مدد نہیں کر سکتی۔ یہ حقیقی ملکیت کی فطرت ہے۔\n\nہمیشہ اپنی کلیدوں کا محفوظ بیک اپ رکھیں۔</string>
+    <string name="welcome_opensource">اوپن سورس سافٹ ویئر۔ تصدیق کریں، اعتماد نہ کریں۔</string>
+    <string name="welcome_start">سمجھ گیا، شروع کرتے ہیں</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">تاجر کی شناخت</string>
+    <string name="settings_merchant_name">کاروبار کا نام</string>
+    <string name="settings_merchant_name_hint">میری کافی شاپ</string>
+    <string name="settings_merchant_domain">ڈومین / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth یا mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">ادائیگی کے دوران گاہکوں کو دکھایا جاتا ہے</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">پرائیویسی موڈ</string>
+    <string name="settings_stealth_desc">ایک بار کے پتوں پر ادائیگیاں وصول کریں (EIP-5564)</string>
+    <string name="settings_stealth_enabled">فعال</string>
+    <string name="settings_stealth_info">ہر ادائیگی ایک منفرد پتے پر جاتی ہے جو صرف آپ خرچ کر سکتے ہیں۔ مشاہدین ادائیگیوں کو آپ کے کاروبار سے نہیں جوڑ سکتے۔</string>
+    <string name="stealth_address_label">اسٹیلتھ موڈ فعال</string>
+    <string name="stealth_payment_note">ادائیگی نجی پتے پر بھیجی جائے گی</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">وصول کنندہ کا پتہ</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">نجی والیٹ</string>
+    <string name="stealth_wallet_addresses">%d اسٹیلتھ پتوں میں</string>
+    <string name="stealth_wallet_privacy_title">آپ کے فنڈز نجی ہیں</string>
+    <string name="stealth_wallet_privacy_desc">یہ بیلنس آپ کے عوامی والیٹ سے منسلک نہیں ہے۔ سپلائرز، ایکسچینجز، یا کہیں بھی براہ راست خرچ کریں - آپ کی کاروباری شناخت پوشیدہ رہتی ہے۔</string>
+    <string name="stealth_wallet_send">بھیجیں</string>
+    <string name="stealth_wallet_send_title">نجی والیٹ سے بھیجیں</string>
+    <string name="stealth_wallet_available">دستیاب: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">رقم</string>
+    <string name="nav_stealth_wallet">نجی والیٹ</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">متعدد پتے</string>
+    <string name="stealth_wallet_gas_desc">آپ کے فنڈز %d پتوں میں پھیلے ہوئے ہیں۔ بڑی رقم خرچ کرنے کے لیے متعدد لین دین درکار ہو سکتے ہیں، جس سے گیس کی لاگت بڑھ جاتی ہے۔</string>
+    <string name="stealth_wallet_consolidate">مرکزی والیٹ میں یکجا کریں</string>
+    <string name="stealth_wallet_consolidate_title">فنڈز یکجا کریں؟</string>
+    <string name="stealth_wallet_consolidate_warning">یہ آپ کے نجی والیٹ سے تمام فنڈز آپ کے مرکزی والیٹ ایڈریس میں منتقل کر دے گا۔</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">انتباہ: یہ پرائیویسی کو نقصان پہنچاتا ہے۔ آپ کا مرکزی والیٹ تمام موصول ادائیگیوں سے منسلک ہو جائے گا۔</string>
+    <string name="stealth_wallet_consolidate_benefit">فائدہ: مستقبل کے اخراجات کے لیے صرف ایک لین دین درکار ہوگا (کم گیس لاگت)۔</string>
+    <string name="stealth_wallet_consolidate_confirm">یکجا کریں</string>
+    <string name="stealth_wallet_consolidate_success">فنڈز مرکزی والیٹ میں یکجا ہو گئے</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ادا کنندہ کی پرائیویسی</string>
+    <string name="settings_payer_privacy_desc">عارضی اکاؤنٹس سے ادائیگی کریں (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">ہر ادائیگی ایک منفرد اکاؤنٹ استعمال کرتی ہے۔ آپ کا مرکزی والیٹ ایڈریس آن-چین نظر نہیں آتا۔</string>
+    <string name="settings_payer_privacy_requires_api">مین نیٹ کے لیے API کلید درکار ہے</string>
+    <string name="settings_payer_privacy_public_bundler">ٹیسٹ نیٹس پر مفت (پبلک بنڈلر)</string>
+    <string name="payer_privacy_note">آپ کا والیٹ ایڈریس چھپا ہوا ہوگا</string>
+    <string name="payer_privacy_processing">نجی ادائیگی پراسیس ہو رہی ہے…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">ایڈریس بک</string>
+    <string name="address_book_add">رابطہ شامل کریں</string>
+    <string name="address_book_edit">رابطہ میں ترمیم کریں</string>
+    <string name="address_book_search">رابطے تلاش کریں…</string>
+    <string name="address_book_empty">ابھی کوئی رابطے نہیں</string>
+    <string name="address_book_empty_hint">آسانی سے شناخت کرنے کے لیے پتے شامل کریں\nکہ آپ کسے ادائیگی کرتے ہیں یا کس سے وصول کرتے ہیں</string>
+    <string name="address_book_no_results">کوئی رابطے نہیں ملے</string>
+    <string name="address_book_address">والیٹ ایڈریس</string>
+    <string name="address_book_name">نام</string>
+    <string name="address_book_name_hint">مثلاً کافی شاپ، احمد</string>
+    <string name="address_book_note">نوٹ (اختیاری)</string>
+    <string name="address_book_note_hint">مثلاً سپلائر، دوست</string>
+    <string name="address_book_delete_title">رابطہ حذف کریں؟</string>
+    <string name="address_book_delete_message">%s کو اپنی ایڈریس بک سے ہٹائیں؟</string>
+    <string name="address_book_saved">رابطہ محفوظ ہو گیا</string>
+    <string name="address_book_unknown">نامعلوم</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">سادہ موڈ</string>
+    <string name="settings_simple_mode_desc">استعمال میں آسان، بنیادی اختیارات</string>
+    <string name="settings_advanced_mode">ایڈوانسڈ موڈ</string>
+    <string name="settings_advanced_mode_desc">پاور یوزرز کے لیے کرپٹو اختیارات</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">رابطہ شیئر کریں</string>
+    <string name="share_contact_title">اپنا پتہ شیئر کریں</string>
+    <string name="share_contact_ready">شیئر کرنے کے لیے تیار</string>
+    <string name="share_contact_ready_desc">اپنا فون دوسرے\nCleanSky آلے کے قریب لائیں</string>
+    <string name="share_contact_received">رابطہ موصول!</string>
+    <string name="share_contact_received_name">%s جڑنا چاہتا ہے</string>
+    <string name="share_contact_save">رابطوں میں محفوظ کریں</string>
+    <string name="share_contact_your_name">آپ کا نام (اختیاری)</string>
+    <string name="share_contact_your_name_hint">دوسرے آپ کو کیسے دیکھیں گے</string>
+    <string name="share_contact_mutual">رابطے تبادلہ کریں</string>
+    <string name="share_contact_mutual_desc">دونوں آلات بیک وقت پتے شیئر کرتے ہیں</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">بھیجیں</string>
+    <string name="send_title">رابطے کو بھیجیں</string>
+    <string name="send_select_contact">وصول کنندہ منتخب کریں</string>
+    <string name="send_no_contacts">ابھی کوئی رابطے نہیں</string>
+    <string name="send_no_contacts_hint">NFC یا دستی طور پر رابطے شامل کریں\nتاکہ انہیں ادائیگیاں بھیج سکیں</string>
+    <string name="send_amount">رقم</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">کو: %s</string>
+    <string name="send_confirm">بھیجیں %1$s %2$s</string>
+    <string name="send_processing">بھیجا جا رہا ہے…</string>
+    <string name="send_success">کامیابی سے بھیج دیا گیا!</string>
+    <string name="send_success_desc">%1$s %2$s %3$s کو بھیج دیا گیا</string>
+    <string name="send_error">بھیجنے میں ناکام</string>
+    <string name="send_enter_amount">رقم درج کریں</string>
+    <string name="send_new">نئی منتقلی</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">سب</string>
+    <string name="history_filter_received">موصول</string>
+    <string name="history_filter_sent">بھیجا گیا</string>
+    <string name="history_filter_contact">رابطہ</string>
+    <string name="history_filter_by_contact">رابطے سے فلٹر کریں</string>
+    <string name="history_show_all">سب دکھائیں</string>
+    <string name="history_no_results">فلٹر سے ملتا کوئی لین دین نہیں</string>
+    <string name="history_add_contact">رابطوں میں شامل کریں</string>
+    <string name="history_edit_contact">رابطے میں ترمیم کریں</string>
+    <string name="history_from">سے</string>
+    <string name="history_to">کو</string>
+    <string name="history_date">تاریخ</string>
+    <string name="history_tx_hash">لین دین</string>
+    <string name="history_refund">واپسی</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">رقم بہت کم ہے</string>
+    <string name="scam_amount_large_warning">بڑی رقم</string>
+    <string name="scam_amount_large_desc">آپ %1$s %2$s بھیجنے والے ہیں۔\nبراہ کرم تصدیق کریں کہ یہ درست ہے۔</string>
+    <string name="scam_confirm_large">بڑی منتقلی کی تصدیق کریں</string>
+    <string name="scam_dust_attack_warning">مشکوک درخواست</string>
+    <string name="scam_dust_attack_desc">یہ بہت کم رقم ہے (%1$s %2$s)۔ ڈسٹ حملے چھوٹی ادائیگیوں کا استعمال کرتے ہوئے والیٹس کو ٹریک کرتے ہیں۔ اگر غیر متوقع ہو تو انکار کریں۔</string>
+    <string name="scam_receive_large_warning">بڑی ادائیگی کی درخواست</string>
+    <string name="scam_receive_large_desc">یہ درخواست %1$s %2$s کے لیے ہے۔ ادائیگی سے پہلے تصدیق کریں کہ یہ درست رقم ہے۔</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">صرف وصول</string>
+    <string name="settings_mode_receive_only">وصول</string>
+    <string name="settings_mode_receive_only_desc">کوئی نجی کلید نہیں</string>
+    <string name="settings_receive_only">صرف وصول کی ترتیب</string>
+    <string name="settings_escrow_address">Escrow ایڈریس</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow ترتیب نہیں دیا گیا</string>
+    <string name="receive_only_no_escrow_desc">ترتیبات میں escrow ایڈریس اور API key ترتیب دیں</string>
+    <string name="receive_only_security_notice">اس ڈیوائس پر کوئی نجی کلید نہیں۔ چوری ہونے پر محفوظ۔</string>
+    <string name="receive_only_api_key_required">Relayer کے عمل کے لیے API key درکار ہے</string>
+</resources>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Kontaktlos</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Bezahlen</string>
+    <string name="nav_collect">Kassieren</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="nav_history">Verlauf</string>
+    <string name="nav_refund">Erstattung</string>
+    <string name="nav_balance">Guthaben</string>
+    <string name="nav_back">Zurück</string>
+
+    <!-- Common actions -->
+    <string name="back">Zurück</string>
+    <string name="save">Speichern</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Keine Wallet</string>
+    <string name="pay_no_wallet_desc">Richten Sie Ihre Wallet in den Einstellungen ein,\num Zahlungen zu tätigen</string>
+    <string name="pay_ready">Bereit zum Bezahlen</string>
+    <string name="pay_ready_desc">Halten Sie Ihr Telefon an\ndas Gerät des Händlers</string>
+    <string name="pay_request_title">Zahlungsanfrage</string>
+    <string name="pay_network">Netzwerk: %s</string>
+    <string name="pay_expired">Anfrage abgelaufen</string>
+    <string name="pay_cancel">Abbrechen</string>
+    <string name="pay_confirm">Bezahlen</string>
+    <string name="pay_new">Neue Zahlung</string>
+    <string name="pay_signing">Transaktion wird signiert…</string>
+    <string name="pay_tx_signed">Transaktion signiert</string>
+    <string name="pay_tx_signed_desc">Halten Sie Ihr Telefon an\nden Händler zum Senden</string>
+    <string name="pay_authenticating">Authentifizierung…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Keine Wallet</string>
+    <string name="collect_no_wallet_desc">Richten Sie Ihre Wallet in den Einstellungen ein,\num Zahlungen zu empfangen</string>
+    <string name="collect_amount">Zu kassierender Betrag</string>
+    <string name="collect_button">Kassieren</string>
+    <string name="collect_waiting">Warte auf Zahlung</string>
+    <string name="collect_waiting_desc">Bitten Sie den Kunden,\nsein Telefon anzuhalten</string>
+    <string name="collect_new">Neues Kassieren</string>
+    <string name="collect_processing">Zahlung wird verarbeitet…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Betriebsmodus</string>
+    <string name="settings_mode_pay">Bezahlen</string>
+    <string name="settings_mode_pay_desc">Zahlungen tätigen</string>
+    <string name="settings_mode_collect">Kassieren</string>
+    <string name="settings_mode_collect_desc">Zahlungen empfangen</string>
+    <string name="settings_wallet">Wallet</string>
+    <string name="settings_wallet_address">Adresse</string>
+    <string name="settings_wallet_none">Keine Wallet konfiguriert</string>
+    <string name="settings_wallet_create">Erstellen</string>
+    <string name="settings_wallet_import">Importieren</string>
+    <string name="settings_network">Blockchain-Netzwerk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Transaktionsausführung</string>
+    <string name="settings_exec_direct">Direkt</string>
+    <string name="settings_exec_direct_desc">Sie zahlen das Gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gesponsert Gas über Relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 mit Paymaster</string>
+    <string name="settings_api_key">API-Schlüssel</string>
+    <string name="settings_save">Speichern und zurück</string>
+    <string name="settings_not_available">In diesem Netzwerk nicht verfügbar</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_language_system">Systemstandard</string>
+    <string name="collect_select_currency">Währung auswählen</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Sicherheit</string>
+    <string name="security_encryption">Schlüsselverschlüsselung</string>
+    <string name="security_encryption_desc">AES-256-GCM mit Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardware-Sicherheitsmodul aktiv</string>
+    <string name="security_strongbox_unavailable">Auf diesem Gerät nicht verfügbar</string>
+    <string name="security_biometric">Biometrische Authentifizierung</string>
+    <string name="security_biometric_required">Erforderlich für Zahlungen</string>
+    <string name="security_biometric_disabled">Deaktiviert</string>
+    <string name="security_biometric_unavailable">Nicht verfügbar</string>
+    <string name="security_export">Privaten Schlüssel exportieren</string>
+    <string name="security_export_desc">Speichern Sie Ihren Schlüssel sicher</string>
+    <string name="security_delete">Wallet löschen</string>
+    <string name="security_delete_desc">Alle Daten dauerhaft löschen</string>
+    <string name="security_delete_title">Wallet löschen</string>
+    <string name="security_delete_warning">Diese Aktion ist UNWIDERRUFLICH.</string>
+    <string name="security_delete_warning2">Sie verlieren den Zugriff auf alle Guthaben, wenn Sie keine Sicherung Ihres privaten Schlüssels haben.</string>
+    <string name="security_delete_warning3">Stellen Sie sicher, dass Sie Ihren Schlüssel exportiert haben, bevor Sie fortfahren.</string>
+    <string name="security_delete_confirm">Löschen</string>
+    <string name="security_status_active">Aktiv</string>
+    <string name="security_status_warning">Warnung</string>
+    <string name="security_status_na">N/V</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Wallet importieren</string>
+    <string name="import_private_key">Privater Schlüssel</string>
+    <string name="import_seed_phrase">Seed-Phrase</string>
+    <string name="import_prompt">Geben Sie Ihren privaten Schlüssel ein:</string>
+    <string name="import_prompt_seed">Geben Sie Ihre Seed-Phrase ein (12–24 Wörter):</string>
+    <string name="import_seed_hint">Wort 1 Wort 2 Wort 3 …</string>
+    <string name="import_button">Importieren</string>
+    <string name="import_error_invalid">Ungültiger privater Schlüssel</string>
+    <string name="import_error_invalid_seed">Ungültige Seed-Phrase</string>
+    <string name="import_error_encryption">Verschlüsselungsfehler</string>
+    <string name="export_title">Privater Schlüssel</string>
+    <string name="export_warning">Teilen Sie diesen Schlüssel NIEMALS mit jemandem. Wer ihn besitzt, hat die volle Kontrolle über Ihre Guthaben.</string>
+    <string name="export_understood">Verstanden</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Zusammenfassung</string>
+    <string name="history_received">Empfangen</string>
+    <string name="history_sent">Gesendet</string>
+    <string name="history_refunded">Erstattet</string>
+    <string name="history_empty">Keine Transaktionen</string>
+    <string name="history_empty_desc">Transaktionen auf %s\nwerden hier angezeigt</string>
+    <string name="history_payment_received">Zahlung empfangen</string>
+    <string name="history_payment_sent">Zahlung gesendet</string>
+    <string name="history_refund_sent">Erstattung</string>
+    <string name="history_refund_received">Erstattung empfangen</string>
+    <string name="history_status_pending">Ausstehend</string>
+    <string name="history_status_confirmed">Bestätigt</string>
+    <string name="history_status_failed">Fehlgeschlagen</string>
+    <string name="history_status_refunded">Erstattet</string>
+    <string name="history_status_partial">Teilweise</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Ursprüngliche Transaktion</string>
+    <string name="refund_amount">Betrag</string>
+    <string name="refund_already">Bereits erstattet</string>
+    <string name="refund_available">Verfügbar</string>
+    <string name="refund_recipient">Empfänger</string>
+    <string name="refund_date">Datum</string>
+    <string name="refund_type">Erstattungsart</string>
+    <string name="refund_full">Vollständig</string>
+    <string name="refund_partial">Teilweise</string>
+    <string name="refund_partial_desc">Betrag angeben</string>
+    <string name="refund_amount_label">Erstattungsbetrag (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Sie zahlen das Gas für diese Transaktion</string>
+    <string name="refund_button">%1$s %2$s erstatten</string>
+    <string name="refund_processing">Erstattung wird verarbeitet…</string>
+    <string name="refund_success">Erstattung erfolgreich</string>
+    <string name="refund_done">Fertig</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Ihre Tokens</string>
+    <string name="balance_manage">Verwalten</string>
+    <string name="balance_refresh">Aktualisieren</string>
+    <string name="balance_loading">Guthaben werden geladen…</string>
+    <string name="balance_empty">Keine Tokens</string>
+    <string name="balance_no_wallet_desc">Richten Sie Ihre Wallet in den Einstellungen ein,\num Ihre Guthaben zu sehen</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Erlaubte Tokens</string>
+    <string name="settings_add_token">Token hinzufügen</string>
+    <string name="add_token_prompt">Geben Sie die Token-Vertragsadresse ein:</string>
+    <string name="add_token_validating">Token wird validiert…</string>
+    <string name="add_token_button">Hinzufügen</string>
+    <string name="delete">Löschen</string>
+
+    <!-- Common -->
+    <string name="cancel">Abbrechen</string>
+    <string name="close">Schließen</string>
+    <string name="retry">Erneut versuchen</string>
+    <string name="error">Fehler</string>
+    <string name="copy">Kopieren</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Wallet nicht konfiguriert</string>
+    <string name="error_device_security">Gerätesicherheitsfehler</string>
+    <string name="error_auth">Authentifizierungsfehler</string>
+    <string name="error_unknown">Unbekannter Fehler</string>
+    <string name="error_keystore_unavailable">Keystore nicht verfügbar - einige Funktionen funktionieren nicht</string>
+    <string name="error_encryption_restart">Verschlüsselungsfehler - starten Sie die App neu</string>
+    <string name="error_auth_cancelled">Authentifizierung abgebrochen</string>
+    <string name="error_invalid_address">Ungültige Adresse</string>
+    <string name="error_invalid_address_format">Ungültiges Adressformat</string>
+    <string name="error_token_already_added">Token bereits hinzugefügt</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Gesendet! Tx: %s…</string>
+    <string name="token_native">Nativ</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ihr Guthaben</string>
+    <string name="pay_insufficient_balance">Unzureichendes Guthaben</string>
+    <string name="pay_need_more">Sie benötigen %1$s mehr %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Willkommen</string>
+    <string name="welcome_sovereignty">Deine Schlüssel.\nDein Guthaben.\nDeine Souveränität.</string>
+    <string name="welcome_desc">Ihre Guthaben werden NICHT in dieser App gespeichert. Sie existieren auf der Blockchain, kontrolliert durch Ihre privaten Schlüssel.\n\nDiese App speichert nur Ihre Schlüssel sicher. Wir haben keinen Zugriff auf Ihre Guthaben.\n\nHinweis: Einige Token (USDC, USDT) können von ihren Herausgebern eingefroren werden. Für maximale Souveränität verwenden Sie natives ETH oder dezentrale Token.</string>
+    <string name="welcome_warning_title">Deine Schlüssel = Dein Guthaben</string>
+    <string name="welcome_warning_desc">Wenn Sie Ihre privaten Schlüssel verlieren oder mit jemandem teilen, verlieren Sie dauerhaft die Kontrolle über Ihre Guthaben.\n\nEs gibt keine Wiederherstellungsoption. Kein Support-Team kann Ihnen helfen. Das ist die Natur des echten Eigentums.\n\nBewahren Sie immer ein sicheres Backup Ihrer Schlüssel auf.</string>
+    <string name="welcome_opensource">Open-Source-Software. Verifizieren, nicht vertrauen.</string>
+    <string name="welcome_start">Ich verstehe, los geht\'s</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Händleridentität</string>
+    <string name="settings_merchant_name">Geschäftsname</string>
+    <string name="settings_merchant_name_hint">Mein Café</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">meincafe.eth oder meincafe.com</string>
+    <string name="settings_merchant_identity_desc">Wird Kunden während der Zahlung angezeigt</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Datenschutzmodus</string>
+    <string name="settings_stealth_desc">Zahlungen an Einmal-Adressen empfangen (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Aktiviert</string>
+    <string name="settings_stealth_info">Jede Zahlung geht an eine einzigartige Adresse, von der nur Sie ausgeben können. Beobachter können Zahlungen nicht mit Ihrem Geschäft verknüpfen.</string>
+    <string name="stealth_address_label">Stealth-Modus aktiv</string>
+    <string name="stealth_payment_note">Zahlung wird an eine private Adresse gesendet</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Empfängeradresse</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Private Wallet</string>
+    <string name="stealth_wallet_addresses">auf %d Stealth-Adressen verteilt</string>
+    <string name="stealth_wallet_privacy_title">Ihr Guthaben ist privat</string>
+    <string name="stealth_wallet_privacy_desc">Dieses Guthaben ist nicht mit Ihrer öffentlichen Wallet verknüpft. Geben Sie direkt an Lieferanten, Börsen oder überall aus - Ihre Geschäftsidentität bleibt verborgen.</string>
+    <string name="stealth_wallet_send">Senden</string>
+    <string name="stealth_wallet_send_title">Von privater Wallet senden</string>
+    <string name="stealth_wallet_available">Verfügbar: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Betrag</string>
+    <string name="nav_stealth_wallet">Private Wallet</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Mehrere Adressen</string>
+    <string name="stealth_wallet_gas_desc">Ihr Guthaben ist auf %d Adressen verteilt. Das Ausgeben großer Beträge kann mehrere Transaktionen erfordern und die Gaskosten erhöhen.</string>
+    <string name="stealth_wallet_consolidate">Auf Haupt-Wallet konsolidieren</string>
+    <string name="stealth_wallet_consolidate_title">Guthaben konsolidieren?</string>
+    <string name="stealth_wallet_consolidate_warning">Dies überträgt alle Guthaben von Ihrer privaten Wallet zu Ihrer Haupt-Wallet-Adresse.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">WARNUNG: Dies bricht die Privatsphäre. Ihre Haupt-Wallet wird mit allen empfangenen Zahlungen verknüpft.</string>
+    <string name="stealth_wallet_consolidate_benefit">Vorteil: Zukünftiges Ausgeben erfordert nur eine Transaktion (niedrigere Gaskosten).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolidieren</string>
+    <string name="stealth_wallet_consolidate_success">Guthaben auf Haupt-Wallet konsolidiert</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Zahlerprivatsphäre</string>
+    <string name="settings_payer_privacy_desc">Von temporären Konten zahlen (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Jede Zahlung verwendet ein einzigartiges Konto. Ihre Haupt-Wallet-Adresse ist on-chain nicht sichtbar.</string>
+    <string name="settings_payer_privacy_requires_api">API-Schlüssel für Mainnet erforderlich</string>
+    <string name="settings_payer_privacy_public_bundler">Kostenlos auf Testnets (öffentlicher Bundler)</string>
+    <string name="payer_privacy_note">Ihre Wallet-Adresse wird verborgen</string>
+    <string name="payer_privacy_processing">Private Zahlung wird verarbeitet…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adressbuch</string>
+    <string name="address_book_add">Kontakt hinzufügen</string>
+    <string name="address_book_edit">Kontakt bearbeiten</string>
+    <string name="address_book_search">Kontakte suchen…</string>
+    <string name="address_book_empty">Noch keine Kontakte</string>
+    <string name="address_book_empty_hint">Fügen Sie Adressen hinzu, um leicht zu erkennen,\nvon wem Sie bezahlen oder empfangen</string>
+    <string name="address_book_no_results">Keine Kontakte gefunden</string>
+    <string name="address_book_address">Wallet-Adresse</string>
+    <string name="address_book_name">Name</string>
+    <string name="address_book_name_hint">z.B. Café, Max Mustermann</string>
+    <string name="address_book_note">Notiz (optional)</string>
+    <string name="address_book_note_hint">z.B. Lieferant, Freund</string>
+    <string name="address_book_delete_title">Kontakt löschen?</string>
+    <string name="address_book_delete_message">%s aus Ihrem Adressbuch entfernen?</string>
+    <string name="address_book_saved">Kontakt gespeichert</string>
+    <string name="address_book_unknown">Unbekannt</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Einfacher Modus</string>
+    <string name="settings_simple_mode_desc">Einfach zu benutzen, grundlegende Optionen</string>
+    <string name="settings_advanced_mode">Erweiterter Modus</string>
+    <string name="settings_advanced_mode_desc">Krypto-Optionen für Experten</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kontakt teilen</string>
+    <string name="share_contact_title">Ihre Adresse teilen</string>
+    <string name="share_contact_ready">Bereit zum Teilen</string>
+    <string name="share_contact_ready_desc">Halten Sie Ihr Telefon an\nein anderes CleanSky-Gerät</string>
+    <string name="share_contact_received">Kontakt erhalten!</string>
+    <string name="share_contact_received_name">%s möchte sich verbinden</string>
+    <string name="share_contact_save">Zu Kontakten speichern</string>
+    <string name="share_contact_your_name">Ihr Name (optional)</string>
+    <string name="share_contact_your_name_hint">So werden andere Sie sehen</string>
+    <string name="share_contact_mutual">Kontakte austauschen</string>
+    <string name="share_contact_mutual_desc">Beide Geräte teilen Adressen gleichzeitig</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Senden</string>
+    <string name="send_title">An Kontakt senden</string>
+    <string name="send_select_contact">Empfänger auswählen</string>
+    <string name="send_no_contacts">Noch keine Kontakte</string>
+    <string name="send_no_contacts_hint">Fügen Sie Kontakte per NFC oder manuell hinzu,\num ihnen Zahlungen zu senden</string>
+    <string name="send_amount">Betrag</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">An: %s</string>
+    <string name="send_confirm">%1$s %2$s senden</string>
+    <string name="send_processing">Wird gesendet…</string>
+    <string name="send_success">Erfolgreich gesendet!</string>
+    <string name="send_success_desc">%1$s %2$s an %3$s gesendet</string>
+    <string name="send_error">Senden fehlgeschlagen</string>
+    <string name="send_enter_amount">Betrag eingeben</string>
+    <string name="send_new">Neue Überweisung</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Alle</string>
+    <string name="history_filter_received">Empfangen</string>
+    <string name="history_filter_sent">Gesendet</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Nach Kontakt filtern</string>
+    <string name="history_show_all">Alle anzeigen</string>
+    <string name="history_no_results">Keine Transaktionen entsprechen dem Filter</string>
+    <string name="history_add_contact">Zu Kontakten hinzufügen</string>
+    <string name="history_edit_contact">Kontakt bearbeiten</string>
+    <string name="history_from">Von</string>
+    <string name="history_to">An</string>
+    <string name="history_date">Datum</string>
+    <string name="history_tx_hash">Transaktion</string>
+    <string name="history_refund">Erstattung</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Betrag zu gering</string>
+    <string name="scam_amount_large_warning">Großer Betrag</string>
+    <string name="scam_amount_large_desc">Sie sind dabei, %1$s %2$s zu senden.\nBitte bestätigen Sie, dass dies korrekt ist.</string>
+    <string name="scam_confirm_large">Große Überweisung bestätigen</string>
+    <string name="scam_dust_attack_warning">Verdächtige Anfrage</string>
+    <string name="scam_dust_attack_desc">Dies ist ein sehr kleiner Betrag (%1$s %2$s). Dust-Attacken verwenden winzige Zahlungen, um Wallets zu verfolgen. Lehnen Sie ab, wenn unerwartet.</string>
+    <string name="scam_receive_large_warning">Große Zahlungsanfrage</string>
+    <string name="scam_receive_large_desc">Diese Anfrage ist für %1$s %2$s. Überprüfen Sie, ob dies der korrekte Betrag ist, bevor Sie bezahlen.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Nur Empfangen</string>
+    <string name="settings_mode_receive_only">Empfangen</string>
+    <string name="settings_mode_receive_only_desc">Kein privater Schlüssel</string>
+    <string name="settings_receive_only">Nur-Empfangen-Konfiguration</string>
+    <string name="settings_escrow_address">Escrow-Adresse</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Kein Escrow konfiguriert</string>
+    <string name="receive_only_no_escrow_desc">Escrow-Adresse und API Key in den Einstellungen konfigurieren</string>
+    <string name="receive_only_security_notice">Kein privater Schlüssel auf diesem Gerät. Sicher bei Diebstahl.</string>
+    <string name="receive_only_api_key_required">API Key für Relayer-Ausführung erforderlich</string>
+</resources>

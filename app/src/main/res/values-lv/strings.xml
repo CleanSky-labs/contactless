@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Bezkontakta</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Maksāt</string>
+    <string name="nav_collect">Saņemt</string>
+    <string name="nav_settings">Iestatījumi</string>
+    <string name="nav_history">Vēsture</string>
+    <string name="nav_refund">Atmaksa</string>
+    <string name="nav_balance">Bilance</string>
+    <string name="nav_back">Atpakaļ</string>
+
+    <!-- Common actions -->
+    <string name="back">Atpakaļ</string>
+    <string name="save">Saglabāt</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Nav maka</string>
+    <string name="pay_no_wallet_desc">Iestatiet maku Iestatījumos,\nlai veiktu maksājumus</string>
+    <string name="pay_ready">Gatavs maksājumam</string>
+    <string name="pay_ready_desc">Turiet tālruni tuvu\ntirgotāja ierīcei</string>
+    <string name="pay_request_title">Maksājuma pieprasījums</string>
+    <string name="pay_network">Tīkls: %s</string>
+    <string name="pay_expired">Pieprasījums beidzies</string>
+    <string name="pay_cancel">Atcelt</string>
+    <string name="pay_confirm">Maksāt</string>
+    <string name="pay_new">Jauns maksājums</string>
+    <string name="pay_signing">Paraksta darījumu…</string>
+    <string name="pay_tx_signed">Darījums parakstīts</string>
+    <string name="pay_tx_signed_desc">Turiet tālruni tuvu\ntirgotājam, lai nosūtītu</string>
+    <string name="pay_authenticating">Autentificē…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Nav maka</string>
+    <string name="collect_no_wallet_desc">Iestatiet maku Iestatījumos,\nlai saņemtu maksājumus</string>
+    <string name="collect_amount">Saņemamā summa</string>
+    <string name="collect_button">Saņemt</string>
+    <string name="collect_waiting">Gaida maksājumu</string>
+    <string name="collect_waiting_desc">Lūdziet klientu\nturēt tālruni tuvu</string>
+    <string name="collect_new">Jauna saņemšana</string>
+    <string name="collect_processing">Apstrādā maksājumu…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Darbības režīms</string>
+    <string name="settings_mode_pay">Maksāt</string>
+    <string name="settings_mode_pay_desc">Veikt maksājumus</string>
+    <string name="settings_mode_collect">Saņemt</string>
+    <string name="settings_mode_collect_desc">Saņemt maksājumus</string>
+    <string name="settings_wallet">Maks</string>
+    <string name="settings_wallet_address">Adrese</string>
+    <string name="settings_wallet_none">Maks nav konfigurēts</string>
+    <string name="settings_wallet_create">Izveidot</string>
+    <string name="settings_wallet_import">Importēt</string>
+    <string name="settings_network">Blokķēdes tīkls</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Darījumu izpilde</string>
+    <string name="settings_exec_direct">Tiešā</string>
+    <string name="settings_exec_direct_desc">Jūs maksājat par gāzi</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsorēta gāze caur relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 ar Paymaster</string>
+    <string name="settings_api_key">API atslēga</string>
+    <string name="settings_save">Saglabāt un atgriezties</string>
+    <string name="settings_not_available">Nav pieejams šajā tīklā</string>
+    <string name="settings_language">Valoda</string>
+    <string name="settings_language_system">Sistēmas noklusējums</string>
+    <string name="collect_select_currency">Izvēlēties valūtu</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Drošība</string>
+    <string name="security_encryption">Atslēgu šifrēšana</string>
+    <string name="security_encryption_desc">AES-256-GCM ar Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Aparatūras drošības modulis aktīvs</string>
+    <string name="security_strongbox_unavailable">Nav pieejams šajā ierīcē</string>
+    <string name="security_biometric">Biometriskā autentifikācija</string>
+    <string name="security_biometric_required">Nepieciešama maksājumiem</string>
+    <string name="security_biometric_disabled">Atspējota</string>
+    <string name="security_biometric_unavailable">Nav pieejama</string>
+    <string name="security_export">Eksportēt privāto atslēgu</string>
+    <string name="security_export_desc">Droši saglabājiet savu atslēgu</string>
+    <string name="security_delete">Dzēst maku</string>
+    <string name="security_delete_desc">Neatgriezeniski dzēst visus datus</string>
+    <string name="security_delete_title">Dzēst maku</string>
+    <string name="security_delete_warning">Šī darbība ir NEATGRIEZENISKA.</string>
+    <string name="security_delete_warning2">Jūs zaudēsiet piekļuvi visiem līdzekļiem, ja jums nav privātās atslēgas rezerves kopijas.</string>
+    <string name="security_delete_warning3">Pārliecinieties, ka esat eksportējis atslēgu pirms turpināšanas.</string>
+    <string name="security_delete_confirm">Dzēst</string>
+    <string name="security_status_active">Aktīvs</string>
+    <string name="security_status_warning">Brīdinājums</string>
+    <string name="security_status_na">Nav piemērojams</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importēt maku</string>
+    <string name="import_private_key">Privātā atslēga</string>
+    <string name="import_seed_phrase">Atjaunošanas frāze</string>
+    <string name="import_prompt">Ievadiet savu privāto atslēgu:</string>
+    <string name="import_prompt_seed">Ievadiet atjaunošanas frāzi (12–24 vārdi):</string>
+    <string name="import_seed_hint">vārds1 vārds2 vārds3 …</string>
+    <string name="import_button">Importēt</string>
+    <string name="import_error_invalid">Nederīga privātā atslēga</string>
+    <string name="import_error_invalid_seed">Nederīga atjaunošanas frāze</string>
+    <string name="import_error_encryption">Šifrēšanas kļūda</string>
+    <string name="export_title">Privātā atslēga</string>
+    <string name="export_warning">NEKAD nedalieties ar šo atslēgu. Ikvienam, kam tā pieder, ir pilna kontrole pār jūsu līdzekļiem.</string>
+    <string name="export_understood">Sapratu</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Kopsavilkums</string>
+    <string name="history_received">Saņemts</string>
+    <string name="history_sent">Nosūtīts</string>
+    <string name="history_refunded">Atmaksāts</string>
+    <string name="history_empty">Nav darījumu</string>
+    <string name="history_empty_desc">Darījumi %s\ntiks parādīti šeit</string>
+    <string name="history_payment_received">Maksājums saņemts</string>
+    <string name="history_payment_sent">Maksājums nosūtīts</string>
+    <string name="history_refund_sent">Atmaksa</string>
+    <string name="history_refund_received">Atmaksa saņemta</string>
+    <string name="history_status_pending">Gaida</string>
+    <string name="history_status_confirmed">Apstiprināts</string>
+    <string name="history_status_failed">Neizdevās</string>
+    <string name="history_status_refunded">Atmaksāts</string>
+    <string name="history_status_partial">Daļējs</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Oriģinālais darījums</string>
+    <string name="refund_amount">Summa</string>
+    <string name="refund_already">Jau atmaksāts</string>
+    <string name="refund_available">Pieejams</string>
+    <string name="refund_recipient">Saņēmējs</string>
+    <string name="refund_date">Datums</string>
+    <string name="refund_type">Atmaksas veids</string>
+    <string name="refund_full">Pilna</string>
+    <string name="refund_partial">Daļēja</string>
+    <string name="refund_partial_desc">Norādiet summu</string>
+    <string name="refund_amount_label">Atmaksājamā summa (%s)</string>
+    <string name="refund_max">Maksimums: %1$s %2$s</string>
+    <string name="refund_gas_notice">Jūs maksāsiet par gāzi šim darījumam</string>
+    <string name="refund_button">Atmaksāt %1$s %2$s</string>
+    <string name="refund_processing">Apstrādā atmaksu…</string>
+    <string name="refund_success">Atmaksa veiksmīga</string>
+    <string name="refund_done">Gatavs</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Jūsu žetoni</string>
+    <string name="balance_manage">Pārvaldīt</string>
+    <string name="balance_refresh">Atjaunināt</string>
+    <string name="balance_loading">Ielādē bilances…</string>
+    <string name="balance_empty">Nav žetonu</string>
+    <string name="balance_no_wallet_desc">Iestatiet maku Iestatījumos,\nlai redzētu bilances</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Atļautie žetoni</string>
+    <string name="settings_add_token">Pievienot žetonu</string>
+    <string name="add_token_prompt">Ievadiet žetona līguma adresi:</string>
+    <string name="add_token_validating">Pārbauda žetonu…</string>
+    <string name="add_token_button">Pievienot</string>
+    <string name="delete">Dzēst</string>
+
+    <!-- Common -->
+    <string name="cancel">Atcelt</string>
+    <string name="close">Aizvērt</string>
+    <string name="retry">Mēģināt vēlreiz</string>
+    <string name="error">Kļūda</string>
+    <string name="copy">Kopēt</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Maks nav konfigurēts</string>
+    <string name="error_device_security">Ierīces drošības kļūda</string>
+    <string name="error_auth">Autentifikācijas kļūda</string>
+    <string name="error_unknown">Nezināma kļūda</string>
+    <string name="error_keystore_unavailable">Keystore nav pieejams - dažas funkcijas nedarbosies</string>
+    <string name="error_encryption_restart">Šifrēšanas kļūda - restartējiet lietotni</string>
+    <string name="error_auth_cancelled">Autentifikācija atcelta</string>
+    <string name="error_invalid_address">Nederīga adrese</string>
+    <string name="error_invalid_address_format">Nederīgs adreses formāts</string>
+    <string name="error_token_already_added">Žetons jau pievienots</string>
+    <string name="stealth_spend_sent_tx">Nosūtīts! Tx: %s…</string>
+    <string name="token_native">Vietējais</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Jūsu bilance</string>
+    <string name="pay_insufficient_balance">Nepietiekama bilance</string>
+    <string name="pay_need_more">Jums nepieciešams vēl %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Laipni lūdzam</string>
+    <string name="welcome_sovereignty">Jūsu atslēgas.\nJūsu līdzekļi.\nJūsu suverenitāte.</string>
+    <string name="welcome_desc">Jūsu līdzekļi NAV uzglabāti šajā lietotnē. Tie eksistē blokķēdē, kontrolēti ar jūsu privātajām atslēgām.\n\nŠī lietotne tikai droši uzglabā jūsu atslēgas. Mēs nevaram piekļūt jūsu līdzekļiem.\n\nPiezīme: Dažus žetonus (USDC, USDT) var iesaldēt to emitenti. Maksimālai suverenitātei izmantojiet vietējo ETH vai decentralizētus žetonus.</string>
+    <string name="welcome_warning_title">Jūsu atslēgas = Jūsu līdzekļi</string>
+    <string name="welcome_warning_desc">Ja pazaudēsiet privātās atslēgas vai dalīsieties ar tām, jūs zaudēsiet kontroli pār saviem līdzekļiem uz visiem laikiem.\n\nNav atjaunošanas iespējas. Neviena atbalsta komanda nevar jums palīdzēt. Tā ir īstas īpašumtiesību būtība.\n\nVienmēr glabājiet drošu atslēgu rezerves kopiju.</string>
+    <string name="welcome_opensource">Atvērtā koda programmatūra. Pārbaudiet, neuzticieties.</string>
+    <string name="welcome_start">Es saprotu, sāksim</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Tirgotāja identitāte</string>
+    <string name="settings_merchant_name">Uzņēmuma nosaukums</string>
+    <string name="settings_merchant_name_hint">Mana kafejnīca</string>
+    <string name="settings_merchant_domain">Domēns / ENS</string>
+    <string name="settings_merchant_domain_hint">manakafejnica.eth vai manakafejnica.com</string>
+    <string name="settings_merchant_identity_desc">Tiek parādīts klientiem maksājuma laikā</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privātuma režīms</string>
+    <string name="settings_stealth_desc">Saņemiet maksājumus uz vienreizējām adresēm (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Iespējots</string>
+    <string name="settings_stealth_info">Katrs maksājums nonāk unikālā adresē, ko tikai jūs varat tērēt. Novērotāji nevar sasaistīt maksājumus ar jūsu uzņēmumu.</string>
+    <string name="stealth_address_label">Stealth režīms aktīvs</string>
+    <string name="stealth_payment_note">Maksājums tiks nosūtīts uz privātu adresi</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Saņēmēja adrese</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privātais maks</string>
+    <string name="stealth_wallet_addresses">pāri %d stealth adresēm</string>
+    <string name="stealth_wallet_privacy_title">Jūsu līdzekļi ir privāti</string>
+    <string name="stealth_wallet_privacy_desc">Šī bilance nav sasaistīta ar jūsu publisko maku. Tērējiet tieši piegādātājiem, biržām vai jebkur - jūsu uzņēmuma identitāte paliek slēpta.</string>
+    <string name="stealth_wallet_send">Sūtīt</string>
+    <string name="stealth_wallet_send_title">Sūtīt no privātā maka</string>
+    <string name="stealth_wallet_available">Pieejams: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Summa</string>
+    <string name="nav_stealth_wallet">Privātais maks</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Vairākas adreses</string>
+    <string name="stealth_wallet_gas_desc">Jūsu līdzekļi ir sadalīti pa %d adresēm. Lielu summu tērēšana var prasīt vairākus darījumus, palielinot gāzes izmaksas.</string>
+    <string name="stealth_wallet_consolidate">Konsolidēt uz galveno maku</string>
+    <string name="stealth_wallet_consolidate_title">Konsolidēt līdzekļus?</string>
+    <string name="stealth_wallet_consolidate_warning">Tas pārskaitīs visus līdzekļus no jūsu privātā maka uz galvenā maka adresi.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">BRĪDINĀJUMS: Tas pārkāpj privātumu. Jūsu galvenais maks tiks sasaistīts ar visiem saņemtajiem maksājumiem.</string>
+    <string name="stealth_wallet_consolidate_benefit">Ieguvums: Nākotnē tērēšana prasīs tikai vienu darījumu (zemākas gāzes izmaksas).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolidēt</string>
+    <string name="stealth_wallet_consolidate_success">Līdzekļi konsolidēti uz galveno maku</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Maksātāja privātums</string>
+    <string name="settings_payer_privacy_desc">Maksājiet no pagaidu kontiem (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Katrs maksājums izmanto unikālu kontu. Jūsu galvenā maka adrese nav redzama ķēdē.</string>
+    <string name="settings_payer_privacy_requires_api">API atslēga nepieciešama mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Bezmaksas testnet tīklos (publisks bundler)</string>
+    <string name="payer_privacy_note">Jūsu maka adrese tiks slēpta</string>
+    <string name="payer_privacy_processing">Apstrādā privāto maksājumu…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adrešu grāmata</string>
+    <string name="address_book_add">Pievienot kontaktu</string>
+    <string name="address_book_edit">Rediģēt kontaktu</string>
+    <string name="address_book_search">Meklēt kontaktus…</string>
+    <string name="address_book_empty">Kontaktu vēl nav</string>
+    <string name="address_book_empty_hint">Pievienojiet adreses, lai viegli identificētu,\nkam maksājat vai no kā saņemat</string>
+    <string name="address_book_no_results">Kontakti nav atrasti</string>
+    <string name="address_book_address">Maka adrese</string>
+    <string name="address_book_name">Nosaukums</string>
+    <string name="address_book_name_hint">piem., Kafejnīca, Jānis Bērziņš</string>
+    <string name="address_book_note">Piezīme (neobligāti)</string>
+    <string name="address_book_note_hint">piem., Piegādātājs, Draugs</string>
+    <string name="address_book_delete_title">Dzēst kontaktu?</string>
+    <string name="address_book_delete_message">Noņemt %s no adrešu grāmatas?</string>
+    <string name="address_book_saved">Kontakts saglabāts</string>
+    <string name="address_book_unknown">Nezināms</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Vienkāršais režīms</string>
+    <string name="settings_simple_mode_desc">Viegli lietot, pamata opcijas</string>
+    <string name="settings_advanced_mode">Papildu režīms</string>
+    <string name="settings_advanced_mode_desc">Kripto opcijas pieredzējušiem lietotājiem</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Dalīties ar kontaktu</string>
+    <string name="share_contact_title">Dalieties ar savu adresi</string>
+    <string name="share_contact_ready">Gatavs dalīšanai</string>
+    <string name="share_contact_ready_desc">Turiet tālruni tuvu\ncitai CleanSky ierīcei</string>
+    <string name="share_contact_received">Kontakts saņemts!</string>
+    <string name="share_contact_received_name">%s vēlas savienoties</string>
+    <string name="share_contact_save">Saglabāt kontaktos</string>
+    <string name="share_contact_your_name">Jūsu vārds (neobligāti)</string>
+    <string name="share_contact_your_name_hint">Kā citi jūs redzēs</string>
+    <string name="share_contact_mutual">Apmainīties ar kontaktiem</string>
+    <string name="share_contact_mutual_desc">Abas ierīces vienlaikus kopīgo adreses</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Sūtīt</string>
+    <string name="send_title">Sūtīt kontaktam</string>
+    <string name="send_select_contact">Izvēlieties saņēmēju</string>
+    <string name="send_no_contacts">Kontaktu vēl nav</string>
+    <string name="send_no_contacts_hint">Pievienojiet kontaktus caur NFC vai manuāli\nlai sūtītu maksājumus</string>
+    <string name="send_amount">Summa</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Kam: %s</string>
+    <string name="send_confirm">Sūtīt %1$s %2$s</string>
+    <string name="send_processing">Sūta…</string>
+    <string name="send_success">Veiksmīgi nosūtīts!</string>
+    <string name="send_success_desc">%1$s %2$s nosūtīts uz %3$s</string>
+    <string name="send_error">Neizdevās nosūtīt</string>
+    <string name="send_enter_amount">Ievadiet summu</string>
+    <string name="send_new">Jauns pārskaitījums</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Visi</string>
+    <string name="history_filter_received">Saņemts</string>
+    <string name="history_filter_sent">Nosūtīts</string>
+    <string name="history_filter_contact">Kontakts</string>
+    <string name="history_filter_by_contact">Filtrēt pēc kontakta</string>
+    <string name="history_show_all">Rādīt visus</string>
+    <string name="history_no_results">Nav darījumu, kas atbilst filtram</string>
+    <string name="history_add_contact">Pievienot kontaktiem</string>
+    <string name="history_edit_contact">Rediģēt kontaktu</string>
+    <string name="history_from">No</string>
+    <string name="history_to">Kam</string>
+    <string name="history_date">Datums</string>
+    <string name="history_tx_hash">Darījums</string>
+    <string name="history_refund">Atmaksa</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Summa ir pārāk maza</string>
+    <string name="scam_amount_large_warning">Liela summa</string>
+    <string name="scam_amount_large_desc">Jūs sūtāt %1$s %2$s.\nLūdzu, apstipriniet, ka tas ir pareizi.</string>
+    <string name="scam_confirm_large">Apstipriniet lielu pārskaitījumu</string>
+    <string name="scam_dust_attack_warning">Aizdomīgs pieprasījums</string>
+    <string name="scam_dust_attack_desc">Šī ir ļoti maza summa (%1$s %2$s). Putekļu uzbrukumi izmanto sīkus maksājumus, lai izsekotu makus. Noraidiet, ja negaidīts.</string>
+    <string name="scam_receive_large_warning">Liela maksājuma pieprasījums</string>
+    <string name="scam_receive_large_desc">Šis pieprasījums ir par %1$s %2$s. Pārbaudiet, vai tā ir pareizā summa pirms maksāšanas.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Tikai saņemšana</string>
+    <string name="settings_mode_receive_only">Saņemšana</string>
+    <string name="settings_mode_receive_only_desc">Nav privātās atslēgas</string>
+    <string name="settings_receive_only">Tikai saņemšanas konfigurācija</string>
+    <string name="settings_escrow_address">Escrow adrese</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow nav konfigurēts</string>
+    <string name="receive_only_no_escrow_desc">Konfigurējiet escrow adresi un API key Iestatījumos</string>
+    <string name="receive_only_security_notice">Nav privātās atslēgas šajā ierīcē. Droši zādzības gadījumā.</string>
+    <string name="receive_only_api_key_required">API key nepieciešama relayer izpildei</string>
+</resources>

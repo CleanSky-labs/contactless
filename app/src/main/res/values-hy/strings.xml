@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Vcharel</string>
+    <string name="nav_collect">Havaqel</string>
+    <string name="nav_settings">Kargavorumner</string>
+    <string name="nav_history">Patmutyun</string>
+    <string name="nav_refund">Vereradardzum</string>
+    <string name="nav_balance">Mnacort</string>
+    <string name="nav_back">Hetq</string>
+
+    <!-- Common actions -->
+    <string name="back">Hetq</string>
+    <string name="save">Pahpanel</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Dramapanak chka</string>
+    <string name="pay_no_wallet_desc">Kargavorek dramapanaky Kargavorumnerum\nvcharumner katarel hamar</string>
+    <string name="pay_ready">Patrastm em vcharel</string>
+    <string name="pay_ready_desc">Motecreck dzer heraghosn\nvachjarhi sarqin</string>
+    <string name="pay_request_title">Vcharman haytse</string>
+    <string name="pay_network">Canc: %s</string>
+    <string name="pay_expired">Haytsy zhametkim ancel e</string>
+    <string name="pay_cancel">Checnel</string>
+    <string name="pay_confirm">Vcharel</string>
+    <string name="pay_new">Nor vcharum</string>
+    <string name="pay_signing">Gorcarkutyan storagrum…</string>
+    <string name="pay_tx_signed">Gorcarkutyuny storagrvel e</string>
+    <string name="pay_tx_signed_desc">Motecreck dzer heraghosn\nvachjarhin ugharkelou hamar</string>
+    <string name="pay_authenticating">Nuynakanacanumn…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Dramapanak chka</string>
+    <string name="collect_no_wallet_desc">Kargavorek dramapanaky Kargavorumnerum\nvcharumner stanalu hamar</string>
+    <string name="collect_amount">Havakveliq gumary</string>
+    <string name="collect_button">Havaqel</string>
+    <string name="collect_waiting">Spasvm em vcharman</string>
+    <string name="collect_waiting_desc">Khndrek hachorddin\nmotecrnel irenk heraghosn</string>
+    <string name="collect_new">Nor havaqum</string>
+    <string name="collect_processing">Vcharmany mtacel e…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Gorcoghutyun rejim</string>
+    <string name="settings_mode_pay">Vcharel</string>
+    <string name="settings_mode_pay_desc">Katarel vcharumner</string>
+    <string name="settings_mode_collect">Havaqel</string>
+    <string name="settings_mode_collect_desc">Stanel vcharumner</string>
+    <string name="settings_wallet">Dramapanak</string>
+    <string name="settings_wallet_address">Hascen</string>
+    <string name="settings_wallet_none">Dramapanaky kargavorvac che</string>
+    <string name="settings_wallet_create">Steghcel</string>
+    <string name="settings_wallet_import">Nermucel</string>
+    <string name="settings_network">Blockchain canc</string>
+    <string name="settings_chain_id">Shghta ID: %d</string>
+    <string name="settings_execution">Gorcarkutyun kataruma</string>
+    <string name="settings_exec_direct">Ughghaki</string>
+    <string name="settings_exec_direct_desc">Duk vcharum ek gazy</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Hovanavirvoragh gaz relayer-ov</string>
+    <string name="settings_exec_aa">Hashiv Abstrakcya</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymaster-ov</string>
+    <string name="settings_api_key">API Banali</string>
+    <string name="settings_save">Pahpanel ev vererdarnal</string>
+    <string name="settings_not_available">Ays canchum hasakhdeli che</string>
+    <string name="settings_language">Lezuv</string>
+    <string name="settings_language_system">Hamakargayin lrakayac</string>
+    <string name="collect_select_currency">Entreck arjhuyt</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Anvtangutyun</string>
+    <string name="security_encryption">Banalin godavoruma</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystore-ov</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Aparatayun anvtangutyun moduln aktiv e</string>
+    <string name="security_strongbox_unavailable">Ays sarqum hasakhdeli che</string>
+    <string name="security_biometric">Kensabanapakan nvtangavoruma</string>
+    <string name="security_biometric_required">Patahanyck vcharumnneri hamar</string>
+    <string name="security_biometric_disabled">Ankjatvac</string>
+    <string name="security_biometric_unavailable">Hasakhdeli che</string>
+    <string name="security_export">Artahanel masnavar banali</string>
+    <string name="security_export_desc">Pahpaneck dzer banaly anvtang</string>
+    <string name="security_delete">Jnjel dramapanaky</string>
+    <string name="security_delete_desc">Mshtalapes jnjel bolor tvyalnery</string>
+    <string name="security_delete_title">Jnjel dramapanaky</string>
+    <string name="security_delete_warning">Ays gorchoghutiuny ANVERAR e.</string>
+    <string name="security_delete_warning2">Duk kkorcrnek hasaneliutyuny bolor mijocrn, ete chkaq pahustacrel dzer masnavar banaly.</string>
+    <string name="security_delete_warning3">Hamozveck vor artahanvel eck dzer banaly sharunakeluc araj.</string>
+    <string name="security_delete_confirm">Jnjel</string>
+    <string name="security_status_active">Aktiv</string>
+    <string name="security_status_warning">Zgusacum</string>
+    <string name="security_status_na">Hasakhdeli che</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Nermucel dramapanaky</string>
+    <string name="import_private_key">Masnavar Banali</string>
+    <string name="import_seed_phrase">Seed Artatahaytutyun</string>
+    <string name="import_prompt">Mtkeck dzer masnavar banaly:</string>
+    <string name="import_prompt_seed">Mtkeck dzer seed artatahaytutyuny (12–24 barr):</string>
+    <string name="import_seed_hint">barr1 barr2 barr3 …</string>
+    <string name="import_button">Nermucel</string>
+    <string name="import_error_invalid">Anvavar masnavar banali</string>
+    <string name="import_error_invalid_seed">Anvavar seed artatahaytutyun</string>
+    <string name="import_error_encryption">Godavormani skhal</string>
+    <string name="export_title">Masnavar Banali</string>
+    <string name="export_warning">ERBEQ mi kiseq ays banaly voreve mekin. Ov uny ays banaly, una ambjoghn verahskoghutyun dzer mijocrner vra.</string>
+    <string name="export_understood">Haskacom em</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Ampoghum</string>
+    <string name="history_received">Stanvel e</string>
+    <string name="history_sent">Ugharkvels e</string>
+    <string name="history_refunded">Vereradardzvels e</string>
+    <string name="history_empty">Gorcarkutyunner chka</string>
+    <string name="history_empty_desc">%s-i vra gorcarkutyunnery\naystegh kereval</string>
+    <string name="history_payment_received">Vcharmana stanvel e</string>
+    <string name="history_payment_sent">Vcharamana ugharkvels e</string>
+    <string name="history_refund_sent">Vereradardzum</string>
+    <string name="history_refund_received">Vereradardzum stanvel e</string>
+    <string name="history_status_pending">Spasvm e</string>
+    <string name="history_status_confirmed">Hastavevel e</string>
+    <string name="history_status_failed">Dzakhogvel e</string>
+    <string name="history_status_refunded">Vereradardzvels e</string>
+    <string name="history_status_partial">Masnaki</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Skzbnakan gorcarkutyun</string>
+    <string name="refund_amount">Gumary</string>
+    <string name="refund_already">Ardyen vereradardzvel e</string>
+    <string name="refund_available">Hasakhdeli</string>
+    <string name="refund_recipient">Stacoly</string>
+    <string name="refund_date">Amsatvy</string>
+    <string name="refund_type">Vereradardzman tesakn</string>
+    <string name="refund_full">Amboghcovyn</string>
+    <string name="refund_partial">Masnaki</string>
+    <string name="refund_partial_desc">Nsheck gumary</string>
+    <string name="refund_amount_label">Vereradardzvelu gumary (%s)</string>
+    <string name="refund_max">Maximal: %1$s %2$s</string>
+    <string name="refund_gas_notice">Duk kvecharek gazy ays gorcarkutyun hamar</string>
+    <string name="refund_button">Vereradardznel %1$s %2$s</string>
+    <string name="refund_processing">Vereradardzmany mtacumm e…</string>
+    <string name="refund_success">Vereradardzmuny haghogac e</string>
+    <string name="refund_done">Avart</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Dzer Tokennery</string>
+    <string name="balance_manage">Kargavorel</string>
+    <string name="balance_refresh">Tarugatsel</string>
+    <string name="balance_loading">Mnacortnery bernum en…</string>
+    <string name="balance_empty">Tokenner chka</string>
+    <string name="balance_no_wallet_desc">Kargavorek dramapanaky Kargavorumnerum\ndzer mnacortnery tesnelov hamar</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tuylatum tokennery</string>
+    <string name="settings_add_token">Avelacnel Token</string>
+    <string name="add_token_prompt">Mtkeck tokeni pamanagiveri hascen:</string>
+    <string name="add_token_validating">Tokeny stvugumm e…</string>
+    <string name="add_token_button">Avelacnel</string>
+    <string name="delete">Jnjel</string>
+
+    <!-- Common -->
+    <string name="cancel">Checnel</string>
+    <string name="close">Phakel</string>
+    <string name="retry">Krknel</string>
+    <string name="error">Skhal</string>
+    <string name="copy">Patcenagrel</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Dramapanaky kargavorvac che</string>
+    <string name="error_device_security">Sarqi anvtangutyun skhal</string>
+    <string name="error_auth">Nuynakanacanman skhal</string>
+    <string name="error_unknown">Anhaytn skhal</string>
+    <string name="error_keystore_unavailable">Keystore-y hasakhdeli che - vorosh gorcoghutyunner chkaen ashkatum</string>
+    <string name="error_encryption_restart">Godavormani skhal - veragorteck cragiry</string>
+    <string name="error_auth_cancelled">Nuynakanacanman checvel e</string>
+    <string name="error_invalid_address">Anvavar hascen</string>
+    <string name="error_invalid_address_format">Hascei anvavar format</string>
+    <string name="error_token_already_added">Tokeny ardyen avelacvel e</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Ugharkvels e! Tx: %s…</string>
+    <string name="token_native">Bnakins</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Dzer mnacorty</string>
+    <string name="pay_insufficient_balance">Anvbavar mnacort</string>
+    <string name="pay_need_more">Dzer petq e evs %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Bariev yeq</string>
+    <string name="welcome_sovereignty">Dzer banalinern en.\nDzer mijocrn en.\nDzer inkisvanutyunn e.</string>
+    <string name="welcome_desc">Dzer mijocrn CHEK pahelum ays cragrum. Narank goyutyun unen blokcheynumy, karvaryum dzer masnavar banalinnerov.\n\nAys cragiry miaynavk pahum e dzer banalinern anvtang. Menk chenk karogh mtunel dzer mijocrn.\n\nCannoti: Vorosh tokenner (USDC, USDT) karogh en saravcel irenk tekaroghnerovn. Amenayn inkisvanutyun hamar ogtagorceck bnakann ETH kam apatkeyntratsvogh tokenner.</string>
+    <string name="welcome_warning_title">Dzer banalinern = Dzer mijocrn</string>
+    <string name="welcome_warning_desc">Ete korcrnek dzer masnavar banalinern kam kiseq dranq voreve mekin, duk kocrnek verahskoghutyuny dzer mijocrner vra mshtalapes.\n\nVerakanguman tarbarak chka. Oci ajakcutyun tjimi chenk karogh ognel dzez. Ays e ishakan tirochu bnuytsy.\n\nMisht paheck dzer banalinern anvtang pahustacrum.</string>
+    <string name="welcome_opensource">Bats kodn cragrakanum. Stvugeck, mi vsteceq.</string>
+    <string name="welcome_start">Haskacom em, sksenq</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Vacharakani Inkutyun</string>
+    <string name="settings_merchant_name">Biznesei Anvanumy</string>
+    <string name="settings_merchant_name_hint">Im Srcharany</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mysrcharan.eth kam mysrcharan.com</string>
+    <string name="settings_merchant_identity_desc">Cuycvel e hachordnerin vcharman yntacqum</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Gaghtnabanutyan Rejim</string>
+    <string name="settings_stealth_desc">Staneck vcharumnern miayngunian hascenneriv (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Miatsvel e</string>
+    <string name="settings_stealth_info">Yuraqanchyur vcharum gnum e ehakan hascei, vory miaynavk duk kareq ctahanel. Diteloghnery chenk karogh kapel vcharumnery dzer biznesi het.</string>
+    <string name="stealth_address_label">Gaghtni Rejimn Aktiv e</string>
+    <string name="stealth_payment_note">Vcharmany kugharvi gaghtni hascei</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Stacoghi hascen</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Gaghtni Drampanak</string>
+    <string name="stealth_wallet_addresses">%d gaghtni hascennerov</string>
+    <string name="stealth_wallet_privacy_title">Dzer mijocrn gaghtni en</string>
+    <string name="stealth_wallet_privacy_desc">Ays mnacorty kapvac che dzer hanrayin dramapanaki het. Ctahaneck anmijakanoren makararoghnerin, borasnerin kam vortegh uzum eck - dzer biznesi inkutyuny thaktstsvac kmni.</string>
+    <string name="stealth_wallet_send">Ugharkil</string>
+    <string name="stealth_wallet_send_title">Ugharkil Gaghtni Drampanakits</string>
+    <string name="stealth_wallet_available">Hasakhdeli: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Gumary</string>
+    <string name="nav_stealth_wallet">Gaghtni Drampanak</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Bzmatesk hascenner</string>
+    <string name="stealth_wallet_gas_desc">Dzer mijocrn taracvac en %d hascennerov. Mec gumarner ctahanel karogh pahanjel mi qani gorcarkutyun, avelajrelu gazi ctahumnery.</string>
+    <string name="stealth_wallet_consolidate">Miavorel himnaakan dramapanak</string>
+    <string name="stealth_wallet_consolidate_title">Miavorel mijocrn?</string>
+    <string name="stealth_wallet_consolidate_warning">Ays bolor mijocrn kpokhanci dzer gaghtni dramapanakits dzer himnaakan dramapanaki hascei.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ZGUSHACUM: Ays khzum e gaghtnabanutyny. Dzer himnaakan drampanaky kapvel e bolor stanvac vcharmnneri het.</string>
+    <string name="stealth_wallet_consolidate_benefit">Ogtuty: Apaga ctahumnern miaynavk mi gorcarkutyun kpahanjvhen (catsrah gazi ctahum).</string>
+    <string name="stealth_wallet_consolidate_confirm">Miavorel</string>
+    <string name="stealth_wallet_consolidate_success">Mijocrn miavorvel en himnaakan dramapanakum</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Vcharoghi Gaghtnabanutyan</string>
+    <string name="settings_payer_privacy_desc">Vchareck erjankali hashivnerov (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Yuraqanchyur vcharum ogtagortsum e ehakan hashiv. Dzer himnaakan dramapanaki hascen tesneli che on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Mainnet-i hamar API banali patahanyck e</string>
+    <string name="settings_payer_privacy_public_bundler">Testnetnerin anvatchar (hanrayin bundler)</string>
+    <string name="payer_privacy_note">Dzer dramapanaki hascen thaktstsvac klini</string>
+    <string name="payer_privacy_processing">Gaghtni vcharmany mtacumm e…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Hasceneri Girq</string>
+    <string name="address_book_add">Avelacnel Kontakt</string>
+    <string name="address_book_edit">Khmbagrel Kontaktn</string>
+    <string name="address_book_search">Voronel kontaktner…</string>
+    <string name="address_book_empty">Kontaktner deravs chka</string>
+    <string name="address_book_empty_hint">Avelacnek hascenner hshtalapes tnvoroshelou\nvor um ek vcharum kam stanumm eck</string>
+    <string name="address_book_no_results">Kontaktner chkan gtnvac</string>
+    <string name="address_book_address">Dramapanaki Hascen</string>
+    <string name="address_book_name">Anun</string>
+    <string name="address_book_name_hint">O. Srcharan, Hovhannes</string>
+    <string name="address_book_note">Cannoti (ockshtatakan)</string>
+    <string name="address_book_note_hint">O. Makararogh, Bnker</string>
+    <string name="address_book_delete_title">Jnjel kontaktn?</string>
+    <string name="address_book_delete_message">Hanel %s-n dzer hasceneri grqits?</string>
+    <string name="address_book_saved">Kontakty pahvacts e</string>
+    <string name="address_book_unknown">Anhaytn</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Paristats Rejim</string>
+    <string name="settings_simple_mode_desc">Heshut ogtagortsman, himnakan yntranqner</string>
+    <string name="settings_advanced_mode">Barc Rejim</string>
+    <string name="settings_advanced_mode_desc">Cripto yntranqner phordzaryalner hamar</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kseq Kontaktn</string>
+    <string name="share_contact_title">Kseq Dzer Hascen</string>
+    <string name="share_contact_ready">Patrastm e kisel</string>
+    <string name="share_contact_ready_desc">Motecreck dzer heraghosn\nmek ayl CleanSky sarqi</string>
+    <string name="share_contact_received">Kontakty stanvel e!</string>
+    <string name="share_contact_received_name">%s uzum e kapvel</string>
+    <string name="share_contact_save">Pahel kontaktnern</string>
+    <string name="share_contact_your_name">Dzer anun (ockshtatakan)</string>
+    <string name="share_contact_your_name_hint">Inchpes urshinery ktenan dzer</string>
+    <string name="share_contact_mutual">Phokhanakel kontaktnery</string>
+    <string name="share_contact_mutual_desc">Erkush sarqery miajamanak kisen hascennery</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Ugharkil</string>
+    <string name="send_title">Ugharkil Kontaktin</string>
+    <string name="send_select_contact">Entreck stacoghy</string>
+    <string name="send_no_contacts">Deravs kontaktner chka</string>
+    <string name="send_no_contacts_hint">Avelacnek kontaktner NFC-ov kam dzernakan\nnranc vcharumner ugharkelou hamar</string>
+    <string name="send_amount">Gumary</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">-in: %s</string>
+    <string name="send_confirm">Ugharkil %1$s %2$s</string>
+    <string name="send_processing">Ugharkvumm e…</string>
+    <string name="send_success">Haghogac ugharkvec!</string>
+    <string name="send_success_desc">%1$s %2$s ugharkvec %3$s-in</string>
+    <string name="send_error">Ugharkel chhaghogvec</string>
+    <string name="send_enter_amount">Mtkeck gumary</string>
+    <string name="send_new">Nor phokhancum</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Bolory</string>
+    <string name="history_filter_received">Stanvacner</string>
+    <string name="history_filter_sent">Ugharkvacner</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Zgnel kontaktov</string>
+    <string name="history_show_all">Cuyc tal bolory</string>
+    <string name="history_no_results">Gorcarkutyunner chka zgichov hamapataskhan</string>
+    <string name="history_add_contact">Avelacnel kontaktnerin</string>
+    <string name="history_edit_contact">Khmbagrel kontakty</string>
+    <string name="history_from">-its</string>
+    <string name="history_to">-in</string>
+    <string name="history_date">Amsatvy</string>
+    <string name="history_tx_hash">Gorcarkutyun</string>
+    <string name="history_refund">Vereradardzum</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Gumary chap phoqr e</string>
+    <string name="scam_amount_large_warning">Mec gumary</string>
+    <string name="scam_amount_large_desc">Duk ugharkelou ek %1$s %2$s.\nKhndrum enq hastaveck vor ays tchisht e.</string>
+    <string name="scam_confirm_large">Hastaveck mec phokhancumy</string>
+    <string name="scam_dust_attack_warning">Kashkaceliv haytse</string>
+    <string name="scam_dust_attack_desc">Ays shat phoqr gumary e (%1$s %2$s). Poshi harelner ogtagortssum en phoqr vcharumner dramapanaknery hetevaelu hamar. Merjeck ete anhrasht e.</string>
+    <string name="scam_receive_large_warning">Mec vcharman haytse</string>
+    <string name="scam_receive_large_desc">Ays haytsy %1$s %2$s-i hamar e. Stvugeck vor ays tchisht gumarn e vcharelutz araj.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Miajn stanalou</string>
+    <string name="settings_mode_receive_only">Stanal</string>
+    <string name="settings_mode_receive_only_desc">Andznakaн banali chka</string>
+    <string name="settings_receive_only">Miajn stanalou kargavoroum</string>
+    <string name="settings_escrow_address">Escrow hascen</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow kargavorvats che</string>
+    <string name="receive_only_no_escrow_desc">Kargavoreck escrow hascen yev API key Kargavoroumneri mej</string>
+    <string name="receive_only_security_notice">Ays sarkhoumi vra andznakaн banali chka. Anveshtangou deppkoum anvtang e.</string>
+    <string name="receive_only_api_key_required">API key pahandjvum e relayer gortsarkman hamar</string>
+</resources>

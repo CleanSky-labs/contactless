@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Bekontaktis</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Mokėti</string>
+    <string name="nav_collect">Gauti</string>
+    <string name="nav_settings">Nustatymai</string>
+    <string name="nav_history">Istorija</string>
+    <string name="nav_refund">Grąžinimas</string>
+    <string name="nav_balance">Balansas</string>
+    <string name="nav_back">Atgal</string>
+
+    <!-- Common actions -->
+    <string name="back">Atgal</string>
+    <string name="save">Išsaugoti</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Nėra piniginės</string>
+    <string name="pay_no_wallet_desc">Nustatykite piniginę Nustatymuose,\nkad galėtumėte atlikti mokėjimus</string>
+    <string name="pay_ready">Paruošta mokėjimui</string>
+    <string name="pay_ready_desc">Pridėkite telefoną prie\npardavėjo įrenginio</string>
+    <string name="pay_request_title">Mokėjimo užklausa</string>
+    <string name="pay_network">Tinklas: %s</string>
+    <string name="pay_expired">Užklausa pasibaigė</string>
+    <string name="pay_cancel">Atšaukti</string>
+    <string name="pay_confirm">Mokėti</string>
+    <string name="pay_new">Naujas mokėjimas</string>
+    <string name="pay_signing">Pasirašoma transakcija…</string>
+    <string name="pay_tx_signed">Transakcija pasirašyta</string>
+    <string name="pay_tx_signed_desc">Pridėkite telefoną prie\npardavėjo, kad išsiųstumėte</string>
+    <string name="pay_authenticating">Autentifikuojama…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Nėra piniginės</string>
+    <string name="collect_no_wallet_desc">Nustatykite piniginę Nustatymuose,\nkad galėtumėte gauti mokėjimus</string>
+    <string name="collect_amount">Gauti suma</string>
+    <string name="collect_button">Gauti</string>
+    <string name="collect_waiting">Laukiama mokėjimo</string>
+    <string name="collect_waiting_desc">Paprašykite kliento\npridėti telefoną</string>
+    <string name="collect_new">Naujas gavimas</string>
+    <string name="collect_processing">Apdorojamas mokėjimas…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Veikimo režimas</string>
+    <string name="settings_mode_pay">Mokėti</string>
+    <string name="settings_mode_pay_desc">Atlikti mokėjimus</string>
+    <string name="settings_mode_collect">Gauti</string>
+    <string name="settings_mode_collect_desc">Gauti mokėjimus</string>
+    <string name="settings_wallet">Piniginė</string>
+    <string name="settings_wallet_address">Adresas</string>
+    <string name="settings_wallet_none">Piniginė nesukonfigūruota</string>
+    <string name="settings_wallet_create">Sukurti</string>
+    <string name="settings_wallet_import">Importuoti</string>
+    <string name="settings_network">Blockchain tinklas</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Transakcijų vykdymas</string>
+    <string name="settings_exec_direct">Tiesioginis</string>
+    <string name="settings_exec_direct_desc">Jūs mokate už dujų</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Remiamos dujos per relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 su Paymaster</string>
+    <string name="settings_api_key">API raktas</string>
+    <string name="settings_save">Išsaugoti ir grįžti</string>
+    <string name="settings_not_available">Nepasiekiama šiame tinkle</string>
+    <string name="settings_language">Kalba</string>
+    <string name="settings_language_system">Sistemos numatytoji</string>
+    <string name="collect_select_currency">Pasirinkti valiutą</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Saugumas</string>
+    <string name="security_encryption">Raktų šifravimas</string>
+    <string name="security_encryption_desc">AES-256-GCM su Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Aparatinis saugumo modulis aktyvus</string>
+    <string name="security_strongbox_unavailable">Nepasiekiama šiame įrenginyje</string>
+    <string name="security_biometric">Biometrinis autentifikavimas</string>
+    <string name="security_biometric_required">Reikalingas mokėjimams</string>
+    <string name="security_biometric_disabled">Išjungta</string>
+    <string name="security_biometric_unavailable">Nepasiekiama</string>
+    <string name="security_export">Eksportuoti privatų raktą</string>
+    <string name="security_export_desc">Saugiai išsaugokite savo raktą</string>
+    <string name="security_delete">Ištrinti piniginę</string>
+    <string name="security_delete_desc">Visam laikui ištrinti visus duomenis</string>
+    <string name="security_delete_title">Ištrinti piniginę</string>
+    <string name="security_delete_warning">Šis veiksmas yra NEGRĮŽTAMAS.</string>
+    <string name="security_delete_warning2">Prarasite prieigą prie visų lėšų, jei neturite privataus rakto atsarginės kopijos.</string>
+    <string name="security_delete_warning3">Įsitikinkite, kad eksportavote raktą prieš tęsdami.</string>
+    <string name="security_delete_confirm">Ištrinti</string>
+    <string name="security_status_active">Aktyvus</string>
+    <string name="security_status_warning">Įspėjimas</string>
+    <string name="security_status_na">Netaikoma</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importuoti piniginę</string>
+    <string name="import_private_key">Privatus raktas</string>
+    <string name="import_seed_phrase">Atkūrimo frazė</string>
+    <string name="import_prompt">Įveskite savo privatų raktą:</string>
+    <string name="import_prompt_seed">Įveskite atkūrimo frazę (12–24 žodžiai):</string>
+    <string name="import_seed_hint">žodis1 žodis2 žodis3 …</string>
+    <string name="import_button">Importuoti</string>
+    <string name="import_error_invalid">Neteisingas privatus raktas</string>
+    <string name="import_error_invalid_seed">Neteisinga atkūrimo frazė</string>
+    <string name="import_error_encryption">Šifravimo klaida</string>
+    <string name="export_title">Privatus raktas</string>
+    <string name="export_warning">NIEKADA nesidalinkite šiuo raktu. Kas jį turi, visiškai kontroliuoja jūsų lėšas.</string>
+    <string name="export_understood">Supratau</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Santrauka</string>
+    <string name="history_received">Gauta</string>
+    <string name="history_sent">Išsiųsta</string>
+    <string name="history_refunded">Grąžinta</string>
+    <string name="history_empty">Nėra transakcijų</string>
+    <string name="history_empty_desc">Transakcijos %s\nbus rodomos čia</string>
+    <string name="history_payment_received">Mokėjimas gautas</string>
+    <string name="history_payment_sent">Mokėjimas išsiųstas</string>
+    <string name="history_refund_sent">Grąžinimas</string>
+    <string name="history_refund_received">Grąžinimas gautas</string>
+    <string name="history_status_pending">Laukiama</string>
+    <string name="history_status_confirmed">Patvirtinta</string>
+    <string name="history_status_failed">Nepavyko</string>
+    <string name="history_status_refunded">Grąžinta</string>
+    <string name="history_status_partial">Dalinė</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Originali transakcija</string>
+    <string name="refund_amount">Suma</string>
+    <string name="refund_already">Jau grąžinta</string>
+    <string name="refund_available">Prieinama</string>
+    <string name="refund_recipient">Gavėjas</string>
+    <string name="refund_date">Data</string>
+    <string name="refund_type">Grąžinimo tipas</string>
+    <string name="refund_full">Pilnas</string>
+    <string name="refund_partial">Dalinis</string>
+    <string name="refund_partial_desc">Nurodykite sumą</string>
+    <string name="refund_amount_label">Grąžintina suma (%s)</string>
+    <string name="refund_max">Maksimumas: %1$s %2$s</string>
+    <string name="refund_gas_notice">Jūs mokėsite už dujas šiai transakcijai</string>
+    <string name="refund_button">Grąžinti %1$s %2$s</string>
+    <string name="refund_processing">Apdorojamas grąžinimas…</string>
+    <string name="refund_success">Grąžinimas sėkmingas</string>
+    <string name="refund_done">Atlikta</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Jūsų žetonai</string>
+    <string name="balance_manage">Valdyti</string>
+    <string name="balance_refresh">Atnaujinti</string>
+    <string name="balance_loading">Įkeliami balansai…</string>
+    <string name="balance_empty">Nėra žetonų</string>
+    <string name="balance_no_wallet_desc">Nustatykite piniginę Nustatymuose,\nkad matytumėte balansus</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Leidžiami žetonai</string>
+    <string name="settings_add_token">Pridėti žetoną</string>
+    <string name="add_token_prompt">Įveskite žetono sutarties adresą:</string>
+    <string name="add_token_validating">Tikrinamas žetonas…</string>
+    <string name="add_token_button">Pridėti</string>
+    <string name="delete">Ištrinti</string>
+
+    <!-- Common -->
+    <string name="cancel">Atšaukti</string>
+    <string name="close">Uždaryti</string>
+    <string name="retry">Bandyti dar kartą</string>
+    <string name="error">Klaida</string>
+    <string name="copy">Kopijuoti</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Piniginė nesukonfigūruota</string>
+    <string name="error_device_security">Įrenginio saugumo klaida</string>
+    <string name="error_auth">Autentifikavimo klaida</string>
+    <string name="error_unknown">Nežinoma klaida</string>
+    <string name="error_keystore_unavailable">Keystore nepasiekiamas - kai kurios funkcijos neveiks</string>
+    <string name="error_encryption_restart">Šifravimo klaida - paleiskite programėlę iš naujo</string>
+    <string name="error_auth_cancelled">Autentifikavimas atšauktas</string>
+    <string name="error_invalid_address">Neteisingas adresas</string>
+    <string name="error_invalid_address_format">Neteisingas adreso formatas</string>
+    <string name="error_token_already_added">Žetonas jau pridėtas</string>
+    <string name="stealth_spend_sent_tx">Išsiųsta! Tx: %s…</string>
+    <string name="token_native">Vietinis</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Jūsų balansas</string>
+    <string name="pay_insufficient_balance">Nepakankamas balansas</string>
+    <string name="pay_need_more">Jums reikia dar %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Sveiki atvykę</string>
+    <string name="welcome_sovereignty">Jūsų raktai.\nJūsų lėšos.\nJūsų suverenumas.</string>
+    <string name="welcome_desc">Jūsų lėšos NĖRA saugomos šioje programėlėje. Jos egzistuoja blockchain, valdomos jūsų privačių raktų.\n\nŠi programėlė tik saugiai saugo jūsų raktus. Mes negalime pasiekti jūsų lėšų.\n\nPastaba: Kai kurie žetonai (USDC, USDT) gali būti užšaldyti jų emitentų. Maksimaliam suverenumui naudokite natyvų ETH arba decentralizuotus žetonus.</string>
+    <string name="welcome_warning_title">Jūsų raktai = Jūsų lėšos</string>
+    <string name="welcome_warning_desc">Jei prarasite privačius raktus arba pasidalinsite jais su kuo nors, prarasite savo lėšų kontrolę visam laikui.\n\nNėra atkūrimo galimybės. Jokia palaikymo komanda negali jums padėti. Tai yra tikros nuosavybės prigimtis.\n\nVisada turėkite saugią raktų atsarginę kopiją.</string>
+    <string name="welcome_opensource">Atviro kodo programinė įranga. Tikrinkite, nepasitikėkite.</string>
+    <string name="welcome_start">Suprantu, pradėkime</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Pardavėjo tapatybė</string>
+    <string name="settings_merchant_name">Įmonės pavadinimas</string>
+    <string name="settings_merchant_name_hint">Mano kavinė</string>
+    <string name="settings_merchant_domain">Domenas / ENS</string>
+    <string name="settings_merchant_domain_hint">manokavine.eth arba manokavine.com</string>
+    <string name="settings_merchant_identity_desc">Rodoma klientams mokėjimo metu</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privatumo režimas</string>
+    <string name="settings_stealth_desc">Gaukite mokėjimus į vienkartinius adresus (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Įjungta</string>
+    <string name="settings_stealth_info">Kiekvienas mokėjimas keliauja į unikalų adresą, kurį tik jūs galite išleisti. Stebėtojai negali susieti mokėjimų su jūsų verslu.</string>
+    <string name="stealth_address_label">Stealth režimas aktyvus</string>
+    <string name="stealth_payment_note">Mokėjimas bus išsiųstas į privatų adresą</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Gavėjo adresas</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privati piniginė</string>
+    <string name="stealth_wallet_addresses">per %d stealth adresų</string>
+    <string name="stealth_wallet_privacy_title">Jūsų lėšos yra privačios</string>
+    <string name="stealth_wallet_privacy_desc">Šis balansas nesusietas su jūsų viešąja pinigine. Išleiskite tiesiogiai tiekėjams, biržoms ar bet kur kitur - jūsų verslo tapatybė lieka paslėpta.</string>
+    <string name="stealth_wallet_send">Siųsti</string>
+    <string name="stealth_wallet_send_title">Siųsti iš privačios piniginės</string>
+    <string name="stealth_wallet_available">Prieinama: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Suma</string>
+    <string name="nav_stealth_wallet">Privati piniginė</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Keli adresai</string>
+    <string name="stealth_wallet_gas_desc">Jūsų lėšos paskirstytos per %d adresų. Didelių sumų išleidimas gali pareikalauti kelių transakcijų, padidinant dujų kaštus.</string>
+    <string name="stealth_wallet_consolidate">Konsoliduoti į pagrindinę piniginę</string>
+    <string name="stealth_wallet_consolidate_title">Konsoliduoti lėšas?</string>
+    <string name="stealth_wallet_consolidate_warning">Tai perves visas lėšas iš jūsų privačios piniginės į pagrindinės piniginės adresą.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ĮSPĖJIMAS: Tai pažeidžia privatumą. Jūsų pagrindinė piniginė bus susieta su visais gautais mokėjimais.</string>
+    <string name="stealth_wallet_consolidate_benefit">Nauda: Ateities išlaidos reikalaus tik vienos transakcijos (mažesni dujų kaštai).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsoliduoti</string>
+    <string name="stealth_wallet_consolidate_success">Lėšos konsoliduotos į pagrindinę piniginę</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Mokėtojo privatumas</string>
+    <string name="settings_payer_privacy_desc">Mokėkite iš laikinų paskyrų (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Kiekvienas mokėjimas naudoja unikalią paskyrą. Jūsų pagrindinės piniginės adresas nėra matomas grandinėje.</string>
+    <string name="settings_payer_privacy_requires_api">API raktas reikalingas mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Nemokama testnet tinkluose (viešas bundler)</string>
+    <string name="payer_privacy_note">Jūsų piniginės adresas bus paslėptas</string>
+    <string name="payer_privacy_processing">Apdorojamas privatus mokėjimas…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adresų knyga</string>
+    <string name="address_book_add">Pridėti kontaktą</string>
+    <string name="address_book_edit">Redaguoti kontaktą</string>
+    <string name="address_book_search">Ieškoti kontaktų…</string>
+    <string name="address_book_empty">Kontaktų dar nėra</string>
+    <string name="address_book_empty_hint">Pridėkite adresus, kad lengvai identifikuotumėte,\nkam mokate ar iš ko gaunate</string>
+    <string name="address_book_no_results">Kontaktų nerasta</string>
+    <string name="address_book_address">Piniginės adresas</string>
+    <string name="address_book_name">Pavadinimas</string>
+    <string name="address_book_name_hint">pvz., Kavinė, Jonas Jonaitis</string>
+    <string name="address_book_note">Pastaba (neprivaloma)</string>
+    <string name="address_book_note_hint">pvz., Tiekėjas, Draugas</string>
+    <string name="address_book_delete_title">Ištrinti kontaktą?</string>
+    <string name="address_book_delete_message">Pašalinti %s iš adresų knygos?</string>
+    <string name="address_book_saved">Kontaktas išsaugotas</string>
+    <string name="address_book_unknown">Nežinomas</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Paprastas režimas</string>
+    <string name="settings_simple_mode_desc">Lengva naudoti, pagrindinės parinktys</string>
+    <string name="settings_advanced_mode">Išplėstinis režimas</string>
+    <string name="settings_advanced_mode_desc">Kripto parinktys patyrusiems vartotojams</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Dalintis kontaktu</string>
+    <string name="share_contact_title">Dalinkitės savo adresu</string>
+    <string name="share_contact_ready">Paruošta dalinimuisi</string>
+    <string name="share_contact_ready_desc">Pridėkite telefoną prie\nkito CleanSky įrenginio</string>
+    <string name="share_contact_received">Kontaktas gautas!</string>
+    <string name="share_contact_received_name">%s nori susisiekti</string>
+    <string name="share_contact_save">Išsaugoti kontaktuose</string>
+    <string name="share_contact_your_name">Jūsų vardas (neprivaloma)</string>
+    <string name="share_contact_your_name_hint">Kaip jus matys kiti</string>
+    <string name="share_contact_mutual">Keistis kontaktais</string>
+    <string name="share_contact_mutual_desc">Abu įrenginiai vienu metu dalijasi adresais</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Siųsti</string>
+    <string name="send_title">Siųsti kontaktui</string>
+    <string name="send_select_contact">Pasirinkite gavėją</string>
+    <string name="send_no_contacts">Kontaktų dar nėra</string>
+    <string name="send_no_contacts_hint">Pridėkite kontaktus per NFC arba rankiniu būdu\nkad galėtumėte siųsti mokėjimus</string>
+    <string name="send_amount">Suma</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Kam: %s</string>
+    <string name="send_confirm">Siųsti %1$s %2$s</string>
+    <string name="send_processing">Siunčiama…</string>
+    <string name="send_success">Sėkmingai išsiųsta!</string>
+    <string name="send_success_desc">%1$s %2$s išsiųsta %3$s</string>
+    <string name="send_error">Nepavyko išsiųsti</string>
+    <string name="send_enter_amount">Įveskite sumą</string>
+    <string name="send_new">Naujas pervedimas</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Visi</string>
+    <string name="history_filter_received">Gauta</string>
+    <string name="history_filter_sent">Išsiųsta</string>
+    <string name="history_filter_contact">Kontaktas</string>
+    <string name="history_filter_by_contact">Filtruoti pagal kontaktą</string>
+    <string name="history_show_all">Rodyti viską</string>
+    <string name="history_no_results">Transakcijų pagal filtrą nerasta</string>
+    <string name="history_add_contact">Pridėti prie kontaktų</string>
+    <string name="history_edit_contact">Redaguoti kontaktą</string>
+    <string name="history_from">Nuo</string>
+    <string name="history_to">Kam</string>
+    <string name="history_date">Data</string>
+    <string name="history_tx_hash">Transakcija</string>
+    <string name="history_refund">Grąžinimas</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Suma per maža</string>
+    <string name="scam_amount_large_warning">Didelė suma</string>
+    <string name="scam_amount_large_desc">Siunčiate %1$s %2$s.\nProšome patvirtinti, kad tai teisinga.</string>
+    <string name="scam_confirm_large">Patvirtinkite didelį pervedimą</string>
+    <string name="scam_dust_attack_warning">Įtartina užklausa</string>
+    <string name="scam_dust_attack_desc">Tai labai maža suma (%1$s %2$s). Dulkių atakos naudoja mažus mokėjimus piniginėms sekti. Atmeskite, jei netikėta.</string>
+    <string name="scam_receive_large_warning">Didelio mokėjimo užklausa</string>
+    <string name="scam_receive_large_desc">Ši užklausa yra %1$s %2$s. Patikrinkite, ar tai teisinga suma prieš mokėdami.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Tik gavimas</string>
+    <string name="settings_mode_receive_only">Gavimas</string>
+    <string name="settings_mode_receive_only_desc">Be privataus rakto</string>
+    <string name="settings_receive_only">Tik gavimo konfigūracija</string>
+    <string name="settings_escrow_address">Escrow adresas</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow nesukonfigūruotas</string>
+    <string name="receive_only_no_escrow_desc">Sukonfigūruokite escrow adresą ir API key Nustatymuose</string>
+    <string name="receive_only_security_notice">Šiame įrenginyje nėra privataus rakto. Saugu vagystės atveju.</string>
+    <string name="receive_only_api_key_required">API key reikalingas relayer vykdymui</string>
+</resources>

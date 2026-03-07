@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">បង់ប្រាក់</string>
+    <string name="nav_collect">ទទួលប្រាក់</string>
+    <string name="nav_settings">ការកំណត់</string>
+    <string name="nav_history">ប្រវត្តិ</string>
+    <string name="nav_refund">សងប្រាក់វិញ</string>
+    <string name="nav_balance">សមតុល្យ</string>
+    <string name="nav_back">ត្រឡប់ក្រោយ</string>
+
+    <!-- Common actions -->
+    <string name="back">ត្រឡប់ក្រោយ</string>
+    <string name="save">រក្សាទុក</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">គ្មានកាបូបលុយ</string>
+    <string name="pay_no_wallet_desc">រៀបចំកាបូបលុយរបស់អ្នកក្នុងការកំណត់\nដើម្បីធ្វើការទូទាត់</string>
+    <string name="pay_ready">រួចរាល់បង់ប្រាក់</string>
+    <string name="pay_ready_desc">នាំទូរសព្ទរបស់អ្នកមកជិត\nឧបករណ៍របស់អ្នកលក់</string>
+    <string name="pay_request_title">សំណើទូទាត់ប្រាក់</string>
+    <string name="pay_network">បណ្តាញ: %s</string>
+    <string name="pay_expired">សំណើផុតកំណត់</string>
+    <string name="pay_cancel">បោះបង់</string>
+    <string name="pay_confirm">បង់ប្រាក់</string>
+    <string name="pay_new">ការបង់ប្រាក់ថ្មី</string>
+    <string name="pay_signing">កំពុងចុះហត្ថលេខាប្រតិបត្តិការ…</string>
+    <string name="pay_tx_signed">ប្រតិបត្តិការបានចុះហត្ថលេខា</string>
+    <string name="pay_tx_signed_desc">នាំទូរសព្ទរបស់អ្នកមកជិត\nអ្នកលក់ដើម្បីផ្ញើ</string>
+    <string name="pay_authenticating">កំពុងផ្ទៀងផ្ទាត់…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">គ្មានកាបូបលុយ</string>
+    <string name="collect_no_wallet_desc">រៀបចំកាបូបលុយរបស់អ្នកក្នុងការកំណត់\nដើម្បីទទួលការទូទាត់</string>
+    <string name="collect_amount">ចំនួនទឹកប្រាក់ត្រូវទទួល</string>
+    <string name="collect_button">ទទួលប្រាក់</string>
+    <string name="collect_waiting">កំពុងរង់ចាំការទូទាត់</string>
+    <string name="collect_waiting_desc">សូមឱ្យអតិថិជន\nយកទូរសព្ទមកជិត</string>
+    <string name="collect_new">ការទទួលថ្មី</string>
+    <string name="collect_processing">កំពុងដំណើរការការទូទាត់…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">របៀបប្រតិបត្តិការ</string>
+    <string name="settings_mode_pay">បង់ប្រាក់</string>
+    <string name="settings_mode_pay_desc">ធ្វើការទូទាត់</string>
+    <string name="settings_mode_collect">ទទួលប្រាក់</string>
+    <string name="settings_mode_collect_desc">ទទួលការទូទាត់</string>
+    <string name="settings_wallet">កាបូបលុយ</string>
+    <string name="settings_wallet_address">អាសយដ្ឋាន</string>
+    <string name="settings_wallet_none">គ្មានកាបូបលុយត្រូវបានកំណត់រចនាសម្ព័ន្ធ</string>
+    <string name="settings_wallet_create">បង្កើត</string>
+    <string name="settings_wallet_import">នាំចូល</string>
+    <string name="settings_network">បណ្តាញប្លុកឆេន</string>
+    <string name="settings_chain_id">លេខសម្គាល់ខ្សែសង្វាក់: %d</string>
+    <string name="settings_execution">ការប្រតិបត្តិប្រតិបត្តិការ</string>
+    <string name="settings_exec_direct">ផ្ទាល់</string>
+    <string name="settings_exec_direct_desc">អ្នកបង់ថ្លៃឧស្ម័ន</string>
+    <string name="settings_exec_relayer">អ្នកបញ្ជូន (Gelato)</string>
+    <string name="settings_exec_relayer_desc">ថ្លៃឧស្ម័នឧបត្ថម្ភតាមអ្នកបញ្ជូន</string>
+    <string name="settings_exec_aa">គណនីអរូបី</string>
+    <string name="settings_exec_aa_desc">ERC-4337 ជាមួយ Paymaster</string>
+    <string name="settings_api_key">សោ API</string>
+    <string name="settings_save">រក្សាទុក និងត្រឡប់</string>
+    <string name="settings_not_available">មិនមាននៅលើបណ្តាញនេះ</string>
+    <string name="settings_language">ភាសា</string>
+    <string name="settings_language_system">លំនាំដើមប្រព័ន្ធ</string>
+    <string name="collect_select_currency">ជ្រើសរើសរូបិយប័ណ្ណ</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">សុវត្ថិភាព</string>
+    <string name="security_encryption">ការអ៊ិនគ្រីបសោ</string>
+    <string name="security_encryption_desc">AES-256-GCM ជាមួយ Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">ម៉ូឌុលសុវត្ថិភាពផ្នែករឹងកំពុងដំណើរការ</string>
+    <string name="security_strongbox_unavailable">មិនមានលើឧបករណ៍នេះ</string>
+    <string name="security_biometric">ការផ្ទៀងផ្ទាត់ជីវមាត្រ</string>
+    <string name="security_biometric_required">ត្រូវការសម្រាប់ការទូទាត់</string>
+    <string name="security_biometric_disabled">បានបិទ</string>
+    <string name="security_biometric_unavailable">មិនមាន</string>
+    <string name="security_export">នាំចេញសោឯកជន</string>
+    <string name="security_export_desc">រក្សាទុកសោរបស់អ្នកដោយសុវត្ថិភាព</string>
+    <string name="security_delete">លុបកាបូបលុយ</string>
+    <string name="security_delete_desc">លុបទិន្នន័យទាំងអស់ជាអចិន្ត្រៃយ៍</string>
+    <string name="security_delete_title">លុបកាបូបលុយ</string>
+    <string name="security_delete_warning">សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។</string>
+    <string name="security_delete_warning2">អ្នកនឹងបាត់បង់ការចូលប្រើមូលនិធិទាំងអស់ប្រសិនបើអ្នកគ្មានច្បាប់ចម្លងនៃសោឯកជនរបស់អ្នក។</string>
+    <string name="security_delete_warning3">ត្រូវប្រាកដថាអ្នកបាននាំចេញសោរបស់អ្នកមុនពេលបន្ត។</string>
+    <string name="security_delete_confirm">លុប</string>
+    <string name="security_status_active">សកម្ម</string>
+    <string name="security_status_warning">ការព្រមាន</string>
+    <string name="security_status_na">គ្មាន</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">នាំចូលកាបូបលុយ</string>
+    <string name="import_private_key">សោឯកជន</string>
+    <string name="import_seed_phrase">ឃ្លាគ្រាប់ពូជ</string>
+    <string name="import_prompt">បញ្ចូលសោឯកជនរបស់អ្នក:</string>
+    <string name="import_prompt_seed">បញ្ចូលឃ្លាគ្រាប់ពូជរបស់អ្នក (១២–២៤ ពាក្យ):</string>
+    <string name="import_seed_hint">ពាក្យ១ ពាក្យ២ ពាក្យ៣ …</string>
+    <string name="import_button">នាំចូល</string>
+    <string name="import_error_invalid">សោឯកជនមិនត្រឹមត្រូវ</string>
+    <string name="import_error_invalid_seed">ឃ្លាគ្រាប់ពូជមិនត្រឹមត្រូវ</string>
+    <string name="import_error_encryption">កំហុសក្នុងការអ៊ិនគ្រីប</string>
+    <string name="export_title">សោឯកជន</string>
+    <string name="export_warning">កុំចែករំលែកសោនេះជាមួយអ្នកណាម្នាក់។ អ្នកណាដែលមានវាមានការគ្រប់គ្រងពេញលេញលើមូលនិធិរបស់អ្នក។</string>
+    <string name="export_understood">យល់ហើយ</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">សង្ខេប</string>
+    <string name="history_received">បានទទួល</string>
+    <string name="history_sent">បានផ្ញើ</string>
+    <string name="history_refunded">បានសងវិញ</string>
+    <string name="history_empty">គ្មានប្រតិបត្តិការ</string>
+    <string name="history_empty_desc">ប្រតិបត្តិការនៅលើ %s\nនឹងបង្ហាញនៅទីនេះ</string>
+    <string name="history_payment_received">បានទទួលការទូទាត់</string>
+    <string name="history_payment_sent">បានផ្ញើការទូទាត់</string>
+    <string name="history_refund_sent">សងប្រាក់វិញ</string>
+    <string name="history_refund_received">បានទទួលប្រាក់សងវិញ</string>
+    <string name="history_status_pending">កំពុងរង់ចាំ</string>
+    <string name="history_status_confirmed">បានបញ្ជាក់</string>
+    <string name="history_status_failed">បានបរាជ័យ</string>
+    <string name="history_status_refunded">បានសងវិញ</string>
+    <string name="history_status_partial">ផ្នែកខ្លះ</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">ប្រតិបត្តិការដើម</string>
+    <string name="refund_amount">ចំនួនទឹកប្រាក់</string>
+    <string name="refund_already">បានសងវិញរួចហើយ</string>
+    <string name="refund_available">មាន</string>
+    <string name="refund_recipient">អ្នកទទួល</string>
+    <string name="refund_date">កាលបរិច្ឆេទ</string>
+    <string name="refund_type">ប្រភេទសងវិញ</string>
+    <string name="refund_full">ពេញលេញ</string>
+    <string name="refund_partial">ផ្នែកខ្លះ</string>
+    <string name="refund_partial_desc">បញ្ជាក់ចំនួន</string>
+    <string name="refund_amount_label">ចំនួនសងវិញ (%s)</string>
+    <string name="refund_max">អតិបរមា: %1$s %2$s</string>
+    <string name="refund_gas_notice">អ្នកនឹងបង់ថ្លៃឧស្ម័នសម្រាប់ប្រតិបត្តិការនេះ</string>
+    <string name="refund_button">សងវិញ %1$s %2$s</string>
+    <string name="refund_processing">កំពុងដំណើរការការសងវិញ…</string>
+    <string name="refund_success">បានសងវិញដោយជោគជ័យ</string>
+    <string name="refund_done">រួចរាល់</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">ថូខឹនរបស់អ្នក</string>
+    <string name="balance_manage">គ្រប់គ្រង</string>
+    <string name="balance_refresh">ផ្ទុកឡើងវិញ</string>
+    <string name="balance_loading">កំពុងផ្ទុកសមតុល្យ…</string>
+    <string name="balance_empty">គ្មានថូខឹន</string>
+    <string name="balance_no_wallet_desc">រៀបចំកាបូបលុយរបស់អ្នកក្នុងការកំណត់\nដើម្បីមើលសមតុល្យរបស់អ្នក</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">ថូខឹនដែលអនុញ្ញាត</string>
+    <string name="settings_add_token">បន្ថែមថូខឹន</string>
+    <string name="add_token_prompt">បញ្ចូលអាសយដ្ឋានកិច្ចសន្យាថូខឹន:</string>
+    <string name="add_token_validating">កំពុងផ្ទៀងផ្ទាត់ថូខឹន…</string>
+    <string name="add_token_button">បន្ថែម</string>
+    <string name="delete">លុប</string>
+
+    <!-- Common -->
+    <string name="cancel">បោះបង់</string>
+    <string name="close">បិទ</string>
+    <string name="retry">ព្យាយាមម្តងទៀត</string>
+    <string name="error">កំហុស</string>
+    <string name="copy">ចម្លង</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">កាបូបលុយមិនបានកំណត់រចនាសម្ព័ន្ធ</string>
+    <string name="error_device_security">កំហុសសុវត្ថិភាពឧបករណ៍</string>
+    <string name="error_auth">កំហុសក្នុងការផ្ទៀងផ្ទាត់</string>
+    <string name="error_unknown">កំហុសមិនស្គាល់</string>
+    <string name="error_keystore_unavailable">Keystore មិនមាន - មុខងារខ្លះនឹងមិនដំណើរការ</string>
+    <string name="error_encryption_restart">កំហុសក្នុងការអ៊ិនគ្រីប - ចាប់ផ្តើមកម្មវិធីឡើងវិញ</string>
+    <string name="error_auth_cancelled">ការផ្ទៀងផ្ទាត់ត្រូវបានបោះបង់</string>
+    <string name="error_invalid_address">អាសយដ្ឋានមិនត្រឹមត្រូវ</string>
+    <string name="error_invalid_address_format">ទម្រង់អាសយដ្ឋានមិនត្រឹមត្រូវ</string>
+    <string name="error_token_already_added">ថូខឹនត្រូវបានបន្ថែមរួចហើយ</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">បានផ្ញើ! Tx: %s…</string>
+    <string name="token_native">ដើម</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">សមតុល្យរបស់អ្នក</string>
+    <string name="pay_insufficient_balance">សមតុល្យមិនគ្រប់គ្រាន់</string>
+    <string name="pay_need_more">អ្នកត្រូវការ %1$s បន្ថែម %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">សូមស្វាគមន៍</string>
+    <string name="welcome_sovereignty">សោរបស់អ្នក។\nមូលនិធិរបស់អ្នក។\nអធិបតេយ្យភាពរបស់អ្នក។</string>
+    <string name="welcome_desc">មូលនិធិរបស់អ្នកមិនត្រូវបានរក្សាទុកនៅក្នុងកម្មវិធីនេះទេ។ វាមាននៅលើប្លុកឆេន ដែលគ្រប់គ្រងដោយសោឯកជនរបស់អ្នក។\n\nកម្មវិធីនេះរក្សាទុកសោរបស់អ្នកដោយសុវត្ថិភាពប៉ុណ្ណោះ។ យើងមិនអាចចូលប្រើមូលនិធិរបស់អ្នកបានទេ។\n\nចំណាំ: ថូខឹនមួយចំនួន (USDC, USDT) អាចត្រូវបានបង្កកដោយអ្នកចេញផ្សាយរបស់ពួកគេ។ សម្រាប់អធិបតេយ្យភាពអតិបរមា សូមប្រើ ETH ដើម ឬថូខឹនវិមជ្ឈការ។</string>
+    <string name="welcome_warning_title">សោរបស់អ្នក = មូលនិធិរបស់អ្នក</string>
+    <string name="welcome_warning_desc">ប្រសិនបើអ្នកបាត់បង់សោឯកជន ឬចែករំលែកវាជាមួយនរណាម្នាក់ អ្នកនឹងបាត់បង់ការគ្រប់គ្រងមូលនិធិរបស់អ្នកជាអចិន្ត្រៃយ៍។\n\nគ្មានជម្រើសស្តារឡើងវិញទេ។ គ្មានក្រុមជំនួយអាចជួយអ្នកបានទេ។ នេះជាធម្មជាតិនៃភាពជាម្ចាស់ពិត។\n\nតែងតែរក្សាច្បាប់ចម្លងសោរបស់អ្នកដោយសុវត្ថិភាព។</string>
+    <string name="welcome_opensource">កម្មវិធីប្រភពបើកចំហ។ ផ្ទៀងផ្ទាត់ កុំជឿ។</string>
+    <string name="welcome_start">ខ្ញុំយល់ហើយ តោះចាប់ផ្តើម</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">អត្តសញ្ញាណអ្នកលក់</string>
+    <string name="settings_merchant_name">ឈ្មោះអាជីវកម្ម</string>
+    <string name="settings_merchant_name_hint">ហាងកាហ្វេរបស់ខ្ញុំ</string>
+    <string name="settings_merchant_domain">ដែន / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ឬ mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">បង្ហាញដល់អតិថិជនក្នុងពេលទូទាត់</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">របៀបឯកជនភាព</string>
+    <string name="settings_stealth_desc">ទទួលការទូទាត់ទៅអាសយដ្ឋានប្រើម្តងៗ (EIP-5564)</string>
+    <string name="settings_stealth_enabled">បានបើក</string>
+    <string name="settings_stealth_info">ការទូទាត់នីមួយៗទៅអាសយដ្ឋានពិសេសមួយដែលមានតែអ្នកអាចចំណាយបាន។ អ្នកសង្កេតមិនអាចភ្ជាប់ការទូទាត់ទៅអាជីវកម្មរបស់អ្នកបានទេ។</string>
+    <string name="stealth_address_label">របៀបឯកជនភាពសកម្ម</string>
+    <string name="stealth_payment_note">ការទូទាត់នឹងត្រូវបានផ្ញើទៅអាសយដ្ឋានឯកជន</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">អាសយដ្ឋានអ្នកទទួល</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">កាបូបលុយឯកជន</string>
+    <string name="stealth_wallet_addresses">ក្នុង %d អាសយដ្ឋានឯកជនភាព</string>
+    <string name="stealth_wallet_privacy_title">មូលនិធិរបស់អ្នកជាឯកជន</string>
+    <string name="stealth_wallet_privacy_desc">សមតុល្យនេះមិនត្រូវបានភ្ជាប់ទៅកាបូបលុយសាធារណៈរបស់អ្នកទេ។ ចំណាយដោយផ្ទាល់ទៅអ្នកផ្គត់ផ្គង់ ការផ្លាស់ប្តូរ ឬកន្លែងណាក៏បាន - អត្តសញ្ញាណអាជីវកម្មរបស់អ្នកនៅលាក់បាំង។</string>
+    <string name="stealth_wallet_send">ផ្ញើ</string>
+    <string name="stealth_wallet_send_title">ផ្ញើពីកាបូបលុយឯកជន</string>
+    <string name="stealth_wallet_available">មាន: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">ចំនួន</string>
+    <string name="nav_stealth_wallet">កាបូបលុយឯកជន</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">អាសយដ្ឋានច្រើន</string>
+    <string name="stealth_wallet_gas_desc">មូលនិធិរបស់អ្នកត្រូវបានចែកចាយក្នុង %d អាសយដ្ឋាន។ ការចំណាយចំនួនធំអាចត្រូវការប្រតិបត្តិការច្រើន ដែលបង្កើនថ្លៃឧស្ម័ន។</string>
+    <string name="stealth_wallet_consolidate">រួមបញ្ចូលទៅកាបូបលុយចម្បង</string>
+    <string name="stealth_wallet_consolidate_title">រួមបញ្ចូលមូលនិធិ?</string>
+    <string name="stealth_wallet_consolidate_warning">នេះនឹងផ្ទេរមូលនិធិទាំងអស់ពីកាបូបលុយឯកជនរបស់អ្នកទៅអាសយដ្ឋានកាបូបលុយចម្បងរបស់អ្នក។</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ការព្រមាន: នេះបំបែកឯកជនភាព។ កាបូបលុយចម្បងរបស់អ្នកនឹងត្រូវបានភ្ជាប់ទៅការទូទាត់ដែលបានទទួលទាំងអស់។</string>
+    <string name="stealth_wallet_consolidate_benefit">អត្ថប្រយោជន៍: ការចំណាយនាពេលអនាគតនឹងត្រូវការប្រតិបត្តិការមួយប៉ុណ្ណោះ (ថ្លៃឧស្ម័នទាប)។</string>
+    <string name="stealth_wallet_consolidate_confirm">រួមបញ្ចូល</string>
+    <string name="stealth_wallet_consolidate_success">មូលនិធិបានរួមបញ្ចូលទៅកាបូបលុយចម្បង</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ឯកជនភាពអ្នកបង់ប្រាក់</string>
+    <string name="settings_payer_privacy_desc">បង់ពីគណនីបណ្តោះអាសន្ន (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">ការទូទាត់នីមួយៗប្រើគណនីពិសេស។ អាសយដ្ឋានកាបូបលុយចម្បងរបស់អ្នកមិនអាចមើលឃើញនៅលើខ្សែសង្វាក់ទេ។</string>
+    <string name="settings_payer_privacy_requires_api">ត្រូវការសោ API សម្រាប់បណ្តាញចម្បង</string>
+    <string name="settings_payer_privacy_public_bundler">ឥតគិតថ្លៃនៅលើបណ្តាញសាកល្បង (អ្នករួមសាធារណៈ)</string>
+    <string name="payer_privacy_note">អាសយដ្ឋានកាបូបលុយរបស់អ្នកនឹងត្រូវបានលាក់បាំង</string>
+    <string name="payer_privacy_processing">កំពុងដំណើរការការទូទាត់ឯកជន…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">សៀវភៅអាសយដ្ឋាន</string>
+    <string name="address_book_add">បន្ថែមទំនាក់ទំនង</string>
+    <string name="address_book_edit">កែសម្រួលទំនាក់ទំនង</string>
+    <string name="address_book_search">ស្វែងរកទំនាក់ទំនង…</string>
+    <string name="address_book_empty">គ្មានទំនាក់ទំនងនៅឡើយ</string>
+    <string name="address_book_empty_hint">បន្ថែមអាសយដ្ឋានដើម្បីកំណត់អត្តសញ្ញាណយ៉ាងងាយ\nអ្នកដែលអ្នកបង់ ឬទទួលពី</string>
+    <string name="address_book_no_results">រកមិនឃើញទំនាក់ទំនង</string>
+    <string name="address_book_address">អាសយដ្ឋានកាបូបលុយ</string>
+    <string name="address_book_name">ឈ្មោះ</string>
+    <string name="address_book_name_hint">ឧ. ហាងកាហ្វេ, ចន ដូ</string>
+    <string name="address_book_note">កំណត់ចំណាំ (ស្រេចចិត្ត)</string>
+    <string name="address_book_note_hint">ឧ. អ្នកផ្គត់ផ្គង់, មិត្តភ័ក្តិ</string>
+    <string name="address_book_delete_title">លុបទំនាក់ទំនង?</string>
+    <string name="address_book_delete_message">លុប %s ពីសៀវភៅអាសយដ្ឋានរបស់អ្នក?</string>
+    <string name="address_book_saved">បានរក្សាទុកទំនាក់ទំនង</string>
+    <string name="address_book_unknown">មិនស្គាល់</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">របៀបសាមញ្ញ</string>
+    <string name="settings_simple_mode_desc">ងាយស្រួលប្រើ ជម្រើសមូលដ្ឋាន</string>
+    <string name="settings_advanced_mode">របៀបកម្រិតខ្ពស់</string>
+    <string name="settings_advanced_mode_desc">ជម្រើសគ្រីបតូសម្រាប់អ្នកប្រើប្រាស់ជំនាញ</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">ចែករំលែកទំនាក់ទំនង</string>
+    <string name="share_contact_title">ចែករំលែកអាសយដ្ឋានរបស់អ្នក</string>
+    <string name="share_contact_ready">រួចរាល់ចែករំលែក</string>
+    <string name="share_contact_ready_desc">នាំទូរសព្ទរបស់អ្នកមកជិត\nឧបករណ៍ CleanSky មួយទៀត</string>
+    <string name="share_contact_received">បានទទួលទំនាក់ទំនង!</string>
+    <string name="share_contact_received_name">%s ចង់ភ្ជាប់</string>
+    <string name="share_contact_save">រក្សាទុកក្នុងទំនាក់ទំនង</string>
+    <string name="share_contact_your_name">ឈ្មោះរបស់អ្នក (ស្រេចចិត្ត)</string>
+    <string name="share_contact_your_name_hint">អ្នកដទៃនឹងឃើញអ្នកយ៉ាងដូចម្តេច</string>
+    <string name="share_contact_mutual">ផ្លាស់ប្តូរទំនាក់ទំនង</string>
+    <string name="share_contact_mutual_desc">ឧបករណ៍ទាំងពីរចែករំលែកអាសយដ្ឋានក្នុងពេលតែមួយ</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ផ្ញើ</string>
+    <string name="send_title">ផ្ញើទៅទំនាក់ទំនង</string>
+    <string name="send_select_contact">ជ្រើសរើសអ្នកទទួល</string>
+    <string name="send_no_contacts">គ្មានទំនាក់ទំនងនៅឡើយ</string>
+    <string name="send_no_contacts_hint">បន្ថែមទំនាក់ទំនងតាម NFC ឬដោយដៃ\nដើម្បីផ្ញើការទូទាត់ទៅពួកគេ</string>
+    <string name="send_amount">ចំនួនទឹកប្រាក់</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">ទៅ: %s</string>
+    <string name="send_confirm">ផ្ញើ %1$s %2$s</string>
+    <string name="send_processing">កំពុងផ្ញើ…</string>
+    <string name="send_success">បានផ្ញើដោយជោគជ័យ!</string>
+    <string name="send_success_desc">%1$s %2$s បានផ្ញើទៅ %3$s</string>
+    <string name="send_error">បរាជ័យក្នុងការផ្ញើ</string>
+    <string name="send_enter_amount">បញ្ចូលចំនួនទឹកប្រាក់</string>
+    <string name="send_new">ការផ្ទេរថ្មី</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">ទាំងអស់</string>
+    <string name="history_filter_received">បានទទួល</string>
+    <string name="history_filter_sent">បានផ្ញើ</string>
+    <string name="history_filter_contact">ទំនាក់ទំនង</string>
+    <string name="history_filter_by_contact">តម្រងតាមទំនាក់ទំនង</string>
+    <string name="history_show_all">បង្ហាញទាំងអស់</string>
+    <string name="history_no_results">គ្មានប្រតិបត្តិការត្រូវនឹងតម្រង</string>
+    <string name="history_add_contact">បន្ថែមទៅទំនាក់ទំនង</string>
+    <string name="history_edit_contact">កែសម្រួលទំនាក់ទំនង</string>
+    <string name="history_from">ពី</string>
+    <string name="history_to">ទៅ</string>
+    <string name="history_date">កាលបរិច្ឆេទ</string>
+    <string name="history_tx_hash">ប្រតិបត្តិការ</string>
+    <string name="history_refund">សងប្រាក់វិញ</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">ចំនួនតូចពេក</string>
+    <string name="scam_amount_large_warning">ចំនួនធំ</string>
+    <string name="scam_amount_large_desc">អ្នកកំពុងផ្ញើ %1$s %2$s។\nសូមបញ្ជាក់ថានេះត្រឹមត្រូវ។</string>
+    <string name="scam_confirm_large">បញ្ជាក់ការផ្ទេរធំ</string>
+    <string name="scam_dust_attack_warning">សំណើគួរឱ្យសង្ស័យ</string>
+    <string name="scam_dust_attack_desc">នេះជាចំនួនតូចបំផុត (%1$s %2$s)។ ការវាយប្រហារធូលីប្រើការទូទាត់តូចៗដើម្បីតាមដានកាបូបលុយ។ បដិសេធប្រសិនបើមិនរំពឹងទុក។</string>
+    <string name="scam_receive_large_warning">សំណើទូទាត់ធំ</string>
+    <string name="scam_receive_large_desc">សំណើនេះគឺសម្រាប់ %1$s %2$s។ ផ្ទៀងផ្ទាត់ថានេះជាចំនួនត្រឹមត្រូវមុនពេលបង់ប្រាក់។</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">ទទួលតែប៉ុណ្ណោះ</string>
+    <string name="settings_mode_receive_only">ទទួល</string>
+    <string name="settings_mode_receive_only_desc">គ្មានសោឯកជន</string>
+    <string name="settings_receive_only">ការកំណត់ទទួលតែប៉ុណ្ណោះ</string>
+    <string name="settings_escrow_address">អាសយដ្ឋាន Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow មិនទាន់កំណត់</string>
+    <string name="receive_only_no_escrow_desc">កំណត់អាសយដ្ឋាន escrow និង API key ក្នុងការកំណត់</string>
+    <string name="receive_only_security_notice">គ្មានសោឯកជនលើឧបករណ៍នេះ។ សុវត្ថិភាពប្រសិនបើត្រូវគេលួច។</string>
+    <string name="receive_only_api_key_required">ត្រូវការ API key សម្រាប់ប្រតិបត្តិការ relayer</string>
+</resources>

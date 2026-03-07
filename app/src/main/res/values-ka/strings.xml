@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">გადახდა</string>
+    <string name="nav_collect">შეგროვება</string>
+    <string name="nav_settings">პარამეტრები</string>
+    <string name="nav_history">ისტორია</string>
+    <string name="nav_refund">თანხის დაბრუნება</string>
+    <string name="nav_balance">ბალანსი</string>
+    <string name="nav_back">უკან</string>
+
+    <!-- Common actions -->
+    <string name="back">უკან</string>
+    <string name="save">შენახვა</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">საფულე არ არის</string>
+    <string name="pay_no_wallet_desc">დააყენეთ საფულე პარამეტრებში\nგადახდების განსახორციელებლად</string>
+    <string name="pay_ready">მზად არის გადასახდელად</string>
+    <string name="pay_ready_desc">მიაახლოვეთ თქვენი ტელეფონი\nგამყიდველის მოწყობილობას</string>
+    <string name="pay_request_title">გადახდის მოთხოვნა</string>
+    <string name="pay_network">ქსელი: %s</string>
+    <string name="pay_expired">მოთხოვნის ვადა გავიდა</string>
+    <string name="pay_cancel">გაუქმება</string>
+    <string name="pay_confirm">გადახდა</string>
+    <string name="pay_new">ახალი გადახდა</string>
+    <string name="pay_signing">ტრანზაქციის ხელმოწერა…</string>
+    <string name="pay_tx_signed">ტრანზაქცია ხელმოწერილია</string>
+    <string name="pay_tx_signed_desc">მიაახლოვეთ თქვენი ტელეფონი\nგამყიდველს გასაგზავნად</string>
+    <string name="pay_authenticating">ავთენტიფიკაცია…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">საფულე არ არის</string>
+    <string name="collect_no_wallet_desc">დააყენეთ საფულე პარამეტრებში\nგადახდების მისაღებად</string>
+    <string name="collect_amount">შესაგროვებელი თანხა</string>
+    <string name="collect_button">შეგროვება</string>
+    <string name="collect_waiting">გადახდის მოლოდინში</string>
+    <string name="collect_waiting_desc">სთხოვეთ მომხმარებელს\nმიაახლოვოს ტელეფონი</string>
+    <string name="collect_new">ახალი შეგროვება</string>
+    <string name="collect_processing">გადახდის დამუშავება…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">მუშაობის რეჟიმი</string>
+    <string name="settings_mode_pay">გადახდა</string>
+    <string name="settings_mode_pay_desc">გადახდების განხორციელება</string>
+    <string name="settings_mode_collect">შეგროვება</string>
+    <string name="settings_mode_collect_desc">გადახდების მიღება</string>
+    <string name="settings_wallet">საფულე</string>
+    <string name="settings_wallet_address">მისამართი</string>
+    <string name="settings_wallet_none">საფულე არ არის კონფიგურირებული</string>
+    <string name="settings_wallet_create">შექმნა</string>
+    <string name="settings_wallet_import">იმპორტი</string>
+    <string name="settings_network">ბლოკჩეინის ქსელი</string>
+    <string name="settings_chain_id">ჯაჭვის ID: %d</string>
+    <string name="settings_execution">ტრანზაქციის შესრულება</string>
+    <string name="settings_exec_direct">პირდაპირი</string>
+    <string name="settings_exec_direct_desc">თქვენ იხდით გაზს</string>
+    <string name="settings_exec_relayer">რელეერი (Gelato)</string>
+    <string name="settings_exec_relayer_desc">სპონსორირებული გაზი რელეერის მეშვეობით</string>
+    <string name="settings_exec_aa">ანგარიშის აბსტრაქცია</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymaster-ით</string>
+    <string name="settings_api_key">API გასაღები</string>
+    <string name="settings_save">შენახვა და დაბრუნება</string>
+    <string name="settings_not_available">მიუწვდომელია ამ ქსელში</string>
+    <string name="settings_language">ენა</string>
+    <string name="settings_language_system">სისტემის ნაგულისხმევი</string>
+    <string name="collect_select_currency">ვალუტის არჩევა</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">უსაფრთხოება</string>
+    <string name="security_encryption">გასაღების დაშიფვრა</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystore-ით</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">აპარატურული უსაფრთხოების მოდული აქტიურია</string>
+    <string name="security_strongbox_unavailable">მიუწვდომელია ამ მოწყობილობაზე</string>
+    <string name="security_biometric">ბიომეტრიული ავთენტიფიკაცია</string>
+    <string name="security_biometric_required">საჭიროა გადახდებისთვის</string>
+    <string name="security_biometric_disabled">გამორთულია</string>
+    <string name="security_biometric_unavailable">მიუწვდომელია</string>
+    <string name="security_export">პირადი გასაღების ექსპორტი</string>
+    <string name="security_export_desc">შეინახეთ თქვენი გასაღები უსაფრთხოდ</string>
+    <string name="security_delete">საფულის წაშლა</string>
+    <string name="security_delete_desc">ყველა მონაცემის სამუდამოდ წაშლა</string>
+    <string name="security_delete_title">საფულის წაშლა</string>
+    <string name="security_delete_warning">ეს მოქმედება შეუქცევადია.</string>
+    <string name="security_delete_warning2">თქვენ დაკარგავთ წვდომას ყველა თანხაზე, თუ არ გაქვთ თქვენი პირადი გასაღების სარეზერვო ასლი.</string>
+    <string name="security_delete_warning3">დარწმუნდით, რომ გაქვთ გასაღების ექსპორტი გაკეთებული გაგრძელებამდე.</string>
+    <string name="security_delete_confirm">წაშლა</string>
+    <string name="security_status_active">აქტიური</string>
+    <string name="security_status_warning">გაფრთხილება</string>
+    <string name="security_status_na">მიუწვდ.</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">საფულის იმპორტი</string>
+    <string name="import_private_key">პირადი გასაღები</string>
+    <string name="import_seed_phrase">სიდ ფრაზა</string>
+    <string name="import_prompt">შეიყვანეთ თქვენი პირადი გასაღები:</string>
+    <string name="import_prompt_seed">შეიყვანეთ თქვენი სიდ ფრაზა (12–24 სიტყვა):</string>
+    <string name="import_seed_hint">სიტყვა1 სიტყვა2 სიტყვა3 …</string>
+    <string name="import_button">იმპორტი</string>
+    <string name="import_error_invalid">არასწორი პირადი გასაღები</string>
+    <string name="import_error_invalid_seed">არასწორი სიდ ფრაზა</string>
+    <string name="import_error_encryption">დაშიფვრის შეცდომა</string>
+    <string name="export_title">პირადი გასაღები</string>
+    <string name="export_warning">არასოდეს გაუზიაროთ ეს გასაღები არავის. ვისაც აქვს ის, აქვს სრული კონტროლი თქვენს თანხებზე.</string>
+    <string name="export_understood">გასაგებია</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">შეჯამება</string>
+    <string name="history_received">მიღებული</string>
+    <string name="history_sent">გაგზავნილი</string>
+    <string name="history_refunded">დაბრუნებული</string>
+    <string name="history_empty">ტრანზაქციები არ არის</string>
+    <string name="history_empty_desc">ტრანზაქციები %s-ზე\nაქ გამოჩნდება</string>
+    <string name="history_payment_received">გადახდა მიღებულია</string>
+    <string name="history_payment_sent">გადახდა გაგზავნილია</string>
+    <string name="history_refund_sent">თანხის დაბრუნება</string>
+    <string name="history_refund_received">დაბრუნება მიღებულია</string>
+    <string name="history_status_pending">მოლოდინში</string>
+    <string name="history_status_confirmed">დადასტურებული</string>
+    <string name="history_status_failed">წარუმატებელი</string>
+    <string name="history_status_refunded">დაბრუნებული</string>
+    <string name="history_status_partial">ნაწილობრივი</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">ორიგინალი ტრანზაქცია</string>
+    <string name="refund_amount">თანხა</string>
+    <string name="refund_already">უკვე დაბრუნებული</string>
+    <string name="refund_available">ხელმისაწვდომი</string>
+    <string name="refund_recipient">მიმღები</string>
+    <string name="refund_date">თარიღი</string>
+    <string name="refund_type">დაბრუნების ტიპი</string>
+    <string name="refund_full">სრული</string>
+    <string name="refund_partial">ნაწილობრივი</string>
+    <string name="refund_partial_desc">მიუთითეთ თანხა</string>
+    <string name="refund_amount_label">დასაბრუნებელი თანხა (%s)</string>
+    <string name="refund_max">მაქსიმუმი: %1$s %2$s</string>
+    <string name="refund_gas_notice">თქვენ გადაიხდით გაზს ამ ტრანზაქციისთვის</string>
+    <string name="refund_button">დაბრუნება %1$s %2$s</string>
+    <string name="refund_processing">დაბრუნების დამუშავება…</string>
+    <string name="refund_success">დაბრუნება წარმატებულია</string>
+    <string name="refund_done">დასრულებულია</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">თქვენი ტოკენები</string>
+    <string name="balance_manage">მართვა</string>
+    <string name="balance_refresh">განახლება</string>
+    <string name="balance_loading">ბალანსების ჩატვირთვა…</string>
+    <string name="balance_empty">ტოკენები არ არის</string>
+    <string name="balance_no_wallet_desc">დააყენეთ საფულე პარამეტრებში\nბალანსების სანახავად</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">დაშვებული ტოკენები</string>
+    <string name="settings_add_token">ტოკენის დამატება</string>
+    <string name="add_token_prompt">შეიყვანეთ ტოკენის კონტრაქტის მისამართი:</string>
+    <string name="add_token_validating">ტოკენის ვალიდაცია…</string>
+    <string name="add_token_button">დამატება</string>
+    <string name="delete">წაშლა</string>
+
+    <!-- Common -->
+    <string name="cancel">გაუქმება</string>
+    <string name="close">დახურვა</string>
+    <string name="retry">ხელახლა ცდა</string>
+    <string name="error">შეცდომა</string>
+    <string name="copy">კოპირება</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">საფულე არ არის კონფიგურირებული</string>
+    <string name="error_device_security">მოწყობილობის უსაფრთხოების შეცდომა</string>
+    <string name="error_auth">ავთენტიფიკაციის შეცდომა</string>
+    <string name="error_unknown">უცნობი შეცდომა</string>
+    <string name="error_keystore_unavailable">Keystore მიუწვდომელია - ზოგიერთი ფუნქცია არ იმუშავებს</string>
+    <string name="error_encryption_restart">დაშიფვრის შეცდომა - გადატვირთეთ აპლიკაცია</string>
+    <string name="error_auth_cancelled">ავთენტიფიკაცია გაუქმებულია</string>
+    <string name="error_invalid_address">არასწორი მისამართი</string>
+    <string name="error_invalid_address_format">არასწორი მისამართის ფორმატი</string>
+    <string name="error_token_already_added">ტოკენი უკვე დამატებულია</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">გაგზავნილია! Tx: %s…</string>
+    <string name="token_native">ნატიური</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">თქვენი ბალანსი</string>
+    <string name="pay_insufficient_balance">არასაკმარისი ბალანსი</string>
+    <string name="pay_need_more">გჭირდებათ კიდევ %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">მოგესალმებით</string>
+    <string name="welcome_sovereignty">თქვენი გასაღებები.\nთქვენი თანხები.\nთქვენი სუვერენიტეტი.</string>
+    <string name="welcome_desc">თქვენი თანხები არ ინახება ამ აპლიკაციაში. ისინი არსებობს ბლოკჩეინზე, კონტროლირებული თქვენი პირადი გასაღებებით.\n\nეს აპლიკაცია მხოლოდ უსაფრთხოდ ინახავს თქვენს გასაღებებს. ჩვენ არ გვაქვს წვდომა თქვენს თანხებზე.\n\nშენიშვნა: ზოგიერთი ტოკენი (USDC, USDT) შეიძლება გაყინოს მათმა ემიტენტებმა. მაქსიმალური სუვერენიტეტისთვის გამოიყენეთ ნატიური ETH ან დეცენტრალიზებული ტოკენები.</string>
+    <string name="welcome_warning_title">თქვენი გასაღებები = თქვენი თანხები</string>
+    <string name="welcome_warning_desc">თუ დაკარგავთ თქვენს პირად გასაღებებს ან გაუზიარებთ ვინმეს, სამუდამოდ დაკარგავთ კონტროლს თქვენს თანხებზე.\n\nაღდგენის ვარიანტი არ არსებობს. მხარდაჭერის გუნდი ვერ დაგეხმარებათ. ეს არის ჭეშმარიტი საკუთრების ბუნება.\n\nყოველთვის შეინახეთ თქვენი გასაღებების უსაფრთხო სარეზერვო ასლი.</string>
+    <string name="welcome_opensource">ღია კოდის პროგრამული უზრუნველყოფა. შეამოწმეთ, არ ენდოთ.</string>
+    <string name="welcome_start">მესმის, დავიწყოთ</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">გამყიდველის იდენტობა</string>
+    <string name="settings_merchant_name">ბიზნესის სახელი</string>
+    <string name="settings_merchant_name_hint">ჩემი ყავის მაღაზია</string>
+    <string name="settings_merchant_domain">დომენი / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ან mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">ნაჩვენები მომხმარებლებისთვის გადახდისას</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">კონფიდენციალურობის რეჟიმი</string>
+    <string name="settings_stealth_desc">მიიღეთ გადახდები ერთჯერად მისამართებზე (EIP-5564)</string>
+    <string name="settings_stealth_enabled">ჩართულია</string>
+    <string name="settings_stealth_info">ყოველი გადახდა მიდის უნიკალურ მისამართზე, რომლიდანაც მხოლოდ თქვენ შეგიძლიათ ხარჯვა. დამკვირვებლები ვერ დააკავშირებენ გადახდებს თქვენს ბიზნესთან.</string>
+    <string name="stealth_address_label">სტელს რეჟიმი აქტიურია</string>
+    <string name="stealth_payment_note">გადახდა გაიგზავნება პირად მისამართზე</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">მიმღების მისამართი</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">პირადი საფულე</string>
+    <string name="stealth_wallet_addresses">%d სტელს მისამართზე</string>
+    <string name="stealth_wallet_privacy_title">თქვენი თანხები კონფიდენციალურია</string>
+    <string name="stealth_wallet_privacy_desc">ეს ბალანსი არ არის დაკავშირებული თქვენს საჯარო საფულესთან. ხარჯეთ პირდაპირ მომწოდებლებთან, ბირჟებზე ან სადმე - თქვენი ბიზნესის იდენტობა რჩება დაფარული.</string>
+    <string name="stealth_wallet_send">გაგზავნა</string>
+    <string name="stealth_wallet_send_title">გაგზავნა პირადი საფულიდან</string>
+    <string name="stealth_wallet_available">ხელმისაწვდომი: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">თანხა</string>
+    <string name="nav_stealth_wallet">პირადი საფულე</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">მრავალი მისამართი</string>
+    <string name="stealth_wallet_gas_desc">თქვენი თანხები გაშლილია %d მისამართზე. დიდი თანხების ხარჯვამ შეიძლება მოითხოვოს მრავალი ტრანზაქცია, რაც ზრდის გაზის ხარჯებს.</string>
+    <string name="stealth_wallet_consolidate">კონსოლიდაცია მთავარ საფულეში</string>
+    <string name="stealth_wallet_consolidate_title">თანხების კონსოლიდაცია?</string>
+    <string name="stealth_wallet_consolidate_warning">ეს გადაიტანს ყველა თანხას თქვენი პირადი საფულიდან თქვენს მთავარ საფულის მისამართზე.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">გაფრთხილება: ეს არღვევს კონფიდენციალურობას. თქვენი მთავარი საფულე დაუკავშირდება ყველა მიღებულ გადახდას.</string>
+    <string name="stealth_wallet_consolidate_benefit">სარგებელი: მომავალი ხარჯვა მოითხოვს მხოლოდ ერთ ტრანზაქციას (დაბალი გაზის ხარჯები).</string>
+    <string name="stealth_wallet_consolidate_confirm">კონსოლიდაცია</string>
+    <string name="stealth_wallet_consolidate_success">თანხები კონსოლიდირებულია მთავარ საფულეში</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">გადამხდელის კონფიდენციალურობა</string>
+    <string name="settings_payer_privacy_desc">გადაიხადეთ ეფემერული ანგარიშებიდან (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">ყოველი გადახდა იყენებს უნიკალურ ანგარიშს. თქვენი მთავარი საფულის მისამართი არ ჩანს ჯაჭვზე.</string>
+    <string name="settings_payer_privacy_requires_api">API გასაღები საჭიროა mainnet-ისთვის</string>
+    <string name="settings_payer_privacy_public_bundler">უფასო testnets-ზე (საჯარო bundler)</string>
+    <string name="payer_privacy_note">თქვენი საფულის მისამართი დაიმალება</string>
+    <string name="payer_privacy_processing">კონფიდენციალური გადახდის დამუშავება…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">მისამართების წიგნი</string>
+    <string name="address_book_add">კონტაქტის დამატება</string>
+    <string name="address_book_edit">კონტაქტის რედაქტირება</string>
+    <string name="address_book_search">კონტაქტების ძიება…</string>
+    <string name="address_book_empty">კონტაქტები ჯერ არ არის</string>
+    <string name="address_book_empty_hint">დაამატეთ მისამართები მარტივად\nვისგან იღებთ ან ვის უხდით</string>
+    <string name="address_book_no_results">კონტაქტები არ მოიძებნა</string>
+    <string name="address_book_address">საფულის მისამართი</string>
+    <string name="address_book_name">სახელი</string>
+    <string name="address_book_name_hint">მაგ. ყავის მაღაზია, გიორგი</string>
+    <string name="address_book_note">შენიშვნა (არასავალდებულო)</string>
+    <string name="address_book_note_hint">მაგ. მომწოდებელი, მეგობარი</string>
+    <string name="address_book_delete_title">კონტაქტის წაშლა?</string>
+    <string name="address_book_delete_message">წავშალოთ %s მისამართების წიგნიდან?</string>
+    <string name="address_book_saved">კონტაქტი შენახულია</string>
+    <string name="address_book_unknown">უცნობი</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">მარტივი რეჟიმი</string>
+    <string name="settings_simple_mode_desc">მარტივი გამოყენება, ძირითადი პარამეტრები</string>
+    <string name="settings_advanced_mode">გაფართოებული რეჟიმი</string>
+    <string name="settings_advanced_mode_desc">კრიპტო პარამეტრები გამოცდილი მომხმარებლებისთვის</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">კონტაქტის გაზიარება</string>
+    <string name="share_contact_title">თქვენი მისამართის გაზიარება</string>
+    <string name="share_contact_ready">გაზიარებისთვის მზადაა</string>
+    <string name="share_contact_ready_desc">მიაახლოვეთ თქვენი ტელეფონი\nსხვა CleanSky მოწყობილობას</string>
+    <string name="share_contact_received">კონტაქტი მიღებულია!</string>
+    <string name="share_contact_received_name">%s სურს დაკავშირება</string>
+    <string name="share_contact_save">კონტაქტებში შენახვა</string>
+    <string name="share_contact_your_name">თქვენი სახელი (არასავალდებულო)</string>
+    <string name="share_contact_your_name_hint">როგორ დაგინახავენ სხვები</string>
+    <string name="share_contact_mutual">კონტაქტების გაცვლა</string>
+    <string name="share_contact_mutual_desc">ორივე მოწყობილობა ერთდროულად აზიარებს მისამართებს</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">გაგზავნა</string>
+    <string name="send_title">კონტაქტისთვის გაგზავნა</string>
+    <string name="send_select_contact">აირჩიეთ მიმღები</string>
+    <string name="send_no_contacts">კონტაქტები ჯერ არ არის</string>
+    <string name="send_no_contacts_hint">დაამატეთ კონტაქტები NFC-ით ან ხელით\nმათ გადახდების გასაგზავნად</string>
+    <string name="send_amount">თანხა</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">მიმღები: %s</string>
+    <string name="send_confirm">გაგზავნა %1$s %2$s</string>
+    <string name="send_processing">იგზავნება…</string>
+    <string name="send_success">წარმატებით გაიგზავნა!</string>
+    <string name="send_success_desc">%1$s %2$s გაიგზავნა %3$s-ზე</string>
+    <string name="send_error">გაგზავნა წარუმატებელია</string>
+    <string name="send_enter_amount">შეიყვანეთ თანხა</string>
+    <string name="send_new">ახალი გადარიცხვა</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">ყველა</string>
+    <string name="history_filter_received">მიღებული</string>
+    <string name="history_filter_sent">გაგზავნილი</string>
+    <string name="history_filter_contact">კონტაქტი</string>
+    <string name="history_filter_by_contact">ფილტრი კონტაქტით</string>
+    <string name="history_show_all">ყველას ჩვენება</string>
+    <string name="history_no_results">ტრანზაქციები არ შეესაბამება ფილტრს</string>
+    <string name="history_add_contact">კონტაქტებში დამატება</string>
+    <string name="history_edit_contact">კონტაქტის რედაქტირება</string>
+    <string name="history_from">საიდან</string>
+    <string name="history_to">სად</string>
+    <string name="history_date">თარიღი</string>
+    <string name="history_tx_hash">ტრანზაქცია</string>
+    <string name="history_refund">თანხის დაბრუნება</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">თანხა ძალიან მცირეა</string>
+    <string name="scam_amount_large_warning">დიდი თანხა</string>
+    <string name="scam_amount_large_desc">თქვენ აპირებთ %1$s %2$s გაგზავნას.\nგთხოვთ, დაადასტუროთ, რომ ეს სწორია.</string>
+    <string name="scam_confirm_large">დაადასტურეთ დიდი გადარიცხვა</string>
+    <string name="scam_dust_attack_warning">საეჭვო მოთხოვნა</string>
+    <string name="scam_dust_attack_desc">ეს ძალიან მცირე თანხაა (%1$s %2$s). მტვრის შეტევები იყენებს პატარა გადახდებს საფულეების თვალყურის დევნებისთვის. უარი თქვით, თუ მოულოდნელია.</string>
+    <string name="scam_receive_large_warning">დიდი გადახდის მოთხოვნა</string>
+    <string name="scam_receive_large_desc">ეს მოთხოვნაა %1$s %2$s-ზე. გადახდამდე გადაამოწმეთ, რომ ეს სწორი თანხაა.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">მხოლოდ მიღება</string>
+    <string name="settings_mode_receive_only">მიღება</string>
+    <string name="settings_mode_receive_only_desc">პირადი გასაღები არ არის</string>
+    <string name="settings_receive_only">მხოლოდ მიღების კონფიგურაცია</string>
+    <string name="settings_escrow_address">Escrow მისამართი</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow არ არის კონფიგურირებული</string>
+    <string name="receive_only_no_escrow_desc">დააკონფიგურირეთ escrow მისამართი და API key პარამეტრებში</string>
+    <string name="receive_only_security_notice">ამ მოწყობილობაზე პირადი გასაღები არ არის. ქურდობის შემთხვევაში უსაფრთხოა.</string>
+    <string name="receive_only_api_key_required">API key საჭიროა relayer-ის შესრულებისთვის</string>
+</resources>

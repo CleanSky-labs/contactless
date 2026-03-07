@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Бесконтактно</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Оплатить</string>
+    <string name="nav_collect">Принять</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_history">История</string>
+    <string name="nav_refund">Возврат</string>
+    <string name="nav_balance">Баланс</string>
+    <string name="nav_back">Назад</string>
+
+    <!-- Common actions -->
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Нет кошелька</string>
+    <string name="pay_no_wallet_desc">Настройте кошелёк в Настройках\nдля совершения платежей</string>
+    <string name="pay_ready">Готов к оплате</string>
+    <string name="pay_ready_desc">Поднесите телефон к\nустройству продавца</string>
+    <string name="pay_request_title">Запрос на оплату</string>
+    <string name="pay_network">Сеть: %s</string>
+    <string name="pay_expired">Запрос истёк</string>
+    <string name="pay_cancel">Отмена</string>
+    <string name="pay_confirm">Оплатить</string>
+    <string name="pay_new">Новый платёж</string>
+    <string name="pay_signing">Подписание транзакции…</string>
+    <string name="pay_tx_signed">Транзакция подписана</string>
+    <string name="pay_tx_signed_desc">Поднесите телефон к\nпродавцу для отправки</string>
+    <string name="pay_authenticating">Аутентификация…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Нет кошелька</string>
+    <string name="collect_no_wallet_desc">Настройте кошелёк в Настройках\nдля приёма платежей</string>
+    <string name="collect_amount">Сумма к получению</string>
+    <string name="collect_button">Принять</string>
+    <string name="collect_waiting">Ожидание оплаты</string>
+    <string name="collect_waiting_desc">Попросите клиента\nподнести телефон</string>
+    <string name="collect_new">Новый приём</string>
+    <string name="collect_processing">Обработка платежа…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Режим работы</string>
+    <string name="settings_mode_pay">Оплатить</string>
+    <string name="settings_mode_pay_desc">Совершать платежи</string>
+    <string name="settings_mode_collect">Принять</string>
+    <string name="settings_mode_collect_desc">Принимать платежи</string>
+    <string name="settings_wallet">Кошелёк</string>
+    <string name="settings_wallet_address">Адрес</string>
+    <string name="settings_wallet_none">Кошелёк не настроен</string>
+    <string name="settings_wallet_create">Создать</string>
+    <string name="settings_wallet_import">Импортировать</string>
+    <string name="settings_network">Сеть блокчейна</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Выполнение транзакций</string>
+    <string name="settings_exec_direct">Прямое</string>
+    <string name="settings_exec_direct_desc">Вы платите за газ</string>
+    <string name="settings_exec_relayer">Релеер (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Спонсируемый газ через релеер</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 с Paymaster</string>
+    <string name="settings_api_key">API ключ</string>
+    <string name="settings_save">Сохранить и вернуться</string>
+    <string name="settings_not_available">Недоступно в этой сети</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_language_system">Системный по умолчанию</string>
+    <string name="collect_select_currency">Выбрать валюту</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Безопасность</string>
+    <string name="security_encryption">Шифрование ключей</string>
+    <string name="security_encryption_desc">AES-256-GCM с Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Аппаратный модуль безопасности активен</string>
+    <string name="security_strongbox_unavailable">Недоступно на этом устройстве</string>
+    <string name="security_biometric">Биометрическая аутентификация</string>
+    <string name="security_biometric_required">Требуется для платежей</string>
+    <string name="security_biometric_disabled">Отключена</string>
+    <string name="security_biometric_unavailable">Недоступна</string>
+    <string name="security_export">Экспорт приватного ключа</string>
+    <string name="security_export_desc">Сохраните ключ в безопасности</string>
+    <string name="security_delete">Удалить кошелёк</string>
+    <string name="security_delete_desc">Удалить все данные навсегда</string>
+    <string name="security_delete_title">Удалить кошелёк</string>
+    <string name="security_delete_warning">Это действие НЕОБРАТИМО.</string>
+    <string name="security_delete_warning2">Вы потеряете доступ ко всем средствам, если у вас нет резервной копии приватного ключа.</string>
+    <string name="security_delete_warning3">Убедитесь, что экспортировали ключ перед продолжением.</string>
+    <string name="security_delete_confirm">Удалить</string>
+    <string name="security_status_active">Активно</string>
+    <string name="security_status_warning">Внимание</string>
+    <string name="security_status_na">Н/Д</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Импорт кошелька</string>
+    <string name="import_private_key">Приватный ключ</string>
+    <string name="import_seed_phrase">Сид-фраза</string>
+    <string name="import_prompt">Введите приватный ключ:</string>
+    <string name="import_prompt_seed">Введите сид-фразу (12–24 слова):</string>
+    <string name="import_seed_hint">слово1 слово2 слово3 …</string>
+    <string name="import_button">Импортировать</string>
+    <string name="import_error_invalid">Недействительный приватный ключ</string>
+    <string name="import_error_invalid_seed">Недействительная сид-фраза</string>
+    <string name="import_error_encryption">Ошибка шифрования</string>
+    <string name="export_title">Приватный ключ</string>
+    <string name="export_warning">НИКОГДА не делитесь этим ключом. Кто им владеет — полностью контролирует ваши средства.</string>
+    <string name="export_understood">Понятно</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Сводка</string>
+    <string name="history_received">Получено</string>
+    <string name="history_sent">Отправлено</string>
+    <string name="history_refunded">Возвращено</string>
+    <string name="history_empty">Нет транзакций</string>
+    <string name="history_empty_desc">Транзакции в %s\nпоявятся здесь</string>
+    <string name="history_payment_received">Платёж получен</string>
+    <string name="history_payment_sent">Платёж отправлен</string>
+    <string name="history_refund_sent">Возврат</string>
+    <string name="history_refund_received">Возврат получен</string>
+    <string name="history_status_pending">Ожидание</string>
+    <string name="history_status_confirmed">Подтверждено</string>
+    <string name="history_status_failed">Ошибка</string>
+    <string name="history_status_refunded">Возвращено</string>
+    <string name="history_status_partial">Частично</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Исходная транзакция</string>
+    <string name="refund_amount">Сумма</string>
+    <string name="refund_already">Уже возвращено</string>
+    <string name="refund_available">Доступно</string>
+    <string name="refund_recipient">Получатель</string>
+    <string name="refund_date">Дата</string>
+    <string name="refund_type">Тип возврата</string>
+    <string name="refund_full">Полный</string>
+    <string name="refund_partial">Частичный</string>
+    <string name="refund_partial_desc">Указать сумму</string>
+    <string name="refund_amount_label">Сумма возврата (%s)</string>
+    <string name="refund_max">Максимум: %1$s %2$s</string>
+    <string name="refund_gas_notice">Вы оплатите газ этой транзакции</string>
+    <string name="refund_button">Вернуть %1$s %2$s</string>
+    <string name="refund_processing">Обработка возврата…</string>
+    <string name="refund_success">Возврат успешен</string>
+    <string name="refund_done">Готово</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Ваши токены</string>
+    <string name="balance_manage">Управление</string>
+    <string name="balance_refresh">Обновить</string>
+    <string name="balance_loading">Загрузка балансов…</string>
+    <string name="balance_empty">Нет токенов</string>
+    <string name="balance_no_wallet_desc">Настройте кошелёк в Настройках\nчтобы увидеть балансы</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Разрешённые токены</string>
+    <string name="settings_add_token">Добавить токен</string>
+    <string name="add_token_prompt">Введите адрес контракта токена:</string>
+    <string name="add_token_validating">Проверка токена…</string>
+    <string name="add_token_button">Добавить</string>
+    <string name="delete">Удалить</string>
+
+    <!-- Common -->
+    <string name="cancel">Отмена</string>
+    <string name="close">Закрыть</string>
+    <string name="retry">Повторить</string>
+    <string name="error">Ошибка</string>
+    <string name="copy">Копировать</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Кошелёк не настроен</string>
+    <string name="error_device_security">Ошибка безопасности устройства</string>
+    <string name="error_auth">Ошибка аутентификации</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_keystore_unavailable">Keystore недоступен - некоторые функции не будут работать</string>
+    <string name="error_encryption_restart">Ошибка шифрования - перезапустите приложение</string>
+    <string name="error_auth_cancelled">Аутентификация отменена</string>
+    <string name="error_invalid_address">Недействительный адрес</string>
+    <string name="error_invalid_address_format">Недействительный формат адреса</string>
+    <string name="error_token_already_added">Токен уже добавлен</string>
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Отправлено! Tx: %s…</string>
+    <string name="token_native">Нативный</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ваш баланс</string>
+    <string name="pay_insufficient_balance">Недостаточный баланс</string>
+    <string name="pay_need_more">Вам нужно ещё %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Добро пожаловать</string>
+    <string name="welcome_sovereignty">Ваши ключи.\nВаши средства.\nВаш суверенитет.</string>
+    <string name="welcome_desc">Ваши средства НЕ хранятся в этом приложении. Они находятся в блокчейне, под контролем ваших приватных ключей.\n\nЭто приложение только безопасно хранит ваши ключи. Мы не можем получить доступ к вашим средствам.\n\nПримечание: Некоторые токены (USDC, USDT) могут быть заморожены их эмитентами. Для максимального суверенитета используйте нативный ETH или децентрализованные токены.</string>
+    <string name="welcome_warning_title">Ваши ключи = Ваши средства</string>
+    <string name="welcome_warning_desc">Если вы потеряете приватные ключи или поделитесь ими с кем-то, вы навсегда потеряете контроль над своими средствами.\n\nВосстановление невозможно. Никакая служба поддержки не сможет помочь. Такова природа истинного владения.\n\nВсегда храните надёжную резервную копию ваших ключей.</string>
+    <string name="welcome_opensource">Программное обеспечение с открытым исходным кодом. Проверяйте, не доверяйте.</string>
+    <string name="welcome_start">Я понимаю, начнём</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Идентификация продавца</string>
+    <string name="settings_merchant_name">Название бизнеса</string>
+    <string name="settings_merchant_name_hint">Моя кофейня</string>
+    <string name="settings_merchant_domain">Домен / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth или mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Отображается клиентам при оплате</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Режим конфиденциальности</string>
+    <string name="settings_stealth_desc">Получайте платежи на одноразовые адреса (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Включено</string>
+    <string name="settings_stealth_info">Каждый платёж поступает на уникальный адрес, который можете тратить только вы. Наблюдатели не могут связать платежи с вашим бизнесом.</string>
+    <string name="stealth_address_label">Режим Stealth активен</string>
+    <string name="stealth_payment_note">Платёж будет отправлен на приватный адрес</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Адрес получателя</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Приватный кошелёк</string>
+    <string name="stealth_wallet_addresses">на %d stealth-адресах</string>
+    <string name="stealth_wallet_privacy_title">Ваши средства конфиденциальны</string>
+    <string name="stealth_wallet_privacy_desc">Этот баланс не связан с вашим публичным кошельком. Тратьте напрямую поставщикам, биржам или куда угодно - ваша бизнес-идентичность остаётся скрытой.</string>
+    <string name="stealth_wallet_send">Отправить</string>
+    <string name="stealth_wallet_send_title">Отправить из приватного кошелька</string>
+    <string name="stealth_wallet_available">Доступно: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Сумма</string>
+    <string name="nav_stealth_wallet">Приватный кошелёк</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Несколько адресов</string>
+    <string name="stealth_wallet_gas_desc">Ваши средства распределены по %d адресам. Траты больших сумм могут потребовать несколько транзакций, увеличивая расходы на газ.</string>
+    <string name="stealth_wallet_consolidate">Объединить в основной кошелёк</string>
+    <string name="stealth_wallet_consolidate_title">Объединить средства?</string>
+    <string name="stealth_wallet_consolidate_warning">Это переведёт все средства из вашего приватного кошелька на адрес основного кошелька.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ВНИМАНИЕ: Это нарушает конфиденциальность. Ваш основной кошелёк будет связан со всеми полученными платежами.</string>
+    <string name="stealth_wallet_consolidate_benefit">Преимущество: Будущие траты потребуют только одну транзакцию (меньше расходов на газ).</string>
+    <string name="stealth_wallet_consolidate_confirm">Объединить</string>
+    <string name="stealth_wallet_consolidate_success">Средства объединены в основной кошелёк</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Конфиденциальность плательщика</string>
+    <string name="settings_payer_privacy_desc">Платите с эфемерных аккаунтов (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Каждый платёж использует уникальный аккаунт. Адрес вашего основного кошелька не виден в блокчейне.</string>
+    <string name="settings_payer_privacy_requires_api">Требуется API ключ для mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Бесплатно в тестовых сетях (публичный бандлер)</string>
+    <string name="payer_privacy_note">Адрес вашего кошелька будет скрыт</string>
+    <string name="payer_privacy_processing">Обработка приватного платежа…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Адресная книга</string>
+    <string name="address_book_add">Добавить контакт</string>
+    <string name="address_book_edit">Редактировать контакт</string>
+    <string name="address_book_search">Поиск контактов…</string>
+    <string name="address_book_empty">Пока нет контактов</string>
+    <string name="address_book_empty_hint">Добавьте адреса, чтобы легко определять,\nкому вы платите или от кого получаете</string>
+    <string name="address_book_no_results">Контакты не найдены</string>
+    <string name="address_book_address">Адрес кошелька</string>
+    <string name="address_book_name">Имя</string>
+    <string name="address_book_name_hint">напр. Кофейня, Иван Иванов</string>
+    <string name="address_book_note">Заметка (необязательно)</string>
+    <string name="address_book_note_hint">напр. Поставщик, Друг</string>
+    <string name="address_book_delete_title">Удалить контакт?</string>
+    <string name="address_book_delete_message">Удалить %s из адресной книги?</string>
+    <string name="address_book_saved">Контакт сохранён</string>
+    <string name="address_book_unknown">Неизвестный</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Простой режим</string>
+    <string name="settings_simple_mode_desc">Простой в использовании, базовые опции</string>
+    <string name="settings_advanced_mode">Расширенный режим</string>
+    <string name="settings_advanced_mode_desc">Крипто-опции для опытных пользователей</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Поделиться контактом</string>
+    <string name="share_contact_title">Поделиться адресом</string>
+    <string name="share_contact_ready">Готов к передаче</string>
+    <string name="share_contact_ready_desc">Поднесите телефон к\nдругому устройству CleanSky</string>
+    <string name="share_contact_received">Контакт получен!</string>
+    <string name="share_contact_received_name">%s хочет связаться</string>
+    <string name="share_contact_save">Сохранить в контакты</string>
+    <string name="share_contact_your_name">Ваше имя (необязательно)</string>
+    <string name="share_contact_your_name_hint">Как вас будут видеть другие</string>
+    <string name="share_contact_mutual">Обмен контактами</string>
+    <string name="share_contact_mutual_desc">Оба устройства обмениваются адресами одновременно</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Отправить</string>
+    <string name="send_title">Отправить контакту</string>
+    <string name="send_select_contact">Выберите получателя</string>
+    <string name="send_no_contacts">Пока нет контактов</string>
+    <string name="send_no_contacts_hint">Добавьте контакты через NFC или вручную,\nчтобы отправлять им платежи</string>
+    <string name="send_amount">Сумма</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Кому: %s</string>
+    <string name="send_confirm">Отправить %1$s %2$s</string>
+    <string name="send_processing">Отправка…</string>
+    <string name="send_success">Успешно отправлено!</string>
+    <string name="send_success_desc">%1$s %2$s отправлено %3$s</string>
+    <string name="send_error">Ошибка отправки</string>
+    <string name="send_enter_amount">Введите сумму</string>
+    <string name="send_new">Новый перевод</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Все</string>
+    <string name="history_filter_received">Полученные</string>
+    <string name="history_filter_sent">Отправленные</string>
+    <string name="history_filter_contact">Контакт</string>
+    <string name="history_filter_by_contact">Фильтр по контакту</string>
+    <string name="history_show_all">Показать все</string>
+    <string name="history_no_results">Транзакции не соответствуют фильтру</string>
+    <string name="history_add_contact">Добавить в контакты</string>
+    <string name="history_edit_contact">Редактировать контакт</string>
+    <string name="history_from">От</string>
+    <string name="history_to">Кому</string>
+    <string name="history_date">Дата</string>
+    <string name="history_tx_hash">Транзакция</string>
+    <string name="history_refund">Возврат</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Сумма слишком мала</string>
+    <string name="scam_amount_large_warning">Большая сумма</string>
+    <string name="scam_amount_large_desc">Вы собираетесь отправить %1$s %2$s.\nПожалуйста, подтвердите, что это верно.</string>
+    <string name="scam_confirm_large">Подтвердить крупный перевод</string>
+    <string name="scam_dust_attack_warning">Подозрительный запрос</string>
+    <string name="scam_dust_attack_desc">Это очень маленькая сумма (%1$s %2$s). Пылевые атаки используют крошечные платежи для отслеживания кошельков. Отклоните, если неожиданно.</string>
+    <string name="scam_receive_large_warning">Запрос на крупный платёж</string>
+    <string name="scam_receive_large_desc">Этот запрос на %1$s %2$s. Проверьте правильность суммы перед оплатой.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Только приём</string>
+    <string name="settings_mode_receive_only">Приём</string>
+    <string name="settings_mode_receive_only_desc">Без приватного ключа</string>
+    <string name="settings_receive_only">Настройка режима только приёма</string>
+    <string name="settings_escrow_address">Адрес Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow не настроен</string>
+    <string name="receive_only_no_escrow_desc">Настройте адрес escrow и API key в Настройках</string>
+    <string name="receive_only_security_notice">Нет приватного ключа на этом устройстве. Безопасно при краже.</string>
+    <string name="receive_only_api_key_required">API key требуется для выполнения через relayer</string>
+</resources>

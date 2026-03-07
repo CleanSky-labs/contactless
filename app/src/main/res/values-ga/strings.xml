@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Gan Teagmháil</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Íoc</string>
+    <string name="nav_collect">Faigh</string>
+    <string name="nav_settings">Socruithe</string>
+    <string name="nav_history">Stair</string>
+    <string name="nav_refund">Aisíocaíocht</string>
+    <string name="nav_balance">Iarmhéid</string>
+    <string name="nav_back">Ar ais</string>
+
+    <!-- Common actions -->
+    <string name="back">Ar ais</string>
+    <string name="save">Sábháil</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Gan sparán</string>
+    <string name="pay_no_wallet_desc">Socraigh sparán sna Socruithe\nchun íocaíochtaí a dhéanamh</string>
+    <string name="pay_ready">Réidh le híoc</string>
+    <string name="pay_ready_desc">Coinnigh do ghuthán gar do\ngléas an díoltóra</string>
+    <string name="pay_request_title">Iarratas íocaíochta</string>
+    <string name="pay_network">Líonra: %s</string>
+    <string name="pay_expired">Iarratas imithe in éag</string>
+    <string name="pay_cancel">Cealaigh</string>
+    <string name="pay_confirm">Íoc</string>
+    <string name="pay_new">Íocaíocht nua</string>
+    <string name="pay_signing">Idirbheart á shíniú…</string>
+    <string name="pay_tx_signed">Idirbheart sínithe</string>
+    <string name="pay_tx_signed_desc">Coinnigh do ghuthán gar don\ndíoltóir le seoladh</string>
+    <string name="pay_authenticating">Á fhíordheimhniú…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Gan sparán</string>
+    <string name="collect_no_wallet_desc">Socraigh sparán sna Socruithe\nchun íocaíochtaí a fháil</string>
+    <string name="collect_amount">Méid le fáil</string>
+    <string name="collect_button">Faigh</string>
+    <string name="collect_waiting">Ag fanacht ar íocaíocht</string>
+    <string name="collect_waiting_desc">Iarr ar an gcustaiméir\na ghuthán a choinneáil gar</string>
+    <string name="collect_new">Fáil nua</string>
+    <string name="collect_processing">Íocaíocht á próiseáil…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Mód oibriúcháin</string>
+    <string name="settings_mode_pay">Íoc</string>
+    <string name="settings_mode_pay_desc">Déan íocaíochtaí</string>
+    <string name="settings_mode_collect">Faigh</string>
+    <string name="settings_mode_collect_desc">Faigh íocaíochtaí</string>
+    <string name="settings_wallet">Sparán</string>
+    <string name="settings_wallet_address">Seoladh</string>
+    <string name="settings_wallet_none">Níl sparán cumraithe</string>
+    <string name="settings_wallet_create">Cruthaigh</string>
+    <string name="settings_wallet_import">Iompórtáil</string>
+    <string name="settings_network">Líonra blocshlabhra</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Forghníomhú idirbhirt</string>
+    <string name="settings_exec_direct">Díreach</string>
+    <string name="settings_exec_direct_desc">Íocann tú as gás</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gás urraíochta trí relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 le Paymaster</string>
+    <string name="settings_api_key">Eochair API</string>
+    <string name="settings_save">Sábháil agus fill</string>
+    <string name="settings_not_available">Níl ar fáil ar an líonra seo</string>
+    <string name="settings_language">Teanga</string>
+    <string name="settings_language_system">Réamhshocrú an chórais</string>
+    <string name="collect_select_currency">Roghnaigh airgeadra</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Slándáil</string>
+    <string name="security_encryption">Criptiú eochracha</string>
+    <string name="security_encryption_desc">AES-256-GCM le Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Modúl slándála crua-earraí gníomhach</string>
+    <string name="security_strongbox_unavailable">Níl ar fáil ar an ngléas seo</string>
+    <string name="security_biometric">Fíordheimhniú bithméadrach</string>
+    <string name="security_biometric_required">Riachtanach le haghaidh íocaíochtaí</string>
+    <string name="security_biometric_disabled">Díchumasaithe</string>
+    <string name="security_biometric_unavailable">Níl ar fáil</string>
+    <string name="security_export">Easpórtáil eochair phríobháideach</string>
+    <string name="security_export_desc">Sábháil d\'eochair go slán</string>
+    <string name="security_delete">Scrios sparán</string>
+    <string name="security_delete_desc">Scrios gach sonraí go buan</string>
+    <string name="security_delete_title">Scrios sparán</string>
+    <string name="security_delete_warning">Tá an gníomh seo DO-AISIOMPAITHE.</string>
+    <string name="security_delete_warning2">Caillfidh tú rochtain ar gach sócmhainn mura bhfuil cúltaca de d\'eochair phríobháideach agat.</string>
+    <string name="security_delete_warning3">Bí cinnte gur easpórtáil tú d\'eochair sula leanann tú ar aghaidh.</string>
+    <string name="security_delete_confirm">Scrios</string>
+    <string name="security_status_active">Gníomhach</string>
+    <string name="security_status_warning">Rabhadh</string>
+    <string name="security_status_na">Ní bhaineann</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Iompórtáil sparán</string>
+    <string name="import_private_key">Eochair phríobháideach</string>
+    <string name="import_seed_phrase">Frása athshlánaithe</string>
+    <string name="import_prompt">Cuir isteach d\'eochair phríobháideach:</string>
+    <string name="import_prompt_seed">Cuir isteach do fhrása athshlánaithe (12–24 focal):</string>
+    <string name="import_seed_hint">focal1 focal2 focal3 …</string>
+    <string name="import_button">Iompórtáil</string>
+    <string name="import_error_invalid">Eochair phríobháideach neamhbhailí</string>
+    <string name="import_error_invalid_seed">Frása athshlánaithe neamhbhailí</string>
+    <string name="import_error_encryption">Earráid chriptithe</string>
+    <string name="export_title">Eochair phríobháideach</string>
+    <string name="export_warning">NÁ ROINN an eochair seo CHOÍCHE. Tá smacht iomlán ag aon duine a bhfuil sí aige ar do shócmhainní.</string>
+    <string name="export_understood">Tuigim</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Achoimre</string>
+    <string name="history_received">Faighte</string>
+    <string name="history_sent">Seolta</string>
+    <string name="history_refunded">Aisíoctha</string>
+    <string name="history_empty">Gan idirbhearta</string>
+    <string name="history_empty_desc">Taispeánfar idirbhearta ar %s\nanseo</string>
+    <string name="history_payment_received">Íocaíocht faighte</string>
+    <string name="history_payment_sent">Íocaíocht seolta</string>
+    <string name="history_refund_sent">Aisíocaíocht</string>
+    <string name="history_refund_received">Aisíocaíocht faighte</string>
+    <string name="history_status_pending">Ar feitheamh</string>
+    <string name="history_status_confirmed">Deimhnithe</string>
+    <string name="history_status_failed">Theip</string>
+    <string name="history_status_refunded">Aisíoctha</string>
+    <string name="history_status_partial">Páirteach</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Idirbheart bunaidh</string>
+    <string name="refund_amount">Méid</string>
+    <string name="refund_already">Aisíoctha cheana</string>
+    <string name="refund_available">Ar fáil</string>
+    <string name="refund_recipient">Faighteoir</string>
+    <string name="refund_date">Dáta</string>
+    <string name="refund_type">Cineál aisíocaíochta</string>
+    <string name="refund_full">Iomlán</string>
+    <string name="refund_partial">Páirteach</string>
+    <string name="refund_partial_desc">Sonraigh an méid</string>
+    <string name="refund_amount_label">Méid le haisíoc (%s)</string>
+    <string name="refund_max">Uasmhéid: %1$s %2$s</string>
+    <string name="refund_gas_notice">Íocfaidh tú as gás don idirbheart seo</string>
+    <string name="refund_button">Aisíoc %1$s %2$s</string>
+    <string name="refund_processing">Aisíocaíocht á próiseáil…</string>
+    <string name="refund_success">D\'éirigh leis an aisíocaíocht</string>
+    <string name="refund_done">Críochnaithe</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Do Chomharthaí</string>
+    <string name="balance_manage">Bainistigh</string>
+    <string name="balance_refresh">Athnuaigh</string>
+    <string name="balance_loading">Iarmhéideanna á lódáil…</string>
+    <string name="balance_empty">Gan comharthaí</string>
+    <string name="balance_no_wallet_desc">Socraigh sparán sna Socruithe\nchun d\'iarmhéideanna a fheiceáil</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Comharthaí Ceadaithe</string>
+    <string name="settings_add_token">Cuir Comhartha leis</string>
+    <string name="add_token_prompt">Cuir isteach seoladh conartha an chomhartha:</string>
+    <string name="add_token_validating">Comhartha á bhailíochtú…</string>
+    <string name="add_token_button">Cuir leis</string>
+    <string name="delete">Scrios</string>
+
+    <!-- Common -->
+    <string name="cancel">Cealaigh</string>
+    <string name="close">Dún</string>
+    <string name="retry">Bain triail eile as</string>
+    <string name="error">Earráid</string>
+    <string name="copy">Cóipeáil</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Níl sparán cumraithe</string>
+    <string name="error_device_security">Earráid slándála gléis</string>
+    <string name="error_auth">Earráid fíordheimhnithe</string>
+    <string name="error_unknown">Earráid anaithnid</string>
+    <string name="error_keystore_unavailable">Níl Keystore ar fáil - ní oibreoidh roinnt feidhmeanna</string>
+    <string name="error_encryption_restart">Earráid chriptithe - atosaigh an aip</string>
+    <string name="error_auth_cancelled">Fíordheimhniú cealaithe</string>
+    <string name="error_invalid_address">Seoladh neamhbhailí</string>
+    <string name="error_invalid_address_format">Formáid seolta neamhbhailí</string>
+    <string name="error_token_already_added">Comhartha curtha leis cheana</string>
+    <string name="stealth_spend_sent_tx">Seolta! Tx: %s…</string>
+    <string name="token_native">Dúchasach</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">D\'iarmhéid</string>
+    <string name="pay_insufficient_balance">Iarmhéid neamhleor</string>
+    <string name="pay_need_more">Tá %1$s níos mó %2$s de dhíth ort</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Fáilte</string>
+    <string name="welcome_sovereignty">D\'eochracha.\nDo chistí.\nDo cheannasacht.</string>
+    <string name="welcome_desc">NÍL do chistí stóráilte san aip seo. Tá siad ar an mblocshlabhra, faoi smacht d\'eochracha príobháideacha.\n\nNí stórálann an aip seo ach d\'eochracha go slán. Ní féidir linn rochtain a fháil ar do chistí.\n\nNóta: Is féidir le heisitheoirí roinnt comharthaí (USDC, USDT) a reo. Le haghaidh ceannasacht uasta, úsáid ETH dúchasach nó comharthaí díláraithe.</string>
+    <string name="welcome_warning_title">D\'eochracha = Do chistí</string>
+    <string name="welcome_warning_desc">Má chailleann tú d\'eochracha príobháideacha nó má roineann tú iad le duine éigin, caillfidh tú smacht ar do chistí go buan.\n\nNíl aon rogha athshlánaithe. Ní féidir le haon fhoireann tacaíochta cabhrú leat. Sin é nádúr na fíorúinéireachta.\n\nCoinnigh cúltaca slán de d\'eochracha i gcónaí.</string>
+    <string name="welcome_opensource">Bogearraí foinse oscailte. Fíoraigh, ná muinín.</string>
+    <string name="welcome_start">Tuigim, tosaímis</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Aitheantas an Díoltóra</string>
+    <string name="settings_merchant_name">Ainm an Ghnó</string>
+    <string name="settings_merchant_name_hint">Mo Chaifé</string>
+    <string name="settings_merchant_domain">Fearann / ENS</string>
+    <string name="settings_merchant_domain_hint">mochaife.eth nó mochaife.com</string>
+    <string name="settings_merchant_identity_desc">Taispeántar do chustaiméirí le linn íocaíochta</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Mód Príobháideachta</string>
+    <string name="settings_stealth_desc">Faigh íocaíochtaí chuig seoltaí aonúsáide (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Cumasaithe</string>
+    <string name="settings_stealth_info">Téann gach íocaíocht chuig seoladh uathúil nach féidir ach leatsa a chaitheamh. Ní féidir le breathnóirí íocaíochtaí a nascadh le do ghnó.</string>
+    <string name="stealth_address_label">Mód Stealth Gníomhach</string>
+    <string name="stealth_payment_note">Seolfar an íocaíocht chuig seoladh príobháideach</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Seoladh an fhaighteora</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Sparán Príobháideach</string>
+    <string name="stealth_wallet_addresses">trasna %d seoladh stealth</string>
+    <string name="stealth_wallet_privacy_title">Tá do chistí príobháideach</string>
+    <string name="stealth_wallet_privacy_desc">Níl an t-iarmhéid seo nasctha le do sparán poiblí. Caith go díreach le soláthróirí, malartáin, nó áit ar bith - fanann aitheantas do ghnó i bhfolach.</string>
+    <string name="stealth_wallet_send">Seol</string>
+    <string name="stealth_wallet_send_title">Seol ón Sparán Príobháideach</string>
+    <string name="stealth_wallet_available">Ar fáil: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Méid</string>
+    <string name="nav_stealth_wallet">Sparán Príobháideach</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Seoltaí iolracha</string>
+    <string name="stealth_wallet_gas_desc">Tá do chistí scaipthe trasna %d seoladh. D\'fhéadfadh go mbeadh idirbhearta iolracha ag teastáil chun méideanna móra a chaitheamh, ag méadú costais gháis.</string>
+    <string name="stealth_wallet_consolidate">Comhdhlúthaigh chuig an bpríomhsparán</string>
+    <string name="stealth_wallet_consolidate_title">Comhdhlúthaigh cistí?</string>
+    <string name="stealth_wallet_consolidate_warning">Aistreoidh sé seo gach cisté ó do sparán príobháideach chuig seoladh do phríomhsparáin.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">RABHADH: Briseann sé seo an phríobháideachas. Beidh do phríomhsparán nasctha le gach íocaíocht a fuarthas.</string>
+    <string name="stealth_wallet_consolidate_benefit">Buntáiste: Ní bheidh ach idirbheart amháin ag teastáil do chaiteachas amach anseo (costais gháis níos ísle).</string>
+    <string name="stealth_wallet_consolidate_confirm">Comhdhlúthaigh</string>
+    <string name="stealth_wallet_consolidate_success">Cistí comhdhlúite chuig an bpríomhsparán</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Príobháideachas an Íocóra</string>
+    <string name="settings_payer_privacy_desc">Íoc ó chuntais éagothroma (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Úsáideann gach íocaíocht cuntas uathúil. Níl seoladh do phríomhsparáin infheicthe ar an slabhra.</string>
+    <string name="settings_payer_privacy_requires_api">Teastaíonn eochair API le haghaidh mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Saor in aisce ar líonraí tástála (bundler poiblí)</string>
+    <string name="payer_privacy_note">Beidh seoladh do sparáin i bhfolach</string>
+    <string name="payer_privacy_processing">Íocaíocht phríobháideach á próiseáil…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Leabhar Seoltaí</string>
+    <string name="address_book_add">Cuir Teagmhálaí leis</string>
+    <string name="address_book_edit">Cuir Teagmhálaí in Eagar</string>
+    <string name="address_book_search">Cuardaigh teagmhálacha…</string>
+    <string name="address_book_empty">Gan teagmhálacha fós</string>
+    <string name="address_book_empty_hint">Cuir seoltaí leis chun a aithint go héasca\ncé leis a n-íocann tú nó ó cé a fhaigheann tú</string>
+    <string name="address_book_no_results">Níor aimsíodh teagmhálacha</string>
+    <string name="address_book_address">Seoladh Sparáin</string>
+    <string name="address_book_name">Ainm</string>
+    <string name="address_book_name_hint">m.sh. Caifé, Seán Ó Murchú</string>
+    <string name="address_book_note">Nóta (roghnach)</string>
+    <string name="address_book_note_hint">m.sh. Soláthraí, Cara</string>
+    <string name="address_book_delete_title">Scrios teagmhálaí?</string>
+    <string name="address_book_delete_message">Bain %s ó do leabhar seoltaí?</string>
+    <string name="address_book_saved">Teagmhálaí sábháilte</string>
+    <string name="address_book_unknown">Anaithnid</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mód Simplí</string>
+    <string name="settings_simple_mode_desc">Éasca le húsáid, roghanna bunúsacha</string>
+    <string name="settings_advanced_mode">Mód Ardleibhéil</string>
+    <string name="settings_advanced_mode_desc">Roghanna crypto d\'úsáideoirí cumhachta</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Roinn Teagmhálaí</string>
+    <string name="share_contact_title">Roinn Do Sheoladh</string>
+    <string name="share_contact_ready">Réidh le roinnt</string>
+    <string name="share_contact_ready_desc">Tabhair do ghuthán gar do\ngléas CleanSky eile</string>
+    <string name="share_contact_received">Teagmhálaí faighte!</string>
+    <string name="share_contact_received_name">Ba mhaith le %s ceangal</string>
+    <string name="share_contact_save">Sábháil sna teagmhálacha</string>
+    <string name="share_contact_your_name">D\'ainm (roghnach)</string>
+    <string name="share_contact_your_name_hint">Conas a fheicfidh daoine eile thú</string>
+    <string name="share_contact_mutual">Malartú teagmhálaithe</string>
+    <string name="share_contact_mutual_desc">Roinneann an dá ghléas seoltaí go comhuaineach</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Seol</string>
+    <string name="send_title">Seol chuig Teagmhálaí</string>
+    <string name="send_select_contact">Roghnaigh faighteoir</string>
+    <string name="send_no_contacts">Gan teagmhálacha fós</string>
+    <string name="send_no_contacts_hint">Cuir teagmhálacha leis trí NFC nó de láimh\nchun íocaíochtaí a sheoladh chucu</string>
+    <string name="send_amount">Méid</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Chuig: %s</string>
+    <string name="send_confirm">Seol %1$s %2$s</string>
+    <string name="send_processing">Á sheoladh…</string>
+    <string name="send_success">Seolta go rathúil!</string>
+    <string name="send_success_desc">%1$s %2$s seolta chuig %3$s</string>
+    <string name="send_error">Theip ar an seoladh</string>
+    <string name="send_enter_amount">Cuir isteach méid</string>
+    <string name="send_new">Aistriú nua</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Gach ceann</string>
+    <string name="history_filter_received">Faighte</string>
+    <string name="history_filter_sent">Seolta</string>
+    <string name="history_filter_contact">Teagmhálaí</string>
+    <string name="history_filter_by_contact">Scag de réir teagmhálaí</string>
+    <string name="history_show_all">Taispeáin gach ceann</string>
+    <string name="history_no_results">Níl aon idirbhearta ag teacht leis an scagaire</string>
+    <string name="history_add_contact">Cuir le teagmhálacha</string>
+    <string name="history_edit_contact">Cuir teagmhálaí in eagar</string>
+    <string name="history_from">Ó</string>
+    <string name="history_to">Chuig</string>
+    <string name="history_date">Dáta</string>
+    <string name="history_tx_hash">Idirbheart</string>
+    <string name="history_refund">Aisíocaíocht</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Méid ró-bheag</string>
+    <string name="scam_amount_large_warning">Méid mór</string>
+    <string name="scam_amount_large_desc">Tá tú ar tí %1$s %2$s a sheoladh.\nDeimhnigh le do thoil go bhfuil sé seo ceart.</string>
+    <string name="scam_confirm_large">Deimhnigh aistriú mór</string>
+    <string name="scam_dust_attack_warning">Iarratas amhrasach</string>
+    <string name="scam_dust_attack_desc">Méid an-bheag é seo (%1$s %2$s). Úsáideann ionsaithe dusta íocaíochtaí beaga chun sparáin a rianú. Diúltaigh mura raibh sé ag súil leis.</string>
+    <string name="scam_receive_large_warning">Iarratas ar íocaíocht mhór</string>
+    <string name="scam_receive_large_desc">Tá an t-iarratas seo ar son %1$s %2$s. Fíoraigh gurb é seo an méid ceart sula n-íocann tú.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Faigh amháin</string>
+    <string name="settings_mode_receive_only">Faigh</string>
+    <string name="settings_mode_receive_only_desc">Gan eochair phríobháideach</string>
+    <string name="settings_receive_only">Cumraíocht faigh amháin</string>
+    <string name="settings_escrow_address">Seoladh Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Gan Escrow cumraithe</string>
+    <string name="receive_only_no_escrow_desc">Cumraigh seoladh escrow agus API key sna Socruithe</string>
+    <string name="receive_only_security_notice">Gan eochair phríobháideach ar an ngléas seo. Sábháilte má ghoidtear é.</string>
+    <string name="receive_only_api_key_required">API key ag teastáil le haghaidh fhorghníomhú relayer</string>
+</resources>

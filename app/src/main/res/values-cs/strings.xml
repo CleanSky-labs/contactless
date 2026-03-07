@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Bezkontaktně</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Zaplatit</string>
+    <string name="nav_collect">Přijmout</string>
+    <string name="nav_settings">Nastavení</string>
+    <string name="nav_history">Historie</string>
+    <string name="nav_refund">Vrácení</string>
+    <string name="nav_balance">Zůstatek</string>
+    <string name="nav_back">Zpět</string>
+
+    <!-- Common actions -->
+    <string name="back">Zpět</string>
+    <string name="save">Uložit</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Žádná peněženka</string>
+    <string name="pay_no_wallet_desc">Nastavte peněženku v Nastavení\npro provádění plateb</string>
+    <string name="pay_ready">Připraveno k platbě</string>
+    <string name="pay_ready_desc">Přiložte telefon k\nzařízení obchodníka</string>
+    <string name="pay_request_title">Požadavek na platbu</string>
+    <string name="pay_network">Síť: %s</string>
+    <string name="pay_expired">Požadavek vypršel</string>
+    <string name="pay_cancel">Zrušit</string>
+    <string name="pay_confirm">Zaplatit</string>
+    <string name="pay_new">Nová platba</string>
+    <string name="pay_signing">Podepisování transakce…</string>
+    <string name="pay_tx_signed">Transakce podepsána</string>
+    <string name="pay_tx_signed_desc">Přiložte telefon k\nobchodníkovi pro odeslání</string>
+    <string name="pay_authenticating">Ověřování…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Žádná peněženka</string>
+    <string name="collect_no_wallet_desc">Nastavte peněženku v Nastavení\npro příjem plateb</string>
+    <string name="collect_amount">Částka k přijetí</string>
+    <string name="collect_button">Přijmout</string>
+    <string name="collect_waiting">Čekání na platbu</string>
+    <string name="collect_waiting_desc">Požádejte zákazníka, aby\npřiložil telefon</string>
+    <string name="collect_new">Nový příjem</string>
+    <string name="collect_processing">Zpracování platby…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Režim provozu</string>
+    <string name="settings_mode_pay">Zaplatit</string>
+    <string name="settings_mode_pay_desc">Provádět platby</string>
+    <string name="settings_mode_collect">Přijmout</string>
+    <string name="settings_mode_collect_desc">Přijímat platby</string>
+    <string name="settings_wallet">Peněženka</string>
+    <string name="settings_wallet_address">Adresa</string>
+    <string name="settings_wallet_none">Žádná peněženka není nakonfigurována</string>
+    <string name="settings_wallet_create">Vytvořit</string>
+    <string name="settings_wallet_import">Importovat</string>
+    <string name="settings_network">Blockchain síť</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Provádění transakcí</string>
+    <string name="settings_exec_direct">Přímé</string>
+    <string name="settings_exec_direct_desc">Platíte gas vy</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponzorovaný gas přes relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 s Paymaster</string>
+    <string name="settings_api_key">API klíč</string>
+    <string name="settings_save">Uložit a vrátit se</string>
+    <string name="settings_not_available">Nedostupné v této síti</string>
+    <string name="settings_language">Jazyk</string>
+    <string name="settings_language_system">Výchozí systémový</string>
+    <string name="collect_select_currency">Vybrat měnu</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Zabezpečení</string>
+    <string name="security_encryption">Šifrování klíčů</string>
+    <string name="security_encryption_desc">AES-256-GCM s Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardwarový bezpečnostní modul aktivní</string>
+    <string name="security_strongbox_unavailable">Nedostupné na tomto zařízení</string>
+    <string name="security_biometric">Biometrické ověření</string>
+    <string name="security_biometric_required">Vyžadováno pro platby</string>
+    <string name="security_biometric_disabled">Deaktivováno</string>
+    <string name="security_biometric_unavailable">Nedostupné</string>
+    <string name="security_export">Exportovat soukromý klíč</string>
+    <string name="security_export_desc">Bezpečně uložte svůj klíč</string>
+    <string name="security_delete">Smazat peněženku</string>
+    <string name="security_delete_desc">Trvale smazat všechna data</string>
+    <string name="security_delete_title">Smazat peněženku</string>
+    <string name="security_delete_warning">Tato akce je NEVRATNÁ.</string>
+    <string name="security_delete_warning2">Ztratíte přístup ke všem prostředkům, pokud nemáte zálohu soukromého klíče.</string>
+    <string name="security_delete_warning3">Ujistěte se, že jste exportovali klíč před pokračováním.</string>
+    <string name="security_delete_confirm">Smazat</string>
+    <string name="security_status_active">Aktivní</string>
+    <string name="security_status_warning">Varování</string>
+    <string name="security_status_na">N/A</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importovat peněženku</string>
+    <string name="import_private_key">Soukromý klíč</string>
+    <string name="import_seed_phrase">Seed fráze</string>
+    <string name="import_prompt">Zadejte svůj soukromý klíč:</string>
+    <string name="import_prompt_seed">Zadejte svou seed frázi (12–24 slov):</string>
+    <string name="import_seed_hint">slovo1 slovo2 slovo3 …</string>
+    <string name="import_button">Importovat</string>
+    <string name="import_error_invalid">Neplatný soukromý klíč</string>
+    <string name="import_error_invalid_seed">Neplatná seed fráze</string>
+    <string name="import_error_encryption">Chyba šifrování</string>
+    <string name="export_title">Soukromý klíč</string>
+    <string name="export_warning">NIKDY nesdílejte tento klíč. Kdo ho vlastní, má plnou kontrolu nad vašimi prostředky.</string>
+    <string name="export_understood">Rozumím</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Souhrn</string>
+    <string name="history_received">Přijato</string>
+    <string name="history_sent">Odesláno</string>
+    <string name="history_refunded">Vráceno</string>
+    <string name="history_empty">Žádné transakce</string>
+    <string name="history_empty_desc">Transakce na %s\nse zobrazí zde</string>
+    <string name="history_payment_received">Platba přijata</string>
+    <string name="history_payment_sent">Platba odeslána</string>
+    <string name="history_refund_sent">Vrácení</string>
+    <string name="history_refund_received">Vrácení přijato</string>
+    <string name="history_status_pending">Čekající</string>
+    <string name="history_status_confirmed">Potvrzeno</string>
+    <string name="history_status_failed">Selhalo</string>
+    <string name="history_status_refunded">Vráceno</string>
+    <string name="history_status_partial">Částečné</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Původní transakce</string>
+    <string name="refund_amount">Částka</string>
+    <string name="refund_already">Již vráceno</string>
+    <string name="refund_available">Dostupné</string>
+    <string name="refund_recipient">Příjemce</string>
+    <string name="refund_date">Datum</string>
+    <string name="refund_type">Typ vrácení</string>
+    <string name="refund_full">Úplné</string>
+    <string name="refund_partial">Částečné</string>
+    <string name="refund_partial_desc">Zadejte částku</string>
+    <string name="refund_amount_label">Částka k vrácení (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Zaplatíte gas za tuto transakci</string>
+    <string name="refund_button">Vrátit %1$s %2$s</string>
+    <string name="refund_processing">Zpracování vrácení…</string>
+    <string name="refund_success">Vrácení úspěšné</string>
+    <string name="refund_done">Hotovo</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Vaše tokeny</string>
+    <string name="balance_manage">Spravovat</string>
+    <string name="balance_refresh">Obnovit</string>
+    <string name="balance_loading">Načítání zůstatků…</string>
+    <string name="balance_empty">Žádné tokeny</string>
+    <string name="balance_no_wallet_desc">Nastavte peněženku v Nastavení\npro zobrazení zůstatků</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Povolené tokeny</string>
+    <string name="settings_add_token">Přidat token</string>
+    <string name="add_token_prompt">Zadejte adresu kontraktu tokenu:</string>
+    <string name="add_token_validating">Ověřování tokenu…</string>
+    <string name="add_token_button">Přidat</string>
+    <string name="delete">Smazat</string>
+
+    <!-- Common -->
+    <string name="cancel">Zrušit</string>
+    <string name="close">Zavřít</string>
+    <string name="retry">Opakovat</string>
+    <string name="error">Chyba</string>
+    <string name="copy">Kopírovat</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Peněženka není nakonfigurována</string>
+    <string name="error_device_security">Chyba zabezpečení zařízení</string>
+    <string name="error_auth">Chyba ověření</string>
+    <string name="error_unknown">Neznámá chyba</string>
+    <string name="error_keystore_unavailable">Keystore nedostupný - některé funkce nebudou fungovat</string>
+    <string name="error_encryption_restart">Chyba šifrování - restartujte aplikaci</string>
+    <string name="error_auth_cancelled">Ověření zrušeno</string>
+    <string name="error_invalid_address">Neplatná adresa</string>
+    <string name="error_invalid_address_format">Neplatný formát adresy</string>
+    <string name="error_token_already_added">Token již přidán</string>
+    <string name="stealth_spend_sent_tx">Odesláno! Tx: %s…</string>
+    <string name="token_native">Nativní</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Váš zůstatek</string>
+    <string name="pay_insufficient_balance">Nedostatečný zůstatek</string>
+    <string name="pay_need_more">Potřebujete ještě %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Vítejte</string>
+    <string name="welcome_sovereignty">Vaše klíče.\nVaše prostředky.\nVaše suverenita.</string>
+    <string name="welcome_desc">Vaše prostředky NEJSOU uloženy v této aplikaci. Existují na blockchainu, kontrolovány vašimi soukromými klíči.\n\nTato aplikace pouze bezpečně ukládá vaše klíče. Nemáme přístup k vašim prostředkům.\n\nPoznámka: Některé tokeny (USDC, USDT) mohou být zmrazeny jejich emitenty. Pro maximální suverenitu používejte nativní ETH nebo decentralizované tokeny.</string>
+    <string name="welcome_warning_title">Vaše klíče = Vaše prostředky</string>
+    <string name="welcome_warning_desc">Pokud ztratíte své soukromé klíče nebo je s někým sdílíte, ztratíte kontrolu nad svými prostředky navždy.\n\nNeexistuje možnost obnovy. Žádný tým podpory vám nemůže pomoci. Taková je povaha skutečného vlastnictví.\n\nVždy uchovávejte bezpečnou zálohu svých klíčů.</string>
+    <string name="welcome_opensource">Open source software. Ověřujte, nedůvěřujte.</string>
+    <string name="welcome_start">Rozumím, začněme</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Identita obchodníka</string>
+    <string name="settings_merchant_name">Název firmy</string>
+    <string name="settings_merchant_name_hint">Moje kavárna</string>
+    <string name="settings_merchant_domain">Doména / ENS</string>
+    <string name="settings_merchant_domain_hint">mojakavarna.eth nebo mojakavarna.com</string>
+    <string name="settings_merchant_identity_desc">Zobrazeno zákazníkům během platby</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Režim soukromí</string>
+    <string name="settings_stealth_desc">Přijímejte platby na jednorázové adresy (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Povoleno</string>
+    <string name="settings_stealth_info">Každá platba jde na unikátní adresu, ze které můžete utratit pouze vy. Pozorovatelé nemohou propojit platby s vaším podnikáním.</string>
+    <string name="stealth_address_label">Režim stealth aktivní</string>
+    <string name="stealth_payment_note">Platba bude odeslána na soukromou adresu</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adresa příjemce</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Soukromá peněženka</string>
+    <string name="stealth_wallet_addresses">na %d stealth adresách</string>
+    <string name="stealth_wallet_privacy_title">Vaše prostředky jsou soukromé</string>
+    <string name="stealth_wallet_privacy_desc">Tento zůstatek není propojen s vaší veřejnou peněženkou. Utrácejte přímo u dodavatelů, na burzách nebo kdekoli - vaše obchodní identita zůstává skrytá.</string>
+    <string name="stealth_wallet_send">Odeslat</string>
+    <string name="stealth_wallet_send_title">Odeslat ze soukromé peněženky</string>
+    <string name="stealth_wallet_available">Dostupné: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Částka</string>
+    <string name="nav_stealth_wallet">Soukromá peněženka</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Více adres</string>
+    <string name="stealth_wallet_gas_desc">Vaše prostředky jsou rozloženy na %d adres. Utrácení velkých částek může vyžadovat více transakcí, což zvyšuje náklady na gas.</string>
+    <string name="stealth_wallet_consolidate">Konsolidovat do hlavní peněženky</string>
+    <string name="stealth_wallet_consolidate_title">Konsolidovat prostředky?</string>
+    <string name="stealth_wallet_consolidate_warning">Tím se převedou všechny prostředky z vaší soukromé peněženky na adresu hlavní peněženky.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">VAROVÁNÍ: Toto narušuje soukromí. Vaše hlavní peněženka bude propojena se všemi přijatými platbami.</string>
+    <string name="stealth_wallet_consolidate_benefit">Výhoda: Budoucí utrácení bude vyžadovat pouze jednu transakci (nižší náklady na gas).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolidovat</string>
+    <string name="stealth_wallet_consolidate_success">Prostředky konsolidovány do hlavní peněženky</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Soukromí plátce</string>
+    <string name="settings_payer_privacy_desc">Plaťte z efemérních účtů (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Každá platba používá unikátní účet. Adresa vaší hlavní peněženky není viditelná on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">API klíč vyžadován pro mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Zdarma na testnetech (veřejný bundler)</string>
+    <string name="payer_privacy_note">Adresa vaší peněženky bude skryta</string>
+    <string name="payer_privacy_processing">Zpracování soukromé platby…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adresář</string>
+    <string name="address_book_add">Přidat kontakt</string>
+    <string name="address_book_edit">Upravit kontakt</string>
+    <string name="address_book_search">Hledat kontakty…</string>
+    <string name="address_book_empty">Zatím žádné kontakty</string>
+    <string name="address_book_empty_hint">Přidejte adresy pro snadnou identifikaci\nkomu platíte nebo od koho přijímáte</string>
+    <string name="address_book_no_results">Kontakty nenalezeny</string>
+    <string name="address_book_address">Adresa peněženky</string>
+    <string name="address_book_name">Jméno</string>
+    <string name="address_book_name_hint">např. Kavárna, Jan Novák</string>
+    <string name="address_book_note">Poznámka (volitelná)</string>
+    <string name="address_book_note_hint">např. Dodavatel, Přítel</string>
+    <string name="address_book_delete_title">Smazat kontakt?</string>
+    <string name="address_book_delete_message">Odebrat %s z vašeho adresáře?</string>
+    <string name="address_book_saved">Kontakt uložen</string>
+    <string name="address_book_unknown">Neznámý</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Jednoduchý režim</string>
+    <string name="settings_simple_mode_desc">Snadné použití, základní možnosti</string>
+    <string name="settings_advanced_mode">Pokročilý režim</string>
+    <string name="settings_advanced_mode_desc">Krypto možnosti pro pokročilé uživatele</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Sdílet kontakt</string>
+    <string name="share_contact_title">Sdílet vaši adresu</string>
+    <string name="share_contact_ready">Připraveno ke sdílení</string>
+    <string name="share_contact_ready_desc">Přiložte telefon k\njiném zařízení CleanSky</string>
+    <string name="share_contact_received">Kontakt přijat!</string>
+    <string name="share_contact_received_name">%s se chce spojit</string>
+    <string name="share_contact_save">Uložit do kontaktů</string>
+    <string name="share_contact_your_name">Vaše jméno (volitelné)</string>
+    <string name="share_contact_your_name_hint">Jak vás uvidí ostatní</string>
+    <string name="share_contact_mutual">Výměna kontaktů</string>
+    <string name="share_contact_mutual_desc">Obě zařízení sdílejí adresy současně</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Odeslat</string>
+    <string name="send_title">Odeslat kontaktu</string>
+    <string name="send_select_contact">Vyberte příjemce</string>
+    <string name="send_no_contacts">Zatím žádné kontakty</string>
+    <string name="send_no_contacts_hint">Přidejte kontakty přes NFC nebo ručně\npro odesílání plateb</string>
+    <string name="send_amount">Částka</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Komu: %s</string>
+    <string name="send_confirm">Odeslat %1$s %2$s</string>
+    <string name="send_processing">Odesílání…</string>
+    <string name="send_success">Úspěšně odesláno!</string>
+    <string name="send_success_desc">%1$s %2$s odesláno na %3$s</string>
+    <string name="send_error">Nepodařilo se odeslat</string>
+    <string name="send_enter_amount">Zadejte částku</string>
+    <string name="send_new">Nový převod</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Vše</string>
+    <string name="history_filter_received">Přijato</string>
+    <string name="history_filter_sent">Odesláno</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Filtrovat podle kontaktu</string>
+    <string name="history_show_all">Zobrazit vše</string>
+    <string name="history_no_results">Žádné transakce neodpovídají filtru</string>
+    <string name="history_add_contact">Přidat do kontaktů</string>
+    <string name="history_edit_contact">Upravit kontakt</string>
+    <string name="history_from">Od</string>
+    <string name="history_to">Komu</string>
+    <string name="history_date">Datum</string>
+    <string name="history_tx_hash">Transakce</string>
+    <string name="history_refund">Vrácení</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Částka je příliš malá</string>
+    <string name="scam_amount_large_warning">Velká částka</string>
+    <string name="scam_amount_large_desc">Chystáte se odeslat %1$s %2$s.\nPotvrďte prosím, že je to správně.</string>
+    <string name="scam_confirm_large">Potvrdit velký převod</string>
+    <string name="scam_dust_attack_warning">Podezřelý požadavek</string>
+    <string name="scam_dust_attack_desc">Toto je velmi malá částka (%1$s %2$s). Dust útoky používají drobné platby ke sledování peněženek. Odmítněte, pokud je to neočekávané.</string>
+    <string name="scam_receive_large_warning">Požadavek na velkou platbu</string>
+    <string name="scam_receive_large_desc">Tento požadavek je na %1$s %2$s. Před platbou ověřte, že je částka správná.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Pouze příjem</string>
+    <string name="settings_mode_receive_only">Příjem</string>
+    <string name="settings_mode_receive_only_desc">Bez soukromého klíče</string>
+    <string name="settings_receive_only">Konfigurace pouze příjmu</string>
+    <string name="settings_escrow_address">Adresa Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow není nakonfigurován</string>
+    <string name="receive_only_no_escrow_desc">Nakonfigurujte adresu escrow a API key v Nastavení</string>
+    <string name="receive_only_security_notice">Na tomto zařízení není soukromý klíč. Bezpečné při krádeži.</string>
+    <string name="receive_only_api_key_required">API key vyžadován pro provedení přes relayer</string>
+</resources>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Kontaktlös</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Betala</string>
+    <string name="nav_collect">Ta emot</string>
+    <string name="nav_settings">Inställningar</string>
+    <string name="nav_history">Historik</string>
+    <string name="nav_refund">Återbetalning</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Tillbaka</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ingen plånbok</string>
+    <string name="pay_no_wallet_desc">Konfigurera din plånbok i Inställningar\nför att göra betalningar</string>
+    <string name="pay_ready">Redo att betala</string>
+    <string name="pay_ready_desc">Håll din telefon nära\nhandlarens enhet</string>
+    <string name="pay_request_title">Betalningsförfrågan</string>
+    <string name="pay_network">Nätverk: %s</string>
+    <string name="pay_expired">Förfrågan har löpt ut</string>
+    <string name="pay_cancel">Avbryt</string>
+    <string name="pay_confirm">Betala</string>
+    <string name="pay_new">Ny betalning</string>
+    <string name="pay_signing">Signerar transaktion…</string>
+    <string name="pay_tx_signed">Transaktion signerad</string>
+    <string name="pay_tx_signed_desc">Håll din telefon nära\nhandlaren för att skicka</string>
+    <string name="pay_authenticating">Autentiserar…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ingen plånbok</string>
+    <string name="collect_no_wallet_desc">Konfigurera din plånbok i Inställningar\nför att ta emot betalningar</string>
+    <string name="collect_amount">Belopp att ta emot</string>
+    <string name="collect_button">Ta emot</string>
+    <string name="collect_waiting">Väntar på betalning</string>
+    <string name="collect_waiting_desc">Be kunden att\nhålla telefonen nära</string>
+    <string name="collect_new">Ny mottagning</string>
+    <string name="collect_processing">Bearbetar betalning…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Driftläge</string>
+    <string name="settings_mode_pay">Betala</string>
+    <string name="settings_mode_pay_desc">Gör betalningar</string>
+    <string name="settings_mode_collect">Ta emot</string>
+    <string name="settings_mode_collect_desc">Ta emot betalningar</string>
+    <string name="settings_wallet">Plånbok</string>
+    <string name="settings_wallet_address">Adress</string>
+    <string name="settings_wallet_none">Ingen plånbok konfigurerad</string>
+    <string name="settings_wallet_create">Skapa</string>
+    <string name="settings_wallet_import">Importera</string>
+    <string name="settings_network">Blockchain-nätverk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Transaktionsutförande</string>
+    <string name="settings_exec_direct">Direkt</string>
+    <string name="settings_exec_direct_desc">Du betalar gasen</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsrad gas via relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 med Paymaster</string>
+    <string name="settings_api_key">API-nyckel</string>
+    <string name="settings_save">Spara och gå tillbaka</string>
+    <string name="settings_not_available">Inte tillgängligt på detta nätverk</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Säkerhet</string>
+    <string name="security_encryption">Nyckelkryptering</string>
+    <string name="security_encryption_desc">AES-256-GCM med Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hårdvarusäkerhetsmodul aktiv</string>
+    <string name="security_strongbox_unavailable">Inte tillgänglig på denna enhet</string>
+    <string name="security_biometric">Biometrisk autentisering</string>
+    <string name="security_biometric_required">Krävs för betalningar</string>
+    <string name="security_biometric_disabled">Inaktiverad</string>
+    <string name="security_biometric_unavailable">Inte tillgänglig</string>
+    <string name="security_export">Exportera privat nyckel</string>
+    <string name="security_export_desc">Spara din nyckel säkert</string>
+    <string name="security_delete">Ta bort plånbok</string>
+    <string name="security_delete_desc">Ta bort all data permanent</string>
+    <string name="security_delete_title">Ta bort plånbok</string>
+    <string name="security_delete_warning">Denna åtgärd är OÅTERKALLELIG.</string>
+    <string name="security_delete_warning2">Du förlorar åtkomst till alla medel om du inte har en säkerhetskopia av din privata nyckel.</string>
+    <string name="security_delete_warning3">Se till att du har exporterat din nyckel innan du fortsätter.</string>
+    <string name="security_delete_confirm">Ta bort</string>
+    <string name="security_status_active">Aktiv</string>
+    <string name="security_status_warning">Varning</string>
+    <string name="security_status_na">Ej tillämpligt</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importera plånbok</string>
+    <string name="import_prompt">Ange din privata nyckel:</string>
+    <string name="import_button">Importera</string>
+    <string name="import_error_invalid">Ogiltig privat nyckel</string>
+    <string name="import_error_encryption">Krypteringsfel</string>
+    <string name="export_title">Privat nyckel</string>
+    <string name="export_warning">Dela ALDRIG denna nyckel. Den som äger den har full kontroll över dina medel.</string>
+    <string name="export_understood">Förstått</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Sammanfattning</string>
+    <string name="history_received">Mottaget</string>
+    <string name="history_refunded">Återbetalat</string>
+    <string name="history_empty">Inga transaktioner</string>
+    <string name="history_empty_desc">Transaktioner på %s\nvisas här</string>
+    <string name="history_payment_received">Betalning mottagen</string>
+    <string name="history_payment_sent">Betalning skickad</string>
+    <string name="history_refund_sent">Återbetalning</string>
+    <string name="history_refund_received">Återbetalning mottagen</string>
+    <string name="history_status_pending">Väntande</string>
+    <string name="history_status_confirmed">Bekräftad</string>
+    <string name="history_status_failed">Misslyckades</string>
+    <string name="history_status_refunded">Återbetalad</string>
+    <string name="history_status_partial">Delvis</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Ursprunglig transaktion</string>
+    <string name="refund_amount">Belopp</string>
+    <string name="refund_already">Redan återbetalat</string>
+    <string name="refund_available">Tillgängligt</string>
+    <string name="refund_recipient">Mottagare</string>
+    <string name="refund_date">Datum</string>
+    <string name="refund_type">Återbetalningstyp</string>
+    <string name="refund_full">Full</string>
+    <string name="refund_partial">Delvis</string>
+    <string name="refund_partial_desc">Ange belopp</string>
+    <string name="refund_amount_label">Belopp att återbetala (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Du betalar gasen för denna transaktion</string>
+    <string name="refund_button">Återbetala %1$s %2$s</string>
+    <string name="refund_processing">Bearbetar återbetalning…</string>
+    <string name="refund_success">Återbetalning lyckades</string>
+    <string name="refund_done">Klar</string>
+
+    <!-- Common -->
+    <string name="cancel">Avbryt</string>
+    <string name="close">Stäng</string>
+    <string name="retry">Försök igen</string>
+    <string name="error">Fel</string>
+    <string name="copy">Kopiera</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Plånbok inte konfigurerad</string>
+    <string name="error_device_security">Enhetssäkerhetsfel</string>
+    <string name="error_auth">Autentiseringsfel</string>
+    <string name="error_unknown">Okänt fel</string>
+    <string name="error_keystore_unavailable">Keystore ej tillgängligt - vissa funktioner fungerar inte</string>
+    <string name="error_encryption_restart">Krypteringsfel - starta om appen</string>
+    <string name="error_auth_cancelled">Autentisering avbruten</string>
+    <string name="error_invalid_address">Ogiltig adress</string>
+    <string name="error_invalid_address_format">Ogiltigt adressformat</string>
+    <string name="error_token_already_added">Token redan tillagd</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Skickat! Tx: %s…</string>
+    <string name="token_native">Nativ</string>
+
+    <!-- Common actions -->
+    <string name="back">Tillbaka</string>
+    <string name="save">Spara</string>
+
+    <!-- Collect Screen extras -->
+    <string name="collect_select_currency">Välj valuta</string>
+
+    <!-- Settings Language -->
+    <string name="settings_language">Språk</string>
+    <string name="settings_language_system">Systemstandard</string>
+
+    <!-- Import extras -->
+    <string name="import_private_key">Privat nyckel</string>
+    <string name="import_seed_phrase">Återställningsfras</string>
+    <string name="import_prompt_seed">Ange din återställningsfras (12–24 ord):</string>
+    <string name="import_seed_hint">ord1 ord2 ord3 …</string>
+    <string name="import_error_invalid_seed">Ogiltig återställningsfras</string>
+
+    <!-- History extras -->
+    <string name="history_sent">Skickat</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ditt saldo</string>
+    <string name="pay_insufficient_balance">Otillräckligt saldo</string>
+    <string name="pay_need_more">Du behöver %1$s %2$s mer</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Dina tokens</string>
+    <string name="balance_manage">Hantera</string>
+    <string name="balance_refresh">Uppdatera</string>
+    <string name="balance_loading">Laddar saldon…</string>
+    <string name="balance_empty">Inga tokens</string>
+    <string name="balance_no_wallet_desc">Konfigurera din plånbok i Inställningar\nför att se dina saldon</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tillåtna tokens</string>
+    <string name="settings_add_token">Lägg till token</string>
+    <string name="add_token_prompt">Ange tokenkontraksadress:</string>
+    <string name="add_token_validating">Validerar token…</string>
+    <string name="add_token_button">Lägg till</string>
+    <string name="delete">Ta bort</string>
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Välkommen</string>
+    <string name="welcome_sovereignty">Dina nycklar.\nDina medel.\nDin suveränitet.</string>
+    <string name="welcome_desc">Dina medel lagras INTE i denna app. De finns på blockkedjan, kontrollerade av dina privata nycklar.\n\nDenna app lagrar bara dina nycklar säkert. Vi kan inte komma åt dina medel.\n\nObs: Vissa tokens (USDC, USDT) kan frysas av utgivarna. För maximal suveränitet, använd ETH eller decentraliserade tokens.</string>
+    <string name="welcome_warning_title">Dina nycklar = Dina medel</string>
+    <string name="welcome_warning_desc">Om du förlorar dina privata nycklar eller delar dem med någon, förlorar du kontrollen över dina medel permanent.\n\nDet finns inget återställningsalternativ. Inget supportteam kan hjälpa dig. Detta är verkligt ägandes natur.\n\nHa alltid en säker säkerhetskopia av dina nycklar.</string>
+    <string name="welcome_opensource">Öppen källkod. Verifiera, lita inte.</string>
+    <string name="welcome_start">Jag förstår, låt oss börja</string>
+
+    <!-- Merchant Identity -->
+    <string name="settings_merchant_identity">Handlaridentitet</string>
+    <string name="settings_merchant_name">Företagsnamn</string>
+    <string name="settings_merchant_name_hint">Mitt kafé</string>
+    <string name="settings_merchant_domain">Domän / ENS</string>
+    <string name="settings_merchant_domain_hint">mittkafe.eth eller mittkafe.se</string>
+    <string name="settings_merchant_identity_desc">Visas för kunder vid betalning</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Integritetsläge</string>
+    <string name="settings_stealth_desc">Ta emot betalningar till engångsadresser (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Aktiverat</string>
+    <string name="settings_stealth_info">Varje betalning går till en unik adress som bara du kan spendera från. Observatörer kan inte koppla betalningar till ditt företag.</string>
+    <string name="stealth_address_label">Stealth-läge aktivt</string>
+    <string name="stealth_payment_note">Betalningen skickas till en privat adress</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Mottagaradress</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privat plånbok</string>
+    <string name="stealth_wallet_addresses">över %d stealth-adresser</string>
+    <string name="stealth_wallet_privacy_title">Dina medel är privata</string>
+    <string name="stealth_wallet_privacy_desc">Detta saldo är inte kopplat till din offentliga plånbok. Spendera direkt till leverantörer, börsar eller var som helst - din företagsidentitet förblir dold.</string>
+    <string name="stealth_wallet_send">Skicka</string>
+    <string name="stealth_wallet_send_title">Skicka från privat plånbok</string>
+    <string name="stealth_wallet_available">Tillgängligt: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Belopp</string>
+    <string name="nav_stealth_wallet">Privat plånbok</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Flera adresser</string>
+    <string name="stealth_wallet_gas_desc">Dina medel är spridda över %d adresser. Stora belopp kan kräva flera transaktioner, vilket ökar gaskostnaderna.</string>
+    <string name="stealth_wallet_consolidate">Konsolidera till huvudplånbok</string>
+    <string name="stealth_wallet_consolidate_title">Konsolidera medel?</string>
+    <string name="stealth_wallet_consolidate_warning">Detta överför alla medel från din privata plånbok till din huvudplånboksadress.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">VARNING: Detta bryter integriteten. Din huvudplånbok kommer att kopplas till alla mottagna betalningar.</string>
+    <string name="stealth_wallet_consolidate_benefit">Fördel: Framtida utgifter kräver bara en transaktion (lägre gaskostnader).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolidera</string>
+    <string name="stealth_wallet_consolidate_success">Medel konsoliderade till huvudplånbok</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Betalarens integritet</string>
+    <string name="settings_payer_privacy_desc">Betala från tillfälliga konton (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Varje betalning använder ett unikt konto. Din huvudplånboksadress är inte synlig på kedjan.</string>
+    <string name="settings_payer_privacy_requires_api">API-nyckel krävs för mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Gratis på testnät (offentlig bundler)</string>
+    <string name="payer_privacy_note">Din plånboksadress kommer att döljas</string>
+    <string name="payer_privacy_processing">Bearbetar privat betalning…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Adressbok</string>
+    <string name="address_book_add">Lägg till kontakt</string>
+    <string name="address_book_edit">Redigera kontakt</string>
+    <string name="address_book_search">Sök kontakter…</string>
+    <string name="address_book_empty">Inga kontakter ännu</string>
+    <string name="address_book_empty_hint">Lägg till adresser för att enkelt identifiera\nvem du betalar eller tar emot från</string>
+    <string name="address_book_no_results">Inga kontakter hittades</string>
+    <string name="address_book_address">Plånboksadress</string>
+    <string name="address_book_name">Namn</string>
+    <string name="address_book_name_hint">t.ex. Kafé, Anna Andersson</string>
+    <string name="address_book_note">Anteckning (valfri)</string>
+    <string name="address_book_note_hint">t.ex. Leverantör, Vän</string>
+    <string name="address_book_delete_title">Ta bort kontakt?</string>
+    <string name="address_book_delete_message">Ta bort %s från din adressbok?</string>
+    <string name="address_book_saved">Kontakt sparad</string>
+    <string name="address_book_unknown">Okänd</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Enkelt läge</string>
+    <string name="settings_simple_mode_desc">Lätt att använda, grundläggande alternativ</string>
+    <string name="settings_advanced_mode">Avancerat läge</string>
+    <string name="settings_advanced_mode_desc">Kryptoalternativ för avancerade användare</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Dela kontakt</string>
+    <string name="share_contact_title">Dela din adress</string>
+    <string name="share_contact_ready">Redo att dela</string>
+    <string name="share_contact_ready_desc">Håll din telefon nära\nen annan CleanSky-enhet</string>
+    <string name="share_contact_received">Kontakt mottagen!</string>
+    <string name="share_contact_received_name">%s vill ansluta</string>
+    <string name="share_contact_save">Spara till kontakter</string>
+    <string name="share_contact_your_name">Ditt namn (valfritt)</string>
+    <string name="share_contact_your_name_hint">Hur andra kommer att se dig</string>
+    <string name="share_contact_mutual">Utbyt kontakter</string>
+    <string name="share_contact_mutual_desc">Båda enheterna delar adresser samtidigt</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Skicka</string>
+    <string name="send_title">Skicka till kontakt</string>
+    <string name="send_select_contact">Välj mottagare</string>
+    <string name="send_no_contacts">Inga kontakter ännu</string>
+    <string name="send_no_contacts_hint">Lägg till kontakter via NFC eller manuellt\nför att skicka betalningar till dem</string>
+    <string name="send_amount">Belopp</string>
+    <string name="send_amount_hint">0,00</string>
+    <string name="send_to">Till: %s</string>
+    <string name="send_confirm">Skicka %1$s %2$s</string>
+    <string name="send_processing">Skickar…</string>
+    <string name="send_success">Skickades framgångsrikt!</string>
+    <string name="send_success_desc">%1$s %2$s skickades till %3$s</string>
+    <string name="send_error">Kunde inte skicka</string>
+    <string name="send_enter_amount">Ange ett belopp</string>
+    <string name="send_new">Ny överföring</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Alla</string>
+    <string name="history_filter_received">Mottaget</string>
+    <string name="history_filter_sent">Skickat</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Filtrera efter kontakt</string>
+    <string name="history_show_all">Visa alla</string>
+    <string name="history_no_results">Inga transaktioner matchar filtret</string>
+    <string name="history_add_contact">Lägg till i kontakter</string>
+    <string name="history_edit_contact">Redigera kontakt</string>
+    <string name="history_from">Från</string>
+    <string name="history_to">Till</string>
+    <string name="history_date">Datum</string>
+    <string name="history_tx_hash">Transaktion</string>
+    <string name="history_refund">Återbetala</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Belopp för litet</string>
+    <string name="scam_amount_large_warning">Stort belopp</string>
+    <string name="scam_amount_large_desc">Du är på väg att skicka %1$s %2$s.\nBekräfta att detta är korrekt.</string>
+    <string name="scam_confirm_large">Bekräfta stor överföring</string>
+    <string name="scam_dust_attack_warning">Misstänkt förfrågan</string>
+    <string name="scam_dust_attack_desc">Detta är ett mycket litet belopp (%1$s %2$s). Dust-attacker använder små betalningar för att spåra plånböcker. Avvisa om oväntat.</string>
+    <string name="scam_receive_large_warning">Stor betalningsförfrågan</string>
+    <string name="scam_receive_large_desc">Denna förfrågan är på %1$s %2$s. Verifiera att detta är rätt belopp innan du betalar.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Endast mottagning</string>
+    <string name="settings_mode_receive_only">Ta emot</string>
+    <string name="settings_mode_receive_only_desc">Ingen privat nyckel</string>
+    <string name="settings_receive_only">Konfiguration för endast mottagning</string>
+    <string name="settings_escrow_address">Escrow-adress</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Ingen Escrow konfigurerad</string>
+    <string name="receive_only_no_escrow_desc">Konfigurera escrow-adress och API key i Inställningar</string>
+    <string name="receive_only_security_notice">Ingen privat nyckel på denna enhet. Säker vid stöld.</string>
+    <string name="receive_only_api_key_required">API key krävs för relayer-körning</string>
+</resources>

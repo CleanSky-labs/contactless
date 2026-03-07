@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Érintésmentes</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Fizetés</string>
+    <string name="nav_collect">Fogadás</string>
+    <string name="nav_settings">Beállítások</string>
+    <string name="nav_history">Előzmények</string>
+    <string name="nav_refund">Visszatérítés</string>
+    <string name="nav_balance">Egyenleg</string>
+    <string name="nav_back">Vissza</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Nincs tárca</string>
+    <string name="pay_no_wallet_desc">Állítsa be tárcáját a Beállításokban\na fizetésekhez</string>
+    <string name="pay_ready">Fizetésre kész</string>
+    <string name="pay_ready_desc">Tartsa telefonját a\nkereskedő készülékéhez</string>
+    <string name="pay_request_title">Fizetési kérelem</string>
+    <string name="pay_network">Hálózat: %s</string>
+    <string name="pay_expired">Kérelem lejárt</string>
+    <string name="pay_cancel">Mégse</string>
+    <string name="pay_confirm">Fizetés</string>
+    <string name="pay_new">Új fizetés</string>
+    <string name="pay_signing">Tranzakció aláírása…</string>
+    <string name="pay_tx_signed">Tranzakció aláírva</string>
+    <string name="pay_tx_signed_desc">Tartsa telefonját a\nkereskedőhöz a küldéshez</string>
+    <string name="pay_authenticating">Hitelesítés…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Nincs tárca</string>
+    <string name="collect_no_wallet_desc">Állítsa be tárcáját a Beállításokban\na fizetések fogadásához</string>
+    <string name="collect_amount">Fogadandó összeg</string>
+    <string name="collect_button">Fogadás</string>
+    <string name="collect_waiting">Várakozás fizetésre</string>
+    <string name="collect_waiting_desc">Kérje meg az ügyfelet,\nhogy tartsa közel telefonját</string>
+    <string name="collect_new">Új fogadás</string>
+    <string name="collect_processing">Fizetés feldolgozása…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Működési mód</string>
+    <string name="settings_mode_pay">Fizetés</string>
+    <string name="settings_mode_pay_desc">Fizetések végrehajtása</string>
+    <string name="settings_mode_collect">Fogadás</string>
+    <string name="settings_mode_collect_desc">Fizetések fogadása</string>
+    <string name="settings_wallet">Tárca</string>
+    <string name="settings_wallet_address">Cím</string>
+    <string name="settings_wallet_none">Nincs konfigurált tárca</string>
+    <string name="settings_wallet_create">Létrehozás</string>
+    <string name="settings_wallet_import">Importálás</string>
+    <string name="settings_network">Blockchain hálózat</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Tranzakció végrehajtás</string>
+    <string name="settings_exec_direct">Közvetlen</string>
+    <string name="settings_exec_direct_desc">Ön fizeti a gázt</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Szponzorált gáz relayeren keresztül</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymasterrel</string>
+    <string name="settings_api_key">API kulcs</string>
+    <string name="settings_save">Mentés és vissza</string>
+    <string name="settings_not_available">Nem érhető el ezen a hálózaton</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Biztonság</string>
+    <string name="security_encryption">Kulcs titkosítás</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystore-ral</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Hardver biztonsági modul aktív</string>
+    <string name="security_strongbox_unavailable">Nem érhető el ezen az eszközön</string>
+    <string name="security_biometric">Biometrikus hitelesítés</string>
+    <string name="security_biometric_required">Szükséges a fizetésekhez</string>
+    <string name="security_biometric_disabled">Letiltva</string>
+    <string name="security_biometric_unavailable">Nem érhető el</string>
+    <string name="security_export">Privát kulcs exportálása</string>
+    <string name="security_export_desc">Mentse el kulcsát biztonságosan</string>
+    <string name="security_delete">Tárca törlése</string>
+    <string name="security_delete_desc">Minden adat végleges törlése</string>
+    <string name="security_delete_title">Tárca törlése</string>
+    <string name="security_delete_warning">Ez a művelet VISSZAFORDÍTHATATLAN.</string>
+    <string name="security_delete_warning2">Elveszíti hozzáférését minden eszközhöz, ha nincs biztonsági mentése a privát kulcsról.</string>
+    <string name="security_delete_warning3">Győződjön meg róla, hogy exportálta a kulcsát a folytatás előtt.</string>
+    <string name="security_delete_confirm">Törlés</string>
+    <string name="security_status_active">Aktív</string>
+    <string name="security_status_warning">Figyelmeztetés</string>
+    <string name="security_status_na">N/A</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Tárca importálása</string>
+    <string name="import_prompt">Adja meg privát kulcsát:</string>
+    <string name="import_button">Importálás</string>
+    <string name="import_error_invalid">Érvénytelen privát kulcs</string>
+    <string name="import_error_encryption">Titkosítási hiba</string>
+    <string name="export_title">Privát kulcs</string>
+    <string name="export_warning">SOHA ne ossza meg ezt a kulcsot. Aki birtokolja, teljes kontrollt kap az eszközei felett.</string>
+    <string name="export_understood">Megértettem</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Összefoglaló</string>
+    <string name="history_received">Fogadott</string>
+    <string name="history_refunded">Visszatérített</string>
+    <string name="history_empty">Nincs tranzakció</string>
+    <string name="history_empty_desc">A tranzakciók %s-on\nitt jelennek meg</string>
+    <string name="history_payment_received">Fizetés fogadva</string>
+    <string name="history_payment_sent">Fizetés elküldve</string>
+    <string name="history_refund_sent">Visszatérítés</string>
+    <string name="history_refund_received">Visszatérítés fogadva</string>
+    <string name="history_status_pending">Függőben</string>
+    <string name="history_status_confirmed">Megerősítve</string>
+    <string name="history_status_failed">Sikertelen</string>
+    <string name="history_status_refunded">Visszatérítve</string>
+    <string name="history_status_partial">Részleges</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Eredeti tranzakció</string>
+    <string name="refund_amount">Összeg</string>
+    <string name="refund_already">Már visszatérítve</string>
+    <string name="refund_available">Elérhető</string>
+    <string name="refund_recipient">Címzett</string>
+    <string name="refund_date">Dátum</string>
+    <string name="refund_type">Visszatérítés típusa</string>
+    <string name="refund_full">Teljes</string>
+    <string name="refund_partial">Részleges</string>
+    <string name="refund_partial_desc">Összeg megadása</string>
+    <string name="refund_amount_label">Visszatérítendő összeg (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Ön fizeti a gázt ehhez a tranzakcióhoz</string>
+    <string name="refund_button">%1$s %2$s visszatérítése</string>
+    <string name="refund_processing">Visszatérítés feldolgozása…</string>
+    <string name="refund_success">Visszatérítés sikeres</string>
+    <string name="refund_done">Kész</string>
+
+    <!-- Common -->
+    <string name="cancel">Mégse</string>
+    <string name="close">Bezárás</string>
+    <string name="retry">Újra</string>
+    <string name="error">Hiba</string>
+    <string name="copy">Másolás</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Tárca nincs konfigurálva</string>
+    <string name="error_device_security">Eszköz biztonsági hiba</string>
+    <string name="error_auth">Hitelesítési hiba</string>
+    <string name="error_unknown">Ismeretlen hiba</string>
+    <string name="error_keystore_unavailable">Keystore nem érhető el - néhány funkció nem fog működni</string>
+    <string name="error_encryption_restart">Titkosítási hiba - indítsa újra az alkalmazást</string>
+    <string name="error_auth_cancelled">Hitelesítés megszakítva</string>
+    <string name="error_invalid_address">Érvénytelen cím</string>
+    <string name="error_invalid_address_format">Érvénytelen címformátum</string>
+    <string name="error_token_already_added">Token már hozzáadva</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Elküldve! Tx: %s…</string>
+    <string name="token_native">Natív</string>
+
+    <!-- Common actions -->
+    <string name="back">Vissza</string>
+    <string name="save">Mentés</string>
+
+    <!-- Collect Screen extras -->
+    <string name="collect_select_currency">Valuta kiválasztása</string>
+
+    <!-- Settings Language -->
+    <string name="settings_language">Nyelv</string>
+    <string name="settings_language_system">Rendszer alapértelmezett</string>
+
+    <!-- Import extras -->
+    <string name="import_private_key">Privát kulcs</string>
+    <string name="import_seed_phrase">Visszaállítási kifejezés</string>
+    <string name="import_prompt_seed">Adja meg visszaállítási kifejezését (12–24 szó):</string>
+    <string name="import_seed_hint">szó1 szó2 szó3 …</string>
+    <string name="import_error_invalid_seed">Érvénytelen visszaállítási kifejezés</string>
+
+    <!-- History extras -->
+    <string name="history_sent">Elküldve</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Egyenleged</string>
+    <string name="pay_insufficient_balance">Elégtelen egyenleg</string>
+    <string name="pay_need_more">%1$s %2$s-val többre van szükséged</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Tokenjeid</string>
+    <string name="balance_manage">Kezelés</string>
+    <string name="balance_refresh">Frissítés</string>
+    <string name="balance_loading">Egyenlegek betöltése…</string>
+    <string name="balance_empty">Nincsenek tokenek</string>
+    <string name="balance_no_wallet_desc">Állítsa be tárcáját a Beállításokban\naz egyenlegek megtekintéséhez</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Engedélyezett tokenek</string>
+    <string name="settings_add_token">Token hozzáadása</string>
+    <string name="add_token_prompt">Adja meg a token szerződés címét:</string>
+    <string name="add_token_validating">Token ellenőrzése…</string>
+    <string name="add_token_button">Hozzáadás</string>
+    <string name="delete">Törlés</string>
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Üdvözöljük</string>
+    <string name="welcome_sovereignty">Az Ön kulcsai.\nAz Ön eszközei.\nAz Ön szuverenitása.</string>
+    <string name="welcome_desc">Az eszközei NINCSENEK ebben az alkalmazásban tárolva. A blockchainon léteznek, a privát kulcsai által irányítva.\n\nEz az alkalmazás csak a kulcsait tárolja biztonságosan. Nem férünk hozzá az eszközeihez.\n\nMegjegyzés: Egyes tokeneket (USDC, USDT) a kibocsátóik befagyaszthatják. Maximális szuverenitás érdekében használjon ETH-t vagy decentralizált tokeneket.</string>
+    <string name="welcome_warning_title">Az Ön kulcsai = Az Ön eszközei</string>
+    <string name="welcome_warning_desc">Ha elveszíti privát kulcsait, vagy megosztja valakivel, véglegesen elveszíti az eszközei feletti irányítást.\n\nNincs helyreállítási lehetőség. Semmilyen támogatási csapat nem tud segíteni. Ez a valódi tulajdonlás természete.\n\nMindig tartson biztonságos biztonsági másolatot a kulcsairól.</string>
+    <string name="welcome_opensource">Nyílt forráskódú szoftver. Ellenőrizze, ne bízzon vakon.</string>
+    <string name="welcome_start">Megértettem, kezdjük</string>
+
+    <!-- Merchant Identity -->
+    <string name="settings_merchant_identity">Kereskedő azonosítója</string>
+    <string name="settings_merchant_name">Cégnév</string>
+    <string name="settings_merchant_name_hint">Kávézóm</string>
+    <string name="settings_merchant_domain">Tartomány / ENS</string>
+    <string name="settings_merchant_domain_hint">kavezom.eth vagy kavezom.hu</string>
+    <string name="settings_merchant_identity_desc">Megjelenik a vásárlóknak fizetéskor</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Adatvédelmi mód</string>
+    <string name="settings_stealth_desc">Fizetések fogadása egyszer használatos címekre (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Engedélyezve</string>
+    <string name="settings_stealth_info">Minden fizetés egy egyedi címre érkezik, amelyből csak Ön költhet. A megfigyelők nem tudják összekapcsolni a fizetéseket az Ön vállalkozásával.</string>
+    <string name="stealth_address_label">Stealth mód aktív</string>
+    <string name="stealth_payment_note">A fizetés privát címre kerül küldésre</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Címzett címe</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privát tárca</string>
+    <string name="stealth_wallet_addresses">%d stealth cím között</string>
+    <string name="stealth_wallet_privacy_title">Az eszközei privátok</string>
+    <string name="stealth_wallet_privacy_desc">Ez az egyenleg nincs összekapcsolva a nyilvános tárcájával. Költsön közvetlenül beszállítóknak, tőzsdékre vagy bárhova - vállalkozói identitása rejtett marad.</string>
+    <string name="stealth_wallet_send">Küldés</string>
+    <string name="stealth_wallet_send_title">Küldés privát tárcából</string>
+    <string name="stealth_wallet_available">Elérhető: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Összeg</string>
+    <string name="nav_stealth_wallet">Privát tárca</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Több cím</string>
+    <string name="stealth_wallet_gas_desc">Az eszközei %d címen vannak elosztva. Nagy összegek költése több tranzakciót igényelhet, növelve a gázköltségeket.</string>
+    <string name="stealth_wallet_consolidate">Összevonás fő tárcába</string>
+    <string name="stealth_wallet_consolidate_title">Összevonja az eszközöket?</string>
+    <string name="stealth_wallet_consolidate_warning">Ez átviszi az összes eszközt a privát tárcájából a fő tárca címére.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">FIGYELMEZTETÉS: Ez megtöri az adatvédelmet. A fő tárcája összekapcsolódik az összes fogadott fizetéssel.</string>
+    <string name="stealth_wallet_consolidate_benefit">Előny: A jövőbeli költések csak egy tranzakciót igényelnek (alacsonyabb gázköltségek).</string>
+    <string name="stealth_wallet_consolidate_confirm">Összevonás</string>
+    <string name="stealth_wallet_consolidate_success">Eszközök összevonva a fő tárcába</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Fizető adatvédelme</string>
+    <string name="settings_payer_privacy_desc">Fizetés ideiglenes fiókokból (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Minden fizetés egyedi fiókot használ. A fő tárca címe nem látható a láncon.</string>
+    <string name="settings_payer_privacy_requires_api">API kulcs szükséges a mainnethez</string>
+    <string name="settings_payer_privacy_public_bundler">Ingyenes teszthálózatokon (nyilvános bundler)</string>
+    <string name="payer_privacy_note">A tárca címe rejtett lesz</string>
+    <string name="payer_privacy_processing">Privát fizetés feldolgozása…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Címjegyzék</string>
+    <string name="address_book_add">Kapcsolat hozzáadása</string>
+    <string name="address_book_edit">Kapcsolat szerkesztése</string>
+    <string name="address_book_search">Kapcsolatok keresése…</string>
+    <string name="address_book_empty">Még nincsenek kapcsolatok</string>
+    <string name="address_book_empty_hint">Adjon hozzá címeket a könnyű azonosításhoz\nkinek fizet vagy kitől fogad</string>
+    <string name="address_book_no_results">Nem található kapcsolat</string>
+    <string name="address_book_address">Tárca cím</string>
+    <string name="address_book_name">Név</string>
+    <string name="address_book_name_hint">pl. Kávézó, Kovács János</string>
+    <string name="address_book_note">Megjegyzés (opcionális)</string>
+    <string name="address_book_note_hint">pl. Beszállító, Barát</string>
+    <string name="address_book_delete_title">Kapcsolat törlése?</string>
+    <string name="address_book_delete_message">Eltávolítja %s-t a címjegyzékből?</string>
+    <string name="address_book_saved">Kapcsolat mentve</string>
+    <string name="address_book_unknown">Ismeretlen</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Egyszerű mód</string>
+    <string name="settings_simple_mode_desc">Könnyen használható, alap opciók</string>
+    <string name="settings_advanced_mode">Haladó mód</string>
+    <string name="settings_advanced_mode_desc">Kripto opciók haladó felhasználóknak</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kapcsolat megosztása</string>
+    <string name="share_contact_title">Cím megosztása</string>
+    <string name="share_contact_ready">Megosztásra kész</string>
+    <string name="share_contact_ready_desc">Tartsa telefonját egy másik\nCleanSky eszközhöz</string>
+    <string name="share_contact_received">Kapcsolat fogadva!</string>
+    <string name="share_contact_received_name">%s csatlakozni szeretne</string>
+    <string name="share_contact_save">Mentés a kapcsolatokhoz</string>
+    <string name="share_contact_your_name">Neve (opcionális)</string>
+    <string name="share_contact_your_name_hint">Így fogják látni mások</string>
+    <string name="share_contact_mutual">Kapcsolatok cseréje</string>
+    <string name="share_contact_mutual_desc">Mindkét eszköz egyszerre osztja meg a címeket</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Küldés</string>
+    <string name="send_title">Küldés kapcsolatnak</string>
+    <string name="send_select_contact">Címzett kiválasztása</string>
+    <string name="send_no_contacts">Még nincsenek kapcsolatok</string>
+    <string name="send_no_contacts_hint">Adjon hozzá kapcsolatokat NFC-vel vagy manuálisan\nfizetések küldéséhez</string>
+    <string name="send_amount">Összeg</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Címzett: %s</string>
+    <string name="send_confirm">Küldés %1$s %2$s</string>
+    <string name="send_processing">Küldés…</string>
+    <string name="send_success">Sikeresen elküldve!</string>
+    <string name="send_success_desc">%1$s %2$s elküldve %3$s-nak</string>
+    <string name="send_error">Küldés sikertelen</string>
+    <string name="send_enter_amount">Adja meg az összeget</string>
+    <string name="send_new">Új átutalás</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Összes</string>
+    <string name="history_filter_received">Fogadott</string>
+    <string name="history_filter_sent">Küldött</string>
+    <string name="history_filter_contact">Kapcsolat</string>
+    <string name="history_filter_by_contact">Szűrés kapcsolat szerint</string>
+    <string name="history_show_all">Összes megjelenítése</string>
+    <string name="history_no_results">Nincs a szűrőnek megfelelő tranzakció</string>
+    <string name="history_add_contact">Hozzáadás a kapcsolatokhoz</string>
+    <string name="history_edit_contact">Kapcsolat szerkesztése</string>
+    <string name="history_from">Feladó</string>
+    <string name="history_to">Címzett</string>
+    <string name="history_date">Dátum</string>
+    <string name="history_tx_hash">Tranzakció</string>
+    <string name="history_refund">Visszatérítés</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Az összeg túl kicsi</string>
+    <string name="scam_amount_large_warning">Nagy összeg</string>
+    <string name="scam_amount_large_desc">%1$s %2$s küldésére készül.\nKérjük, erősítse meg, hogy ez helyes.</string>
+    <string name="scam_confirm_large">Nagy átutalás megerősítése</string>
+    <string name="scam_dust_attack_warning">Gyanús kérelem</string>
+    <string name="scam_dust_attack_desc">Ez nagyon kis összeg (%1$s %2$s). A dust támadások apró fizetéseket használnak a tárcák nyomon követésére. Utasítsa el, ha váratlan.</string>
+    <string name="scam_receive_large_warning">Nagy fizetési kérelem</string>
+    <string name="scam_receive_large_desc">Ez a kérelem %1$s %2$s-ról szól. Ellenőrizze, hogy ez a helyes összeg, mielőtt fizetne.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Csak fogadás</string>
+    <string name="settings_mode_receive_only">Fogadás</string>
+    <string name="settings_mode_receive_only_desc">Nincs privát kulcs</string>
+    <string name="settings_receive_only">Csak fogadás konfiguráció</string>
+    <string name="settings_escrow_address">Escrow cím</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Nincs Escrow konfigurálva</string>
+    <string name="receive_only_no_escrow_desc">Konfiguráld az escrow címet és API key-t a Beállításokban</string>
+    <string name="receive_only_security_notice">Nincs privát kulcs ezen az eszközön. Lopás esetén biztonságos.</string>
+    <string name="receive_only_api_key_required">API key szükséges a relayer végrehajtáshoz</string>
+</resources>

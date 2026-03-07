@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Tuqiinsa Malee</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Kaffalti</string>
+    <string name="nav_collect">Fudhachuu</string>
+    <string name="nav_settings">Qindaa\'ina</string>
+    <string name="nav_history">Seenaa</string>
+    <string name="nav_refund">Deebisuu</string>
+    <string name="nav_balance">Baalan\'ii</string>
+    <string name="nav_back">Duubatti</string>
+
+    <!-- Common actions -->
+    <string name="back">Duubatti</string>
+    <string name="save">Kuusi</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Waaleetii hin jiru</string>
+    <string name="pay_no_wallet_desc">Kaffaltiif Qindaa\'ina keessatti\nwaaleetii qindeessi</string>
+    <string name="pay_ready">Kaffaltii godhuuf qophii</string>
+    <string name="pay_ready_desc">Bilbila kee meeshaa\ndaldalaa irratti dhiyeessi</string>
+    <string name="pay_request_title">Gaaffii kaffalttii</string>
+    <string name="pay_network">Networkii: %s</string>
+    <string name="pay_expired">Gaaffiin yeroon isaa darbee</string>
+    <string name="pay_cancel">Haquu</string>
+    <string name="pay_confirm">Kaffali</string>
+    <string name="pay_new">Kaffalti haaraa</string>
+    <string name="pay_signing">Daldala mallatteessaa…</string>
+    <string name="pay_tx_signed">Daldalli mallattaa\'ee</string>
+    <string name="pay_tx_signed_desc">Ergachuuf bilbila\ndaldalaa irratti dhiyeessi</string>
+    <string name="pay_authenticating">Mirkaneessaa…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Waaleetii hin jiru</string>
+    <string name="collect_no_wallet_desc">Kaffalti fudhachuuf\nQindaa\'ina keessatti waaleetii qindeessi</string>
+    <string name="collect_amount">Hanga fudhatamu</string>
+    <string name="collect_button">Fudhachuu</string>
+    <string name="collect_waiting">Kaffalti eegaa</string>
+    <string name="collect_waiting_desc">Maamiltoonni bilbila\ndhiyeessuu gaafadhu</string>
+    <string name="collect_new">Fudhachuu haaraa</string>
+    <string name="collect_processing">Kaffalti hojjechaa…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Haala</string>
+    <string name="settings_mode_pay">Kaffali</string>
+    <string name="settings_mode_pay_desc">Kaffalti godhi</string>
+    <string name="settings_mode_collect">Fudhachuu</string>
+    <string name="settings_mode_collect_desc">Kaffalti fudhachuu</string>
+    <string name="settings_wallet">Waaleetii</string>
+    <string name="settings_wallet_address">Teessoo</string>
+    <string name="settings_wallet_none">Waaleetii hin qindaa\'ine</string>
+    <string name="settings_wallet_create">Uumi</string>
+    <string name="settings_wallet_import">Galchi</string>
+    <string name="settings_network">Networkii blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Hojii daldala</string>
+    <string name="settings_exec_direct">Kallatti</string>
+    <string name="settings_exec_direct_desc">Ati gaasii kafalta</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gaasii deeggaramee relayer dhaan</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymaster waliin</string>
+    <string name="settings_api_key">Furtuu API</string>
+    <string name="settings_save">Kuusii duubatti deebi\'i</string>
+    <string name="settings_not_available">Networkii kana irratti hin jiru</string>
+    <string name="settings_language">Afaan</string>
+    <string name="settings_language_system">Kan sirna</string>
+    <string name="collect_select_currency">Maallaqaa filadhu</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Nageenya</string>
+    <string name="security_encryption">Icciitii furtuu</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystore waliin</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Moojulii nageenya hardware hojjechaa</string>
+    <string name="security_strongbox_unavailable">Meeshaa kana irratti hin jiru</string>
+    <string name="security_biometric">Mirkaneessa biometric</string>
+    <string name="security_biometric_required">Kaffaltiidhaa barbaachisa</string>
+    <string name="security_biometric_disabled">Cufamee</string>
+    <string name="security_biometric_unavailable">Hin jiru</string>
+    <string name="security_export">Furtuu dhuunfaa ergi</string>
+    <string name="security_export_desc">Furtuu kee nagaan kuusi</string>
+    <string name="security_delete">Waaleetii haqi</string>
+    <string name="security_delete_desc">Daataa hunda haqi</string>
+    <string name="security_delete_title">Waaleetii haqi</string>
+    <string name="security_delete_warning">Tarkaanfiin kun deebi\'uu hin danda\'u.</string>
+    <string name="security_delete_warning2">Kopii furtuu dhuunfaa yoo hin qabaanne qabeenyaa hundatti argachuu dhabda.</string>
+    <string name="security_delete_warning3">Dursa furtuu erguukee mirkaneessi.</string>
+    <string name="security_delete_confirm">Haqi</string>
+    <string name="security_status_active">Hojjechaa</string>
+    <string name="security_status_warning">Akeekkachiisa</string>
+    <string name="security_status_na">Hin ilaallatu</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Waaleetii galchi</string>
+    <string name="import_private_key">Furtuu dhuunfaa</string>
+    <string name="import_seed_phrase">Himaa sanyii</string>
+    <string name="import_prompt">Furtuu dhuunfaa kee galchi:</string>
+    <string name="import_prompt_seed">Himaa sanyii kee galchi (jecha 12–24):</string>
+    <string name="import_seed_hint">jecha1 jecha2 jecha3 …</string>
+    <string name="import_button">Galchi</string>
+    <string name="import_error_invalid">Furtuu dhuunfaa sirrii miti</string>
+    <string name="import_error_invalid_seed">Himaa sanyii sirrii miti</string>
+    <string name="import_error_encryption">Dogoggora icciitii</string>
+    <string name="export_title">Furtuu dhuunfaa</string>
+    <string name="export_warning">Furtuu kana yoomiyyuu hin qoodiin. Namni kam iyyuu qabu qabeenyaa kee guutummaatti too\'ata.</string>
+    <string name="export_understood">Hubadhe</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Cuunfaa</string>
+    <string name="history_received">Fudhatamee</string>
+    <string name="history_sent">Ergamee</string>
+    <string name="history_refunded">Deebi\'ee</string>
+    <string name="history_empty">Daldalli hin jiru</string>
+    <string name="history_empty_desc">Daldala %s irratti\nasitti mul\'ata</string>
+    <string name="history_payment_received">Kaffaltiin fudhatamee</string>
+    <string name="history_payment_sent">Kaffaltiin ergamee</string>
+    <string name="history_refund_sent">Deebisuu</string>
+    <string name="history_refund_received">Deebiin fudhatamee</string>
+    <string name="history_status_pending">Eegaa</string>
+    <string name="history_status_confirmed">Mirkanaa\'ee</string>
+    <string name="history_status_failed">Hin milkaa\'ine</string>
+    <string name="history_status_refunded">Deebi\'ee</string>
+    <string name="history_status_partial">Gar tokkee</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Daldala jalqabaa</string>
+    <string name="refund_amount">Hanga</string>
+    <string name="refund_already">Duraan deebi\'ee</string>
+    <string name="refund_available">Jira</string>
+    <string name="refund_recipient">Fudhataa</string>
+    <string name="refund_date">Guyyaa</string>
+    <string name="refund_type">Gosa deebisuu</string>
+    <string name="refund_full">Guutuu</string>
+    <string name="refund_partial">Gar tokkee</string>
+    <string name="refund_partial_desc">Hanga ibsi</string>
+    <string name="refund_amount_label">Hanga deebisuu (%s)</string>
+    <string name="refund_max">Ol\'aanaa: %1$s %2$s</string>
+    <string name="refund_gas_notice">Daldala kanaaf gaasii kafalta</string>
+    <string name="refund_button">Deebisi %1$s %2$s</string>
+    <string name="refund_processing">Deebisuu hojjechaa…</string>
+    <string name="refund_success">Deebisuu milkaa\'e</string>
+    <string name="refund_done">Xummurame</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token kee</string>
+    <string name="balance_manage">Bulchuu</string>
+    <string name="balance_refresh">Haaromsi</string>
+    <string name="balance_loading">Baalan\'ii fe\'aa…</string>
+    <string name="balance_empty">Token hin jiru</string>
+    <string name="balance_no_wallet_desc">Baalan\'ii kee ilaaluuf\nQindaa\'ina keessatti waaleetii qindeessi</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token heyyamamaan</string>
+    <string name="settings_add_token">Token dabali</string>
+    <string name="add_token_prompt">Teessoo waliigaltee token galchi:</string>
+    <string name="add_token_validating">Token mirkaneessaa…</string>
+    <string name="add_token_button">Dabali</string>
+    <string name="delete">Haqi</string>
+
+    <!-- Common -->
+    <string name="cancel">Haquu</string>
+    <string name="close">Cufi</string>
+    <string name="retry">Irra deebi\'i</string>
+    <string name="error">Dogoggora</string>
+    <string name="copy">Garagalchi</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Waaleetii hin qindaa\'ine</string>
+    <string name="error_device_security">Dogoggora nageenya meeshaa</string>
+    <string name="error_auth">Dogoggora mirkaneessuu</string>
+    <string name="error_unknown">Dogoggora hin beekamne</string>
+    <string name="error_keystore_unavailable">Kuusaa furtuu hin jiru - hojiin tokko tokko hin hojjetu</string>
+    <string name="error_encryption_restart">Encryption error - restart the app</string>
+    <string name="error_auth_cancelled">Authentication cancelled</string>
+    <string name="error_invalid_address">Invalid address</string>
+    <string name="error_invalid_address_format">Invalid address format</string>
+    <string name="error_token_already_added">Token already added</string>
+    <string name="stealth_spend_sent_tx">Sent! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Baalan\'ii kee</string>
+    <string name="pay_insufficient_balance">Baalan\'ii gahaa miti</string>
+    <string name="pay_need_more">%1$s dabalataa %2$s si barbaachisa</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Baga nagaan dhufte</string>
+    <string name="welcome_sovereignty">Furtuu kee.\nMaallaqaa kee.\nAbbootummaa kee.</string>
+    <string name="welcome_desc">Maallaqni kee app kana keessa hin kuusamu. Blockchain irratti jiru, too\'annoo furtuu dhuunfaa kee jalatti.\n\nApp kun furtuu kee qofa nagaan kuusa. Maallaqaa kee argachuu hin dandeenyu.\n\nHubachiisa: Token tokko tokko (USDC, USDT) baastonni cufuu danda\'u. Abbootummaa guddaadhaaf, ETH dhalootaa ykn token decentralized fayyadami.</string>
+    <string name="welcome_warning_title">Furtuu kee = Maallaqaa kee</string>
+    <string name="welcome_warning_desc">Furtuu dhuunfaa kee yoo dhabde ykn nama biraatiin qoodde, too\'annoo maallaqaa kee yeroo hundaaf dhabda.\n\nFilannoon deebisuu hin jiru. Gareen deeggarsa si gargaaruu hin danda\'u. Kun amala dhugaa qabaachuuti.\n\nYeroo hunda kopii nageenya furtuu kee kuusi.</string>
+    <string name="welcome_opensource">Softiweerrii madda banaa. Mirkaneessi, hin amaniniin qofa.</string>
+    <string name="welcome_start">Hubadhe, haa eegallu</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Eenyummaa daldalaa</string>
+    <string name="settings_merchant_name">Maqaa dhaabbata</string>
+    <string name="settings_merchant_name_hint">Suuqii Bunaa Koo</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ykn mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Yeroo kaffaltiitti maamiltoota irratti mul\'ata</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Haala icciitii</string>
+    <string name="settings_stealth_desc">Kaffalti gara teessoo yeroo tokkoo fudhachuu (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Kakaasee</string>
+    <string name="settings_stealth_info">Kaffaltiin hundi gara teessoo addaa ati qofti baasuu dandeessutti deema. Ilaaltonni kaffalti daldalaa keetiin walqabsiisuu hin danda\'an.</string>
+    <string name="stealth_address_label">Haalli icciitii hojjechaa</string>
+    <string name="stealth_payment_note">Kaffaltiin gara teessoo dhuunfaatti ergama</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Teessoo fudhataa</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Waaleetii dhuunfaa</string>
+    <string name="stealth_wallet_addresses">teessoo icciitii %d keessatti</string>
+    <string name="stealth_wallet_privacy_title">Maallaqni kee dhuunfaadha</string>
+    <string name="stealth_wallet_privacy_desc">Baalan\'iin kun waaleetii kee isa hawaasaatiin hin walqabatu. Kallattiin gara dhiyeesitoota, jijjiirraa, ykn bakkatti ergi - eenyummaan daldalaa kee dhokfamee jiraata.</string>
+    <string name="stealth_wallet_send">Ergi</string>
+    <string name="stealth_wallet_send_title">Waaleetii Dhuunfaa Irraa Ergi</string>
+    <string name="stealth_wallet_available">Jira: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Hanga</string>
+    <string name="nav_stealth_wallet">Waaleetii Dhuunfaa</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Teessoo baay\'ee</string>
+    <string name="stealth_wallet_gas_desc">Maallaqni kee teessoo %d keessa facaa\'ee jira. Hanga guddaa baasuu daldala baay\'ee gaafachuu danda\'a, kun baasii gaasii dabaluu danda\'a.</string>
+    <string name="stealth_wallet_consolidate">Gara waaleetii hangafaatti walitti qabi</string>
+    <string name="stealth_wallet_consolidate_title">Maallaqaa walitti qabuu?</string>
+    <string name="stealth_wallet_consolidate_warning">Kun maallaqaa hunda waaleetii dhuunfaa kee irraa gara teessoo waaleetii hangafaa keetti dabarsa.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">AKEEKKACHIISA: Kun icciitii diiqa. Waaleetiin kee hangafaan kaffalti fudhatame hundaan walqabata.</string>
+    <string name="stealth_wallet_consolidate_benefit">Faayidaa: Baasiin gara fuulduraa daldala tokko qofa gaafata (baasii gaasii xiqqaa).</string>
+    <string name="stealth_wallet_consolidate_confirm">Walitti qabi</string>
+    <string name="stealth_wallet_consolidate_success">Maallaqni gara waaleetii hangafaatti walitti qabamee</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Icciitii kaffalaa</string>
+    <string name="settings_payer_privacy_desc">Herrega yeroo gabaabaa irraa kaffali (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Kaffaltiin hundi herrega addaa fayyadama. Teessoon waaleetii kee hangafaa chain irratti hin mul\'atu.</string>
+    <string name="settings_payer_privacy_requires_api">Networkii hangafaadhaaf furtuu API barbaachisa</string>
+    <string name="settings_payer_privacy_public_bundler">Networkii qormaataarra bilisaan (bundler hawaasaa)</string>
+    <string name="payer_privacy_note">Teessoon waaleetii kee dhokfama</string>
+    <string name="payer_privacy_processing">Kaffalti dhuunfaa hojjechaa…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Kitaaba teessoo</string>
+    <string name="address_book_add">Qunnamtii dabali</string>
+    <string name="address_book_edit">Qunnamtii gulaali</string>
+    <string name="address_book_search">Qunnamtii barbaadi…</string>
+    <string name="address_book_empty">Ammaaf qunnamtiin hin jiru</string>
+    <string name="address_book_empty_hint">Eenyutti kaffaltu ykn irraa fudhachuu\nsalphatti beekuuf teessoo dabali</string>
+    <string name="address_book_no_results">Qunnamtiin hin argamne</string>
+    <string name="address_book_address">Teessoo waaleetii</string>
+    <string name="address_book_name">Maqaa</string>
+    <string name="address_book_name_hint">fkn. Suuqii Bunaa, John Doe</string>
+    <string name="address_book_note">Yaadannoo (filannoo)</string>
+    <string name="address_book_note_hint">fkn. Dhiyeessaa, Hiriyaa</string>
+    <string name="address_book_delete_title">Qunnamtii haquu?</string>
+    <string name="address_book_delete_message">%s kitaaba teessoo kee irraa haquu?</string>
+    <string name="address_book_saved">Qunnamtiin kuusamee</string>
+    <string name="address_book_unknown">Hin beekamu</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Haala salphaa</string>
+    <string name="settings_simple_mode_desc">Fayyadamuuf salphaa, filannoo bu\'uuraa</string>
+    <string name="settings_advanced_mode">Haala sadarkaa ol\'aanaa</string>
+    <string name="settings_advanced_mode_desc">Filannoo crypto fayyadamtoota cimaadhaaf</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Qunnamtii Qoodi</string>
+    <string name="share_contact_title">Teessoo Kee Qoodi</string>
+    <string name="share_contact_ready">Qooduuf qophii</string>
+    <string name="share_contact_ready_desc">Bilbila kee meeshaa\nCleanSky biraatti dhiyeessi</string>
+    <string name="share_contact_received">Qunnamtiin fudhatamee!</string>
+    <string name="share_contact_received_name">%s walqunnamuu barbaada</string>
+    <string name="share_contact_save">Qunnamtiitti kuusi</string>
+    <string name="share_contact_your_name">Maqaa kee (filannoo)</string>
+    <string name="share_contact_your_name_hint">Namoonni biraa akkamitti si argan</string>
+    <string name="share_contact_mutual">Qunnamtii jijjiiri</string>
+    <string name="share_contact_mutual_desc">Meeshaaleen lamaan teessoo waliin qoodu</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Ergi</string>
+    <string name="send_title">Gara Qunnamtiitti Ergi</string>
+    <string name="send_select_contact">Fudhataa filadhu</string>
+    <string name="send_no_contacts">Ammaaf qunnamtiin hin jiru</string>
+    <string name="send_no_contacts_hint">NFC ykn harkaan qunnamtii dabali\nkaffalti ergachuuf</string>
+    <string name="send_amount">Hanga</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Gara: %s</string>
+    <string name="send_confirm">Ergi %1$s %2$s</string>
+    <string name="send_processing">Ergaa…</string>
+    <string name="send_success">Milkaa\'inaan ergamee!</string>
+    <string name="send_success_desc">%1$s %2$s gara %3$s ergamee</string>
+    <string name="send_error">Erguu hin dandeenye</string>
+    <string name="send_enter_amount">Hanga galchi</string>
+    <string name="send_new">Dabarsa haaraa</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Hundaa</string>
+    <string name="history_filter_received">Fudhatamee</string>
+    <string name="history_filter_sent">Ergamee</string>
+    <string name="history_filter_contact">Qunnamtii</string>
+    <string name="history_filter_by_contact">Qunnamtiidhaan qoodi</string>
+    <string name="history_show_all">Hundaa agarsiisi</string>
+    <string name="history_no_results">Daldalli qoodii wajjin walsimu hin jiru</string>
+    <string name="history_add_contact">Gara qunnamtiitti dabali</string>
+    <string name="history_edit_contact">Qunnamtii gulaali</string>
+    <string name="history_from">Irraa</string>
+    <string name="history_to">Gara</string>
+    <string name="history_date">Guyyaa</string>
+    <string name="history_tx_hash">Daldala</string>
+    <string name="history_refund">Deebisuu</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Hangni xiqqaadha</string>
+    <string name="scam_amount_large_warning">Hanga guddaa</string>
+    <string name="scam_amount_large_desc">%1$s %2$s ergachuu jirta.\nMaaloo sirrii ta\'uu mirkaneessi.</string>
+    <string name="scam_confirm_large">Dabarsa guddaa mirkaneessi</string>
+    <string name="scam_dust_attack_warning">Gaaffii shakkisiisaa</string>
+    <string name="scam_dust_attack_desc">Kun hanga baay\'ee xiqqaadha (%1$s %2$s). Haleellaan dust kaffalti xiqqaa fayyadamee waaleetii hordofa. Yoo hin eegamne dide.</string>
+    <string name="scam_receive_large_warning">Gaaffii kaffalti guddaa</string>
+    <string name="scam_receive_large_desc">Gaaffiin kun %1$s %2$s dha. Kaffaluu dura hanga sirrii ta\'uu mirkaneessi.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Fudhachuu qofa</string>
+    <string name="settings_mode_receive_only">Fudhachuu</string>
+    <string name="settings_mode_receive_only_desc">Furtuu dhuunfaa hin qabu</string>
+    <string name="settings_receive_only">Qindaa\'ina fudhachuu qofa</string>
+    <string name="settings_escrow_address">Teessoo Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow hin qindaa\'amne</string>
+    <string name="receive_only_no_escrow_desc">Teessoo escrow fi API key Qindaa\'ina keessatti qindeessi</string>
+    <string name="receive_only_security_notice">Meeshaa kana irratti furtuu dhuunfaa hin jiru. Hatamne yoo nagahe.</string>
+    <string name="receive_only_api_key_required">Raawwii relayer tiif API key barbaadama</string>
+</resources>

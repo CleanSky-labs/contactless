@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Kwishyura</string>
+    <string name="nav_collect">Kwakira</string>
+    <string name="nav_settings">Igenamiterere</string>
+    <string name="nav_history">Amateka</string>
+    <string name="nav_refund">Gusubiza</string>
+    <string name="nav_balance">Umutungo</string>
+    <string name="nav_back">Gusubira</string>
+
+    <!-- Common actions -->
+    <string name="back">Gusubira</string>
+    <string name="save">Kubika</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Nta Kirayi</string>
+    <string name="pay_no_wallet_desc">Shiraho ikirayi cyawe muri Igenamiterere\nkugira ngo wishyure</string>
+    <string name="pay_ready">Witeguye kwishyura</string>
+    <string name="pay_ready_desc">Erekeza terefone yawe hafi\ny\'igikoresho cy\'umucuruzi</string>
+    <string name="pay_request_title">Icyifuzo cyo Kwishyura</string>
+    <string name="pay_network">Uruhurirane: %s</string>
+    <string name="pay_expired">Icyifuzo cyarangiye</string>
+    <string name="pay_cancel">Kureka</string>
+    <string name="pay_confirm">Kwishyura</string>
+    <string name="pay_new">Kwishyura gushya</string>
+    <string name="pay_signing">Gusinyisha ibikorwa…</string>
+    <string name="pay_tx_signed">Ibikorwa byasinye</string>
+    <string name="pay_tx_signed_desc">Erekeza terefone yawe hafi\ny\'umucuruzi kugira ngo wohereze</string>
+    <string name="pay_authenticating">Kwemeza…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Nta Kirayi</string>
+    <string name="collect_no_wallet_desc">Shiraho ikirayi cyawe muri Igenamiterere\nkugira ngo wakire ubwishyu</string>
+    <string name="collect_amount">Amafaranga yo kwakira</string>
+    <string name="collect_button">Kwakira</string>
+    <string name="collect_waiting">Gutegereza ubwishyu</string>
+    <string name="collect_waiting_desc">Saba umukiriya\nkwerekeza terefone ye hafi</string>
+    <string name="collect_new">Kwakira bishya</string>
+    <string name="collect_processing">Gutunganya ubwishyu…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Uburyo bwo gukora</string>
+    <string name="settings_mode_pay">Kwishyura</string>
+    <string name="settings_mode_pay_desc">Gukora ubwishyu</string>
+    <string name="settings_mode_collect">Kwakira</string>
+    <string name="settings_mode_collect_desc">Kwakira ubwishyu</string>
+    <string name="settings_wallet">Ikirayi</string>
+    <string name="settings_wallet_address">Aderesi</string>
+    <string name="settings_wallet_none">Nta kirayi cyateguwe</string>
+    <string name="settings_wallet_create">Kurema</string>
+    <string name="settings_wallet_import">Kwinjiza</string>
+    <string name="settings_network">Uruhurirane rwa blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Ishyirwa mu bikorwa ry\'ibikorwa</string>
+    <string name="settings_exec_direct">Ku Buryo Butaziguye</string>
+    <string name="settings_exec_direct_desc">Wishyura gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas itangwa na relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 hamwe na Paymaster</string>
+    <string name="settings_api_key">Urufunguzo rwa API</string>
+    <string name="settings_save">Kubika no gusubira</string>
+    <string name="settings_not_available">Ntibiboneka kuri uru ruhurirane</string>
+    <string name="settings_language">Ururimi</string>
+    <string name="settings_language_system">Iy\'urwego rusanzwe</string>
+    <string name="collect_select_currency">Hitamo ifaranga</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Umutekano</string>
+    <string name="security_encryption">Gukiranura urufunguzo</string>
+    <string name="security_encryption_desc">AES-256-GCM hamwe na Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Module y\'umutekano wa hardware ikora</string>
+    <string name="security_strongbox_unavailable">Ntibiboneka kuri iki gikoresho</string>
+    <string name="security_biometric">Kwemeza biometric</string>
+    <string name="security_biometric_required">Bisabwa ku bwishyu</string>
+    <string name="security_biometric_disabled">Byazimye</string>
+    <string name="security_biometric_unavailable">Ntibiboneka</string>
+    <string name="security_export">Kohereza urufunguzo rwibanga</string>
+    <string name="security_export_desc">Bika urufunguzo rwawe neza</string>
+    <string name="security_delete">Gusiba ikirayi</string>
+    <string name="security_delete_desc">Gusiba burundu amakuru yose</string>
+    <string name="security_delete_title">Gusiba ikirayi</string>
+    <string name="security_delete_warning">Iki gikorwa NTICYASUBIZWAHO.</string>
+    <string name="security_delete_warning2">Uzabura ubushobozi bwo kubona amafaranga yawe yose niba udafite kopi y\'urufunguzo rwawe rwibanga.</string>
+    <string name="security_delete_warning3">Menya neza ko wakohereje urufunguzo rwawe mbere yo gukomeza.</string>
+    <string name="security_delete_confirm">Siba</string>
+    <string name="security_status_active">Birakora</string>
+    <string name="security_status_warning">Umuburo</string>
+    <string name="security_status_na">Ntibiboneka</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Kwinjiza ikirayi</string>
+    <string name="import_private_key">Urufunguzo Rwibanga</string>
+    <string name="import_seed_phrase">Interuro y\'Imbuto</string>
+    <string name="import_prompt">Andika urufunguzo rwawe rwibanga:</string>
+    <string name="import_prompt_seed">Andika interuro y\'imbuto yawe (amagambo 12–24):</string>
+    <string name="import_seed_hint">ijambo1 ijambo2 ijambo3 …</string>
+    <string name="import_button">Kwinjiza</string>
+    <string name="import_error_invalid">Urufunguzo rwibanga rutari rwo</string>
+    <string name="import_error_invalid_seed">Interuro y\'imbuto itari yo</string>
+    <string name="import_error_encryption">Ikosa ryo gukiranura</string>
+    <string name="export_title">Urufunguzo Rwibanga</string>
+    <string name="export_warning">NTUKIGERE usangira uru rufunguzo n\'umuntu uwo ariwe wese. Uwufite afite ubuyobozi bwuzuye ku mafaranga yawe.</string>
+    <string name="export_understood">Narabyumvise</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Incamake</string>
+    <string name="history_received">Byakiriwe</string>
+    <string name="history_sent">Byoherejwe</string>
+    <string name="history_refunded">Byasubijwe</string>
+    <string name="history_empty">Nta bikorwa</string>
+    <string name="history_empty_desc">Ibikorwa kuri %s\nbizagaragara hano</string>
+    <string name="history_payment_received">Ubwishyu bwakiriwe</string>
+    <string name="history_payment_sent">Ubwishyu bwoherejwe</string>
+    <string name="history_refund_sent">Gusubiza</string>
+    <string name="history_refund_received">Gusubiza bwakiriwe</string>
+    <string name="history_status_pending">Bitegerezwa</string>
+    <string name="history_status_confirmed">Byemejwe</string>
+    <string name="history_status_failed">Byanze</string>
+    <string name="history_status_refunded">Byasubijwe</string>
+    <string name="history_status_partial">Igice</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Igikorwa cy\'umwimerere</string>
+    <string name="refund_amount">Amafaranga</string>
+    <string name="refund_already">Byasubijwe kera</string>
+    <string name="refund_available">Biraboneka</string>
+    <string name="refund_recipient">Uwakiriye</string>
+    <string name="refund_date">Itariki</string>
+    <string name="refund_type">Ubwoko bwo gusubiza</string>
+    <string name="refund_full">Byuzuye</string>
+    <string name="refund_partial">Igice</string>
+    <string name="refund_partial_desc">Erekana amafaranga</string>
+    <string name="refund_amount_label">Amafaranga yo gusubiza (%s)</string>
+    <string name="refund_max">Byibuze: %1$s %2$s</string>
+    <string name="refund_gas_notice">Uzishyura gas kuri iki gikorwa</string>
+    <string name="refund_button">Gusubiza %1$s %2$s</string>
+    <string name="refund_processing">Gutunganya gusubiza…</string>
+    <string name="refund_success">Gusubiza byagenze neza</string>
+    <string name="refund_done">Byarangiye</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token Zawe</string>
+    <string name="balance_manage">Gucunga</string>
+    <string name="balance_refresh">Kuvugurura</string>
+    <string name="balance_loading">Gupakira umutungo…</string>
+    <string name="balance_empty">Nta token</string>
+    <string name="balance_no_wallet_desc">Shiraho ikirayi cyawe muri Igenamiterere\nkugira ngo urebe umutungo wawe</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token Zemerewe</string>
+    <string name="settings_add_token">Ongeraho Token</string>
+    <string name="add_token_prompt">Andika aderesi y\'amasezerano ya token:</string>
+    <string name="add_token_validating">Kugenzura token…</string>
+    <string name="add_token_button">Ongeraho</string>
+    <string name="delete">Siba</string>
+
+    <!-- Common -->
+    <string name="cancel">Kureka</string>
+    <string name="close">Gufunga</string>
+    <string name="retry">Ongera ugerageze</string>
+    <string name="error">Ikosa</string>
+    <string name="copy">Gukoporora</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Ikirayi nticyateguwe</string>
+    <string name="error_device_security">Ikosa ry\'umutekano w\'igikoresho</string>
+    <string name="error_auth">Ikosa ryo kwemeza</string>
+    <string name="error_unknown">Ikosa ritazwi</string>
+    <string name="error_keystore_unavailable">Keystore ntiboneka - ibikorwa bimwe ntibizakora</string>
+    <string name="error_encryption_restart">Ikosa ryo gukiranura - ongera utangire porogaramu</string>
+    <string name="error_auth_cancelled">Kwemeza byahagaritswe</string>
+    <string name="error_invalid_address">Aderesi itari yo</string>
+    <string name="error_invalid_address_format">Imiterere y\'aderesi itari yo</string>
+    <string name="error_token_already_added">Token yongewe kera</string>
+
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">Byoherejwe! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Umutungo wawe</string>
+    <string name="pay_insufficient_balance">Umutungo udahagije</string>
+    <string name="pay_need_more">Ukeneye %1$s binyuranye %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Murakaza neza</string>
+    <string name="welcome_sovereignty">Infunguzo zawe.\nAmafaranga yawe.\nUbwigenge bwawe.</string>
+    <string name="welcome_desc">Amafaranga yawe NTABIKWA muri iyi porogaramu. Abaho kuri blockchain, ayoborwa n\'infunguzo zawe z\'ibanga.\n\nIyi porogaramu ibika gusa infunguzo zawe neza. Ntidushobora kubona amafaranga yawe.\n\nIcyitonderwa: Token zimwe (USDC, USDT) zishobora gufungwa n\'abazitanga. Kugira ngo ubone ubwigenge bwuzuye, koresha ETH y\'umwimerere cyangwa token zigenga.</string>
+    <string name="welcome_warning_title">Infunguzo zawe = Amafaranga yawe</string>
+    <string name="welcome_warning_desc">Niba wabura infunguzo zawe z\'ibanga cyangwa ukazisangiza n\'undi muntu, ubura ubuyobozi ku mafaranga yawe burundu.\n\nNta buryo bwo kugarura. Nta muryango w\'ubufasha ushobora kugufasha. Ibi ni kamere y\'ubunyagathane nyakuri.\n\nBuri gihe bika kopi y\'umutekano y\'infunguzo zawe.</string>
+    <string name="welcome_opensource">Porogaramu ifunguye. Genzura, ntukizere.</string>
+    <string name="welcome_start">Narabyumvise, reka dutangire</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Umwirondoro w\'Umucuruzi</string>
+    <string name="settings_merchant_name">Izina ry\'Ikigo</string>
+    <string name="settings_merchant_name_hint">Iduka ryanjye rya Kawa</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">kawa.eth cyangwa kawa.com</string>
+    <string name="settings_merchant_identity_desc">Byerekanwa ku bakiriya mu gihe cyo kwishyura</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Uburyo bw\'Ibanga</string>
+    <string name="settings_stealth_desc">Akira ubwishyu kuri aderesi z\'igihe kimwe (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Byatanzwe</string>
+    <string name="settings_stealth_info">Buri bwishyu bujya kuri aderesi idasanzwe gusa wowe ushobora gukoresha. Abagenzuzi ntibashobora guhuza ubwishyu n\'ubucuruzi bwawe.</string>
+    <string name="stealth_address_label">Uburyo Stealth Burakora</string>
+    <string name="stealth_payment_note">Ubwishyu buzoherezwa kuri aderesi y\'ibanga</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Aderesi y\'uwakiriye</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Ikirayi cy\'Ibanga</string>
+    <string name="stealth_wallet_addresses">kuri aderesi %d za stealth</string>
+    <string name="stealth_wallet_privacy_title">Amafaranga yawe ni ibanga</string>
+    <string name="stealth_wallet_privacy_desc">Uyu mutungo ntuhuzwa n\'ikirayi cyawe rusange. Ohereza ku buryo butaziguye ku batanga ibicuruzwa, amasoko, cyangwa ahariho hose - umwirondoro w\'ubucuruzi bwawe urahishwa.</string>
+    <string name="stealth_wallet_send">Ohereza</string>
+    <string name="stealth_wallet_send_title">Ohereza bivuye mu Kirayi cy\'Ibanga</string>
+    <string name="stealth_wallet_available">Iboneka: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Amafaranga</string>
+    <string name="nav_stealth_wallet">Ikirayi cy\'Ibanga</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Aderesi nyinshi</string>
+    <string name="stealth_wallet_gas_desc">Amafaranga yawe asabanyije kuri aderesi %d. Gukoresha amafaranga menshi bishobora gusaba ibikorwa byinshi, bikanuzuza ibiciro bya gas.</string>
+    <string name="stealth_wallet_consolidate">Guhuza kuri ikirayi nyamukuru</string>
+    <string name="stealth_wallet_consolidate_title">Guhuza amafaranga?</string>
+    <string name="stealth_wallet_consolidate_warning">Ibi bizimura amafaranga yose bivuye mu kirayi cyawe cy\'ibanga ujya kuri aderesi y\'ikirayi cyawe nyamukuru.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">UMUBURO: Ibi bimena ibanga. Ikirayi cyawe nyamukuru kizahuzwa n\'ubwishyu bwose bwakiriwe.</string>
+    <string name="stealth_wallet_consolidate_benefit">Akamaro: Gukoresha mu gihe kizaza bizasaba igikorwa kimwe gusa (ibiciro bya gas bike).</string>
+    <string name="stealth_wallet_consolidate_confirm">Huza</string>
+    <string name="stealth_wallet_consolidate_success">Amafaranga yahujwe kuri ikirayi nyamukuru</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Ibanga ry\'Uwishyura</string>
+    <string name="settings_payer_privacy_desc">Ishyura ukoresheje konti z\'igihe gito (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Buri bwishyu bukoresha konti idasanzwe. Aderesi y\'ikirayi cyawe nyamukuru ntigaragara kuri chain.</string>
+    <string name="settings_payer_privacy_requires_api">Urufunguzo rwa API rusabwa kuri mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Ubuntu kuri testnets (bundler rusange)</string>
+    <string name="payer_privacy_note">Aderesi y\'ikirayi cyawe izahishwa</string>
+    <string name="payer_privacy_processing">Gutunganya ubwishyu bw\'ibanga…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Igitabo cy\'Aderesi</string>
+    <string name="address_book_add">Ongeraho Umuntu</string>
+    <string name="address_book_edit">Hindura Umuntu</string>
+    <string name="address_book_search">Shakisha abantu…</string>
+    <string name="address_book_empty">Nta bantu bahari</string>
+    <string name="address_book_empty_hint">Ongeraho aderesi kugira ngo umenye\nuwo wishyura cyangwa uwakiriye</string>
+    <string name="address_book_no_results">Nta bantu babonetse</string>
+    <string name="address_book_address">Aderesi y\'Ikirayi</string>
+    <string name="address_book_name">Izina</string>
+    <string name="address_book_name_hint">urugero: Iduka rya Kawa, Yohana</string>
+    <string name="address_book_note">Icyitonderwa (ntibisabwa)</string>
+    <string name="address_book_note_hint">urugero: Utanga ibicuruzwa, Inshuti</string>
+    <string name="address_book_delete_title">Gusiba umuntu?</string>
+    <string name="address_book_delete_message">Gukuraho %s mu gitabo cy\'aderesi cyawe?</string>
+    <string name="address_book_saved">Umuntu yabitswe</string>
+    <string name="address_book_unknown">Itazwi</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Uburyo Bworoshye</string>
+    <string name="settings_simple_mode_desc">Byoroshye gukoresha, amahitamo y\'ibanze</string>
+    <string name="settings_advanced_mode">Uburyo Bwimbitse</string>
+    <string name="settings_advanced_mode_desc">Amahitamo ya crypto ku bakoresha b\'inzobere</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Sangira Umuntu</string>
+    <string name="share_contact_title">Sangira Aderesi Yawe</string>
+    <string name="share_contact_ready">Witeguye gusangira</string>
+    <string name="share_contact_ready_desc">Erekeza terefone yawe hafi\ny\'ikindi gikoresho cya CleanSky</string>
+    <string name="share_contact_received">Umuntu yakiriwe!</string>
+    <string name="share_contact_received_name">%s ashaka guhuza</string>
+    <string name="share_contact_save">Bika mu bantu</string>
+    <string name="share_contact_your_name">Izina ryawe (ntibisabwa)</string>
+    <string name="share_contact_your_name_hint">Uko abandi bazakureba</string>
+    <string name="share_contact_mutual">Gusangira abantu</string>
+    <string name="share_contact_mutual_desc">Ibikoresho byombi bisangira aderesi icyarimwe</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Ohereza</string>
+    <string name="send_title">Ohereza ku Muntu</string>
+    <string name="send_select_contact">Hitamo uwakiriye</string>
+    <string name="send_no_contacts">Nta bantu bahari</string>
+    <string name="send_no_contacts_hint">Ongeraho abantu binyuze muri NFC cyangwa\nubikore ukoresha intoki kugira ngo ubohereze ubwishyu</string>
+    <string name="send_amount">Amafaranga</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Kuri: %s</string>
+    <string name="send_confirm">Ohereza %1$s %2$s</string>
+    <string name="send_processing">Kohereza…</string>
+    <string name="send_success">Byoherejwe neza!</string>
+    <string name="send_success_desc">%1$s %2$s byoherejwe kuri %3$s</string>
+    <string name="send_error">Kohereza byanze</string>
+    <string name="send_enter_amount">Andika amafaranga</string>
+    <string name="send_new">Kwimura bishya</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Byose</string>
+    <string name="history_filter_received">Byakiriwe</string>
+    <string name="history_filter_sent">Byoherejwe</string>
+    <string name="history_filter_contact">Umuntu</string>
+    <string name="history_filter_by_contact">Shungura ku muntu</string>
+    <string name="history_show_all">Erekana byose</string>
+    <string name="history_no_results">Nta bikorwa bihuye n\'ishungura</string>
+    <string name="history_add_contact">Ongeraho mu bantu</string>
+    <string name="history_edit_contact">Hindura umuntu</string>
+    <string name="history_from">Bivuye</string>
+    <string name="history_to">Kuri</string>
+    <string name="history_date">Itariki</string>
+    <string name="history_tx_hash">Igikorwa</string>
+    <string name="history_refund">Gusubiza</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Amafaranga make cyane</string>
+    <string name="scam_amount_large_warning">Amafaranga menshi</string>
+    <string name="scam_amount_large_desc">Ugiye kohereza %1$s %2$s.\nNyamuneka emeza ko ibi ari byo.</string>
+    <string name="scam_confirm_large">Emeza kwimura kunini</string>
+    <string name="scam_dust_attack_warning">Icyifuzo giteye amakenga</string>
+    <string name="scam_dust_attack_desc">Aya ni amafaranga make cyane (%1$s %2$s). Ibitero bya dust bikoresha ubwishyu buke kugira ngo bakurikire ibirayi. Anga niba bitari biteganyijwe.</string>
+    <string name="scam_receive_large_warning">Icyifuzo cy\'ubwishyu bunini</string>
+    <string name="scam_receive_large_desc">Iki cyifuzo ni icya %1$s %2$s. Genzura ko aya ari amafaranga nyayo mbere yo kwishyura.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Kwakira gusa</string>
+    <string name="settings_mode_receive_only">Kwakira</string>
+    <string name="settings_mode_receive_only_desc">Nta rufunguzo rwibanga</string>
+    <string name="settings_receive_only">Iboneza ryo kwakira gusa</string>
+    <string name="settings_escrow_address">Aderesi ya Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow ntibashyizweho</string>
+    <string name="receive_only_no_escrow_desc">Shyiraho aderesi ya escrow na API key mu Iboneza</string>
+    <string name="receive_only_security_notice">Nta rufunguzo rwibanga kuri iki cyuma. Gifite umutekano niyo cyibwa.</string>
+    <string name="receive_only_api_key_required">API key irasabwa kugira ngo relayer ikore</string>
+</resources>

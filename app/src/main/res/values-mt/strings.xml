@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Mingħajr Kuntatt</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Ħallas</string>
+    <string name="nav_collect">Irċievi</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_history">Storja</string>
+    <string name="nav_refund">Rifużjoni</string>
+    <string name="nav_balance">Bilanċ</string>
+    <string name="nav_back">Lura</string>
+
+    <!-- Common actions -->
+    <string name="back">Lura</string>
+    <string name="save">Issejvja</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ebda kartiera</string>
+    <string name="pay_no_wallet_desc">Issettja kartiera fis-Settings\nbiex tagħmel ħlasijiet</string>
+    <string name="pay_ready">Lest għall-ħlas</string>
+    <string name="pay_ready_desc">Żomm it-telefon qrib\nal-apparat tal-bejjiegħ</string>
+    <string name="pay_request_title">Talba għal ħlas</string>
+    <string name="pay_network">Network: %s</string>
+    <string name="pay_expired">It-talba skadiet</string>
+    <string name="pay_cancel">Ikkanċella</string>
+    <string name="pay_confirm">Ħallas</string>
+    <string name="pay_new">Ħlas ġdid</string>
+    <string name="pay_signing">Qed tiffirma t-tranżazzjoni…</string>
+    <string name="pay_tx_signed">Tranżazzjoni ffirmata</string>
+    <string name="pay_tx_signed_desc">Żomm it-telefon qrib\ntal-bejjiegħ biex tibgħat</string>
+    <string name="pay_authenticating">Qed tawtentika…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ebda kartiera</string>
+    <string name="collect_no_wallet_desc">Issettja kartiera fis-Settings\nbiex tirċievi ħlasijiet</string>
+    <string name="collect_amount">Ammont li tirċievi</string>
+    <string name="collect_button">Irċievi</string>
+    <string name="collect_waiting">Qed tistenna għall-ħlas</string>
+    <string name="collect_waiting_desc">Staqsi lill-klijent\nbiex iżomm it-telefon qrib</string>
+    <string name="collect_new">Riċeviment ġdid</string>
+    <string name="collect_processing">Qed tipproċessa l-ħlas…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Mod ta\' operazzjoni</string>
+    <string name="settings_mode_pay">Ħallas</string>
+    <string name="settings_mode_pay_desc">Agħmel ħlasijiet</string>
+    <string name="settings_mode_collect">Irċievi</string>
+    <string name="settings_mode_collect_desc">Irċievi ħlasijiet</string>
+    <string name="settings_wallet">Kartiera</string>
+    <string name="settings_wallet_address">Indirizz</string>
+    <string name="settings_wallet_none">Ebda kartiera konfiggurata</string>
+    <string name="settings_wallet_create">Oħloq</string>
+    <string name="settings_wallet_import">Importa</string>
+    <string name="settings_network">Network tal-blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Eżekuzzjoni tat-tranżazzjoni</string>
+    <string name="settings_exec_direct">Dirett</string>
+    <string name="settings_exec_direct_desc">Int tħallas għall-gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas sponsorjat permezz ta\' relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 b\'Paymaster</string>
+    <string name="settings_api_key">Ċavetta API</string>
+    <string name="settings_save">Issejvja u erġa\' lura</string>
+    <string name="settings_not_available">Mhux disponibbli fuq din in-network</string>
+    <string name="settings_language">Lingwa</string>
+    <string name="settings_language_system">Default tas-sistema</string>
+    <string name="collect_select_currency">Agħżel il-munita</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Sigurtà</string>
+    <string name="security_encryption">Enkrizzjoni tal-ċwievet</string>
+    <string name="security_encryption_desc">AES-256-GCM ma\' Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Modulu tas-sigurtà tal-hardware attiv</string>
+    <string name="security_strongbox_unavailable">Mhux disponibbli fuq dan l-apparat</string>
+    <string name="security_biometric">Awtentikazzjoni bijometrika</string>
+    <string name="security_biometric_required">Meħtieġa għall-ħlasijiet</string>
+    <string name="security_biometric_disabled">Diżattivata</string>
+    <string name="security_biometric_unavailable">Mhux disponibbli</string>
+    <string name="security_export">Esporta ċ-ċavetta privata</string>
+    <string name="security_export_desc">Issejvja ċ-ċavetta tiegħek b\'mod sigur</string>
+    <string name="security_delete">Ħassar il-kartiera</string>
+    <string name="security_delete_desc">Ħassar id-data kollha b\'mod permanenti</string>
+    <string name="security_delete_title">Ħassar il-kartiera</string>
+    <string name="security_delete_warning">Din l-azzjoni hija IRRIVERSIBBLI.</string>
+    <string name="security_delete_warning2">Titlef aċċess għall-assi kollha jekk m\'għandekx backup taċ-ċavetta privata tiegħek.</string>
+    <string name="security_delete_warning3">Kun żgur li esportajt iċ-ċavetta qabel ma tkompli.</string>
+    <string name="security_delete_confirm">Ħassar</string>
+    <string name="security_status_active">Attiv</string>
+    <string name="security_status_warning">Twissija</string>
+    <string name="security_status_na">Mhux applikabbli</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importa kartiera</string>
+    <string name="import_private_key">Ċavetta privata</string>
+    <string name="import_seed_phrase">Frażi ta\' rkupru</string>
+    <string name="import_prompt">Daħħal iċ-ċavetta privata tiegħek:</string>
+    <string name="import_prompt_seed">Daħħal il-frażi ta\' rkupru (12–24 kelma):</string>
+    <string name="import_seed_hint">kelma1 kelma2 kelma3 …</string>
+    <string name="import_button">Importa</string>
+    <string name="import_error_invalid">Ċavetta privata invalida</string>
+    <string name="import_error_invalid_seed">Frażi ta\' rkupru invalida</string>
+    <string name="import_error_encryption">Żball fl-enkrizzjoni</string>
+    <string name="export_title">Ċavetta privata</string>
+    <string name="export_warning">QATT taqsam din iċ-ċavetta. Kulmin għandu kontroll sħiħ fuq l-assi tiegħek.</string>
+    <string name="export_understood">Nifhem</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Sommarju</string>
+    <string name="history_received">Irċevut</string>
+    <string name="history_sent">Mibgħut</string>
+    <string name="history_refunded">Rifużat</string>
+    <string name="history_empty">Ebda tranżazzjonijiet</string>
+    <string name="history_empty_desc">Tranżazzjonijiet fuq %s\nse jidhru hawn</string>
+    <string name="history_payment_received">Ħlas irċevut</string>
+    <string name="history_payment_sent">Ħlas mibgħut</string>
+    <string name="history_refund_sent">Rifużjoni</string>
+    <string name="history_refund_received">Rifużjoni rċevuta</string>
+    <string name="history_status_pending">Pendenti</string>
+    <string name="history_status_confirmed">Ikkonfermat</string>
+    <string name="history_status_failed">Falla</string>
+    <string name="history_status_refunded">Rifużat</string>
+    <string name="history_status_partial">Parzjali</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Tranżazzjoni oriġinali</string>
+    <string name="refund_amount">Ammont</string>
+    <string name="refund_already">Diġà rifużat</string>
+    <string name="refund_available">Disponibbli</string>
+    <string name="refund_recipient">Riċevitur</string>
+    <string name="refund_date">Data</string>
+    <string name="refund_type">Tip ta\' rifużjoni</string>
+    <string name="refund_full">Sħiħ</string>
+    <string name="refund_partial">Parzjali</string>
+    <string name="refund_partial_desc">Speċifika l-ammont</string>
+    <string name="refund_amount_label">Ammont li tirrifuża (%s)</string>
+    <string name="refund_max">Massimu: %1$s %2$s</string>
+    <string name="refund_gas_notice">Int se tħallas għall-gas għal din it-tranżazzjoni</string>
+    <string name="refund_button">Irrifuża %1$s %2$s</string>
+    <string name="refund_processing">Qed tipproċessa r-rifużjoni…</string>
+    <string name="refund_success">Rifużjoni rnexxiet</string>
+    <string name="refund_done">Lest</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">It-Tokens Tiegħek</string>
+    <string name="balance_manage">Immaniġġja</string>
+    <string name="balance_refresh">Aġġorna</string>
+    <string name="balance_loading">Qed jillowdja l-bilanċi…</string>
+    <string name="balance_empty">Ebda tokens</string>
+    <string name="balance_no_wallet_desc">Issettja kartiera fis-Settings\nbiex tara l-bilanċi tiegħek</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tokens Permessi</string>
+    <string name="settings_add_token">Żid Token</string>
+    <string name="add_token_prompt">Daħħal l-indirizz tal-kuntratt tat-token:</string>
+    <string name="add_token_validating">Qed tivvalida t-token…</string>
+    <string name="add_token_button">Żid</string>
+    <string name="delete">Ħassar</string>
+
+    <!-- Common -->
+    <string name="cancel">Ikkanċella</string>
+    <string name="close">Agħlaq</string>
+    <string name="retry">Erġa\' pprova</string>
+    <string name="error">Żball</string>
+    <string name="copy">Ikkopja</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Kartiera mhix konfiggurata</string>
+    <string name="error_device_security">Żball fis-sigurtà tal-apparat</string>
+    <string name="error_auth">Żball fl-awtentikazzjoni</string>
+    <string name="error_unknown">Żball mhux magħruf</string>
+    <string name="error_keystore_unavailable">Keystore mhux disponibbli - xi funzjonijiet mhux se jaħdmu</string>
+    <string name="error_encryption_restart">Żball fl-enkrizzjoni - erġa\' ibda l-app</string>
+    <string name="error_auth_cancelled">Awtentikazzjoni kkanċellata</string>
+    <string name="error_invalid_address">Indirizz invalidu</string>
+    <string name="error_invalid_address_format">Format tal-indirizz invalidu</string>
+    <string name="error_token_already_added">Token diġà miżjud</string>
+    <string name="stealth_spend_sent_tx">Mibgħut! Tx: %s…</string>
+    <string name="token_native">Nattiv</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Il-bilanċ tiegħek</string>
+    <string name="pay_insufficient_balance">Bilanċ insuffiċjenti</string>
+    <string name="pay_need_more">Għandek bżonn %1$s aktar %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Merħba</string>
+    <string name="welcome_sovereignty">Iċ-ċwievet tiegħek.\nL-assi tiegħek.\nIs-sovranità tiegħek.</string>
+    <string name="welcome_desc">L-assi tiegħek MHUMIEX maħżuna f\'din l-app. Jeżistu fuq il-blockchain, kontrollati miċ-ċwievet privati tiegħek.\n\nDin l-app taħżen biss iċ-ċwievet tiegħek b\'mod sigur. Ma nistgħux naċċessaw l-assi tiegħek.\n\nNota: Xi tokens (USDC, USDT) jistgħu jiġu ffriżati mill-emittenti tagħhom. Għal sovranità massima, uża ETH nattiv jew tokens deċentralizzati.</string>
+    <string name="welcome_warning_title">Iċ-ċwievet tiegħek = L-assi tiegħek</string>
+    <string name="welcome_warning_desc">Jekk titlef iċ-ċwievet privati tiegħek jew taqsamhom ma\' xi ħadd, titlef il-kontroll fuq l-assi tiegħek b\'mod permanenti.\n\nM\'hemmx għażla ta\' rkupru. Ebda tim ta\' sapport ma jista\' jgħinek. Din hija n-natura tas-sjieda vera.\n\nŻomm dejjem backup sigur taċ-ċwievet tiegħek.</string>
+    <string name="welcome_opensource">Software open source. Ivverifika, tiddefidax.</string>
+    <string name="welcome_start">Nifhem, ejja nibdew</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Identità tal-Bejjiegħ</string>
+    <string name="settings_merchant_name">Isem tan-Negozju</string>
+    <string name="settings_merchant_name_hint">Il-Kafè Tiegħi</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">ilkafe.eth jew ilkafe.com</string>
+    <string name="settings_merchant_identity_desc">Murija lill-klijenti waqt il-ħlas</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Mod ta\' Privatezza</string>
+    <string name="settings_stealth_desc">Irċievi ħlasijiet f\'indirizzi ta\' darba waħda (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Attivat</string>
+    <string name="settings_stealth_info">Kull ħlas imur għal indirizz uniku li int biss tista\' tonfoq minnu. L-osservaturi ma jistgħux jgħaqqdu l-ħlasijiet man-negozju tiegħek.</string>
+    <string name="stealth_address_label">Mod Stealth Attiv</string>
+    <string name="stealth_payment_note">Il-ħlas se jintbagħat għal indirizz privat</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Indirizz tar-riċevitur</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Kartiera Privata</string>
+    <string name="stealth_wallet_addresses">fuq %d indirizzi stealth</string>
+    <string name="stealth_wallet_privacy_title">L-assi tiegħek huma privati</string>
+    <string name="stealth_wallet_privacy_desc">Dan il-bilanċ mhuwiex marbut mal-kartiera pubblika tiegħek. Onfoq direttament mal-fornituri, exchanges, jew kull fejn - l-identità tan-negozju tiegħek tibqa\' moħbija.</string>
+    <string name="stealth_wallet_send">Ibgħat</string>
+    <string name="stealth_wallet_send_title">Ibgħat mill-Kartiera Privata</string>
+    <string name="stealth_wallet_available">Disponibbli: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Ammont</string>
+    <string name="nav_stealth_wallet">Kartiera Privata</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Indirizzi multipli</string>
+    <string name="stealth_wallet_gas_desc">L-assi tiegħek huma mxerrda fuq %d indirizzi. Nefqa ta\' ammonti kbar tista\' tirrikjedi tranżazzjonijiet multipli, li żżid l-ispejjeż tal-gas.</string>
+    <string name="stealth_wallet_consolidate">Ikkonsolida għall-kartiera prinċipali</string>
+    <string name="stealth_wallet_consolidate_title">Tikkonsolida l-assi?</string>
+    <string name="stealth_wallet_consolidate_warning">Dan se jittrasferixxi l-assi kollha mill-kartiera privata tiegħek għall-indirizz tal-kartiera prinċipali tiegħek.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">TWISSIJA: Dan ikisser il-privatezza. Il-kartiera prinċipali tiegħek se tkun marbuta mal-ħlasijiet kollha li rċivejt.</string>
+    <string name="stealth_wallet_consolidate_benefit">Benefiċċju: Nefqa futura se tirrikjedi tranżazzjoni waħda biss (spejjeż tal-gas aktar baxxi).</string>
+    <string name="stealth_wallet_consolidate_confirm">Ikkonsolida</string>
+    <string name="stealth_wallet_consolidate_success">L-assi ġew ikkonsolidati għall-kartiera prinċipali</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Privatezza tal-Pagatur</string>
+    <string name="settings_payer_privacy_desc">Ħallas minn kontijiet efemeri (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Kull ħlas juża kont uniku. L-indirizz tal-kartiera prinċipali tiegħek mhuwiex viżibbli on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Ċavetta API meħtieġa għall-mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">B\'xejn fuq testnets (bundler pubbliku)</string>
+    <string name="payer_privacy_note">L-indirizz tal-kartiera tiegħek se jkun moħbi</string>
+    <string name="payer_privacy_processing">Qed tipproċessa l-ħlas privat…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Ktieb tal-Indirizzi</string>
+    <string name="address_book_add">Żid Kuntatt</string>
+    <string name="address_book_edit">Editja Kuntatt</string>
+    <string name="address_book_search">Fittex kuntatti…</string>
+    <string name="address_book_empty">Għad m\'hemmx kuntatti</string>
+    <string name="address_book_empty_hint">Żid indirizzi biex tidentifika faċilment\nlil min tħallas jew minn min tirċievi</string>
+    <string name="address_book_no_results">Ebda kuntatti nstabu</string>
+    <string name="address_book_address">Indirizz tal-Kartiera</string>
+    <string name="address_book_name">Isem</string>
+    <string name="address_book_name_hint">eż. Kafè, Mario Vella</string>
+    <string name="address_book_note">Nota (mhux obbligatorja)</string>
+    <string name="address_book_note_hint">eż. Fornitur, Ħabib</string>
+    <string name="address_book_delete_title">Ħassar il-kuntatt?</string>
+    <string name="address_book_delete_message">Tneħħi %s mill-ktieb tal-indirizzi tiegħek?</string>
+    <string name="address_book_saved">Kuntatt issejvjat</string>
+    <string name="address_book_unknown">Mhux magħruf</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mod Sempliċi</string>
+    <string name="settings_simple_mode_desc">Faċli biex tuża, għażliet bażiċi</string>
+    <string name="settings_advanced_mode">Mod Avvanzat</string>
+    <string name="settings_advanced_mode_desc">Għażliet kripto għal utenti esperti</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Aqsam il-Kuntatt</string>
+    <string name="share_contact_title">Aqsam l-Indirizz Tiegħek</string>
+    <string name="share_contact_ready">Lest biex taqsam</string>
+    <string name="share_contact_ready_desc">Ressaq it-telefon lejn\napparat CleanSky ieħor</string>
+    <string name="share_contact_received">Kuntatt irċevut!</string>
+    <string name="share_contact_received_name">%s irid jikkonnettja</string>
+    <string name="share_contact_save">Issejvja fil-kuntatti</string>
+    <string name="share_contact_your_name">Ismek (mhux obbligatorju)</string>
+    <string name="share_contact_your_name_hint">Kif se jarawek l-oħrajn</string>
+    <string name="share_contact_mutual">Skambju ta\' kuntatti</string>
+    <string name="share_contact_mutual_desc">Iż-żewġ apparati jaqsmu l-indirizzi simultanjament</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Ibgħat</string>
+    <string name="send_title">Ibgħat lil-Kuntatt</string>
+    <string name="send_select_contact">Agħżel riċevitur</string>
+    <string name="send_no_contacts">Għad m\'hemmx kuntatti</string>
+    <string name="send_no_contacts_hint">Żid kuntatti permezz ta\' NFC jew manwalment\nbiex tibgħatilhom ħlasijiet</string>
+    <string name="send_amount">Ammont</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Għal: %s</string>
+    <string name="send_confirm">Ibgħat %1$s %2$s</string>
+    <string name="send_processing">Qed tibgħat…</string>
+    <string name="send_success">Mibgħut b\'suċċess!</string>
+    <string name="send_success_desc">%1$s %2$s mibgħut lil %3$s</string>
+    <string name="send_error">Falla l-ibgħat</string>
+    <string name="send_enter_amount">Daħħal ammont</string>
+    <string name="send_new">Trasferiment ġdid</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Kollha</string>
+    <string name="history_filter_received">Irċevut</string>
+    <string name="history_filter_sent">Mibgħut</string>
+    <string name="history_filter_contact">Kuntatt</string>
+    <string name="history_filter_by_contact">Iffiltra bil-kuntatt</string>
+    <string name="history_show_all">Uri kollha</string>
+    <string name="history_no_results">Ebda tranżazzjonijiet li jaqblu mal-filtru</string>
+    <string name="history_add_contact">Żid mal-kuntatti</string>
+    <string name="history_edit_contact">Editja l-kuntatt</string>
+    <string name="history_from">Minn</string>
+    <string name="history_to">Għal</string>
+    <string name="history_date">Data</string>
+    <string name="history_tx_hash">Tranżazzjoni</string>
+    <string name="history_refund">Rifużjoni</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Ammont żgħir wisq</string>
+    <string name="scam_amount_large_warning">Ammont kbir</string>
+    <string name="scam_amount_large_desc">Qed tibgħat %1$s %2$s.\nJekk jogħġbok ikkonferma li dan huwa korrett.</string>
+    <string name="scam_confirm_large">Ikkonferma trasferiment kbir</string>
+    <string name="scam_dust_attack_warning">Talba suspettuża</string>
+    <string name="scam_dust_attack_desc">Dan huwa ammont żgħir ħafna (%1$s %2$s). Attakki tat-trab jużaw ħlasijiet żgħar biex isegwu l-kartieri. Irrifjuta jekk mhux mistenni.</string>
+    <string name="scam_receive_large_warning">Talba għal ħlas kbir</string>
+    <string name="scam_receive_large_desc">Din it-talba hija għal %1$s %2$s. Ivverifika li dan huwa l-ammont korrett qabel ma tħallas.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Irċievi biss</string>
+    <string name="settings_mode_receive_only">Irċievi</string>
+    <string name="settings_mode_receive_only_desc">L-ebda ċavetta privata</string>
+    <string name="settings_receive_only">Konfigurazzjoni ta\' riċeviment biss</string>
+    <string name="settings_escrow_address">Indirizz Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">L-ebda Escrow ikkonfigurat</string>
+    <string name="receive_only_no_escrow_desc">Ikkonfigura l-indirizz escrow u l-API key fis-Settings</string>
+    <string name="receive_only_security_notice">L-ebda ċavetta privata fuq dan l-apparat. Sigur jekk jinsteraq.</string>
+    <string name="receive_only_api_key_required">API key meħtieġa għall-eżekuzzjoni tar-relayer</string>
+</resources>

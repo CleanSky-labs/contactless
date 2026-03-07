@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky بدون تماس</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">پرداخت</string>
+    <string name="nav_collect">دریافت</string>
+    <string name="nav_settings">تنظیمات</string>
+    <string name="nav_history">تاریخچه</string>
+    <string name="nav_refund">بازپرداخت</string>
+    <string name="nav_balance">موجودی</string>
+    <string name="nav_back">بازگشت</string>
+
+    <!-- Common actions -->
+    <string name="back">بازگشت</string>
+    <string name="save">ذخیره</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">کیف پول موجود نیست</string>
+    <string name="pay_no_wallet_desc">برای پرداخت\nکیف پول را در تنظیمات راه‌اندازی کنید</string>
+    <string name="pay_ready">آماده پرداخت</string>
+    <string name="pay_ready_desc">گوشی را به دستگاه\nفروشنده نزدیک کنید</string>
+    <string name="pay_request_title">درخواست پرداخت</string>
+    <string name="pay_network">شبکه: %s</string>
+    <string name="pay_expired">درخواست منقضی شده</string>
+    <string name="pay_cancel">لغو</string>
+    <string name="pay_confirm">پرداخت</string>
+    <string name="pay_new">پرداخت جدید</string>
+    <string name="pay_signing">در حال امضای تراکنش…</string>
+    <string name="pay_tx_signed">تراکنش امضا شد</string>
+    <string name="pay_tx_signed_desc">برای ارسال گوشی را\nبه فروشنده نزدیک کنید</string>
+    <string name="pay_authenticating">در حال احراز هویت…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">کیف پول موجود نیست</string>
+    <string name="collect_no_wallet_desc">برای دریافت پرداخت\nکیف پول را در تنظیمات راه‌اندازی کنید</string>
+    <string name="collect_amount">مبلغ دریافتی</string>
+    <string name="collect_button">دریافت</string>
+    <string name="collect_waiting">در انتظار پرداخت</string>
+    <string name="collect_waiting_desc">از مشتری بخواهید\nگوشی را نزدیک کند</string>
+    <string name="collect_new">دریافت جدید</string>
+    <string name="collect_processing">در حال پردازش پرداخت…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">حالت عملیات</string>
+    <string name="settings_mode_pay">پرداخت</string>
+    <string name="settings_mode_pay_desc">انجام پرداخت</string>
+    <string name="settings_mode_collect">دریافت</string>
+    <string name="settings_mode_collect_desc">دریافت پرداخت</string>
+    <string name="settings_wallet">کیف پول</string>
+    <string name="settings_wallet_address">آدرس</string>
+    <string name="settings_wallet_none">کیف پول پیکربندی نشده</string>
+    <string name="settings_wallet_create">ایجاد</string>
+    <string name="settings_wallet_import">وارد کردن</string>
+    <string name="settings_network">شبکه بلاکچین</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">اجرای تراکنش</string>
+    <string name="settings_exec_direct">مستقیم</string>
+    <string name="settings_exec_direct_desc">شما گس پرداخت می‌کنید</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">گس حمایت‌شده از طریق ریلیر</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 با Paymaster</string>
+    <string name="settings_api_key">کلید API</string>
+    <string name="settings_save">ذخیره و بازگشت</string>
+    <string name="settings_not_available">در این شبکه موجود نیست</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_system">پیش‌فرض سیستم</string>
+    <string name="collect_select_currency">انتخاب ارز</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">امنیت</string>
+    <string name="security_encryption">رمزنگاری کلیدها</string>
+    <string name="security_encryption_desc">AES-256-GCM با Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">ماژول امنیتی سخت‌افزاری فعال</string>
+    <string name="security_strongbox_unavailable">در این دستگاه موجود نیست</string>
+    <string name="security_biometric">احراز هویت بیومتریک</string>
+    <string name="security_biometric_required">برای پرداخت‌ها الزامی است</string>
+    <string name="security_biometric_disabled">غیرفعال</string>
+    <string name="security_biometric_unavailable">موجود نیست</string>
+    <string name="security_export">صدور کلید خصوصی</string>
+    <string name="security_export_desc">کلید خود را به صورت امن ذخیره کنید</string>
+    <string name="security_delete">حذف کیف پول</string>
+    <string name="security_delete_desc">حذف دائمی تمام داده‌ها</string>
+    <string name="security_delete_title">حذف کیف پول</string>
+    <string name="security_delete_warning">این عمل برگشت‌ناپذیر است.</string>
+    <string name="security_delete_warning2">اگر نسخه پشتیبان کلید خصوصی ندارید، دسترسی به تمام دارایی‌ها را از دست خواهید داد.</string>
+    <string name="security_delete_warning3">قبل از ادامه مطمئن شوید که کلید را صادر کرده‌اید.</string>
+    <string name="security_delete_confirm">حذف</string>
+    <string name="security_status_active">فعال</string>
+    <string name="security_status_warning">هشدار</string>
+    <string name="security_status_na">قابل اعمال نیست</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">وارد کردن کیف پول</string>
+    <string name="import_private_key">کلید خصوصی</string>
+    <string name="import_seed_phrase">عبارت بازیابی</string>
+    <string name="import_prompt">کلید خصوصی خود را وارد کنید:</string>
+    <string name="import_prompt_seed">عبارت بازیابی خود را وارد کنید (۱۲–۲۴ کلمه):</string>
+    <string name="import_seed_hint">کلمه۱ کلمه۲ کلمه۳ …</string>
+    <string name="import_button">وارد کردن</string>
+    <string name="import_error_invalid">کلید خصوصی نامعتبر</string>
+    <string name="import_error_invalid_seed">عبارت بازیابی نامعتبر</string>
+    <string name="import_error_encryption">خطای رمزنگاری</string>
+    <string name="export_title">کلید خصوصی</string>
+    <string name="export_warning">هرگز این کلید را به اشتراک نگذارید. هر کسی که آن را داشته باشد کنترل کامل دارایی‌های شما را دارد.</string>
+    <string name="export_understood">متوجه شدم</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">خلاصه</string>
+    <string name="history_received">دریافت شده</string>
+    <string name="history_sent">ارسال شده</string>
+    <string name="history_refunded">بازپرداخت شده</string>
+    <string name="history_empty">تراکنشی وجود ندارد</string>
+    <string name="history_empty_desc">تراکنش‌ها در %s\nاینجا نمایش داده می‌شوند</string>
+    <string name="history_payment_received">پرداخت دریافت شد</string>
+    <string name="history_payment_sent">پرداخت ارسال شد</string>
+    <string name="history_refund_sent">بازپرداخت</string>
+    <string name="history_refund_received">بازپرداخت دریافت شد</string>
+    <string name="history_status_pending">در انتظار</string>
+    <string name="history_status_confirmed">تأیید شده</string>
+    <string name="history_status_failed">ناموفق</string>
+    <string name="history_status_refunded">بازپرداخت شده</string>
+    <string name="history_status_partial">جزئی</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">تراکنش اصلی</string>
+    <string name="refund_amount">مبلغ</string>
+    <string name="refund_already">قبلاً بازپرداخت شده</string>
+    <string name="refund_available">موجود</string>
+    <string name="refund_recipient">گیرنده</string>
+    <string name="refund_date">تاریخ</string>
+    <string name="refund_type">نوع بازپرداخت</string>
+    <string name="refund_full">کامل</string>
+    <string name="refund_partial">جزئی</string>
+    <string name="refund_partial_desc">مبلغ را مشخص کنید</string>
+    <string name="refund_amount_label">مبلغ بازپرداخت (%s)</string>
+    <string name="refund_max">حداکثر: %1$s %2$s</string>
+    <string name="refund_gas_notice">شما گس این تراکنش را پرداخت خواهید کرد</string>
+    <string name="refund_button">بازپرداخت %1$s %2$s</string>
+    <string name="refund_processing">در حال پردازش بازپرداخت…</string>
+    <string name="refund_success">بازپرداخت موفق</string>
+    <string name="refund_done">انجام شد</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">توکن‌های شما</string>
+    <string name="balance_manage">مدیریت</string>
+    <string name="balance_refresh">بازخوانی</string>
+    <string name="balance_loading">در حال بارگذاری موجودی…</string>
+    <string name="balance_empty">توکنی وجود ندارد</string>
+    <string name="balance_no_wallet_desc">برای مشاهده موجودی\nکیف پول را در تنظیمات راه‌اندازی کنید</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">توکن‌های مجاز</string>
+    <string name="settings_add_token">افزودن توکن</string>
+    <string name="add_token_prompt">آدرس قرارداد توکن را وارد کنید:</string>
+    <string name="add_token_validating">در حال اعتبارسنجی توکن…</string>
+    <string name="add_token_button">افزودن</string>
+    <string name="delete">حذف</string>
+
+    <!-- Common -->
+    <string name="cancel">لغو</string>
+    <string name="close">بستن</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="error">خطا</string>
+    <string name="copy">کپی</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">کیف پول پیکربندی نشده</string>
+    <string name="error_device_security">خطای امنیتی دستگاه</string>
+    <string name="error_auth">خطای احراز هویت</string>
+    <string name="error_unknown">خطای ناشناخته</string>
+    <string name="error_keystore_unavailable">کیستور در دسترس نیست - برخی عملکردها کار نخواهند کرد</string>
+    <string name="error_encryption_restart">خطای رمزنگاری - برنامه را مجدداً راه‌اندازی کنید</string>
+    <string name="error_auth_cancelled">احراز هویت لغو شد</string>
+    <string name="error_invalid_address">آدرس نامعتبر</string>
+    <string name="error_invalid_address_format">فرمت آدرس نامعتبر</string>
+    <string name="error_token_already_added">توکن قبلاً اضافه شده است</string>
+    <string name="stealth_spend_sent_tx">ارسال شد! Tx: %s…</string>
+    <string name="token_native">بومی</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">موجودی شما</string>
+    <string name="pay_insufficient_balance">موجودی ناکافی</string>
+    <string name="pay_need_more">شما به %1$s بیشتر %2$s نیاز دارید</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">خوش آمدید</string>
+    <string name="welcome_sovereignty">کلیدهای شما.\nدارایی‌های شما.\nحاکمیت شما.</string>
+    <string name="welcome_desc">دارایی‌های شما در این برنامه ذخیره نمی‌شوند. آنها در بلاکچین وجود دارند و توسط کلیدهای خصوصی شما کنترل می‌شوند.\n\nاین برنامه فقط کلیدهای شما را به صورت امن ذخیره می‌کند. ما به دارایی‌های شما دسترسی نداریم.\n\nتوجه: برخی توکن‌ها (USDC، USDT) می‌توانند توسط صادرکنندگان خود مسدود شوند. برای حداکثر حاکمیت، از ETH بومی یا توکن‌های غیرمتمرکز استفاده کنید.</string>
+    <string name="welcome_warning_title">کلیدهای شما = دارایی‌های شما</string>
+    <string name="welcome_warning_desc">اگر کلیدهای خصوصی خود را گم کنید یا با کسی به اشتراک بگذارید، کنترل دارایی‌های خود را برای همیشه از دست خواهید داد.\n\nهیچ گزینه بازیابی وجود ندارد. هیچ تیم پشتیبانی نمی‌تواند کمک کند. این ماهیت مالکیت واقعی است.\n\nهمیشه یک نسخه پشتیبان امن از کلیدهای خود نگه دارید.</string>
+    <string name="welcome_opensource">نرم‌افزار متن‌باز. تأیید کنید، اعتماد نکنید.</string>
+    <string name="welcome_start">متوجه شدم، شروع کنیم</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">هویت فروشنده</string>
+    <string name="settings_merchant_name">نام کسب‌وکار</string>
+    <string name="settings_merchant_name_hint">کافی‌شاپ من</string>
+    <string name="settings_merchant_domain">دامنه / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth یا mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">در هنگام پرداخت به مشتریان نشان داده می‌شود</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">حالت حریم خصوصی</string>
+    <string name="settings_stealth_desc">دریافت پرداخت‌ها به آدرس‌های یکبار مصرف (EIP-5564)</string>
+    <string name="settings_stealth_enabled">فعال</string>
+    <string name="settings_stealth_info">هر پرداخت به آدرس منحصربه‌فردی می‌رود که فقط شما می‌توانید خرج کنید. ناظران نمی‌توانند پرداخت‌ها را به کسب‌وکار شما مرتبط کنند.</string>
+    <string name="stealth_address_label">حالت استلث فعال</string>
+    <string name="stealth_payment_note">پرداخت به آدرس خصوصی ارسال خواهد شد</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">آدرس گیرنده</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">کیف پول خصوصی</string>
+    <string name="stealth_wallet_addresses">در %d آدرس استلث</string>
+    <string name="stealth_wallet_privacy_title">وجوه شما خصوصی است</string>
+    <string name="stealth_wallet_privacy_desc">این موجودی به کیف پول عمومی شما مرتبط نیست. مستقیماً به تأمین‌کنندگان، صرافی‌ها یا هر جایی خرج کنید - هویت کسب‌وکار شما پنهان می‌ماند.</string>
+    <string name="stealth_wallet_send">ارسال</string>
+    <string name="stealth_wallet_send_title">ارسال از کیف پول خصوصی</string>
+    <string name="stealth_wallet_available">موجود: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">مبلغ</string>
+    <string name="nav_stealth_wallet">کیف پول خصوصی</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">آدرس‌های متعدد</string>
+    <string name="stealth_wallet_gas_desc">وجوه شما در %d آدرس پخش شده است. خرج مبالغ بزرگ ممکن است به چندین تراکنش نیاز داشته باشد که هزینه گس را افزایش می‌دهد.</string>
+    <string name="stealth_wallet_consolidate">ادغام به کیف پول اصلی</string>
+    <string name="stealth_wallet_consolidate_title">وجوه ادغام شود؟</string>
+    <string name="stealth_wallet_consolidate_warning">این تمام وجوه را از کیف پول خصوصی شما به آدرس کیف پول اصلی شما منتقل می‌کند.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">هشدار: این حریم خصوصی را نقض می‌کند. کیف پول اصلی شما به تمام پرداخت‌های دریافتی مرتبط خواهد شد.</string>
+    <string name="stealth_wallet_consolidate_benefit">مزیت: خرج‌های آینده فقط به یک تراکنش نیاز دارند (هزینه گس کمتر).</string>
+    <string name="stealth_wallet_consolidate_confirm">ادغام</string>
+    <string name="stealth_wallet_consolidate_success">وجوه به کیف پول اصلی ادغام شد</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">حریم خصوصی پرداخت‌کننده</string>
+    <string name="settings_payer_privacy_desc">پرداخت از حساب‌های موقت (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">هر پرداخت از یک حساب منحصربه‌فرد استفاده می‌کند. آدرس کیف پول اصلی شما در زنجیره قابل مشاهده نیست.</string>
+    <string name="settings_payer_privacy_requires_api">کلید API برای شبکه اصلی لازم است</string>
+    <string name="settings_payer_privacy_public_bundler">رایگان در شبکه‌های آزمایشی (بندلر عمومی)</string>
+    <string name="payer_privacy_note">آدرس کیف پول شما پنهان خواهد شد</string>
+    <string name="payer_privacy_processing">در حال پردازش پرداخت خصوصی…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">دفترچه آدرس</string>
+    <string name="address_book_add">افزودن مخاطب</string>
+    <string name="address_book_edit">ویرایش مخاطب</string>
+    <string name="address_book_search">جستجوی مخاطبین…</string>
+    <string name="address_book_empty">هنوز مخاطبی وجود ندارد</string>
+    <string name="address_book_empty_hint">آدرس‌ها را اضافه کنید تا به راحتی شناسایی کنید\nبه چه کسی پرداخت می‌کنید یا از چه کسی دریافت می‌کنید</string>
+    <string name="address_book_no_results">مخاطبی یافت نشد</string>
+    <string name="address_book_address">آدرس کیف پول</string>
+    <string name="address_book_name">نام</string>
+    <string name="address_book_name_hint">مثلاً کافی‌شاپ، علی</string>
+    <string name="address_book_note">یادداشت (اختیاری)</string>
+    <string name="address_book_note_hint">مثلاً تأمین‌کننده، دوست</string>
+    <string name="address_book_delete_title">مخاطب حذف شود؟</string>
+    <string name="address_book_delete_message">%s از دفترچه آدرس شما حذف شود؟</string>
+    <string name="address_book_saved">مخاطب ذخیره شد</string>
+    <string name="address_book_unknown">ناشناس</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">حالت ساده</string>
+    <string name="settings_simple_mode_desc">استفاده آسان، گزینه‌های پایه</string>
+    <string name="settings_advanced_mode">حالت پیشرفته</string>
+    <string name="settings_advanced_mode_desc">گزینه‌های رمزارز برای کاربران حرفه‌ای</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">اشتراک مخاطب</string>
+    <string name="share_contact_title">اشتراک آدرس شما</string>
+    <string name="share_contact_ready">آماده اشتراک</string>
+    <string name="share_contact_ready_desc">گوشی خود را به دستگاه\nCleanSky دیگر نزدیک کنید</string>
+    <string name="share_contact_received">مخاطب دریافت شد!</string>
+    <string name="share_contact_received_name">%s می‌خواهد متصل شود</string>
+    <string name="share_contact_save">ذخیره در مخاطبین</string>
+    <string name="share_contact_your_name">نام شما (اختیاری)</string>
+    <string name="share_contact_your_name_hint">دیگران شما را چگونه خواهند دید</string>
+    <string name="share_contact_mutual">تبادل مخاطبین</string>
+    <string name="share_contact_mutual_desc">هر دو دستگاه همزمان آدرس‌ها را به اشتراک می‌گذارند</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ارسال</string>
+    <string name="send_title">ارسال به مخاطب</string>
+    <string name="send_select_contact">انتخاب گیرنده</string>
+    <string name="send_no_contacts">هنوز مخاطبی نیست</string>
+    <string name="send_no_contacts_hint">مخاطبین را از طریق NFC یا دستی اضافه کنید\nتا به آنها پرداخت ارسال کنید</string>
+    <string name="send_amount">مبلغ</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">به: %s</string>
+    <string name="send_confirm">ارسال %1$s %2$s</string>
+    <string name="send_processing">در حال ارسال…</string>
+    <string name="send_success">با موفقیت ارسال شد!</string>
+    <string name="send_success_desc">%1$s %2$s به %3$s ارسال شد</string>
+    <string name="send_error">ارسال ناموفق</string>
+    <string name="send_enter_amount">مبلغ را وارد کنید</string>
+    <string name="send_new">انتقال جدید</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">همه</string>
+    <string name="history_filter_received">دریافت شده</string>
+    <string name="history_filter_sent">ارسال شده</string>
+    <string name="history_filter_contact">مخاطب</string>
+    <string name="history_filter_by_contact">فیلتر بر اساس مخاطب</string>
+    <string name="history_show_all">نمایش همه</string>
+    <string name="history_no_results">تراکنشی با فیلتر مطابقت ندارد</string>
+    <string name="history_add_contact">افزودن به مخاطبین</string>
+    <string name="history_edit_contact">ویرایش مخاطب</string>
+    <string name="history_from">از</string>
+    <string name="history_to">به</string>
+    <string name="history_date">تاریخ</string>
+    <string name="history_tx_hash">تراکنش</string>
+    <string name="history_refund">بازپرداخت</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">مبلغ خیلی کم است</string>
+    <string name="scam_amount_large_warning">مبلغ بزرگ</string>
+    <string name="scam_amount_large_desc">شما در حال ارسال %1$s %2$s هستید.\nلطفاً تأیید کنید که این صحیح است.</string>
+    <string name="scam_confirm_large">تأیید انتقال بزرگ</string>
+    <string name="scam_dust_attack_warning">درخواست مشکوک</string>
+    <string name="scam_dust_attack_desc">این مبلغ بسیار کمی است (%1$s %2$s). حملات داست از پرداخت‌های کوچک برای ردیابی کیف پول‌ها استفاده می‌کنند. اگر غیرمنتظره است رد کنید.</string>
+    <string name="scam_receive_large_warning">درخواست پرداخت بزرگ</string>
+    <string name="scam_receive_large_desc">این درخواست برای %1$s %2$s است. قبل از پرداخت تأیید کنید که این مبلغ صحیح است.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">فقط دریافت</string>
+    <string name="settings_mode_receive_only">دریافت</string>
+    <string name="settings_mode_receive_only_desc">بدون کلید خصوصی</string>
+    <string name="settings_receive_only">پیکربندی فقط دریافت</string>
+    <string name="settings_escrow_address">آدرس Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow پیکربندی نشده</string>
+    <string name="receive_only_no_escrow_desc">آدرس escrow و API key را در تنظیمات پیکربندی کنید</string>
+    <string name="receive_only_security_notice">کلید خصوصی روی این دستگاه نیست. در صورت سرقت امن است.</string>
+    <string name="receive_only_api_key_required">API key برای اجرای relayer لازم است</string>
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Laisi Ifọwọkan</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">San</string>
+    <string name="nav_collect">Gba</string>
+    <string name="nav_settings">Eto</string>
+    <string name="nav_history">Itan</string>
+    <string name="nav_refund">Pada</string>
+    <string name="nav_balance">Iwọntunwọnsi</string>
+    <string name="nav_back">Pada</string>
+
+    <!-- Common actions -->
+    <string name="back">Pada</string>
+    <string name="save">Fi pamọ</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Ko si apamọwọ</string>
+    <string name="pay_no_wallet_desc">Ṣeto apamọwọ ni Eto\nlati ṣe isanwo</string>
+    <string name="pay_ready">Ṣetan lati san</string>
+    <string name="pay_ready_desc">Mu foonu rẹ sunmọ\nẹrọ oniṣowo</string>
+    <string name="pay_request_title">Ibeere isanwo</string>
+    <string name="pay_network">Nẹtiwọọki: %s</string>
+    <string name="pay_expired">Ibeere ti pari</string>
+    <string name="pay_cancel">Fagile</string>
+    <string name="pay_confirm">San</string>
+    <string name="pay_new">Isanwo tuntun</string>
+    <string name="pay_signing">Ṣiṣe ibuwọlu idunadura…</string>
+    <string name="pay_tx_signed">Idunadura ti fowo si</string>
+    <string name="pay_tx_signed_desc">Mu foonu sunmọ\noniṣowo lati fi ranṣẹ</string>
+    <string name="pay_authenticating">Ṣiṣe ijẹrisi…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Ko si apamọwọ</string>
+    <string name="collect_no_wallet_desc">Ṣeto apamọwọ ni Eto\nlati gba isanwo</string>
+    <string name="collect_amount">Iye lati gba</string>
+    <string name="collect_button">Gba</string>
+    <string name="collect_waiting">Nduro fun isanwo</string>
+    <string name="collect_waiting_desc">Beere lọwọ onibara\nlati mu foonu sunmọ</string>
+    <string name="collect_new">Gbigba tuntun</string>
+    <string name="collect_processing">Ṣiṣe isanwo…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Ipo</string>
+    <string name="settings_mode_pay">San</string>
+    <string name="settings_mode_pay_desc">Ṣe awọn isanwo</string>
+    <string name="settings_mode_collect">Gba</string>
+    <string name="settings_mode_collect_desc">Gba awọn isanwo</string>
+    <string name="settings_wallet">Apamọwọ</string>
+    <string name="settings_wallet_address">Adirẹsi</string>
+    <string name="settings_wallet_none">Ko si apamọwọ ti a ṣeto</string>
+    <string name="settings_wallet_create">Ṣẹda</string>
+    <string name="settings_wallet_import">Gbe wọle</string>
+    <string name="settings_network">Nẹtiwọọki blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Iṣiṣẹ idunadura</string>
+    <string name="settings_exec_direct">Taara</string>
+    <string name="settings_exec_direct_desc">O san gaasi</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gaasi ti a ṣe onigbọwọ nipasẹ relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 pẹlu Paymaster</string>
+    <string name="settings_api_key">Bọtini API</string>
+    <string name="settings_save">Fi pamọ ki o pada</string>
+    <string name="settings_not_available">Ko si lori nẹtiwọọki yii</string>
+    <string name="settings_language">Ede</string>
+    <string name="settings_language_system">Ti eto aiyipada</string>
+    <string name="collect_select_currency">Yan owo</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Aabo</string>
+    <string name="security_encryption">Ṣiṣe koodu bọtini</string>
+    <string name="security_encryption_desc">AES-256-GCM pẹlu Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Modulu aabo ohun elo n ṣiṣẹ</string>
+    <string name="security_strongbox_unavailable">Ko si lori ẹrọ yii</string>
+    <string name="security_biometric">Ijẹrisi biometric</string>
+    <string name="security_biometric_required">Nilo fun awọn isanwo</string>
+    <string name="security_biometric_disabled">Ti da duro</string>
+    <string name="security_biometric_unavailable">Ko si</string>
+    <string name="security_export">Gbe bọtini ikọkọ jade</string>
+    <string name="security_export_desc">Fi bọtini rẹ pamọ lailewu</string>
+    <string name="security_delete">Pa apamọwọ rẹ</string>
+    <string name="security_delete_desc">Pa gbogbo data rẹ lailai</string>
+    <string name="security_delete_title">Pa apamọwọ rẹ</string>
+    <string name="security_delete_warning">Iṣe yii ko le yipada.</string>
+    <string name="security_delete_warning2">Iwọ yoo padanu iwọle si gbogbo ohun-ini ti o ko ba ni afẹyinti ti bọtini ikọkọ.</string>
+    <string name="security_delete_warning3">Rii daju pe o ti gbe bọtini jade ṣaaju ki o to tẹsiwaju.</string>
+    <string name="security_delete_confirm">Pa</string>
+    <string name="security_status_active">Nṣiṣẹ</string>
+    <string name="security_status_warning">Ikilọ</string>
+    <string name="security_status_na">Ko kan</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Gbe apamọwọ wọle</string>
+    <string name="import_private_key">Bọtini ikọkọ</string>
+    <string name="import_seed_phrase">Gbolohun irugbin</string>
+    <string name="import_prompt">Tẹ bọtini ikọkọ rẹ:</string>
+    <string name="import_prompt_seed">Tẹ gbolohun irugbin rẹ (ọrọ 12–24):</string>
+    <string name="import_seed_hint">ọrọ1 ọrọ2 ọrọ3 …</string>
+    <string name="import_button">Gbe wọle</string>
+    <string name="import_error_invalid">Bọtini ikọkọ ti ko tọ</string>
+    <string name="import_error_invalid_seed">Gbolohun irugbin ti ko tọ</string>
+    <string name="import_error_encryption">Aṣiṣe ṣiṣe koodu</string>
+    <string name="export_title">Bọtini ikọkọ</string>
+    <string name="export_warning">Maṣe pin bọtini yii rara. Ẹnikẹni ti o ni i ni iṣakoso ni kikun lori ohun-ini rẹ.</string>
+    <string name="export_understood">Mo loye</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Akopọ</string>
+    <string name="history_received">Ti gba</string>
+    <string name="history_sent">Ti ranṣẹ</string>
+    <string name="history_refunded">Ti da pada</string>
+    <string name="history_empty">Ko si awọn idunadura</string>
+    <string name="history_empty_desc">Awọn idunadura lori %s\nyoo han nibi</string>
+    <string name="history_payment_received">Isanwo ti gba</string>
+    <string name="history_payment_sent">Isanwo ti ranṣẹ</string>
+    <string name="history_refund_sent">Idapadabọ</string>
+    <string name="history_refund_received">Idapadabọ ti gba</string>
+    <string name="history_status_pending">Nduro</string>
+    <string name="history_status_confirmed">Ti jẹrisi</string>
+    <string name="history_status_failed">Ko ṣe</string>
+    <string name="history_status_refunded">Ti da pada</string>
+    <string name="history_status_partial">Apakan</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Idunadura atilẹba</string>
+    <string name="refund_amount">Iye</string>
+    <string name="refund_already">Ti da pada tẹlẹ</string>
+    <string name="refund_available">Wa</string>
+    <string name="refund_recipient">Olugba</string>
+    <string name="refund_date">Ọjọ</string>
+    <string name="refund_type">Iru idapadabọ</string>
+    <string name="refund_full">Ni kikun</string>
+    <string name="refund_partial">Apakan</string>
+    <string name="refund_partial_desc">Sọ iye</string>
+    <string name="refund_amount_label">Iye idapadabọ (%s)</string>
+    <string name="refund_max">Ti o pọju: %1$s %2$s</string>
+    <string name="refund_gas_notice">Iwọ yoo san gaasi fun idunadura yii</string>
+    <string name="refund_button">Da pada %1$s %2$s</string>
+    <string name="refund_processing">Ṣiṣe idapadabọ…</string>
+    <string name="refund_success">Idapadabọ ti ṣaṣeyọri</string>
+    <string name="refund_done">Ti pari</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Awọn token rẹ</string>
+    <string name="balance_manage">Ṣakoso</string>
+    <string name="balance_refresh">Tunṣe</string>
+    <string name="balance_loading">Ngba iwọntunwọnsi…</string>
+    <string name="balance_empty">Ko si token</string>
+    <string name="balance_no_wallet_desc">Ṣeto apamọwọ ni Eto\nlati wo iwọntunwọnsi rẹ</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Awọn token ti a gba laaye</string>
+    <string name="settings_add_token">Fi token kun</string>
+    <string name="add_token_prompt">Tẹ adirẹsi adehun token:</string>
+    <string name="add_token_validating">Nṣayẹwo token…</string>
+    <string name="add_token_button">Fi kun</string>
+    <string name="delete">Pa</string>
+
+    <!-- Common -->
+    <string name="cancel">Fagile</string>
+    <string name="close">Pa</string>
+    <string name="retry">Gbiyanju lẹẹkansi</string>
+    <string name="error">Aṣiṣe</string>
+    <string name="copy">Daakọ</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Ko si apamọwọ ti a ṣeto</string>
+    <string name="error_device_security">Aṣiṣe aabo ẹrọ</string>
+    <string name="error_auth">Aṣiṣe ijẹrisi</string>
+    <string name="error_unknown">Aṣiṣe ti a ko mọ</string>
+    <string name="error_keystore_unavailable">Ile itọju bọtini ko si - diẹ ninu awọn iṣẹ kii yoo ṣiṣẹ</string>
+    <string name="error_encryption_restart">Encryption error - restart the app</string>
+    <string name="error_auth_cancelled">Authentication cancelled</string>
+    <string name="error_invalid_address">Invalid address</string>
+    <string name="error_invalid_address_format">Invalid address format</string>
+    <string name="error_token_already_added">Token already added</string>
+    <string name="stealth_spend_sent_tx">Sent! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Iwọntunwọnsi rẹ</string>
+    <string name="pay_insufficient_balance">Iwọntunwọnsi ko to</string>
+    <string name="pay_need_more">O nilo %1$s diẹ sii %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Kaabo</string>
+    <string name="welcome_sovereignty">Awọn bọtini rẹ.\nOwó rẹ.\nIjọba tirẹ.</string>
+    <string name="welcome_desc">Owó rẹ ko wa ninu app yii. Wọn wa lori blockchain, labẹ iṣakoso awọn bọtini ikọkọ rẹ.\n\nApp yii nikan tọju awọn bọtini rẹ lailewu. A ko le wọle si owó rẹ.\n\nAkiyesi: Awọn token kan (USDC, USDT) le di nipasẹ awọn oluṣe wọn. Fun ijọba ti o ga julọ, lo ETH abinibi tabi awọn token ti o pin.</string>
+    <string name="welcome_warning_title">Awọn bọtini rẹ = Owó rẹ</string>
+    <string name="welcome_warning_desc">Ti o ba padanu awọn bọtini ikọkọ rẹ tabi pin wọn pẹlu ẹnikẹni, o padanu iṣakoso owó rẹ lailai.\n\nKo si aṣayan imularada. Ko si ẹgbẹ atilẹyin le ṣe iranlọwọ fun ọ. Eyi ni iseda nini tootọ.\n\nNigbagbogbo tọju afẹyinti aabo ti awọn bọtini rẹ.</string>
+    <string name="welcome_opensource">Sọfitiwia orisun-ìmọ. Ṣayẹwo, maṣe gbagbọ nikan.</string>
+    <string name="welcome_start">Mo loye, jẹ ki a bẹrẹ</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Idanimọ oniṣowo</string>
+    <string name="settings_merchant_name">Orukọ iṣowo</string>
+    <string name="settings_merchant_name_hint">Ile Kofi Mi</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth tabi mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Ti han si awọn onibara lakoko isanwo</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Ipo ikọkọ</string>
+    <string name="settings_stealth_desc">Gba awọn isanwo si awọn adirẹsi ẹẹkan (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Ti mu ṣiṣẹ</string>
+    <string name="settings_stealth_info">Isanwo kọọkan lọ si adirẹsi alailẹgbẹ ti iwọ nikan le na. Awọn oluwoye ko le so awọn isanwo pọ mọ iṣowo rẹ.</string>
+    <string name="stealth_address_label">Ipo ikọkọ nṣiṣẹ</string>
+    <string name="stealth_payment_note">Isanwo yoo ranṣẹ si adirẹsi ikọkọ</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adirẹsi olugba</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Apamọwọ ikọkọ</string>
+    <string name="stealth_wallet_addresses">ni adirẹsi ikọkọ %d</string>
+    <string name="stealth_wallet_privacy_title">Owó rẹ jẹ ikọkọ</string>
+    <string name="stealth_wallet_privacy_desc">Iwọntunwọnsi yii ko ni asopọ pẹlu apamọwọ gbangba rẹ. Na taara si awọn olupese, paṣipaarọ, tabi ibikibi - idanimọ iṣowo rẹ wa ni ipamọ.</string>
+    <string name="stealth_wallet_send">Fi ranṣẹ</string>
+    <string name="stealth_wallet_send_title">Fi ranṣẹ lati Apamọwọ Ikọkọ</string>
+    <string name="stealth_wallet_available">Wa: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Iye</string>
+    <string name="nav_stealth_wallet">Apamọwọ Ikọkọ</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Ọpọlọpọ adirẹsi</string>
+    <string name="stealth_wallet_gas_desc">Owó rẹ ti tuka kaakiri adirẹsi %d. Nina iye nla le nilo awọn idunadura pupọ, ti o mu iye gaasi pọ si.</string>
+    <string name="stealth_wallet_consolidate">Ṣajọ si apamọwọ akọkọ</string>
+    <string name="stealth_wallet_consolidate_title">Ṣajọ owó?</string>
+    <string name="stealth_wallet_consolidate_warning">Eyi yoo gbe gbogbo owó lati apamọwọ ikọkọ rẹ si adirẹsi apamọwọ akọkọ rẹ.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">IKILỌ: Eyi fọ ikọkọ. Apamọwọ akọkọ rẹ yoo ni asopọ pẹlu gbogbo awọn isanwo ti o gba.</string>
+    <string name="stealth_wallet_consolidate_benefit">Anfani: Nina ojo iwaju yoo nilo idunadura kan nikan (iye gaasi kekere).</string>
+    <string name="stealth_wallet_consolidate_confirm">Ṣajọ</string>
+    <string name="stealth_wallet_consolidate_success">Ti ṣajọ owó si apamọwọ akọkọ</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Ikọkọ olusan</string>
+    <string name="settings_payer_privacy_desc">San lati awọn akanti fun igba diẹ (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Isanwo kọọkan lo akanti alailẹgbẹ. Adirẹsi apamọwọ akọkọ rẹ ko han lori chain.</string>
+    <string name="settings_payer_privacy_requires_api">Bọtini API nilo fun nẹtiwọọki akọkọ</string>
+    <string name="settings_payer_privacy_public_bundler">Ọfẹ lori awọn nẹtiwọọki idanwo (bundler gbangba)</string>
+    <string name="payer_privacy_note">Adirẹsi apamọwọ rẹ yoo fi pamọ</string>
+    <string name="payer_privacy_processing">Nṣe isanwo ikọkọ…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Iwe adirẹsi</string>
+    <string name="address_book_add">Fi olubasọrọ kun</string>
+    <string name="address_book_edit">Ṣatunkọ olubasọrọ</string>
+    <string name="address_book_search">Wa awọn olubasọrọ…</string>
+    <string name="address_book_empty">Ko si awọn olubasọrọ sibẹsibẹ</string>
+    <string name="address_book_empty_hint">Fi awọn adirẹsi kun lati mọ ni irọrun\ntani o san tabi gba lọwọ</string>
+    <string name="address_book_no_results">Ko ri awọn olubasọrọ</string>
+    <string name="address_book_address">Adirẹsi apamọwọ</string>
+    <string name="address_book_name">Orukọ</string>
+    <string name="address_book_name_hint">bii Ile Kofi, John Doe</string>
+    <string name="address_book_note">Akọsilẹ (aṣayan)</string>
+    <string name="address_book_note_hint">bii Olupese, Ọrẹ</string>
+    <string name="address_book_delete_title">Pa olubasọrọ?</string>
+    <string name="address_book_delete_message">Yọ %s kuro ninu iwe adirẹsi rẹ?</string>
+    <string name="address_book_saved">Ti fipamọ olubasọrọ</string>
+    <string name="address_book_unknown">Aimọ</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Ipo irọrun</string>
+    <string name="settings_simple_mode_desc">Rọrun lati lo, awọn aṣayan ipilẹ</string>
+    <string name="settings_advanced_mode">Ipo ilọsiwaju</string>
+    <string name="settings_advanced_mode_desc">Awọn aṣayan crypto fun awọn olumulo agbara</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Pin Olubasọrọ</string>
+    <string name="share_contact_title">Pin Adirẹsi Rẹ</string>
+    <string name="share_contact_ready">Ṣetan lati pin</string>
+    <string name="share_contact_ready_desc">Mu foonu rẹ sunmọ\nẹrọ CleanSky miiran</string>
+    <string name="share_contact_received">Olubasọrọ ti gba!</string>
+    <string name="share_contact_received_name">%s fẹ sopọ</string>
+    <string name="share_contact_save">Fi pamọ si awọn olubasọrọ</string>
+    <string name="share_contact_your_name">Orukọ rẹ (aṣayan)</string>
+    <string name="share_contact_your_name_hint">Bi awọn ẹlomiran yoo ṣe ri ọ</string>
+    <string name="share_contact_mutual">Paarọ awọn olubasọrọ</string>
+    <string name="share_contact_mutual_desc">Awọn ẹrọ mejeeji pin adirẹsi ni akoko kanna</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Fi ranṣẹ</string>
+    <string name="send_title">Fi ranṣẹ si Olubasọrọ</string>
+    <string name="send_select_contact">Yan olugba</string>
+    <string name="send_no_contacts">Ko si awọn olubasọrọ sibẹsibẹ</string>
+    <string name="send_no_contacts_hint">Fi awọn olubasọrọ kun nipasẹ NFC tabi ni ọwọ\nlati fi isanwo ranṣẹ si wọn</string>
+    <string name="send_amount">Iye</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Si: %s</string>
+    <string name="send_confirm">Fi %1$s %2$s ranṣẹ</string>
+    <string name="send_processing">Nfi ranṣẹ…</string>
+    <string name="send_success">Ti ranṣẹ ni aṣeyọri!</string>
+    <string name="send_success_desc">%1$s %2$s ti ranṣẹ si %3$s</string>
+    <string name="send_error">Firanṣẹ kuna</string>
+    <string name="send_enter_amount">Tẹ iye kan</string>
+    <string name="send_new">Gbigbe tuntun</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Gbogbo</string>
+    <string name="history_filter_received">Ti gba</string>
+    <string name="history_filter_sent">Ti ranṣẹ</string>
+    <string name="history_filter_contact">Olubasọrọ</string>
+    <string name="history_filter_by_contact">Ṣe àlẹmọ nipasẹ olubasọrọ</string>
+    <string name="history_show_all">Fihan gbogbo</string>
+    <string name="history_no_results">Ko si awọn idunadura ti o baamu àlẹmọ</string>
+    <string name="history_add_contact">Fi kun si awọn olubasọrọ</string>
+    <string name="history_edit_contact">Ṣatunkọ olubasọrọ</string>
+    <string name="history_from">Lati</string>
+    <string name="history_to">Si</string>
+    <string name="history_date">Ọjọ</string>
+    <string name="history_tx_hash">Idunadura</string>
+    <string name="history_refund">Idapadabọ</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Iye kere ju</string>
+    <string name="scam_amount_large_warning">Iye nla</string>
+    <string name="scam_amount_large_desc">O fẹ fi %1$s %2$s ranṣẹ.\nJọwọ jẹrisi pe eyi tọ.</string>
+    <string name="scam_confirm_large">Jẹrisi gbigbe nla</string>
+    <string name="scam_dust_attack_warning">Ibeere ifura</string>
+    <string name="scam_dust_attack_desc">Eyi jẹ iye kekere pupọ (%1$s %2$s). Awọn ikọlu eruku nlo awọn isanwo kekere lati tọpa awọn apamọwọ. Kọ silẹ ti ko ba reti.</string>
+    <string name="scam_receive_large_warning">Ibeere isanwo nla</string>
+    <string name="scam_receive_large_desc">Ibeere yii jẹ fun %1$s %2$s. Jẹrisi pe iye yii tọ ṣaaju ki o to san.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Gbigba nikan</string>
+    <string name="settings_mode_receive_only">Gba</string>
+    <string name="settings_mode_receive_only_desc">Ko si kọkọrọ ikọkọ</string>
+    <string name="settings_receive_only">Eto gbigba nikan</string>
+    <string name="settings_escrow_address">Adirẹsi Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Ko si Escrow ti a ṣeto</string>
+    <string name="receive_only_no_escrow_desc">Ṣeto adirẹsi escrow ati API key ninu Eto</string>
+    <string name="receive_only_security_notice">Ko si kọkọrọ ikọkọ lori ẹrọ yii. Ailewu ti o ba ji.</string>
+    <string name="receive_only_api_key_required">API key nilo fun iṣẹ relayer</string>
+</resources>

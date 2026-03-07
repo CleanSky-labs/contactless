@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Magbayad</string>
+    <string name="nav_collect">Tumanggap</string>
+    <string name="nav_settings">Mga Setting</string>
+    <string name="nav_history">Kasaysayan</string>
+    <string name="nav_refund">Ibalik</string>
+    <string name="nav_balance">Balanse</string>
+    <string name="nav_back">Bumalik</string>
+
+    <!-- Common actions -->
+    <string name="back">Bumalik</string>
+    <string name="save">I-save</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Walang wallet</string>
+    <string name="pay_no_wallet_desc">Mag-set up ng wallet sa Settings\npara makapagbayad</string>
+    <string name="pay_ready">Handa nang magbayad</string>
+    <string name="pay_ready_desc">Ilapit ang telepono sa\ndevice ng merchant</string>
+    <string name="pay_request_title">Kahilingan sa pagbabayad</string>
+    <string name="pay_network">Network: %s</string>
+    <string name="pay_expired">Nag-expire na ang kahilingan</string>
+    <string name="pay_cancel">Kanselahin</string>
+    <string name="pay_confirm">Magbayad</string>
+    <string name="pay_new">Bagong bayad</string>
+    <string name="pay_signing">Pinipirmahan ang transaksyon…</string>
+    <string name="pay_tx_signed">Napirmahan na ang transaksyon</string>
+    <string name="pay_tx_signed_desc">Ilapit ang telepono sa\nmerchant para ipadala</string>
+    <string name="pay_authenticating">Inawtentika…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Walang wallet</string>
+    <string name="collect_no_wallet_desc">Mag-set up ng wallet sa Settings\npara tumanggap ng bayad</string>
+    <string name="collect_amount">Halagang tatanggapin</string>
+    <string name="collect_button">Tumanggap</string>
+    <string name="collect_waiting">Naghihintay ng bayad</string>
+    <string name="collect_waiting_desc">Hilingin sa customer na\nilapit ang telepono</string>
+    <string name="collect_new">Bagong pagtanggap</string>
+    <string name="collect_processing">Pinoproseso ang bayad…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Mode ng operasyon</string>
+    <string name="settings_mode_pay">Magbayad</string>
+    <string name="settings_mode_pay_desc">Gumawa ng mga bayad</string>
+    <string name="settings_mode_collect">Tumanggap</string>
+    <string name="settings_mode_collect_desc">Tumanggap ng mga bayad</string>
+    <string name="settings_wallet">Wallet</string>
+    <string name="settings_wallet_address">Address</string>
+    <string name="settings_wallet_none">Walang naka-configure na wallet</string>
+    <string name="settings_wallet_create">Lumikha</string>
+    <string name="settings_wallet_import">Mag-import</string>
+    <string name="settings_network">Blockchain network</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Pagpapatupad ng transaksyon</string>
+    <string name="settings_exec_direct">Direkta</string>
+    <string name="settings_exec_direct_desc">Ikaw ang magbabayad ng gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsored gas sa pamamagitan ng relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 na may Paymaster</string>
+    <string name="settings_api_key">API key</string>
+    <string name="settings_save">I-save at bumalik</string>
+    <string name="settings_not_available">Hindi available sa network na ito</string>
+    <string name="settings_language">Wika</string>
+    <string name="settings_language_system">Default ng sistema</string>
+    <string name="collect_select_currency">Pumili ng pera</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Seguridad</string>
+    <string name="security_encryption">Pag-encrypt ng key</string>
+    <string name="security_encryption_desc">AES-256-GCM na may Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Aktibo ang hardware security module</string>
+    <string name="security_strongbox_unavailable">Hindi available sa device na ito</string>
+    <string name="security_biometric">Biometric authentication</string>
+    <string name="security_biometric_required">Kinakailangan para sa mga bayad</string>
+    <string name="security_biometric_disabled">Naka-disable</string>
+    <string name="security_biometric_unavailable">Hindi available</string>
+    <string name="security_export">I-export ang private key</string>
+    <string name="security_export_desc">I-save ang iyong key nang ligtas</string>
+    <string name="security_delete">Burahin ang wallet</string>
+    <string name="security_delete_desc">Permanenteng burahin lahat ng data</string>
+    <string name="security_delete_title">Burahin ang wallet</string>
+    <string name="security_delete_warning">Ang aksyon na ito ay HINDI MAIBABALIK.</string>
+    <string name="security_delete_warning2">Mawawala ang access mo sa lahat ng assets kung wala kang backup ng private key.</string>
+    <string name="security_delete_warning3">Tiyakin na na-export mo na ang key bago magpatuloy.</string>
+    <string name="security_delete_confirm">Burahin</string>
+    <string name="security_status_active">Aktibo</string>
+    <string name="security_status_warning">Babala</string>
+    <string name="security_status_na">Hindi naaangkop</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Mag-import ng wallet</string>
+    <string name="import_private_key">Private Key</string>
+    <string name="import_seed_phrase">Seed Phrase</string>
+    <string name="import_prompt">Ilagay ang iyong private key:</string>
+    <string name="import_prompt_seed">Ilagay ang iyong seed phrase (12–24 na salita):</string>
+    <string name="import_seed_hint">salita1 salita2 salita3 …</string>
+    <string name="import_button">Mag-import</string>
+    <string name="import_error_invalid">Invalid na private key</string>
+    <string name="import_error_invalid_seed">Invalid na seed phrase</string>
+    <string name="import_error_encryption">Error sa encryption</string>
+    <string name="export_title">Private key</string>
+    <string name="export_warning">HUWAG KAILANMAN ibahagi ang key na ito. Sinumang may hawak nito ay may ganap na kontrol sa iyong mga assets.</string>
+    <string name="export_understood">Naintindihan ko</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Buod</string>
+    <string name="history_received">Natanggap</string>
+    <string name="history_sent">Naipadala</string>
+    <string name="history_refunded">Naibalik</string>
+    <string name="history_empty">Walang mga transaksyon</string>
+    <string name="history_empty_desc">Ang mga transaksyon sa %s\nay lalabas dito</string>
+    <string name="history_payment_received">Natanggap ang bayad</string>
+    <string name="history_payment_sent">Naipadala ang bayad</string>
+    <string name="history_refund_sent">Pagbabalik</string>
+    <string name="history_refund_received">Natanggap ang pagbabalik</string>
+    <string name="history_status_pending">Nakabinbin</string>
+    <string name="history_status_confirmed">Nakumpirma</string>
+    <string name="history_status_failed">Nabigo</string>
+    <string name="history_status_refunded">Naibalik</string>
+    <string name="history_status_partial">Bahagya</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Orihinal na transaksyon</string>
+    <string name="refund_amount">Halaga</string>
+    <string name="refund_already">Naibalik na</string>
+    <string name="refund_available">Available</string>
+    <string name="refund_recipient">Tatanggap</string>
+    <string name="refund_date">Petsa</string>
+    <string name="refund_type">Uri ng pagbabalik</string>
+    <string name="refund_full">Buo</string>
+    <string name="refund_partial">Bahagya</string>
+    <string name="refund_partial_desc">Tukuyin ang halaga</string>
+    <string name="refund_amount_label">Halaga ng ibabalik (%s)</string>
+    <string name="refund_max">Maximum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Ikaw ang magbabayad ng gas para sa transaksyon na ito</string>
+    <string name="refund_button">Ibalik %1$s %2$s</string>
+    <string name="refund_processing">Pinoproseso ang pagbabalik…</string>
+    <string name="refund_success">Matagumpay ang pagbabalik</string>
+    <string name="refund_done">Tapos na</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Iyong mga Token</string>
+    <string name="balance_manage">Pamahalaan</string>
+    <string name="balance_refresh">I-refresh</string>
+    <string name="balance_loading">Nilo-load ang mga balanse…</string>
+    <string name="balance_empty">Walang token</string>
+    <string name="balance_no_wallet_desc">Mag-set up ng wallet sa Settings\npara makita ang iyong mga balanse</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Pinapayagang mga Token</string>
+    <string name="settings_add_token">Magdagdag ng Token</string>
+    <string name="add_token_prompt">Ilagay ang token contract address:</string>
+    <string name="add_token_validating">Vine-verify ang token…</string>
+    <string name="add_token_button">Idagdag</string>
+    <string name="delete">Burahin</string>
+
+    <!-- Common -->
+    <string name="cancel">Kanselahin</string>
+    <string name="close">Isara</string>
+    <string name="retry">Subukan muli</string>
+    <string name="error">Error</string>
+    <string name="copy">Kopyahin</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Hindi naka-configure ang wallet</string>
+    <string name="error_device_security">Error sa seguridad ng device</string>
+    <string name="error_auth">Error sa authentication</string>
+    <string name="error_unknown">Hindi kilalang error</string>
+    <string name="error_keystore_unavailable">Hindi available ang Keystore - hindi gagana ang ilang function</string>
+    <string name="error_encryption_restart">Error sa encryption - i-restart ang app</string>
+    <string name="error_auth_cancelled">Kinansela ang authentication</string>
+    <string name="error_invalid_address">Invalid na address</string>
+    <string name="error_invalid_address_format">Invalid na format ng address</string>
+    <string name="error_token_already_added">Naidagdag na ang token</string>
+    <string name="stealth_spend_sent_tx">Naipadala! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ang iyong balanse</string>
+    <string name="pay_insufficient_balance">Kulang ang balanse</string>
+    <string name="pay_need_more">Kailangan mo pa ng %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Maligayang pagdating</string>
+    <string name="welcome_sovereignty">Ang iyong mga key.\nAng iyong pondo.\nAng iyong kalayaan.</string>
+    <string name="welcome_desc">Ang iyong pondo ay HINDI nakaimbak sa app na ito. Ito ay nasa blockchain, kontrolado ng iyong private keys.\n\nAng app na ito ay nag-iimbak lamang ng iyong mga key nang ligtas. Hindi namin ma-access ang iyong pondo.\n\nNota: Ang ilang token (USDC, USDT) ay maaaring i-freeze ng kanilang mga issuer. Para sa pinakamataas na kalayaan, gamitin ang native ETH o decentralized na token.</string>
+    <string name="welcome_warning_title">Ang iyong key = Ang iyong pondo</string>
+    <string name="welcome_warning_desc">Kung mawala o ibahagi mo ang iyong private keys sa iba, mawawala ang kontrol mo sa iyong pondo nang permanente.\n\nWalang paraan ng pagbawi. Walang support team ang makakatulong. Ito ang katangian ng tunay na pagmamay-ari.\n\nLaging itago ang secure na backup ng iyong mga key.</string>
+    <string name="welcome_opensource">Open source software. I-verify, huwag basta magtiwala.</string>
+    <string name="welcome_start">Naintindihan ko, simulan na</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Pagkakakilanlan ng Merchant</string>
+    <string name="settings_merchant_name">Pangalan ng Negosyo</string>
+    <string name="settings_merchant_name_hint">Aking Coffee Shop</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth o mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Ipinapakita sa mga customer sa panahon ng pagbabayad</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privacy Mode</string>
+    <string name="settings_stealth_desc">Tumanggap ng mga bayad sa one-time na address (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Naka-enable</string>
+    <string name="settings_stealth_info">Bawat bayad ay napupunta sa natatanging address na ikaw lang ang makakagastos. Hindi makaka-link ng mga bayad sa iyong negosyo ang mga observer.</string>
+    <string name="stealth_address_label">Aktibo ang Stealth Mode</string>
+    <string name="stealth_payment_note">Ang bayad ay ipapadala sa isang pribadong address</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Address ng tatanggap</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Pribadong Wallet</string>
+    <string name="stealth_wallet_addresses">sa %d stealth na address</string>
+    <string name="stealth_wallet_privacy_title">Ang iyong pondo ay pribado</string>
+    <string name="stealth_wallet_privacy_desc">Ang balanse na ito ay hindi konektado sa iyong pampublikong wallet. Direktang gumastos sa mga supplier, exchange, o kahit saan - nananatiling nakatago ang iyong pagkakakilanlan sa negosyo.</string>
+    <string name="stealth_wallet_send">Ipadala</string>
+    <string name="stealth_wallet_send_title">Magpadala mula sa Pribadong Wallet</string>
+    <string name="stealth_wallet_available">Available: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Halaga</string>
+    <string name="nav_stealth_wallet">Pribadong Wallet</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Maramihang address</string>
+    <string name="stealth_wallet_gas_desc">Ang iyong pondo ay nakakalat sa %d address. Ang paggastos ng malalaking halaga ay maaaring mangailangan ng maramihang transaksyon, na nagpapataas ng gas cost.</string>
+    <string name="stealth_wallet_consolidate">Pagsamahin sa pangunahing wallet</string>
+    <string name="stealth_wallet_consolidate_title">Pagsamahin ang pondo?</string>
+    <string name="stealth_wallet_consolidate_warning">Ililipat nito ang lahat ng pondo mula sa iyong pribadong wallet patungo sa iyong pangunahing wallet address.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">BABALA: Sinisira nito ang privacy. Malilink ang iyong pangunahing wallet sa lahat ng natanggap na bayad.</string>
+    <string name="stealth_wallet_consolidate_benefit">Benepisyo: Ang mga gastusin sa hinaharap ay mangangailangan lamang ng isang transaksyon (mas mababang gas cost).</string>
+    <string name="stealth_wallet_consolidate_confirm">Pagsamahin</string>
+    <string name="stealth_wallet_consolidate_success">Pinagsama ang pondo sa pangunahing wallet</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Privacy ng Nagbabayad</string>
+    <string name="settings_payer_privacy_desc">Magbayad mula sa mga ephemeral na account (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Bawat bayad ay gumagamit ng natatanging account. Hindi nakikita ang iyong pangunahing wallet address sa on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Kailangan ng API key para sa mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Libre sa mga testnet (pampublikong bundler)</string>
+    <string name="payer_privacy_note">Itatago ang iyong wallet address</string>
+    <string name="payer_privacy_processing">Pinoproseso ang pribadong bayad…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Address Book</string>
+    <string name="address_book_add">Magdagdag ng Contact</string>
+    <string name="address_book_edit">I-edit ang Contact</string>
+    <string name="address_book_search">Maghanap ng mga contact…</string>
+    <string name="address_book_empty">Wala pang mga contact</string>
+    <string name="address_book_empty_hint">Magdagdag ng mga address para madaling makilala\nkung kanino ka nagbabayad o tumatanggap</string>
+    <string name="address_book_no_results">Walang nahanap na contact</string>
+    <string name="address_book_address">Wallet Address</string>
+    <string name="address_book_name">Pangalan</string>
+    <string name="address_book_name_hint">hal. Coffee Shop, Juan dela Cruz</string>
+    <string name="address_book_note">Nota (opsyonal)</string>
+    <string name="address_book_note_hint">hal. Supplier, Kaibigan</string>
+    <string name="address_book_delete_title">Burahin ang contact?</string>
+    <string name="address_book_delete_message">Alisin ang %s sa iyong address book?</string>
+    <string name="address_book_saved">Na-save ang contact</string>
+    <string name="address_book_unknown">Hindi kilala</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Simpleng Mode</string>
+    <string name="settings_simple_mode_desc">Madaling gamitin, pangunahing mga opsyon</string>
+    <string name="settings_advanced_mode">Advanced na Mode</string>
+    <string name="settings_advanced_mode_desc">Mga crypto opsyon para sa mga power user</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Ibahagi ang Contact</string>
+    <string name="share_contact_title">Ibahagi ang Iyong Address</string>
+    <string name="share_contact_ready">Handa nang ibahagi</string>
+    <string name="share_contact_ready_desc">Ilapit ang iyong telepono sa\niba pang CleanSky na device</string>
+    <string name="share_contact_received">Natanggap ang contact!</string>
+    <string name="share_contact_received_name">Gusto ng %s na kumonekta</string>
+    <string name="share_contact_save">I-save sa mga contact</string>
+    <string name="share_contact_your_name">Ang iyong pangalan (opsyonal)</string>
+    <string name="share_contact_your_name_hint">Kung paano ka makikita ng iba</string>
+    <string name="share_contact_mutual">Magpalitan ng mga contact</string>
+    <string name="share_contact_mutual_desc">Parehong device ay nagbabahagi ng mga address nang sabay-sabay</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Ipadala</string>
+    <string name="send_title">Ipadala sa Contact</string>
+    <string name="send_select_contact">Pumili ng tatanggap</string>
+    <string name="send_no_contacts">Wala pang mga contact</string>
+    <string name="send_no_contacts_hint">Magdagdag ng mga contact sa pamamagitan ng NFC o manu-mano\npara makapagpadala ng mga bayad sa kanila</string>
+    <string name="send_amount">Halaga</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Sa: %s</string>
+    <string name="send_confirm">Ipadala %1$s %2$s</string>
+    <string name="send_processing">Ipinapadala…</string>
+    <string name="send_success">Matagumpay na naipadala!</string>
+    <string name="send_success_desc">Naipadala ang %1$s %2$s kay %3$s</string>
+    <string name="send_error">Hindi naipadala</string>
+    <string name="send_enter_amount">Maglagay ng halaga</string>
+    <string name="send_new">Bagong paglipat</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Lahat</string>
+    <string name="history_filter_received">Natanggap</string>
+    <string name="history_filter_sent">Naipadala</string>
+    <string name="history_filter_contact">Contact</string>
+    <string name="history_filter_by_contact">I-filter ayon sa contact</string>
+    <string name="history_show_all">Ipakita lahat</string>
+    <string name="history_no_results">Walang transaksyon na tumutugma sa filter</string>
+    <string name="history_add_contact">Idagdag sa mga contact</string>
+    <string name="history_edit_contact">I-edit ang contact</string>
+    <string name="history_from">Mula sa</string>
+    <string name="history_to">Papunta sa</string>
+    <string name="history_date">Petsa</string>
+    <string name="history_tx_hash">Transaksyon</string>
+    <string name="history_refund">Pagbabalik</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Napakaliit ng halaga</string>
+    <string name="scam_amount_large_warning">Malaking halaga</string>
+    <string name="scam_amount_large_desc">Magpapadala ka ng %1$s %2$s.\nPakitiyak na tama ito.</string>
+    <string name="scam_confirm_large">Kumpirmahin ang malaking paglipat</string>
+    <string name="scam_dust_attack_warning">Kahina-hinalang kahilingan</string>
+    <string name="scam_dust_attack_desc">Ito ay napakaliit na halaga (%1$s %2$s). Ang mga dust attack ay gumagamit ng maliliit na bayad para subaybayan ang mga wallet. Tanggihan kung hindi inaasahan.</string>
+    <string name="scam_receive_large_warning">Malaking kahilingan sa pagbabayad</string>
+    <string name="scam_receive_large_desc">Ang kahilingang ito ay para sa %1$s %2$s. Tiyakin na tama ang halaga bago magbayad.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Tumanggap lamang</string>
+    <string name="settings_mode_receive_only">Tumanggap</string>
+    <string name="settings_mode_receive_only_desc">Walang pribadong susi</string>
+    <string name="settings_receive_only">Pagsasaayos ng tumanggap lamang</string>
+    <string name="settings_escrow_address">Address ng Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Walang Escrow na naka-configure</string>
+    <string name="receive_only_no_escrow_desc">I-configure ang escrow address at API key sa Settings</string>
+    <string name="receive_only_security_notice">Walang pribadong susi sa device na ito. Ligtas kahit manakaw.</string>
+    <string name="receive_only_api_key_required">Kailangan ng API key para sa relayer execution</string>
+</resources>

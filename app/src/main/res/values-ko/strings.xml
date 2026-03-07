@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky 비접촉</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">결제</string>
+    <string name="nav_collect">수금</string>
+    <string name="nav_settings">설정</string>
+    <string name="nav_history">내역</string>
+    <string name="nav_refund">환불</string>
+    <string name="nav_balance">잔액</string>
+    <string name="nav_back">뒤로</string>
+
+    <!-- Common actions -->
+    <string name="back">뒤로</string>
+    <string name="save">저장</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">지갑 없음</string>
+    <string name="pay_no_wallet_desc">결제를 하려면\n설정에서 지갑을 설정하세요</string>
+    <string name="pay_ready">결제 준비 완료</string>
+    <string name="pay_ready_desc">휴대폰을 판매자\n기기에 가까이 대세요</string>
+    <string name="pay_request_title">결제 요청</string>
+    <string name="pay_network">네트워크: %s</string>
+    <string name="pay_expired">요청 만료됨</string>
+    <string name="pay_cancel">취소</string>
+    <string name="pay_confirm">결제</string>
+    <string name="pay_new">새 결제</string>
+    <string name="pay_signing">거래 서명 중…</string>
+    <string name="pay_tx_signed">거래 서명 완료</string>
+    <string name="pay_tx_signed_desc">전송하려면 휴대폰을\n판매자에게 가까이 대세요</string>
+    <string name="pay_authenticating">인증 중…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">지갑 없음</string>
+    <string name="collect_no_wallet_desc">결제를 받으려면\n설정에서 지갑을 설정하세요</string>
+    <string name="collect_amount">받을 금액</string>
+    <string name="collect_button">수금</string>
+    <string name="collect_waiting">결제 대기 중</string>
+    <string name="collect_waiting_desc">고객에게 휴대폰을\n가까이 대도록 요청하세요</string>
+    <string name="collect_new">새 수금</string>
+    <string name="collect_processing">결제 처리 중…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">작동 모드</string>
+    <string name="settings_mode_pay">결제</string>
+    <string name="settings_mode_pay_desc">결제하기</string>
+    <string name="settings_mode_collect">수금</string>
+    <string name="settings_mode_collect_desc">결제 받기</string>
+    <string name="settings_wallet">지갑</string>
+    <string name="settings_wallet_address">주소</string>
+    <string name="settings_wallet_none">지갑이 구성되지 않음</string>
+    <string name="settings_wallet_create">생성</string>
+    <string name="settings_wallet_import">가져오기</string>
+    <string name="settings_network">블록체인 네트워크</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">거래 실행</string>
+    <string name="settings_exec_direct">직접</string>
+    <string name="settings_exec_direct_desc">가스비를 직접 지불</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">릴레이어를 통한 후원 가스</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster가 있는 ERC-4337</string>
+    <string name="settings_api_key">API 키</string>
+    <string name="settings_save">저장 후 돌아가기</string>
+    <string name="settings_not_available">이 네트워크에서 사용 불가</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_language_system">시스템 기본값</string>
+    <string name="collect_select_currency">통화 선택</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">보안</string>
+    <string name="security_encryption">키 암호화</string>
+    <string name="security_encryption_desc">Android Keystore를 사용한 AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">하드웨어 보안 모듈 활성화</string>
+    <string name="security_strongbox_unavailable">이 기기에서 사용 불가</string>
+    <string name="security_biometric">생체 인증</string>
+    <string name="security_biometric_required">결제에 필요</string>
+    <string name="security_biometric_disabled">비활성화됨</string>
+    <string name="security_biometric_unavailable">사용 불가</string>
+    <string name="security_export">개인 키 내보내기</string>
+    <string name="security_export_desc">키를 안전하게 저장하세요</string>
+    <string name="security_delete">지갑 삭제</string>
+    <string name="security_delete_desc">모든 데이터 영구 삭제</string>
+    <string name="security_delete_title">지갑 삭제</string>
+    <string name="security_delete_warning">이 작업은 되돌릴 수 없습니다.</string>
+    <string name="security_delete_warning2">개인 키 백업이 없으면 모든 자산에 대한 접근 권한을 잃게 됩니다.</string>
+    <string name="security_delete_warning3">계속하기 전에 키를 내보냈는지 확인하세요.</string>
+    <string name="security_delete_confirm">삭제</string>
+    <string name="security_status_active">활성</string>
+    <string name="security_status_warning">경고</string>
+    <string name="security_status_na">해당 없음</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">지갑 가져오기</string>
+    <string name="import_private_key">개인 키</string>
+    <string name="import_seed_phrase">시드 구문</string>
+    <string name="import_prompt">개인 키를 입력하세요:</string>
+    <string name="import_prompt_seed">시드 구문을 입력하세요 (12–24 단어):</string>
+    <string name="import_seed_hint">단어1 단어2 단어3 …</string>
+    <string name="import_button">가져오기</string>
+    <string name="import_error_invalid">잘못된 개인 키</string>
+    <string name="import_error_invalid_seed">잘못된 시드 구문</string>
+    <string name="import_error_encryption">암호화 오류</string>
+    <string name="export_title">개인 키</string>
+    <string name="export_warning">이 키를 절대 공유하지 마세요. 소유한 사람은 자산을 완전히 통제할 수 있습니다.</string>
+    <string name="export_understood">이해했습니다</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">요약</string>
+    <string name="history_received">받음</string>
+    <string name="history_sent">보냄</string>
+    <string name="history_refunded">환불됨</string>
+    <string name="history_empty">거래 없음</string>
+    <string name="history_empty_desc">%s의 거래가\n여기에 표시됩니다</string>
+    <string name="history_payment_received">결제 받음</string>
+    <string name="history_payment_sent">결제 보냄</string>
+    <string name="history_refund_sent">환불</string>
+    <string name="history_refund_received">환불 받음</string>
+    <string name="history_status_pending">대기 중</string>
+    <string name="history_status_confirmed">확인됨</string>
+    <string name="history_status_failed">실패</string>
+    <string name="history_status_refunded">환불됨</string>
+    <string name="history_status_partial">부분</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">원래 거래</string>
+    <string name="refund_amount">금액</string>
+    <string name="refund_already">이미 환불됨</string>
+    <string name="refund_available">가능</string>
+    <string name="refund_recipient">수신자</string>
+    <string name="refund_date">날짜</string>
+    <string name="refund_type">환불 유형</string>
+    <string name="refund_full">전체</string>
+    <string name="refund_partial">부분</string>
+    <string name="refund_partial_desc">금액 지정</string>
+    <string name="refund_amount_label">환불 금액 (%s)</string>
+    <string name="refund_max">최대: %1$s %2$s</string>
+    <string name="refund_gas_notice">이 거래에 대한 가스비를 지불합니다</string>
+    <string name="refund_button">환불 %1$s %2$s</string>
+    <string name="refund_processing">환불 처리 중…</string>
+    <string name="refund_success">환불 성공</string>
+    <string name="refund_done">완료</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">내 토큰</string>
+    <string name="balance_manage">관리</string>
+    <string name="balance_refresh">새로고침</string>
+    <string name="balance_loading">잔액 로딩 중…</string>
+    <string name="balance_empty">토큰 없음</string>
+    <string name="balance_no_wallet_desc">잔액을 보려면\n설정에서 지갑을 설정하세요</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">허용된 토큰</string>
+    <string name="settings_add_token">토큰 추가</string>
+    <string name="add_token_prompt">토큰 컨트랙트 주소를 입력하세요:</string>
+    <string name="add_token_validating">토큰 검증 중…</string>
+    <string name="add_token_button">추가</string>
+    <string name="delete">삭제</string>
+
+    <!-- Common -->
+    <string name="cancel">취소</string>
+    <string name="close">닫기</string>
+    <string name="retry">다시 시도</string>
+    <string name="error">오류</string>
+    <string name="copy">복사</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">지갑이 구성되지 않음</string>
+    <string name="error_device_security">기기 보안 오류</string>
+    <string name="error_auth">인증 오류</string>
+    <string name="error_unknown">알 수 없는 오류</string>
+    <string name="error_keystore_unavailable">Keystore 사용 불가 - 일부 기능이 작동하지 않습니다</string>
+    <string name="error_encryption_restart">암호화 오류 - 앱을 재시작하세요</string>
+    <string name="error_auth_cancelled">인증이 취소됨</string>
+    <string name="error_invalid_address">잘못된 주소</string>
+    <string name="error_invalid_address_format">잘못된 주소 형식</string>
+    <string name="error_token_already_added">토큰이 이미 추가됨</string>
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">전송됨! Tx: %s…</string>
+    <string name="token_native">네이티브</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">내 잔액</string>
+    <string name="pay_insufficient_balance">잔액 부족</string>
+    <string name="pay_need_more">%1$s %2$s가 더 필요합니다</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">환영합니다</string>
+    <string name="welcome_sovereignty">당신의 키.\n당신의 자산.\n당신의 주권.</string>
+    <string name="welcome_desc">자산은 이 앱에 저장되지 않습니다. 블록체인에 존재하며 개인 키로 통제됩니다.\n\n이 앱은 키만 안전하게 저장합니다. 우리는 자산에 접근할 수 없습니다.\n\n참고: 일부 토큰(USDC, USDT)은 발행자가 동결할 수 있습니다. 최대한의 주권을 위해 네이티브 ETH나 탈중앙화 토큰을 사용하세요.</string>
+    <string name="welcome_warning_title">당신의 키 = 당신의 자산</string>
+    <string name="welcome_warning_desc">개인 키를 잃어버리거나 다른 사람과 공유하면 자산 통제권을 영구적으로 잃게 됩니다.\n\n복구 옵션이 없습니다. 어떤 지원팀도 도울 수 없습니다. 이것이 진정한 소유권의 본질입니다.\n\n항상 키의 안전한 백업을 유지하세요.</string>
+    <string name="welcome_opensource">오픈 소스 소프트웨어입니다. 신뢰하지 말고 검증하세요.</string>
+    <string name="welcome_start">이해했습니다, 시작하기</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">판매자 신원</string>
+    <string name="settings_merchant_name">사업체 이름</string>
+    <string name="settings_merchant_name_hint">내 커피숍</string>
+    <string name="settings_merchant_domain">도메인 / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth 또는 mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">결제 시 고객에게 표시됨</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">프라이버시 모드</string>
+    <string name="settings_stealth_desc">일회용 주소로 결제 받기 (EIP-5564)</string>
+    <string name="settings_stealth_enabled">활성화됨</string>
+    <string name="settings_stealth_info">각 결제는 당신만 사용할 수 있는 고유 주소로 전송됩니다. 관찰자는 결제를 당신의 사업과 연결할 수 없습니다.</string>
+    <string name="stealth_address_label">Stealth 모드 활성화</string>
+    <string name="stealth_payment_note">결제가 프라이빗 주소로 전송됩니다</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">수신자 주소</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">프라이빗 지갑</string>
+    <string name="stealth_wallet_addresses">%d개의 stealth 주소에 분산</string>
+    <string name="stealth_wallet_privacy_title">자금이 프라이빗합니다</string>
+    <string name="stealth_wallet_privacy_desc">이 잔액은 공개 지갑과 연결되지 않습니다. 공급업체, 거래소 또는 어디든 직접 지출하세요 - 사업 신원은 숨겨집니다.</string>
+    <string name="stealth_wallet_send">보내기</string>
+    <string name="stealth_wallet_send_title">프라이빗 지갑에서 보내기</string>
+    <string name="stealth_wallet_available">사용 가능: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">금액</string>
+    <string name="nav_stealth_wallet">프라이빗 지갑</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">여러 주소</string>
+    <string name="stealth_wallet_gas_desc">자금이 %d개의 주소에 분산되어 있습니다. 큰 금액을 지출하면 여러 거래가 필요할 수 있어 가스 비용이 증가합니다.</string>
+    <string name="stealth_wallet_consolidate">메인 지갑으로 통합</string>
+    <string name="stealth_wallet_consolidate_title">자금 통합?</string>
+    <string name="stealth_wallet_consolidate_warning">프라이빗 지갑의 모든 자금을 메인 지갑 주소로 이전합니다.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">경고: 프라이버시가 깨집니다. 메인 지갑이 모든 받은 결제와 연결됩니다.</string>
+    <string name="stealth_wallet_consolidate_benefit">장점: 향후 지출에 거래 하나만 필요합니다(가스 비용 절감).</string>
+    <string name="stealth_wallet_consolidate_confirm">통합</string>
+    <string name="stealth_wallet_consolidate_success">자금이 메인 지갑으로 통합됨</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">결제자 프라이버시</string>
+    <string name="settings_payer_privacy_desc">임시 계정에서 결제 (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">각 결제는 고유 계정을 사용합니다. 메인 지갑 주소가 온체인에 보이지 않습니다.</string>
+    <string name="settings_payer_privacy_requires_api">메인넷에 API 키 필요</string>
+    <string name="settings_payer_privacy_public_bundler">테스트넷에서 무료 (퍼블릭 번들러)</string>
+    <string name="payer_privacy_note">지갑 주소가 숨겨집니다</string>
+    <string name="payer_privacy_processing">프라이빗 결제 처리 중…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">주소록</string>
+    <string name="address_book_add">연락처 추가</string>
+    <string name="address_book_edit">연락처 편집</string>
+    <string name="address_book_search">연락처 검색…</string>
+    <string name="address_book_empty">아직 연락처가 없습니다</string>
+    <string name="address_book_empty_hint">주소를 추가하여\n누구에게 보내거나 받는지 쉽게 확인하세요</string>
+    <string name="address_book_no_results">연락처를 찾을 수 없음</string>
+    <string name="address_book_address">지갑 주소</string>
+    <string name="address_book_name">이름</string>
+    <string name="address_book_name_hint">예: 커피숍, 홍길동</string>
+    <string name="address_book_note">메모 (선택사항)</string>
+    <string name="address_book_note_hint">예: 공급업체, 친구</string>
+    <string name="address_book_delete_title">연락처 삭제?</string>
+    <string name="address_book_delete_message">주소록에서 %s를 삭제할까요?</string>
+    <string name="address_book_saved">연락처 저장됨</string>
+    <string name="address_book_unknown">알 수 없음</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">간단 모드</string>
+    <string name="settings_simple_mode_desc">사용하기 쉬운 기본 옵션</string>
+    <string name="settings_advanced_mode">고급 모드</string>
+    <string name="settings_advanced_mode_desc">파워 유저를 위한 암호화폐 옵션</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">연락처 공유</string>
+    <string name="share_contact_title">주소 공유</string>
+    <string name="share_contact_ready">공유 준비 완료</string>
+    <string name="share_contact_ready_desc">다른 CleanSky 기기에\n휴대폰을 가까이 대세요</string>
+    <string name="share_contact_received">연락처 수신됨!</string>
+    <string name="share_contact_received_name">%s님이 연결을 원합니다</string>
+    <string name="share_contact_save">연락처에 저장</string>
+    <string name="share_contact_your_name">이름 (선택사항)</string>
+    <string name="share_contact_your_name_hint">다른 사람에게 보이는 이름</string>
+    <string name="share_contact_mutual">연락처 교환</string>
+    <string name="share_contact_mutual_desc">두 기기가 동시에 주소를 공유합니다</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">보내기</string>
+    <string name="send_title">연락처로 보내기</string>
+    <string name="send_select_contact">수신자 선택</string>
+    <string name="send_no_contacts">연락처 없음</string>
+    <string name="send_no_contacts_hint">NFC 또는 수동으로 연락처를 추가하여\n결제를 보내세요</string>
+    <string name="send_amount">금액</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">받는 사람: %s</string>
+    <string name="send_confirm">%1$s %2$s 보내기</string>
+    <string name="send_processing">보내는 중…</string>
+    <string name="send_success">전송 완료!</string>
+    <string name="send_success_desc">%3$s에게 %1$s %2$s 전송됨</string>
+    <string name="send_error">전송 실패</string>
+    <string name="send_enter_amount">금액을 입력하세요</string>
+    <string name="send_new">새 송금</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">전체</string>
+    <string name="history_filter_received">받음</string>
+    <string name="history_filter_sent">보냄</string>
+    <string name="history_filter_contact">연락처</string>
+    <string name="history_filter_by_contact">연락처별 필터</string>
+    <string name="history_show_all">전체 보기</string>
+    <string name="history_no_results">필터와 일치하는 거래 없음</string>
+    <string name="history_add_contact">연락처에 추가</string>
+    <string name="history_edit_contact">연락처 편집</string>
+    <string name="history_from">보낸 사람</string>
+    <string name="history_to">받는 사람</string>
+    <string name="history_date">날짜</string>
+    <string name="history_tx_hash">거래</string>
+    <string name="history_refund">환불</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">금액이 너무 적습니다</string>
+    <string name="scam_amount_large_warning">큰 금액</string>
+    <string name="scam_amount_large_desc">%1$s %2$s를 보내려고 합니다.\n금액이 맞는지 확인해 주세요.</string>
+    <string name="scam_confirm_large">큰 금액 전송 확인</string>
+    <string name="scam_dust_attack_warning">의심스러운 요청</string>
+    <string name="scam_dust_attack_desc">아주 적은 금액(%1$s %2$s)입니다. 더스트 공격은 지갑을 추적하기 위해 소액 결제를 사용합니다. 예상치 못한 경우 거절하세요.</string>
+    <string name="scam_receive_large_warning">큰 결제 요청</string>
+    <string name="scam_receive_large_desc">이 요청은 %1$s %2$s입니다. 결제하기 전에 금액이 맞는지 확인하세요.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">수신 전용</string>
+    <string name="settings_mode_receive_only">수신</string>
+    <string name="settings_mode_receive_only_desc">개인 키 없음</string>
+    <string name="settings_receive_only">수신 전용 설정</string>
+    <string name="settings_escrow_address">Escrow 주소</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow 미설정</string>
+    <string name="receive_only_no_escrow_desc">설정에서 escrow 주소와 API key를 구성하세요</string>
+    <string name="receive_only_security_notice">이 기기에 개인 키가 없습니다. 도난 시에도 안전합니다.</string>
+    <string name="receive_only_api_key_required">Relayer 실행에 API key 필요</string>
+</resources>

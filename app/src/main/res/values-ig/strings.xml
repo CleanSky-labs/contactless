@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Enweghị Metụ</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Kwụọ</string>
+    <string name="nav_collect">Nata</string>
+    <string name="nav_settings">Ntọala</string>
+    <string name="nav_history">Akụkọ</string>
+    <string name="nav_refund">Weghachi</string>
+    <string name="nav_balance">Ego fọdụrụ</string>
+    <string name="nav_back">Azụ</string>
+
+    <!-- Common actions -->
+    <string name="back">Azụ</string>
+    <string name="save">Chekwaa</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Enweghị akpa ego</string>
+    <string name="pay_no_wallet_desc">Tọọ akpa ego na Ntọala\niji kwụọ ụgwọ</string>
+    <string name="pay_ready">Njikere ịkwụ ụgwọ</string>
+    <string name="pay_ready_desc">Jide ekwentị gị nso\nngwaọrụ onye ahịa</string>
+    <string name="pay_request_title">Arịrịọ ịkwụ ụgwọ</string>
+    <string name="pay_network">Netwọk: %s</string>
+    <string name="pay_expired">Arịrịọ agwụla</string>
+    <string name="pay_cancel">Kagbuo</string>
+    <string name="pay_confirm">Kwụọ</string>
+    <string name="pay_new">Ụgwọ ọhụrụ</string>
+    <string name="pay_signing">Iji aka azụ azụmahịa…</string>
+    <string name="pay_tx_signed">Azụmahịa edebere aka</string>
+    <string name="pay_tx_signed_desc">Jide ekwentị nso\nonye ahịa iji zipu</string>
+    <string name="pay_authenticating">Ịmekọrịta…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Enweghị akpa ego</string>
+    <string name="collect_no_wallet_desc">Tọọ akpa ego na Ntọala\niji nata ụgwọ</string>
+    <string name="collect_amount">Ego a ga-anata</string>
+    <string name="collect_button">Nata</string>
+    <string name="collect_waiting">Na-eche ụgwọ</string>
+    <string name="collect_waiting_desc">Rịọ onye ahịa\nka o jide ekwentị nso</string>
+    <string name="collect_new">Nnata ọhụrụ</string>
+    <string name="collect_processing">Na-arụ ụgwọ…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Ọnọdụ</string>
+    <string name="settings_mode_pay">Kwụọ</string>
+    <string name="settings_mode_pay_desc">Kwụọ ụgwọ</string>
+    <string name="settings_mode_collect">Nata</string>
+    <string name="settings_mode_collect_desc">Nata ụgwọ</string>
+    <string name="settings_wallet">Akpa ego</string>
+    <string name="settings_wallet_address">Adreesị</string>
+    <string name="settings_wallet_none">Atọghị akpa ego</string>
+    <string name="settings_wallet_create">Mepụta</string>
+    <string name="settings_wallet_import">Bubata</string>
+    <string name="settings_network">Netwọk blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Mmejupụta azụmahịa</string>
+    <string name="settings_exec_direct">Ozugbo</string>
+    <string name="settings_exec_direct_desc">Ị na-akwụ gas</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas akwadoro site na relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 na Paymaster</string>
+    <string name="settings_api_key">Igodo API</string>
+    <string name="settings_save">Chekwaa laghachi</string>
+    <string name="settings_not_available">Adịghị na netwọk a</string>
+    <string name="settings_language">Asụsụ</string>
+    <string name="settings_language_system">Nke sistemu</string>
+    <string name="collect_select_currency">Họrọ ego</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Nchekwa</string>
+    <string name="security_encryption">Izo igodo</string>
+    <string name="security_encryption_desc">AES-256-GCM na Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Ngwa nchekwa ngwaike na-arụ ọrụ</string>
+    <string name="security_strongbox_unavailable">Adịghị na ngwa a</string>
+    <string name="security_biometric">Nkwenye biometric</string>
+    <string name="security_biometric_required">Achọrọ maka ụgwọ</string>
+    <string name="security_biometric_disabled">Gbanyụrụ</string>
+    <string name="security_biometric_unavailable">Adịghị</string>
+    <string name="security_export">Bubata igodo nzuzo</string>
+    <string name="security_export_desc">Chekwaa igodo gị n\'udo</string>
+    <string name="security_delete">Hichapụ akpa ego</string>
+    <string name="security_delete_desc">Hichapụ data niile</string>
+    <string name="security_delete_title">Hichapụ akpa ego</string>
+    <string name="security_delete_warning">Ihe a ENWEGHỊ IKE ịlaghachi.</string>
+    <string name="security_delete_warning2">Ị ga-atụfu ohere nweta akụ niile ma ọ bụrụ na ị nweghị ndabere igodo nzuzo.</string>
+    <string name="security_delete_warning3">Jide n\'aka na ị bupụtara igodo tupu ịga n\'ihu.</string>
+    <string name="security_delete_confirm">Hichapụ</string>
+    <string name="security_status_active">Na-arụ ọrụ</string>
+    <string name="security_status_warning">Ịdọ aka ná ntị</string>
+    <string name="security_status_na">Ekwesịghị</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Bubata akpa ego</string>
+    <string name="import_private_key">Igodo nzuzo</string>
+    <string name="import_seed_phrase">Okwu mkpụrụ</string>
+    <string name="import_prompt">Tinye igodo nzuzo gị:</string>
+    <string name="import_prompt_seed">Tinye okwu mkpụrụ gị (okwu 12–24):</string>
+    <string name="import_seed_hint">okwu1 okwu2 okwu3 …</string>
+    <string name="import_button">Bubata</string>
+    <string name="import_error_invalid">Igodo nzuzo ezighi ezi</string>
+    <string name="import_error_invalid_seed">Okwu mkpụrụ ezighi ezi</string>
+    <string name="import_error_encryption">Njehie izo</string>
+    <string name="export_title">Igodo nzuzo</string>
+    <string name="export_warning">Ekekọrịtala igodo a. Onye ọbụla nwere ya nwere ike ijikwa ego gị niile.</string>
+    <string name="export_understood">Aghọtara m</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Nchịkọta</string>
+    <string name="history_received">Natara</string>
+    <string name="history_sent">Zipụrụ</string>
+    <string name="history_refunded">Weghachiri</string>
+    <string name="history_empty">Enweghị azụmahịa</string>
+    <string name="history_empty_desc">Azụmahịa na %s\nga-egosi ebe a</string>
+    <string name="history_payment_received">Natara ụgwọ</string>
+    <string name="history_payment_sent">Zitere ụgwọ</string>
+    <string name="history_refund_sent">Nweghachi</string>
+    <string name="history_refund_received">Natara nweghachi</string>
+    <string name="history_status_pending">Na-eche</string>
+    <string name="history_status_confirmed">Kwadoro</string>
+    <string name="history_status_failed">Adaghị</string>
+    <string name="history_status_refunded">Weghachiri</string>
+    <string name="history_status_partial">Akụkụ</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Azụmahịa mbụ</string>
+    <string name="refund_amount">Ego</string>
+    <string name="refund_already">Weghachiri ya</string>
+    <string name="refund_available">Dị</string>
+    <string name="refund_recipient">Onye nnata</string>
+    <string name="refund_date">Ụbọchị</string>
+    <string name="refund_type">Ụdị nweghachi</string>
+    <string name="refund_full">Niile</string>
+    <string name="refund_partial">Akụkụ</string>
+    <string name="refund_partial_desc">Kọwaa ego</string>
+    <string name="refund_amount_label">Ego nweghachi (%s)</string>
+    <string name="refund_max">Kacha: %1$s %2$s</string>
+    <string name="refund_gas_notice">Ị ga-akwụ gas maka azụmahịa a</string>
+    <string name="refund_button">Weghachi %1$s %2$s</string>
+    <string name="refund_processing">Na-arụ nweghachi…</string>
+    <string name="refund_success">Nweghachi gara nke ọma</string>
+    <string name="refund_done">Emechara</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Token gị</string>
+    <string name="balance_manage">Jikwaa</string>
+    <string name="balance_refresh">Mee ọhụrụ</string>
+    <string name="balance_loading">Na-ebugo ego fọdụrụ…</string>
+    <string name="balance_empty">Enweghị token</string>
+    <string name="balance_no_wallet_desc">Tọọ akpa ego na Ntọala\niji hụ ego fọdụrụ gị</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Token ndị akwadoro</string>
+    <string name="settings_add_token">Tinye token</string>
+    <string name="add_token_prompt">Tinye adreesị nkwekọrịta token:</string>
+    <string name="add_token_validating">Na-enyocha token…</string>
+    <string name="add_token_button">Tinye</string>
+    <string name="delete">Hichapụ</string>
+
+    <!-- Common -->
+    <string name="cancel">Kagbuo</string>
+    <string name="close">Mechie</string>
+    <string name="retry">Gbalịa ọzọ</string>
+    <string name="error">Njehie</string>
+    <string name="copy">Detuo</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Atọghị akpa ego</string>
+    <string name="error_device_security">Njehie nchekwa ngwa</string>
+    <string name="error_auth">Njehie nkwenye</string>
+    <string name="error_unknown">Njehie amaghị</string>
+    <string name="error_keystore_unavailable">Ụlọ nchekwa igodo adịghị - ụfọdụ ọrụ agaghị arụ ọrụ</string>
+    <string name="error_encryption_restart">Njehie izo - malitegharịa ngwa ahụ</string>
+    <string name="error_auth_cancelled">Akagbuola nkwenye</string>
+    <string name="error_invalid_address">Adreesị ezighi ezi</string>
+    <string name="error_invalid_address_format">Ụdị adreesị ezighi ezi</string>
+    <string name="error_token_already_added">Etinyela token</string>
+    <string name="stealth_spend_sent_tx">Ezitere! Tx: %s…</string>
+    <string name="token_native">Nke mba</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Ego fọdụrụ gị</string>
+    <string name="pay_insufficient_balance">Ego fọdụrụ ezughị</string>
+    <string name="pay_need_more">Ị chọrọ %1$s karịa %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Nnọọ</string>
+    <string name="welcome_sovereignty">Igodo gị.\nEgo gị.\nIkike gị.</string>
+    <string name="welcome_desc">Anaghị echekwa ego gị na ngwa a. Ha nọ na blockchain, n\'okpuru njikwa igodo nzuzo gị.\n\nNgwa a na-echekwa igodo gị n\'udo naanị. Anyị enweghị ike ịnweta ego gị.\n\nRịba ama: Ụfọdụ token (USDC, USDT) nwere ike ịkwụsị site n\'aka ndị mepụtara ha. Maka ikike kachasị, jiri ETH ma ọ bụ token ndị emezigharịghị.</string>
+    <string name="welcome_warning_title">Igodo gị = Ego gị</string>
+    <string name="welcome_warning_desc">Ọ bụrụ na ị tụfuo igodo nzuzo gị ma ọ bụ kesaa ha na onye ọzọ, ị ga-atụfu njikwa ego gị ruo mgbe ebighị ebi.\n\nEnweghị nhọrọ nweghachi. Enweghị otu nkwado nwere ike inyere gị aka. Nke a bụ ọdịdị nwe n\'ezie.\n\nNa-echekwa ndabere nchekwa nke igodo gị mgbe niile.</string>
+    <string name="welcome_opensource">Ngwanrọ mepere emepe. Nyochaa, ekwenyela naanị.</string>
+    <string name="welcome_start">Aghọtara m, ka anyị malite</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Njirimara onye ahịa</string>
+    <string name="settings_merchant_name">Aha azụmahịa</string>
+    <string name="settings_merchant_name_hint">Ụlọ kọfị m</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth ma ọ bụ mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">Egosiri ndị ahịa n\'oge ịkwụ ụgwọ</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Ọnọdụ nzuzo</string>
+    <string name="settings_stealth_desc">Nata ụgwọ na adreesị otu oge (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Emepụtara</string>
+    <string name="settings_stealth_info">Ụgwọ ọ bụla na-aga na adreesị pụrụ iche nke naanị gị nwere ike ịmefuo. Ndị na-elekọta enweghị ike ijikọ ụgwọ na azụmahịa gị.</string>
+    <string name="stealth_address_label">Ọnọdụ nzuzo na-arụ ọrụ</string>
+    <string name="stealth_payment_note">A ga-ezipu ụgwọ na adreesị nzuzo</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adreesị onye nnata</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Akpa ego nzuzo</string>
+    <string name="stealth_wallet_addresses">na adreesị nzuzo %d</string>
+    <string name="stealth_wallet_privacy_title">Ego gị bụ nzuzo</string>
+    <string name="stealth_wallet_privacy_desc">Ego fọdụrụ a ejikọtaghị na akpa ego gị nke ọha. Mefuo ozugbo na ndị na-eweta ihe, mgbanwe, ma ọ bụ ebe ọbụla - njirimara azụmahịa gị ga-ezoro ezo.</string>
+    <string name="stealth_wallet_send">Zipu</string>
+    <string name="stealth_wallet_send_title">Zipu site na Akpa Ego Nzuzo</string>
+    <string name="stealth_wallet_available">Dị: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Ego</string>
+    <string name="nav_stealth_wallet">Akpa Ego Nzuzo</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Ọtụtụ adreesị</string>
+    <string name="stealth_wallet_gas_desc">Ego gị gbasara na adreesị %d. Ịmefuo ego ukwuu nwere ike ịchọ ọtụtụ azụmahịa, na-abawanye ụgwọ gas.</string>
+    <string name="stealth_wallet_consolidate">Chịkọtaa na akpa ego bụ isi</string>
+    <string name="stealth_wallet_consolidate_title">Chịkọtaa ego?</string>
+    <string name="stealth_wallet_consolidate_warning">Nke a ga-ebufe ego niile site na akpa ego nzuzo gị gaa na adreesị akpa ego gị bụ isi.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">ỊDỌ AKA NÁ NTỊ: Nke a ga-emebi nzuzo. Akpa ego gị bụ isi ga-ejikọ na ụgwọ niile natara.</string>
+    <string name="stealth_wallet_consolidate_benefit">Uru: Ịmefuo n\'ọdịnihu ga-achọ naanị otu azụmahịa (ụgwọ gas dị ala).</string>
+    <string name="stealth_wallet_consolidate_confirm">Chịkọtaa</string>
+    <string name="stealth_wallet_consolidate_success">Echịkọtala ego na akpa ego bụ isi</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Nzuzo onye na-akwụ ụgwọ</string>
+    <string name="settings_payer_privacy_desc">Kwụọ ụgwọ site na akaụntụ nwa oge (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Ụgwọ ọ bụla na-eji akaụntụ pụrụ iche. Adreesị akpa ego gị bụ isi apụghị ịhụ na chain.</string>
+    <string name="settings_payer_privacy_requires_api">Achọrọ igodo API maka netwọk bụ isi</string>
+    <string name="settings_payer_privacy_public_bundler">N\'efu na netwọk nnwale (bundler nke ọha)</string>
+    <string name="payer_privacy_note">Adreesị akpa ego gị ga-ezo ezo</string>
+    <string name="payer_privacy_processing">Na-arụ ụgwọ nzuzo…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Akwụkwọ adreesị</string>
+    <string name="address_book_add">Tinye onye nkwurịta</string>
+    <string name="address_book_edit">Dezie onye nkwurịta</string>
+    <string name="address_book_search">Chọọ ndị nkwurịta…</string>
+    <string name="address_book_empty">Enweghị ndị nkwurịta ugbu a</string>
+    <string name="address_book_empty_hint">Tinye adreesị iji mara ngwa ngwa\nonye ị na-akwụ ma ọ bụ ịnata site</string>
+    <string name="address_book_no_results">Achọtaghị ndị nkwurịta</string>
+    <string name="address_book_address">Adreesị akpa ego</string>
+    <string name="address_book_name">Aha</string>
+    <string name="address_book_name_hint">dịka Ụlọ Kọfị, John Doe</string>
+    <string name="address_book_note">Ndetu (nhọrọ)</string>
+    <string name="address_book_note_hint">dịka Onye na-eweta, Enyi</string>
+    <string name="address_book_delete_title">Hichapụ onye nkwurịta?</string>
+    <string name="address_book_delete_message">Wepụ %s n\'akwụkwọ adreesị gị?</string>
+    <string name="address_book_saved">Echekwara onye nkwurịta</string>
+    <string name="address_book_unknown">Amaghị</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Ọnọdụ dị mfe</string>
+    <string name="settings_simple_mode_desc">Dị mfe iji, nhọrọ bụ isi</string>
+    <string name="settings_advanced_mode">Ọnọdụ dị elu</string>
+    <string name="settings_advanced_mode_desc">Nhọrọ crypto maka ndị ọkachamara</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Kekọrịta Onye Nkwurịta</string>
+    <string name="share_contact_title">Kekọrịta Adreesị Gị</string>
+    <string name="share_contact_ready">Njikere ịkekọrịta</string>
+    <string name="share_contact_ready_desc">Jide ekwentị gị nso\nngwa CleanSky ọzọ</string>
+    <string name="share_contact_received">Anatara onye nkwurịta!</string>
+    <string name="share_contact_received_name">%s chọrọ ijikọ</string>
+    <string name="share_contact_save">Chekwaa na ndị nkwurịta</string>
+    <string name="share_contact_your_name">Aha gị (nhọrọ)</string>
+    <string name="share_contact_your_name_hint">Otu ndị ọzọ ga-esi hụ gị</string>
+    <string name="share_contact_mutual">Gbanwee ndị nkwurịta</string>
+    <string name="share_contact_mutual_desc">Ngwa abụọ na-ekekọrịta adreesị n\'otu oge</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Zipu</string>
+    <string name="send_title">Zipu na Onye Nkwurịta</string>
+    <string name="send_select_contact">Họrọ onye nnata</string>
+    <string name="send_no_contacts">Enweghị ndị nkwurịta ugbu a</string>
+    <string name="send_no_contacts_hint">Tinye ndị nkwurịta site na NFC ma ọ bụ n\'aka\niji zipụrụ ha ụgwọ</string>
+    <string name="send_amount">Ego</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Na: %s</string>
+    <string name="send_confirm">Zipu %1$s %2$s</string>
+    <string name="send_processing">Na-ezipu…</string>
+    <string name="send_success">Eziri nke ọma!</string>
+    <string name="send_success_desc">%1$s %2$s ezipụrụ na %3$s</string>
+    <string name="send_error">Ịzipu adaghị</string>
+    <string name="send_enter_amount">Tinye ego</string>
+    <string name="send_new">Mbufe ọhụrụ</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Niile</string>
+    <string name="history_filter_received">Natara</string>
+    <string name="history_filter_sent">Zipụrụ</string>
+    <string name="history_filter_contact">Onye nkwurịta</string>
+    <string name="history_filter_by_contact">Nyo site na onye nkwurịta</string>
+    <string name="history_show_all">Gosi niile</string>
+    <string name="history_no_results">Enweghị azụmahịa dabara na nyo</string>
+    <string name="history_add_contact">Tinye na ndị nkwurịta</string>
+    <string name="history_edit_contact">Dezie onye nkwurịta</string>
+    <string name="history_from">Site</string>
+    <string name="history_to">Gaa</string>
+    <string name="history_date">Ụbọchị</string>
+    <string name="history_tx_hash">Azụmahịa</string>
+    <string name="history_refund">Nweghachi</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Ego dị obere</string>
+    <string name="scam_amount_large_warning">Ego buru ibu</string>
+    <string name="scam_amount_large_desc">Ị na-achọ izipu %1$s %2$s.\nBiko kwado na nke a ziri ezi.</string>
+    <string name="scam_confirm_large">Kwado mbufe buru ibu</string>
+    <string name="scam_dust_attack_warning">Arịrịọ na-enye obi abụọ</string>
+    <string name="scam_dust_attack_desc">Nke a bụ ego nta nke ukwuu (%1$s %2$s). Mwakpo uzuzu na-eji ụgwọ nta soro akpa ego. Jụ ma ọ bụrụ na ọ bụghị nke a tụrụ anya.</string>
+    <string name="scam_receive_large_warning">Arịrịọ ụgwọ buru ibu</string>
+    <string name="scam_receive_large_desc">Arịrịọ a bụ maka %1$s %2$s. Nyochaa na nke a bụ ego ziri ezi tupu ịkwụ ụgwọ.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Nnata naanị</string>
+    <string name="settings_mode_receive_only">Nata</string>
+    <string name="settings_mode_receive_only_desc">Enweghị igodo nzuzo</string>
+    <string name="settings_receive_only">Nhazi nnata naanị</string>
+    <string name="settings_escrow_address">Adreesị Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Ahazighị Escrow</string>
+    <string name="receive_only_no_escrow_desc">Hazie adreesị escrow na API key na Ntọala</string>
+    <string name="receive_only_security_notice">Enweghị igodo nzuzo na ngwaọrụ a. Nchekwa ma e zuru ohi.</string>
+    <string name="receive_only_api_key_required">A chọrọ API key maka imezu relayer</string>
+</resources>

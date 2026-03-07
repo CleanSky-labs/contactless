@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Research</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Plătește</string>
+    <string name="nav_collect">Încasează</string>
+    <string name="nav_settings">Setări</string>
+    <string name="nav_history">Istoric</string>
+    <string name="nav_refund">Rambursare</string>
+    <string name="nav_balance">Sold</string>
+    <string name="nav_back">Înapoi</string>
+
+    <!-- Common actions -->
+    <string name="back">Înapoi</string>
+    <string name="save">Salvează</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Fără portofel</string>
+    <string name="pay_no_wallet_desc">Configurați portofelul în Setări\npentru a efectua plăți</string>
+    <string name="pay_ready">Gata de plată</string>
+    <string name="pay_ready_desc">Apropiați telefonul de\ndispozitivul comerciantului</string>
+    <string name="pay_request_title">Cerere de plată</string>
+    <string name="pay_network">Rețea: %s</string>
+    <string name="pay_expired">Cerere expirată</string>
+    <string name="pay_cancel">Anulează</string>
+    <string name="pay_confirm">Plătește</string>
+    <string name="pay_new">Plată nouă</string>
+    <string name="pay_signing">Se semnează tranzacția…</string>
+    <string name="pay_tx_signed">Tranzacție semnată</string>
+    <string name="pay_tx_signed_desc">Apropiați telefonul de\ncomerciant pentru a trimite</string>
+    <string name="pay_authenticating">Se autentifică…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Fără portofel</string>
+    <string name="collect_no_wallet_desc">Configurați portofelul în Setări\npentru a primi plăți</string>
+    <string name="collect_amount">Sumă de încasat</string>
+    <string name="collect_button">Încasează</string>
+    <string name="collect_waiting">Se așteaptă plata</string>
+    <string name="collect_waiting_desc">Rugați clientul să\napropie telefonul</string>
+    <string name="collect_new">Încasare nouă</string>
+    <string name="collect_processing">Se procesează plata…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Mod de operare</string>
+    <string name="settings_mode_pay">Plătește</string>
+    <string name="settings_mode_pay_desc">Efectuează plăți</string>
+    <string name="settings_mode_collect">Încasează</string>
+    <string name="settings_mode_collect_desc">Primește plăți</string>
+    <string name="settings_wallet">Portofel</string>
+    <string name="settings_wallet_address">Adresă</string>
+    <string name="settings_wallet_none">Niciun portofel configurat</string>
+    <string name="settings_wallet_create">Creează</string>
+    <string name="settings_wallet_import">Importă</string>
+    <string name="settings_network">Rețea blockchain</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Execuția tranzacțiilor</string>
+    <string name="settings_exec_direct">Direct</string>
+    <string name="settings_exec_direct_desc">Tu plătești gas-ul</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Gas sponsorizat prin relayer</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 cu Paymaster</string>
+    <string name="settings_api_key">Cheie API</string>
+    <string name="settings_save">Salvează și revino</string>
+    <string name="settings_not_available">Indisponibil în această rețea</string>
+    <string name="settings_language">Limbă</string>
+    <string name="settings_language_system">Implicit din sistem</string>
+    <string name="collect_select_currency">Selectează moneda</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Securitate</string>
+    <string name="security_encryption">Criptare chei</string>
+    <string name="security_encryption_desc">AES-256-GCM cu Android Keystore</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Modul de securitate hardware activ</string>
+    <string name="security_strongbox_unavailable">Indisponibil pe acest dispozitiv</string>
+    <string name="security_biometric">Autentificare biometrică</string>
+    <string name="security_biometric_required">Necesară pentru plăți</string>
+    <string name="security_biometric_disabled">Dezactivată</string>
+    <string name="security_biometric_unavailable">Indisponibilă</string>
+    <string name="security_export">Exportă cheia privată</string>
+    <string name="security_export_desc">Salvează-ți cheia în siguranță</string>
+    <string name="security_delete">Șterge portofelul</string>
+    <string name="security_delete_desc">Șterge permanent toate datele</string>
+    <string name="security_delete_title">Șterge portofelul</string>
+    <string name="security_delete_warning">Această acțiune este IREVERSIBILĂ.</string>
+    <string name="security_delete_warning2">Vei pierde accesul la toate fondurile dacă nu ai o copie de siguranță a cheii private.</string>
+    <string name="security_delete_warning3">Asigură-te că ai exportat cheia înainte de a continua.</string>
+    <string name="security_delete_confirm">Șterge</string>
+    <string name="security_status_active">Activ</string>
+    <string name="security_status_warning">Avertisment</string>
+    <string name="security_status_na">N/A</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Importă portofel</string>
+    <string name="import_private_key">Cheie privată</string>
+    <string name="import_seed_phrase">Frază seed</string>
+    <string name="import_prompt">Introduceți cheia privată:</string>
+    <string name="import_prompt_seed">Introduceți fraza seed (12–24 cuvinte):</string>
+    <string name="import_seed_hint">cuvânt1 cuvânt2 cuvânt3 …</string>
+    <string name="import_button">Importă</string>
+    <string name="import_error_invalid">Cheie privată invalidă</string>
+    <string name="import_error_invalid_seed">Frază seed invalidă</string>
+    <string name="import_error_encryption">Eroare de criptare</string>
+    <string name="export_title">Cheie privată</string>
+    <string name="export_warning">Nu partaja NICIODATĂ această cheie cu nimeni. Cine o deține are control total asupra fondurilor tale.</string>
+    <string name="export_understood">Am înțeles</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Sumar</string>
+    <string name="history_received">Primit</string>
+    <string name="history_sent">Trimis</string>
+    <string name="history_refunded">Rambursat</string>
+    <string name="history_empty">Nicio tranzacție</string>
+    <string name="history_empty_desc">Tranzacțiile pe %s\nvor apărea aici</string>
+    <string name="history_payment_received">Plată primită</string>
+    <string name="history_payment_sent">Plată trimisă</string>
+    <string name="history_refund_sent">Rambursare</string>
+    <string name="history_refund_received">Rambursare primită</string>
+    <string name="history_status_pending">În așteptare</string>
+    <string name="history_status_confirmed">Confirmată</string>
+    <string name="history_status_failed">Eșuată</string>
+    <string name="history_status_refunded">Rambursată</string>
+    <string name="history_status_partial">Parțială</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Tranzacția originală</string>
+    <string name="refund_amount">Sumă</string>
+    <string name="refund_already">Deja rambursat</string>
+    <string name="refund_available">Disponibil</string>
+    <string name="refund_recipient">Destinatar</string>
+    <string name="refund_date">Data</string>
+    <string name="refund_type">Tip rambursare</string>
+    <string name="refund_full">Totală</string>
+    <string name="refund_partial">Parțială</string>
+    <string name="refund_partial_desc">Specifică suma</string>
+    <string name="refund_amount_label">Sumă de rambursat (%s)</string>
+    <string name="refund_max">Maxim: %1$s %2$s</string>
+    <string name="refund_gas_notice">Vei plăti gas-ul pentru această tranzacție</string>
+    <string name="refund_button">Rambursează %1$s %2$s</string>
+    <string name="refund_processing">Se procesează rambursarea…</string>
+    <string name="refund_success">Rambursare reușită</string>
+    <string name="refund_done">Gata</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Tokenurile tale</string>
+    <string name="balance_manage">Gestionează</string>
+    <string name="balance_refresh">Actualizează</string>
+    <string name="balance_loading">Se încarcă soldurile…</string>
+    <string name="balance_empty">Niciun token</string>
+    <string name="balance_no_wallet_desc">Configurează portofelul în Setări\npentru a vedea soldurile</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Tokenuri permise</string>
+    <string name="settings_add_token">Adaugă token</string>
+    <string name="add_token_prompt">Introduceți adresa contractului tokenului:</string>
+    <string name="add_token_validating">Se validează tokenul…</string>
+    <string name="add_token_button">Adaugă</string>
+    <string name="delete">Șterge</string>
+
+    <!-- Common -->
+    <string name="cancel">Anulează</string>
+    <string name="close">Închide</string>
+    <string name="retry">Reîncearcă</string>
+    <string name="error">Eroare</string>
+    <string name="copy">Copiază</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Portofel neconfigurat</string>
+    <string name="error_device_security">Eroare securitate dispozitiv</string>
+    <string name="error_auth">Eroare autentificare</string>
+    <string name="error_unknown">Eroare necunoscută</string>
+    <string name="error_keystore_unavailable">Keystore indisponibil - unele funcții nu vor funcționa</string>
+    <string name="error_encryption_restart">Eroare de criptare - reporniți aplicația</string>
+    <string name="error_auth_cancelled">Autentificare anulată</string>
+    <string name="error_invalid_address">Adresă invalidă</string>
+    <string name="error_invalid_address_format">Format de adresă invalid</string>
+    <string name="error_token_already_added">Token deja adăugat</string>
+    <string name="stealth_spend_sent_tx">Trimis! Tx: %s…</string>
+    <string name="token_native">Nativ</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Soldul tău</string>
+    <string name="pay_insufficient_balance">Sold insuficient</string>
+    <string name="pay_need_more">Mai ai nevoie de %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Bun venit</string>
+    <string name="welcome_sovereignty">Cheile tale.\nFondurile tale.\nSuveranitatea ta.</string>
+    <string name="welcome_desc">Fondurile tale NU sunt stocate în această aplicație. Ele există pe blockchain, controlate de cheile tale private.\n\nAceastă aplicație stochează doar cheile tale în siguranță. Nu avem acces la fondurile tale.\n\nNotă: Unele tokenuri (USDC, USDT) pot fi înghețate de emitenții lor. Pentru suveranitate maximă, folosește ETH nativ sau tokenuri descentralizate.</string>
+    <string name="welcome_warning_title">Cheile tale = Fondurile tale</string>
+    <string name="welcome_warning_desc">Dacă pierzi cheile private sau le partajezi cu cineva, pierzi controlul fondurilor pentru totdeauna.\n\nNu există opțiune de recuperare. Nicio echipă de suport nu te poate ajuta. Aceasta este natura proprietății reale.\n\nPăstrează întotdeauna o copie de siguranță a cheilor tale.</string>
+    <string name="welcome_opensource">Software open source. Verifică, nu te încrede.</string>
+    <string name="welcome_start">Am înțeles, să începem</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Identitatea comerciantului</string>
+    <string name="settings_merchant_name">Numele afacerii</string>
+    <string name="settings_merchant_name_hint">Cafeneaua mea</string>
+    <string name="settings_merchant_domain">Domeniu / ENS</string>
+    <string name="settings_merchant_domain_hint">cafeneauamea.eth sau cafeneauamea.com</string>
+    <string name="settings_merchant_identity_desc">Afișat clienților în timpul plății</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Mod confidențialitate</string>
+    <string name="settings_stealth_desc">Primește plăți la adrese unice (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Activat</string>
+    <string name="settings_stealth_info">Fiecare plată merge la o adresă unică de pe care doar tu poți cheltui. Observatorii nu pot conecta plățile cu afacerea ta.</string>
+    <string name="stealth_address_label">Mod stealth activ</string>
+    <string name="stealth_payment_note">Plata va fi trimisă la o adresă privată</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Adresa destinatarului</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Portofel privat</string>
+    <string name="stealth_wallet_addresses">pe %d adrese stealth</string>
+    <string name="stealth_wallet_privacy_title">Fondurile tale sunt private</string>
+    <string name="stealth_wallet_privacy_desc">Acest sold nu este legat de portofelul tău public. Cheltuiește direct la furnizori, burse sau oriunde - identitatea afacerii tale rămâne ascunsă.</string>
+    <string name="stealth_wallet_send">Trimite</string>
+    <string name="stealth_wallet_send_title">Trimite din portofelul privat</string>
+    <string name="stealth_wallet_available">Disponibil: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Sumă</string>
+    <string name="nav_stealth_wallet">Portofel privat</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Adrese multiple</string>
+    <string name="stealth_wallet_gas_desc">Fondurile tale sunt distribuite pe %d adrese. Cheltuirea sumelor mari poate necesita tranzacții multiple, crescând costurile de gas.</string>
+    <string name="stealth_wallet_consolidate">Consolidează în portofelul principal</string>
+    <string name="stealth_wallet_consolidate_title">Consolidezi fondurile?</string>
+    <string name="stealth_wallet_consolidate_warning">Aceasta va transfera toate fondurile din portofelul privat la adresa portofelului principal.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">AVERTISMENT: Aceasta încalcă confidențialitatea. Portofelul principal va fi legat de toate plățile primite.</string>
+    <string name="stealth_wallet_consolidate_benefit">Beneficiu: Cheltuielile viitoare vor necesita doar o singură tranzacție (costuri de gas mai mici).</string>
+    <string name="stealth_wallet_consolidate_confirm">Consolidează</string>
+    <string name="stealth_wallet_consolidate_success">Fonduri consolidate în portofelul principal</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Confidențialitatea plătitorului</string>
+    <string name="settings_payer_privacy_desc">Plătește din conturi efemere (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Fiecare plată folosește un cont unic. Adresa portofelului principal nu este vizibilă on-chain.</string>
+    <string name="settings_payer_privacy_requires_api">Cheie API necesară pentru mainnet</string>
+    <string name="settings_payer_privacy_public_bundler">Gratuit pe testnets (bundler public)</string>
+    <string name="payer_privacy_note">Adresa portofelului tău va fi ascunsă</string>
+    <string name="payer_privacy_processing">Se procesează plata privată…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Agendă de adrese</string>
+    <string name="address_book_add">Adaugă contact</string>
+    <string name="address_book_edit">Editează contact</string>
+    <string name="address_book_search">Caută contacte…</string>
+    <string name="address_book_empty">Niciun contact încă</string>
+    <string name="address_book_empty_hint">Adaugă adrese pentru a identifica ușor\ncui plătești sau de la cine primești</string>
+    <string name="address_book_no_results">Niciun contact găsit</string>
+    <string name="address_book_address">Adresa portofelului</string>
+    <string name="address_book_name">Nume</string>
+    <string name="address_book_name_hint">ex. Cafenea, Ion Popescu</string>
+    <string name="address_book_note">Notă (opțional)</string>
+    <string name="address_book_note_hint">ex. Furnizor, Prieten</string>
+    <string name="address_book_delete_title">Ștergi contactul?</string>
+    <string name="address_book_delete_message">Elimini %s din agendă?</string>
+    <string name="address_book_saved">Contact salvat</string>
+    <string name="address_book_unknown">Necunoscut</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Mod simplu</string>
+    <string name="settings_simple_mode_desc">Ușor de folosit, opțiuni de bază</string>
+    <string name="settings_advanced_mode">Mod avansat</string>
+    <string name="settings_advanced_mode_desc">Opțiuni crypto pentru utilizatori avansați</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Partajează contact</string>
+    <string name="share_contact_title">Partajează adresa ta</string>
+    <string name="share_contact_ready">Gata de partajare</string>
+    <string name="share_contact_ready_desc">Apropiați telefonul de un\nalt dispozitiv CleanSky</string>
+    <string name="share_contact_received">Contact primit!</string>
+    <string name="share_contact_received_name">%s vrea să se conecteze</string>
+    <string name="share_contact_save">Salvează în contacte</string>
+    <string name="share_contact_your_name">Numele tău (opțional)</string>
+    <string name="share_contact_your_name_hint">Cum te vor vedea ceilalți</string>
+    <string name="share_contact_mutual">Schimb de contacte</string>
+    <string name="share_contact_mutual_desc">Ambele dispozitive partajează adresele simultan</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Trimite</string>
+    <string name="send_title">Trimite la contact</string>
+    <string name="send_select_contact">Selectează destinatarul</string>
+    <string name="send_no_contacts">Niciun contact încă</string>
+    <string name="send_no_contacts_hint">Adaugă contacte prin NFC sau manual\npentru a le trimite plăți</string>
+    <string name="send_amount">Sumă</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Către: %s</string>
+    <string name="send_confirm">Trimite %1$s %2$s</string>
+    <string name="send_processing">Se trimite…</string>
+    <string name="send_success">Trimis cu succes!</string>
+    <string name="send_success_desc">%1$s %2$s trimis către %3$s</string>
+    <string name="send_error">Trimiterea a eșuat</string>
+    <string name="send_enter_amount">Introduceți o sumă</string>
+    <string name="send_new">Transfer nou</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Toate</string>
+    <string name="history_filter_received">Primite</string>
+    <string name="history_filter_sent">Trimise</string>
+    <string name="history_filter_contact">Contact</string>
+    <string name="history_filter_by_contact">Filtrează după contact</string>
+    <string name="history_show_all">Afișează tot</string>
+    <string name="history_no_results">Nicio tranzacție nu corespunde filtrului</string>
+    <string name="history_add_contact">Adaugă la contacte</string>
+    <string name="history_edit_contact">Editează contact</string>
+    <string name="history_from">De la</string>
+    <string name="history_to">Către</string>
+    <string name="history_date">Data</string>
+    <string name="history_tx_hash">Tranzacție</string>
+    <string name="history_refund">Rambursare</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Suma prea mică</string>
+    <string name="scam_amount_large_warning">Sumă mare</string>
+    <string name="scam_amount_large_desc">Sunteți pe cale să trimiteți %1$s %2$s.\nVă rugăm confirmați că este corect.</string>
+    <string name="scam_confirm_large">Confirmă transfer mare</string>
+    <string name="scam_dust_attack_warning">Cerere suspectă</string>
+    <string name="scam_dust_attack_desc">Aceasta este o sumă foarte mică (%1$s %2$s). Atacurile dust folosesc plăți minuscule pentru a urmări portofelele. Refuză dacă este neașteptat.</string>
+    <string name="scam_receive_large_warning">Cerere de plată mare</string>
+    <string name="scam_receive_large_desc">Această cerere este pentru %1$s %2$s. Verifică că suma este corectă înainte de a plăti.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Doar primire</string>
+    <string name="settings_mode_receive_only">Primire</string>
+    <string name="settings_mode_receive_only_desc">Fără cheie privată</string>
+    <string name="settings_receive_only">Configurare doar primire</string>
+    <string name="settings_escrow_address">Adresă Escrow</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow neconfigurat</string>
+    <string name="receive_only_no_escrow_desc">Configurează adresa escrow și API key în Setări</string>
+    <string name="receive_only_security_notice">Nicio cheie privată pe acest dispozitiv. Sigur în caz de furt.</string>
+    <string name="receive_only_api_key_required">API key necesar pentru execuția prin relayer</string>
+</resources>

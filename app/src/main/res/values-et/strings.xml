@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky Kontaktivaba</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">Maksa</string>
+    <string name="nav_collect">Võta vastu</string>
+    <string name="nav_settings">Seaded</string>
+    <string name="nav_history">Ajalugu</string>
+    <string name="nav_refund">Tagasimakse</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_back">Tagasi</string>
+
+    <!-- Common actions -->
+    <string name="back">Tagasi</string>
+    <string name="save">Salvesta</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">Rahakott puudub</string>
+    <string name="pay_no_wallet_desc">Seadistage rahakott Seadetes,\net teha makseid</string>
+    <string name="pay_ready">Makse valmis</string>
+    <string name="pay_ready_desc">Hoidke telefoni\nkaupmehe seadme lähedal</string>
+    <string name="pay_request_title">Maksetaotlus</string>
+    <string name="pay_network">Võrk: %s</string>
+    <string name="pay_expired">Taotlus aegunud</string>
+    <string name="pay_cancel">Tühista</string>
+    <string name="pay_confirm">Maksa</string>
+    <string name="pay_new">Uus makse</string>
+    <string name="pay_signing">Tehingu allkirjastamine…</string>
+    <string name="pay_tx_signed">Tehing allkirjastatud</string>
+    <string name="pay_tx_signed_desc">Hoidke telefoni\nkaupmehe lähedal saatmiseks</string>
+    <string name="pay_authenticating">Autentimine…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">Rahakott puudub</string>
+    <string name="collect_no_wallet_desc">Seadistage rahakott Seadetes,\net võtta vastu makseid</string>
+    <string name="collect_amount">Vastuvõetav summa</string>
+    <string name="collect_button">Võta vastu</string>
+    <string name="collect_waiting">Makse ootel</string>
+    <string name="collect_waiting_desc">Paluge kliendil\nhoida telefoni lähedal</string>
+    <string name="collect_new">Uus vastuvõtt</string>
+    <string name="collect_processing">Makse töötlemine…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">Töörežiim</string>
+    <string name="settings_mode_pay">Maksa</string>
+    <string name="settings_mode_pay_desc">Tee makseid</string>
+    <string name="settings_mode_collect">Võta vastu</string>
+    <string name="settings_mode_collect_desc">Võta vastu makseid</string>
+    <string name="settings_wallet">Rahakott</string>
+    <string name="settings_wallet_address">Aadress</string>
+    <string name="settings_wallet_none">Rahakott pole seadistatud</string>
+    <string name="settings_wallet_create">Loo</string>
+    <string name="settings_wallet_import">Impordi</string>
+    <string name="settings_network">Plokiahela võrk</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">Tehingu täitmine</string>
+    <string name="settings_exec_direct">Otsene</string>
+    <string name="settings_exec_direct_desc">Teie maksate gaasi eest</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">Sponsoreeritud gaas läbi relayeri</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">ERC-4337 Paymasteriga</string>
+    <string name="settings_api_key">API võti</string>
+    <string name="settings_save">Salvesta ja naase</string>
+    <string name="settings_not_available">Pole selles võrgus saadaval</string>
+    <string name="settings_language">Keel</string>
+    <string name="settings_language_system">Süsteemi vaikimisi</string>
+    <string name="collect_select_currency">Vali valuuta</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">Turvalisus</string>
+    <string name="security_encryption">Võtmete krüptimine</string>
+    <string name="security_encryption_desc">AES-256-GCM Android Keystore\'iga</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">Riistvara turvamoodul aktiivne</string>
+    <string name="security_strongbox_unavailable">Pole sellel seadmel saadaval</string>
+    <string name="security_biometric">Biomeetriline autentimine</string>
+    <string name="security_biometric_required">Nõutav makseteks</string>
+    <string name="security_biometric_disabled">Keelatud</string>
+    <string name="security_biometric_unavailable">Pole saadaval</string>
+    <string name="security_export">Ekspordi privaatvõti</string>
+    <string name="security_export_desc">Salvestage oma võti turvaliselt</string>
+    <string name="security_delete">Kustuta rahakott</string>
+    <string name="security_delete_desc">Kustuta kõik andmed jäädavalt</string>
+    <string name="security_delete_title">Kustuta rahakott</string>
+    <string name="security_delete_warning">See toiming on PÖÖRDUMATU.</string>
+    <string name="security_delete_warning2">Kaotate juurdepääsu kõigile vahenditele, kui teil pole privaatvõtme varukoopiat.</string>
+    <string name="security_delete_warning3">Veenduge, et olete võtme enne jätkamist eksportinud.</string>
+    <string name="security_delete_confirm">Kustuta</string>
+    <string name="security_status_active">Aktiivne</string>
+    <string name="security_status_warning">Hoiatus</string>
+    <string name="security_status_na">Ei kohaldu</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">Impordi rahakott</string>
+    <string name="import_private_key">Privaatvõti</string>
+    <string name="import_seed_phrase">Taastefraas</string>
+    <string name="import_prompt">Sisestage oma privaatvõti:</string>
+    <string name="import_prompt_seed">Sisestage taastefraas (12–24 sõna):</string>
+    <string name="import_seed_hint">sõna1 sõna2 sõna3 …</string>
+    <string name="import_button">Impordi</string>
+    <string name="import_error_invalid">Kehtetu privaatvõti</string>
+    <string name="import_error_invalid_seed">Kehtetu taastefraas</string>
+    <string name="import_error_encryption">Krüptimise viga</string>
+    <string name="export_title">Privaatvõti</string>
+    <string name="export_warning">ÄRGE KUNAGI jagage seda võtit. Igaühel, kes seda omab, on täielik kontroll teie vahendite üle.</string>
+    <string name="export_understood">Mõistan</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">Kokkuvõte</string>
+    <string name="history_received">Vastu võetud</string>
+    <string name="history_sent">Saadetud</string>
+    <string name="history_refunded">Tagastatud</string>
+    <string name="history_empty">Tehinguid pole</string>
+    <string name="history_empty_desc">Tehingud %s\nilmuvad siia</string>
+    <string name="history_payment_received">Makse vastu võetud</string>
+    <string name="history_payment_sent">Makse saadetud</string>
+    <string name="history_refund_sent">Tagasimakse</string>
+    <string name="history_refund_received">Tagasimakse vastu võetud</string>
+    <string name="history_status_pending">Ootel</string>
+    <string name="history_status_confirmed">Kinnitatud</string>
+    <string name="history_status_failed">Ebaõnnestus</string>
+    <string name="history_status_refunded">Tagastatud</string>
+    <string name="history_status_partial">Osaline</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">Algne tehing</string>
+    <string name="refund_amount">Summa</string>
+    <string name="refund_already">Juba tagastatud</string>
+    <string name="refund_available">Saadaval</string>
+    <string name="refund_recipient">Saaja</string>
+    <string name="refund_date">Kuupäev</string>
+    <string name="refund_type">Tagasimakse tüüp</string>
+    <string name="refund_full">Täielik</string>
+    <string name="refund_partial">Osaline</string>
+    <string name="refund_partial_desc">Määrake summa</string>
+    <string name="refund_amount_label">Tagastatav summa (%s)</string>
+    <string name="refund_max">Maksimum: %1$s %2$s</string>
+    <string name="refund_gas_notice">Teie maksate gaasi eest selle tehingu eest</string>
+    <string name="refund_button">Tagasta %1$s %2$s</string>
+    <string name="refund_processing">Tagasimakse töötlemine…</string>
+    <string name="refund_success">Tagasimakse edukas</string>
+    <string name="refund_done">Valmis</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">Teie tokenid</string>
+    <string name="balance_manage">Halda</string>
+    <string name="balance_refresh">Värskenda</string>
+    <string name="balance_loading">Saldode laadimine…</string>
+    <string name="balance_empty">Tokeneid pole</string>
+    <string name="balance_no_wallet_desc">Seadistage rahakott Seadetes,\net näha saldosid</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">Lubatud tokenid</string>
+    <string name="settings_add_token">Lisa token</string>
+    <string name="add_token_prompt">Sisestage tokeni lepingu aadress:</string>
+    <string name="add_token_validating">Tokeni kontrollimine…</string>
+    <string name="add_token_button">Lisa</string>
+    <string name="delete">Kustuta</string>
+
+    <!-- Common -->
+    <string name="cancel">Tühista</string>
+    <string name="close">Sulge</string>
+    <string name="retry">Proovi uuesti</string>
+    <string name="error">Viga</string>
+    <string name="copy">Kopeeri</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">Rahakott pole seadistatud</string>
+    <string name="error_device_security">Seadme turvaviga</string>
+    <string name="error_auth">Autentimise viga</string>
+    <string name="error_unknown">Tundmatu viga</string>
+    <string name="error_keystore_unavailable">Keystore pole saadaval - mõned funktsioonid ei tööta</string>
+    <string name="error_encryption_restart">Krüptimisviga - taaskäivitage rakendus</string>
+    <string name="error_auth_cancelled">Autentimine tühistatud</string>
+    <string name="error_invalid_address">Kehtetu aadress</string>
+    <string name="error_invalid_address_format">Kehtetu aadressi vorming</string>
+    <string name="error_token_already_added">Token on juba lisatud</string>
+    <string name="stealth_spend_sent_tx">Saadetud! Tx: %s…</string>
+    <string name="token_native">Natiivne</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">Teie saldo</string>
+    <string name="pay_insufficient_balance">Ebapiisav saldo</string>
+    <string name="pay_need_more">Teil on vaja veel %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">Tere tulemast</string>
+    <string name="welcome_sovereignty">Teie võtmed.\nTeie vahendid.\nTeie suveräänsus.</string>
+    <string name="welcome_desc">Teie vahendid EI ole sellesse rakendusse salvestatud. Need eksisteerivad plokiahelas, kontrollib teie privaatvõtmeid.\n\nSee rakendus salvestab ainult teie võtmed turvaliselt. Me ei pääse teie vahenditele ligi.\n\nMärkus: Mõned tokenid (USDC, USDT) võivad olla nende emitentide poolt külmutatud. Maksimaalse suveräänsuse jaoks kasutage natiivset ETH-i või detsentraliseeritud tokeneid.</string>
+    <string name="welcome_warning_title">Teie võtmed = Teie vahendid</string>
+    <string name="welcome_warning_desc">Kui kaotate oma privaatvõtmed või jagate neid kellegagi, kaotate kontrolli oma vahendite üle jäädavalt.\n\nTaastamisvõimalust pole. Ükski tugimeeskond ei saa teid aidata. See on tõelise omandi olemus.\n\nHoidke alati oma võtmetest turvaline varukoopia.</string>
+    <string name="welcome_opensource">Avatud lähtekoodiga tarkvara. Kontrollige, ärge usaldage.</string>
+    <string name="welcome_start">Saan aru, alustame</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">Kaupmehe identiteet</string>
+    <string name="settings_merchant_name">Ettevõtte nimi</string>
+    <string name="settings_merchant_name_hint">Minu kohvik</string>
+    <string name="settings_merchant_domain">Domeen / ENS</string>
+    <string name="settings_merchant_domain_hint">minukohvik.eth või minukohvik.com</string>
+    <string name="settings_merchant_identity_desc">Kuvatakse klientidele makse ajal</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">Privaatsusrežiim</string>
+    <string name="settings_stealth_desc">Võtke makseid vastu ühekordsete aadressidele (EIP-5564)</string>
+    <string name="settings_stealth_enabled">Lubatud</string>
+    <string name="settings_stealth_info">Iga makse läheb unikaalsele aadressile, mida ainult teie saate kulutada. Vaatlejad ei saa makseid teie ettevõttega siduda.</string>
+    <string name="stealth_address_label">Stealth-režiim aktiivne</string>
+    <string name="stealth_payment_note">Makse saadetakse privaatsele aadressile</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">Saaja aadress</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">Privaatne rahakott</string>
+    <string name="stealth_wallet_addresses">üle %d stealth-aadressi</string>
+    <string name="stealth_wallet_privacy_title">Teie vahendid on privaatsed</string>
+    <string name="stealth_wallet_privacy_desc">See saldo pole seotud teie avaliku rahakotiga. Kulutage otse tarnijatele, börsidele või kuhu iganes - teie ettevõtte identiteet jääb varjatuks.</string>
+    <string name="stealth_wallet_send">Saada</string>
+    <string name="stealth_wallet_send_title">Saada privaatsest rahakotist</string>
+    <string name="stealth_wallet_available">Saadaval: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">Summa</string>
+    <string name="nav_stealth_wallet">Privaatne rahakott</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">Mitu aadressi</string>
+    <string name="stealth_wallet_gas_desc">Teie vahendid on jaotatud %d aadressi vahel. Suurte summade kulutamine võib nõuda mitut tehingut, suurendades gaasikulusid.</string>
+    <string name="stealth_wallet_consolidate">Konsolideeri põhirahakotti</string>
+    <string name="stealth_wallet_consolidate_title">Konsolideerida vahendid?</string>
+    <string name="stealth_wallet_consolidate_warning">See kannab kõik vahendid teie privaatsest rahakotist põhirahakoti aadressile.</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">HOIATUS: See rikub privaatsust. Teie põhirahakott seotakse kõigi saadud maksetega.</string>
+    <string name="stealth_wallet_consolidate_benefit">Kasu: Tulevased kulutused vajavad ainult ühte tehingut (madalamad gaasikulud).</string>
+    <string name="stealth_wallet_consolidate_confirm">Konsolideeri</string>
+    <string name="stealth_wallet_consolidate_success">Vahendid konsolideeritud põhirahakotti</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">Maksja privaatsus</string>
+    <string name="settings_payer_privacy_desc">Makske ajutistelt kontodelt (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">Iga makse kasutab unikaalset kontot. Teie põhirahakoti aadress pole ketis nähtav.</string>
+    <string name="settings_payer_privacy_requires_api">API võti vajalik mainnetis</string>
+    <string name="settings_payer_privacy_public_bundler">Tasuta testnetides (avalik bundler)</string>
+    <string name="payer_privacy_note">Teie rahakoti aadress peidetakse</string>
+    <string name="payer_privacy_processing">Privaatse makse töötlemine…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">Aadressiraamat</string>
+    <string name="address_book_add">Lisa kontakt</string>
+    <string name="address_book_edit">Muuda kontakti</string>
+    <string name="address_book_search">Otsi kontakte…</string>
+    <string name="address_book_empty">Kontakte veel pole</string>
+    <string name="address_book_empty_hint">Lisage aadresse, et hõlpsalt tuvastada,\nkellele maksate või kellelt saate</string>
+    <string name="address_book_no_results">Kontakte ei leitud</string>
+    <string name="address_book_address">Rahakoti aadress</string>
+    <string name="address_book_name">Nimi</string>
+    <string name="address_book_name_hint">nt Kohvik, Jaan Tamm</string>
+    <string name="address_book_note">Märkus (valikuline)</string>
+    <string name="address_book_note_hint">nt Tarnija, Sõber</string>
+    <string name="address_book_delete_title">Kustuta kontakt?</string>
+    <string name="address_book_delete_message">Eemaldada %s aadressiraamatust?</string>
+    <string name="address_book_saved">Kontakt salvestatud</string>
+    <string name="address_book_unknown">Tundmatu</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">Lihtne režiim</string>
+    <string name="settings_simple_mode_desc">Lihtne kasutada, põhivalikud</string>
+    <string name="settings_advanced_mode">Täpsem režiim</string>
+    <string name="settings_advanced_mode_desc">Krüptoption kogenud kasutajatele</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">Jaga kontakti</string>
+    <string name="share_contact_title">Jaga oma aadressi</string>
+    <string name="share_contact_ready">Valmis jagamiseks</string>
+    <string name="share_contact_ready_desc">Hoidke telefon teise\nCleanSky seadme lähedal</string>
+    <string name="share_contact_received">Kontakt saadud!</string>
+    <string name="share_contact_received_name">%s soovib ühendust</string>
+    <string name="share_contact_save">Salvesta kontaktidesse</string>
+    <string name="share_contact_your_name">Teie nimi (valikuline)</string>
+    <string name="share_contact_your_name_hint">Kuidas teised teid näevad</string>
+    <string name="share_contact_mutual">Vaheta kontakte</string>
+    <string name="share_contact_mutual_desc">Mõlemad seadmed jagavad aadresse samaaegselt</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">Saada</string>
+    <string name="send_title">Saada kontaktile</string>
+    <string name="send_select_contact">Vali saaja</string>
+    <string name="send_no_contacts">Kontakte veel pole</string>
+    <string name="send_no_contacts_hint">Lisage kontakte NFC kaudu või käsitsi,\net neile makseid saata</string>
+    <string name="send_amount">Summa</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">Saaja: %s</string>
+    <string name="send_confirm">Saada %1$s %2$s</string>
+    <string name="send_processing">Saatmine…</string>
+    <string name="send_success">Edukalt saadetud!</string>
+    <string name="send_success_desc">%1$s %2$s saadetud kontaktile %3$s</string>
+    <string name="send_error">Saatmine ebaõnnestus</string>
+    <string name="send_enter_amount">Sisestage summa</string>
+    <string name="send_new">Uus ülekanne</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">Kõik</string>
+    <string name="history_filter_received">Vastu võetud</string>
+    <string name="history_filter_sent">Saadetud</string>
+    <string name="history_filter_contact">Kontakt</string>
+    <string name="history_filter_by_contact">Filtreeri kontakti järgi</string>
+    <string name="history_show_all">Näita kõiki</string>
+    <string name="history_no_results">Filtriga sobivaid tehinguid pole</string>
+    <string name="history_add_contact">Lisa kontaktidesse</string>
+    <string name="history_edit_contact">Muuda kontakti</string>
+    <string name="history_from">Saatja</string>
+    <string name="history_to">Saaja</string>
+    <string name="history_date">Kuupäev</string>
+    <string name="history_tx_hash">Tehing</string>
+    <string name="history_refund">Tagasimakse</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">Summa on liiga väike</string>
+    <string name="scam_amount_large_warning">Suur summa</string>
+    <string name="scam_amount_large_desc">Te saadate %1$s %2$s.\nPalun kinnitage, et see on õige.</string>
+    <string name="scam_confirm_large">Kinnitage suur ülekanne</string>
+    <string name="scam_dust_attack_warning">Kahtlane päring</string>
+    <string name="scam_dust_attack_desc">See on väga väike summa (%1$s %2$s). Tolmurünnakud kasutavad väikseid makseid rahakottide jälgimiseks. Keelduge, kui ootamatu.</string>
+    <string name="scam_receive_large_warning">Suure makse päring</string>
+    <string name="scam_receive_large_desc">See päring on %1$s %2$s eest. Kontrollige, kas see on õige summa enne maksmist.</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">Ainult vastuvõtt</string>
+    <string name="settings_mode_receive_only">Vastuvõtt</string>
+    <string name="settings_mode_receive_only_desc">Privaatvõtit pole</string>
+    <string name="settings_receive_only">Ainult vastuvõtu seadistus</string>
+    <string name="settings_escrow_address">Escrow aadress</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow pole seadistatud</string>
+    <string name="receive_only_no_escrow_desc">Seadista escrow aadress ja API key Seadetes</string>
+    <string name="receive_only_security_notice">Selles seadmes pole privaatvõtit. Turvaline varguse korral.</string>
+    <string name="receive_only_api_key_required">API key vajalik relayer täitmiseks</string>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky コンタクトレス</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">支払う</string>
+    <string name="nav_collect">受け取る</string>
+    <string name="nav_settings">設定</string>
+    <string name="nav_history">履歴</string>
+    <string name="nav_refund">返金</string>
+    <string name="nav_balance">残高</string>
+    <string name="nav_back">戻る</string>
+
+    <!-- Common actions -->
+    <string name="back">戻る</string>
+    <string name="save">保存</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">ウォレットなし</string>
+    <string name="pay_no_wallet_desc">設定でウォレットを\n設定してください</string>
+    <string name="pay_ready">支払い準備完了</string>
+    <string name="pay_ready_desc">加盟店のデバイスに\nスマートフォンを近づけてください</string>
+    <string name="pay_request_title">支払いリクエスト</string>
+    <string name="pay_network">ネットワーク：%s</string>
+    <string name="pay_expired">リクエスト期限切れ</string>
+    <string name="pay_cancel">キャンセル</string>
+    <string name="pay_confirm">支払う</string>
+    <string name="pay_new">新しい支払い</string>
+    <string name="pay_signing">トランザクション署名中…</string>
+    <string name="pay_tx_signed">トランザクション署名済み</string>
+    <string name="pay_tx_signed_desc">送信するには加盟店に\nスマートフォンを近づけてください</string>
+    <string name="pay_authenticating">認証中…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">ウォレットなし</string>
+    <string name="collect_no_wallet_desc">支払いを受け取るには\n設定でウォレットを設定してください</string>
+    <string name="collect_amount">受け取り金額</string>
+    <string name="collect_button">受け取る</string>
+    <string name="collect_waiting">支払い待ち</string>
+    <string name="collect_waiting_desc">お客様にスマートフォンを\n近づけるようお伝えください</string>
+    <string name="collect_new">新しい受け取り</string>
+    <string name="collect_processing">支払い処理中…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">動作モード</string>
+    <string name="settings_mode_pay">支払う</string>
+    <string name="settings_mode_pay_desc">支払いを行う</string>
+    <string name="settings_mode_collect">受け取る</string>
+    <string name="settings_mode_collect_desc">支払いを受け取る</string>
+    <string name="settings_wallet">ウォレット</string>
+    <string name="settings_wallet_address">アドレス</string>
+    <string name="settings_wallet_none">ウォレット未設定</string>
+    <string name="settings_wallet_create">作成</string>
+    <string name="settings_wallet_import">インポート</string>
+    <string name="settings_network">ブロックチェーンネットワーク</string>
+    <string name="settings_chain_id">チェーンID：%d</string>
+    <string name="settings_execution">トランザクション実行</string>
+    <string name="settings_exec_direct">直接</string>
+    <string name="settings_exec_direct_desc">ガス代を支払う</string>
+    <string name="settings_exec_relayer">リレイヤー（Gelato）</string>
+    <string name="settings_exec_relayer_desc">リレイヤー経由のスポンサードガス</string>
+    <string name="settings_exec_aa">アカウント抽象化</string>
+    <string name="settings_exec_aa_desc">PaymasterでERC-4337</string>
+    <string name="settings_api_key">APIキー</string>
+    <string name="settings_save">保存して戻る</string>
+    <string name="settings_not_available">このネットワークでは利用不可</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_language_system">システムのデフォルト</string>
+    <string name="collect_select_currency">通貨を選択</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">セキュリティ</string>
+    <string name="security_encryption">鍵の暗号化</string>
+    <string name="security_encryption_desc">Android KeystoreでAES-256-GCM</string>
+    <string name="security_strongbox">StrongBox（HSM）</string>
+    <string name="security_strongbox_active">ハードウェアセキュリティモジュール有効</string>
+    <string name="security_strongbox_unavailable">このデバイスでは利用不可</string>
+    <string name="security_biometric">生体認証</string>
+    <string name="security_biometric_required">支払いに必要</string>
+    <string name="security_biometric_disabled">無効</string>
+    <string name="security_biometric_unavailable">利用不可</string>
+    <string name="security_export">秘密鍵をエクスポート</string>
+    <string name="security_export_desc">鍵を安全に保存</string>
+    <string name="security_delete">ウォレットを削除</string>
+    <string name="security_delete_desc">すべてのデータを完全に削除</string>
+    <string name="security_delete_title">ウォレットを削除</string>
+    <string name="security_delete_warning">この操作は元に戻せません。</string>
+    <string name="security_delete_warning2">秘密鍵のバックアップがない場合、すべての資金へのアクセスを失います。</string>
+    <string name="security_delete_warning3">続行する前に鍵をエクスポートしたことを確認してください。</string>
+    <string name="security_delete_confirm">削除</string>
+    <string name="security_status_active">有効</string>
+    <string name="security_status_warning">警告</string>
+    <string name="security_status_na">該当なし</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">ウォレットをインポート</string>
+    <string name="import_private_key">秘密鍵</string>
+    <string name="import_seed_phrase">シードフレーズ</string>
+    <string name="import_prompt">秘密鍵を入力：</string>
+    <string name="import_prompt_seed">シードフレーズを入力（12〜24語）：</string>
+    <string name="import_seed_hint">単語1 単語2 単語3 …</string>
+    <string name="import_button">インポート</string>
+    <string name="import_error_invalid">無効な秘密鍵</string>
+    <string name="import_error_invalid_seed">無効なシードフレーズ</string>
+    <string name="import_error_encryption">暗号化エラー</string>
+    <string name="export_title">秘密鍵</string>
+    <string name="export_warning">この鍵は絶対に誰にも共有しないでください。所有者はあなたの資金を完全に管理できます。</string>
+    <string name="export_understood">了解</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">概要</string>
+    <string name="history_received">受取済み</string>
+    <string name="history_sent">送信済み</string>
+    <string name="history_refunded">返金済み</string>
+    <string name="history_empty">取引なし</string>
+    <string name="history_empty_desc">%sでの取引が\nここに表示されます</string>
+    <string name="history_payment_received">支払い受領</string>
+    <string name="history_payment_sent">支払い送信</string>
+    <string name="history_refund_sent">返金</string>
+    <string name="history_refund_received">返金受領</string>
+    <string name="history_status_pending">保留中</string>
+    <string name="history_status_confirmed">確認済み</string>
+    <string name="history_status_failed">失敗</string>
+    <string name="history_status_refunded">返金済み</string>
+    <string name="history_status_partial">一部</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">元の取引</string>
+    <string name="refund_amount">金額</string>
+    <string name="refund_already">返金済み</string>
+    <string name="refund_available">利用可能</string>
+    <string name="refund_recipient">受取人</string>
+    <string name="refund_date">日付</string>
+    <string name="refund_type">返金タイプ</string>
+    <string name="refund_full">全額</string>
+    <string name="refund_partial">一部</string>
+    <string name="refund_partial_desc">金額を指定</string>
+    <string name="refund_amount_label">返金額（%s）</string>
+    <string name="refund_max">最大：%1$s %2$s</string>
+    <string name="refund_gas_notice">この取引のガス代を支払います</string>
+    <string name="refund_button">%1$s %2$sを返金</string>
+    <string name="refund_processing">返金処理中…</string>
+    <string name="refund_success">返金成功</string>
+    <string name="refund_done">完了</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">あなたのトークン</string>
+    <string name="balance_manage">管理</string>
+    <string name="balance_refresh">更新</string>
+    <string name="balance_loading">残高を読み込み中…</string>
+    <string name="balance_empty">トークンなし</string>
+    <string name="balance_no_wallet_desc">設定でウォレットを設定して\n残高を表示してください</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">許可されたトークン</string>
+    <string name="settings_add_token">トークンを追加</string>
+    <string name="add_token_prompt">トークンコントラクトアドレスを入力：</string>
+    <string name="add_token_validating">トークンを検証中…</string>
+    <string name="add_token_button">追加</string>
+    <string name="delete">削除</string>
+
+    <!-- Common -->
+    <string name="cancel">キャンセル</string>
+    <string name="close">閉じる</string>
+    <string name="retry">再試行</string>
+    <string name="error">エラー</string>
+    <string name="copy">コピー</string>
+    <string name="tx_hash">TX：%s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">ウォレット未設定</string>
+    <string name="error_device_security">デバイスセキュリティエラー</string>
+    <string name="error_auth">認証エラー</string>
+    <string name="error_unknown">不明なエラー</string>
+    <string name="error_keystore_unavailable">Keystoreが利用不可 - 一部の機能が動作しません</string>
+    <string name="error_encryption_restart">暗号化エラー - アプリを再起動してください</string>
+    <string name="error_auth_cancelled">認証がキャンセルされました</string>
+    <string name="error_invalid_address">無効なアドレス</string>
+    <string name="error_invalid_address_format">無効なアドレス形式</string>
+    <string name="error_token_already_added">トークンは既に追加されています</string>
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">送信完了！Tx: %s…</string>
+    <string name="token_native">ネイティブ</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">あなたの残高</string>
+    <string name="pay_insufficient_balance">残高不足</string>
+    <string name="pay_need_more">あと %1$s %2$s 必要です</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">ようこそ</string>
+    <string name="welcome_sovereignty">あなたの鍵。\nあなたの資金。\nあなたの主権。</string>
+    <string name="welcome_desc">あなたの資金はこのアプリに保存されていません。ブロックチェーン上に存在し、あなたの秘密鍵で管理されています。\n\nこのアプリはあなたの鍵を安全に保存するだけです。私たちはあなたの資金にアクセスできません。\n\n注意：一部のトークン（USDC、USDT）は発行者によって凍結される可能性があります。最大の主権を得るには、ネイティブETHまたは分散型トークンを使用してください。</string>
+    <string name="welcome_warning_title">あなたの鍵 = あなたの資金</string>
+    <string name="welcome_warning_desc">秘密鍵を紛失したり、誰かと共有したりすると、資金の管理を永久に失います。\n\n回復オプションはありません。サポートチームも助けられません。これが真の所有権の本質です。\n\n常に鍵の安全なバックアップを保管してください。</string>
+    <string name="welcome_opensource">オープンソースソフトウェア。信頼せず、検証を。</string>
+    <string name="welcome_start">理解しました、始めましょう</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">加盟店ID</string>
+    <string name="settings_merchant_name">事業者名</string>
+    <string name="settings_merchant_name_hint">マイコーヒーショップ</string>
+    <string name="settings_merchant_domain">ドメイン / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth または mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">支払い時にお客様に表示されます</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">プライバシーモード</string>
+    <string name="settings_stealth_desc">ワンタイムアドレスで支払いを受け取る（EIP-5564）</string>
+    <string name="settings_stealth_enabled">有効</string>
+    <string name="settings_stealth_info">各支払いはあなただけが使用できるユニークなアドレスに送られます。観察者は支払いをあなたのビジネスに紐づけることができません。</string>
+    <string name="stealth_address_label">ステルスモード有効</string>
+    <string name="stealth_payment_note">支払いはプライベートアドレスに送信されます</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">受取人アドレス</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">プライベートウォレット</string>
+    <string name="stealth_wallet_addresses">%d個のステルスアドレスに分散</string>
+    <string name="stealth_wallet_privacy_title">あなたの資金はプライベートです</string>
+    <string name="stealth_wallet_privacy_desc">この残高は公開ウォレットにリンクされていません。サプライヤー、取引所、どこにでも直接支出できます - あなたのビジネスアイデンティティは隠されたままです。</string>
+    <string name="stealth_wallet_send">送信</string>
+    <string name="stealth_wallet_send_title">プライベートウォレットから送信</string>
+    <string name="stealth_wallet_available">利用可能：%1$s %2$s</string>
+    <string name="stealth_wallet_amount">金額</string>
+    <string name="nav_stealth_wallet">プライベートウォレット</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">複数のアドレス</string>
+    <string name="stealth_wallet_gas_desc">あなたの資金は%d個のアドレスに分散されています。大きな金額の支出には複数のトランザクションが必要になり、ガス代が増加する可能性があります。</string>
+    <string name="stealth_wallet_consolidate">メインウォレットに統合</string>
+    <string name="stealth_wallet_consolidate_title">資金を統合しますか？</string>
+    <string name="stealth_wallet_consolidate_warning">これにより、プライベートウォレットのすべての資金がメインウォレットアドレスに転送されます。</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">警告：これによりプライバシーが損なわれます。メインウォレットは受け取ったすべての支払いにリンクされます。</string>
+    <string name="stealth_wallet_consolidate_benefit">利点：将来の支出は1回のトランザクションのみ必要になります（ガス代削減）。</string>
+    <string name="stealth_wallet_consolidate_confirm">統合</string>
+    <string name="stealth_wallet_consolidate_success">資金をメインウォレットに統合しました</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">支払者プライバシー</string>
+    <string name="settings_payer_privacy_desc">一時的なアカウントから支払い（ERC-4337）</string>
+    <string name="settings_payer_privacy_info">各支払いはユニークなアカウントを使用します。メインウォレットアドレスはオンチェーンで表示されません。</string>
+    <string name="settings_payer_privacy_requires_api">メインネットにはAPIキーが必要</string>
+    <string name="settings_payer_privacy_public_bundler">テストネットでは無料（パブリックバンドラー）</string>
+    <string name="payer_privacy_note">ウォレットアドレスは非表示になります</string>
+    <string name="payer_privacy_processing">プライベート支払いを処理中…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">アドレス帳</string>
+    <string name="address_book_add">連絡先を追加</string>
+    <string name="address_book_edit">連絡先を編集</string>
+    <string name="address_book_search">連絡先を検索…</string>
+    <string name="address_book_empty">連絡先がありません</string>
+    <string name="address_book_empty_hint">アドレスを追加して\n支払い相手や受取相手を簡単に識別</string>
+    <string name="address_book_no_results">連絡先が見つかりません</string>
+    <string name="address_book_address">ウォレットアドレス</string>
+    <string name="address_book_name">名前</string>
+    <string name="address_book_name_hint">例：コーヒーショップ、山田太郎</string>
+    <string name="address_book_note">メモ（任意）</string>
+    <string name="address_book_note_hint">例：サプライヤー、友人</string>
+    <string name="address_book_delete_title">連絡先を削除しますか？</string>
+    <string name="address_book_delete_message">%sをアドレス帳から削除しますか？</string>
+    <string name="address_book_saved">連絡先を保存しました</string>
+    <string name="address_book_unknown">不明</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">シンプルモード</string>
+    <string name="settings_simple_mode_desc">使いやすい、基本オプション</string>
+    <string name="settings_advanced_mode">アドバンスモード</string>
+    <string name="settings_advanced_mode_desc">上級ユーザー向け暗号オプション</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">連絡先を共有</string>
+    <string name="share_contact_title">アドレスを共有</string>
+    <string name="share_contact_ready">共有準備完了</string>
+    <string name="share_contact_ready_desc">別のCleanSkyデバイスに\nスマートフォンを近づけてください</string>
+    <string name="share_contact_received">連絡先を受信しました！</string>
+    <string name="share_contact_received_name">%sが接続を希望しています</string>
+    <string name="share_contact_save">連絡先に保存</string>
+    <string name="share_contact_your_name">あなたの名前（任意）</string>
+    <string name="share_contact_your_name_hint">他の人にどう表示されるか</string>
+    <string name="share_contact_mutual">連絡先を交換</string>
+    <string name="share_contact_mutual_desc">両方のデバイスが同時にアドレスを共有します</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">送金</string>
+    <string name="send_title">連絡先に送金</string>
+    <string name="send_select_contact">受取人を選択</string>
+    <string name="send_no_contacts">連絡先がありません</string>
+    <string name="send_no_contacts_hint">NFCまたは手動で連絡先を追加して\n送金できるようにしてください</string>
+    <string name="send_amount">金額</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">宛先：%s</string>
+    <string name="send_confirm">%1$s %2$sを送金</string>
+    <string name="send_processing">送金中…</string>
+    <string name="send_success">送金成功！</string>
+    <string name="send_success_desc">%1$s %2$sを%3$sに送金しました</string>
+    <string name="send_error">送金失敗</string>
+    <string name="send_enter_amount">金額を入力</string>
+    <string name="send_new">新しい送金</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">すべて</string>
+    <string name="history_filter_received">受取</string>
+    <string name="history_filter_sent">送信</string>
+    <string name="history_filter_contact">連絡先</string>
+    <string name="history_filter_by_contact">連絡先でフィルター</string>
+    <string name="history_show_all">すべて表示</string>
+    <string name="history_no_results">フィルターに一致する取引がありません</string>
+    <string name="history_add_contact">連絡先に追加</string>
+    <string name="history_edit_contact">連絡先を編集</string>
+    <string name="history_from">送信元</string>
+    <string name="history_to">送信先</string>
+    <string name="history_date">日付</string>
+    <string name="history_tx_hash">トランザクション</string>
+    <string name="history_refund">返金</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">金額が小さすぎます</string>
+    <string name="scam_amount_large_warning">高額送金</string>
+    <string name="scam_amount_large_desc">%1$s %2$s を送金しようとしています。\n金額が正しいことを確認してください。</string>
+    <string name="scam_confirm_large">高額送金を確認</string>
+    <string name="scam_dust_attack_warning">不審なリクエスト</string>
+    <string name="scam_dust_attack_desc">これは非常に少額（%1$s %2$s）です。ダストアタックはウォレットを追跡するために微小な支払いを使用します。予期しないリクエストは拒否してください。</string>
+    <string name="scam_receive_large_warning">高額支払いリクエスト</string>
+    <string name="scam_receive_large_desc">このリクエストは %1$s %2$s です。支払い前に金額が正しいことを確認してください。</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">受取専用</string>
+    <string name="settings_mode_receive_only">受取</string>
+    <string name="settings_mode_receive_only_desc">秘密鍵なし</string>
+    <string name="settings_receive_only">受取専用設定</string>
+    <string name="settings_escrow_address">Escrow アドレス</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow 未設定</string>
+    <string name="receive_only_no_escrow_desc">設定で escrow アドレスと API key を設定してください</string>
+    <string name="receive_only_security_notice">このデバイスに秘密鍵はありません。盗難時も安全です。</string>
+    <string name="receive_only_api_key_required">Relayer 実行には API key が必要です</string>
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky ထိတွေ့မဲ့</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">ပေးချေ</string>
+    <string name="nav_collect">လက်ခံ</string>
+    <string name="nav_settings">ဆက်တင်များ</string>
+    <string name="nav_history">မှတ်တမ်း</string>
+    <string name="nav_refund">ပြန်အမ်း</string>
+    <string name="nav_balance">လက်ကျန်ငွေ</string>
+    <string name="nav_back">နောက်သို့</string>
+
+    <!-- Common actions -->
+    <string name="back">နောက်သို့</string>
+    <string name="save">သိမ်းဆည်း</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">ပိုက်ဆံအိတ်မရှိပါ</string>
+    <string name="pay_no_wallet_desc">ငွေပေးချေရန် ဆက်တင်များတွင်\nပိုက်ဆံအိတ်သတ်မှတ်ပါ</string>
+    <string name="pay_ready">ပေးချေရန်အဆင်သင့်</string>
+    <string name="pay_ready_desc">ဖုန်းကို ရောင်းသူ၏\nစက်ပစ္စည်းနှင့်နီးကပ်ထားပါ</string>
+    <string name="pay_request_title">ငွေပေးချေရန်တောင်းဆို</string>
+    <string name="pay_network">ကွန်ရက်: %s</string>
+    <string name="pay_expired">တောင်းဆိုချက်သက်တမ်းကုန်သွားပါပြီ</string>
+    <string name="pay_cancel">ပယ်ဖျက်</string>
+    <string name="pay_confirm">ပေးချေ</string>
+    <string name="pay_new">ငွေပေးချေမှုအသစ်</string>
+    <string name="pay_signing">ငွေလွှဲမှုလက်မှတ်ထိုးနေသည်…</string>
+    <string name="pay_tx_signed">ငွေလွှဲမှုလက်မှတ်ထိုးပြီး</string>
+    <string name="pay_tx_signed_desc">ပို့ရန် ဖုန်းကို\nရောင်းသူနှင့်နီးကပ်ထားပါ</string>
+    <string name="pay_authenticating">အတည်ပြုနေသည်…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">ပိုက်ဆံအိတ်မရှိပါ</string>
+    <string name="collect_no_wallet_desc">ငွေလက်ခံရန် ဆက်တင်များတွင်\nပိုက်ဆံအိတ်သတ်မှတ်ပါ</string>
+    <string name="collect_amount">လက်ခံရမည့်ပမာဏ</string>
+    <string name="collect_button">လက်ခံ</string>
+    <string name="collect_waiting">ငွေပေးချေမှုစောင့်နေသည်</string>
+    <string name="collect_waiting_desc">ဖောက်သည်ကို ဖုန်းကို\nနီးကပ်ထားရန်တောင်းပါ</string>
+    <string name="collect_new">လက်ခံမှုအသစ်</string>
+    <string name="collect_processing">ငွေပေးချေမှုလုပ်ဆောင်နေသည်…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">လုပ်ဆောင်မှုမုဒ်</string>
+    <string name="settings_mode_pay">ပေးချေ</string>
+    <string name="settings_mode_pay_desc">ငွေပေးချေမှုပြုလုပ်</string>
+    <string name="settings_mode_collect">လက်ခံ</string>
+    <string name="settings_mode_collect_desc">ငွေပေးချေမှုလက်ခံ</string>
+    <string name="settings_wallet">ပိုက်ဆံအိတ်</string>
+    <string name="settings_wallet_address">လိပ်စာ</string>
+    <string name="settings_wallet_none">ပိုက်ဆံအိတ်မသတ်မှတ်ရသေးပါ</string>
+    <string name="settings_wallet_create">ဖန်တီး</string>
+    <string name="settings_wallet_import">ထည့်သွင်း</string>
+    <string name="settings_network">ဘလော့ချိန်းကွန်ရက်</string>
+    <string name="settings_chain_id">Chain ID: %d</string>
+    <string name="settings_execution">ငွေလွှဲမှုလုပ်ဆောင်ခြင်း</string>
+    <string name="settings_exec_direct">တိုက်ရိုက်</string>
+    <string name="settings_exec_direct_desc">သင် gas ပေးချေရမည်</string>
+    <string name="settings_exec_relayer">Relayer (Gelato)</string>
+    <string name="settings_exec_relayer_desc">relayer မှတဆင့် ကျေးဇူးပြု gas</string>
+    <string name="settings_exec_aa">Account Abstraction</string>
+    <string name="settings_exec_aa_desc">Paymaster ပါသော ERC-4337</string>
+    <string name="settings_api_key">API သော့</string>
+    <string name="settings_save">သိမ်းဆည်းပြီးပြန်သွား</string>
+    <string name="settings_not_available">ဤကွန်ရက်တွင်မရရှိနိုင်ပါ</string>
+    <string name="settings_language">ဘာသာစကား</string>
+    <string name="settings_language_system">စနစ်မူရင်း</string>
+    <string name="collect_select_currency">ငွေကြေးရွေးပါ</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">လုံခြုံရေး</string>
+    <string name="security_encryption">သော့ကုဒ်ဝှက်ခြင်း</string>
+    <string name="security_encryption_desc">Android Keystore နှင့် AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">ဟာ့ဒ်ဝဲလုံခြုံရေးမော်ဂျူးအသက်ဝင်နေသည်</string>
+    <string name="security_strongbox_unavailable">ဤစက်ပစ္စည်းတွင်မရရှိနိုင်ပါ</string>
+    <string name="security_biometric">ဇီဝဗေဒအတည်ပြုခြင်း</string>
+    <string name="security_biometric_required">ငွေပေးချေမှုများအတွက်လိုအပ်သည်</string>
+    <string name="security_biometric_disabled">ပိတ်ထားသည်</string>
+    <string name="security_biometric_unavailable">မရရှိနိုင်ပါ</string>
+    <string name="security_export">ပုဂ္ဂလိကသော့ထုတ်ယူ</string>
+    <string name="security_export_desc">သင့်သော့ကိုလုံခြုံစွာသိမ်းဆည်းပါ</string>
+    <string name="security_delete">ပိုက်ဆံအိတ်ဖျက်</string>
+    <string name="security_delete_desc">ဒေတာအားလုံးအမြဲတမ်းဖျက်</string>
+    <string name="security_delete_title">ပိုက်ဆံအိတ်ဖျက်</string>
+    <string name="security_delete_warning">ဤလုပ်ဆောင်ချက်ပြန်ပြောင်း၍မရပါ။</string>
+    <string name="security_delete_warning2">ပုဂ္ဂလိကသော့အရန်မရှိပါက ပိုင်ဆိုင်မှုအားလုံးကိုဆုံးရှုံးမည်။</string>
+    <string name="security_delete_warning3">ဆက်လက်မလုပ်မီ သော့ထုတ်ယူပြီးကြောင်းသေချာပါစေ။</string>
+    <string name="security_delete_confirm">ဖျက်</string>
+    <string name="security_status_active">အသက်ဝင်</string>
+    <string name="security_status_warning">သတိပေးချက်</string>
+    <string name="security_status_na">မသက်ဆိုင်ပါ</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">ပိုက်ဆံအိတ်ထည့်သွင်း</string>
+    <string name="import_private_key">ပုဂ္ဂလိကသော့</string>
+    <string name="import_seed_phrase">Seed Phrase</string>
+    <string name="import_prompt">သင့်ပုဂ္ဂလိကသော့ထည့်ပါ:</string>
+    <string name="import_prompt_seed">သင့် seed phrase ထည့်ပါ (စကားလုံး ၁၂-၂၄):</string>
+    <string name="import_seed_hint">စကားလုံး၁ စကားလုံး၂ စကားလုံး၃ …</string>
+    <string name="import_button">ထည့်သွင်း</string>
+    <string name="import_error_invalid">မမှန်ကန်သောပုဂ္ဂလိကသော့</string>
+    <string name="import_error_invalid_seed">မမှန်ကန်သော seed phrase</string>
+    <string name="import_error_encryption">ကုဒ်ဝှက်ခြင်းအမှား</string>
+    <string name="export_title">ပုဂ္ဂလိကသော့</string>
+    <string name="export_warning">ဤသော့ကိုမျှဝေမပေးပါနှင့်။ ပိုင်ဆိုင်သူသည် သင့်ပိုင်ဆိုင်မှုများကိုအပြည့်အဝထိန်းချုပ်နိုင်သည်။</string>
+    <string name="export_understood">နားလည်ပါပြီ</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">အကျဉ်းချုပ်</string>
+    <string name="history_received">လက်ခံပြီး</string>
+    <string name="history_sent">ပို့ပြီး</string>
+    <string name="history_refunded">ပြန်အမ်းပြီး</string>
+    <string name="history_empty">ငွေလွှဲမှုမရှိပါ</string>
+    <string name="history_empty_desc">%s ရှိငွေလွှဲမှုများ\nဤနေရာတွင်ပေါ်မည်</string>
+    <string name="history_payment_received">ငွေပေးချေမှုလက်ခံပြီး</string>
+    <string name="history_payment_sent">ငွေပေးချေမှုပို့ပြီး</string>
+    <string name="history_refund_sent">ပြန်အမ်း</string>
+    <string name="history_refund_received">ပြန်အမ်းငွေလက်ခံပြီး</string>
+    <string name="history_status_pending">စောင့်ဆိုင်းနေသည်</string>
+    <string name="history_status_confirmed">အတည်ပြုပြီး</string>
+    <string name="history_status_failed">မအောင်မြင်ပါ</string>
+    <string name="history_status_refunded">ပြန်အမ်းပြီး</string>
+    <string name="history_status_partial">တစ်စိတ်တစ်ပိုင်း</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">မူလငွေလွှဲမှု</string>
+    <string name="refund_amount">ပမာဏ</string>
+    <string name="refund_already">ပြန်အမ်းပြီးသား</string>
+    <string name="refund_available">ရရှိနိုင်</string>
+    <string name="refund_recipient">လက်ခံသူ</string>
+    <string name="refund_date">ရက်စွဲ</string>
+    <string name="refund_type">ပြန်အမ်းအမျိုးအစား</string>
+    <string name="refund_full">အပြည့်အဝ</string>
+    <string name="refund_partial">တစ်စိတ်တစ်ပိုင်း</string>
+    <string name="refund_partial_desc">ပမာဏသတ်မှတ်ပါ</string>
+    <string name="refund_amount_label">ပြန်အမ်းပမာဏ (%s)</string>
+    <string name="refund_max">အများဆုံး: %1$s %2$s</string>
+    <string name="refund_gas_notice">ဤငွေလွှဲမှုအတွက် gas ပေးချေရမည်</string>
+    <string name="refund_button">ပြန်အမ်း %1$s %2$s</string>
+    <string name="refund_processing">ပြန်အမ်းမှုလုပ်ဆောင်နေသည်…</string>
+    <string name="refund_success">ပြန်အမ်းမှုအောင်မြင်ပါပြီ</string>
+    <string name="refund_done">ပြီးဆုံး</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">သင့်တိုကင်များ</string>
+    <string name="balance_manage">စီမံ</string>
+    <string name="balance_refresh">ပြန်လည်စတင်</string>
+    <string name="balance_loading">လက်ကျန်ငွေတင်နေသည်…</string>
+    <string name="balance_empty">တိုကင်မရှိပါ</string>
+    <string name="balance_no_wallet_desc">လက်ကျန်ငွေကြည့်ရန် ဆက်တင်များတွင်\nပိုက်ဆံအိတ်သတ်မှတ်ပါ</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">ခွင့်ပြုထားသောတိုကင်များ</string>
+    <string name="settings_add_token">တိုကင်ထည့်ပါ</string>
+    <string name="add_token_prompt">တိုကင်စာချုပ်လိပ်စာထည့်ပါ:</string>
+    <string name="add_token_validating">တိုကင်အတည်ပြုနေသည်…</string>
+    <string name="add_token_button">ထည့်ပါ</string>
+    <string name="delete">ဖျက်ပါ</string>
+
+    <!-- Common -->
+    <string name="cancel">ပယ်ဖျက်</string>
+    <string name="close">ပိတ်</string>
+    <string name="retry">ထပ်စမ်း</string>
+    <string name="error">အမှား</string>
+    <string name="copy">ကူးယူ</string>
+    <string name="tx_hash">TX: %s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">ပိုက်ဆံအိတ်မသတ်မှတ်ရသေးပါ</string>
+    <string name="error_device_security">စက်ပစ္စည်းလုံခြုံရေးအမှား</string>
+    <string name="error_auth">အတည်ပြုမှုအမှား</string>
+    <string name="error_unknown">မသိသောအမှား</string>
+    <string name="error_keystore_unavailable">Keystore မရရှိနိုင်ပါ - လုပ်ဆောင်ချက်အချို့အလုပ်မလုပ်ပါ</string>
+    <string name="error_encryption_restart">Encryption error - restart the app</string>
+    <string name="error_auth_cancelled">Authentication cancelled</string>
+    <string name="error_invalid_address">Invalid address</string>
+    <string name="error_invalid_address_format">Invalid address format</string>
+    <string name="error_token_already_added">Token already added</string>
+    <string name="stealth_spend_sent_tx">Sent! Tx: %s…</string>
+    <string name="token_native">Native</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">သင့်လက်ကျန်ငွေ</string>
+    <string name="pay_insufficient_balance">လက်ကျန်ငွေမလုံလောက်ပါ</string>
+    <string name="pay_need_more">သင် %1$s %2$s ထပ်လိုအပ်သည်</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">ကြိုဆိုပါတယ်</string>
+    <string name="welcome_sovereignty">သင့်သော့များ။\nသင့်ပိုင်ဆိုင်မှုများ။\nသင့်အချုပ်အခြာအာဏာ။</string>
+    <string name="welcome_desc">သင့်ပိုင်ဆိုင်မှုများကို ဤအက်ပ်တွင်သိမ်းမထားပါ။ ၎င်းတို့သည် blockchain ပေါ်တွင်ရှိပြီး သင့်ပုဂ္ဂလိကသော့များဖြင့်ထိန်းချုပ်ထားသည်။\n\nဤအက်ပ်သည် သင့်သော့များကိုသာလုံခြုံစွာသိမ်းဆည်းသည်။ ကျွန်ုပ်တို့သည် သင့်ပိုင်ဆိုင်မှုများကိုဝင်ရောက်၍မရပါ။\n\nမှတ်ချက်: တိုကင်အချို့ (USDC, USDT) ကို ထုတ်ဝေသူများကဖျက်နိုင်သည်။ အချုပ်အခြာအာဏာအများဆုံးအတွက် native ETH သို့မဟုတ် decentralized တိုကင်များသုံးပါ။</string>
+    <string name="welcome_warning_title">သင့်သော့များ = သင့်ပိုင်ဆိုင်မှုများ</string>
+    <string name="welcome_warning_desc">သင့်ပုဂ္ဂလိကသော့များပျောက်သွားလျှင် သို့မဟုတ် တစ်စုံတစ်ယောက်နှင့်မျှဝေလျှင် သင့်ပိုင်ဆိုင်မှုများကိုအမြဲတမ်းထိန်းချုပ်ခွင့်ဆုံးရှုံးမည်။\n\nပြန်လည်ရယူရန်နည်းလမ်းမရှိပါ။ ပံ့ပိုးကူညီရေးအဖွဲ့မှကူညီ၍မရပါ။ ဤသည်မှာစစ်မှန်သောပိုင်ဆိုင်မှု၏သဘောသဘာဝဖြစ်သည်။\n\nသင့်သော့များကိုအမြဲတမ်းလုံခြုံစွာအရန်သိမ်းထားပါ။</string>
+    <string name="welcome_opensource">Open source software။ ယုံကြည်မနေဘဲ စစ်ဆေးပါ။</string>
+    <string name="welcome_start">နားလည်ပါပြီ၊ စတင်ကြပါစို့</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">ရောင်းသူအထောက်အထား</string>
+    <string name="settings_merchant_name">လုပ်ငန်းအမည်</string>
+    <string name="settings_merchant_name_hint">ကျွန်ုပ်၏ကော်ဖီဆိုင်</string>
+    <string name="settings_merchant_domain">Domain / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth သို့မဟုတ် mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">ငွေပေးချေစဉ် ဖောက်သည်များကိုပြသသည်</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">ကိုယ်ရေးကိုယ်တာမုဒ်</string>
+    <string name="settings_stealth_desc">တစ်ခါသုံးလိပ်စာများသို့ငွေလက်ခံပါ (EIP-5564)</string>
+    <string name="settings_stealth_enabled">ဖွင့်ထား</string>
+    <string name="settings_stealth_info">ငွေပေးချေမှုတိုင်း သင်သာသုံးနိုင်သောထူးခြားလိပ်စာသို့သွားသည်။ စောင့်ကြည့်သူများသည် ငွေပေးချေမှုများကိုသင့်လုပ်ငန်းနှင့်ချိတ်ဆက်၍မရပါ။</string>
+    <string name="stealth_address_label">Stealth မုဒ်အသက်ဝင်နေသည်</string>
+    <string name="stealth_payment_note">ငွေပေးချေမှုကို ပုဂ္ဂလိကလိပ်စာသို့ပို့မည်</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">လက်ခံသူလိပ်စာ</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">ပုဂ္ဂလိကပိုက်ဆံအိတ်</string>
+    <string name="stealth_wallet_addresses">stealth လိပ်စာ %d ခုတွင်</string>
+    <string name="stealth_wallet_privacy_title">သင့်ပိုင်ဆိုင်မှုများသည်ပုဂ္ဂလိကဖြစ်သည်</string>
+    <string name="stealth_wallet_privacy_desc">ဤလက်ကျန်ငွေကို သင့်အများပြည်သူပိုက်ဆံအိတ်နှင့်မချိတ်ဆက်ထားပါ။ ပေးသွင်းသူများ၊ exchange များ၊ သို့မဟုတ် မည်သည့်နေရာမဆိုသို့တိုက်ရိုက်ပို့ပါ - သင့်လုပ်ငန်းအထောက်အထားဝှက်ထားသည်။</string>
+    <string name="stealth_wallet_send">ပို့</string>
+    <string name="stealth_wallet_send_title">ပုဂ္ဂလိကပိုက်ဆံအိတ်မှပို့</string>
+    <string name="stealth_wallet_available">ရရှိနိုင်: %1$s %2$s</string>
+    <string name="stealth_wallet_amount">ပမာဏ</string>
+    <string name="nav_stealth_wallet">ပုဂ္ဂလိကပိုက်ဆံအိတ်</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">လိပ်စာများစွာ</string>
+    <string name="stealth_wallet_gas_desc">သင့်ပိုင်ဆိုင်မှုများကို လိပ်စာ %d ခုတွင်ဖြန့်ထားသည်။ ပမာဏများများသုံးစွဲရာတွင် ငွေလွှဲမှုများစွာလိုအပ်နိုင်ပြီး gas ကုန်ကျစရိတ်တိုးလာမည်။</string>
+    <string name="stealth_wallet_consolidate">ပင်မပိုက်ဆံအိတ်သို့စုစည်း</string>
+    <string name="stealth_wallet_consolidate_title">ပိုင်ဆိုင်မှုများစုစည်းမလား?</string>
+    <string name="stealth_wallet_consolidate_warning">၎င်းသည် သင့်ပုဂ္ဂလိကပိုက်ဆံအိတ်မှပိုင်ဆိုင်မှုအားလုံးကို သင့်ပင်မပိုက်ဆံအိတ်လိပ်စာသို့လွှဲပြောင်းမည်။</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">သတိပေးချက်: ၎င်းကကိုယ်ရေးကိုယ်တာကိုဖျက်ဆီးသည်။ သင့်ပင်မပိုက်ဆံအိတ်ကို လက်ခံထားသောငွေပေးချေမှုအားလုံးနှင့်ချိတ်ဆက်မည်။</string>
+    <string name="stealth_wallet_consolidate_benefit">အကျိုးကျေးဇူး: နောင်တွင်သုံးစွဲရာတွင် ငွေလွှဲမှုတစ်ခုသာလိုအပ်မည် (gas ကုန်ကျစရိတ်နည်းသည်)။</string>
+    <string name="stealth_wallet_consolidate_confirm">စုစည်း</string>
+    <string name="stealth_wallet_consolidate_success">ပိုင်ဆိုင်မှုများကိုပင်မပိုက်ဆံအိတ်သို့စုစည်းပြီးပါပြီ</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">ငွေပေးသူကိုယ်ရေးကိုယ်တာ</string>
+    <string name="settings_payer_privacy_desc">ယာယီအကောင့်များမှပေးချေပါ (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">ငွေပေးချေမှုတိုင်း ထူးခြားအကောင့်သုံးသည်။ သင့်ပင်မပိုက်ဆံအိတ်လိပ်စာကို chain ပေါ်တွင်မမြင်ရပါ။</string>
+    <string name="settings_payer_privacy_requires_api">mainnet အတွက် API သော့လိုအပ်သည်</string>
+    <string name="settings_payer_privacy_public_bundler">testnet များတွင်အခမဲ့ (public bundler)</string>
+    <string name="payer_privacy_note">သင့်ပိုက်ဆံအိတ်လိပ်စာကိုဝှက်ထားမည်</string>
+    <string name="payer_privacy_processing">ပုဂ္ဂလိကငွေပေးချေမှုလုပ်ဆောင်နေသည်…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">လိပ်စာစာအုပ်</string>
+    <string name="address_book_add">အဆက်အသွယ်ထည့်</string>
+    <string name="address_book_edit">အဆက်အသွယ်တည်းဖြတ်</string>
+    <string name="address_book_search">အဆက်အသွယ်များရှာပါ…</string>
+    <string name="address_book_empty">အဆက်အသွယ်မရှိသေးပါ</string>
+    <string name="address_book_empty_hint">သင်ငွေပေးသူ သို့မဟုတ် ငွေလက်ခံသူကို\nလွယ်ကူစွာခွဲခြားရန် လိပ်စာများထည့်ပါ</string>
+    <string name="address_book_no_results">အဆက်အသွယ်မတွေ့ပါ</string>
+    <string name="address_book_address">ပိုက်ဆံအိတ်လိပ်စာ</string>
+    <string name="address_book_name">အမည်</string>
+    <string name="address_book_name_hint">ဥပမာ ကော်ဖီဆိုင်၊ John Doe</string>
+    <string name="address_book_note">မှတ်ချက် (ရွေးချယ်နိုင်)</string>
+    <string name="address_book_note_hint">ဥပမာ ပေးသွင်းသူ၊ သူငယ်ချင်း</string>
+    <string name="address_book_delete_title">အဆက်အသွယ်ဖျက်မလား?</string>
+    <string name="address_book_delete_message">%s ကို သင့်လိပ်စာစာအုပ်မှဖယ်ရှားမလား?</string>
+    <string name="address_book_saved">အဆက်အသွယ်သိမ်းပြီး</string>
+    <string name="address_book_unknown">မသိ</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">ရိုးရှင်းမုဒ်</string>
+    <string name="settings_simple_mode_desc">အသုံးပြုရလွယ်ကူ၊ အခြေခံရွေးချယ်စရာများ</string>
+    <string name="settings_advanced_mode">အဆင့်မြင့်မုဒ်</string>
+    <string name="settings_advanced_mode_desc">ကျွမ်းကျင်သူများအတွက် crypto ရွေးချယ်စရာများ</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">အဆက်အသွယ်မျှဝေ</string>
+    <string name="share_contact_title">သင့်လိပ်စာမျှဝေပါ</string>
+    <string name="share_contact_ready">မျှဝေရန်အဆင်သင့်</string>
+    <string name="share_contact_ready_desc">သင့်ဖုန်းကို အခြား\nCleanSky စက်ပစ္စည်းနှင့်နီးကပ်ထားပါ</string>
+    <string name="share_contact_received">အဆက်အသွယ်ရရှိပြီး!</string>
+    <string name="share_contact_received_name">%s ချိတ်ဆက်လိုသည်</string>
+    <string name="share_contact_save">အဆက်အသွယ်များသို့သိမ်း</string>
+    <string name="share_contact_your_name">သင့်အမည် (ရွေးချယ်နိုင်)</string>
+    <string name="share_contact_your_name_hint">အခြားသူများက သင့်ကိုဘယ်လိုမြင်မည်</string>
+    <string name="share_contact_mutual">အဆက်အသွယ်လဲလှယ်</string>
+    <string name="share_contact_mutual_desc">စက်ပစ္စည်းနှစ်ခုလုံး တစ်ပြိုင်နက်လိပ်စာမျှဝေသည်</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">ပို့</string>
+    <string name="send_title">အဆက်အသွယ်သို့ပို့</string>
+    <string name="send_select_contact">လက်ခံသူရွေးပါ</string>
+    <string name="send_no_contacts">အဆက်အသွယ်မရှိသေးပါ</string>
+    <string name="send_no_contacts_hint">NFC သို့မဟုတ် ကိုယ်တိုင်ဖြင့်\nအဆက်အသွယ်ထည့်ပြီး ငွေပေးချေမှုများပို့ပါ</string>
+    <string name="send_amount">ပမာဏ</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">သို့: %s</string>
+    <string name="send_confirm">ပို့ %1$s %2$s</string>
+    <string name="send_processing">ပို့နေသည်…</string>
+    <string name="send_success">အောင်မြင်စွာပို့ပြီး!</string>
+    <string name="send_success_desc">%1$s %2$s ကို %3$s သို့ပို့ပြီး</string>
+    <string name="send_error">ပို့၍မအောင်မြင်ပါ</string>
+    <string name="send_enter_amount">ပမာဏထည့်ပါ</string>
+    <string name="send_new">လွှဲပြောင်းမှုအသစ်</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">အားလုံး</string>
+    <string name="history_filter_received">လက်ခံထား</string>
+    <string name="history_filter_sent">ပို့ထား</string>
+    <string name="history_filter_contact">အဆက်အသွယ်</string>
+    <string name="history_filter_by_contact">အဆက်အသွယ်ဖြင့်စစ်ထုတ်</string>
+    <string name="history_show_all">အားလုံးပြ</string>
+    <string name="history_no_results">စစ်ထုတ်မှုနှင့်ကိုက်ညီသောငွေလွှဲမှုမရှိပါ</string>
+    <string name="history_add_contact">အဆက်အသွယ်များသို့ထည့်</string>
+    <string name="history_edit_contact">အဆက်အသွယ်တည်းဖြတ်</string>
+    <string name="history_from">မှ</string>
+    <string name="history_to">သို့</string>
+    <string name="history_date">ရက်စွဲ</string>
+    <string name="history_tx_hash">ငွေလွှဲမှု</string>
+    <string name="history_refund">ပြန်အမ်း</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">ပမာဏသေးလွန်းသည်</string>
+    <string name="scam_amount_large_warning">ပမာဏကြီးသည်</string>
+    <string name="scam_amount_large_desc">သင် %1$s %2$s ပို့မည်ဖြစ်သည်။\nမှန်ကန်ကြောင်းအတည်ပြုပါ။</string>
+    <string name="scam_confirm_large">ပမာဏကြီးလွှဲပြောင်းမှုအတည်ပြု</string>
+    <string name="scam_dust_attack_warning">သံသယဖြစ်ဖွယ်တောင်းဆိုချက်</string>
+    <string name="scam_dust_attack_desc">ဤပမာဏသည်အလွန်သေးသည် (%1$s %2$s)။ Dust attack များသည် ပိုက်ဆံအိတ်များကိုခြေရာခံရန် သေးငယ်သောငွေပေးချေမှုများအသုံးပြုသည်။ မမျှော်လင့်ပါက ငြင်းပယ်ပါ။</string>
+    <string name="scam_receive_large_warning">ပမာဏကြီးငွေပေးချေရန်တောင်းဆိုချက်</string>
+    <string name="scam_receive_large_desc">ဤတောင်းဆိုချက်သည် %1$s %2$s အတွက်ဖြစ်သည်။ ပေးချေခြင်းမပြုမီ ပမာဏမှန်ကန်ကြောင်းအတည်ပြုပါ။</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">လက်ခံရုံသာ</string>
+    <string name="settings_mode_receive_only">လက်ခံ</string>
+    <string name="settings_mode_receive_only_desc">ကိုယ်ပိုင်သော့မရှိ</string>
+    <string name="settings_receive_only">လက်ခံရုံသာ ပြင်ဆင်သတ်မှတ်ခြင်း</string>
+    <string name="settings_escrow_address">Escrow လိပ်စာ</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">Escrow မပြင်ဆင်ရသေး</string>
+    <string name="receive_only_no_escrow_desc">ဆက်တင်များတွင် escrow လိပ်စာနှင့် API key ပြင်ဆင်ပါ</string>
+    <string name="receive_only_security_notice">ဤကိရိယာတွင် ကိုယ်ပိုင်သော့မရှိပါ။ ခိုးယူခံရလျှင်လည်း လုံခြုံသည်။</string>
+    <string name="receive_only_api_key_required">Relayer လုပ်ဆောင်ရန် API key လိုအပ်သည်</string>
+</resources>

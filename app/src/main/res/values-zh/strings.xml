@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanSky 无接触支付</string>
+
+    <!-- Navigation -->
+    <string name="nav_pay">付款</string>
+    <string name="nav_collect">收款</string>
+    <string name="nav_settings">设置</string>
+    <string name="nav_history">历史记录</string>
+    <string name="nav_refund">退款</string>
+    <string name="nav_balance">余额</string>
+    <string name="nav_back">返回</string>
+
+    <!-- Common actions -->
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+
+    <!-- Pay Screen -->
+    <string name="pay_no_wallet">无钱包</string>
+    <string name="pay_no_wallet_desc">在设置中配置您的钱包\n以进行支付</string>
+    <string name="pay_ready">准备付款</string>
+    <string name="pay_ready_desc">将您的手机靠近\n商家设备</string>
+    <string name="pay_request_title">付款请求</string>
+    <string name="pay_network">网络：%s</string>
+    <string name="pay_expired">请求已过期</string>
+    <string name="pay_cancel">取消</string>
+    <string name="pay_confirm">支付</string>
+    <string name="pay_new">新付款</string>
+    <string name="pay_signing">正在签名交易…</string>
+    <string name="pay_tx_signed">交易已签名</string>
+    <string name="pay_tx_signed_desc">将您的手机靠近\n商家以发送</string>
+    <string name="pay_authenticating">正在验证…</string>
+
+    <!-- Collect Screen -->
+    <string name="collect_no_wallet">无钱包</string>
+    <string name="collect_no_wallet_desc">在设置中配置您的钱包\n以收款</string>
+    <string name="collect_amount">收款金额</string>
+    <string name="collect_button">收款</string>
+    <string name="collect_waiting">等待付款</string>
+    <string name="collect_waiting_desc">请客户\n将手机靠近</string>
+    <string name="collect_new">新收款</string>
+    <string name="collect_processing">正在处理付款…</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_mode">操作模式</string>
+    <string name="settings_mode_pay">付款</string>
+    <string name="settings_mode_pay_desc">进行付款</string>
+    <string name="settings_mode_collect">收款</string>
+    <string name="settings_mode_collect_desc">接收付款</string>
+    <string name="settings_wallet">钱包</string>
+    <string name="settings_wallet_address">地址</string>
+    <string name="settings_wallet_none">未配置钱包</string>
+    <string name="settings_wallet_create">创建</string>
+    <string name="settings_wallet_import">导入</string>
+    <string name="settings_network">区块链网络</string>
+    <string name="settings_chain_id">链 ID：%d</string>
+    <string name="settings_execution">交易执行</string>
+    <string name="settings_exec_direct">直接</string>
+    <string name="settings_exec_direct_desc">您支付 Gas 费</string>
+    <string name="settings_exec_relayer">中继器 (Gelato)</string>
+    <string name="settings_exec_relayer_desc">通过中继器赞助 Gas</string>
+    <string name="settings_exec_aa">账户抽象</string>
+    <string name="settings_exec_aa_desc">ERC-4337 与 Paymaster</string>
+    <string name="settings_api_key">API 密钥</string>
+    <string name="settings_save">保存并返回</string>
+    <string name="settings_not_available">此网络不可用</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_system">系统默认</string>
+    <string name="collect_select_currency">选择货币</string>
+
+    <!-- Security Settings -->
+    <string name="security_title">安全</string>
+    <string name="security_encryption">密钥加密</string>
+    <string name="security_encryption_desc">使用 Android Keystore 的 AES-256-GCM</string>
+    <string name="security_strongbox">StrongBox (HSM)</string>
+    <string name="security_strongbox_active">硬件安全模块已激活</string>
+    <string name="security_strongbox_unavailable">此设备不可用</string>
+    <string name="security_biometric">生物识别认证</string>
+    <string name="security_biometric_required">付款时需要</string>
+    <string name="security_biometric_disabled">已禁用</string>
+    <string name="security_biometric_unavailable">不可用</string>
+    <string name="security_export">导出私钥</string>
+    <string name="security_export_desc">安全保存您的密钥</string>
+    <string name="security_delete">删除钱包</string>
+    <string name="security_delete_desc">永久删除所有数据</string>
+    <string name="security_delete_title">删除钱包</string>
+    <string name="security_delete_warning">此操作不可逆转。</string>
+    <string name="security_delete_warning2">如果没有私钥备份，您将失去所有资金的访问权限。</string>
+    <string name="security_delete_warning3">继续前请确保已导出您的密钥。</string>
+    <string name="security_delete_confirm">删除</string>
+    <string name="security_status_active">活跃</string>
+    <string name="security_status_warning">警告</string>
+    <string name="security_status_na">不适用</string>
+
+    <!-- Import/Export -->
+    <string name="import_title">导入钱包</string>
+    <string name="import_private_key">私钥</string>
+    <string name="import_seed_phrase">助记词</string>
+    <string name="import_prompt">输入您的私钥：</string>
+    <string name="import_prompt_seed">输入您的助记词（12–24个单词）：</string>
+    <string name="import_seed_hint">单词1 单词2 单词3 …</string>
+    <string name="import_button">导入</string>
+    <string name="import_error_invalid">私钥无效</string>
+    <string name="import_error_invalid_seed">助记词无效</string>
+    <string name="import_error_encryption">加密错误</string>
+    <string name="export_title">私钥</string>
+    <string name="export_warning">切勿与任何人分享此密钥。拥有它的人可以完全控制您的资金。</string>
+    <string name="export_understood">我明白了</string>
+
+    <!-- History Screen -->
+    <string name="history_summary">摘要</string>
+    <string name="history_received">已收</string>
+    <string name="history_sent">已发</string>
+    <string name="history_refunded">已退</string>
+    <string name="history_empty">无交易</string>
+    <string name="history_empty_desc">%s 上的交易\n将显示在这里</string>
+    <string name="history_payment_received">收到付款</string>
+    <string name="history_payment_sent">付款已发送</string>
+    <string name="history_refund_sent">退款</string>
+    <string name="history_refund_received">收到退款</string>
+    <string name="history_status_pending">待处理</string>
+    <string name="history_status_confirmed">已确认</string>
+    <string name="history_status_failed">失败</string>
+    <string name="history_status_refunded">已退款</string>
+    <string name="history_status_partial">部分</string>
+
+    <!-- Refund Screen -->
+    <string name="refund_original">原始交易</string>
+    <string name="refund_amount">金额</string>
+    <string name="refund_already">已退款</string>
+    <string name="refund_available">可用</string>
+    <string name="refund_recipient">收款人</string>
+    <string name="refund_date">日期</string>
+    <string name="refund_type">退款类型</string>
+    <string name="refund_full">全额</string>
+    <string name="refund_partial">部分</string>
+    <string name="refund_partial_desc">指定金额</string>
+    <string name="refund_amount_label">退款金额 (%s)</string>
+    <string name="refund_max">最大：%1$s %2$s</string>
+    <string name="refund_gas_notice">您将支付此交易的 Gas 费</string>
+    <string name="refund_button">退款 %1$s %2$s</string>
+    <string name="refund_processing">正在处理退款…</string>
+    <string name="refund_success">退款成功</string>
+    <string name="refund_done">完成</string>
+
+    <!-- Balance Screen -->
+    <string name="balance_tokens">您的代币</string>
+    <string name="balance_manage">管理</string>
+    <string name="balance_refresh">刷新</string>
+    <string name="balance_loading">正在加载余额…</string>
+    <string name="balance_empty">无代币</string>
+    <string name="balance_no_wallet_desc">在设置中配置您的钱包\n以查看您的余额</string>
+
+    <!-- Token Allowlist -->
+    <string name="settings_tokens">允许的代币</string>
+    <string name="settings_add_token">添加代币</string>
+    <string name="add_token_prompt">输入代币合约地址：</string>
+    <string name="add_token_validating">正在验证代币…</string>
+    <string name="add_token_button">添加</string>
+    <string name="delete">删除</string>
+
+    <!-- Common -->
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="retry">重试</string>
+    <string name="error">错误</string>
+    <string name="copy">复制</string>
+    <string name="tx_hash">交易：%s</string>
+
+    <!-- Biometric -->
+
+    <!-- Errors -->
+    <string name="error_wallet_not_configured">钱包未配置</string>
+    <string name="error_device_security">设备安全错误</string>
+    <string name="error_auth">认证错误</string>
+    <string name="error_unknown">未知错误</string>
+    <string name="error_keystore_unavailable">Keystore 不可用 - 部分功能将无法使用</string>
+    <string name="error_encryption_restart">加密错误 - 请重启应用</string>
+    <string name="error_auth_cancelled">认证已取消</string>
+    <string name="error_invalid_address">无效地址</string>
+    <string name="error_invalid_address_format">无效地址格式</string>
+    <string name="error_token_already_added">代币已添加</string>
+    <!-- Stealth Wallet -->
+    <string name="stealth_spend_sent_tx">已发送！Tx: %s…</string>
+    <string name="token_native">原生</string>
+
+    <!-- Pay Screen - Balance -->
+    <string name="pay_your_balance">您的余额</string>
+    <string name="pay_insufficient_balance">余额不足</string>
+    <string name="pay_need_more">您还需要 %1$s %2$s</string>
+
+    <!-- Collect Screen - Currency Selection -->
+
+    <!-- Currency Groups -->
+
+    <!-- Welcome / First Launch -->
+    <string name="welcome_title">欢迎</string>
+    <string name="welcome_sovereignty">您的密钥。\n您的资金。\n您的主权。</string>
+    <string name="welcome_desc">您的资金不存储在此应用中。它们存在于区块链上，由您的私钥控制。\n\n此应用仅安全存储您的密钥。我们无法访问您的资金。\n\n注意：某些代币（USDC、USDT）可能被其发行方冻结。为获得最大主权，请使用原生 ETH 或去中心化代币。</string>
+    <string name="welcome_warning_title">您的密钥 = 您的资金</string>
+    <string name="welcome_warning_desc">如果您丢失私钥或与他人分享，您将永久失去对资金的控制。\n\n没有恢复选项。没有支持团队可以帮助您。这就是真正所有权的本质。\n\n请始终保留密钥的安全备份。</string>
+    <string name="welcome_opensource">开源软件。验证，不要信任。</string>
+    <string name="welcome_start">我理解了，开始吧</string>
+
+    <!-- Merchant Identity (spec v0.2) -->
+    <string name="settings_merchant_identity">商家身份</string>
+    <string name="settings_merchant_name">商家名称</string>
+    <string name="settings_merchant_name_hint">我的咖啡店</string>
+    <string name="settings_merchant_domain">域名 / ENS</string>
+    <string name="settings_merchant_domain_hint">mycoffee.eth 或 mycoffee.com</string>
+    <string name="settings_merchant_identity_desc">在付款时向客户显示</string>
+
+    <!-- Gasless / Bundler Settings -->
+
+    <!-- Stealth Addresses (v0.4) -->
+    <string name="settings_stealth">隐私模式</string>
+    <string name="settings_stealth_desc">接收付款到一次性地址 (EIP-5564)</string>
+    <string name="settings_stealth_enabled">已启用</string>
+    <string name="settings_stealth_info">每笔付款都会发送到一个只有您可以使用的唯一地址。观察者无法将付款与您的业务关联。</string>
+    <string name="stealth_address_label">隐身模式已激活</string>
+    <string name="stealth_payment_note">付款将发送到私密地址</string>
+
+    <!-- Spend from Stealth -->
+    <string name="stealth_spend_recipient">收款人地址</string>
+
+    <!-- Stealth Wallet (unified view) -->
+    <string name="stealth_wallet_title">私密钱包</string>
+    <string name="stealth_wallet_addresses">分布在 %d 个隐身地址</string>
+    <string name="stealth_wallet_privacy_title">您的资金是私密的</string>
+    <string name="stealth_wallet_privacy_desc">此余额与您的公开钱包无关。直接向供应商、交易所或任何地方支付 - 您的商业身份保持隐藏。</string>
+    <string name="stealth_wallet_send">发送</string>
+    <string name="stealth_wallet_send_title">从私密钱包发送</string>
+    <string name="stealth_wallet_available">可用：%1$s %2$s</string>
+    <string name="stealth_wallet_amount">金额</string>
+    <string name="nav_stealth_wallet">私密钱包</string>
+
+    <!-- Stealth Wallet - Gas Tradeoff -->
+    <string name="stealth_wallet_gas_title">多个地址</string>
+    <string name="stealth_wallet_gas_desc">您的资金分布在 %d 个地址上。支出大额可能需要多笔交易，增加 Gas 费用。</string>
+    <string name="stealth_wallet_consolidate">合并到主钱包</string>
+    <string name="stealth_wallet_consolidate_title">合并资金？</string>
+    <string name="stealth_wallet_consolidate_warning">这将把您私密钱包中的所有资金转移到主钱包地址。</string>
+    <string name="stealth_wallet_consolidate_privacy_loss">警告：这将破坏隐私。您的主钱包将与所有收到的付款关联。</string>
+    <string name="stealth_wallet_consolidate_benefit">好处：未来支出只需要一笔交易（Gas 费用更低）。</string>
+    <string name="stealth_wallet_consolidate_confirm">合并</string>
+    <string name="stealth_wallet_consolidate_success">资金已合并到主钱包</string>
+
+    <!-- Payer Privacy (v0.5) -->
+    <string name="settings_payer_privacy">付款人隐私</string>
+    <string name="settings_payer_privacy_desc">从临时账户付款 (ERC-4337)</string>
+    <string name="settings_payer_privacy_info">每笔付款使用唯一账户。您的主钱包地址在链上不可见。</string>
+    <string name="settings_payer_privacy_requires_api">主网需要 API 密钥</string>
+    <string name="settings_payer_privacy_public_bundler">测试网免费（公共打包器）</string>
+    <string name="payer_privacy_note">您的钱包地址将被隐藏</string>
+    <string name="payer_privacy_processing">正在处理私密付款…</string>
+
+    <!-- Address Book -->
+    <string name="address_book_title">通讯录</string>
+    <string name="address_book_add">添加联系人</string>
+    <string name="address_book_edit">编辑联系人</string>
+    <string name="address_book_search">搜索联系人…</string>
+    <string name="address_book_empty">暂无联系人</string>
+    <string name="address_book_empty_hint">添加地址以轻松识别\n您的付款对象或收款来源</string>
+    <string name="address_book_no_results">未找到联系人</string>
+    <string name="address_book_address">钱包地址</string>
+    <string name="address_book_name">名称</string>
+    <string name="address_book_name_hint">例如：咖啡店、张三</string>
+    <string name="address_book_note">备注（可选）</string>
+    <string name="address_book_note_hint">例如：供应商、朋友</string>
+    <string name="address_book_delete_title">删除联系人？</string>
+    <string name="address_book_delete_message">从通讯录中移除 %s？</string>
+    <string name="address_book_saved">联系人已保存</string>
+    <string name="address_book_unknown">未知</string>
+
+    <!-- Settings mode -->
+    <string name="settings_simple_mode">简单模式</string>
+    <string name="settings_simple_mode_desc">易于使用，基本选项</string>
+    <string name="settings_advanced_mode">高级模式</string>
+    <string name="settings_advanced_mode_desc">高级用户的加密选项</string>
+
+    <!-- Contact Exchange (NFC) -->
+    <string name="nav_share_contact">分享联系人</string>
+    <string name="share_contact_title">分享您的地址</string>
+    <string name="share_contact_ready">准备分享</string>
+    <string name="share_contact_ready_desc">将您的手机靠近\n另一台 CleanSky 设备</string>
+    <string name="share_contact_received">已收到联系人！</string>
+    <string name="share_contact_received_name">%s 想要连接</string>
+    <string name="share_contact_save">保存到通讯录</string>
+    <string name="share_contact_your_name">您的名字（可选）</string>
+    <string name="share_contact_your_name_hint">其他人将看到的名称</string>
+    <string name="share_contact_mutual">交换联系人</string>
+    <string name="share_contact_mutual_desc">两台设备同时分享地址</string>
+
+    <!-- Send to Contact -->
+    <string name="nav_send">发送</string>
+    <string name="send_title">发送给联系人</string>
+    <string name="send_select_contact">选择收款人</string>
+    <string name="send_no_contacts">暂无联系人</string>
+    <string name="send_no_contacts_hint">通过 NFC 或手动添加联系人\n以向他们发送付款</string>
+    <string name="send_amount">金额</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_to">收款人：%s</string>
+    <string name="send_confirm">发送 %1$s %2$s</string>
+    <string name="send_processing">发送中…</string>
+    <string name="send_success">发送成功！</string>
+    <string name="send_success_desc">已向 %3$s 发送 %1$s %2$s</string>
+    <string name="send_error">发送失败</string>
+    <string name="send_enter_amount">请输入金额</string>
+    <string name="send_new">新转账</string>
+
+    <!-- History filters -->
+    <string name="history_filter_all">全部</string>
+    <string name="history_filter_received">已收</string>
+    <string name="history_filter_sent">已发</string>
+    <string name="history_filter_contact">联系人</string>
+    <string name="history_filter_by_contact">按联系人筛选</string>
+    <string name="history_show_all">显示全部</string>
+    <string name="history_no_results">没有符合筛选条件的交易</string>
+    <string name="history_add_contact">添加到通讯录</string>
+    <string name="history_edit_contact">编辑联系人</string>
+    <string name="history_from">来自</string>
+    <string name="history_to">发送到</string>
+    <string name="history_date">日期</string>
+    <string name="history_tx_hash">交易</string>
+    <string name="history_refund">退款</string>
+
+    <!-- Scam Protection -->
+    <string name="scam_amount_too_small">金额太小</string>
+    <string name="scam_amount_large_warning">大额金额</string>
+    <string name="scam_amount_large_desc">您即将发送 %1$s %2$s。\n请确认金额正确。</string>
+    <string name="scam_confirm_large">确认大额转账</string>
+    <string name="scam_dust_attack_warning">可疑请求</string>
+    <string name="scam_dust_attack_desc">这是非常小的金额（%1$s %2$s）。粉尘攻击使用微小支付来追踪钱包。如果意外收到，请拒绝。</string>
+    <string name="scam_receive_large_warning">大额付款请求</string>
+    <string name="scam_receive_large_desc">此请求金额为 %1$s %2$s。付款前请确认金额正确。</string>
+
+    <!-- Receive-Only Mode -->
+    <string name="nav_receive_only">仅收款</string>
+    <string name="settings_mode_receive_only">收款</string>
+    <string name="settings_mode_receive_only_desc">无私钥</string>
+    <string name="settings_receive_only">仅收款配置</string>
+    <string name="settings_escrow_address">Escrow 地址</string>
+    <string name="settings_receive_only_merchant_id">Merchant ID</string>
+    <string name="receive_only_no_escrow">未配置 Escrow</string>
+    <string name="receive_only_no_escrow_desc">在设置中配置 escrow 地址和 API key</string>
+    <string name="receive_only_security_notice">此设备上无私钥。被盗也安全。</string>
+    <string name="receive_only_api_key_required">Relayer 执行需要 API key</string>
+</resources>
