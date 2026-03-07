@@ -77,6 +77,26 @@ data class ChainConfig(
                 supportsAA = true
             ),
             ChainConfig(
+                chainId = 324,
+                name = "zkSync Era",
+                rpcUrl = "https://mainnet.era.zksync.io",
+                escrowAddress = "0x0000000000000000000000000000000000000000",
+                usdcAddress = "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
+                explorerUrl = "https://explorer.zksync.io",
+                supportsRelayer = false,
+                supportsAA = false
+            ),
+            ChainConfig(
+                chainId = 59144,
+                name = "Linea",
+                rpcUrl = "https://rpc.linea.build",
+                escrowAddress = "0x0000000000000000000000000000000000000000",
+                usdcAddress = "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+                explorerUrl = "https://lineascan.build",
+                supportsRelayer = false,
+                supportsAA = false
+            ),
+            ChainConfig(
                 chainId = 31337,
                 name = "Localhost",
                 rpcUrl = "http://10.0.2.2:8545",

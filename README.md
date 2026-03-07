@@ -14,7 +14,7 @@ CleanSky Contactless enables peer-to-peer crypto payments via NFC. The payer sig
 - **Self-custody Wallet** - Private keys encrypted with Android Keystore (AES-256-GCM)
 - **Hardware Security** - StrongBox (HSM) support when available
 - **Biometric Authentication** - Optional fingerprint/face unlock for transactions
-- **Multi-chain Support** - Base, Polygon, Arbitrum, Optimism
+- **Multi-chain Support** - Ethereum, Base, Base Sepolia, Polygon, Arbitrum, Optimism, zkSync Era, Linea
 - **Transaction History** - Track payments with partial/full refund support
 - **Multiple Execution Modes:**
   - Direct (merchant pays gas)
@@ -114,17 +114,35 @@ io.cleansky.contactless/
 
 | Network | Chain ID | Status |
 |---------|----------|--------|
+| Ethereum | 1 | ✅ |
 | Base | 8453 | ✅ |
 | Base Sepolia | 84532 | ✅ |
 | Polygon | 137 | ✅ |
 | Arbitrum One | 42161 | ✅ |
 | Optimism | 10 | ✅ |
+| zkSync Era | 324 | ✅ |
+| Linea | 59144 | ✅ |
 
 ### Execution Modes
 
 1. **Direct** - Merchant pays gas directly from their wallet
 2. **Relayer** - Meta-transactions via Gelato or Biconomy (requires API key)
 3. **Account Abstraction** - ERC-4337 with Paymaster support (Pimlico)
+
+Note: Relayer/AA are currently enabled by default for core networks (Ethereum, Base, Polygon, Arbitrum, Optimism). Newly added networks can be used immediately in Direct mode and may require provider-specific relayer/bundler setup.
+
+### Network Capability Matrix
+
+| Network | Direct | Relayer | AA (ERC-4337) |
+|---|---|---|---|
+| Ethereum | ✅ | ✅ | ✅ |
+| Base | ✅ | ✅ | ✅ |
+| Base Sepolia | ✅ | ✅ | ✅ |
+| Polygon | ✅ | ✅ | ✅ |
+| Arbitrum One | ✅ | ✅ | ✅ |
+| Optimism | ✅ | ✅ | ✅ |
+| zkSync Era | ✅ | ⚠️ Provider-dependent | ⚠️ Provider-dependent |
+| Linea | ✅ | ⚠️ Provider-dependent | ⚠️ Provider-dependent |
 
 ## Documentation
 

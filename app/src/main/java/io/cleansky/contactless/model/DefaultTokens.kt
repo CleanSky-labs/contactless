@@ -40,6 +40,8 @@ object DefaultTokens {
         137L to "POL",       // Polygon (renamed from MATIC)
         42161L to "ETH",     // Arbitrum
         10L to "ETH",        // Optimism
+        324L to "ETH",       // zkSync Era
+        59144L to "ETH",     // Linea
         31337L to "ETH"      // Localhost
     )
 
@@ -51,6 +53,8 @@ object DefaultTokens {
         137L to "Polygon",
         42161L to "Ethereum",
         10L to "Ethereum",
+        324L to "Ethereum",
+        59144L to "Ethereum",
         31337L to "Ethereum"
     )
 
@@ -135,6 +139,8 @@ object DefaultTokens {
             137L -> "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"    // Polygon
             42161L -> "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"  // Arbitrum
             10L -> "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"     // Optimism
+            324L -> "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4"    // zkSync Era
+            59144L -> "0x176211869cA2b568f2A7D4EE941E073a821EE1ff"  // Linea
             31337L -> "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"  // Localhost
             else -> null
         }

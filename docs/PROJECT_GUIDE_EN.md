@@ -31,6 +31,24 @@ Core principle: private keys never leave the device.
 - Web3j + Gson + Jackson CBOR
 - DataStore for local persistence
 
+## 3.1) Network support snapshot
+
+Currently configured networks:
+
+- Ethereum (`1`)
+- Base (`8453`)
+- Base Sepolia (`84532`)
+- Polygon (`137`)
+- Arbitrum One (`42161`)
+- Optimism (`10`)
+- zkSync Era (`324`)
+- Linea (`59144`)
+
+Execution support:
+
+- Core networks (`Ethereum`, `Base`, `Polygon`, `Arbitrum`, `Optimism`) are enabled for Direct + Relayer + AA.
+- `zkSync Era` and `Linea` are available in Direct mode by default; Relayer/AA require provider-specific setup.
+
 ## 4) Repository structure
 
 - `app/src/main/java/io/cleansky/contactless/`
@@ -78,7 +96,7 @@ docker exec cleansky-dev-cache ./gradlew testDebugUnitTest --no-daemon --console
 Current quality baseline in this branch:
 
 - Lint errors: `0`
-- Lint warnings: `0` (after cleanup and pin-compatible lint configuration)
+- Lint warnings: `0` (with `GradleDependency` lint check intentionally disabled until AGP/compileSdk migration)
 - Unit tests: passing
 
 ## 7) Key documentation

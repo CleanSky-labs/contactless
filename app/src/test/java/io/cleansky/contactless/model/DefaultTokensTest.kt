@@ -52,6 +52,22 @@ class DefaultTokensTest {
     }
 
     @Test
+    fun `getNativeToken returns ETH for zkSync Era`() {
+        val token = DefaultTokens.getNativeToken(324L)
+
+        assertEquals("ETH", token.symbol)
+        assertTrue(token.isNative)
+    }
+
+    @Test
+    fun `getNativeToken returns ETH for Linea`() {
+        val token = DefaultTokens.getNativeToken(59144L)
+
+        assertEquals("ETH", token.symbol)
+        assertTrue(token.isNative)
+    }
+
+    @Test
     fun `getNativeToken returns fallback for unknown chain`() {
         val token = DefaultTokens.getNativeToken(999999L)
 
@@ -240,7 +256,7 @@ class DefaultTokensTest {
 
     @Test
     fun `getPreferredStablecoin returns non-null for supported chains`() {
-        val chains = listOf(1L, 8453L, 137L, 42161L, 10L)
+        val chains = listOf(1L, 8453L, 137L, 42161L, 10L, 324L, 59144L)
 
         chains.forEach { chainId ->
             val stablecoin = DefaultTokens.getPreferredStablecoin(chainId)

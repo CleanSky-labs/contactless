@@ -56,6 +56,26 @@ class ChainConfigTest {
     }
 
     @Test
+    fun `getByChainId returns correct chain for zkSync Era`() {
+        val chain = ChainConfig.getByChainId(324L)
+
+        assertNotNull(chain)
+        assertEquals("zkSync Era", chain?.name)
+        assertFalse(chain!!.supportsRelayer)
+        assertFalse(chain.supportsAA)
+    }
+
+    @Test
+    fun `getByChainId returns correct chain for Linea`() {
+        val chain = ChainConfig.getByChainId(59144L)
+
+        assertNotNull(chain)
+        assertEquals("Linea", chain?.name)
+        assertFalse(chain!!.supportsRelayer)
+        assertFalse(chain.supportsAA)
+    }
+
+    @Test
     fun `getByChainId returns correct chain for Localhost`() {
         val chain = ChainConfig.getByChainId(31337L)
 
@@ -82,23 +102,27 @@ class ChainConfigTest {
         assertTrue(chains.any { it.chainId == 137L })     // Polygon
         assertTrue(chains.any { it.chainId == 42161L })   // Arbitrum
         assertTrue(chains.any { it.chainId == 10L })      // Optimism
+        assertTrue(chains.any { it.chainId == 324L })     // zkSync Era
+        assertTrue(chains.any { it.chainId == 59144L })   // Linea
         assertTrue(chains.any { it.chainId == 31337L })   // Localhost
     }
 
     @Test
-    fun `all mainnet chains support relayer`() {
-        val mainnets = ChainConfig.CHAINS.filter { it.chainId != 31337L && it.chainId != 84532L }
+    fun `core mainnet chains support relayer`() {
+        val coreMainnetIds = setOf(1L, 8453L, 137L, 42161L, 10L)
+        val coreMainnets = ChainConfig.CHAINS.filter { it.chainId in coreMainnetIds }
 
-        mainnets.forEach { chain ->
+        coreMainnets.forEach { chain ->
             assertTrue("${chain.name} should support relayer", chain.supportsRelayer)
         }
     }
 
     @Test
-    fun `all mainnet chains support AA`() {
-        val mainnets = ChainConfig.CHAINS.filter { it.chainId != 31337L }
+    fun `core mainnet chains support AA`() {
+        val coreMainnetIds = setOf(1L, 8453L, 137L, 42161L, 10L)
+        val coreMainnets = ChainConfig.CHAINS.filter { it.chainId in coreMainnetIds }
 
-        mainnets.forEach { chain ->
+        coreMainnets.forEach { chain ->
             assertTrue("${chain.name} should support AA", chain.supportsAA)
         }
     }
