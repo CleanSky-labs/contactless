@@ -134,6 +134,8 @@ class DefaultTokensTest {
 
         assertTrue(grouped.containsKey(DefaultTokens.UnderlyingCurrency.EUR))
         assertTrue(grouped[DefaultTokens.UnderlyingCurrency.EUR]?.any { it.symbol == "EURC" } == true)
+        assertTrue(grouped[DefaultTokens.UnderlyingCurrency.EUR]?.any { it.symbol == "agEUR" } == true)
+        assertTrue(grouped[DefaultTokens.UnderlyingCurrency.EUR]?.any { it.symbol == "sEUR" } == true)
     }
 
     @Test
@@ -168,7 +170,13 @@ class DefaultTokensTest {
         assertTrue(usdTokens.any { it.symbol == "DAI" })
         assertTrue(usdTokens.any { it.symbol == "RAI" })
         assertTrue(usdTokens.any { it.symbol == "LUSD" })
+        assertTrue(usdTokens.any { it.symbol == "BOLD" })
+        assertTrue(usdTokens.any { it.symbol == "GHO" })
+        assertTrue(usdTokens.any { it.symbol == "crvUSD" })
         assertTrue(usdTokens.any { it.symbol == "USDe" })
+        assertTrue(usdTokens.any { it.symbol == "sUSD" })
+        assertTrue(usdTokens.any { it.symbol == "FRAX" })
+        assertTrue(usdTokens.any { it.symbol == "frxUSD" })
         assertTrue(usdTokens.any { it.symbol == "USDC" })
         assertTrue(usdTokens.any { it.symbol == "USDT" })
     }
@@ -270,7 +278,20 @@ class DefaultTokensTest {
             )
         }
 
-        tokens.filter { it.symbol in listOf("RAI", "LUSD", "USDe") }.forEach { token ->
+        tokens.filter {
+            it.symbol in
+                listOf(
+                    "RAI",
+                    "LUSD",
+                    "USDe",
+                    "BOLD",
+                    "GHO",
+                    "crvUSD",
+                    "sUSD",
+                    "FRAX",
+                    "frxUSD",
+                )
+        }.forEach { token ->
             assertEquals(
                 "${token.symbol} should have 18 decimals",
                 18,

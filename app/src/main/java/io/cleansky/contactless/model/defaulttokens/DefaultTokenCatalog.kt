@@ -39,10 +39,17 @@ internal object DefaultTokenCatalog {
             "USDC" to TokenMeta("USD Coin", 6),
             "USDT" to TokenMeta("Tether USD", 6),
             "DAI" to TokenMeta("Dai Stablecoin", 18),
+            "GHO" to TokenMeta("Gho Token", 18),
+            "crvUSD" to TokenMeta("Curve.Fi USD Stablecoin", 18),
+            "BOLD" to TokenMeta("Liquity BOLD", 18),
+            "sUSD" to TokenMeta("Synth sUSD", 18),
+            "FRAX" to TokenMeta("Frax", 18),
+            "frxUSD" to TokenMeta("Frax USD", 18),
             "RAI" to TokenMeta("Rai Reflex Index", 18),
             "LUSD" to TokenMeta("Liquity USD", 18),
             "USDe" to TokenMeta("Ethena USDe", 18),
             "EURC" to TokenMeta("Euro Coin", 6),
+            "sEUR" to TokenMeta("Synth sEUR", 18),
             "JPYC" to TokenMeta("JPY Coin", 18),
             "GYEN" to TokenMeta("GMO JPY", 6),
             "XCHF" to TokenMeta("CryptoFranc", 18),
@@ -97,6 +104,30 @@ internal object DefaultTokenCatalog {
                     42161L to "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
                     10L to "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
                 ),
+            "GHO" to
+                mapOf(
+                    1L to "0x40D16FC0246aD2E36f3991Ba78fEebBFa942Bf36",
+                ),
+            "crvUSD" to
+                mapOf(
+                    1L to "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+                ),
+            "BOLD" to
+                mapOf(
+                    1L to "0x6440f144b7e50d6a8439336510312d2f54beb01d",
+                ),
+            "sUSD" to
+                mapOf(
+                    1L to "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+                ),
+            "FRAX" to
+                mapOf(
+                    1L to "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0",
+                ),
+            "frxUSD" to
+                mapOf(
+                    1L to "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+                ),
             "RAI" to
                 mapOf(
                     1L to "0x03ab458634910AaD20eF5f1C8ee96F1d6aBE9ae2",
@@ -108,6 +139,10 @@ internal object DefaultTokenCatalog {
             "USDe" to
                 mapOf(
                     1L to "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+                ),
+            "sEUR" to
+                mapOf(
+                    1L to "0xD71eCFF9342A5Ced620049e616c5035F1dB98620",
                 ),
             "JPYC" to
                 mapOf(
