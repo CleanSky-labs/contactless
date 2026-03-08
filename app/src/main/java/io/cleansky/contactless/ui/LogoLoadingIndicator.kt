@@ -20,7 +20,7 @@ import io.cleansky.contactless.R
 @Composable
 fun LogoLoadingIndicator(
     modifier: Modifier = Modifier,
-    size: Dp = 64.dp
+    size: Dp = 64.dp,
 ) {
     val infiniteTransition = rememberInfiniteTransition(label = "loading")
 
@@ -28,31 +28,34 @@ fun LogoLoadingIndicator(
     val scale by infiniteTransition.animateFloat(
         initialValue = 0.85f,
         targetValue = 1.0f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(800, easing = EaseInOutCubic),
-            repeatMode = RepeatMode.Reverse
-        ),
-        label = "scale"
+        animationSpec =
+            infiniteRepeatable(
+                animation = tween(800, easing = EaseInOutCubic),
+                repeatMode = RepeatMode.Reverse,
+            ),
+        label = "scale",
     )
 
     // Subtle alpha animation
     val alpha by infiniteTransition.animateFloat(
         initialValue = 0.7f,
         targetValue = 1.0f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(800, easing = EaseInOutCubic),
-            repeatMode = RepeatMode.Reverse
-        ),
-        label = "alpha"
+        animationSpec =
+            infiniteRepeatable(
+                animation = tween(800, easing = EaseInOutCubic),
+                repeatMode = RepeatMode.Reverse,
+            ),
+        label = "alpha",
     )
 
     Image(
         painter = painterResource(id = R.drawable.ic_cleansky),
         contentDescription = "Loading",
-        modifier = modifier
-            .size(size)
-            .scale(scale)
-            .alpha(alpha)
+        modifier =
+            modifier
+                .size(size)
+                .scale(scale)
+                .alpha(alpha),
     )
 }
 
@@ -60,11 +63,9 @@ fun LogoLoadingIndicator(
  * Smaller version for inline loading (buttons, etc)
  */
 @Composable
-fun LogoLoadingIndicatorSmall(
-    modifier: Modifier = Modifier
-) {
+fun LogoLoadingIndicatorSmall(modifier: Modifier = Modifier) {
     LogoLoadingIndicator(
         modifier = modifier,
-        size = 24.dp
+        size = 24.dp,
     )
 }

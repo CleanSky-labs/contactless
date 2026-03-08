@@ -2,16 +2,12 @@ package io.cleansky.contactless.crypto
 
 import org.bouncycastle.jce.ECNamedCurveTable
 import org.bouncycastle.jce.provider.BouncyCastleProvider
-import org.bouncycastle.jce.spec.ECPrivateKeySpec
-import org.bouncycastle.jce.spec.ECPublicKeySpec
-import org.bouncycastle.math.ec.ECPoint
 import org.web3j.crypto.Credentials
 import org.web3j.crypto.ECKeyPair
 import org.web3j.crypto.Hash
 import org.web3j.crypto.Keys
 import org.web3j.utils.Numeric
 import java.math.BigInteger
-import java.security.KeyFactory
 import java.security.SecureRandom
 import java.security.Security
 
@@ -29,7 +25,6 @@ import java.security.Security
  * 5. Merchant scans using viewing key, derives spending key
  */
 object StealthAddress {
-
     init {
         if (Security.getProvider(BouncyCastleProvider.PROVIDER_NAME) == null) {
             Security.addProvider(BouncyCastleProvider())
@@ -43,15 +38,15 @@ object StealthAddress {
      * Stealth meta-address: contains keys needed to receive stealth payments
      */
     data class StealthMetaAddress(
-        val spendingPubKey: ByteArray,  // Public key for spending (K_s)
-        val viewingPubKey: ByteArray     // Public key for viewing/scanning (K_v)
+        val spendingPubKey: ByteArray,
+        val viewingPubKey: ByteArray,
     ) {
         /**
          * Encode as hex string: spendingPubKey || viewingPubKey
          */
         fun encode(): String {
             return "st:eth:" + Numeric.toHexStringNoPrefix(spendingPubKey) +
-                   Numeric.toHexStringNoPrefix(viewingPubKey)
+                Numeric.toHexStringNoPrefix(viewingPubKey)
         }
 
         companion object {
@@ -62,11 +57,12 @@ object StealthAddress {
                 return try {
                     val hex = encoded.removePrefix("st:eth:")
 
-                    fun keyHexLen(prefix: String): Int = when (prefix.lowercase()) {
-                        "04" -> 130 // uncompressed secp256k1 public key
-                        "02", "03" -> 66 // compressed secp256k1 public key
-                        else -> throw IllegalArgumentException("Invalid public key prefix")
-                    }
+                    fun keyHexLen(prefix: String): Int =
+                        when (prefix.lowercase()) {
+                            "04" -> 130 // uncompressed secp256k1 public key
+                            "02", "03" -> 66 // compressed secp256k1 public key
+                            else -> throw IllegalArgumentException("Invalid public key prefix")
+                        }
 
                     require(hex.length >= 68) { "Invalid length" } // At least two compressed keys
                     val firstLen = keyHexLen(hex.substring(0, 2))
@@ -87,7 +83,7 @@ object StealthAddress {
             if (this === other) return true
             if (other !is StealthMetaAddress) return false
             return spendingPubKey.contentEquals(other.spendingPubKey) &&
-                   viewingPubKey.contentEquals(other.viewingPubKey)
+                viewingPubKey.contentEquals(other.viewingPubKey)
         }
 
         override fun hashCode(): Int {
@@ -101,8 +97,8 @@ object StealthAddress {
      * Stealth keys: private keys for a stealth-enabled wallet
      */
     data class StealthKeys(
-        val spendingKey: BigInteger,    // Private key for spending (k_s)
-        val viewingKey: BigInteger       // Private key for viewing (k_v)
+        val spendingKey: BigInteger,
+        val viewingKey: BigInteger,
     ) {
         fun getMetaAddress(): StealthMetaAddress {
             val spendingPub = ecSpec.g.multiply(spendingKey).getEncoded(false)
@@ -115,9 +111,9 @@ object StealthAddress {
      * Data needed by payer to send to stealth address
      */
     data class StealthPaymentData(
-        val stealthAddress: String,      // One-time address to send funds to
-        val ephemeralPubKey: ByteArray,  // R - published for merchant to find payment
-        val viewTag: Byte                // First byte of shared secret (optimization)
+        val stealthAddress: String,
+        val ephemeralPubKey: ByteArray,
+        val viewTag: Byte,
     )
 
     /**
@@ -137,15 +133,17 @@ object StealthAddress {
         val privateKey = credentials.ecKeyPair.privateKey
 
         // Derive spending key: hash(privateKey || "spending")
-        val spendingHash = Hash.sha3(
-            privateKey.toByteArray() + "cleansky-stealth-spending".toByteArray()
-        )
+        val spendingHash =
+            Hash.sha3(
+                privateKey.toByteArray() + "cleansky-stealth-spending".toByteArray(),
+            )
         val spendingKey = BigInteger(1, spendingHash).mod(ecSpec.n)
 
         // Derive viewing key: hash(privateKey || "viewing")
-        val viewingHash = Hash.sha3(
-            privateKey.toByteArray() + "cleansky-stealth-viewing".toByteArray()
-        )
+        val viewingHash =
+            Hash.sha3(
+                privateKey.toByteArray() + "cleansky-stealth-viewing".toByteArray(),
+            )
         val viewingKey = BigInteger(1, viewingHash).mod(ecSpec.n)
 
         return StealthKeys(spendingKey, viewingKey)
@@ -181,14 +179,16 @@ object StealthAddress {
 
         // Derive address from stealth public key
         val stealthPubBytes = stealthPubPoint.getEncoded(false)
-        val stealthAddress = "0x" + Keys.getAddress(
-            Numeric.toHexStringNoPrefix(stealthPubBytes.drop(1).toByteArray())
-        )
+        val stealthAddress =
+            "0x" +
+                Keys.getAddress(
+                    Numeric.toHexStringNoPrefix(stealthPubBytes.drop(1).toByteArray()),
+                )
 
         return StealthPaymentData(
             stealthAddress = stealthAddress,
             ephemeralPubKey = ephemeralPublic.getEncoded(false),
-            viewTag = viewTag
+            viewTag = viewTag,
         )
     }
 
@@ -203,7 +203,7 @@ object StealthAddress {
     fun scanAndDerive(
         stealthKeys: StealthKeys,
         ephemeralPubKey: ByteArray,
-        expectedAddress: String? = null
+        expectedAddress: String? = null,
     ): Credentials? {
         return try {
             // Parse ephemeral public key R
@@ -240,7 +240,7 @@ object StealthAddress {
     fun checkViewTag(
         viewingKey: BigInteger,
         ephemeralPubKey: ByteArray,
-        expectedViewTag: Byte
+        expectedViewTag: Byte,
     ): Boolean {
         return try {
             val ephemeralPoint = ecSpec.curve.decodePoint(ephemeralPubKey)

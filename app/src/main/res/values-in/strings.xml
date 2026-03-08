@@ -344,4 +344,28 @@
     <string name="receive_only_no_escrow_desc">Konfigurasi alamat escrow dan API key di Pengaturan</string>
     <string name="receive_only_security_notice">Tidak ada kunci privat di perangkat ini. Aman jika dicuri.</string>
     <string name="receive_only_api_key_required">API key diperlukan untuk eksekusi relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Kesalahan Account Abstraction</string>
+        <string name="error_api_key_required">API key diperlukan</string>
+        <string name="error_insufficient_time_to_sign">Waktu tidak cukup untuk menandatangani</string>
+        <string name="error_invalid_request">Permintaan tidak valid</string>
+        <string name="error_no_balance_to_spend">Tidak ada saldo untuk dibelanjakan</string>
+        <string name="error_paymaster_not_configured">Paymaster belum dikonfigurasi</string>
+        <string name="error_refund_amount_invalid">Jumlah refund harus lebih besar dari 0</string>
+        <string name="error_relayer_generic">Kesalahan relayer</string>
+        <string name="error_relayer_not_configured">Relayer belum dikonfigurasi</string>
+        <string name="error_replay_detected">Replay terdeteksi: nonce sudah digunakan</string>
+        <string name="error_request_expired">Permintaan kedaluwarsa</string>
+        <string name="error_status_check">Kesalahan pemeriksaan status</string>
+        <string name="error_token_not_allowed">Token tidak diizinkan</string>
+        <string name="error_transaction_failed">Transaksi gagal</string>
+        <string name="settings_advanced_hint">Aktifkan Mode Lanjutan untuk mengonfigurasi privasi, keamanan, jaringan, dan token.</string>
+        <string name="settings_export_requires_wallet">Buat atau impor wallet sebelum mengekspor private key.</string>
+        <string name="settings_group_general">Umum</string>
+        <string name="settings_group_network_tokens">Jaringan dan token</string>
+        <string name="settings_group_payments">Pembayaran</string>
+        <string name="settings_group_privacy_security">Privasi dan keamanan</string>
+        <string name="settings_key_management">Manajemen kunci</string>
+        <string name="settings_key_management_desc">Operasi kunci sensitif dipisahkan di sini. Simpan private key Anda secara offline dan jangan pernah membagikannya.</string>
 </resources>

@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">Configurez l\'adresse escrow et l\'API key dans les Paramètres</string>
     <string name="receive_only_security_notice">Aucune clé privée sur cet appareil. Sûr en cas de vol.</string>
     <string name="receive_only_api_key_required">API key requise pour l\'exécution via relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Erreur d\'abstraction de compte</string>
+        <string name="error_api_key_required">Clé API requise</string>
+        <string name="error_insufficient_time_to_sign">Temps insuffisant pour signer</string>
+        <string name="error_invalid_request">Requête invalide</string>
+        <string name="error_no_balance_to_spend">Aucun solde à dépenser</string>
+        <string name="error_paymaster_not_configured">Paymaster non configuré</string>
+        <string name="error_refund_amount_invalid">Le montant du remboursement doit être supérieur à 0</string>
+        <string name="error_relayer_generic">Erreur du relayer</string>
+        <string name="error_relayer_not_configured">Relayer non configuré</string>
+        <string name="error_replay_detected">Replay détecté : nonce déjà utilisé</string>
+        <string name="error_request_expired">Requête expirée</string>
+        <string name="error_status_check">Erreur de vérification du statut</string>
+        <string name="error_token_not_allowed">Token non autorisé</string>
+        <string name="error_transaction_failed">Transaction échouée</string>
+        <string name="settings_advanced_hint">Activez le mode avancé pour configurer la confidentialité, la sécurité, le réseau et les tokens.</string>
+        <string name="settings_export_requires_wallet">Créez ou importez un portefeuille avant d\'exporter la clé privée.</string>
+        <string name="settings_group_general">Général</string>
+        <string name="settings_group_network_tokens">Réseau et tokens</string>
+        <string name="settings_group_payments">Paiements</string>
+        <string name="settings_group_privacy_security">Confidentialité et sécurité</string>
+        <string name="settings_key_management">Gestion des clés</string>
+        <string name="settings_key_management_desc">Les opérations sensibles sur les clés sont séparées ici. Gardez votre clé privée hors ligne et ne la partagez jamais.</string>
 </resources>

@@ -1,14 +1,18 @@
 package io.cleansky.contactless.service
 
-import io.cleansky.contactless.crypto.UserOperation
-import io.cleansky.contactless.model.*
 import com.google.gson.Gson
 import com.google.gson.JsonObject
+import io.cleansky.contactless.crypto.UserOperation
+import io.cleansky.contactless.model.ChainConfig
+import io.cleansky.contactless.model.ExecutionMode
+import io.cleansky.contactless.model.PaymasterConfig
+import io.cleansky.contactless.model.RelayerConfig
+import io.cleansky.contactless.model.SignedTransaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.web3j.abi.FunctionEncoder
-import org.web3j.abi.TypeReference
-import org.web3j.abi.datatypes.*
+import org.web3j.abi.datatypes.Address
+import org.web3j.abi.datatypes.DynamicBytes
 import org.web3j.abi.datatypes.Function
 import org.web3j.abi.datatypes.generated.Bytes32
 import org.web3j.abi.datatypes.generated.Uint256
@@ -30,7 +34,7 @@ class TransactionExecutor(
     private val executionMode: ExecutionMode = ExecutionMode.DIRECT,
     private val relayerConfig: RelayerConfig? = null,
     private val paymasterConfig: PaymasterConfig? = null,
-    private val apiKey: String = ""
+    private val apiKey: String = "",
 ) {
     private val web3j: Web3j = Web3j.build(HttpService(chainConfig.rpcUrl))
     private val gson = Gson()
@@ -40,21 +44,23 @@ class TransactionExecutor(
             chainConfig: ChainConfig,
             escrowOverride: String,
             relayerConfig: RelayerConfig,
-            apiKey: String
+            apiKey: String,
         ): TransactionExecutor {
             return TransactionExecutor(
                 chainConfig = chainConfig.copy(escrowAddress = escrowOverride),
                 credentials = Credentials.create("0x0000000000000000000000000000000000000000000000000000000000000001"),
                 executionMode = ExecutionMode.RELAYER,
                 relayerConfig = relayerConfig,
-                apiKey = apiKey
+                apiKey = apiKey,
             )
         }
     }
 
     sealed class ExecutionResult {
         data class Success(val txHash: String) : ExecutionResult()
+
         data class Pending(val taskId: String) : ExecutionResult()
+
         data class Error(val message: String) : ExecutionResult()
     }
 
@@ -70,22 +76,24 @@ class TransactionExecutor(
         return withContext(Dispatchers.IO) {
             try {
                 val callData = encodePayFunction(signedTx)
-                val nonce = web3j.ethGetTransactionCount(
-                    credentials.address,
-                    DefaultBlockParameterName.PENDING
-                ).send().transactionCount
+                val nonce =
+                    web3j.ethGetTransactionCount(
+                        credentials.address,
+                        DefaultBlockParameterName.PENDING,
+                    ).send().transactionCount
 
                 val gasPrice = web3j.ethGasPrice().send().gasPrice
                 val gasLimit = BigInteger.valueOf(200000)
 
-                val rawTx = RawTransaction.createTransaction(
-                    nonce,
-                    gasPrice,
-                    gasLimit,
-                    chainConfig.escrowAddress,
-                    BigInteger.ZERO,
-                    callData
-                )
+                val rawTx =
+                    RawTransaction.createTransaction(
+                        nonce,
+                        gasPrice,
+                        gasLimit,
+                        chainConfig.escrowAddress,
+                        BigInteger.ZERO,
+                        callData,
+                    )
 
                 val signedRawTx = TransactionEncoder.signMessage(rawTx, chainConfig.chainId, credentials)
                 val hexValue = Numeric.toHexString(signedRawTx)
@@ -98,7 +106,7 @@ class TransactionExecutor(
                     ExecutionResult.Success(response.transactionHash)
                 }
             } catch (e: Exception) {
-                ExecutionResult.Error(e.message ?: "Error desconocido")
+                ExecutionResult.Error(ServiceErrorCatalog.fromException(e, ServiceErrorCatalog.UNKNOWN_ERROR))
             }
         }
     }
@@ -106,21 +114,21 @@ class TransactionExecutor(
     private suspend fun executeViaRelayer(signedTx: SignedTransaction): ExecutionResult {
         return withContext(Dispatchers.IO) {
             try {
-                val config = relayerConfig ?: return@withContext ExecutionResult.Error("Relayer no configurado")
+                val config = relayerConfig ?: return@withContext ExecutionResult.Error(ServiceErrorCatalog.RELAYER_NOT_CONFIGURED)
                 val callData = encodePayFunction(signedTx)
 
                 when (config.name) {
-                    "Gelato" -> executeGelatoRelay(callData, signedTx)
-                    "Biconomy" -> executeBiconomyRelay(callData, signedTx)
-                    else -> executeGenericRelay(config, callData, signedTx)
+                    "Gelato" -> executeGelatoRelay(callData)
+                    "Biconomy" -> executeBiconomyRelay(callData)
+                    else -> executeGenericRelay(config, callData)
                 }
             } catch (e: Exception) {
-                ExecutionResult.Error(e.message ?: "Error en relayer")
+                ExecutionResult.Error(ServiceErrorCatalog.fromException(e, ServiceErrorCatalog.RELAYER_ERROR))
             }
         }
     }
 
-    private fun executeGelatoRelay(callData: String, @Suppress("UNUSED_PARAMETER") signedTx: SignedTransaction): ExecutionResult {
+    private fun executeGelatoRelay(callData: String): ExecutionResult {
         val url = URL("${relayerConfig!!.url}/relays/v2/sponsored-call")
         val connection = url.openConnection() as HttpURLConnection
 
@@ -131,12 +139,13 @@ class TransactionExecutor(
         }
         connection.doOutput = true
 
-        val requestBody = JsonObject().apply {
-            addProperty("chainId", chainConfig.chainId)
-            addProperty("target", chainConfig.escrowAddress)
-            addProperty("data", callData)
-            addProperty("sponsorApiKey", apiKey)
-        }
+        val requestBody =
+            JsonObject().apply {
+                addProperty("chainId", chainConfig.chainId)
+                addProperty("target", chainConfig.escrowAddress)
+                addProperty("data", callData)
+                addProperty("sponsorApiKey", apiKey)
+            }
 
         connection.outputStream.use { os ->
             os.write(requestBody.toString().toByteArray())
@@ -150,11 +159,11 @@ class TransactionExecutor(
             val taskId = json.get("taskId")?.asString ?: ""
             ExecutionResult.Pending(taskId)
         } else {
-            ExecutionResult.Error("Gelato error: $response")
+            ExecutionResult.Error("Gelato ${ServiceErrorCatalog.RELAYER_ERROR.lowercase()}: $response")
         }
     }
 
-    private fun executeBiconomyRelay(callData: String, @Suppress("UNUSED_PARAMETER") signedTx: SignedTransaction): ExecutionResult {
+    private fun executeBiconomyRelay(callData: String): ExecutionResult {
         val url = URL("${relayerConfig!!.url}/api/v1/relay")
         val connection = url.openConnection() as HttpURLConnection
 
@@ -163,12 +172,13 @@ class TransactionExecutor(
         connection.setRequestProperty("x-api-key", apiKey)
         connection.doOutput = true
 
-        val requestBody = JsonObject().apply {
-            addProperty("to", chainConfig.escrowAddress)
-            addProperty("data", callData)
-            addProperty("chainId", chainConfig.chainId)
-            add("metaTransactionType", gson.toJsonTree("EIP2771"))
-        }
+        val requestBody =
+            JsonObject().apply {
+                addProperty("to", chainConfig.escrowAddress)
+                addProperty("data", callData)
+                addProperty("chainId", chainConfig.chainId)
+                add("metaTransactionType", gson.toJsonTree("EIP2771"))
+            }
 
         connection.outputStream.use { os ->
             os.write(requestBody.toString().toByteArray())
@@ -187,14 +197,13 @@ class TransactionExecutor(
                 ExecutionResult.Pending(taskId)
             }
         } else {
-            ExecutionResult.Error("Biconomy error: $response")
+            ExecutionResult.Error("Biconomy ${ServiceErrorCatalog.RELAYER_ERROR.lowercase()}: $response")
         }
     }
 
     private fun executeGenericRelay(
         config: RelayerConfig,
         callData: String,
-        @Suppress("UNUSED_PARAMETER") signedTx: SignedTransaction
     ): ExecutionResult {
         val url = URL("${config.url}/relay")
         val connection = url.openConnection() as HttpURLConnection
@@ -206,11 +215,12 @@ class TransactionExecutor(
         }
         connection.doOutput = true
 
-        val requestBody = JsonObject().apply {
-            addProperty("chainId", chainConfig.chainId)
-            addProperty("to", chainConfig.escrowAddress)
-            addProperty("data", callData)
-        }
+        val requestBody =
+            JsonObject().apply {
+                addProperty("chainId", chainConfig.chainId)
+                addProperty("to", chainConfig.escrowAddress)
+                addProperty("data", callData)
+            }
 
         connection.outputStream.use { os ->
             os.write(requestBody.toString().toByteArray())
@@ -228,69 +238,71 @@ class TransactionExecutor(
                 ExecutionResult.Pending(json.get("taskId")?.asString ?: "unknown")
             }
         } else {
-            ExecutionResult.Error("Relay error: $response")
+            ExecutionResult.Error("Relay ${ServiceErrorCatalog.RELAYER_ERROR.lowercase()}: $response")
         }
     }
 
     private suspend fun executeViaAA(signedTx: SignedTransaction): ExecutionResult {
         return withContext(Dispatchers.IO) {
             try {
-                val config = paymasterConfig ?: return@withContext ExecutionResult.Error("Paymaster no configurado")
+                val config = paymasterConfig ?: return@withContext ExecutionResult.Error(ServiceErrorCatalog.PAYMASTER_NOT_CONFIGURED)
                 val callData = encodePayFunction(signedTx)
 
-                // Construir UserOperation
-                val userOp = buildUserOperation(callData, config)
+                // Build UserOperation
+                val userOp = buildUserOperation(callData)
 
-                // Obtener datos del paymaster
                 val sponsoredUserOp = sponsorUserOperation(userOp, config)
 
-                // Firmar la UserOperation
-                val signedUserOp = signUserOperation(sponsoredUserOp, config)
+                // Sign UserOperation
+                val signedUserOp = signUserOperation(sponsoredUserOp)
 
-                // Enviar al bundler
+                // Send to bundler
                 sendUserOperation(signedUserOp, config)
             } catch (e: Exception) {
-                ExecutionResult.Error(e.message ?: "Error en Account Abstraction")
+                ExecutionResult.Error(ServiceErrorCatalog.fromException(e, ServiceErrorCatalog.ACCOUNT_ABSTRACTION_ERROR))
             }
         }
     }
 
-    private fun buildUserOperation(callData: String, @Suppress("UNUSED_PARAMETER") config: PaymasterConfig): UserOperation {
-        // Para una cuenta SimpleAccount estándar
+    private fun buildUserOperation(callData: String): UserOperation {
         val executeCallData = encodeExecuteFunction(chainConfig.escrowAddress, "0", callData)
 
         return UserOperation(
-            sender = credentials.address, // En producción sería la Smart Account
-            nonce = "0x0", // Obtener del EntryPoint
+            sender = credentials.address,
+            nonce = "0x0",
             callData = executeCallData,
             callGasLimit = "0x50000",
             verificationGasLimit = "0x50000",
             preVerificationGas = "0x10000",
             maxFeePerGas = "0x" + BigInteger.valueOf(30_000_000_000).toString(16),
-            maxPriorityFeePerGas = "0x" + BigInteger.valueOf(1_000_000_000).toString(16)
+            maxPriorityFeePerGas = "0x" + BigInteger.valueOf(1_000_000_000).toString(16),
         )
     }
 
-    private fun sponsorUserOperation(userOp: UserOperation, config: PaymasterConfig): UserOperation {
-        val connection = JsonRpcHttp.createPostConnection(
-            "${config.paymasterUrl}/${chainConfig.chainId}/rpc?apikey=$apiKey"
-        )
+    private fun sponsorUserOperation(
+        userOp: UserOperation,
+        config: PaymasterConfig,
+    ): UserOperation {
+        val connection =
+            JsonRpcHttp.createPostConnection(
+                "${config.paymasterUrl}/${chainConfig.chainId}/rpc?apikey=$apiKey",
+            )
 
-        val requestBody = JsonObject().apply {
-            addProperty("jsonrpc", "2.0")
-            addProperty("id", 1)
-            addProperty("method", "pm_sponsorUserOperation")
-            add("params", gson.toJsonTree(listOf(userOp, config.entryPointAddress)))
-        }
+        val requestBody =
+            JsonObject().apply {
+                addProperty("jsonrpc", "2.0")
+                addProperty("id", 1)
+                addProperty("method", "pm_sponsorUserOperation")
+                add("params", gson.toJsonTree(listOf(userOp, config.entryPointAddress)))
+            }
 
         JsonRpcHttp.writeJsonBody(connection, requestBody)
         val json = gson.fromJson(JsonRpcHttp.readResponseBody(connection), JsonObject::class.java)
         return PrivacyPaymentParser.parsePaymasterResponse(json, userOp)
     }
 
-    private fun signUserOperation(userOp: UserOperation, config: PaymasterConfig): UserOperation {
-        // Hash de la UserOperation para firmar
-        val userOpHash = getUserOpHash(userOp, config.entryPointAddress, chainConfig.chainId)
+    private fun signUserOperation(userOp: UserOperation): UserOperation {
+        val userOpHash = getUserOpHash(userOp)
         val signature = org.web3j.crypto.Sign.signMessage(userOpHash, credentials.ecKeyPair, false)
 
         val sigBytes = ByteArray(65)
@@ -301,23 +313,27 @@ class TransactionExecutor(
         return userOp.copy(signature = "0x" + sigBytes.joinToString("") { "%02x".format(it) })
     }
 
-    private fun getUserOpHash(userOp: UserOperation, @Suppress("UNUSED_PARAMETER") entryPoint: String, @Suppress("UNUSED_PARAMETER") chainId: Long): ByteArray {
-        // Simplificado - en producción usar el hash correcto del EntryPoint
+    private fun getUserOpHash(userOp: UserOperation): ByteArray {
         val packed = userOp.sender + userOp.nonce + userOp.callData
         return org.web3j.crypto.Hash.sha3(packed.toByteArray())
     }
 
-    private fun sendUserOperation(userOp: UserOperation, config: PaymasterConfig): ExecutionResult {
-        val connection = JsonRpcHttp.createPostConnection(
-            "${config.bundlerUrl}/${chainConfig.chainId}/rpc?apikey=$apiKey"
-        )
+    private fun sendUserOperation(
+        userOp: UserOperation,
+        config: PaymasterConfig,
+    ): ExecutionResult {
+        val connection =
+            JsonRpcHttp.createPostConnection(
+                "${config.bundlerUrl}/${chainConfig.chainId}/rpc?apikey=$apiKey",
+            )
 
-        val requestBody = JsonObject().apply {
-            addProperty("jsonrpc", "2.0")
-            addProperty("id", 1)
-            addProperty("method", "eth_sendUserOperation")
-            add("params", gson.toJsonTree(listOf(userOp, config.entryPointAddress)))
-        }
+        val requestBody =
+            JsonObject().apply {
+                addProperty("jsonrpc", "2.0")
+                addProperty("id", 1)
+                addProperty("method", "eth_sendUserOperation")
+                add("params", gson.toJsonTree(listOf(userOp, config.entryPointAddress)))
+            }
 
         JsonRpcHttp.writeJsonBody(connection, requestBody)
         val json = gson.fromJson(JsonRpcHttp.readResponseBody(connection), JsonObject::class.java)
@@ -326,43 +342,48 @@ class TransactionExecutor(
             val userOpHash = json.get("result").asString
             ExecutionResult.Pending(userOpHash)
         } else {
-            val error = json.getAsJsonObject("error")?.get("message")?.asString ?: "Unknown error"
+            val error = json.getAsJsonObject("error")?.get("message")?.asString ?: ServiceErrorCatalog.UNKNOWN_ERROR
             ExecutionResult.Error(error)
         }
     }
 
     private fun encodePayFunction(signedTx: SignedTransaction): String {
-        val function = Function(
-            "pay",
-            listOf(
-                Bytes32(Numeric.hexStringToByteArray(signedTx.merchantId)),
-                Bytes32(Numeric.hexStringToByteArray(signedTx.invoiceId)),
-                Address(signedTx.asset),
-                Uint256(BigInteger(signedTx.amount)),
-                Bytes32(Numeric.hexStringToByteArray(signedTx.nonce)),
-                Uint64(BigInteger.valueOf(signedTx.expiry)),
-                Address(signedTx.payer),
-                DynamicBytes(Numeric.hexStringToByteArray(signedTx.payerSig))
-            ),
-            emptyList()
-        )
+        val function =
+            Function(
+                "pay",
+                listOf(
+                    Bytes32(Numeric.hexStringToByteArray(signedTx.merchantId)),
+                    Bytes32(Numeric.hexStringToByteArray(signedTx.invoiceId)),
+                    Address(signedTx.asset),
+                    Uint256(BigInteger(signedTx.amount)),
+                    Bytes32(Numeric.hexStringToByteArray(signedTx.nonce)),
+                    Uint64(BigInteger.valueOf(signedTx.expiry)),
+                    Address(signedTx.payer),
+                    DynamicBytes(Numeric.hexStringToByteArray(signedTx.payerSig)),
+                ),
+                emptyList(),
+            )
         return FunctionEncoder.encode(function)
     }
 
-    private fun encodeExecuteFunction(to: String, value: String, data: String): String {
-        val function = Function(
-            "execute",
-            listOf(
-                Address(to),
-                Uint256(BigInteger(value)),
-                DynamicBytes(Numeric.hexStringToByteArray(data))
-            ),
-            emptyList()
-        )
+    private fun encodeExecuteFunction(
+        to: String,
+        value: String,
+        data: String,
+    ): String {
+        val function =
+            Function(
+                "execute",
+                listOf(
+                    Address(to),
+                    Uint256(BigInteger(value)),
+                    DynamicBytes(Numeric.hexStringToByteArray(data)),
+                ),
+                emptyList(),
+            )
         return FunctionEncoder.encode(function)
     }
 
-    // Verificar estado de transacción relayer
     suspend fun checkRelayStatus(taskId: String): ExecutionResult {
         return withContext(Dispatchers.IO) {
             try {
@@ -371,7 +392,7 @@ class TransactionExecutor(
                     else -> ExecutionResult.Pending(taskId)
                 }
             } catch (e: Exception) {
-                ExecutionResult.Error(e.message ?: "Error verificando estado")
+                ExecutionResult.Error(ServiceErrorCatalog.fromException(e, ServiceErrorCatalog.STATUS_CHECK_ERROR))
             }
         }
     }
@@ -387,7 +408,7 @@ class TransactionExecutor(
 
         return when (task?.get("taskState")?.asString) {
             "ExecSuccess" -> ExecutionResult.Success(task.get("transactionHash")?.asString ?: "")
-            "ExecReverted", "Cancelled" -> ExecutionResult.Error("Transaction failed")
+            "ExecReverted", "Cancelled" -> ExecutionResult.Error(ServiceErrorCatalog.TRANSACTION_FAILED)
             else -> ExecutionResult.Pending(taskId)
         }
     }

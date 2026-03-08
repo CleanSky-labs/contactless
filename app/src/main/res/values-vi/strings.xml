@@ -344,4 +344,28 @@
     <string name="receive_only_no_escrow_desc">Cấu hình địa chỉ escrow và API key trong Cài đặt</string>
     <string name="receive_only_security_notice">Không có khóa riêng trên thiết bị này. An toàn nếu bị đánh cắp.</string>
     <string name="receive_only_api_key_required">Cần API key để thực thi qua relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Lỗi Account Abstraction</string>
+        <string name="error_api_key_required">Yêu cầu API key</string>
+        <string name="error_insufficient_time_to_sign">Không đủ thời gian để ký</string>
+        <string name="error_invalid_request">Yêu cầu không hợp lệ</string>
+        <string name="error_no_balance_to_spend">Không có số dư để chi tiêu</string>
+        <string name="error_paymaster_not_configured">Paymaster chưa được cấu hình</string>
+        <string name="error_refund_amount_invalid">Số tiền hoàn phải lớn hơn 0</string>
+        <string name="error_relayer_generic">Lỗi relayer</string>
+        <string name="error_relayer_not_configured">Relayer chưa được cấu hình</string>
+        <string name="error_replay_detected">Phát hiện replay: nonce đã được dùng</string>
+        <string name="error_request_expired">Yêu cầu đã hết hạn</string>
+        <string name="error_status_check">Lỗi kiểm tra trạng thái</string>
+        <string name="error_token_not_allowed">Token không được phép</string>
+        <string name="error_transaction_failed">Giao dịch thất bại</string>
+        <string name="settings_advanced_hint">Bật Chế độ nâng cao để cấu hình quyền riêng tư, bảo mật, mạng và token.</string>
+        <string name="settings_export_requires_wallet">Tạo hoặc nhập ví trước khi xuất khóa riêng tư.</string>
+        <string name="settings_group_general">Chung</string>
+        <string name="settings_group_network_tokens">Mạng và token</string>
+        <string name="settings_group_payments">Thanh toán</string>
+        <string name="settings_group_privacy_security">Quyền riêng tư và bảo mật</string>
+        <string name="settings_key_management">Quản lý khóa</string>
+        <string name="settings_key_management_desc">Các thao tác khóa nhạy cảm được tách riêng tại đây. Giữ khóa riêng tư ngoại tuyến và tuyệt đối không chia sẻ.</string>
 </resources>

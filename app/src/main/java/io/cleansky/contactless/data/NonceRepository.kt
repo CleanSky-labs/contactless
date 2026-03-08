@@ -22,7 +22,6 @@ private val Context.nonceDataStore: DataStore<Preferences> by preferencesDataSto
  * - Atomic nonce consumption
  */
 class NonceRepository(private val context: Context) {
-
     // In-memory cache for fast lookups
     private val usedNonces = ConcurrentHashMap<String, Long>()
     private val mutex = Mutex()
@@ -69,7 +68,10 @@ class NonceRepository(private val context: Context) {
      * Check if a nonce has been used before.
      * Returns true if nonce is valid (not used), false if already used.
      */
-    suspend fun isNonceValid(nonce: String, invoiceId: String): Boolean {
+    suspend fun isNonceValid(
+        nonce: String,
+        invoiceId: String,
+    ): Boolean {
         initialize()
 
         val key = "$nonce:$invoiceId"
@@ -80,7 +82,11 @@ class NonceRepository(private val context: Context) {
      * Atomically consume a nonce. Must be called before broadcasting transaction.
      * Returns true if successful, false if nonce was already used.
      */
-    suspend fun consumeNonce(nonce: String, invoiceId: String, expiry: Long): Boolean {
+    suspend fun consumeNonce(
+        nonce: String,
+        invoiceId: String,
+        expiry: Long,
+    ): Boolean {
         initialize()
 
         val key = "$nonce:$invoiceId"
@@ -110,7 +116,10 @@ class NonceRepository(private val context: Context) {
      * Release a nonce if transaction broadcast fails.
      * This allows retry with the same nonce.
      */
-    suspend fun releaseNonce(nonce: String, invoiceId: String) {
+    suspend fun releaseNonce(
+        nonce: String,
+        invoiceId: String,
+    ) {
         val key = "$nonce:$invoiceId"
 
         mutex.withLock {
@@ -128,9 +137,10 @@ class NonceRepository(private val context: Context) {
 
     private suspend fun cleanupExpiredNonces() {
         val now = System.currentTimeMillis() / 1000
-        val toRemove = usedNonces.entries
-            .filter { isExpired(it.value) }
-            .map { it.key }
+        val toRemove =
+            usedNonces.entries
+                .filter { isExpired(it.value) }
+                .map { it.key }
 
         toRemove.forEach { usedNonces.remove(it) }
 

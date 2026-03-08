@@ -5,10 +5,10 @@ import org.junit.Test
 import org.web3j.crypto.Credentials
 
 class StealthAddressTest {
-
-    private val mainCredentials = Credentials.create(
-        "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5"
-    )
+    private val mainCredentials =
+        Credentials.create(
+            "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5",
+        )
 
     @Test
     fun `deriveStealthKeys is deterministic for same wallet`() {
@@ -46,11 +46,12 @@ class StealthAddressTest {
         val meta = keys.getMetaAddress()
 
         val payment = StealthAddress.generateStealthPayment(meta)
-        val derived = StealthAddress.scanAndDerive(
-            stealthKeys = keys,
-            ephemeralPubKey = payment.ephemeralPubKey,
-            expectedAddress = payment.stealthAddress
-        )
+        val derived =
+            StealthAddress.scanAndDerive(
+                stealthKeys = keys,
+                ephemeralPubKey = payment.ephemeralPubKey,
+                expectedAddress = payment.stealthAddress,
+            )
 
         assertNotNull(derived)
         assertEquals(payment.stealthAddress.lowercase(), derived!!.address.lowercase())
@@ -63,11 +64,12 @@ class StealthAddressTest {
         val keys = StealthAddress.deriveStealthKeys(mainCredentials)
         val payment = StealthAddress.generateStealthPayment(keys.getMetaAddress())
 
-        val derived = StealthAddress.scanAndDerive(
-            stealthKeys = keys,
-            ephemeralPubKey = payment.ephemeralPubKey,
-            expectedAddress = "0x0000000000000000000000000000000000000001"
-        )
+        val derived =
+            StealthAddress.scanAndDerive(
+                stealthKeys = keys,
+                ephemeralPubKey = payment.ephemeralPubKey,
+                expectedAddress = "0x0000000000000000000000000000000000000001",
+            )
 
         assertNull(derived)
     }
@@ -77,17 +79,19 @@ class StealthAddressTest {
         val keys = StealthAddress.deriveStealthKeys(mainCredentials)
         val payment = StealthAddress.generateStealthPayment(keys.getMetaAddress())
 
-        val matches = StealthAddress.checkViewTag(
-            viewingKey = keys.viewingKey,
-            ephemeralPubKey = payment.ephemeralPubKey,
-            expectedViewTag = payment.viewTag
-        )
+        val matches =
+            StealthAddress.checkViewTag(
+                viewingKey = keys.viewingKey,
+                ephemeralPubKey = payment.ephemeralPubKey,
+                expectedViewTag = payment.viewTag,
+            )
         val wrongTag = (payment.viewTag.toInt() xor 0x01).toByte()
-        val notMatches = StealthAddress.checkViewTag(
-            viewingKey = keys.viewingKey,
-            ephemeralPubKey = payment.ephemeralPubKey,
-            expectedViewTag = wrongTag
-        )
+        val notMatches =
+            StealthAddress.checkViewTag(
+                viewingKey = keys.viewingKey,
+                ephemeralPubKey = payment.ephemeralPubKey,
+                expectedViewTag = wrongTag,
+            )
 
         assertTrue(matches)
         assertFalse(notMatches)

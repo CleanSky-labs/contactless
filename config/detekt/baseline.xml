@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:NfcManager.kt$NfcManager$private fun processNdefRecord(record: NdefRecord)</ID>
+    <ID>CyclomaticComplexMethod:SecureWalletManager.kt$SecureWalletManager$suspend fun getCredentials(activity: FragmentActivity? = null): CredentialsResult</ID>
+  </CurrentIssues>
+</SmellBaseline>

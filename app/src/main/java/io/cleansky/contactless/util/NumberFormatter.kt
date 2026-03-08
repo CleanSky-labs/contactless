@@ -10,7 +10,6 @@ import java.util.Locale
  * Respects user's locale for decimal/thousand separators.
  */
 object NumberFormatter {
-
     /**
      * Formats a BigInteger balance with the appropriate decimals for display.
      * Uses locale-aware decimal and thousand separators.
@@ -23,7 +22,7 @@ object NumberFormatter {
     fun formatBalance(
         amount: BigInteger?,
         decimals: Int,
-        maxDisplayDecimals: Int = 6
+        maxDisplayDecimals: Int = 6,
     ): String {
         if (amount == null) return "..."
         if (amount == BigInteger.ZERO) return "0"
@@ -55,7 +54,10 @@ object NumberFormatter {
     /**
      * Formats a balance with exactly 2 decimal places (for currency display).
      */
-    fun formatCurrency(amount: BigInteger?, decimals: Int): String {
+    fun formatCurrency(
+        amount: BigInteger?,
+        decimals: Int,
+    ): String {
         if (amount == null) return "..."
         if (amount == BigInteger.ZERO) return formatZeroCurrency()
 
@@ -80,14 +82,18 @@ object NumberFormatter {
         return formatter.format(wholePart.toLong())
     }
 
-    private fun formatWithFraction(wholePart: BigInteger, fraction: String): String {
+    private fun formatWithFraction(
+        wholePart: BigInteger,
+        fraction: String,
+    ): String {
         val symbols = DecimalFormatSymbols.getInstance(Locale.getDefault())
-        val wholeFormatted = if (wholePart >= BigInteger.valueOf(1000)) {
-            val formatter = DecimalFormat("#,##0", symbols)
-            formatter.format(wholePart.toLong())
-        } else {
-            wholePart.toString()
-        }
+        val wholeFormatted =
+            if (wholePart >= BigInteger.valueOf(1000)) {
+                val formatter = DecimalFormat("#,##0", symbols)
+                formatter.format(wholePart.toLong())
+            } else {
+                wholePart.toString()
+            }
         return "$wholeFormatted${symbols.decimalSeparator}$fraction"
     }
 

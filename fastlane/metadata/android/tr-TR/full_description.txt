@@ -1,0 +1,37 @@
+CleanSky, NFC kullanarak kripto para ödemenizi ve almanızı sağlayan temassız ödeme uygulamasıdır - telefonunuzu yaklaştırmanız yeterli.
+
+ANAHTARLARINIZ, PARANIZ, EGEMENLİĞİNİZ
+
+• Kendi kendine saklama cüzdanı - özel anahtarlarınızı siz kontrol edersiniz
+• Hesap gerekmez - e-posta yok, telefon yok, KYC yok
+• Çevrimdışı çalışır - internet olmadan işlem imzalayın
+• Açık kaynak - güvenmeyin, doğrulayın
+
+TASARIMDA GİZLİLİK
+
+• Gizli adresler (EIP-5564) - her ödeme benzersiz bir adrese gider
+• Ödeyici gizliliği (ERC-4337) - öderken cüzdan adresinizi gizleyin
+• İzleme yok, analitik yok, veri toplama yok
+
+BASİT VE HIZLI
+
+• Ödemek için dokun - saniyeler içinde NFC ödemeleri
+• Almak için dokun - satıcı olarak ödeme alın
+• Çoklu zincir - Ethereum, Polygon, Arbitrum, Base ve daha fazlası
+• Gazsız seçenekler - gas için ETH'ye ihtiyaç duymadan ödeyin
+
+GERÇEK KULLANIM İÇİN
+
+• Dengesiz para birimleriyle çalışır - birikimlerinizi koruyun
+• 70+ dil desteği
+• Düşük seviye telefonlarla uyumlu - Android 7+ üzerinde çalışır
+• Google Services gerektirmez
+
+GÜVENLİK
+
+• Android Keystore ile AES-256-GCM şifreleme
+• Biyometrik kimlik doğrulama (parmak izi/yüz)
+• Uyumlu cihazlarda StrongBox HSM desteği
+• Bulut yedekleme yok - anahtarlarınız asla cihazınızdan çıkmaz
+
+CleanSky ücretsiz, açık kaynaklı yazılımdır. Fonlarınıza erişimimiz yoktur ve kayıp anahtarları kurtarmanıza yardımcı olamayız. Özel anahtarınızı her zaman güvenli bir şekilde yedekleyin.

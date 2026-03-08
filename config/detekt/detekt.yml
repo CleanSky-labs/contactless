@@ -1,0 +1,18 @@
+complexity:
+  CyclomaticComplexMethod:
+    active: true
+    threshold: 12
+  ComplexCondition:
+    active: false
+  NestedBlockDepth:
+    active: false
+
+style:
+  MagicNumber:
+    active: false
+  WildcardImport:
+    active: false
+
+naming:
+  FunctionNaming:
+    active: false

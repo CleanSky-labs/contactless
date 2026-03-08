@@ -6,10 +6,10 @@ import io.cleansky.contactless.util.NumberFormatter
 import java.math.BigInteger
 
 enum class TransactionType {
-    PAYMENT_RECEIVED,  // Cobro recibido (merchant)
-    PAYMENT_SENT,      // Pago enviado (payer)
-    REFUND_SENT,       // Devolución enviada (merchant)
-    REFUND_RECEIVED    // Devolución recibida (payer)
+    PAYMENT_RECEIVED,
+    PAYMENT_SENT,
+    REFUND_SENT,
+    REFUND_RECEIVED,
 }
 
 enum class TransactionStatus {
@@ -17,24 +17,24 @@ enum class TransactionStatus {
     CONFIRMED,
     FAILED,
     REFUNDED,
-    PARTIALLY_REFUNDED
+    PARTIALLY_REFUNDED,
 }
 
 data class Transaction(
-    val id: String,                    // UUID único
-    val txHash: String,                // Hash de la transacción on-chain
+    val id: String,
+    val txHash: String,
     val type: TransactionType,
     val status: TransactionStatus,
-    val amount: String,                // Monto original en unidades menores
-    val refundedAmount: String = "0",  // Monto ya devuelto
-    val asset: String,                 // Dirección del token
+    val amount: String,
+    val refundedAmount: String = "0",
+    val asset: String,
     val chainId: Long,
-    val counterparty: String,          // Dirección del otro participante
+    val counterparty: String,
     val merchantId: String,
     val invoiceId: String,
-    val timestamp: Long,               // Unix timestamp
-    val note: String = "",             // Nota opcional
-    val refundTxHashes: List<String> = emptyList() // Hashes de devoluciones
+    val timestamp: Long,
+    val note: String = "",
+    val refundTxHashes: List<String> = emptyList(),
 ) {
     companion object {
         private val gson = Gson()
@@ -64,6 +64,7 @@ data class Transaction(
     fun toJson(): String = gson.toJson(this)
 
     fun getAmountBigInt(): BigInteger = BigInteger(amount)
+
     fun getRefundedAmountBigInt(): BigInteger = BigInteger(refundedAmount)
 
     fun getRemainingRefundable(): BigInteger {
@@ -72,8 +73,8 @@ data class Transaction(
 
     fun canRefund(): Boolean {
         return (type == TransactionType.PAYMENT_RECEIVED || type == TransactionType.PAYMENT_SENT) &&
-                status != TransactionStatus.REFUNDED &&
-                getRemainingRefundable() > BigInteger.ZERO
+            status != TransactionStatus.REFUNDED &&
+            getRemainingRefundable() > BigInteger.ZERO
     }
 
     fun getFormattedAmount(decimals: Int = 6): String {
@@ -88,31 +89,38 @@ data class Transaction(
         return formatTokenAmount(getRemainingRefundable(), decimals)
     }
 
-    private fun formatTokenAmount(amount: BigInteger, decimals: Int): String {
+    private fun formatTokenAmount(
+        amount: BigInteger,
+        decimals: Int,
+    ): String {
         return NumberFormatter.formatCurrency(amount, decimals)
     }
 
-    fun withRefund(refundAmount: BigInteger, refundTxHash: String): Transaction {
+    fun withRefund(
+        refundAmount: BigInteger,
+        refundTxHash: String,
+    ): Transaction {
         require(refundAmount > BigInteger.ZERO) { "Refund amount must be positive" }
         require(refundTxHash.isNotBlank()) { "Refund tx hash cannot be blank" }
         val newRefundedAmount = (getRefundedAmountBigInt() + refundAmount).coerceAtMost(getAmountBigInt())
-        val newStatus = if (newRefundedAmount >= getAmountBigInt()) {
-            TransactionStatus.REFUNDED
-        } else {
-            TransactionStatus.PARTIALLY_REFUNDED
-        }
+        val newStatus =
+            if (newRefundedAmount >= getAmountBigInt()) {
+                TransactionStatus.REFUNDED
+            } else {
+                TransactionStatus.PARTIALLY_REFUNDED
+            }
         return copy(
             refundedAmount = newRefundedAmount.toString(),
             status = newStatus,
-            refundTxHashes = refundTxHashes + refundTxHash
+            refundTxHashes = refundTxHashes + refundTxHash,
         )
     }
 }
 
 data class RefundRequest(
     val originalTxId: String,
-    val amount: String,          // Monto a devolver
+    val amount: String,
     val recipientAddress: String,
     val asset: String,
-    val chainId: Long
+    val chainId: Long,
 )

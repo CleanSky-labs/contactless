@@ -7,7 +7,6 @@ import java.text.DecimalFormatSymbols
 import java.util.Locale
 
 class NumberFormatterTest {
-
     private val decSep = DecimalFormatSymbols.getInstance(Locale.getDefault()).decimalSeparator
     private val grpSep = DecimalFormatSymbols.getInstance(Locale.getDefault()).groupingSeparator
 

@@ -1,0 +1,40 @@
+CleanSky is a contactless payment app that lets you pay and receive cryptocurrency using NFC - just tap your phone.
+
+YOUR KEYS, YOUR FUNDS, YOUR SOVEREIGNTY
+
+• Self-custody wallet - you control your private keys
+• No account needed - no email, no phone number, no KYC
+• Works offline - sign transactions without internet
+• Open source - verify, don't trust
+
+PRIVACY BY DESIGN
+
+• Stealth addresses (EIP-5564) - each payment goes to a unique address
+• Payer privacy (ERC-4337) - hide your wallet address when paying
+• No tracking, no analytics, no data collection
+
+SIMPLE & FAST
+
+• Tap to pay - NFC contactless payments in seconds
+• Tap to collect - receive payments as a merchant
+• Multi-chain support - Ethereum, Polygon, Arbitrum, Base, and more
+• Gasless options - pay without needing ETH for gas
+
+BUILT FOR REAL USE
+
+• Works with unstable currencies - protect your savings
+• 70+ languages supported
+• Low-end phone friendly - works on Android 7+
+• No Google Services required
+
+SECURITY
+
+• AES-256-GCM encryption with Android Keystore
+• Biometric authentication (fingerprint/face)
+• StrongBox HSM support on compatible devices
+• No cloud backup - your keys never leave your device
+
+CleanSky is free, open source software. We don't have access to your funds and cannot help you recover lost keys. Always backup your private key securely.
+
+Website: cleansky.app
+Source code: github.com/cleansky/contactless

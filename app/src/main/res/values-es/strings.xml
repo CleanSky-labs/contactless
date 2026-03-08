@@ -42,7 +42,7 @@
     <string name="settings_mode_pay">Pagar</string>
     <string name="settings_mode_pay_desc">Realizar pagos</string>
     <string name="settings_mode_collect">Cobrar</string>
-    <string name="settings_mode_collect_desc">Recibir pagos</string>
+    <string name="settings_mode_collect_desc">Cobro estándar con wallet local</string>
     <string name="settings_wallet">Wallet</string>
     <string name="settings_wallet_address">Dirección</string>
     <string name="settings_wallet_none">No hay wallet configurada</string>
@@ -60,6 +60,14 @@
     <string name="settings_api_key">API Key</string>
     <string name="settings_save">Guardar y volver</string>
     <string name="settings_not_available">No disponible en esta red</string>
+    <string name="settings_group_general">General</string>
+    <string name="settings_group_payments">Pagos</string>
+    <string name="settings_group_privacy_security">Privacidad y seguridad</string>
+    <string name="settings_group_network_tokens">Red y tokens</string>
+    <string name="settings_advanced_hint">Activa Modo Avanzado para configurar privacidad, seguridad, red y tokens.</string>
+    <string name="settings_key_management">Gestión de claves</string>
+    <string name="settings_key_management_desc">Las operaciones sensibles de claves están separadas aquí. Mantén tu clave privada fuera de línea y nunca la compartas.</string>
+    <string name="settings_export_requires_wallet">Crea o importa una wallet antes de exportar la clave privada.</string>
 
     <!-- Security Settings -->
     <string name="security_title">Seguridad</string>
@@ -173,6 +181,20 @@
     <string name="error_invalid_address">Dirección inválida</string>
     <string name="error_invalid_address_format">Formato de dirección inválido</string>
     <string name="error_token_already_added">Token ya agregado</string>
+    <string name="error_token_not_allowed">Token no permitido</string>
+    <string name="error_request_expired">Solicitud expirada</string>
+    <string name="error_insufficient_time_to_sign">Tiempo insuficiente para firmar</string>
+    <string name="error_invalid_request">Solicitud inválida</string>
+    <string name="error_replay_detected">Replay detectado: nonce ya usado</string>
+    <string name="error_api_key_required">API key requerida</string>
+    <string name="error_relayer_not_configured">Relayer no configurado</string>
+    <string name="error_paymaster_not_configured">Paymaster no configurado</string>
+    <string name="error_relayer_generic">Error del relayer</string>
+    <string name="error_account_abstraction">Error en Account Abstraction</string>
+    <string name="error_status_check">Error verificando estado</string>
+    <string name="error_transaction_failed">Transacción fallida</string>
+    <string name="error_no_balance_to_spend">No hay saldo para enviar</string>
+    <string name="error_refund_amount_invalid">El monto de devolución debe ser mayor que 0</string>
 
     <!-- Stealth Wallet -->
     <string name="stealth_spend_sent_tx">¡Enviado! Tx: %s…</string>
@@ -338,10 +360,10 @@
     <string name="scam_receive_large_desc">Esta solicitud es de %1$s %2$s. Verifica que sea el monto correcto antes de pagar.</string>
 
     <!-- Receive-Only Mode -->
-    <string name="nav_receive_only">Solo Recibir</string>
-    <string name="settings_mode_receive_only">Recibir</string>
-    <string name="settings_mode_receive_only_desc">Sin clave privada</string>
-    <string name="settings_receive_only">Configuración de Solo Recepción</string>
+    <string name="nav_receive_only">Solo cobrar</string>
+    <string name="settings_mode_receive_only">Solo cobrar</string>
+    <string name="settings_mode_receive_only_desc">Sin clave privada local (escrow + relayer)</string>
+    <string name="settings_receive_only">Configuración de cobro delegado</string>
     <string name="settings_escrow_address">Dirección Escrow</string>
     <string name="settings_receive_only_merchant_id">Merchant ID</string>
     <string name="receive_only_no_escrow">Sin Escrow Configurado</string>

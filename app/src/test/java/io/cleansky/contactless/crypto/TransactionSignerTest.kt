@@ -6,29 +6,31 @@ import org.junit.Test
 import org.web3j.crypto.Credentials
 
 class TransactionSignerTest {
+    private val payerCredentials =
+        Credentials.create(
+            "0x6c3699283bda56ad74f6b855546325b68d482e983852a7a89d6d77fd26f6a6f3",
+        )
 
-    private val payerCredentials = Credentials.create(
-        "0x6c3699283bda56ad74f6b855546325b68d482e983852a7a89d6d77fd26f6a6f3"
-    )
+    private val merchantCredentials =
+        Credentials.create(
+            "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5",
+        )
 
-    private val merchantCredentials = Credentials.create(
-        "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5"
-    )
-
-    private fun baseRequest(stealthMetaAddress: String? = null) = PaymentRequest(
-        merchantId = "0x" + "33".repeat(32),
-        invoiceId = "0x" + "11".repeat(32),
-        amount = "1000000",
-        asset = "0x0000000000000000000000000000000000000000",
-        chainId = 84532L,
-        escrow = "0x1111111111111111111111111111111111111111",
-        nonce = "0x" + "22".repeat(32),
-        expiry = System.currentTimeMillis() / 1000 + 120L,
-        merchantDisplayName = "Shop",
-        merchantDomain = "shop.eth",
-        merchantPubKey = "0xpub",
-        stealthMetaAddress = stealthMetaAddress
-    )
+    private fun baseRequest(stealthMetaAddress: String? = null) =
+        PaymentRequest(
+            merchantId = "0x" + "33".repeat(32),
+            invoiceId = "0x" + "11".repeat(32),
+            amount = "1000000",
+            asset = "0x0000000000000000000000000000000000000000",
+            chainId = 84532L,
+            escrow = "0x1111111111111111111111111111111111111111",
+            nonce = "0x" + "22".repeat(32),
+            expiry = System.currentTimeMillis() / 1000 + 120L,
+            merchantDisplayName = "Shop",
+            merchantDomain = "shop.eth",
+            merchantPubKey = "0xpub",
+            stealthMetaAddress = stealthMetaAddress,
+        )
 
     @Test
     fun `signPayment fills signed transaction fields and signature format`() {
@@ -90,10 +92,11 @@ class TransactionSignerTest {
     @Test
     fun `signPayment with valid stealth meta fills stealth fields`() {
         // Given
-        val stealthMeta = StealthAddress
-            .deriveStealthKeys(merchantCredentials)
-            .getMetaAddress()
-            .encode()
+        val stealthMeta =
+            StealthAddress
+                .deriveStealthKeys(merchantCredentials)
+                .getMetaAddress()
+                .encode()
         val request = baseRequest(stealthMetaAddress = stealthMeta)
 
         // When
@@ -114,10 +117,11 @@ class TransactionSignerTest {
         val request = baseRequest(stealthMetaAddress = "st:eth:invalid")
 
         // When
-        val signed = TransactionSigner.signPayment(
-            request,
-            payerCredentials
-        )
+        val signed =
+            TransactionSigner.signPayment(
+                request,
+                payerCredentials,
+            )
 
         // Then
         assertTrue(signed.payerSig.startsWith("0x"))
@@ -160,11 +164,12 @@ class TransactionSignerTest {
     @Test
     fun `signPayment accepts non-hex identifiers using deterministic fallback hashing`() {
         // Given
-        val request = baseRequest().copy(
-            merchantId = "merchant-store-42",
-            invoiceId = "invoice-2026-03-06",
-            nonce = "nonce:abc-123"
-        )
+        val request =
+            baseRequest().copy(
+                merchantId = "merchant-store-42",
+                invoiceId = "invoice-2026-03-06",
+                nonce = "nonce:abc-123",
+            )
 
         // When
         val signed1 = TransactionSigner.signPayment(request, payerCredentials)

@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">Skonfiguruj adres escrow i API key w Ustawieniach</string>
     <string name="receive_only_security_notice">Brak klucza prywatnego na tym urządzeniu. Bezpieczne w razie kradzieży.</string>
     <string name="receive_only_api_key_required">API key wymagany do wykonania przez relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Błąd Account Abstraction</string>
+        <string name="error_api_key_required">Wymagany klucz API</string>
+        <string name="error_insufficient_time_to_sign">Za mało czasu na podpisanie</string>
+        <string name="error_invalid_request">Nieprawidłowe żądanie</string>
+        <string name="error_no_balance_to_spend">Brak środków do wydania</string>
+        <string name="error_paymaster_not_configured">Paymaster nie jest skonfigurowany</string>
+        <string name="error_refund_amount_invalid">Kwota zwrotu musi być większa niż 0</string>
+        <string name="error_relayer_generic">Błąd relayera</string>
+        <string name="error_relayer_not_configured">Relayer nie jest skonfigurowany</string>
+        <string name="error_replay_detected">Wykryto replay: nonce został już użyty</string>
+        <string name="error_request_expired">Żądanie wygasło</string>
+        <string name="error_status_check">Błąd sprawdzania statusu</string>
+        <string name="error_token_not_allowed">Token niedozwolony</string>
+        <string name="error_transaction_failed">Transakcja nie powiodła się</string>
+        <string name="settings_advanced_hint">Włącz tryb zaawansowany, aby skonfigurować prywatność, bezpieczeństwo, sieć i tokeny.</string>
+        <string name="settings_export_requires_wallet">Utwórz lub zaimportuj portfel przed eksportem klucza prywatnego.</string>
+        <string name="settings_group_general">Ogólne</string>
+        <string name="settings_group_network_tokens">Sieć i tokeny</string>
+        <string name="settings_group_payments">Płatności</string>
+        <string name="settings_group_privacy_security">Prywatność i bezpieczeństwo</string>
+        <string name="settings_key_management">Zarządzanie kluczami</string>
+        <string name="settings_key_management_desc">Wrażliwe operacje na kluczach są tutaj oddzielone. Przechowuj klucz prywatny offline i nigdy go nie udostępniaj.</string>
 </resources>

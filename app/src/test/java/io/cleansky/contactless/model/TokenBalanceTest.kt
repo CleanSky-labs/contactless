@@ -5,23 +5,24 @@ import org.junit.Test
 import java.math.BigInteger
 
 class TokenBalanceTest {
+    private val usdcToken =
+        Token(
+            address = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            symbol = "USDC",
+            name = "USD Coin",
+            decimals = 6,
+            chainId = 8453L,
+        )
 
-    private val usdcToken = Token(
-        address = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-        symbol = "USDC",
-        name = "USD Coin",
-        decimals = 6,
-        chainId = 8453L
-    )
-
-    private val ethToken = Token(
-        address = Token.NATIVE_ADDRESS,
-        symbol = "ETH",
-        name = "Ethereum",
-        decimals = 18,
-        chainId = 8453L,
-        isNative = true
-    )
+    private val ethToken =
+        Token(
+            address = Token.NATIVE_ADDRESS,
+            symbol = "ETH",
+            name = "Ethereum",
+            decimals = 18,
+            chainId = 8453L,
+            isNative = true,
+        )
 
     @Test
     fun `TokenBalance create formats zero balance correctly`() {

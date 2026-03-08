@@ -23,8 +23,8 @@ RUN yes | sdkmanager --licenses
 # Install required SDK packages
 RUN sdkmanager \
     "platform-tools" \
-    "platforms;android-34" \
-    "build-tools;34.0.0"
+    "platforms;android-35" \
+    "build-tools;35.0.0"
 
 # --- Layer 1: Gradle wrapper + config (changes rarely) ---
 COPY gradlew gradlew

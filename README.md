@@ -56,7 +56,7 @@ CleanSky Contactless enables peer-to-peer crypto payments via NFC. The payer sig
 ## Build
 
 ### Requirements
-- Android SDK 34
+- Android SDK 35
 - JDK 17
 - Gradle 8.x
 

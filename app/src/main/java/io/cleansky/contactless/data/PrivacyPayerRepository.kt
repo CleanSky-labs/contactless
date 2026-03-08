@@ -25,7 +25,6 @@ private val Context.privacyPayerDataStore: DataStore<Preferences> by preferences
  * - Payment session management
  */
 class PrivacyPayerRepository(private val context: Context) {
-
     companion object {
         private val PRIVACY_ENABLED = booleanPreferencesKey("payer_privacy_enabled")
         private val LAST_PAYMENT_INDEX = longPreferencesKey("last_payment_index")
@@ -37,9 +36,10 @@ class PrivacyPayerRepository(private val context: Context) {
     /**
      * Flow indicating if payer privacy mode is enabled
      */
-    val privacyEnabledFlow: Flow<Boolean> = context.privacyPayerDataStore.data.map { prefs ->
-        prefs[PRIVACY_ENABLED] ?: false
-    }
+    val privacyEnabledFlow: Flow<Boolean> =
+        context.privacyPayerDataStore.data.map { prefs ->
+            prefs[PRIVACY_ENABLED] ?: false
+        }
 
     /**
      * Check if payer privacy is enabled
@@ -124,13 +124,13 @@ class PrivacyPayerRepository(private val context: Context) {
  * Record of an ephemeral account used for a payment
  */
 data class EphemeralAccountRecord(
-    val address: String,           // Ephemeral account address
-    val paymentIndex: Long,        // Index used for derivation
-    val invoiceId: String,         // Associated invoice
-    val merchantAddress: String,   // Merchant (or stealth address)
-    val amount: String,            // Amount paid
-    val asset: String,             // Token address
-    val chainId: Long,             // Chain ID
-    val txHash: String?,           // Transaction hash (if completed)
-    val createdAt: Long = System.currentTimeMillis()
+    val address: String,
+    val paymentIndex: Long,
+    val invoiceId: String,
+    val merchantAddress: String,
+    val amount: String,
+    val asset: String,
+    val chainId: Long,
+    val txHash: String?,
+    val createdAt: Long = System.currentTimeMillis(),
 )

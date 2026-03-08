@@ -5,15 +5,15 @@ import org.junit.Test
 import java.math.BigInteger
 
 class PaymentRequestTest {
-
     private fun createValidRequest(
-        expiryOffset: Long = 120L, // seconds from now
+        // seconds from now
+        expiryOffset: Long = 120L,
         merchantId: String = "merchant-1",
         invoiceId: String = "0xinvoice",
         amount: String = "1000000",
         asset: String = "0xtoken",
         escrow: String = "0xescrow123456789abcdef",
-        nonce: String = "0xnonce123"
+        nonce: String = "0xnonce123",
     ) = PaymentRequest(
         merchantId = merchantId,
         invoiceId = invoiceId,
@@ -22,7 +22,7 @@ class PaymentRequestTest {
         chainId = 8453L,
         escrow = escrow,
         nonce = nonce,
-        expiry = System.currentTimeMillis() / 1000 + expiryOffset
+        expiry = System.currentTimeMillis() / 1000 + expiryOffset,
     )
 
     // --- validate() ---
@@ -149,10 +149,11 @@ class PaymentRequestTest {
 
     @Test
     fun `getDisplayName prefers displayName over domain`() {
-        val request = createValidRequest().copy(
-            merchantDisplayName = "My Shop",
-            merchantDomain = "shop.eth"
-        )
+        val request =
+            createValidRequest().copy(
+                merchantDisplayName = "My Shop",
+                merchantDomain = "shop.eth",
+            )
         assertEquals("My Shop", request.getDisplayName())
     }
 
@@ -177,14 +178,16 @@ class PaymentRequestTest {
     @Test
     fun `create clamps expiry to minimum TTL`() {
         val now = System.currentTimeMillis() / 1000
-        val request = PaymentRequest.create(
-            merchantId = "merchant-min",
-            amount = BigInteger("1"),
-            asset = "0xasset",
-            chainId = 8453L,
-            escrow = "0x1111111111111111111111111111111111111111",
-            expirySeconds = 1L // below minimum
-        )
+        val request =
+            PaymentRequest.create(
+                merchantId = "merchant-min",
+                amount = BigInteger("1"),
+                asset = "0xasset",
+                chainId = 8453L,
+                escrow = "0x1111111111111111111111111111111111111111",
+                // below minimum
+                expirySeconds = 1L,
+            )
 
         val ttl = request.expiry - now
         assertTrue(ttl >= PaymentRequest.MIN_TTL_SECONDS)
@@ -194,14 +197,16 @@ class PaymentRequestTest {
     @Test
     fun `create clamps expiry to maximum TTL`() {
         val now = System.currentTimeMillis() / 1000
-        val request = PaymentRequest.create(
-            merchantId = "merchant-max",
-            amount = BigInteger("1"),
-            asset = "0xasset",
-            chainId = 8453L,
-            escrow = "0x1111111111111111111111111111111111111111",
-            expirySeconds = 99999L // above maximum
-        )
+        val request =
+            PaymentRequest.create(
+                merchantId = "merchant-max",
+                amount = BigInteger("1"),
+                asset = "0xasset",
+                chainId = 8453L,
+                escrow = "0x1111111111111111111111111111111111111111",
+                // above maximum
+                expirySeconds = 99999L,
+            )
 
         val ttl = request.expiry - now
         assertTrue(ttl <= PaymentRequest.MAX_TTL_SECONDS + 2)
@@ -210,13 +215,14 @@ class PaymentRequestTest {
 
     @Test
     fun `create generates non-empty ids and nonce with hex prefix`() {
-        val request = PaymentRequest.create(
-            merchantId = "merchant-random",
-            amount = BigInteger("123"),
-            asset = "0xasset",
-            chainId = 8453L,
-            escrow = "0x1111111111111111111111111111111111111111"
-        )
+        val request =
+            PaymentRequest.create(
+                merchantId = "merchant-random",
+                amount = BigInteger("123"),
+                asset = "0xasset",
+                chainId = 8453L,
+                escrow = "0x1111111111111111111111111111111111111111",
+            )
 
         assertTrue(request.invoiceId.startsWith("0x"))
         assertTrue(request.nonce.startsWith("0x"))
@@ -226,12 +232,13 @@ class PaymentRequestTest {
 
     @Test
     fun `toCbor and fromCbor roundtrip preserves fields`() {
-        val request = createValidRequest().copy(
-            merchantDisplayName = "Cafe",
-            merchantDomain = "cafe.eth",
-            merchantPubKey = "0xpub",
-            stealthMetaAddress = "st:eth:abcd"
-        )
+        val request =
+            createValidRequest().copy(
+                merchantDisplayName = "Cafe",
+                merchantDomain = "cafe.eth",
+                merchantPubKey = "0xpub",
+                stealthMetaAddress = "st:eth:abcd",
+            )
 
         val cbor = request.toCbor()
         val parsed = PaymentRequest.fromCbor(cbor)
@@ -253,11 +260,12 @@ class PaymentRequestTest {
     @Test
     fun `SignedTransaction toCbor fromCbor parse roundtrip`() {
         val request = createValidRequest()
-        val tx = SignedTransaction.fromRequest(
-            request = request,
-            payer = "0x2222222222222222222222222222222222222222",
-            signature = "0xabc"
-        )
+        val tx =
+            SignedTransaction.fromRequest(
+                request = request,
+                payer = "0x2222222222222222222222222222222222222222",
+                signature = "0xabc",
+            )
 
         val cbor = tx.toCbor()
         val parsed1 = SignedTransaction.fromCbor(cbor)
@@ -299,9 +307,10 @@ class PaymentRequestTest {
     @Test
     fun `validate returns invalid when expiry is too far in future`() {
         val now = System.currentTimeMillis() / 1000
-        val request = createValidRequest().copy(
-            expiry = now + PaymentRequest.MAX_TTL_SECONDS + PaymentRequest.CLOCK_SKEW_TOLERANCE + 60
-        )
+        val request =
+            createValidRequest().copy(
+                expiry = now + PaymentRequest.MAX_TTL_SECONDS + PaymentRequest.CLOCK_SKEW_TOLERANCE + 60,
+            )
         val result = request.validate()
 
         assertTrue(result is PaymentRequest.ValidationResult.Invalid)

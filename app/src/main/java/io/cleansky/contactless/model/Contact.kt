@@ -14,7 +14,7 @@ data class Contact(
     val name: String,
     val note: String = "",
     val createdAt: Long = System.currentTimeMillis(),
-    val lastUsedAt: Long = System.currentTimeMillis()
+    val lastUsedAt: Long = System.currentTimeMillis(),
 ) {
     fun toJson(): JSONObject {
         return JSONObject().apply {
@@ -40,7 +40,7 @@ data class Contact(
                 name = json.getString("name"),
                 note = json.optString("note", ""),
                 createdAt = json.optLong("createdAt", System.currentTimeMillis()),
-                lastUsedAt = json.optLong("lastUsedAt", System.currentTimeMillis())
+                lastUsedAt = json.optLong("lastUsedAt", System.currentTimeMillis()),
             )
         }
 
@@ -56,9 +56,11 @@ data class Contact(
                         name = nfc.name,
                         note = "",
                         createdAt = System.currentTimeMillis(),
-                        lastUsedAt = System.currentTimeMillis()
+                        lastUsedAt = System.currentTimeMillis(),
                     )
-                } else null
+                } else {
+                    null
+                }
             } catch (e: Exception) {
                 null
             }
@@ -71,5 +73,5 @@ data class Contact(
  */
 data class ContactNfc(
     val address: String,
-    val name: String
+    val name: String,
 )

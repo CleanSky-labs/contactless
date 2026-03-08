@@ -17,7 +17,6 @@ import io.cleansky.contactless.model.SignedTransaction
  * NFC Manager v0.6 - CBOR encoding with contact exchange
  */
 class NfcManager(private val activity: Activity) {
-
     private var nfcAdapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(activity)
 
     val isNfcAvailable: Boolean
@@ -56,13 +55,17 @@ class NfcManager(private val activity: Activity) {
 
     fun enableForegroundDispatch() {
         nfcAdapter?.let { adapter ->
-            val intent = Intent(activity, activity::class.java).apply {
-                addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
-            }
-            val pendingIntent = android.app.PendingIntent.getActivity(
-                activity, 0, intent,
-                android.app.PendingIntent.FLAG_MUTABLE
-            )
+            val intent =
+                Intent(activity, activity::class.java).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                }
+            val pendingIntent =
+                android.app.PendingIntent.getActivity(
+                    activity,
+                    0,
+                    intent,
+                    android.app.PendingIntent.FLAG_MUTABLE,
+                )
             adapter.enableForegroundDispatch(activity, pendingIntent, null, null)
         }
     }
@@ -82,10 +85,10 @@ class NfcManager(private val activity: Activity) {
             activity,
             { tag -> writeToTag(tag) },
             NfcAdapter.FLAG_READER_NFC_A or
-                    NfcAdapter.FLAG_READER_NFC_B or
-                    NfcAdapter.FLAG_READER_NFC_F or
-                    NfcAdapter.FLAG_READER_NFC_V,
-            null
+                NfcAdapter.FLAG_READER_NFC_B or
+                NfcAdapter.FLAG_READER_NFC_F or
+                NfcAdapter.FLAG_READER_NFC_V,
+            null,
         )
     }
 
@@ -100,10 +103,10 @@ class NfcManager(private val activity: Activity) {
             activity,
             { tag -> writeToTag(tag) },
             NfcAdapter.FLAG_READER_NFC_A or
-                    NfcAdapter.FLAG_READER_NFC_B or
-                    NfcAdapter.FLAG_READER_NFC_F or
-                    NfcAdapter.FLAG_READER_NFC_V,
-            null
+                NfcAdapter.FLAG_READER_NFC_B or
+                NfcAdapter.FLAG_READER_NFC_F or
+                NfcAdapter.FLAG_READER_NFC_V,
+            null,
         )
     }
 
@@ -118,10 +121,10 @@ class NfcManager(private val activity: Activity) {
             activity,
             { tag -> writeToTag(tag) },
             NfcAdapter.FLAG_READER_NFC_A or
-                    NfcAdapter.FLAG_READER_NFC_B or
-                    NfcAdapter.FLAG_READER_NFC_F or
-                    NfcAdapter.FLAG_READER_NFC_V,
-            null
+                NfcAdapter.FLAG_READER_NFC_B or
+                NfcAdapter.FLAG_READER_NFC_F or
+                NfcAdapter.FLAG_READER_NFC_V,
+            null,
         )
     }
 
@@ -152,12 +155,13 @@ class NfcManager(private val activity: Activity) {
             NfcAdapter.ACTION_TAG_DISCOVERED == intent.action ||
             NfcAdapter.ACTION_TECH_DISCOVERED == intent.action
         ) {
-            val rawMessages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES, Parcelable::class.java)
-            } else {
-                @Suppress("DEPRECATION")
-                intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)
-            }
+            val rawMessages =
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES, Parcelable::class.java)
+                } else {
+                    @Suppress("DEPRECATION")
+                    intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)
+                }
             rawMessages?.let { messages ->
                 for (rawMessage in messages) {
                     val ndefMessage = rawMessage as NdefMessage
@@ -168,12 +172,13 @@ class NfcManager(private val activity: Activity) {
             }
 
             // Also try to read directly from tag
-            val tag = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                intent.getParcelableExtra(NfcAdapter.EXTRA_TAG, Tag::class.java)
-            } else {
-                @Suppress("DEPRECATION")
-                intent.getParcelableExtra<Tag>(NfcAdapter.EXTRA_TAG)
-            }
+            val tag =
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    intent.getParcelableExtra(NfcAdapter.EXTRA_TAG, Tag::class.java)
+                } else {
+                    @Suppress("DEPRECATION")
+                    intent.getParcelableExtra<Tag>(NfcAdapter.EXTRA_TAG)
+                }
             tag?.let { readFromTag(it) }
         }
     }

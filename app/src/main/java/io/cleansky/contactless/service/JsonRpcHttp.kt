@@ -15,7 +15,10 @@ internal object JsonRpcHttp {
         return connection
     }
 
-    fun writeJsonBody(connection: HttpURLConnection, body: JsonObject) {
+    fun writeJsonBody(
+        connection: HttpURLConnection,
+        body: JsonObject,
+    ) {
         connection.outputStream.use { output ->
             output.write(body.toString().toByteArray())
         }
@@ -25,7 +28,7 @@ internal object JsonRpcHttp {
         return if (connection.responseCode in 200..299) {
             connection.inputStream.bufferedReader().readText()
         } else {
-            connection.errorStream?.bufferedReader()?.readText() ?: "Unknown error"
+            connection.errorStream?.bufferedReader()?.readText() ?: ServiceErrorCatalog.UNKNOWN_ERROR
         }
     }
 }

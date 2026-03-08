@@ -22,22 +22,22 @@ import androidx.compose.ui.unit.sp
 private val CleanSkyBlue = Color(0xFF0085FF)
 
 @Composable
-fun WelcomeScreen(
-    onAccept: () -> Unit
-) {
+fun WelcomeScreen(onAccept: () -> Unit) {
     val scrollState = rememberScrollState()
 
     Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(CleanSkyBlue)
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .background(CleanSkyBlue),
     ) {
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(scrollState)
-                .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier =
+                Modifier
+                    .fillMaxSize()
+                    .verticalScroll(scrollState)
+                    .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Spacer(modifier = Modifier.height(48.dp))
 
@@ -45,7 +45,7 @@ fun WelcomeScreen(
             Image(
                 painter = painterResource(id = R.drawable.ic_cleansky_white),
                 contentDescription = "CleanSky",
-                modifier = Modifier.size(120.dp)
+                modifier = Modifier.size(120.dp),
             )
 
             Spacer(modifier = Modifier.height(24.dp))
@@ -55,7 +55,7 @@ fun WelcomeScreen(
                 text = stringResource(R.string.welcome_title),
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White
+                color = Color.White,
             )
 
             Spacer(modifier = Modifier.height(32.dp))
@@ -67,7 +67,7 @@ fun WelcomeScreen(
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
                 textAlign = TextAlign.Center,
-                lineHeight = 44.sp
+                lineHeight = 44.sp,
             )
 
             Spacer(modifier = Modifier.height(48.dp))
@@ -77,17 +77,17 @@ fun WelcomeScreen(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(16.dp),
                 backgroundColor = Color.White,
-                elevation = 0.dp
+                elevation = 0.dp,
             ) {
                 Column(
-                    modifier = Modifier.padding(20.dp)
+                    modifier = Modifier.padding(20.dp),
                 ) {
                     // Description
                     Text(
                         text = stringResource(R.string.welcome_desc),
                         fontSize = 16.sp,
                         color = Color.Black,
-                        lineHeight = 24.sp
+                        lineHeight = 24.sp,
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
@@ -97,7 +97,7 @@ fun WelcomeScreen(
                         text = stringResource(R.string.welcome_warning_title),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Black
+                        color = Color.Black,
                     )
 
                     Spacer(modifier = Modifier.height(8.dp))
@@ -107,7 +107,7 @@ fun WelcomeScreen(
                         text = stringResource(R.string.welcome_warning_desc),
                         fontSize = 14.sp,
                         color = Color.Black.copy(alpha = 0.8f),
-                        lineHeight = 22.sp
+                        lineHeight = 22.sp,
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
@@ -118,7 +118,7 @@ fun WelcomeScreen(
                         fontSize = 14.sp,
                         color = Color.Black.copy(alpha = 0.6f),
                         textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier.fillMaxWidth(),
                     )
                 }
             }
@@ -128,20 +128,22 @@ fun WelcomeScreen(
             // Accept button
             Button(
                 onClick = onAccept,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp),
-                colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color.White
-                ),
+                modifier =
+                    Modifier
+                        .fillMaxWidth()
+                        .height(56.dp),
+                colors =
+                    ButtonDefaults.buttonColors(
+                        backgroundColor = Color.White,
+                    ),
                 shape = RoundedCornerShape(12.dp),
-                elevation = ButtonDefaults.elevation(0.dp)
+                elevation = ButtonDefaults.elevation(0.dp),
             ) {
                 Text(
                     text = stringResource(R.string.welcome_start),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = CleanSkyBlue
+                    color = CleanSkyBlue,
                 )
             }
 

@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.compose.setContent
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.fragment.app.FragmentActivity
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import io.cleansky.contactless.crypto.SecureWalletManager
 import io.cleansky.contactless.data.AddressBookRepository
@@ -23,11 +23,9 @@ import io.cleansky.contactless.model.SignedTransaction
 import io.cleansky.contactless.nfc.NfcManager
 import io.cleansky.contactless.service.PaymentFeedback
 import io.cleansky.contactless.service.RefundService
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 class MainActivity : FragmentActivity() {
-
     private lateinit var nfcManager: NfcManager
     private lateinit var walletManager: SecureWalletManager
     private lateinit var paymentFeedback: PaymentFeedback
@@ -67,7 +65,6 @@ class MainActivity : FragmentActivity() {
         privacyPayerRepository = PrivacyPayerRepository(this)
         addressBookRepository = AddressBookRepository(this)
 
-        // Inicializar el sistema de seguridad
         lifecycleScope.launch {
             // Check if first launch
             val isFirstLaunch = appPreferences.isFirstLaunch()
@@ -85,14 +82,14 @@ class MainActivity : FragmentActivity() {
                     Toast.makeText(
                         this@MainActivity,
                         getString(R.string.error_device_security),
-                        Toast.LENGTH_LONG
+                        Toast.LENGTH_LONG,
                     ).show()
                     val retryResult = walletManager.initialize()
                     if (retryResult == SecureWalletManager.InitResult.KeystoreError) {
                         Toast.makeText(
                             this@MainActivity,
                             getString(R.string.error_keystore_unavailable),
-                            Toast.LENGTH_LONG
+                            Toast.LENGTH_LONG,
                         ).show()
                     }
                     isInitialized = true
@@ -121,7 +118,7 @@ class MainActivity : FragmentActivity() {
                                     appPreferences.setFirstLaunchCompleted()
                                     showWelcome = false
                                 }
-                            }
+                            },
                         )
                     } else {
                         AppScaffold(
@@ -141,7 +138,7 @@ class MainActivity : FragmentActivity() {
                             receivedPaymentRequest = receivedPaymentRequest,
                             receivedSignedTransaction = receivedSignedTransaction,
                             onPaymentRequestConsumed = { receivedPaymentRequest = null },
-                            onSignedTransactionConsumed = { receivedSignedTransaction = null }
+                            onSignedTransactionConsumed = { receivedSignedTransaction = null },
                         )
                     }
                 }

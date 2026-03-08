@@ -3,7 +3,6 @@ package io.cleansky.contactless.crypto
 import org.web3j.crypto.Credentials
 import org.web3j.crypto.ECKeyPair
 import org.web3j.crypto.Hash
-import org.web3j.crypto.Keys
 import org.web3j.utils.Numeric
 import java.math.BigInteger
 
@@ -16,7 +15,6 @@ import java.math.BigInteger
  *
  * Architecture:
  * ```
- * Main Wallet ─── signs UserOp ───► Ephemeral Account ───► Merchant
  *   (hidden)                          (visible on-chain)
  * ```
  *
@@ -26,7 +24,6 @@ import java.math.BigInteger
  * - Gas = sponsored by Paymaster (no ETH needed in ephemeral)
  */
 object EphemeralAccount {
-
     // SimpleAccount factory address (same across EVM chains)
     const val SIMPLE_ACCOUNT_FACTORY = "0x9406Cc6185a346906296840746125a0E44976454"
 
@@ -40,10 +37,10 @@ object EphemeralAccount {
      * Ephemeral account data
      */
     data class EphemeralAccountData(
-        val address: String,           // Counterfactual address of the SimpleAccount
-        val ownerCredentials: Credentials, // Ephemeral owner key
-        val salt: BigInteger,          // Salt used for CREATE2
-        val initCode: String           // Init code for account creation (if not deployed)
+        val address: String,
+        val ownerCredentials: Credentials,
+        val salt: BigInteger,
+        val initCode: String,
     )
 
     /**
@@ -55,15 +52,17 @@ object EphemeralAccount {
      */
     fun deriveEphemeralAccount(
         mainCredentials: Credentials,
-        paymentIndex: Long = System.currentTimeMillis()
+        paymentIndex: Long = System.currentTimeMillis(),
     ): EphemeralAccountData {
         // Derive ephemeral private key: hash(mainPrivateKey || "cleansky-ephemeral" || index)
-        val derivationData = mainCredentials.ecKeyPair.privateKey.toByteArray() +
+        val derivationData =
+            mainCredentials.ecKeyPair.privateKey.toByteArray() +
                 "cleansky-ephemeral-payer".toByteArray() +
                 BigInteger.valueOf(paymentIndex).toByteArray()
 
-        val ephemeralPrivateKey = BigInteger(1, Hash.sha3(derivationData))
-            .mod(SECP256K1_N)
+        val ephemeralPrivateKey =
+            BigInteger(1, Hash.sha3(derivationData))
+                .mod(SECP256K1_N)
 
         val ephemeralKeyPair = ECKeyPair.create(ephemeralPrivateKey)
         val ephemeralCredentials = Credentials.create(ephemeralKeyPair)
@@ -81,7 +80,7 @@ object EphemeralAccount {
             address = accountAddress,
             ownerCredentials = ephemeralCredentials,
             salt = salt,
-            initCode = initCode
+            initCode = initCode,
         )
     }
 
@@ -89,16 +88,20 @@ object EphemeralAccount {
      * Calculate the counterfactual address of a SimpleAccount
      * Uses CREATE2 formula: keccak256(0xff ++ factory ++ salt ++ keccak256(initCode))
      */
-    private fun calculateAccountAddress(owner: String, salt: BigInteger): String {
+    private fun calculateAccountAddress(
+        owner: String,
+        salt: BigInteger,
+    ): String {
         // SimpleAccount creation code hash (from factory)
         // This is a simplified version - in production, query the factory
         val createAccountSelector = "0x5fbfb9cf" // createAccount(address,uint256)
         val ownerPadded = owner.removePrefix("0x").padStart(64, '0')
         val saltHex = salt.toString(16).padStart(64, '0')
 
-        val initCodeHash = Hash.sha3(
-            Numeric.hexStringToByteArray(createAccountSelector + ownerPadded + saltHex)
-        )
+        val initCodeHash =
+            Hash.sha3(
+                Numeric.hexStringToByteArray(createAccountSelector + ownerPadded + saltHex),
+            )
 
         // CREATE2: keccak256(0xff ++ factory ++ salt ++ initCodeHash)
         val factoryBytes = Numeric.hexStringToByteArray(SIMPLE_ACCOUNT_FACTORY)
@@ -115,7 +118,10 @@ object EphemeralAccount {
      * Generate init code for account deployment
      * initCode = factory address + createAccount(owner, salt) calldata
      */
-    private fun generateInitCode(owner: String, salt: BigInteger): String {
+    private fun generateInitCode(
+        owner: String,
+        salt: BigInteger,
+    ): String {
         val createAccountSelector = "5fbfb9cf" // createAccount(address,uint256)
         val ownerPadded = owner.removePrefix("0x").lowercase().padStart(64, '0')
         val saltHex = salt.toString(16).padStart(64, '0')
@@ -139,31 +145,33 @@ object EphemeralAccount {
         tokenAddress: String,
         amount: BigInteger,
         nonce: BigInteger = BigInteger.ZERO,
-        isDeployed: Boolean = false
+        isDeployed: Boolean = false,
     ): UserOperation {
         // Encode the transfer call
-        val callData = if (tokenAddress == "0x0000000000000000000000000000000000000000" ||
-            tokenAddress.equals("native", ignoreCase = true)) {
-            // Native transfer via execute(to, value, data)
-            encodeExecute(targetAddress, amount, "0x")
-        } else {
-            // ERC20 transfer via execute(tokenAddress, 0, transfer(to, amount))
-            val transferData = encodeERC20Transfer(targetAddress, amount)
-            encodeExecute(tokenAddress, BigInteger.ZERO, transferData)
-        }
+        val callData =
+            if (tokenAddress == "0x0000000000000000000000000000000000000000" ||
+                tokenAddress.equals("native", ignoreCase = true)
+            ) {
+                // Native transfer via execute(to, value, data)
+                encodeExecute(targetAddress, amount, "0x")
+            } else {
+                // ERC20 transfer via execute(tokenAddress, 0, transfer(to, amount))
+                val transferData = encodeERC20Transfer(targetAddress, amount)
+                encodeExecute(tokenAddress, BigInteger.ZERO, transferData)
+            }
 
         return UserOperation(
             sender = ephemeralAccount.address,
             nonce = "0x" + nonce.toString(16),
             initCode = if (isDeployed) "0x" else ephemeralAccount.initCode,
             callData = callData,
-            callGasLimit = "0x30000",  // 200k
-            verificationGasLimit = if (isDeployed) "0x20000" else "0x60000", // More for deployment
+            callGasLimit = "0x30000",
+            verificationGasLimit = if (isDeployed) "0x20000" else "0x60000",
             preVerificationGas = "0x10000",
             maxFeePerGas = "0x" + BigInteger.valueOf(30_000_000_000).toString(16),
             maxPriorityFeePerGas = "0x" + BigInteger.valueOf(1_500_000_000).toString(16),
-            paymasterAndData = "0x", // Will be filled by Paymaster
-            signature = "0x" // Will be filled after signing
+            paymasterAndData = "0x",
+            signature = "0x",
         )
     }
 
@@ -173,15 +181,16 @@ object EphemeralAccount {
     fun signUserOperation(
         userOp: UserOperation,
         ephemeralCredentials: Credentials,
-        chainId: Long
+        chainId: Long,
     ): UserOperation {
         val userOpHash = calculateUserOpHash(userOp, ENTRY_POINT_V06, chainId)
 
-        val signature = org.web3j.crypto.Sign.signMessage(
-            userOpHash,
-            ephemeralCredentials.ecKeyPair,
-            false
-        )
+        val signature =
+            org.web3j.crypto.Sign.signMessage(
+                userOpHash,
+                ephemeralCredentials.ecKeyPair,
+                false,
+            )
 
         val sigBytes = ByteArray(65)
         System.arraycopy(signature.r, 0, sigBytes, 0, 32)
@@ -198,7 +207,7 @@ object EphemeralAccount {
     private fun calculateUserOpHash(
         userOp: UserOperation,
         entryPoint: String,
-        chainId: Long
+        chainId: Long,
     ): ByteArray {
         // Pack UserOp fields
         val packed = packUserOp(userOp)
@@ -206,9 +215,10 @@ object EphemeralAccount {
 
         // Final hash includes entryPoint and chainId
         val entryPointBytes = Numeric.hexStringToByteArray(entryPoint.padStart(64, '0'))
-        val chainIdBytes = BigInteger.valueOf(chainId).toByteArray().let {
-            ByteArray(32 - it.size) + it
-        }
+        val chainIdBytes =
+            BigInteger.valueOf(chainId).toByteArray().let {
+                ByteArray(32 - it.size) + it
+            }
 
         return Hash.sha3(userOpHash + entryPointBytes + chainIdBytes)
     }
@@ -227,11 +237,15 @@ object EphemeralAccount {
         val paymasterAndDataHash = Hash.sha3(Numeric.hexStringToByteArray(userOp.paymasterAndData))
 
         return sender + nonce + initCodeHash + callDataHash + callGasLimit +
-                verificationGasLimit + preVerificationGas + maxFeePerGas +
-                maxPriorityFeePerGas + paymasterAndDataHash
+            verificationGasLimit + preVerificationGas + maxFeePerGas +
+            maxPriorityFeePerGas + paymasterAndDataHash
     }
 
-    private fun encodeExecute(to: String, value: BigInteger, data: String): String {
+    private fun encodeExecute(
+        to: String,
+        value: BigInteger,
+        data: String,
+    ): String {
         // execute(address dest, uint256 value, bytes calldata func)
         val selector = "b61d27f6"
         val toPadded = to.removePrefix("0x").lowercase().padStart(64, '0')
@@ -239,14 +253,19 @@ object EphemeralAccount {
         val dataOffset = "0000000000000000000000000000000000000000000000000000000000000060" // offset 96
         val dataBytes = Numeric.hexStringToByteArray(data.removePrefix("0x"))
         val dataLength = dataBytes.size.toString(16).padStart(64, '0')
-        val dataPadded = Numeric.toHexStringNoPrefix(dataBytes).padEnd(
-            (dataBytes.size + 31) / 32 * 64, '0'
-        )
+        val dataPadded =
+            Numeric.toHexStringNoPrefix(dataBytes).padEnd(
+                (dataBytes.size + 31) / 32 * 64,
+                '0',
+            )
 
         return "0x$selector$toPadded$valuePadded$dataOffset$dataLength$dataPadded"
     }
 
-    private fun encodeERC20Transfer(to: String, amount: BigInteger): String {
+    private fun encodeERC20Transfer(
+        to: String,
+        amount: BigInteger,
+    ): String {
         // transfer(address to, uint256 amount)
         val selector = "a9059cbb"
         val toPadded = to.removePrefix("0x").lowercase().padStart(64, '0')
@@ -270,5 +289,5 @@ data class UserOperation(
     val maxFeePerGas: String,
     val maxPriorityFeePerGas: String,
     val paymasterAndData: String = "0x",
-    val signature: String = "0x"
+    val signature: String = "0x",
 )

@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">قم بتكوين عنوان escrow و API key في الإعدادات</string>
     <string name="receive_only_security_notice">لا يوجد مفتاح خاص على هذا الجهاز. آمن في حالة السرقة.</string>
     <string name="receive_only_api_key_required">مطلوب API key لتنفيذ الـ relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">خطأ في تجريد الحساب</string>
+        <string name="error_api_key_required">مطلوب مفتاح API</string>
+        <string name="error_insufficient_time_to_sign">وقت غير كافٍ للتوقيع</string>
+        <string name="error_invalid_request">طلب غير صالح</string>
+        <string name="error_no_balance_to_spend">لا يوجد رصيد للإنفاق</string>
+        <string name="error_paymaster_not_configured">Paymaster غير مُعد</string>
+        <string name="error_refund_amount_invalid">يجب أن يكون مبلغ الاسترداد أكبر من 0</string>
+        <string name="error_relayer_generic">خطأ في المرحل</string>
+        <string name="error_relayer_not_configured">المرحل غير مُعد</string>
+        <string name="error_replay_detected">تم اكتشاف إعادة تشغيل: تم استخدام الـ nonce بالفعل</string>
+        <string name="error_request_expired">انتهت صلاحية الطلب</string>
+        <string name="error_status_check">خطأ في التحقق من الحالة</string>
+        <string name="error_token_not_allowed">الرمز غير مسموح به</string>
+        <string name="error_transaction_failed">فشلت المعاملة</string>
+        <string name="settings_advanced_hint">فعّل الوضع المتقدم لإعداد الخصوصية والأمان والشبكة والرموز.</string>
+        <string name="settings_export_requires_wallet">أنشئ أو استورد محفظة قبل تصدير المفتاح الخاص.</string>
+        <string name="settings_group_general">عام</string>
+        <string name="settings_group_network_tokens">الشبكة والرموز</string>
+        <string name="settings_group_payments">المدفوعات</string>
+        <string name="settings_group_privacy_security">الخصوصية والأمان</string>
+        <string name="settings_key_management">إدارة المفاتيح</string>
+        <string name="settings_key_management_desc">عمليات المفاتيح الحساسة مفصولة هنا. احتفظ بمفتاحك الخاص دون اتصال ولا تشاركه أبدًا.</string>
 </resources>

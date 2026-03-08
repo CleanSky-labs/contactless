@@ -5,13 +5,12 @@ import org.junit.Test
 import java.math.BigInteger
 
 class TransactionHistoryTest {
-
     private fun createTransaction(
         amount: String = "1000000",
         refundedAmount: String = "0",
         type: TransactionType = TransactionType.PAYMENT_RECEIVED,
         status: TransactionStatus = TransactionStatus.CONFIRMED,
-        refundTxHashes: List<String> = emptyList()
+        refundTxHashes: List<String> = emptyList(),
     ) = Transaction(
         id = "test-id",
         txHash = "0xabc123",
@@ -25,7 +24,7 @@ class TransactionHistoryTest {
         merchantId = "merchant-1",
         invoiceId = "inv-1",
         timestamp = 1700000000L,
-        refundTxHashes = refundTxHashes
+        refundTxHashes = refundTxHashes,
     )
 
     // --- getRemainingRefundable() ---
@@ -76,20 +75,22 @@ class TransactionHistoryTest {
 
     @Test
     fun `canRefund returns true for PARTIALLY_REFUNDED status`() {
-        val tx = createTransaction(
-            status = TransactionStatus.PARTIALLY_REFUNDED,
-            refundedAmount = "500000"
-        )
+        val tx =
+            createTransaction(
+                status = TransactionStatus.PARTIALLY_REFUNDED,
+                refundedAmount = "500000",
+            )
         assertTrue(tx.canRefund())
     }
 
     @Test
     fun `canRefund returns false for REFUNDED status`() {
-        val tx = createTransaction(
-            status = TransactionStatus.REFUNDED,
-            amount = "1000000",
-            refundedAmount = "1000000"
-        )
+        val tx =
+            createTransaction(
+                status = TransactionStatus.REFUNDED,
+                amount = "1000000",
+                refundedAmount = "1000000",
+            )
         assertFalse(tx.canRefund())
     }
 
@@ -219,10 +220,11 @@ class TransactionHistoryTest {
 
     @Test
     fun `listFromJson parses array of transactions`() {
-        val txs = listOf(
-            createTransaction(amount = "100"),
-            createTransaction(amount = "200")
-        )
+        val txs =
+            listOf(
+                createTransaction(amount = "100"),
+                createTransaction(amount = "200"),
+            )
         val json = Transaction.listToJson(txs)
         val parsed = Transaction.listFromJson(json)
 

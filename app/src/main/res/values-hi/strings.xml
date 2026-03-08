@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">सेटिंग्स में escrow पता और API key कॉन्फ़िगर करें</string>
     <string name="receive_only_security_notice">इस डिवाइस पर कोई निजी कुंजी नहीं। चोरी होने पर सुरक्षित।</string>
     <string name="receive_only_api_key_required">Relayer निष्पादन के लिए API key आवश्यक</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">अकाउंट एब्स्ट्रैक्शन त्रुटि</string>
+        <string name="error_api_key_required">API कुंजी आवश्यक है</string>
+        <string name="error_insufficient_time_to_sign">साइन करने के लिए पर्याप्त समय नहीं</string>
+        <string name="error_invalid_request">अमान्य अनुरोध</string>
+        <string name="error_no_balance_to_spend">खर्च करने के लिए बैलेंस नहीं है</string>
+        <string name="error_paymaster_not_configured">Paymaster कॉन्फ़िगर नहीं है</string>
+        <string name="error_refund_amount_invalid">रिफंड राशि 0 से अधिक होनी चाहिए</string>
+        <string name="error_relayer_generic">रिलेयर त्रुटि</string>
+        <string name="error_relayer_not_configured">रिलेयर कॉन्फ़िगर नहीं है</string>
+        <string name="error_replay_detected">रीप्ले पता चला: nonce पहले ही उपयोग हो चुका है</string>
+        <string name="error_request_expired">अनुरोध की समय-सीमा समाप्त</string>
+        <string name="error_status_check">स्टेटस जाँच त्रुटि</string>
+        <string name="error_token_not_allowed">टोकन अनुमत नहीं है</string>
+        <string name="error_transaction_failed">लेनदेन विफल</string>
+        <string name="settings_advanced_hint">प्राइवेसी, सुरक्षा, नेटवर्क और टोकन कॉन्फ़िगर करने के लिए एडवांस्ड मोड सक्षम करें।</string>
+        <string name="settings_export_requires_wallet">प्राइवेट की एक्सपोर्ट करने से पहले वॉलेट बनाएं या इम्पोर्ट करें।</string>
+        <string name="settings_group_general">सामान्य</string>
+        <string name="settings_group_network_tokens">नेटवर्क और टोकन</string>
+        <string name="settings_group_payments">भुगतान</string>
+        <string name="settings_group_privacy_security">प्राइवेसी और सुरक्षा</string>
+        <string name="settings_key_management">कुंजी प्रबंधन</string>
+        <string name="settings_key_management_desc">संवेदनशील कुंजी क्रियाएँ यहाँ अलग रखी गई हैं। अपनी प्राइवेट की ऑफ़लाइन रखें और कभी साझा न करें।</string>
 </resources>

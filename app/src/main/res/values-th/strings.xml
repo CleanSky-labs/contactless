@@ -344,4 +344,28 @@
     <string name="receive_only_no_escrow_desc">ตั้งค่าที่อยู่ escrow และ API key ในการตั้งค่า</string>
     <string name="receive_only_security_notice">ไม่มีคีย์ส่วนตัวในอุปกรณ์นี้ ปลอดภัยแม้ถูกขโมย</string>
     <string name="receive_only_api_key_required">ต้องใช้ API key สำหรับการทำงานผ่าน relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">ข้อผิดพลาด Account Abstraction</string>
+        <string name="error_api_key_required">ต้องใช้ API key</string>
+        <string name="error_insufficient_time_to_sign">เวลาไม่เพียงพอในการลงนาม</string>
+        <string name="error_invalid_request">คำขอไม่ถูกต้อง</string>
+        <string name="error_no_balance_to_spend">ไม่มียอดคงเหลือสำหรับใช้งาน</string>
+        <string name="error_paymaster_not_configured">ยังไม่ได้ตั้งค่า Paymaster</string>
+        <string name="error_refund_amount_invalid">จำนวนเงินคืนต้องมากกว่า 0</string>
+        <string name="error_relayer_generic">ข้อผิดพลาดของ relayer</string>
+        <string name="error_relayer_not_configured">ยังไม่ได้ตั้งค่า Relayer</string>
+        <string name="error_replay_detected">ตรวจพบการ replay: nonce ถูกใช้แล้ว</string>
+        <string name="error_request_expired">คำขอหมดอายุ</string>
+        <string name="error_status_check">ข้อผิดพลาดในการตรวจสอบสถานะ</string>
+        <string name="error_token_not_allowed">โทเค็นไม่ได้รับอนุญาต</string>
+        <string name="error_transaction_failed">ธุรกรรมล้มเหลว</string>
+        <string name="settings_advanced_hint">เปิดโหมดขั้นสูงเพื่อกำหนดค่าความเป็นส่วนตัว ความปลอดภัย เครือข่าย และโทเค็น</string>
+        <string name="settings_export_requires_wallet">สร้างหรือนำเข้ากระเป๋าก่อนส่งออกคีย์ส่วนตัว</string>
+        <string name="settings_group_general">ทั่วไป</string>
+        <string name="settings_group_network_tokens">เครือข่ายและโทเค็น</string>
+        <string name="settings_group_payments">การชำระเงิน</string>
+        <string name="settings_group_privacy_security">ความเป็นส่วนตัวและความปลอดภัย</string>
+        <string name="settings_key_management">การจัดการคีย์</string>
+        <string name="settings_key_management_desc">การดำเนินการคีย์ที่ละเอียดอ่อนถูกแยกไว้ที่นี่ เก็บคีย์ส่วนตัวของคุณแบบออฟไลน์และอย่าแชร์กับใคร</string>
 </resources>

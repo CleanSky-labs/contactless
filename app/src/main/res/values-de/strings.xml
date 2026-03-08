@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">Escrow-Adresse und API Key in den Einstellungen konfigurieren</string>
     <string name="receive_only_security_notice">Kein privater Schlüssel auf diesem Gerät. Sicher bei Diebstahl.</string>
     <string name="receive_only_api_key_required">API Key für Relayer-Ausführung erforderlich</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Fehler bei Account Abstraction</string>
+        <string name="error_api_key_required">API-Schlüssel erforderlich</string>
+        <string name="error_insufficient_time_to_sign">Nicht genügend Zeit zum Signieren</string>
+        <string name="error_invalid_request">Ungültige Anfrage</string>
+        <string name="error_no_balance_to_spend">Kein Guthaben zum Ausgeben</string>
+        <string name="error_paymaster_not_configured">Paymaster nicht konfiguriert</string>
+        <string name="error_refund_amount_invalid">Der Erstattungsbetrag muss größer als 0 sein</string>
+        <string name="error_relayer_generic">Relayer-Fehler</string>
+        <string name="error_relayer_not_configured">Relayer nicht konfiguriert</string>
+        <string name="error_replay_detected">Replay erkannt: Nonce bereits verwendet</string>
+        <string name="error_request_expired">Anfrage abgelaufen</string>
+        <string name="error_status_check">Fehler bei der Statusprüfung</string>
+        <string name="error_token_not_allowed">Token nicht erlaubt</string>
+        <string name="error_transaction_failed">Transaktion fehlgeschlagen</string>
+        <string name="settings_advanced_hint">Aktiviere den erweiterten Modus, um Datenschutz, Sicherheit, Netzwerk und Tokens zu konfigurieren.</string>
+        <string name="settings_export_requires_wallet">Erstelle oder importiere eine Wallet, bevor du den privaten Schlüssel exportierst.</string>
+        <string name="settings_group_general">Allgemein</string>
+        <string name="settings_group_network_tokens">Netzwerk und Tokens</string>
+        <string name="settings_group_payments">Zahlungen</string>
+        <string name="settings_group_privacy_security">Datenschutz und Sicherheit</string>
+        <string name="settings_key_management">Schlüsselverwaltung</string>
+        <string name="settings_key_management_desc">Sensible Schlüsselaktionen sind hier getrennt. Halte deinen privaten Schlüssel offline und teile ihn niemals.</string>
 </resources>

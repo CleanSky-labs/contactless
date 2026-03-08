@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">Ayarlarda escrow adresi ve API key yapılandırın</string>
     <string name="receive_only_security_notice">Bu cihazda özel anahtar yok. Çalınsa bile güvenli.</string>
     <string name="receive_only_api_key_required">Relayer yürütmesi için API key gerekli</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Hesap soyutlama hatası</string>
+        <string name="error_api_key_required">API anahtarı gerekli</string>
+        <string name="error_insufficient_time_to_sign">İmzalamak için yetersiz süre</string>
+        <string name="error_invalid_request">Geçersiz istek</string>
+        <string name="error_no_balance_to_spend">Harcanacak bakiye yok</string>
+        <string name="error_paymaster_not_configured">Paymaster yapılandırılmadı</string>
+        <string name="error_refund_amount_invalid">İade tutarı 0\'dan büyük olmalıdır</string>
+        <string name="error_relayer_generic">Relayer hatası</string>
+        <string name="error_relayer_not_configured">Relayer yapılandırılmadı</string>
+        <string name="error_replay_detected">Replay algılandı: nonce zaten kullanıldı</string>
+        <string name="error_request_expired">İstek süresi doldu</string>
+        <string name="error_status_check">Durum kontrolü hatası</string>
+        <string name="error_token_not_allowed">Token\'a izin verilmiyor</string>
+        <string name="error_transaction_failed">İşlem başarısız</string>
+        <string name="settings_advanced_hint">Gizlilik, güvenlik, ağ ve token ayarları için Gelişmiş Modu etkinleştirin.</string>
+        <string name="settings_export_requires_wallet">Özel anahtarı dışa aktarmadan önce bir cüzdan oluşturun veya içe aktarın.</string>
+        <string name="settings_group_general">Genel</string>
+        <string name="settings_group_network_tokens">Ağ ve tokenlar</string>
+        <string name="settings_group_payments">Ödemeler</string>
+        <string name="settings_group_privacy_security">Gizlilik ve güvenlik</string>
+        <string name="settings_key_management">Anahtar yönetimi</string>
+        <string name="settings_key_management_desc">Hassas anahtar işlemleri burada ayrılmıştır. Özel anahtarınızı çevrimdışı tutun ve asla paylaşmayın.</string>
 </resources>

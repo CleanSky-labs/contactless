@@ -345,4 +345,28 @@
     <string name="receive_only_no_escrow_desc">Configureer escrow-adres en API key in Instellingen</string>
     <string name="receive_only_security_notice">Geen privésleutel op dit apparaat. Veilig bij diefstal.</string>
     <string name="receive_only_api_key_required">API key vereist voor relayer-uitvoering</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Fout bij accountabstractie</string>
+        <string name="error_api_key_required">API-sleutel vereist</string>
+        <string name="error_insufficient_time_to_sign">Onvoldoende tijd om te ondertekenen</string>
+        <string name="error_invalid_request">Ongeldige aanvraag</string>
+        <string name="error_no_balance_to_spend">Geen saldo om te besteden</string>
+        <string name="error_paymaster_not_configured">Paymaster niet geconfigureerd</string>
+        <string name="error_refund_amount_invalid">Het terugbetalingsbedrag moet groter zijn dan 0</string>
+        <string name="error_relayer_generic">Relayer-fout</string>
+        <string name="error_relayer_not_configured">Relayer niet geconfigureerd</string>
+        <string name="error_replay_detected">Replay gedetecteerd: nonce al gebruikt</string>
+        <string name="error_request_expired">Aanvraag verlopen</string>
+        <string name="error_status_check">Fout bij statuscontrole</string>
+        <string name="error_token_not_allowed">Token niet toegestaan</string>
+        <string name="error_transaction_failed">Transactie mislukt</string>
+        <string name="settings_advanced_hint">Schakel Geavanceerde modus in om privacy, beveiliging, netwerk en tokens te configureren.</string>
+        <string name="settings_export_requires_wallet">Maak of importeer een wallet voordat je de privésleutel exporteert.</string>
+        <string name="settings_group_general">Algemeen</string>
+        <string name="settings_group_network_tokens">Netwerk en tokens</string>
+        <string name="settings_group_payments">Betalingen</string>
+        <string name="settings_group_privacy_security">Privacy en beveiliging</string>
+        <string name="settings_key_management">Sleutelbeheer</string>
+        <string name="settings_key_management_desc">Gevoelige sleutelbewerkingen zijn hier gescheiden. Bewaar je privésleutel offline en deel deze nooit.</string>
 </resources>

@@ -26,7 +26,6 @@ private val Context.stealthDataStore: DataStore<Preferences> by preferencesDataS
  * - Payment scanning and claiming
  */
 class StealthPaymentRepository(private val context: Context) {
-
     companion object {
         private val STEALTH_ENABLED = booleanPreferencesKey("stealth_enabled")
         private val STEALTH_META_ADDRESS = stringPreferencesKey("stealth_meta_address")
@@ -39,16 +38,18 @@ class StealthPaymentRepository(private val context: Context) {
     /**
      * Flow indicating if stealth mode is enabled
      */
-    val stealthEnabledFlow: Flow<Boolean> = context.stealthDataStore.data.map { prefs ->
-        prefs[STEALTH_ENABLED] ?: false
-    }
+    val stealthEnabledFlow: Flow<Boolean> =
+        context.stealthDataStore.data.map { prefs ->
+            prefs[STEALTH_ENABLED] ?: false
+        }
 
     /**
      * Flow of the stealth meta-address (if configured)
      */
-    val stealthMetaAddressFlow: Flow<String?> = context.stealthDataStore.data.map { prefs ->
-        prefs[STEALTH_META_ADDRESS]
-    }
+    val stealthMetaAddressFlow: Flow<String?> =
+        context.stealthDataStore.data.map { prefs ->
+            prefs[STEALTH_META_ADDRESS]
+        }
 
     /**
      * Check if stealth is enabled
@@ -110,7 +111,10 @@ class StealthPaymentRepository(private val context: Context) {
     /**
      * Mark a payment as claimed
      */
-    suspend fun markPaymentClaimed(invoiceId: String, txHash: String) {
+    suspend fun markPaymentClaimed(
+        invoiceId: String,
+        txHash: String,
+    ) {
         // Remove from pending
         val pending = getPendingPayments().toMutableList()
         val payment = pending.find { it.invoiceId == invoiceId }
@@ -120,15 +124,17 @@ class StealthPaymentRepository(private val context: Context) {
         // Add to claimed
         if (payment != null) {
             val claimed = getClaimedPayments().toMutableList()
-            claimed.add(ClaimedStealthPayment(
-                invoiceId = invoiceId,
-                stealthAddress = payment.stealthAddress,
-                amount = payment.amount,
-                asset = payment.asset,
-                chainId = payment.chainId,
-                claimedTxHash = txHash,
-                claimedAt = System.currentTimeMillis()
-            ))
+            claimed.add(
+                ClaimedStealthPayment(
+                    invoiceId = invoiceId,
+                    stealthAddress = payment.stealthAddress,
+                    amount = payment.amount,
+                    asset = payment.asset,
+                    chainId = payment.chainId,
+                    claimedTxHash = txHash,
+                    claimedAt = System.currentTimeMillis(),
+                ),
+            )
             saveClaimedPayments(claimed)
         }
     }
@@ -174,12 +180,12 @@ class StealthPaymentRepository(private val context: Context) {
 data class PendingStealthPayment(
     val invoiceId: String,
     val stealthAddress: String,
-    val ephemeralPubKey: String,  // Hex encoded
+    val ephemeralPubKey: String,
     val viewTag: Int,
     val amount: String,
     val asset: String,
     val chainId: Long,
-    val createdAt: Long = System.currentTimeMillis()
+    val createdAt: Long = System.currentTimeMillis(),
 )
 
 /**
@@ -192,5 +198,5 @@ data class ClaimedStealthPayment(
     val asset: String,
     val chainId: Long,
     val claimedTxHash: String,
-    val claimedAt: Long
+    val claimedAt: Long,
 )

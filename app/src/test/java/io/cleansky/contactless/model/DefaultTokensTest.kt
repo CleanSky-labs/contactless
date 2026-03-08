@@ -4,7 +4,6 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class DefaultTokensTest {
-
     @Test
     fun `getNativeToken returns ETH for Ethereum mainnet`() {
         val token = DefaultTokens.getNativeToken(1L)
@@ -228,7 +227,7 @@ class DefaultTokensTest {
         tokens.filter { !it.isNative }.forEach { token ->
             assertTrue(
                 "${token.symbol} on chain ${token.chainId} should have valid address",
-                token.address.startsWith("0x") && token.address.length == 42
+                token.address.startsWith("0x") && token.address.length == 42,
             )
         }
     }
@@ -241,7 +240,7 @@ class DefaultTokensTest {
             assertEquals(
                 "${token.symbol} should have 6 decimals",
                 6,
-                token.decimals
+                token.decimals,
             )
         }
 
@@ -249,7 +248,7 @@ class DefaultTokensTest {
             assertEquals(
                 "DAI should have 18 decimals",
                 18,
-                token.decimals
+                token.decimals,
             )
         }
     }
@@ -262,5 +261,19 @@ class DefaultTokensTest {
             val stablecoin = DefaultTokens.getPreferredStablecoin(chainId)
             assertNotNull("Chain $chainId should have preferred stablecoin", stablecoin)
         }
+    }
+
+    @Test
+    fun `getPreferredStablecoin returns null for unsupported chain`() {
+        val stablecoin = DefaultTokens.getPreferredStablecoin(999999L, preferredCurrency = "USD")
+
+        assertNull(stablecoin)
+    }
+
+    @Test
+    fun `getTokensByUnderlying returns empty for unsupported chain`() {
+        val grouped = DefaultTokens.getTokensByUnderlying(999999L)
+
+        assertTrue(grouped.isEmpty())
     }
 }

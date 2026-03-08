@@ -4,7 +4,6 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class ChainConfigTest {
-
     @Test
     fun `getByChainId returns correct chain for Ethereum mainnet`() {
         val chain = ChainConfig.getByChainId(1L)
@@ -96,15 +95,15 @@ class ChainConfigTest {
     fun `CHAINS list contains all expected chains`() {
         val chains = ChainConfig.CHAINS
 
-        assertTrue(chains.any { it.chainId == 1L })       // Ethereum
-        assertTrue(chains.any { it.chainId == 8453L })    // Base
-        assertTrue(chains.any { it.chainId == 84532L })   // Base Sepolia
-        assertTrue(chains.any { it.chainId == 137L })     // Polygon
-        assertTrue(chains.any { it.chainId == 42161L })   // Arbitrum
-        assertTrue(chains.any { it.chainId == 10L })      // Optimism
-        assertTrue(chains.any { it.chainId == 324L })     // zkSync Era
-        assertTrue(chains.any { it.chainId == 59144L })   // Linea
-        assertTrue(chains.any { it.chainId == 31337L })   // Localhost
+        assertTrue(chains.any { it.chainId == 1L }) // Ethereum
+        assertTrue(chains.any { it.chainId == 8453L }) // Base
+        assertTrue(chains.any { it.chainId == 84532L }) // Base Sepolia
+        assertTrue(chains.any { it.chainId == 137L }) // Polygon
+        assertTrue(chains.any { it.chainId == 42161L }) // Arbitrum
+        assertTrue(chains.any { it.chainId == 10L }) // Optimism
+        assertTrue(chains.any { it.chainId == 324L }) // zkSync Era
+        assertTrue(chains.any { it.chainId == 59144L }) // Linea
+        assertTrue(chains.any { it.chainId == 31337L }) // Localhost
     }
 
     @Test
@@ -132,12 +131,12 @@ class ChainConfigTest {
         ChainConfig.CHAINS.forEach { chain ->
             assertTrue(
                 "${chain.name} USDC address should start with 0x",
-                chain.usdcAddress.startsWith("0x")
+                chain.usdcAddress.startsWith("0x"),
             )
             assertEquals(
                 "${chain.name} USDC address should be 42 chars",
                 42,
-                chain.usdcAddress.length
+                chain.usdcAddress.length,
             )
         }
     }
@@ -147,7 +146,7 @@ class ChainConfigTest {
         ChainConfig.CHAINS.forEach { chain ->
             assertTrue(
                 "${chain.name} RPC should start with http",
-                chain.rpcUrl.startsWith("http")
+                chain.rpcUrl.startsWith("http"),
             )
         }
     }
@@ -159,40 +158,43 @@ class ChainConfigTest {
         mainnets.forEach { chain ->
             assertTrue(
                 "${chain.name} should have explorer URL",
-                chain.explorerUrl.isNotEmpty()
+                chain.explorerUrl.isNotEmpty(),
             )
         }
     }
 
     @Test
     fun `ChainConfig data class equality works`() {
-        val chain1 = ChainConfig(
-            chainId = 1L,
-            name = "Test",
-            rpcUrl = "https://test.com",
-            escrowAddress = "0x123",
-            usdcAddress = "0x456"
-        )
-        val chain2 = ChainConfig(
-            chainId = 1L,
-            name = "Test",
-            rpcUrl = "https://test.com",
-            escrowAddress = "0x123",
-            usdcAddress = "0x456"
-        )
+        val chain1 =
+            ChainConfig(
+                chainId = 1L,
+                name = "Test",
+                rpcUrl = "https://test.com",
+                escrowAddress = "0x123",
+                usdcAddress = "0x456",
+            )
+        val chain2 =
+            ChainConfig(
+                chainId = 1L,
+                name = "Test",
+                rpcUrl = "https://test.com",
+                escrowAddress = "0x123",
+                usdcAddress = "0x456",
+            )
 
         assertEquals(chain1, chain2)
     }
 
     @Test
     fun `ChainConfig has correct default values`() {
-        val chain = ChainConfig(
-            chainId = 999L,
-            name = "Test",
-            rpcUrl = "https://test.com",
-            escrowAddress = "0x123",
-            usdcAddress = "0x456"
-        )
+        val chain =
+            ChainConfig(
+                chainId = 999L,
+                name = "Test",
+                rpcUrl = "https://test.com",
+                escrowAddress = "0x123",
+                usdcAddress = "0x456",
+            )
 
         assertEquals("USDC", chain.symbol)
         assertEquals(6, chain.decimals)

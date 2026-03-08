@@ -345,4 +345,28 @@
     <string name="receive_only_no_escrow_desc">Настройте адрес escrow и API key в Настройках</string>
     <string name="receive_only_security_notice">Нет приватного ключа на этом устройстве. Безопасно при краже.</string>
     <string name="receive_only_api_key_required">API key требуется для выполнения через relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Ошибка Account Abstraction</string>
+        <string name="error_api_key_required">Требуется API-ключ</string>
+        <string name="error_insufficient_time_to_sign">Недостаточно времени для подписи</string>
+        <string name="error_invalid_request">Некорректный запрос</string>
+        <string name="error_no_balance_to_spend">Недостаточно средств для отправки</string>
+        <string name="error_paymaster_not_configured">Paymaster не настроен</string>
+        <string name="error_refund_amount_invalid">Сумма возврата должна быть больше 0</string>
+        <string name="error_relayer_generic">Ошибка relayer</string>
+        <string name="error_relayer_not_configured">Relayer не настроен</string>
+        <string name="error_replay_detected">Обнаружен replay: nonce уже использован</string>
+        <string name="error_request_expired">Срок запроса истек</string>
+        <string name="error_status_check">Ошибка проверки статуса</string>
+        <string name="error_token_not_allowed">Токен не разрешен</string>
+        <string name="error_transaction_failed">Транзакция не выполнена</string>
+        <string name="settings_advanced_hint">Включите расширенный режим, чтобы настроить приватность, безопасность, сеть и токены.</string>
+        <string name="settings_export_requires_wallet">Создайте или импортируйте кошелек перед экспортом приватного ключа.</string>
+        <string name="settings_group_general">Общие</string>
+        <string name="settings_group_network_tokens">Сеть и токены</string>
+        <string name="settings_group_payments">Платежи</string>
+        <string name="settings_group_privacy_security">Приватность и безопасность</string>
+        <string name="settings_key_management">Управление ключами</string>
+        <string name="settings_key_management_desc">Чувствительные операции с ключами вынесены сюда. Храните приватный ключ офлайн и никому его не передавайте.</string>
 </resources>

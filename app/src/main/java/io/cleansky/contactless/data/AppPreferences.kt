@@ -17,7 +17,6 @@ private val Context.appPreferencesDataStore: DataStore<Preferences> by preferenc
  * App-wide preferences for settings that aren't related to wallet security
  */
 class AppPreferences(private val context: Context) {
-
     companion object {
         private val FIRST_LAUNCH_COMPLETED = booleanPreferencesKey("first_launch_completed")
         private val CUSTOM_BUNDLER_URL = stringPreferencesKey("custom_bundler_url")
@@ -54,17 +53,20 @@ class AppPreferences(private val context: Context) {
 
     // ========== Custom Bundler (ERC-4337) ==========
 
-    val useCustomBundlerFlow: Flow<Boolean> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[USE_CUSTOM_BUNDLER] ?: false
-    }
+    val useCustomBundlerFlow: Flow<Boolean> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[USE_CUSTOM_BUNDLER] ?: false
+        }
 
-    val customBundlerUrlFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[CUSTOM_BUNDLER_URL] ?: ""
-    }
+    val customBundlerUrlFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[CUSTOM_BUNDLER_URL] ?: ""
+        }
 
-    val customPaymasterUrlFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[CUSTOM_PAYMASTER_URL] ?: ""
-    }
+    val customPaymasterUrlFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[CUSTOM_PAYMASTER_URL] ?: ""
+        }
 
     suspend fun setUseCustomBundler(enabled: Boolean) {
         context.appPreferencesDataStore.edit { prefs ->
@@ -101,13 +103,15 @@ class AppPreferences(private val context: Context) {
 
     // ========== Merchant Identity (spec v0.2) ==========
 
-    val merchantDisplayNameFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[MERCHANT_DISPLAY_NAME] ?: ""
-    }
+    val merchantDisplayNameFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[MERCHANT_DISPLAY_NAME] ?: ""
+        }
 
-    val merchantDomainFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[MERCHANT_DOMAIN] ?: ""
-    }
+    val merchantDomainFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[MERCHANT_DOMAIN] ?: ""
+        }
 
     suspend fun getMerchantDisplayName(): String? {
         val prefs = context.appPreferencesDataStore.data.first()
@@ -133,9 +137,10 @@ class AppPreferences(private val context: Context) {
 
     // ========== Language ==========
 
-    val appLanguageFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[APP_LANGUAGE] ?: "" // Empty = system default
-    }
+    val appLanguageFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[APP_LANGUAGE] ?: "" // Empty = system default
+        }
 
     suspend fun getAppLanguage(): String {
         val prefs = context.appPreferencesDataStore.data.first()
@@ -150,9 +155,10 @@ class AppPreferences(private val context: Context) {
 
     // ========== Advanced Mode ==========
 
-    val advancedModeFlow: Flow<Boolean> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[ADVANCED_MODE] ?: false
-    }
+    val advancedModeFlow: Flow<Boolean> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[ADVANCED_MODE] ?: false
+        }
 
     suspend fun setAdvancedMode(enabled: Boolean) {
         context.appPreferencesDataStore.edit { prefs ->
@@ -162,13 +168,15 @@ class AppPreferences(private val context: Context) {
 
     // ========== Receive-Only Mode ==========
 
-    val receiveOnlyEscrowFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[RECEIVE_ONLY_ESCROW] ?: ""
-    }
+    val receiveOnlyEscrowFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[RECEIVE_ONLY_ESCROW] ?: ""
+        }
 
-    val receiveOnlyMerchantIdFlow: Flow<String> = context.appPreferencesDataStore.data.map { prefs ->
-        prefs[RECEIVE_ONLY_MERCHANT_ID] ?: ""
-    }
+    val receiveOnlyMerchantIdFlow: Flow<String> =
+        context.appPreferencesDataStore.data.map { prefs ->
+            prefs[RECEIVE_ONLY_MERCHANT_ID] ?: ""
+        }
 
     suspend fun getReceiveOnlyEscrow(): String {
         val prefs = context.appPreferencesDataStore.data.first()

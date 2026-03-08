@@ -19,92 +19,84 @@ import org.web3j.utils.Numeric
 import java.math.BigInteger
 
 /**
- * Servicio para procesar devoluciones (refunds).
+ * Refund execution service.
  *
- * Soporta:
- * - Devolución total
- * - Devolución parcial
- * - El merchant paga el gas
+ * Supports merchant-paid gas refunds.
  */
 class RefundService(
-    private val transactionRepository: TransactionRepository
+    private val transactionRepository: TransactionRepository,
 ) {
     sealed class RefundResult {
         data class Success(val txHash: String, val amount: BigInteger) : RefundResult()
+
         data class Error(val message: String) : RefundResult()
     }
 
     /**
-     * Procesa una devolución de una transacción.
-     *
-     * @param originalTransaction La transacción original a devolver
-     * @param refundAmount Monto a devolver (en unidades menores del token)
-     * @param credentials Credenciales del merchant para firmar
-     * @param chainConfig Configuración de la red
+     * Processes a partial or full refund transaction.
      */
     suspend fun processRefund(
         originalTransaction: Transaction,
         refundAmount: BigInteger,
         credentials: Credentials,
-        chainConfig: ChainConfig
+        chainConfig: ChainConfig,
     ): RefundResult {
         return withContext(Dispatchers.IO) {
             try {
-                // Validar que se puede hacer la devolución
                 val remainingRefundable = originalTransaction.getRemainingRefundable()
                 if (refundAmount > remainingRefundable) {
                     return@withContext RefundResult.Error(
-                        "Monto excede lo disponible para devolver: ${remainingRefundable}"
+                        "Refund amount exceeds refundable balance: $remainingRefundable",
                     )
                 }
 
                 if (refundAmount <= BigInteger.ZERO) {
-                    return@withContext RefundResult.Error("El monto debe ser mayor a 0")
+                    return@withContext RefundResult.Error("Refund amount must be greater than 0")
                 }
 
-                // Conectar a la red
                 val web3j = Web3j.build(HttpService(chainConfig.rpcUrl))
 
-                // Obtener nonce
-                val nonce = web3j.ethGetTransactionCount(
-                    credentials.address,
-                    DefaultBlockParameterName.PENDING
-                ).send().transactionCount
+                val nonce =
+                    web3j.ethGetTransactionCount(
+                        credentials.address,
+                        DefaultBlockParameterName.PENDING,
+                    ).send().transactionCount
 
-                // Crear calldata para transfer ERC20
-                val transferFunction = Function(
-                    "transfer",
-                    listOf(
-                        Address(originalTransaction.counterparty),
-                        Uint256(refundAmount)
-                    ),
-                    emptyList()
-                )
+                val transferFunction =
+                    Function(
+                        "transfer",
+                        listOf(
+                            Address(originalTransaction.counterparty),
+                            Uint256(refundAmount),
+                        ),
+                        emptyList(),
+                    )
                 val encodedFunction = FunctionEncoder.encode(transferFunction)
 
-                // Estimar gas
+                // Estimate gas
                 val gasPrice = web3j.ethGasPrice().send().gasPrice
-                val gasLimit = BigInteger.valueOf(100000) // ERC20 transfer típicamente usa ~65k
+                val gasLimit = BigInteger.valueOf(100000) // Typical ERC-20 transfer uses ~65k
 
-                // Crear transacción
-                val rawTransaction = RawTransaction.createTransaction(
-                    nonce,
-                    gasPrice,
-                    gasLimit,
-                    originalTransaction.asset, // Token contract
-                    BigInteger.ZERO,
-                    encodedFunction
-                )
+                val rawTransaction =
+                    RawTransaction.createTransaction(
+                        nonce,
+                        gasPrice,
+                        gasLimit,
+                        originalTransaction.asset,
+                        BigInteger.ZERO,
+                        encodedFunction,
+                    )
 
-                // Firmar
-                val signedMessage = TransactionEncoder.signMessage(
-                    rawTransaction,
-                    chainConfig.chainId,
-                    credentials
-                )
+                // Sign
+                val signedMessage =
+                    TransactionEncoder.signMessage(
+                        rawTransaction,
+                        chainConfig.chainId,
+                        credentials,
+                    )
                 val hexValue = Numeric.toHexString(signedMessage)
 
-                // Enviar
+                // Send
                 val response = web3j.ethSendRawTransaction(hexValue).send()
 
                 if (response.hasError()) {
@@ -113,11 +105,10 @@ class RefundService(
 
                 val txHash = response.transactionHash
 
-                // Registrar la devolución
                 transactionRepository.recordRefundSent(
                     originalTxId = originalTransaction.id,
                     refundTxHash = txHash,
-                    refundAmount = refundAmount
+                    refundAmount = refundAmount,
                 )
 
                 RefundResult.Success(txHash, refundAmount)
@@ -128,19 +119,19 @@ class RefundService(
     }
 
     /**
-     * Devolución total - devuelve todo lo que queda por devolver
+     * Processes a full refund using all refundable balance.
      */
     suspend fun processFullRefund(
         originalTransaction: Transaction,
         credentials: Credentials,
-        chainConfig: ChainConfig
+        chainConfig: ChainConfig,
     ): RefundResult {
         val remainingAmount = originalTransaction.getRemainingRefundable()
         return processRefund(originalTransaction, remainingAmount, credentials, chainConfig)
     }
 
     /**
-     * Estima el costo de gas para una devolución
+     * Estimates refund gas cost for the given chain.
      */
     suspend fun estimateRefundGas(chainConfig: ChainConfig): BigInteger {
         return withContext(Dispatchers.IO) {

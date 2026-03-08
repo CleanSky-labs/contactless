@@ -31,7 +31,7 @@ import java.math.BigInteger
 class StealthWalletService(
     private val chainConfig: ChainConfig,
     private val stealthPaymentRepository: StealthPaymentRepository,
-    private val merchantCredentials: Credentials
+    private val merchantCredentials: Credentials,
 ) {
     private val web3j: Web3j = Web3j.build(HttpService(chainConfig.rpcUrl))
     private val stealthKeys = StealthAddress.deriveStealthKeys(merchantCredentials)
@@ -39,8 +39,9 @@ class StealthWalletService(
     sealed class SpendResult {
         data class Success(
             val txHashes: List<String>,
-            val totalSpent: BigInteger
+            val totalSpent: BigInteger,
         ) : SpendResult()
+
         data class Error(val message: String) : SpendResult()
     }
 
@@ -48,17 +49,17 @@ class StealthWalletService(
         val totalBalance: BigInteger,
         val totalBalanceFormatted: String,
         val addressCount: Int,
-        val addresses: List<StealthAddressBalance>
+        val addresses: List<StealthAddressBalance>,
     )
 
     data class StealthAddressBalance(
         val payment: PendingStealthPayment,
-        val balance: BigInteger
+        val balance: BigInteger,
     )
 
     private data class AddressProcessResult(
         val derivationFailed: Boolean,
-        val txHash: String?
+        val txHash: String?,
     )
 
     /**
@@ -66,19 +67,23 @@ class StealthWalletService(
      */
     suspend fun getWalletBalance(): StealthWalletBalance {
         return withContext(Dispatchers.IO) {
-            val pending = stealthPaymentRepository.getPendingPayments()
-                .filter { it.chainId == chainConfig.chainId }
+            val pending =
+                stealthPaymentRepository.getPendingPayments()
+                    .filter { it.chainId == chainConfig.chainId }
 
-            val addressBalances = pending.mapNotNull { payment ->
-                try {
-                    val balance = getBalance(payment.stealthAddress, payment.asset)
-                    if (balance > BigInteger.ZERO) {
-                        StealthAddressBalance(payment, balance)
-                    } else null
-                } catch (e: Exception) {
-                    null
-                }
-            }.sortedByDescending { it.balance } // Largest first for optimal selection
+            val addressBalances =
+                pending.mapNotNull { payment ->
+                    try {
+                        val balance = getBalance(payment.stealthAddress, payment.asset)
+                        if (balance > BigInteger.ZERO) {
+                            StealthAddressBalance(payment, balance)
+                        } else {
+                            null
+                        }
+                    } catch (e: Exception) {
+                        null
+                    }
+                }.sortedByDescending { it.balance } // Largest first for optimal selection
 
             val total = addressBalances.sumOf { it.balance }
 
@@ -86,7 +91,7 @@ class StealthWalletService(
                 totalBalance = total,
                 totalBalanceFormatted = formatBalance(total, 6),
                 addressCount = addressBalances.size,
-                addresses = addressBalances
+                addresses = addressBalances,
             )
         }
     }
@@ -101,7 +106,7 @@ class StealthWalletService(
     suspend fun spend(
         recipientAddress: String,
         amount: BigInteger,
-        asset: String
+        asset: String,
     ): SpendResult {
         return withContext(Dispatchers.IO) {
             try {
@@ -109,7 +114,7 @@ class StealthWalletService(
 
                 if (walletBalance.totalBalance < amount) {
                     return@withContext SpendResult.Error(
-                        "Insufficient balance: have ${walletBalance.totalBalanceFormatted}, need ${formatBalance(amount, 6)}"
+                        "Insufficient balance: have ${walletBalance.totalBalanceFormatted}, need ${formatBalance(amount, 6)}",
                     )
                 }
 
@@ -122,13 +127,14 @@ class StealthWalletService(
 
                 for ((index, addrBalance) in selectedAddresses.withIndex()) {
                     val amountFromThis = takeAmountFromAddress(remaining, addrBalance.balance)
-                    val processResult = processSelectedAddress(
-                        addrBalance = addrBalance,
-                        amountFromThis = amountFromThis,
-                        recipientAddress = recipientAddress,
-                        asset = asset,
-                        isLastAddress = index == selectedAddresses.lastIndex
-                    )
+                    val processResult =
+                        processSelectedAddress(
+                            addrBalance = addrBalance,
+                            amountFromThis = amountFromThis,
+                            recipientAddress = recipientAddress,
+                            asset = asset,
+                            isLastAddress = index == selectedAddresses.lastIndex,
+                        )
                     if (processResult.derivationFailed) {
                         return@withContext SpendResult.Error("Failed to derive key for ${addrBalance.payment.stealthAddress}")
                     }
@@ -145,7 +151,10 @@ class StealthWalletService(
         }
     }
 
-    private fun takeAmountFromAddress(remaining: BigInteger, addressBalance: BigInteger): BigInteger {
+    private fun takeAmountFromAddress(
+        remaining: BigInteger,
+        addressBalance: BigInteger,
+    ): BigInteger {
         return if (remaining >= addressBalance) addressBalance else remaining
     }
 
@@ -154,25 +163,27 @@ class StealthWalletService(
         amountFromThis: BigInteger,
         recipientAddress: String,
         asset: String,
-        isLastAddress: Boolean
+        isLastAddress: Boolean,
     ): AddressProcessResult {
-        val spendingCreds = StealthAddress.scanAndDerive(
-            stealthKeys = stealthKeys,
-            ephemeralPubKey = Numeric.hexStringToByteArray(addrBalance.payment.ephemeralPubKey),
-            expectedAddress = addrBalance.payment.stealthAddress
-        ) ?: return AddressProcessResult(derivationFailed = true, txHash = null)
+        val spendingCreds =
+            StealthAddress.scanAndDerive(
+                stealthKeys = stealthKeys,
+                ephemeralPubKey = Numeric.hexStringToByteArray(addrBalance.payment.ephemeralPubKey),
+                expectedAddress = addrBalance.payment.stealthAddress,
+            ) ?: return AddressProcessResult(derivationFailed = true, txHash = null)
 
         val actualAmount = computeSpendAmount(amountFromThis, asset, isLastAddress)
         if (actualAmount <= BigInteger.ZERO) {
             return AddressProcessResult(derivationFailed = false, txHash = null)
         }
 
-        val txHash = sendTransaction(
-            credentials = spendingCreds,
-            to = recipientAddress,
-            amount = actualAmount,
-            asset = asset
-        )
+        val txHash =
+            sendTransaction(
+                credentials = spendingCreds,
+                to = recipientAddress,
+                amount = actualAmount,
+                asset = asset,
+            )
         stealthPaymentRepository.markPaymentClaimed(addrBalance.payment.invoiceId, txHash)
         return AddressProcessResult(derivationFailed = false, txHash = txHash)
     }
@@ -180,7 +191,7 @@ class StealthWalletService(
     private suspend fun computeSpendAmount(
         amountFromThis: BigInteger,
         asset: String,
-        isLastAddress: Boolean
+        isLastAddress: Boolean,
     ): BigInteger {
         if (!isNativeAsset(asset) || !isLastAddress) return amountFromThis
         val gasPrice = web3j.ethGasPrice().send().gasPrice
@@ -191,7 +202,10 @@ class StealthWalletService(
     /**
      * Spend entire stealth wallet balance
      */
-    suspend fun spendAll(recipientAddress: String, asset: String): SpendResult {
+    suspend fun spendAll(
+        recipientAddress: String,
+        asset: String,
+    ): SpendResult {
         val balance = getWalletBalance()
         return if (balance.totalBalance > BigInteger.ZERO) {
             spend(recipientAddress, balance.totalBalance, asset)
@@ -202,7 +216,7 @@ class StealthWalletService(
 
     private fun selectAddressesForAmount(
         addresses: List<StealthAddressBalance>,
-        targetAmount: BigInteger
+        targetAmount: BigInteger,
     ): List<StealthAddressBalance> {
         // First, try to find a single address that covers the amount
         val singleMatch = addresses.find { it.balance >= targetAmount }
@@ -227,31 +241,44 @@ class StealthWalletService(
         credentials: Credentials,
         to: String,
         amount: BigInteger,
-        asset: String
+        asset: String,
     ): String {
-        val nonce = web3j.ethGetTransactionCount(
-            credentials.address,
-            DefaultBlockParameterName.PENDING
-        ).send().transactionCount
+        val nonce =
+            web3j.ethGetTransactionCount(
+                credentials.address,
+                DefaultBlockParameterName.PENDING,
+            ).send().transactionCount
 
         val gasPrice = web3j.ethGasPrice().send().gasPrice
 
         return if (isNativeAsset(asset)) {
-            val rawTx = RawTransaction.createEtherTransaction(
-                nonce, gasPrice, BigInteger.valueOf(21000), to, amount
-            )
+            val rawTx =
+                RawTransaction.createEtherTransaction(
+                    nonce,
+                    gasPrice,
+                    BigInteger.valueOf(21000),
+                    to,
+                    amount,
+                )
             val signedTx = TransactionEncoder.signMessage(rawTx, chainConfig.chainId, credentials)
             val response = web3j.ethSendRawTransaction(Numeric.toHexString(signedTx)).send()
             if (response.hasError()) throw Exception(response.error.message)
             response.transactionHash
         } else {
-            val transferData = "0xa9059cbb" +
-                to.removePrefix("0x").lowercase().padStart(64, '0') +
-                amount.toString(16).padStart(64, '0')
+            val transferData =
+                "0xa9059cbb" +
+                    to.removePrefix("0x").lowercase().padStart(64, '0') +
+                    amount.toString(16).padStart(64, '0')
 
-            val rawTx = RawTransaction.createTransaction(
-                nonce, gasPrice, BigInteger.valueOf(100000), asset, BigInteger.ZERO, transferData
-            )
+            val rawTx =
+                RawTransaction.createTransaction(
+                    nonce,
+                    gasPrice,
+                    BigInteger.valueOf(100000),
+                    asset,
+                    BigInteger.ZERO,
+                    transferData,
+                )
             val signedTx = TransactionEncoder.signMessage(rawTx, chainConfig.chainId, credentials)
             val response = web3j.ethSendRawTransaction(Numeric.toHexString(signedTx)).send()
             if (response.hasError()) throw Exception(response.error.message)
@@ -259,29 +286,38 @@ class StealthWalletService(
         }
     }
 
-    private suspend fun getBalance(address: String, asset: String): BigInteger {
+    private suspend fun getBalance(
+        address: String,
+        asset: String,
+    ): BigInteger {
         return withContext(Dispatchers.IO) {
             if (isNativeAsset(asset)) {
                 web3j.ethGetBalance(address, DefaultBlockParameterName.LATEST).send().balance
             } else {
                 val data = "0x70a08231" + address.removePrefix("0x").lowercase().padStart(64, '0')
-                val result = web3j.ethCall(
-                    org.web3j.protocol.core.methods.request.Transaction.createEthCallTransaction(null, asset, data),
-                    DefaultBlockParameterName.LATEST
-                ).send()
+                val result =
+                    web3j.ethCall(
+                        org.web3j.protocol.core.methods.request.Transaction.createEthCallTransaction(null, asset, data),
+                        DefaultBlockParameterName.LATEST,
+                    ).send()
                 if (result.value != null && result.value.length > 2) {
                     BigInteger(result.value.removePrefix("0x"), 16)
-                } else BigInteger.ZERO
+                } else {
+                    BigInteger.ZERO
+                }
             }
         }
     }
 
     private fun isNativeAsset(asset: String) =
         asset == "0x0000000000000000000000000000000000000000" ||
-        asset.equals("native", ignoreCase = true) ||
-        asset.isBlank()
+            asset.equals("native", ignoreCase = true) ||
+            asset.isBlank()
 
-    private fun formatBalance(balance: BigInteger, decimals: Int): String {
+    private fun formatBalance(
+        balance: BigInteger,
+        decimals: Int,
+    ): String {
         return NumberFormatter.formatBalance(balance, decimals)
     }
 }

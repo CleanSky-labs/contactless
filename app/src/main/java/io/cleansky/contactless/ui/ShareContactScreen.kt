@@ -26,8 +26,11 @@ import kotlinx.coroutines.launch
 
 sealed class ShareContactState {
     object Ready : ShareContactState()
+
     object Broadcasting : ShareContactState()
+
     data class Received(val contact: Contact) : ShareContactState()
+
     object Saved : ShareContactState()
 }
 
@@ -36,7 +39,7 @@ fun ShareContactScreen(
     walletManager: SecureWalletManager,
     nfcManager: NfcManager,
     addressBookRepository: AddressBookRepository,
-    onBack: () -> Unit
+    onBack: () -> Unit,
 ) {
     val scope = rememberCoroutineScope()
     val walletAddress by walletManager.addressFlow.collectAsState(initial = null)
@@ -59,10 +62,11 @@ fun ShareContactScreen(
     }
 
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         when (val currentState = state) {
             ShareContactState.Ready -> {
@@ -72,14 +76,15 @@ fun ShareContactScreen(
                     onNameChange = { myName = it },
                     onStartSharing = {
                         walletAddress?.let { address ->
-                            val contact = Contact(
-                                address = address,
-                                name = myName.ifBlank { "" }
-                            )
+                            val contact =
+                                Contact(
+                                    address = address,
+                                    name = myName.ifBlank { "" },
+                                )
                             nfcManager.prepareContact(contact)
                             state = ShareContactState.Broadcasting
                         }
-                    }
+                    },
                 )
             }
             ShareContactState.Broadcasting -> {
@@ -87,7 +92,7 @@ fun ShareContactScreen(
                     onCancel = {
                         nfcManager.stopBroadcast()
                         state = ShareContactState.Ready
-                    }
+                    },
                 )
             }
             is ShareContactState.Received -> {
@@ -101,7 +106,7 @@ fun ShareContactScreen(
                     },
                     onDiscard = {
                         state = ShareContactState.Ready
-                    }
+                    },
                 )
             }
             ShareContactState.Saved -> {
@@ -109,7 +114,7 @@ fun ShareContactScreen(
                     onShareMore = {
                         state = ShareContactState.Ready
                     },
-                    onDone = onBack
+                    onDone = onBack,
                 )
             }
         }
@@ -121,23 +126,24 @@ private fun ColumnScope.ReadyToShareContent(
     walletAddress: String?,
     myName: String,
     onNameChange: (String) -> Unit,
-    onStartSharing: () -> Unit
+    onStartSharing: () -> Unit,
 ) {
     Spacer(modifier = Modifier.height(32.dp))
 
     // Icon
     Box(
-        modifier = Modifier
-            .size(120.dp)
-            .clip(CircleShape)
-            .background(AppColors.PayPrimary.copy(alpha = 0.1f)),
-        contentAlignment = Alignment.Center
+        modifier =
+            Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+                .background(AppColors.PayPrimary.copy(alpha = 0.1f)),
+        contentAlignment = Alignment.Center,
     ) {
         Icon(
             imageVector = Icons.Default.ContactPhone,
             contentDescription = null,
             modifier = Modifier.size(60.dp),
-            tint = AppColors.PayPrimary
+            tint = AppColors.PayPrimary,
         )
     }
 
@@ -147,7 +153,7 @@ private fun ColumnScope.ReadyToShareContent(
         text = stringResource(R.string.share_contact_title),
         fontSize = 24.sp,
         fontWeight = FontWeight.Bold,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 
     Spacer(modifier = Modifier.height(32.dp))
@@ -160,10 +166,11 @@ private fun ColumnScope.ReadyToShareContent(
         placeholder = { Text(stringResource(R.string.share_contact_your_name_hint)) },
         modifier = Modifier.fillMaxWidth(),
         singleLine = true,
-        colors = TextFieldDefaults.outlinedTextFieldColors(
-            focusedBorderColor = AppColors.PayPrimary,
-            cursorColor = AppColors.PayPrimary
-        )
+        colors =
+            TextFieldDefaults.outlinedTextFieldColors(
+                focusedBorderColor = AppColors.PayPrimary,
+                cursorColor = AppColors.PayPrimary,
+            ),
     )
 
     Spacer(modifier = Modifier.height(16.dp))
@@ -173,18 +180,18 @@ private fun ColumnScope.ReadyToShareContent(
         Card(
             modifier = Modifier.fillMaxWidth(),
             backgroundColor = Color.Gray.copy(alpha = 0.1f),
-            elevation = 0.dp
+            elevation = 0.dp,
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(
                     text = stringResource(R.string.address_book_address),
                     fontSize = 12.sp,
-                    color = Color.Gray
+                    color = Color.Gray,
                 )
                 Text(
                     text = "${walletAddress.take(10)}...${walletAddress.takeLast(8)}",
                     fontSize = 14.sp,
-                    fontWeight = FontWeight.Medium
+                    fontWeight = FontWeight.Medium,
                 )
             }
         }
@@ -195,25 +202,27 @@ private fun ColumnScope.ReadyToShareContent(
     // Share button
     Button(
         onClick = onStartSharing,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp),
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp),
         enabled = walletAddress != null,
-        colors = ButtonDefaults.buttonColors(
-            backgroundColor = AppColors.PayPrimary
-        ),
-        shape = RoundedCornerShape(12.dp)
+        colors =
+            ButtonDefaults.buttonColors(
+                backgroundColor = AppColors.PayPrimary,
+            ),
+        shape = RoundedCornerShape(12.dp),
     ) {
         Icon(
             imageVector = Icons.Default.NearMe,
             contentDescription = null,
-            modifier = Modifier.size(24.dp)
+            modifier = Modifier.size(24.dp),
         )
         Spacer(modifier = Modifier.width(8.dp))
         Text(
             text = stringResource(R.string.share_contact_mutual),
             fontSize = 18.sp,
-            color = Color.White
+            color = Color.White,
         )
     }
 
@@ -223,34 +232,33 @@ private fun ColumnScope.ReadyToShareContent(
         text = stringResource(R.string.share_contact_mutual_desc),
         fontSize = 12.sp,
         color = Color.Gray,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 }
 
 @Composable
-private fun ColumnScope.BroadcastingContent(
-    onCancel: () -> Unit
-) {
+private fun ColumnScope.BroadcastingContent(onCancel: () -> Unit) {
     Spacer(modifier = Modifier.weight(1f))
 
     // Animated NFC icon
     Box(
-        modifier = Modifier
-            .size(160.dp)
-            .clip(CircleShape)
-            .background(AppColors.PayPrimary.copy(alpha = 0.1f)),
-        contentAlignment = Alignment.Center
+        modifier =
+            Modifier
+                .size(160.dp)
+                .clip(CircleShape)
+                .background(AppColors.PayPrimary.copy(alpha = 0.1f)),
+        contentAlignment = Alignment.Center,
     ) {
         CircularProgressIndicator(
             modifier = Modifier.size(140.dp),
             color = AppColors.PayPrimary.copy(alpha = 0.3f),
-            strokeWidth = 4.dp
+            strokeWidth = 4.dp,
         )
         Icon(
             imageVector = Icons.Default.Nfc,
             contentDescription = null,
             modifier = Modifier.size(60.dp),
-            tint = AppColors.PayPrimary
+            tint = AppColors.PayPrimary,
         )
     }
 
@@ -260,7 +268,7 @@ private fun ColumnScope.BroadcastingContent(
         text = stringResource(R.string.share_contact_ready),
         fontSize = 24.sp,
         fontWeight = FontWeight.Bold,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 
     Spacer(modifier = Modifier.height(8.dp))
@@ -269,7 +277,7 @@ private fun ColumnScope.BroadcastingContent(
         text = stringResource(R.string.share_contact_ready_desc),
         fontSize = 16.sp,
         color = Color.Gray,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 
     Spacer(modifier = Modifier.weight(1f))
@@ -277,14 +285,15 @@ private fun ColumnScope.BroadcastingContent(
     // Cancel button
     OutlinedButton(
         onClick = onCancel,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp),
-        shape = RoundedCornerShape(12.dp)
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+        shape = RoundedCornerShape(12.dp),
     ) {
         Text(
             text = stringResource(R.string.cancel),
-            fontSize = 18.sp
+            fontSize = 18.sp,
         )
     }
 }
@@ -293,23 +302,24 @@ private fun ColumnScope.BroadcastingContent(
 private fun ColumnScope.ContactReceivedContent(
     contact: Contact,
     onSave: () -> Unit,
-    onDiscard: () -> Unit
+    onDiscard: () -> Unit,
 ) {
     Spacer(modifier = Modifier.weight(1f))
 
     // Success icon
     Box(
-        modifier = Modifier
-            .size(120.dp)
-            .clip(CircleShape)
-            .background(AppColors.CollectPrimary.copy(alpha = 0.1f)),
-        contentAlignment = Alignment.Center
+        modifier =
+            Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+                .background(AppColors.CollectPrimary.copy(alpha = 0.1f)),
+        contentAlignment = Alignment.Center,
     ) {
         Icon(
             imageVector = Icons.Default.PersonAdd,
             contentDescription = null,
             modifier = Modifier.size(60.dp),
-            tint = AppColors.CollectPrimary
+            tint = AppColors.CollectPrimary,
         )
     }
 
@@ -319,7 +329,7 @@ private fun ColumnScope.ContactReceivedContent(
         text = stringResource(R.string.share_contact_received),
         fontSize = 24.sp,
         fontWeight = FontWeight.Bold,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 
     Spacer(modifier = Modifier.height(8.dp))
@@ -329,7 +339,7 @@ private fun ColumnScope.ContactReceivedContent(
             text = stringResource(R.string.share_contact_received_name, contact.name),
             fontSize = 16.sp,
             color = Color.Gray,
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
         )
     }
 
@@ -339,21 +349,21 @@ private fun ColumnScope.ContactReceivedContent(
     Card(
         modifier = Modifier.fillMaxWidth(),
         elevation = 4.dp,
-        shape = RoundedCornerShape(12.dp)
+        shape = RoundedCornerShape(12.dp),
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             if (contact.name.isNotBlank()) {
                 Text(
                     text = contact.name,
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
                 )
                 Spacer(modifier = Modifier.height(4.dp))
             }
             Text(
                 text = "${contact.address.take(10)}...${contact.address.takeLast(8)}",
                 fontSize = 14.sp,
-                color = Color.Gray
+                color = Color.Gray,
             )
         }
     }
@@ -363,24 +373,26 @@ private fun ColumnScope.ContactReceivedContent(
     // Save button
     Button(
         onClick = onSave,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp),
-        colors = ButtonDefaults.buttonColors(
-            backgroundColor = AppColors.CollectPrimary
-        ),
-        shape = RoundedCornerShape(12.dp)
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+        colors =
+            ButtonDefaults.buttonColors(
+                backgroundColor = AppColors.CollectPrimary,
+            ),
+        shape = RoundedCornerShape(12.dp),
     ) {
         Icon(
             imageVector = Icons.Default.Save,
             contentDescription = null,
-            modifier = Modifier.size(24.dp)
+            modifier = Modifier.size(24.dp),
         )
         Spacer(modifier = Modifier.width(8.dp))
         Text(
             text = stringResource(R.string.share_contact_save),
             fontSize = 18.sp,
-            color = Color.White
+            color = Color.White,
         )
     }
 
@@ -389,11 +401,11 @@ private fun ColumnScope.ContactReceivedContent(
     // Discard button
     TextButton(
         onClick = onDiscard,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxWidth(),
     ) {
         Text(
             text = stringResource(R.string.cancel),
-            color = Color.Gray
+            color = Color.Gray,
         )
     }
 }
@@ -401,23 +413,24 @@ private fun ColumnScope.ContactReceivedContent(
 @Composable
 private fun ColumnScope.ContactSavedContent(
     onShareMore: () -> Unit,
-    onDone: () -> Unit
+    onDone: () -> Unit,
 ) {
     Spacer(modifier = Modifier.weight(1f))
 
     // Success icon
     Box(
-        modifier = Modifier
-            .size(120.dp)
-            .clip(CircleShape)
-            .background(AppColors.CollectPrimary.copy(alpha = 0.1f)),
-        contentAlignment = Alignment.Center
+        modifier =
+            Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+                .background(AppColors.CollectPrimary.copy(alpha = 0.1f)),
+        contentAlignment = Alignment.Center,
     ) {
         Icon(
             imageVector = Icons.Default.Check,
             contentDescription = null,
             modifier = Modifier.size(60.dp),
-            tint = AppColors.CollectPrimary
+            tint = AppColors.CollectPrimary,
         )
     }
 
@@ -427,7 +440,7 @@ private fun ColumnScope.ContactSavedContent(
         text = stringResource(R.string.address_book_saved),
         fontSize = 24.sp,
         fontWeight = FontWeight.Bold,
-        textAlign = TextAlign.Center
+        textAlign = TextAlign.Center,
     )
 
     Spacer(modifier = Modifier.weight(1f))
@@ -435,20 +448,21 @@ private fun ColumnScope.ContactSavedContent(
     // Share more button
     OutlinedButton(
         onClick = onShareMore,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp),
-        shape = RoundedCornerShape(12.dp)
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+        shape = RoundedCornerShape(12.dp),
     ) {
         Icon(
             imageVector = Icons.Default.Refresh,
             contentDescription = null,
-            modifier = Modifier.size(24.dp)
+            modifier = Modifier.size(24.dp),
         )
         Spacer(modifier = Modifier.width(8.dp))
         Text(
             text = stringResource(R.string.share_contact_mutual),
-            fontSize = 18.sp
+            fontSize = 18.sp,
         )
     }
 
@@ -457,18 +471,20 @@ private fun ColumnScope.ContactSavedContent(
     // Done button
     Button(
         onClick = onDone,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp),
-        colors = ButtonDefaults.buttonColors(
-            backgroundColor = AppColors.CollectPrimary
-        ),
-        shape = RoundedCornerShape(12.dp)
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+        colors =
+            ButtonDefaults.buttonColors(
+                backgroundColor = AppColors.CollectPrimary,
+            ),
+        shape = RoundedCornerShape(12.dp),
     ) {
         Text(
             text = stringResource(R.string.refund_done),
             fontSize = 18.sp,
-            color = Color.White
+            color = Color.White,
         )
     }
 }

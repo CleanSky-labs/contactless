@@ -1,0 +1,5 @@
+root = true
+
+[*.{kt,kts}]
+ktlint_standard_function-naming = disabled
+ij_kotlin_packages_to_use_import_on_demand = androidx.compose.animation.core.*,androidx.compose.foundation.*,androidx.compose.foundation.layout.*,androidx.compose.material.*,androidx.compose.material.icons.filled.*,androidx.compose.runtime.*,androidx.compose.ui.*,org.junit.Assert.*

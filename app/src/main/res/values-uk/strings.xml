@@ -344,4 +344,28 @@
     <string name="receive_only_no_escrow_desc">Налаштуйте адресу escrow та API key у Налаштуваннях</string>
     <string name="receive_only_security_notice">На цьому пристрої немає приватного ключа. Безпечно при крадіжці.</string>
     <string name="receive_only_api_key_required">API key потрібен для виконання через relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Помилка Account Abstraction</string>
+        <string name="error_api_key_required">Потрібен API-ключ</string>
+        <string name="error_insufficient_time_to_sign">Недостатньо часу для підпису</string>
+        <string name="error_invalid_request">Некоректний запит</string>
+        <string name="error_no_balance_to_spend">Немає балансу для витрат</string>
+        <string name="error_paymaster_not_configured">Paymaster не налаштовано</string>
+        <string name="error_refund_amount_invalid">Сума повернення має бути більшою за 0</string>
+        <string name="error_relayer_generic">Помилка relayer</string>
+        <string name="error_relayer_not_configured">Relayer не налаштовано</string>
+        <string name="error_replay_detected">Виявлено replay: nonce вже використано</string>
+        <string name="error_request_expired">Термін запиту минув</string>
+        <string name="error_status_check">Помилка перевірки статусу</string>
+        <string name="error_token_not_allowed">Токен не дозволено</string>
+        <string name="error_transaction_failed">Транзакція не вдалася</string>
+        <string name="settings_advanced_hint">Увімкніть розширений режим, щоб налаштувати приватність, безпеку, мережу та токени.</string>
+        <string name="settings_export_requires_wallet">Створіть або імпортуйте гаманець перед експортом приватного ключа.</string>
+        <string name="settings_group_general">Загальні</string>
+        <string name="settings_group_network_tokens">Мережа і токени</string>
+        <string name="settings_group_payments">Платежі</string>
+        <string name="settings_group_privacy_security">Приватність і безпека</string>
+        <string name="settings_key_management">Керування ключами</string>
+        <string name="settings_key_management_desc">Чутливі операції з ключами винесені сюди. Тримайте приватний ключ офлайн і нікому його не передавайте.</string>
 </resources>

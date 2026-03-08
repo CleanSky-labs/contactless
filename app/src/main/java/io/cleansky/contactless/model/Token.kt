@@ -3,9 +3,7 @@ package io.cleansky.contactless.model
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import io.cleansky.contactless.util.NumberFormatter
-import java.math.BigDecimal
 import java.math.BigInteger
-import java.math.RoundingMode
 
 data class Token(
     val address: String,
@@ -13,7 +11,7 @@ data class Token(
     val name: String,
     val decimals: Int,
     val chainId: Long,
-    val isNative: Boolean = false
+    val isNative: Boolean = false,
 ) {
     companion object {
         private val gson = Gson()
@@ -45,7 +43,10 @@ data class Token(
 
     fun toJson(): String = gson.toJson(this)
 
-    fun matches(tokenAddress: String, tokenChainId: Long): Boolean {
+    fun matches(
+        tokenAddress: String,
+        tokenChainId: Long,
+    ): Boolean {
         return address.equals(tokenAddress, ignoreCase = true) && chainId == tokenChainId
     }
 }
@@ -53,10 +54,13 @@ data class Token(
 data class TokenBalance(
     val token: Token,
     val balance: BigInteger,
-    val balanceFormatted: String
+    val balanceFormatted: String,
 ) {
     companion object {
-        fun create(token: Token, balance: BigInteger): TokenBalance {
+        fun create(
+            token: Token,
+            balance: BigInteger,
+        ): TokenBalance {
             val formatted = NumberFormatter.formatBalance(balance, token.decimals)
             return TokenBalance(token, balance, formatted)
         }

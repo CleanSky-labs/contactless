@@ -27,31 +27,29 @@ data class PaymentRequest(
     val escrow: String,
     val nonce: String,
     val expiry: Long,
-
     // Merchant identity fields (SHOULD/MAY)
-    val merchantDisplayName: String? = null,  // mdn - Human-readable name
-    val merchantDomain: String? = null,       // mdo - Domain or ENS
-    val merchantPubKey: String? = null,       // mpk - Public key for verification
-
+    val merchantDisplayName: String? = null,
+    val merchantDomain: String? = null,
+    val merchantPubKey: String? = null,
     // Stealth address (v0.4 - EIP-5564)
-    val stealthMetaAddress: String? = null,   // sma - Stealth meta-address if merchant uses privacy mode
-
+    val stealthMetaAddress: String? = null,
     // Legacy field
-    val merchantSig: String = ""
+    val merchantSig: String = "",
 ) {
     companion object {
         const val PROTOCOL_VERSION = 5
 
         // Timing constants (spec v0.5)
-        const val MAX_TTL_SECONDS = 300L          // 5 minutes max
-        const val DEFAULT_TTL_SECONDS = 180L     // 3 minutes default
-        const val MIN_TTL_SECONDS = 30L          // 30 seconds minimum
-        const val CLOCK_SKEW_TOLERANCE = 30L     // ±30 seconds
+        const val MAX_TTL_SECONDS = 300L // 5 minutes max
+        const val DEFAULT_TTL_SECONDS = 180L // 3 minutes default
+        const val MIN_TTL_SECONDS = 30L // 30 seconds minimum
+        const val CLOCK_SKEW_TOLERANCE = 30L // ±30 seconds
 
         private val random = SecureRandom()
-        private val cborMapper = ObjectMapper(CBORFactory())
-            .registerModule(KotlinModule.Builder().build())
-            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+        private val cborMapper =
+            ObjectMapper(CBORFactory())
+                .registerModule(KotlinModule.Builder().build())
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
 
         fun create(
             merchantId: String,
@@ -63,7 +61,7 @@ data class PaymentRequest(
             merchantDisplayName: String? = null,
             merchantDomain: String? = null,
             merchantPubKey: String? = null,
-            stealthMetaAddress: String? = null
+            stealthMetaAddress: String? = null,
         ): PaymentRequest {
             // Enforce max TTL
             val ttl = expirySeconds.coerceIn(MIN_TTL_SECONDS, MAX_TTL_SECONDS)
@@ -84,7 +82,7 @@ data class PaymentRequest(
                 merchantDisplayName = merchantDisplayName,
                 merchantDomain = merchantDomain,
                 merchantPubKey = merchantPubKey,
-                stealthMetaAddress = stealthMetaAddress
+                stealthMetaAddress = stealthMetaAddress,
             )
         }
 
@@ -202,8 +200,11 @@ data class PaymentRequest(
 
     sealed class ValidationResult {
         object Valid : ValidationResult()
+
         object Expired : ValidationResult()
+
         object InsufficientTime : ValidationResult()
+
         data class Invalid(val reason: String) : ValidationResult()
 
         fun isValid(): Boolean = this is Valid
@@ -225,16 +226,14 @@ data class SignedTransaction(
     val expiry: Long,
     val payer: String,
     val payerSig: String,
-
     // Merchant identity (copied from request)
     val merchantDisplayName: String? = null,
     val merchantDomain: String? = null,
     val merchantPubKey: String? = null,
-
     // Stealth address fields (v0.4 - filled by payer when merchant uses stealth)
-    val stealthAddress: String? = null,       // One-time address to send funds to
-    val ephemeralPubKey: String? = null,      // R - ephemeral public key (hex)
-    val viewTag: Int? = null                  // First byte of shared secret for fast scanning
+    val stealthAddress: String? = null,
+    val ephemeralPubKey: String? = null,
+    val viewTag: Int? = null,
 ) {
     companion object {
         private val cborMapper = ObjectMapper(CBORFactory()).registerModule(KotlinModule.Builder().build())
@@ -248,7 +247,7 @@ data class SignedTransaction(
             signature: String,
             stealthAddress: String? = null,
             ephemeralPubKey: String? = null,
-            viewTag: Int? = null
+            viewTag: Int? = null,
         ): SignedTransaction {
             return SignedTransaction(
                 v = request.v,
@@ -267,7 +266,7 @@ data class SignedTransaction(
                 merchantPubKey = request.merchantPubKey,
                 stealthAddress = stealthAddress,
                 ephemeralPubKey = ephemeralPubKey,
-                viewTag = viewTag
+                viewTag = viewTag,
             )
         }
 

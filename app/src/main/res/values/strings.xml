@@ -46,7 +46,7 @@
     <string name="settings_mode_pay">Pay</string>
     <string name="settings_mode_pay_desc">Make payments</string>
     <string name="settings_mode_collect">Collect</string>
-    <string name="settings_mode_collect_desc">Receive payments</string>
+    <string name="settings_mode_collect_desc">Standard checkout with local wallet</string>
     <string name="settings_wallet">Wallet</string>
     <string name="settings_wallet_address">Address</string>
     <string name="settings_wallet_none">No wallet configured</string>
@@ -66,6 +66,14 @@
     <string name="settings_not_available">Not available on this network</string>
     <string name="settings_language">Language</string>
     <string name="settings_language_system">System default</string>
+    <string name="settings_group_general">General</string>
+    <string name="settings_group_payments">Payments</string>
+    <string name="settings_group_privacy_security">Privacy and security</string>
+    <string name="settings_group_network_tokens">Network and tokens</string>
+    <string name="settings_advanced_hint">Enable Advanced Mode to configure privacy, security, network, and tokens.</string>
+    <string name="settings_key_management">Key management</string>
+    <string name="settings_key_management_desc">Sensitive key operations are separated here. Keep your private key offline and never share it.</string>
+    <string name="settings_export_requires_wallet">Create or import a wallet before exporting the private key.</string>
     <string name="collect_select_currency">Select currency</string>
 
     <!-- Security Settings -->
@@ -180,6 +188,20 @@
     <string name="error_invalid_address">Invalid address</string>
     <string name="error_invalid_address_format">Invalid address format</string>
     <string name="error_token_already_added">Token already added</string>
+    <string name="error_token_not_allowed">Token not allowed</string>
+    <string name="error_request_expired">Request expired</string>
+    <string name="error_insufficient_time_to_sign">Insufficient time to sign</string>
+    <string name="error_invalid_request">Invalid request</string>
+    <string name="error_replay_detected">Replay detected: nonce already used</string>
+    <string name="error_api_key_required">API key required</string>
+    <string name="error_relayer_not_configured">Relayer not configured</string>
+    <string name="error_paymaster_not_configured">Paymaster not configured</string>
+    <string name="error_relayer_generic">Relayer error</string>
+    <string name="error_account_abstraction">Account abstraction error</string>
+    <string name="error_status_check">Status check error</string>
+    <string name="error_transaction_failed">Transaction failed</string>
+    <string name="error_no_balance_to_spend">No balance to spend</string>
+    <string name="error_refund_amount_invalid">Refund amount must be greater than 0</string>
 
     <!-- Stealth Wallet -->
     <string name="stealth_spend_sent_tx">Sent! Tx: %s…</string>
@@ -336,10 +358,10 @@
     <string name="history_refund">Refund</string>
 
     <!-- Receive-Only Mode -->
-    <string name="nav_receive_only">Receive Only</string>
-    <string name="settings_mode_receive_only">Receive</string>
-    <string name="settings_mode_receive_only_desc">No private key</string>
-    <string name="settings_receive_only">Receive-Only Configuration</string>
+    <string name="nav_receive_only">Charge Only</string>
+    <string name="settings_mode_receive_only">Charge only</string>
+    <string name="settings_mode_receive_only_desc">No local private key (escrow + relayer)</string>
+    <string name="settings_receive_only">Charge-Only Configuration</string>
     <string name="settings_escrow_address">Escrow Address</string>
     <string name="settings_receive_only_merchant_id">Merchant ID</string>
     <string name="receive_only_no_escrow">No Escrow Configured</string>

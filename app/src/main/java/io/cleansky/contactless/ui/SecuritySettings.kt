@@ -10,7 +10,6 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -20,12 +19,12 @@ import io.cleansky.contactless.crypto.SecureWalletManager
 import kotlinx.coroutines.launch
 
 /**
- * Componente de configuración de seguridad para incluir en SettingsScreen
  */
 @Composable
 fun SecuritySettingsSection(
     walletManager: SecureWalletManager,
-    onExportKey: () -> Unit
+    onExportKey: (() -> Unit)? = null,
+    showDestructiveActions: Boolean = true,
 ) {
     val scope = rememberCoroutineScope()
     var biometricEnabled by remember { mutableStateOf(false) }
@@ -45,21 +44,20 @@ fun SecuritySettingsSection(
             fontSize = 14.sp,
             fontWeight = FontWeight.Medium,
             color = AppColors.Gray,
-            modifier = Modifier.padding(bottom = 12.dp)
+            modifier = Modifier.padding(bottom = 12.dp),
         )
 
         Card(
             modifier = Modifier.fillMaxWidth(),
             elevation = 2.dp,
-            shape = RoundedCornerShape(12.dp)
+            shape = RoundedCornerShape(12.dp),
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
-                // Estado de seguridad
                 SecurityStatusRow(
                     icon = Icons.Default.Security,
                     title = stringResource(R.string.security_encryption),
                     subtitle = stringResource(R.string.security_encryption_desc),
-                    status = SecurityStatus.ACTIVE
+                    status = SecurityStatus.ACTIVE,
                 )
 
                 Divider(modifier = Modifier.padding(vertical = 12.dp))
@@ -67,37 +65,47 @@ fun SecuritySettingsSection(
                 SecurityStatusRow(
                     icon = Icons.Default.Memory,
                     title = stringResource(R.string.security_strongbox),
-                    subtitle = if (hasStrongBox) stringResource(R.string.security_strongbox_active) else stringResource(R.string.security_strongbox_unavailable),
-                    status = if (hasStrongBox) SecurityStatus.ACTIVE else SecurityStatus.UNAVAILABLE
+                    subtitle =
+                        if (hasStrongBox) {
+                            stringResource(
+                                R.string.security_strongbox_active,
+                            )
+                        } else {
+                            stringResource(R.string.security_strongbox_unavailable)
+                        },
+                    status = if (hasStrongBox) SecurityStatus.ACTIVE else SecurityStatus.UNAVAILABLE,
                 )
 
                 Divider(modifier = Modifier.padding(vertical = 12.dp))
 
-                // Toggle de biometría
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
+                    verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Icon(
                             imageVector = Icons.Default.Fingerprint,
                             contentDescription = null,
                             tint = if (biometricEnabled) AppColors.Success else AppColors.Gray,
-                            modifier = Modifier.size(24.dp)
+                            modifier = Modifier.size(24.dp),
                         )
                         Spacer(modifier = Modifier.width(12.dp))
                         Column {
                             Text(
                                 stringResource(R.string.security_biometric),
-                                fontWeight = FontWeight.Medium
+                                fontWeight = FontWeight.Medium,
                             )
                             Text(
-                                if (!biometricAvailable) stringResource(R.string.security_biometric_unavailable)
-                                else if (biometricEnabled) stringResource(R.string.security_biometric_required)
-                                else stringResource(R.string.security_biometric_disabled),
+                                if (!biometricAvailable) {
+                                    stringResource(R.string.security_biometric_unavailable)
+                                } else if (biometricEnabled) {
+                                    stringResource(R.string.security_biometric_required)
+                                } else {
+                                    stringResource(R.string.security_biometric_disabled)
+                                },
                                 fontSize = 12.sp,
-                                color = AppColors.Gray
+                                color = AppColors.Gray,
                             )
                         }
                     }
@@ -111,87 +119,93 @@ fun SecuritySettingsSection(
                             }
                         },
                         enabled = biometricAvailable,
-                        colors = SwitchDefaults.colors(
-                            checkedThumbColor = AppColors.Success,
-                            checkedTrackColor = AppColors.Success.copy(alpha = 0.5f)
-                        )
+                        colors =
+                            SwitchDefaults.colors(
+                                checkedThumbColor = AppColors.Success,
+                                checkedTrackColor = AppColors.Success.copy(alpha = 0.5f),
+                            ),
                     )
                 }
 
-                Divider(modifier = Modifier.padding(vertical = 12.dp))
+                if (onExportKey != null) {
+                    Divider(modifier = Modifier.padding(vertical = 12.dp))
 
-                // Exportar clave (backup)
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable(onClick = onExportKey)
-                        .padding(vertical = 8.dp),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
+                    Row(
+                        modifier =
+                            Modifier
+                                .fillMaxWidth()
+                                .clickable(onClick = onExportKey)
+                                .padding(vertical = 8.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = Icons.Default.Key,
+                                contentDescription = null,
+                                tint = AppColors.Gray,
+                                modifier = Modifier.size(24.dp),
+                            )
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Column {
+                                Text(stringResource(R.string.security_export), fontWeight = FontWeight.Medium)
+                                Text(
+                                    stringResource(R.string.security_export_desc),
+                                    fontSize = 12.sp,
+                                    color = AppColors.Gray,
+                                )
+                            }
+                        }
                         Icon(
-                            imageVector = Icons.Default.Key,
+                            Icons.Default.ChevronRight,
                             contentDescription = null,
                             tint = AppColors.Gray,
-                            modifier = Modifier.size(24.dp)
+                        )
+                    }
+                }
+
+                if (showDestructiveActions) {
+                    Divider(modifier = Modifier.padding(vertical = 12.dp))
+
+                    Row(
+                        modifier =
+                            Modifier
+                                .fillMaxWidth()
+                                .clickable { showDeleteDialog = true }
+                                .padding(vertical = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.DeleteForever,
+                            contentDescription = null,
+                            tint = AppColors.Error,
+                            modifier = Modifier.size(24.dp),
                         )
                         Spacer(modifier = Modifier.width(12.dp))
                         Column {
-                            Text(stringResource(R.string.security_export), fontWeight = FontWeight.Medium)
                             Text(
-                                stringResource(R.string.security_export_desc),
+                                stringResource(R.string.security_delete),
+                                fontWeight = FontWeight.Medium,
+                                color = AppColors.Error,
+                            )
+                            Text(
+                                stringResource(R.string.security_delete_desc),
                                 fontSize = 12.sp,
-                                color = AppColors.Gray
+                                color = AppColors.Gray,
                             )
                         }
-                    }
-                    Icon(
-                        Icons.Default.ChevronRight,
-                        contentDescription = null,
-                        tint = AppColors.Gray
-                    )
-                }
-
-                Divider(modifier = Modifier.padding(vertical = 12.dp))
-
-                // Eliminar wallet
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable { showDeleteDialog = true }
-                        .padding(vertical = 8.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.DeleteForever,
-                        contentDescription = null,
-                        tint = AppColors.Error,
-                        modifier = Modifier.size(24.dp)
-                    )
-                    Spacer(modifier = Modifier.width(12.dp))
-                    Column {
-                        Text(
-                            stringResource(R.string.security_delete),
-                            fontWeight = FontWeight.Medium,
-                            color = AppColors.Error
-                        )
-                        Text(
-                            stringResource(R.string.security_delete_desc),
-                            fontSize = 12.sp,
-                            color = AppColors.Gray
-                        )
                     }
                 }
             }
         }
     }
 
-    // Bottom sheet de confirmación para eliminar
-    if (showDeleteDialog) {
+    if (showDestructiveActions && showDeleteDialog) {
         ConfirmationBottomSheet(
             title = stringResource(R.string.security_delete_title),
-            message = "${stringResource(R.string.security_delete_warning)}\n\n${stringResource(R.string.security_delete_warning2)}\n\n${stringResource(R.string.security_delete_warning3)}",
+            message = "${stringResource(
+                R.string.security_delete_warning,
+            )}\n\n${stringResource(R.string.security_delete_warning2)}\n\n${stringResource(R.string.security_delete_warning3)}",
             confirmText = stringResource(R.string.security_delete_confirm),
             confirmColor = AppColors.Error,
             icon = Icons.Default.DeleteForever,
@@ -202,7 +216,7 @@ fun SecuritySettingsSection(
                     showDeleteDialog = false
                 }
             },
-            onDismiss = { showDeleteDialog = false }
+            onDismiss = { showDeleteDialog = false },
         )
     }
 }
@@ -212,21 +226,19 @@ private fun SecurityStatusRow(
     icon: androidx.compose.ui.graphics.vector.ImageVector,
     title: String,
     subtitle: String,
-    status: SecurityStatus
+    status: SecurityStatus,
 ) {
+    val statusColor = status.color()
+
     Row(
         modifier = Modifier.fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Icon(
             imageVector = icon,
             contentDescription = null,
-            tint = when (status) {
-                SecurityStatus.ACTIVE -> AppColors.Success
-                SecurityStatus.WARNING -> AppColors.Error
-                SecurityStatus.UNAVAILABLE -> AppColors.Gray
-            },
-            modifier = Modifier.size(24.dp)
+            tint = statusColor,
+            modifier = Modifier.size(24.dp),
         )
         Spacer(modifier = Modifier.width(12.dp))
         Column(modifier = Modifier.weight(1f)) {
@@ -234,37 +246,42 @@ private fun SecurityStatusRow(
             Text(subtitle, fontSize = 12.sp, color = AppColors.Gray)
         }
         Box(
-            modifier = Modifier
-                .background(
-                    color = when (status) {
-                        SecurityStatus.ACTIVE -> AppColors.Success.copy(alpha = 0.1f)
-                        SecurityStatus.WARNING -> AppColors.Error.copy(alpha = 0.1f)
-                        SecurityStatus.UNAVAILABLE -> AppColors.Gray.copy(alpha = 0.1f)
-                    },
-                    shape = RoundedCornerShape(4.dp)
-                )
-                .padding(horizontal = 8.dp, vertical = 4.dp)
+            modifier =
+                Modifier
+                    .background(
+                        color = status.backgroundColor(),
+                        shape = RoundedCornerShape(4.dp),
+                    )
+                    .padding(horizontal = 8.dp, vertical = 4.dp),
         ) {
             Text(
-                text = when (status) {
-                    SecurityStatus.ACTIVE -> stringResource(R.string.security_status_active)
-                    SecurityStatus.WARNING -> stringResource(R.string.security_status_warning)
-                    SecurityStatus.UNAVAILABLE -> stringResource(R.string.security_status_na)
-                },
+                text = stringResource(status.labelResId()),
                 fontSize = 10.sp,
                 fontWeight = FontWeight.Medium,
-                color = when (status) {
-                    SecurityStatus.ACTIVE -> AppColors.Success
-                    SecurityStatus.WARNING -> AppColors.Error
-                    SecurityStatus.UNAVAILABLE -> AppColors.Gray
-                }
+                color = statusColor,
             )
         }
     }
 }
 
+private fun SecurityStatus.color() =
+    when (this) {
+        SecurityStatus.ACTIVE -> AppColors.Success
+        SecurityStatus.WARNING -> AppColors.Error
+        SecurityStatus.UNAVAILABLE -> AppColors.Gray
+    }
+
+private fun SecurityStatus.backgroundColor() = color().copy(alpha = 0.1f)
+
+private fun SecurityStatus.labelResId() =
+    when (this) {
+        SecurityStatus.ACTIVE -> R.string.security_status_active
+        SecurityStatus.WARNING -> R.string.security_status_warning
+        SecurityStatus.UNAVAILABLE -> R.string.security_status_na
+    }
+
 enum class SecurityStatus {
     ACTIVE,
     WARNING,
-    UNAVAILABLE
+    UNAVAILABLE,
 }

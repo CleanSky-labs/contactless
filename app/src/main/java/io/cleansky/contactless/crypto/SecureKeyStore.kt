@@ -14,27 +14,22 @@ import javax.crypto.spec.GCMParameterSpec
 /**
  * Almacenamiento seguro usando Android Keystore.
  *
- * Características:
  * - Claves almacenadas en hardware (TEE/StrongBox si disponible)
- * - Cifrado AES-256-GCM
  * - Claves no exportables
- * - Opcionalmente requiere autenticación del usuario
  */
 class SecureKeyStore(private val context: Context) {
-
     companion object {
         private const val KEYSTORE_PROVIDER = "AndroidKeyStore"
         private const val KEY_ALIAS = "contactless_pay_master_key"
         private const val AES_MODE = "AES/GCM/NoPadding"
         private const val GCM_TAG_LENGTH = 128
         private const val GCM_IV_LENGTH = 12
-
-        // Prefijo para datos cifrados: IV (12 bytes) + datos cifrados
     }
 
-    private val keyStore: KeyStore = KeyStore.getInstance(KEYSTORE_PROVIDER).apply {
-        load(null)
-    }
+    private val keyStore: KeyStore =
+        KeyStore.getInstance(KEYSTORE_PROVIDER).apply {
+            load(null)
+        }
 
     /**
      * Verifica si el dispositivo soporta StrongBox (hardware security module)
@@ -48,30 +43,26 @@ class SecureKeyStore(private val context: Context) {
     }
 
     /**
-     * Verifica si hay una clave maestra creada
      */
     fun hasMasterKey(): Boolean {
         return keyStore.containsAlias(KEY_ALIAS)
     }
 
     /**
-     * Crea la clave maestra en el Keystore.
-     * Esta clave NUNCA sale del hardware seguro.
      *
-     * @param requireUserAuth Si true, requiere biometría para usar la clave
-     * @param authValiditySeconds Segundos que la autenticación es válida (0 = cada uso)
      */
     fun createMasterKey(
         requireUserAuth: Boolean = false,
-        authValiditySeconds: Int = 0
+        authValiditySeconds: Int = 0,
     ): Boolean {
         if (hasMasterKey()) return true
 
         return try {
-            val keyGenerator = KeyGenerator.getInstance(
-                KeyProperties.KEY_ALGORITHM_AES,
-                KEYSTORE_PROVIDER
-            )
+            val keyGenerator =
+                KeyGenerator.getInstance(
+                    KeyProperties.KEY_ALGORITHM_AES,
+                    KEYSTORE_PROVIDER,
+                )
             val strongBoxSpec = buildKeyGenSpec(requireUserAuth, authValiditySeconds, useStrongBox = true)
             val fallbackSpec = buildKeyGenSpec(requireUserAuth, authValiditySeconds, useStrongBox = false)
             generateKeyWithFallback(keyGenerator, strongBoxSpec, fallbackSpec)
@@ -85,11 +76,11 @@ class SecureKeyStore(private val context: Context) {
     private fun buildKeyGenSpec(
         requireUserAuth: Boolean,
         authValiditySeconds: Int,
-        useStrongBox: Boolean
+        useStrongBox: Boolean,
     ): KeyGenParameterSpec {
         return KeyGenParameterSpec.Builder(
             KEY_ALIAS,
-            KeyProperties.PURPOSE_ENCRYPT or KeyProperties.PURPOSE_DECRYPT
+            KeyProperties.PURPOSE_ENCRYPT or KeyProperties.PURPOSE_DECRYPT,
         ).apply {
             setBlockModes(KeyProperties.BLOCK_MODE_GCM)
             setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
@@ -105,14 +96,14 @@ class SecureKeyStore(private val context: Context) {
 
     private fun KeyGenParameterSpec.Builder.applyAuthentication(
         requireUserAuth: Boolean,
-        authValiditySeconds: Int
+        authValiditySeconds: Int,
     ) {
         if (!requireUserAuth) return
         setUserAuthenticationRequired(true)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             setUserAuthenticationParameters(
                 authValiditySeconds,
-                KeyProperties.AUTH_BIOMETRIC_STRONG or KeyProperties.AUTH_DEVICE_CREDENTIAL
+                KeyProperties.AUTH_BIOMETRIC_STRONG or KeyProperties.AUTH_DEVICE_CREDENTIAL,
             )
         } else {
             @Suppress("DEPRECATION")
@@ -123,7 +114,7 @@ class SecureKeyStore(private val context: Context) {
     private fun generateKeyWithFallback(
         keyGenerator: KeyGenerator,
         preferred: KeyGenParameterSpec,
-        fallback: KeyGenParameterSpec
+        fallback: KeyGenParameterSpec,
     ) {
         try {
             keyGenerator.init(preferred)
@@ -138,7 +129,6 @@ class SecureKeyStore(private val context: Context) {
     }
 
     /**
-     * Cifra datos usando la clave maestra del Keystore.
      * Retorna: IV (12 bytes) + datos cifrados, todo en Base64
      */
     fun encrypt(plaintext: ByteArray): String? {
@@ -163,7 +153,6 @@ class SecureKeyStore(private val context: Context) {
     }
 
     /**
-     * Descifra datos usando la clave maestra del Keystore.
      * Espera: IV (12 bytes) + datos cifrados, todo en Base64
      */
     fun decrypt(encryptedBase64: String): ByteArray? {
@@ -191,21 +180,18 @@ class SecureKeyStore(private val context: Context) {
     }
 
     /**
-     * Cifra un string (útil para claves privadas)
      */
     fun encryptString(plaintext: String): String? {
         return encrypt(plaintext.toByteArray(Charsets.UTF_8))
     }
 
     /**
-     * Descifra a string
      */
     fun decryptString(encryptedBase64: String): String? {
         return decrypt(encryptedBase64)?.toString(Charsets.UTF_8)
     }
 
     /**
-     * Elimina la clave maestra (CUIDADO: los datos cifrados serán irrecuperables)
      */
     fun deleteMasterKey() {
         try {

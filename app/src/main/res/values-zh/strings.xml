@@ -345,4 +345,28 @@
     <string name="receive_only_no_escrow_desc">在设置中配置 escrow 地址和 API key</string>
     <string name="receive_only_security_notice">此设备上无私钥。被盗也安全。</string>
     <string name="receive_only_api_key_required">Relayer 执行需要 API key</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">账户抽象错误</string>
+        <string name="error_api_key_required">需要 API 密钥</string>
+        <string name="error_insufficient_time_to_sign">签名时间不足</string>
+        <string name="error_invalid_request">无效请求</string>
+        <string name="error_no_balance_to_spend">没有可用余额可支出</string>
+        <string name="error_paymaster_not_configured">Paymaster 未配置</string>
+        <string name="error_refund_amount_invalid">退款金额必须大于 0</string>
+        <string name="error_relayer_generic">Relayer 错误</string>
+        <string name="error_relayer_not_configured">Relayer 未配置</string>
+        <string name="error_replay_detected">检测到重放：nonce 已被使用</string>
+        <string name="error_request_expired">请求已过期</string>
+        <string name="error_status_check">状态检查错误</string>
+        <string name="error_token_not_allowed">不允许的代币</string>
+        <string name="error_transaction_failed">交易失败</string>
+        <string name="settings_advanced_hint">启用高级模式以配置隐私、安全、网络和代币。</string>
+        <string name="settings_export_requires_wallet">导出私钥前请先创建或导入钱包。</string>
+        <string name="settings_group_general">通用</string>
+        <string name="settings_group_network_tokens">网络与代币</string>
+        <string name="settings_group_payments">支付</string>
+        <string name="settings_group_privacy_security">隐私与安全</string>
+        <string name="settings_key_management">密钥管理</string>
+        <string name="settings_key_management_desc">敏感的密钥操作集中在这里。请将私钥离线保存，且不要与任何人分享。</string>
 </resources>

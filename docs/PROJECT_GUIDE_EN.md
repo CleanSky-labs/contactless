@@ -26,8 +26,8 @@ Core principle: private keys never leave the device.
 ## 3) Tech stack
 
 - Kotlin + Jetpack Compose
-- Android SDK 34 / minSdk 26
-- Gradle (AGP 8.4.x)
+- Android SDK 35 / minSdk 26
+- Gradle (AGP 8.9.1, Gradle 8.11.1)
 - Web3j + Gson + Jackson CBOR
 - DataStore for local persistence
 
@@ -92,11 +92,20 @@ docker exec cleansky-dev-cache ./gradlew testDebugUnitTest --no-daemon --console
 
 - Unit tests: `testDebugUnitTest`
 - Android lint: `:app:lintDebug`
+- Coverage verification: `:app:jacocoCoverageVerification`
+- Structural threshold scan (LOC/file and LOC/function): `./scripts/quality_thresholds.sh`
+
+Coverage gate policy (non-vanity, risk-based):
+- UI/Compose layers are excluded from the JaCoCo gate.
+- External-network adapter classes with low unit-test ROI are excluded from this unit gate:
+  `PrivacyPaymentExecutor`, `StealthWalletService`, `RefundService`.
+- Unit-testable global baseline: line coverage `>= 73%`.
+- Critical stable modules (`model*`, `util*`): line coverage `>= 85%`.
 
 Current quality baseline in this branch:
 
 - Lint errors: `0`
-- Lint warnings: `0` (with `GradleDependency` lint check intentionally disabled until AGP/compileSdk migration)
+- Lint warnings: `0` (including `GradleDependency`)
 - Unit tests: passing
 
 ## 7) Key documentation
@@ -105,8 +114,9 @@ Current quality baseline in this branch:
 - Motivation and threat model: `docs/MOTIVATION.md`
 - Market analysis (EN): `docs/MARKET_ANALYSIS_EN.md`
 - Language coverage (EN): `docs/LANGUAGES_REPORT_EN.md`
+- Code quality thresholds (EN): `docs/CODE_QUALITY_THRESHOLDS_EN.md`
 
 ## 8) Notes
 
-- This project currently targets AGP/SDK constraints compatible with `compileSdk 34`.
-- Dependency upgrades beyond current pins may require a coordinated AGP + compileSdk migration.
+- Toolchain migration completed to `AGP 8.9.1` + `Gradle 8.11.1` with `compileSdk/targetSdk 35`.
+- Dependency upgrades can be done incrementally while preserving passing tests and lint checks.

@@ -41,7 +41,9 @@ enum class PaymentState {
      * Transaction failed or timed out.
      * Terminal state.
      */
-    TX_FAILED;
+    TX_FAILED,
+
+    ;
 
     fun isTerminal(): Boolean = this == TX_CONFIRMED || this == TX_FAILED
 
@@ -72,7 +74,7 @@ data class PaymentStateHolder(
     val request: PaymentRequest? = null,
     val signedTx: SignedTransaction? = null,
     val txHash: String? = null,
-    val error: String? = null
+    val error: String? = null,
 ) {
     fun transition(newState: PaymentState): PaymentStateHolder {
         require(state.canTransitionTo(newState)) {

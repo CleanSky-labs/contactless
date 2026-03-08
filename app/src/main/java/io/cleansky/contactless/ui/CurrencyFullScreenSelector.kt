@@ -35,14 +35,16 @@ fun CurrencyFullScreenSelector(
     selectedUnderlying: UnderlyingCurrency?,
     selectedToken: Token?,
     onTokenSelected: (Token, UnderlyingCurrency) -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
 ) {
-    val tokensByUnderlying = remember(chainId) {
-        DefaultTokens.getTokensByUnderlying(chainId)
-    }
-    val availableUnderlyings = remember(chainId) {
-        DefaultTokens.getAvailableUnderlyings(chainId)
-    }
+    val tokensByUnderlying =
+        remember(chainId) {
+            DefaultTokens.getTokensByUnderlying(chainId)
+        }
+    val availableUnderlyings =
+        remember(chainId) {
+            DefaultTokens.getAvailableUnderlyings(chainId)
+        }
 
     var expandedUnderlying by remember {
         mutableStateOf(selectedUnderlying ?: availableUnderlyings.firstOrNull())
@@ -51,71 +53,73 @@ fun CurrencyFullScreenSelector(
     // Full screen dialog
     Dialog(
         onDismissRequest = onDismiss,
-        properties = DialogProperties(usePlatformDefaultWidth = false)
+        properties = DialogProperties(usePlatformDefaultWidth = false),
     ) {
         Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(Color.White)
+            modifier =
+                Modifier
+                    .fillMaxSize()
+                    .background(Color.White),
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
-            // Top bar
-            TopAppBar(
-                title = {
-                    Text(
-                        stringResource(R.string.collect_select_currency),
-                        fontWeight = FontWeight.Medium
-                    )
-                },
-                navigationIcon = {
-                    IconButton(onClick = onDismiss) {
-                        Icon(Icons.Default.Close, contentDescription = stringResource(R.string.close))
-                    }
-                },
-                backgroundColor = Color.White,
-                elevation = 0.dp
-            )
-
-            Divider()
-
-            // Currency list
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(horizontal = 16.dp)
-            ) {
-                availableUnderlyings.forEach { underlying ->
-                    val tokens = tokensByUnderlying[underlying] ?: emptyList()
-                    val isExpanded = expandedUnderlying == underlying
-
-                    // Underlying header
-                    item(key = "header_${underlying.code}") {
-                        UnderlyingRow(
-                            underlying = underlying,
-                            isExpanded = isExpanded,
-                            isSelected = selectedUnderlying == underlying,
-                            tokenCount = tokens.size,
-                            onClick = {
-                                expandedUnderlying = if (isExpanded) null else underlying
-                            }
+                // Top bar
+                TopAppBar(
+                    title = {
+                        Text(
+                            stringResource(R.string.collect_select_currency),
+                            fontWeight = FontWeight.Medium,
                         )
-                    }
+                    },
+                    navigationIcon = {
+                        IconButton(onClick = onDismiss) {
+                            Icon(Icons.Default.Close, contentDescription = stringResource(R.string.close))
+                        }
+                    },
+                    backgroundColor = Color.White,
+                    elevation = 0.dp,
+                )
 
-                    // Tokens (if expanded)
-                    if (isExpanded) {
-                        tokens.forEach { token ->
-                            item(key = "token_${token.address}") {
-                                TokenRow(
-                                    token = token,
-                                    isSelected = selectedToken?.address == token.address,
-                                    onClick = { onTokenSelected(token, underlying) }
-                                )
+                Divider()
+
+                // Currency list
+                LazyColumn(
+                    modifier =
+                        Modifier
+                            .fillMaxSize()
+                            .padding(horizontal = 16.dp),
+                ) {
+                    availableUnderlyings.forEach { underlying ->
+                        val tokens = tokensByUnderlying[underlying] ?: emptyList()
+                        val isExpanded = expandedUnderlying == underlying
+
+                        // Underlying header
+                        item(key = "header_${underlying.code}") {
+                            UnderlyingRow(
+                                underlying = underlying,
+                                isExpanded = isExpanded,
+                                isSelected = selectedUnderlying == underlying,
+                                tokenCount = tokens.size,
+                                onClick = {
+                                    expandedUnderlying = if (isExpanded) null else underlying
+                                },
+                            )
+                        }
+
+                        // Tokens (if expanded)
+                        if (isExpanded) {
+                            tokens.forEach { token ->
+                                item(key = "token_${token.address}") {
+                                    TokenRow(
+                                        token = token,
+                                        isSelected = selectedToken?.address == token.address,
+                                        onClick = { onTokenSelected(token, underlying) },
+                                    )
+                                }
                             }
                         }
                     }
                 }
             }
-        }
         }
     }
 }
@@ -126,31 +130,33 @@ private fun UnderlyingRow(
     isExpanded: Boolean,
     isSelected: Boolean,
     tokenCount: Int,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(12.dp))
-            .clickable(onClick = onClick)
-            .padding(vertical = 16.dp),
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(12.dp))
+                .clickable(onClick = onClick)
+                .padding(vertical = 16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             // Symbol circle
             Box(
-                modifier = Modifier
-                    .size(44.dp)
-                    .clip(RoundedCornerShape(22.dp))
-                    .background(getUnderlyingColor(underlying).copy(alpha = 0.12f)),
-                contentAlignment = Alignment.Center
+                modifier =
+                    Modifier
+                        .size(44.dp)
+                        .clip(RoundedCornerShape(22.dp))
+                        .background(getUnderlyingColor(underlying).copy(alpha = 0.12f)),
+                contentAlignment = Alignment.Center,
             ) {
                 Text(
                     text = getUnderlyingSymbol(underlying),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = getUnderlyingColor(underlying)
+                    color = getUnderlyingColor(underlying),
                 )
             }
 
@@ -161,12 +167,12 @@ private fun UnderlyingRow(
                     text = underlying.displayName,
                     fontSize = 17.sp,
                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
-                    color = AppColors.Black
+                    color = AppColors.Black,
                 )
                 Text(
                     text = "$tokenCount tokens",
                     fontSize = 13.sp,
-                    color = AppColors.Gray
+                    color = AppColors.Gray,
                 )
             }
         }
@@ -174,7 +180,7 @@ private fun UnderlyingRow(
         Icon(
             imageVector = if (isExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
             contentDescription = null,
-            tint = AppColors.Gray
+            tint = AppColors.Gray,
         )
     }
 }
@@ -183,30 +189,31 @@ private fun UnderlyingRow(
 private fun TokenRow(
     token: Token,
     isSelected: Boolean,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(start = 60.dp)
-            .clip(RoundedCornerShape(8.dp))
-            .background(if (isSelected) AppColors.CollectPrimary.copy(alpha = 0.08f) else Color.Transparent)
-            .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 14.dp),
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .padding(start = 60.dp)
+                .clip(RoundedCornerShape(8.dp))
+                .background(if (isSelected) AppColors.CollectPrimary.copy(alpha = 0.08f) else Color.Transparent)
+                .clickable(onClick = onClick)
+                .padding(horizontal = 16.dp, vertical = 14.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Column {
             Text(
                 text = token.symbol,
                 fontSize = 16.sp,
                 fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                color = if (isSelected) AppColors.CollectPrimary else AppColors.Black
+                color = if (isSelected) AppColors.CollectPrimary else AppColors.Black,
             )
             Text(
                 text = token.name,
                 fontSize = 13.sp,
-                color = AppColors.Gray
+                color = AppColors.Gray,
             )
         }
 
@@ -215,7 +222,7 @@ private fun TokenRow(
                 Icons.Default.Check,
                 contentDescription = null,
                 tint = AppColors.CollectPrimary,
-                modifier = Modifier.size(20.dp)
+                modifier = Modifier.size(20.dp),
             )
         }
     }

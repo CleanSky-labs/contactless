@@ -18,15 +18,15 @@ import java.util.UUID
 private val Context.transactionDataStore: DataStore<Preferences> by preferencesDataStore(name = "transactions")
 
 class TransactionRepository(private val context: Context) {
-
     companion object {
         private val TRANSACTIONS_KEY = stringPreferencesKey("transactions_list")
     }
 
-    val transactionsFlow: Flow<List<Transaction>> = context.transactionDataStore.data.map { prefs ->
-        val json = prefs[TRANSACTIONS_KEY] ?: "[]"
-        Transaction.listFromJson(json).sortedByDescending { it.timestamp }
-    }
+    val transactionsFlow: Flow<List<Transaction>> =
+        context.transactionDataStore.data.map { prefs ->
+            val json = prefs[TRANSACTIONS_KEY] ?: "[]"
+            Transaction.listFromJson(json).sortedByDescending { it.timestamp }
+        }
 
     suspend fun getTransactions(): List<Transaction> {
         return transactionsFlow.first()
@@ -67,7 +67,6 @@ class TransactionRepository(private val context: Context) {
         }
     }
 
-    // Crear transacción de pago recibido (para merchant)
     suspend fun recordPaymentReceived(
         txHash: String,
         amount: String,
@@ -75,26 +74,26 @@ class TransactionRepository(private val context: Context) {
         chainId: Long,
         payerAddress: String,
         merchantId: String,
-        invoiceId: String
+        invoiceId: String,
     ): Transaction {
-        val tx = Transaction(
-            id = UUID.randomUUID().toString(),
-            txHash = txHash,
-            type = TransactionType.PAYMENT_RECEIVED,
-            status = TransactionStatus.CONFIRMED,
-            amount = amount,
-            asset = asset,
-            chainId = chainId,
-            counterparty = payerAddress,
-            merchantId = merchantId,
-            invoiceId = invoiceId,
-            timestamp = System.currentTimeMillis()
-        )
+        val tx =
+            Transaction(
+                id = UUID.randomUUID().toString(),
+                txHash = txHash,
+                type = TransactionType.PAYMENT_RECEIVED,
+                status = TransactionStatus.CONFIRMED,
+                amount = amount,
+                asset = asset,
+                chainId = chainId,
+                counterparty = payerAddress,
+                merchantId = merchantId,
+                invoiceId = invoiceId,
+                timestamp = System.currentTimeMillis(),
+            )
         addTransaction(tx)
         return tx
     }
 
-    // Crear transacción de pago enviado (para payer)
     suspend fun recordPaymentSent(
         txHash: String,
         amount: String,
@@ -102,59 +101,57 @@ class TransactionRepository(private val context: Context) {
         chainId: Long,
         merchantAddress: String,
         merchantId: String,
-        invoiceId: String
+        invoiceId: String,
     ): Transaction {
-        val tx = Transaction(
-            id = UUID.randomUUID().toString(),
-            txHash = txHash,
-            type = TransactionType.PAYMENT_SENT,
-            status = TransactionStatus.CONFIRMED,
-            amount = amount,
-            asset = asset,
-            chainId = chainId,
-            counterparty = merchantAddress,
-            merchantId = merchantId,
-            invoiceId = invoiceId,
-            timestamp = System.currentTimeMillis()
-        )
+        val tx =
+            Transaction(
+                id = UUID.randomUUID().toString(),
+                txHash = txHash,
+                type = TransactionType.PAYMENT_SENT,
+                status = TransactionStatus.CONFIRMED,
+                amount = amount,
+                asset = asset,
+                chainId = chainId,
+                counterparty = merchantAddress,
+                merchantId = merchantId,
+                invoiceId = invoiceId,
+                timestamp = System.currentTimeMillis(),
+            )
         addTransaction(tx)
         return tx
     }
 
-    // Registrar devolución enviada
     suspend fun recordRefundSent(
         originalTxId: String,
         refundTxHash: String,
-        refundAmount: BigInteger
+        refundAmount: BigInteger,
     ) {
         val originalTx = getTransaction(originalTxId) ?: return
         val updatedTx = originalTx.withRefund(refundAmount, refundTxHash)
         updateTransaction(updatedTx)
 
-        // También crear un registro de la devolución
-        val refundTx = Transaction(
-            id = UUID.randomUUID().toString(),
-            txHash = refundTxHash,
-            type = TransactionType.REFUND_SENT,
-            status = TransactionStatus.CONFIRMED,
-            amount = refundAmount.toString(),
-            asset = originalTx.asset,
-            chainId = originalTx.chainId,
-            counterparty = originalTx.counterparty,
-            merchantId = originalTx.merchantId,
-            invoiceId = originalTx.invoiceId,
-            timestamp = System.currentTimeMillis(),
-            note = "Devolucion de tx ${originalTx.txHash.take(10)}..."
-        )
+        val refundTx =
+            Transaction(
+                id = UUID.randomUUID().toString(),
+                txHash = refundTxHash,
+                type = TransactionType.REFUND_SENT,
+                status = TransactionStatus.CONFIRMED,
+                amount = refundAmount.toString(),
+                asset = originalTx.asset,
+                chainId = originalTx.chainId,
+                counterparty = originalTx.counterparty,
+                merchantId = originalTx.merchantId,
+                invoiceId = originalTx.invoiceId,
+                timestamp = System.currentTimeMillis(),
+                note = "Devolucion de tx ${originalTx.txHash.take(10)}...",
+            )
         addTransaction(refundTx)
     }
 
-    // Obtener transacciones que pueden ser devueltas
     suspend fun getRefundableTransactions(): List<Transaction> {
         return getTransactions().filter { it.canRefund() }
     }
 
-    // Estadísticas
     suspend fun getTotalReceived(chainId: Long? = null): BigInteger {
         return getTransactions()
             .filter { it.type == TransactionType.PAYMENT_RECEIVED }

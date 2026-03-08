@@ -1,16 +1,19 @@
 plugins {
     id "com.android.application"
     id "org.jetbrains.kotlin.android"
+    id "io.gitlab.arturbosch.detekt" version "1.23.8"
+    id "org.jlleitschuh.gradle.ktlint" version "12.1.1"
+    id "jacoco"
 }
 
 android {
     namespace "io.cleansky.contactless"
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "io.cleansky.contactless"
         minSdk 26
-        targetSdk 34
+        targetSdk 35
         versionCode 5
         versionName "0.5"
 
@@ -53,10 +56,26 @@ android {
         }
     }
 
-    lint {
-        // Dependency upgrades beyond these pins require AGP/compileSdk migration.
-        disable 'GradleDependency'
-    }
+}
+
+detekt {
+    toolVersion = "1.23.8"
+    buildUponDefaultConfig = false
+    allRules = false
+    config.setFrom(files("$rootDir/config/detekt/detekt.yml"))
+    baseline = file("$rootDir/config/detekt/baseline.xml")
+    parallel = true
+}
+
+ktlint {
+    android = true
+    outputToConsole = true
+    baseline = file("$rootDir/config/ktlint/baseline.xml")
+    ignoreFailures = false
+}
+
+jacoco {
+    toolVersion = "0.8.12"
 }
 
 dependencies {
@@ -104,4 +123,148 @@ dependencies {
 
     // Unit Testing
     testImplementation "junit:junit:4.13.2"
+}
+
+tasks.withType(Test).configureEach {
+    useJUnit()
+    maxParallelForks = 1
+}
+
+tasks.register("jacocoTestReport", JacocoReport) {
+    dependsOn("testDebugUnitTest")
+
+    reports {
+        xml.required = true
+        html.required = true
+    }
+
+    def fileFilter = [
+        "**/R.class",
+        "**/R\$*.class",
+        "**/BuildConfig.*",
+        "**/Manifest*.*",
+        "**/*Test*.*",
+        "android/**/*.*",
+        "**/ui/**",
+        "**/*Screen*.*",
+        "**/AppScaffold*.*",
+        "**/SettingsContent*.*",
+        "**/SettingsSectionsAndSheets*.*",
+        "**/SettingsVisualSections*.*",
+        "**/SettingsWalletSections*.*",
+        "**/SettingsDialogSheets*.*",
+        "**/model/defaulttokens/RegionalCurrencyResolver*.*",
+        "**/MainActivity*.*",
+        "**/ComposableSingletons*.*",
+        "**/nfc/**",
+        "**/data/**",
+        "**/service/PaymentFeedback*.*",
+        "**/service/PrivacyPaymentExecutor*.*",
+        "**/service/StealthWalletService*.*",
+        "**/service/RefundService*.*",
+        "**/crypto/BiometricAuth*.*",
+        "**/crypto/SecureKeyStore*.*"
+    ]
+
+    def debugTree = fileTree(
+        dir: "$buildDir/tmp/kotlin-classes/debug",
+        excludes: fileFilter
+    )
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories.setFrom(files(mainSrc))
+    classDirectories.setFrom(files(debugTree))
+    executionData.setFrom(fileTree(dir: buildDir, includes: [
+        "jacoco/testDebugUnitTest.exec",
+        "outputs/unit_test_code_coverage/debugUnitTest/testDebugUnitTest.exec"
+    ]))
+}
+
+tasks.register("jacocoCoverageVerification", JacocoCoverageVerification) {
+    dependsOn("jacocoTestReport")
+
+    def fileFilter = [
+        "**/R.class",
+        "**/R\$*.class",
+        "**/BuildConfig.*",
+        "**/Manifest*.*",
+        "**/*Test*.*",
+        "android/**/*.*",
+        "**/ui/**",
+        "**/*Screen*.*",
+        "**/AppScaffold*.*",
+        "**/SettingsContent*.*",
+        "**/SettingsSectionsAndSheets*.*",
+        "**/SettingsVisualSections*.*",
+        "**/SettingsWalletSections*.*",
+        "**/SettingsDialogSheets*.*",
+        "**/model/defaulttokens/RegionalCurrencyResolver*.*",
+        "**/MainActivity*.*",
+        "**/ComposableSingletons*.*",
+        "**/nfc/**",
+        "**/data/**",
+        "**/service/PaymentFeedback*.*",
+        "**/service/PrivacyPaymentExecutor*.*",
+        "**/service/StealthWalletService*.*",
+        "**/service/RefundService*.*",
+        "**/crypto/BiometricAuth*.*",
+        "**/crypto/SecureKeyStore*.*"
+    ]
+
+    def debugTree = fileTree(
+        dir: "$buildDir/tmp/kotlin-classes/debug",
+        excludes: fileFilter
+    )
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories.setFrom(files(mainSrc))
+    classDirectories.setFrom(files(debugTree))
+    executionData.setFrom(fileTree(dir: buildDir, includes: [
+        "jacoco/testDebugUnitTest.exec",
+        "outputs/unit_test_code_coverage/debugUnitTest/testDebugUnitTest.exec"
+    ]))
+
+    violationRules {
+        // Base gate for the non-UI codebase (UI packages are excluded above).
+        rule {
+            limit {
+                counter = "LINE"
+                value = "COVEREDRATIO"
+                minimum = 0.73
+            }
+        }
+
+        // Stricter gate for stable, high-value domain modules.
+        rule {
+            element = "PACKAGE"
+            includes = [
+                "io.cleansky.contactless.model*",
+                "io.cleansky.contactless.util*"
+            ]
+            limit {
+                counter = "LINE"
+                value = "COVEREDRATIO"
+                minimum = 0.85
+            }
+        }
+    }
+}
+
+tasks.register("qualityCheck") {
+    group = "verification"
+    description = "Runs static quality checks (style + static analysis + lint)."
+    dependsOn(
+        "ktlintCheck",
+        "detekt",
+        "lintDebug"
+    )
+}
+
+tasks.register("qualityCheckCoverage") {
+    group = "verification"
+    description = "Runs unit tests and coverage verification."
+    dependsOn(
+        "testDebugUnitTest",
+        "jacocoCoverageVerification"
+    )
 }

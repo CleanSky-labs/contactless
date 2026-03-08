@@ -4,7 +4,6 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class PaymentStateTest {
-
     // --- isTerminal() tests ---
 
     @Test
@@ -109,10 +108,11 @@ class PaymentStateTest {
 
     @Test
     fun `transition succeeds for valid state change`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.REQUEST_CREATED
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.REQUEST_CREATED,
+            )
         val next = holder.transition(PaymentState.REQUEST_SENT)
         assertEquals(PaymentState.REQUEST_SENT, next.state)
         assertEquals("inv-1", next.invoiceId)
@@ -120,19 +120,21 @@ class PaymentStateTest {
 
     @Test(expected = IllegalArgumentException::class)
     fun `transition throws for invalid state change`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.REQUEST_CREATED
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.REQUEST_CREATED,
+            )
         holder.transition(PaymentState.TX_CONFIRMED)
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun `transition from terminal state throws`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.TX_CONFIRMED
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.TX_CONFIRMED,
+            )
         holder.transition(PaymentState.TX_FAILED)
     }
 
@@ -140,61 +142,68 @@ class PaymentStateTest {
 
     @Test
     fun `AUTH_RECEIVED is timed out after 30 seconds`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.AUTH_RECEIVED,
-            enteredAt = System.currentTimeMillis() - 31_000L
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.AUTH_RECEIVED,
+                enteredAt = System.currentTimeMillis() - 31_000L,
+            )
         assertTrue(holder.isTimedOut())
     }
 
     @Test
     fun `AUTH_RECEIVED is not timed out within 30 seconds`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.AUTH_RECEIVED,
-            enteredAt = System.currentTimeMillis() - 10_000L
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.AUTH_RECEIVED,
+                enteredAt = System.currentTimeMillis() - 10_000L,
+            )
         assertFalse(holder.isTimedOut())
     }
 
     @Test
     fun `TX_BROADCAST is timed out after 5 minutes`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.TX_BROADCAST,
-            enteredAt = System.currentTimeMillis() - 301_000L
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.TX_BROADCAST,
+                enteredAt = System.currentTimeMillis() - 301_000L,
+            )
         assertTrue(holder.isTimedOut())
     }
 
     @Test
     fun `TX_BROADCAST is not timed out within 5 minutes`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.TX_BROADCAST,
-            enteredAt = System.currentTimeMillis() - 60_000L
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.TX_BROADCAST,
+                enteredAt = System.currentTimeMillis() - 60_000L,
+            )
         assertFalse(holder.isTimedOut())
     }
 
     @Test
     fun `REQUEST_CREATED never times out`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.REQUEST_CREATED,
-            enteredAt = 0L // Very old timestamp
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.REQUEST_CREATED,
+                // Very old timestamp
+                enteredAt = 0L,
+            )
         assertFalse(holder.isTimedOut())
     }
 
     @Test
     fun `TX_CONFIRMED never times out`() {
-        val holder = PaymentStateHolder(
-            invoiceId = "inv-1",
-            state = PaymentState.TX_CONFIRMED,
-            enteredAt = 0L
-        )
+        val holder =
+            PaymentStateHolder(
+                invoiceId = "inv-1",
+                state = PaymentState.TX_CONFIRMED,
+                enteredAt = 0L,
+            )
         assertFalse(holder.isTimedOut())
     }
 

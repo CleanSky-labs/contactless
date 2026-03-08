@@ -10,18 +10,17 @@ import io.cleansky.contactless.model.Contact
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import org.json.JSONArray
-import org.json.JSONObject
 
 private val Context.addressBookDataStore: DataStore<Preferences> by preferencesDataStore(name = "address_book")
 
 class AddressBookRepository(private val context: Context) {
-
     private val CONTACTS_KEY = stringPreferencesKey("contacts")
 
-    val contactsFlow: Flow<List<Contact>> = context.addressBookDataStore.data.map { prefs ->
-        val json = prefs[CONTACTS_KEY] ?: "[]"
-        parseContacts(json)
-    }
+    val contactsFlow: Flow<List<Contact>> =
+        context.addressBookDataStore.data.map { prefs ->
+            val json = prefs[CONTACTS_KEY] ?: "[]"
+            parseContacts(json)
+        }
 
     private fun parseContacts(json: String): List<Contact> {
         return try {
@@ -50,16 +49,21 @@ class AddressBookRepository(private val context: Context) {
         }
     }
 
-    suspend fun updateContact(address: String, name: String, note: String) {
+    suspend fun updateContact(
+        address: String,
+        name: String,
+        note: String,
+    ) {
         context.addressBookDataStore.edit { prefs ->
             val current = parseContacts(prefs[CONTACTS_KEY] ?: "[]")
-            val updated = current.map { contact ->
-                if (contact.address.equals(address, ignoreCase = true)) {
-                    contact.copy(name = name, note = note)
-                } else {
-                    contact
+            val updated =
+                current.map { contact ->
+                    if (contact.address.equals(address, ignoreCase = true)) {
+                        contact.copy(name = name, note = note)
+                    } else {
+                        contact
+                    }
                 }
-            }
             prefs[CONTACTS_KEY] = contactsToJson(updated)
         }
     }
@@ -67,13 +71,14 @@ class AddressBookRepository(private val context: Context) {
     suspend fun updateLastUsed(address: String) {
         context.addressBookDataStore.edit { prefs ->
             val current = parseContacts(prefs[CONTACTS_KEY] ?: "[]")
-            val updated = current.map { contact ->
-                if (contact.address.equals(address, ignoreCase = true)) {
-                    contact.copy(lastUsedAt = System.currentTimeMillis())
-                } else {
-                    contact
+            val updated =
+                current.map { contact ->
+                    if (contact.address.equals(address, ignoreCase = true)) {
+                        contact.copy(lastUsedAt = System.currentTimeMillis())
+                    } else {
+                        contact
+                    }
                 }
-            }
             prefs[CONTACTS_KEY] = contactsToJson(updated)
         }
     }

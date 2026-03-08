@@ -9,18 +9,18 @@ import org.web3j.crypto.Sign
 import java.math.BigInteger
 
 object TransactionSigner {
-
     // EIP-712 Domain Separator
     private const val EIP712_DOMAIN_TYPEHASH = "EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)"
     private const val DOMAIN_NAME = "PaymentEscrow"
     private const val DOMAIN_VERSION = "1"
 
     // Pay TypeHash
-    private const val PAY_TYPEHASH = "Pay(bytes32 merchantId,bytes32 invoiceId,address asset,uint256 amount,bytes32 nonce,uint64 expiry,address escrow,uint256 chainId)"
+    private const val PAY_TYPEHASH =
+        "Pay(bytes32 merchantId,bytes32 invoiceId,address asset,uint256 amount,bytes32 nonce,uint64 expiry,address escrow,uint256 chainId)"
 
     fun signPayment(
         request: PaymentRequest,
-        credentials: Credentials
+        credentials: Credentials,
     ): SignedTransaction {
         require(parseAmountOrNull(request.amount)?.let { it > BigInteger.ZERO } == true) {
             "Invalid amount for signing: ${request.amount}"
@@ -59,11 +59,14 @@ object TransactionSigner {
             signature = sigHex,
             stealthAddress = stealthAddress,
             ephemeralPubKey = ephemeralPubKey,
-            viewTag = viewTag
+            viewTag = viewTag,
         )
     }
 
-    private fun getDomainSeparator(chainId: Long, escrow: String): ByteArray {
+    private fun getDomainSeparator(
+        chainId: Long,
+        escrow: String,
+    ): ByteArray {
         val typeHash = keccak256(EIP712_DOMAIN_TYPEHASH.toByteArray())
         val nameHash = keccak256(DOMAIN_NAME.toByteArray())
         val versionHash = keccak256(DOMAIN_VERSION.toByteArray())
@@ -85,13 +88,17 @@ object TransactionSigner {
         val escrowBytes = addressToBytes32(request.escrow)
         val chainIdBytes = BigInteger.valueOf(request.chainId).toByteArray32()
 
-        val encoded = typeHash + merchantIdBytes + invoiceIdBytes + assetBytes +
+        val encoded =
+            typeHash + merchantIdBytes + invoiceIdBytes + assetBytes +
                 amountBytes + nonceBytes + expiryBytes + escrowBytes + chainIdBytes
 
         return keccak256(encoded)
     }
 
-    private fun getTypedDataHash(domainSeparator: ByteArray, structHash: ByteArray): ByteArray {
+    private fun getTypedDataHash(
+        domainSeparator: ByteArray,
+        structHash: ByteArray,
+    ): ByteArray {
         val prefix = byteArrayOf(0x19, 0x01)
         return keccak256(prefix + domainSeparator + structHash)
     }
@@ -114,10 +121,11 @@ object TransactionSigner {
     }
 
     private fun addressToBytes32(address: String): ByteArray {
-        val normalizedAddress = when {
-            address.equals("native", ignoreCase = true) || address.isBlank() -> Token.NATIVE_ADDRESS
-            else -> address
-        }
+        val normalizedAddress =
+            when {
+                address.equals("native", ignoreCase = true) || address.isBlank() -> Token.NATIVE_ADDRESS
+                else -> address
+            }
         val cleanAddress = normalizedAddress.removePrefix("0x")
         require(isValidHex(cleanAddress)) { "Invalid hex address: $address" }
         val bytes = hexToBytes(cleanAddress)

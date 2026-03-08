@@ -6,10 +6,10 @@ import org.web3j.crypto.Credentials
 import java.math.BigInteger
 
 class EphemeralAccountTest {
-
-    private val mainCredentials = Credentials.create(
-        "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5"
-    )
+    private val mainCredentials =
+        Credentials.create(
+            "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce036f0e6c58f6e8f7a66f5",
+        )
 
     @Test
     fun `deriveEphemeralAccount is deterministic for same index`() {
@@ -42,14 +42,15 @@ class EphemeralAccountTest {
     @Test
     fun `createPaymentUserOp native transfer sets deploy gas profile when not deployed`() {
         val account = EphemeralAccount.deriveEphemeralAccount(mainCredentials, paymentIndex = 7L)
-        val userOp = EphemeralAccount.createPaymentUserOp(
-            ephemeralAccount = account,
-            targetAddress = "0x1111111111111111111111111111111111111111",
-            tokenAddress = "0x0000000000000000000000000000000000000000",
-            amount = BigInteger("1000000"),
-            nonce = BigInteger.valueOf(5),
-            isDeployed = false
-        )
+        val userOp =
+            EphemeralAccount.createPaymentUserOp(
+                ephemeralAccount = account,
+                targetAddress = "0x1111111111111111111111111111111111111111",
+                tokenAddress = "0x0000000000000000000000000000000000000000",
+                amount = BigInteger("1000000"),
+                nonce = BigInteger.valueOf(5),
+                isDeployed = false,
+            )
 
         assertEquals(account.address, userOp.sender)
         assertEquals("0x5", userOp.nonce)
@@ -61,13 +62,14 @@ class EphemeralAccountTest {
     @Test
     fun `createPaymentUserOp erc20 transfer embeds transfer selector`() {
         val account = EphemeralAccount.deriveEphemeralAccount(mainCredentials, paymentIndex = 8L)
-        val userOp = EphemeralAccount.createPaymentUserOp(
-            ephemeralAccount = account,
-            targetAddress = "0x2222222222222222222222222222222222222222",
-            tokenAddress = "0x3333333333333333333333333333333333333333",
-            amount = BigInteger("42"),
-            isDeployed = true
-        )
+        val userOp =
+            EphemeralAccount.createPaymentUserOp(
+                ephemeralAccount = account,
+                targetAddress = "0x2222222222222222222222222222222222222222",
+                tokenAddress = "0x3333333333333333333333333333333333333333",
+                amount = BigInteger("42"),
+                isDeployed = true,
+            )
 
         assertEquals("0x", userOp.initCode)
         assertEquals("0x20000", userOp.verificationGasLimit)
@@ -78,12 +80,13 @@ class EphemeralAccountTest {
     @Test
     fun `signUserOperation creates 65-byte signature in hex`() {
         val account = EphemeralAccount.deriveEphemeralAccount(mainCredentials, paymentIndex = 77L)
-        val userOp = EphemeralAccount.createPaymentUserOp(
-            ephemeralAccount = account,
-            targetAddress = "0x4444444444444444444444444444444444444444",
-            tokenAddress = "native",
-            amount = BigInteger("1")
-        )
+        val userOp =
+            EphemeralAccount.createPaymentUserOp(
+                ephemeralAccount = account,
+                targetAddress = "0x4444444444444444444444444444444444444444",
+                tokenAddress = "native",
+                amount = BigInteger("1"),
+            )
 
         val signed = EphemeralAccount.signUserOperation(userOp, account.ownerCredentials, chainId = 84532L)
 
@@ -95,12 +98,13 @@ class EphemeralAccountTest {
     @Test
     fun `signUserOperation changes signature with different chainId`() {
         val account = EphemeralAccount.deriveEphemeralAccount(mainCredentials, paymentIndex = 88L)
-        val userOp = EphemeralAccount.createPaymentUserOp(
-            ephemeralAccount = account,
-            targetAddress = "0x5555555555555555555555555555555555555555",
-            tokenAddress = "native",
-            amount = BigInteger("10")
-        )
+        val userOp =
+            EphemeralAccount.createPaymentUserOp(
+                ephemeralAccount = account,
+                targetAddress = "0x5555555555555555555555555555555555555555",
+                tokenAddress = "native",
+                amount = BigInteger("10"),
+            )
 
         val signedOnBase = EphemeralAccount.signUserOperation(userOp, account.ownerCredentials, chainId = 84532L)
         val signedOnMainnet = EphemeralAccount.signUserOperation(userOp, account.ownerCredentials, chainId = 1L)

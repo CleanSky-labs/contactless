@@ -344,4 +344,28 @@
     <string name="receive_only_no_escrow_desc">Sanidi anwani ya escrow na API key katika Mipangilio</string>
     <string name="receive_only_security_notice">Hakuna ufunguo wa faragha kwenye kifaa hiki. Salama ukiibiwa.</string>
     <string name="receive_only_api_key_required">API key inahitajika kwa utekelezaji wa relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Hitilafu ya Account Abstraction</string>
+        <string name="error_api_key_required">API key inahitajika</string>
+        <string name="error_insufficient_time_to_sign">Muda hautoshi kusaini</string>
+        <string name="error_invalid_request">Ombi batili</string>
+        <string name="error_no_balance_to_spend">Hakuna salio la kutumia</string>
+        <string name="error_paymaster_not_configured">Paymaster haijasanidiwa</string>
+        <string name="error_refund_amount_invalid">Kiasi cha kurejesha lazima kiwe zaidi ya 0</string>
+        <string name="error_relayer_generic">Hitilafu ya relayer</string>
+        <string name="error_relayer_not_configured">Relayer haijasanidiwa</string>
+        <string name="error_replay_detected">Replay imegunduliwa: nonce tayari imetumika</string>
+        <string name="error_request_expired">Ombi limeisha muda</string>
+        <string name="error_status_check">Hitilafu ya kukagua hali</string>
+        <string name="error_token_not_allowed">Token hairuhusiwi</string>
+        <string name="error_transaction_failed">Muamala umeshindikana</string>
+        <string name="settings_advanced_hint">Washa Hali ya Juu ili kusanidi faragha, usalama, mtandao na tokeni.</string>
+        <string name="settings_export_requires_wallet">Unda au leta wallet kabla ya kusafirisha private key.</string>
+        <string name="settings_group_general">Jumla</string>
+        <string name="settings_group_network_tokens">Mtandao na tokeni</string>
+        <string name="settings_group_payments">Malipo</string>
+        <string name="settings_group_privacy_security">Faragha na usalama</string>
+        <string name="settings_key_management">Usimamizi wa funguo</string>
+        <string name="settings_key_management_desc">Operesheni nyeti za funguo zimetenganishwa hapa. Hifadhi private key yako nje ya mtandao na usiwahi kuishiriki.</string>
 </resources>

@@ -346,4 +346,28 @@
     <string name="receive_only_no_escrow_desc">Configure o endereço escrow e API key nas Configurações</string>
     <string name="receive_only_security_notice">Sem chave privada neste dispositivo. Seguro em caso de roubo.</string>
     <string name="receive_only_api_key_required">API key necessária para execução via relayer</string>
+
+    <!-- Synced missing keys from values/strings.xml -->
+        <string name="error_account_abstraction">Erro de Account Abstraction</string>
+        <string name="error_api_key_required">Chave API obrigatória</string>
+        <string name="error_insufficient_time_to_sign">Tempo insuficiente para assinar</string>
+        <string name="error_invalid_request">Solicitação inválida</string>
+        <string name="error_no_balance_to_spend">Sem saldo para gastar</string>
+        <string name="error_paymaster_not_configured">Paymaster não configurado</string>
+        <string name="error_refund_amount_invalid">O valor do reembolso deve ser maior que 0</string>
+        <string name="error_relayer_generic">Erro do relayer</string>
+        <string name="error_relayer_not_configured">Relayer não configurado</string>
+        <string name="error_replay_detected">Replay detectado: nonce já utilizado</string>
+        <string name="error_request_expired">Solicitação expirada</string>
+        <string name="error_status_check">Erro ao verificar status</string>
+        <string name="error_token_not_allowed">Token não permitido</string>
+        <string name="error_transaction_failed">Transação falhou</string>
+        <string name="settings_advanced_hint">Ative o Modo Avançado para configurar privacidade, segurança, rede e tokens.</string>
+        <string name="settings_export_requires_wallet">Crie ou importe uma carteira antes de exportar a chave privada.</string>
+        <string name="settings_group_general">Geral</string>
+        <string name="settings_group_network_tokens">Rede e tokens</string>
+        <string name="settings_group_payments">Pagamentos</string>
+        <string name="settings_group_privacy_security">Privacidade e segurança</string>
+        <string name="settings_key_management">Gerenciamento de chaves</string>
+        <string name="settings_key_management_desc">As operações sensíveis de chaves ficam separadas aqui. Mantenha sua chave privada offline e nunca a compartilhe.</string>
 </resources>
