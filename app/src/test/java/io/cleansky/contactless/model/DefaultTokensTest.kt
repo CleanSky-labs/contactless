@@ -165,9 +165,27 @@ class DefaultTokensTest {
         val usdTokens = DefaultTokens.getTokensForUnderlying(1L, DefaultTokens.UnderlyingCurrency.USD)
 
         assertTrue(usdTokens.isNotEmpty())
+        assertTrue(usdTokens.any { it.symbol == "DAI" })
+        assertTrue(usdTokens.any { it.symbol == "RAI" })
+        assertTrue(usdTokens.any { it.symbol == "LUSD" })
+        assertTrue(usdTokens.any { it.symbol == "USDe" })
         assertTrue(usdTokens.any { it.symbol == "USDC" })
         assertTrue(usdTokens.any { it.symbol == "USDT" })
-        assertTrue(usdTokens.any { it.symbol == "DAI" })
+    }
+
+    @Test
+    fun `USD underlying prioritizes decentralized stablecoins before centralized ones`() {
+        val usdTokens = DefaultTokens.getTokensForUnderlying(1L, DefaultTokens.UnderlyingCurrency.USD)
+        val symbols = usdTokens.map { it.symbol }
+        val daiIndex = symbols.indexOf("DAI")
+        val usdcIndex = symbols.indexOf("USDC")
+        val usdtIndex = symbols.indexOf("USDT")
+
+        assertTrue("DAI should be listed", daiIndex >= 0)
+        assertTrue("USDC should be listed", usdcIndex >= 0)
+        assertTrue("USDT should be listed", usdtIndex >= 0)
+        assertTrue("DAI should be prioritized over USDC", daiIndex < usdcIndex)
+        assertTrue("DAI should be prioritized over USDT", daiIndex < usdtIndex)
     }
 
     @Test
@@ -247,6 +265,14 @@ class DefaultTokensTest {
         tokens.filter { it.symbol == "DAI" }.forEach { token ->
             assertEquals(
                 "DAI should have 18 decimals",
+                18,
+                token.decimals,
+            )
+        }
+
+        tokens.filter { it.symbol in listOf("RAI", "LUSD", "USDe") }.forEach { token ->
+            assertEquals(
+                "${token.symbol} should have 18 decimals",
                 18,
                 token.decimals,
             )

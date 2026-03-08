@@ -55,7 +55,7 @@ class DefaultTokensRegionTest {
     fun `preferred stablecoin follows EUR branch`() {
         val token = DefaultTokens.getPreferredStablecoin(1L, preferredCurrency = "EUR")
         assertNotNull(token)
-        assertEquals("EURC", token?.symbol)
+        assertEquals("agEUR", token?.symbol)
     }
 
     @Test
@@ -78,6 +78,6 @@ class DefaultTokensRegionTest {
         val defaultToken = DefaultTokens.getPreferredStablecoin(1L, preferredCurrency = "USD")
 
         assertEquals("XCHF", chfToken?.symbol)
-        assertEquals("USDC", defaultToken?.symbol)
+        assertEquals("DAI", defaultToken?.symbol)
     }
 }

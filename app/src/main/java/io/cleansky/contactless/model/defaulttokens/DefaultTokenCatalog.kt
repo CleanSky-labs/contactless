@@ -39,6 +39,9 @@ internal object DefaultTokenCatalog {
             "USDC" to TokenMeta("USD Coin", 6),
             "USDT" to TokenMeta("Tether USD", 6),
             "DAI" to TokenMeta("Dai Stablecoin", 18),
+            "RAI" to TokenMeta("Rai Reflex Index", 18),
+            "LUSD" to TokenMeta("Liquity USD", 18),
+            "USDe" to TokenMeta("Ethena USDe", 18),
             "EURC" to TokenMeta("Euro Coin", 6),
             "JPYC" to TokenMeta("JPY Coin", 18),
             "GYEN" to TokenMeta("GMO JPY", 6),
@@ -93,6 +96,18 @@ internal object DefaultTokenCatalog {
                     137L to "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
                     42161L to "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
                     10L to "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+                ),
+            "RAI" to
+                mapOf(
+                    1L to "0x03ab458634910AaD20eF5f1C8ee96F1d6aBE9ae2",
+                ),
+            "LUSD" to
+                mapOf(
+                    1L to "0x5f98805A4E8be255a32880FDEC7F6728C6568BA0",
+                ),
+            "USDe" to
+                mapOf(
+                    1L to "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
                 ),
             "JPYC" to
                 mapOf(

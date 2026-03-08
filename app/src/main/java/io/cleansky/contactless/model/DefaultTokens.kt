@@ -16,7 +16,7 @@ object DefaultTokens {
 
     private val symbolsByUnderlying =
         mapOf(
-            UnderlyingCurrency.USD to listOf("USDC", "USDT", "DAI"),
+            UnderlyingCurrency.USD to listOf("DAI", "RAI", "LUSD", "USDe", "USDC", "USDT"),
             UnderlyingCurrency.EUR to listOf("EURC", "agEUR", "EURS"),
             UnderlyingCurrency.GBP to listOf("GBPT", "TGBP"),
             UnderlyingCurrency.JPY to listOf("JPYC", "GYEN"),
@@ -89,8 +89,11 @@ object DefaultTokens {
         if (chainId == 1L) addIfMissing(stablecoins, addedSymbols, token("TGBP", chainId))
         addIfMissing(stablecoins, addedSymbols, token("agEUR", chainId))
         addIfMissing(stablecoins, addedSymbols, token("EURS", chainId))
-        addIfMissing(stablecoins, addedSymbols, token("USDT", chainId))
         addIfMissing(stablecoins, addedSymbols, token("DAI", chainId))
+        addIfMissing(stablecoins, addedSymbols, token("RAI", chainId))
+        addIfMissing(stablecoins, addedSymbols, token("LUSD", chainId))
+        addIfMissing(stablecoins, addedSymbols, token("USDe", chainId))
+        addIfMissing(stablecoins, addedSymbols, token("USDT", chainId))
 
         return listOf(native) + stablecoins
     }
@@ -122,10 +125,10 @@ object DefaultTokens {
     ): List<String> {
         return when (preferredCurrency) {
             "JPY" -> if (chainId == 1L) listOf("GYEN", "JPYC", "USDC") else listOf("JPYC", "USDC")
-            "CHF" -> listOf("XCHF", "EURC", "USDC")
-            "GBP" -> listOf("GBPT", "TGBP", "USDC")
-            "EUR" -> listOf("EURC", "agEUR", "USDC")
-            else -> listOf("USDC")
+            "CHF" -> listOf("XCHF", "EURC", "DAI", "USDC")
+            "GBP" -> listOf("GBPT", "TGBP", "DAI", "USDC")
+            "EUR" -> listOf("agEUR", "EURC", "DAI", "USDC")
+            else -> listOf("DAI", "LUSD", "USDe", "RAI", "USDC", "USDT")
         }
     }
 
@@ -140,6 +143,7 @@ object DefaultTokens {
                     listOf(
                         if (chainId == 1L) token("GYEN", chainId) else null,
                         token("JPYC", chainId),
+                        token("DAI", chainId),
                         token("USDC", chainId),
                         token("EURC", chainId),
                     ),
@@ -149,6 +153,7 @@ object DefaultTokens {
                     stablecoins,
                     listOf(
                         token("XCHF", chainId),
+                        token("DAI", chainId),
                         token("EURC", chainId),
                         token("USDC", chainId),
                     ),
@@ -159,6 +164,7 @@ object DefaultTokens {
                     listOf(
                         token("GBPT", chainId),
                         if (chainId == 1L) token("TGBP", chainId) else null,
+                        token("DAI", chainId),
                         token("USDC", chainId),
                         token("EURC", chainId),
                     ),
@@ -170,6 +176,7 @@ object DefaultTokens {
                         token("EURC", chainId),
                         token("agEUR", chainId),
                         token("EURS", chainId),
+                        token("DAI", chainId),
                         token("USDC", chainId),
                     ),
                 )
@@ -177,6 +184,10 @@ object DefaultTokens {
                 addByPreference(
                     stablecoins,
                     listOf(
+                        token("DAI", chainId),
+                        token("LUSD", chainId),
+                        token("USDe", chainId),
+                        token("RAI", chainId),
                         token("USDC", chainId),
                         token("EURC", chainId),
                     ),
