@@ -112,9 +112,9 @@ Current quality target:
 
 - Protocol spec: `docs/PROTOCOL_SPEC.md`
 - Motivation and threat model: `docs/MOTIVATION.md`
-- Market analysis (EN): `docs/MARKET_ANALYSIS_EN.md`
-- Language coverage (EN): `docs/LANGUAGES_REPORT_EN.md`
-- Code quality thresholds (EN): `docs/CODE_QUALITY_THRESHOLDS_EN.md`
+- Market analysis: `docs/MARKET_ANALYSIS.md`
+- Language coverage: `docs/LANGUAGES_REPORT.md`
+- Code quality thresholds: `docs/CODE_QUALITY_THRESHOLDS.md`
 
 ## 8) Notes
 
