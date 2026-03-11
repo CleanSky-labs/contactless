@@ -152,8 +152,6 @@ Note: Relayer/AA are enabled by default on core networks (Ethereum, Base, Polygo
 - [Architecture](docs/ARCHITECTURE.md)
 - [Market Analysis (English)](docs/MARKET_ANALYSIS_EN.md)
 - [Languages Report (English)](docs/LANGUAGES_REPORT_EN.md)
-- [Market Analysis (Original)](docs/MARKET_ANALYSIS.md)
-- [Languages Report (Original)](docs/LANGUAGES_REPORT.md)
 
 ## Contributing
 
