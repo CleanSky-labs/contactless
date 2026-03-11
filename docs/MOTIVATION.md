@@ -1,12 +1,12 @@
 ## Motivation
 
-### 1. Degrees of Economic Coupling in Decentralized Systems
+### 1. Economic Coupling in Decentralized Systems
 
 Decentralized financial systems exist along a spectrum of economic coupling with the physical economy. At one extreme, purely speculative systems circulate value among participants without generating external economic utility. At the other extreme, deeply coupled systems facilitate direct exchange of goods, services, and productive resources.
 
 Most contemporary decentralized finance operates with low economic coupling: trading fees, interest, leverage, and token incentives redistribute value among participants, with limited connection to productive economic activity outside the system.
 
-Increasing economic coupling does not require replacing speculation with commerce. It requires infrastructure that lets decentralized systems interface with real economic activity when participants choose to do so.
+Increasing economic coupling does not require replacing speculation with commerce. It requires infrastructure that lets decentralized systems connect to real economic activity when participants choose to do so.
 
 This project focuses on the payment vector as one practical path.
 
@@ -16,7 +16,7 @@ This project focuses on the payment vector as one practical path.
 
 Sovereignty is not binary. It varies by step in the transaction lifecycle.
 
-We use **transactional sovereignty** as a practical definition: minimizing censorship and failure points in the critical path of a specific transaction.
+We use **transactional sovereignty** as a practical definition: reducing censorship risk and single points of failure in the critical path of a transaction.
 
 In this framing, authorization matters most: if signing requires third-party permission, the system is permissioned regardless of what happens later on-chain.
 
@@ -84,7 +84,7 @@ Limits are explicit: no amount privacy, no timing privacy, no full anonymity.
 
 Payment UX must work under time pressure and low cognitive bandwidth.
 
-The product prioritizes familiar "tap, confirm, done" flows while preserving cryptographic guarantees in the background. This is a deliberate practical tradeoff.
+The product prioritizes familiar "tap, confirm, done" flows while preserving cryptographic guarantees under the hood. This is a deliberate, practical tradeoff.
 
 ---
 

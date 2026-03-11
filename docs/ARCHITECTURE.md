@@ -2,12 +2,12 @@
 
 ### 1. Authorization Primitive: Signed Intents
 
-A payment intent is a structured, signed message containing amount, asset, recipient, chain, expiry, and nonce.
+A payment intent is a structured signed message containing amount, asset, recipient, chain, expiry, and nonce.
 
 Properties:
 
 - Offline authorization
-- Execution delegation (merchant/relayer/bundler)
+- Delegated execution (merchant/relayer/bundler)
 - Replay protection (domain + nonce)
 - Client interoperability
 
@@ -17,7 +17,7 @@ Signing uses EIP-712 typed data.
 
 ### 2. Transport Layer: NFC
 
-NFC is used as local transport for payment messages.
+NFC is used as the local transport layer for payment messages.
 
 Properties:
 
@@ -48,7 +48,7 @@ Centralized pressure points:
 - App distribution channels
 - External service operators if chosen
 
-Design objective: keep authorization local; keep execution pluggable.
+Design objective: keep authorization local and execution pluggable.
 
 ---
 
@@ -73,7 +73,7 @@ Identity is optional and layered:
 - ENS-linked verification
 - Raw address-only mode
 
-This avoids mandatory centralized merchant registries.
+This avoids requiring a centralized merchant registry.
 
 ---
 

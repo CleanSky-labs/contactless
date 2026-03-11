@@ -3,11 +3,11 @@
 ## 1) What this project is
 
 CleanSky Contactless is an Android app for peer-to-peer crypto payments over NFC.
-It is designed around self-custody and local signing:
+The architecture is built around self-custody and local signing:
 
 - Payer signs on device
-- Merchant receives signed payload via NFC
-- Merchant broadcasts on-chain
+- Merchant receives the signed payload over NFC
+- Merchant broadcasts the transaction on-chain
 
 Core principle: private keys never leave the device.
 
@@ -25,7 +25,7 @@ Core principle: private keys never leave the device.
 
 ## 3) Tech stack
 
-- Kotlin + Jetpack Compose
+- Kotlin and Jetpack Compose
 - Android SDK 35 / minSdk 26
 - Gradle (AGP 8.9.1, Gradle 8.11.1)
 - Web3j + Gson + Jackson CBOR
@@ -46,7 +46,7 @@ Currently configured networks:
 
 Execution support:
 
-- Core networks (`Ethereum`, `Base`, `Polygon`, `Arbitrum`, `Optimism`) are enabled for Direct + Relayer + AA.
+- Core networks (`Ethereum`, `Base`, `Polygon`, `Arbitrum`, `Optimism`) support Direct + Relayer + AA.
 - `zkSync Era` and `Linea` are available in Direct mode by default; Relayer/AA require provider-specific setup.
 
 ## 4) Repository structure
@@ -95,18 +95,18 @@ docker exec cleansky-dev-cache ./gradlew testDebugUnitTest --no-daemon --console
 - Coverage verification: `:app:jacocoCoverageVerification`
 - Structural threshold scan (LOC/file and LOC/function): `./scripts/quality_thresholds.sh`
 
-Coverage gate policy (non-vanity, risk-based):
+Coverage gate policy (risk-based, non-vanity):
 - UI/Compose layers are excluded from the JaCoCo gate.
 - External-network adapter classes with low unit-test ROI are excluded from this unit gate:
   `PrivacyPaymentExecutor`, `StealthWalletService`, `RefundService`.
-- Unit-testable global baseline: line coverage `>= 73%`.
+- Global line-coverage baseline for unit-testable code: `>= 73%`.
 - Critical stable modules (`model*`, `util*`): line coverage `>= 85%`.
 
-Current quality baseline in this branch:
+Current quality target:
 
 - Lint errors: `0`
 - Lint warnings: `0` (including `GradleDependency`)
-- Unit tests: passing
+- Unit tests: must pass
 
 ## 7) Key documentation
 
@@ -118,5 +118,5 @@ Current quality baseline in this branch:
 
 ## 8) Notes
 
-- Toolchain migration completed to `AGP 8.9.1` + `Gradle 8.11.1` with `compileSdk/targetSdk 35`.
-- Dependency upgrades can be done incrementally while preserving passing tests and lint checks.
+- Toolchain migration is aligned with `AGP 8.9.1` + `Gradle 8.11.1` and `compileSdk/targetSdk 35`.
+- Dependency upgrades should be incremental, while preserving passing tests and lint checks.

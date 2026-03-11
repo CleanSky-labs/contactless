@@ -1,19 +1,19 @@
 # CleanSky Contactless
 
-Open-source contactless payment app for cryptocurrencies on Android.
+An open-source Android app for contactless cryptocurrency payments.
 
 ## Overview
 
-CleanSky Contactless enables peer-to-peer crypto payments via NFC. The payer signs transactions on their device, and the merchant executes them paying the gas fees.
+CleanSky Contactless enables peer-to-peer crypto payments over NFC. The payer signs on their own device, and the merchant submits and executes the transaction on-chain (covering gas fees).
 
 **Key principle:** Your keys never leave your device. All cryptographic operations happen locally with hardware-backed security.
 
 ## Features
 
-- **NFC Contactless Payments** - Tap to pay, like a credit card
-- **Self-custody Wallet** - Private keys encrypted with Android Keystore (AES-256-GCM)
+- **NFC Contactless Payments** - Tap-to-pay UX similar to card payments
+- **Self-Custody Wallet** - Private keys encrypted with Android Keystore (AES-256-GCM)
 - **Hardware Security** - StrongBox (HSM) support when available
-- **Biometric Authentication** - Optional fingerprint/face unlock for transactions
+- **Biometric Authentication** - Optional fingerprint/face authentication for transactions
 - **Multi-chain Support** - Ethereum, Base, Base Sepolia, Polygon, Arbitrum, Optimism, zkSync Era, Linea
 - **Transaction History** - Track payments with partial/full refund support
 - **Multiple Execution Modes:**
@@ -48,7 +48,7 @@ CleanSky Contactless enables peer-to-peer crypto payments via NFC. The payer sig
 | Authentication | Optional biometrics |
 | Transaction Signing | EIP-712 typed data |
 
-**Why open source?** For a payment app handling crypto, transparency is essential. Users can verify:
+**Why open source?** For a crypto payment app, transparency is essential. Users can verify:
 - Private keys never leave the device
 - No backdoors or hidden data exfiltration
 - Cryptographic implementations are correct
@@ -60,13 +60,13 @@ CleanSky Contactless enables peer-to-peer crypto payments via NFC. The payer sig
 - JDK 17
 - Gradle 8.x
 
-### With Android Studio
+### Android Studio
 1. Clone the repo
 2. Open in Android Studio
 3. Sync Gradle
 4. Run on device with NFC
 
-### With Docker
+### Docker
 ```bash
 docker build -t cleansky-contactless .
 docker run --rm -v "$PWD/out:/out" cleansky-contactless
@@ -129,7 +129,7 @@ io.cleansky.contactless/
 2. **Relayer** - Meta-transactions via Gelato or Biconomy (requires API key)
 3. **Account Abstraction** - ERC-4337 with Paymaster support (Pimlico)
 
-Note: Relayer/AA are currently enabled by default for core networks (Ethereum, Base, Polygon, Arbitrum, Optimism). Newly added networks can be used immediately in Direct mode and may require provider-specific relayer/bundler setup.
+Note: Relayer/AA are enabled by default on core networks (Ethereum, Base, Polygon, Arbitrum, Optimism). Newly added networks are available in Direct mode immediately and may require provider-specific relayer/bundler setup.
 
 ### Network Capability Matrix
 
